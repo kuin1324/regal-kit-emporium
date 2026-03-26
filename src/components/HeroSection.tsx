@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-shirt.jpg";
 
 const HeroSection = () => {
@@ -59,9 +60,11 @@ const HeroSection = () => {
             <Button variant="gold" size="lg">
               Bekijk Collectie
             </Button>
-            <Button variant="gold-outline" size="lg">
-              Meer Info
-            </Button>
+            <Link to="/over-ons">
+              <Button variant="gold-outline" size="lg">
+                Meer Info
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </div>

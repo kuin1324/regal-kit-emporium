@@ -38,8 +38,9 @@ const OverOns = () => {
               delen van voetbalerfgoed door middel van premium kwaliteit shirts.
             </p>
             <p>
-              Elke aankoop wordt veilig verpakt en wereldwijd verzonden. Heb je vragen? 
-              Neem gerust contact met ons op — wij helpen je graag.
+              Elke aankoop wordt veilig verpakt en wereldwijd verzonden. Verzending naar 
+              Europa duurt ongeveer 15 dagen. Heb je vragen? Neem gerust contact met ons 
+              op — wij helpen je graag.
             </p>
             <p className="mt-4">
               📧 <a href="mailto:quinnkuipers2012@gmail.com" className="text-primary hover:underline">quinnkuipers2012@gmail.com</a>

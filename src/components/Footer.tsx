@@ -12,7 +12,7 @@ const Footer = () => {
             </p>
           </div>
           {[
-            { title: "Shop", links: ["Collectie", "Retro", "Limited Edition", "Nieuw Binnen"] },
+            { title: "Shop", links: ["Collectie", "Retro", "Special Edition", "Nieuw Binnen"] },
             { title: "Info", links: ["Over Ons", "Contact", "FAQ", "Verzending"] },
             { title: "Volg Ons", links: ["Instagram", "Twitter", "TikTok"] },
           ].map((col) => (

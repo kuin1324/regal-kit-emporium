@@ -13,7 +13,7 @@ const Navbar = () => {
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          {["Collectie", "Retro", "Limited Edition", "Over Ons"].map((item) => (
+          {["Collectie", "Retro", "Special Edition", "Over Ons"].map((item) => (
             <a
               key={item}
               href="#"
@@ -46,7 +46,7 @@ const Navbar = () => {
             className="md:hidden border-t border-border overflow-hidden bg-background"
           >
             <div className="flex flex-col gap-4 p-6">
-              {["Collectie", "Retro", "Limited Edition", "Over Ons"].map((item) => (
+              {["Collectie", "Retro", "Special Edition", "Over Ons"].map((item) => (
                 <a
                   key={item}
                   href="#"

@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         <div className="mt-12 pt-6 border-t border-border text-center">
           <p className="text-xs text-muted-foreground">
-            © 2026 Élite Kits. Alle rechten voorbehouden.
+            © 2026 The Home of Football Style. Alle rechten voorbehouden.
           </p>
         </div>
       </div>

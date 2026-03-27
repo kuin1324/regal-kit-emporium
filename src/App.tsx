@@ -22,6 +22,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/over-ons" element={<OverOns />} />
           <Route path="/collectie" element={<Collectie />} />
+          <Route path="/retro" element={<Retro />} />
+          <Route path="/special-edition" element={<SpecialEdition />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

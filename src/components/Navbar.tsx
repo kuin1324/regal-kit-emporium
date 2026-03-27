@@ -1,26 +1,39 @@
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
+
+const navItems = [
+  { label: "Collectie", path: "/collectie" },
+  { label: "Retro", path: "/retro" },
+  { label: "Special Edition", path: "/special-edition" },
+  { label: "Over Ons", path: "/over-ons" },
+];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
-        <a href="/" className="font-display text-xl font-bold tracking-widest uppercase text-gradient-gold">
+        <Link to="/" className="font-display text-xl font-bold tracking-widest uppercase text-gradient-gold">
           The Home of Football Style
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          {["Collectie", "Retro", "Special Edition", "Over Ons"].map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="text-sm font-medium tracking-wide text-muted-foreground hover:text-primary transition-colors duration-300 uppercase"
+          {navItems.map((item) => (
+            <Link
+              key={item.label}
+              to={item.path}
+              className={`text-sm font-medium tracking-wide transition-colors duration-300 uppercase ${
+                location.pathname === item.path
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-primary"
+              }`}
             >
-              {item}
-            </a>
+              {item.label}
+            </Link>
           ))}
         </div>
 
@@ -46,14 +59,19 @@ const Navbar = () => {
             className="md:hidden border-t border-border overflow-hidden bg-background"
           >
             <div className="flex flex-col gap-4 p-6">
-              {["Collectie", "Retro", "Special Edition", "Over Ons"].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="text-sm font-medium tracking-wide text-muted-foreground hover:text-primary transition-colors uppercase"
+              {navItems.map((item) => (
+                <Link
+                  key={item.label}
+                  to={item.path}
+                  onClick={() => setMobileOpen(false)}
+                  className={`text-sm font-medium tracking-wide transition-colors uppercase ${
+                    location.pathname === item.path
+                      ? "text-primary"
+                      : "text-muted-foreground hover:text-primary"
+                  }`}
                 >
-                  {item}
-                </a>
+                  {item.label}
+                </Link>
               ))}
             </div>
           </motion.div>

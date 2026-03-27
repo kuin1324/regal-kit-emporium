@@ -62,6 +62,7 @@ const FeaturedCollection = () => {
             </motion.div>
           </motion.div>
         </Link>
+      </div>
     </section>
   );
 };

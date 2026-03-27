@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-shirt.jpg";
 

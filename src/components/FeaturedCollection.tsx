@@ -42,7 +42,26 @@ const FeaturedCollection = () => {
             <ProductCard key={product.name} {...product} index={i} />
           ))}
         </div>
-      </div>
+
+        <Link to="/collectie" className="flex flex-col items-center gap-2 mt-12 group cursor-pointer">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="flex flex-col items-center gap-2"
+          >
+            <span className="text-xs font-medium tracking-[0.2em] uppercase text-primary group-hover:text-primary/80 transition-colors">
+              Bekijk hele collectie
+            </span>
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+            >
+              <ChevronDown className="h-6 w-6 text-primary" />
+            </motion.div>
+          </motion.div>
+        </Link>
     </section>
   );
 };

@@ -86,7 +86,6 @@ const HeroSection = () => {
           <ChevronDown className="h-6 w-6 text-primary" />
         </motion.div>
       </motion.div>
-      </div>
     </section>
   );
 };

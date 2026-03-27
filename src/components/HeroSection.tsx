@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-shirt.jpg";
 
@@ -71,21 +70,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 cursor-pointer"
-        onClick={() => document.getElementById('collectie')?.scrollIntoView({ behavior: 'smooth' })}
-      >
-        <span className="text-xs font-medium tracking-[0.2em] uppercase text-primary">Bekijk hele collectie</span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
-          <ChevronDown className="h-6 w-6 text-primary" />
-        </motion.div>
-      </motion.div>
     </section>
   );
 };

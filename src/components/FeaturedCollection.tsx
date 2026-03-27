@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
 import shirt1 from "@/assets/shirt-1.jpg";
 import shirt2 from "@/assets/shirt-2.jpg";

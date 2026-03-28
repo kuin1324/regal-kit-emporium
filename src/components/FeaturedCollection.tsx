@@ -2,20 +2,20 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
-import shirt1 from "@/assets/shirt-1.jpg";
-import shirt2 from "@/assets/shirt-2.jpg";
-import shirt3 from "@/assets/shirt-3.jpg";
-import shirt4 from "@/assets/shirt-4.jpg";
-import shirt5 from "@/assets/shirt-5.jpg";
-import shirt6 from "@/assets/shirt-6.jpg";
+import shirt1 from "@/assets/shirt-new-1.png";
+import shirt2 from "@/assets/shirt-new-2.png";
+import shirt3 from "@/assets/shirt-new-3.png";
+import shirt4 from "@/assets/shirt-new-4.png";
+import shirt5 from "@/assets/shirt-new-5.png";
+import shirt6 from "@/assets/shirt-new-6.png";
 
 const products = [
-  { image: shirt1, name: "Rossoneri Classic", team: "AC Milan", year: "1994", price: "€249" },
-  { image: shirt2, name: "Galácticos Home", team: "Real Madrid", year: "2002", price: "€289" },
-  { image: shirt3, name: "Seleção Ouro", team: "Brasil", year: "1998", price: "€349" },
-  { image: shirt4, name: "Blaugrana Legend", team: "FC Barcelona", year: "2006", price: "€269" },
-  { image: shirt5, name: "Bianconeri Heritage", team: "Juventus", year: "2017", price: "€229" },
-  { image: shirt6, name: "Red Devils Classic", team: "Manchester United", year: "1999", price: "€319" },
+  { image: shirt1, name: "Stone Island x Adidas", team: "Special Collab", year: "2024", price: "€30" },
+  { image: shirt2, name: "Versace Italia", team: "Italië", year: "2024", price: "€30" },
+  { image: shirt3, name: "Napoli Third Kit", team: "SSC Napoli", year: "2024", price: "€30" },
+  { image: shirt4, name: "LV Spain Edition", team: "Spanje", year: "2024", price: "€30" },
+  { image: shirt5, name: "Baroque Classic", team: "Special Edition", year: "2024", price: "€30" },
+  { image: shirt6, name: "Betis Art Edition", team: "Real Betis", year: "2024", price: "€30" },
 ];
 
 const FeaturedCollection = () => {

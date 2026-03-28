@@ -56,8 +56,19 @@ const Collectie = () => {
             </h1>
           </motion.div>
 
+          <div className="relative max-w-md mx-auto mb-12">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <input
+              type="text"
+              placeholder="Zoek op naam of team..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-11 pr-4 py-3 rounded border border-border/50 bg-card text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors"
+            />
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {allProducts.map((product, i) => (
+            {filteredProducts.map((product, i) => (
               <motion.div
                 key={product.name}
                 initial={{ opacity: 0, y: 30 }}

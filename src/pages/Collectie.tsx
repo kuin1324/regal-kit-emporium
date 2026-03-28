@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { Search } from "lucide-react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import shirt1 from "@/assets/shirt-new-1.png";
 import shirt2 from "@/assets/shirt-new-2.png";
@@ -23,7 +24,14 @@ const allProducts = [
 
 const Collectie = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
+  const filteredProducts = useMemo(() => 
+    allProducts.filter(p => 
+      p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      p.team.toLowerCase().includes(searchQuery.toLowerCase())
+    ), [searchQuery]
+  );
   const openModal = (index: number) => setSelectedIndex(index);
   const closeModal = () => setSelectedIndex(null);
   const goNext = () => setSelectedIndex((prev) => (prev !== null ? (prev + 1) % allProducts.length : null));
@@ -48,8 +56,19 @@ const Collectie = () => {
             </h1>
           </motion.div>
 
+          <div className="relative max-w-md mx-auto mb-12">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <input
+              type="text"
+              placeholder="Zoek op naam of team..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-11 pr-4 py-3 rounded border border-border/50 bg-card text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors"
+            />
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {allProducts.map((product, i) => (
+            {filteredProducts.map((product, i) => (
               <motion.div
                 key={product.name}
                 initial={{ opacity: 0, y: 30 }}

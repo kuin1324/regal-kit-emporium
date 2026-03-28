@@ -30,7 +30,7 @@ const ProductCard = ({ image, name, team, year, price, index }: ProductCardProps
           />
         </div>
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-5 pt-12">
-          <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{year}</p>
+          {year && <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{year}</p>}
           <h3 className="font-display text-base font-semibold tracking-wide">{name}</h3>
           <p className="text-xs text-muted-foreground mb-2">{team}</p>
           <p className="font-display text-lg font-bold text-gradient-gold">{price}</p>

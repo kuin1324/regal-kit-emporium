@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useMemo } from "react";
-import { Search, X, Minus, Plus, ChevronDown } from "lucide-react";
+import { Search, X, Minus, Plus, ChevronDown, Heart, ShoppingBag } from "lucide-react";
 import shirt1 from "@/assets/shirt-new-1.png";
 import shirt2 from "@/assets/shirt-new-2.png";
 import shirt3 from "@/assets/shirt-new-3.png";
@@ -11,33 +11,47 @@ import shirt5 from "@/assets/shirt-new-5.png";
 import shirt6 from "@/assets/shirt-new-6.png";
 import shirt7 from "@/assets/shirt-new-7.png";
 
-const categories = ["Alle", "Special Collab", "Italië", "SSC Napoli", "Spanje", "Special Edition", "Real Betis", "Olympique Marseille"];
+const leagues = [
+  { name: "Alle", teams: [] },
+  { name: "Eredivisie", teams: ["Ajax"] },
+  { name: "Serie A", teams: ["SSC Napoli"] },
+  { name: "La Liga", teams: ["Real Betis"] },
+  { name: "Ligue 1", teams: ["Olympique Marseille"] },
+  { name: "Nationaal", teams: ["Italië", "Portugal", "Spanje"] },
+  { name: "Special", teams: ["Special Edition"] },
+];
 
 const allProducts = [
-  { image: shirt1, name: "Stone Island x Adidas", team: "Special Collab", year: "2024", price: "€30", description: "Exclusieve samenwerking tussen Stone Island en Adidas. Premium kwaliteit met uniek design.", sizes: ["S", "M", "L", "XL", "2XL"] },
-  { image: shirt2, name: "Versace Italia", team: "Italië", year: "2024", price: "€30", description: "Luxe Italiaans design met Versace-elementen. Een stijlvol eerbetoon aan het Italiaanse voetbal.", sizes: ["S", "M", "L", "XL", "2XL"] },
-  { image: shirt3, name: "Napoli Third Kit", team: "SSC Napoli", year: "2024", price: "€30", description: "Het third kit van SSC Napoli met een modern en elegant ontwerp.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"] },
-  { image: shirt4, name: "LV Spain Edition", team: "Spanje", year: "2024", price: "€30", description: "Luxe Spain editie geïnspireerd door high-end fashion. Uniek design met Spaanse flair.", sizes: ["S", "M", "L", "XL", "2XL"] },
-  { image: shirt5, name: "Baroque Classic", team: "Special Edition", year: "2024", price: "€30", description: "Barok-geïnspireerd design met klassieke elementen. Een echte eyecatcher.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"] },
-  { image: shirt6, name: "Betis Art Edition", team: "Real Betis", year: "2024", price: "€30", description: "Artistieke editie van Real Betis met creatief patroon en premium afwerking.", sizes: ["S", "M", "L", "XL", "2XL"] },
-  { image: shirt7, name: "Marseille Third", team: "Olympique Marseille", year: "2024", price: "€30", description: "Het stijlvolle third shirt van Olympique Marseille. Frans design op zijn best.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt1, name: "Stone Island x Ajax", team: "Ajax", league: "Eredivisie", price: "€30", description: "Exclusieve samenwerking tussen Stone Island en Ajax. Premium kwaliteit met uniek design.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt2, name: "Italy x Versace", team: "Italië", league: "Nationaal", price: "€30", description: "Luxe Italiaans design met Versace-elementen. Een stijlvol eerbetoon aan het Italiaanse voetbal.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt3, name: "SSC Napoli EA7 2025/26 Halloween Kit", team: "SSC Napoli", league: "Serie A", price: "€30", description: "Het exclusieve Halloween kit van SSC Napoli in samenwerking met EA7.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"] },
+  { image: shirt4, name: "Portugal x Louis Vuitton", team: "Portugal", league: "Nationaal", price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt5, name: "Baroque Classic", team: "Special Edition", league: "Special", price: "€30", description: "Barok-geïnspireerd design met klassieke elementen. Een echte eyecatcher.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"] },
+  { image: shirt6, name: "Betis Art Edition", team: "Real Betis", league: "La Liga", price: "€30", description: "Artistieke editie van Real Betis met creatief patroon en premium afwerking.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt7, name: "Marseille Third", team: "Olympique Marseille", league: "Ligue 1", price: "€30", description: "Het stijlvolle third shirt van Olympique Marseille. Frans design op zijn best.", sizes: ["S", "M", "L", "XL", "2XL"] },
 ];
 
 const Collectie = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("Alle");
+  const [selectedLeague, setSelectedLeague] = useState("Alle");
+  const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const [quantity, setQuantity] = useState(1);
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
+  const [favorites, setFavorites] = useState<Set<string>>(new Set());
+
+  const currentLeague = leagues.find(l => l.name === selectedLeague);
+  const teamsForLeague = currentLeague?.teams || [];
 
   const filteredProducts = useMemo(() =>
     allProducts.filter(p => {
       const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.team.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesCategory = selectedCategory === "Alle" || p.team === selectedCategory;
-      return matchesSearch && matchesCategory;
-    }), [searchQuery, selectedCategory]
+      const matchesLeague = selectedLeague === "Alle" || p.league === selectedLeague;
+      const matchesTeam = !selectedTeam || p.team === selectedTeam;
+      return matchesSearch && matchesLeague && matchesTeam;
+    }), [searchQuery, selectedLeague, selectedTeam]
   );
 
   const openModal = (index: number) => {
@@ -50,7 +64,22 @@ const Collectie = () => {
   };
   const closeModal = () => setSelectedIndex(null);
 
+  const toggleFavorite = (name: string) => {
+    setFavorites(prev => {
+      const next = new Set(prev);
+      if (next.has(name)) next.delete(name);
+      else next.add(name);
+      return next;
+    });
+  };
+
   const selected = selectedIndex !== null ? allProducts[selectedIndex] : null;
+
+  const handleOrder = () => {
+    if (!selected || !selectedSize) return;
+    const message = `Hallo, ik wil graag bestellen:\n\n🏷️ ${selected.name}\n📏 Maat: ${selectedSize}\n🔢 Aantal: ${quantity}\n💰 Totaal: €${30 * quantity}`;
+    window.open(`https://wa.me/31612345678?text=${encodeURIComponent(message)}`, "_blank");
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -83,22 +112,56 @@ const Collectie = () => {
             />
           </div>
 
-          {/* Category filters */}
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
-            {categories.map((cat) => (
+          {/* League filters */}
+          <div className="flex flex-wrap justify-center gap-2 mb-4">
+            {leagues.map((league) => (
               <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
+                key={league.name}
+                onClick={() => {
+                  setSelectedLeague(league.name);
+                  setSelectedTeam(null);
+                }}
                 className={`px-4 py-2 rounded-full text-xs font-medium tracking-wide uppercase transition-all duration-300 border ${
-                  selectedCategory === cat
+                  selectedLeague === league.name
                     ? "bg-primary text-primary-foreground border-primary"
                     : "bg-transparent text-muted-foreground border-border/50 hover:border-primary/30 hover:text-foreground"
                 }`}
               >
-                {cat}
+                {league.name}
               </button>
             ))}
           </div>
+
+          {/* Team sub-filters */}
+          {teamsForLeague.length > 0 && (
+            <div className="flex flex-wrap justify-center gap-2 mb-8">
+              <button
+                onClick={() => setSelectedTeam(null)}
+                className={`px-3 py-1.5 rounded-full text-[11px] font-medium tracking-wide transition-all duration-300 border ${
+                  !selectedTeam
+                    ? "bg-primary/20 text-primary border-primary/40"
+                    : "bg-transparent text-muted-foreground border-border/30 hover:border-primary/20"
+                }`}
+              >
+                Alle teams
+              </button>
+              {teamsForLeague.map((team) => (
+                <button
+                  key={team}
+                  onClick={() => setSelectedTeam(team)}
+                  className={`px-3 py-1.5 rounded-full text-[11px] font-medium tracking-wide transition-all duration-300 border ${
+                    selectedTeam === team
+                      ? "bg-primary/20 text-primary border-primary/40"
+                      : "bg-transparent text-muted-foreground border-border/30 hover:border-primary/20"
+                  }`}
+                >
+                  {team}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {teamsForLeague.length === 0 && <div className="mb-8" />}
 
           {/* Product grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -109,10 +172,21 @@ const Collectie = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 viewport={{ once: true }}
-                className="group cursor-pointer"
-                onClick={() => openModal(i)}
+                className="group cursor-pointer relative"
               >
-                <div className="relative overflow-hidden rounded bg-card border border-border/50 transition-all duration-500 group-hover:border-primary/30 group-hover:shadow-[var(--shadow-gold)]">
+                {/* Favorite button on card */}
+                <button
+                  onClick={(e) => { e.stopPropagation(); toggleFavorite(product.name); }}
+                  className="absolute top-3 right-3 z-10 p-2 rounded-full bg-background/70 backdrop-blur-sm transition-colors hover:bg-background/90"
+                >
+                  <Heart
+                    className={`h-4 w-4 transition-colors ${favorites.has(product.name) ? "fill-red-500 text-red-500" : "text-foreground"}`}
+                  />
+                </button>
+                <div
+                  onClick={() => openModal(i)}
+                  className="relative overflow-hidden rounded bg-card border border-border/50 transition-all duration-500 group-hover:border-primary/30 group-hover:shadow-[var(--shadow-gold)]"
+                >
                   <div className="aspect-[4/5] overflow-hidden">
                     <img
                       src={product.image}
@@ -122,7 +196,6 @@ const Collectie = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-5 pt-12">
-                    <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{product.year}</p>
                     <h3 className="font-display text-base font-semibold tracking-wide">{product.name}</h3>
                     <p className="text-xs text-muted-foreground mb-2">{product.team}</p>
                     <p className="font-display text-lg font-bold text-gradient-gold">{product.price}</p>
@@ -157,15 +230,22 @@ const Collectie = () => {
               className="relative max-w-4xl w-full bg-card border border-border rounded-lg overflow-hidden my-8"
               onClick={(e) => e.stopPropagation()}
             >
-              <button
-                onClick={closeModal}
-                className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 text-foreground hover:bg-background transition-colors"
-              >
-                <X className="h-5 w-5" />
-              </button>
+              <div className="absolute top-4 right-4 z-10 flex gap-2">
+                <button
+                  onClick={() => toggleFavorite(selected.name)}
+                  className="p-2 rounded-full bg-background/80 hover:bg-background transition-colors"
+                >
+                  <Heart className={`h-5 w-5 transition-colors ${favorites.has(selected.name) ? "fill-red-500 text-red-500" : "text-foreground"}`} />
+                </button>
+                <button
+                  onClick={closeModal}
+                  className="p-2 rounded-full bg-background/80 text-foreground hover:bg-background transition-colors"
+                >
+                  <X className="h-5 w-5" />
+                </button>
+              </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2">
-                {/* Left: Image */}
                 <div className="bg-muted/30">
                   <img
                     src={selected.image}
@@ -174,7 +254,6 @@ const Collectie = () => {
                   />
                 </div>
 
-                {/* Right: Product details */}
                 <div className="p-6 md:p-8 flex flex-col">
                   <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">
                     {selected.team}
@@ -225,6 +304,20 @@ const Collectie = () => {
                       </button>
                     </div>
                   </div>
+
+                  {/* Order button */}
+                  <button
+                    onClick={handleOrder}
+                    disabled={!selectedSize}
+                    className={`w-full flex items-center justify-center gap-2 py-3 rounded font-semibold text-sm tracking-wide uppercase transition-all duration-300 mb-6 ${
+                      selectedSize
+                        ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[var(--shadow-gold)]"
+                        : "bg-muted text-muted-foreground cursor-not-allowed"
+                    }`}
+                  >
+                    <ShoppingBag className="h-4 w-4" />
+                    {selectedSize ? "Bestel Nu" : "Kies eerst een maat"}
+                  </button>
 
                   {/* Accordions */}
                   <div className="border-t border-border mt-auto">

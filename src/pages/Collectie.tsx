@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { Search } from "lucide-react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import shirt1 from "@/assets/shirt-new-1.png";
 import shirt2 from "@/assets/shirt-new-2.png";

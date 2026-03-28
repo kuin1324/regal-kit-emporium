@@ -24,7 +24,14 @@ const allProducts = [
 
 const Collectie = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
+  const filteredProducts = useMemo(() => 
+    allProducts.filter(p => 
+      p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      p.team.toLowerCase().includes(searchQuery.toLowerCase())
+    ), [searchQuery]
+  );
   const openModal = (index: number) => setSelectedIndex(index);
   const closeModal = () => setSelectedIndex(null);
   const goNext = () => setSelectedIndex((prev) => (prev !== null ? (prev + 1) % allProducts.length : null));

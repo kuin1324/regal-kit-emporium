@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-import { Shield, Award, Truck } from "lucide-react";
+import { Award, Truck } from "lucide-react";
 
 const features = [
-  { icon: Shield, title: "100% Authentiek", desc: "Gegarandeerd originele shirts" },
   { icon: Award, title: "Premium Kwaliteit", desc: "Zorgvuldig geselecteerd & bewaard" },
   { icon: Truck, title: "Wereldwijde Verzending", desc: "Veilig verpakt & verzekerd" },
 ];
@@ -11,7 +10,7 @@ const FeatureBanner = () => {
   return (
     <section className="border-y border-border bg-card/50 py-16">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((f, i) => (
             <motion.div
               key={f.title}

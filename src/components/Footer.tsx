@@ -37,8 +37,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.snapchat.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.snapchat.com/@jamairofaisel?sender_web_id=89b2f39e-7886-409e-ab63-9d8c5bb13eb5&device_type=desktop&is_copy_url=true" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Snapchat
+                </a>
+              </li>
+              <li>
+                <a href="https://www.vinted.nl/member/242654802-ebbekreuwel?utm_medium=social&utm_source=heylink.me" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Vinted
                 </a>
               </li>
             </ul>

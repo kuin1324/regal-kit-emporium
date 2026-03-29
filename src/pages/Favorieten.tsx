@@ -17,8 +17,8 @@ const allProducts = [
   { image: shirt2, name: "Italy x Versace", team: "Italië", price: "€30" },
   { image: shirt3, name: "SSC Napoli EA7 2025/26 Halloween Kit", team: "SSC Napoli", price: "€30" },
   { image: shirt4, name: "Portugal x Louis Vuitton", team: "Portugal", price: "€30" },
-  { image: shirt5, name: "Baroque Classic", team: "Special Edition", price: "€30" },
-  { image: shirt6, name: "Betis Art Edition", team: "Real Betis", price: "€30" },
+  { image: shirt5, name: "Italië Special Trainingsshirt", team: "Special Edition", price: "€30" },
+  { image: shirt6, name: "Barcelona Special Flower Design", team: "FC Barcelona", price: "€30" },
   { image: shirt7, name: "Marseille Third", team: "Olympique Marseille", price: "€30" },
 ];
 

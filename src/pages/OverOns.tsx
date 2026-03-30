@@ -29,8 +29,7 @@ const OverOns = () => {
           >
             <p>
               Wij zijn een team van voetballiefhebbers met een passie voor iconische shirts. 
-              Elk shirt in onze collectie is zorgvuldig geselecteerd op authenticiteit, 
-              staat en historische waarde.
+              Elk shirt in onze collectie is zorgvuldig geselecteerd op kwaliteit en stijl.
             </p>
             <p>
               Van legendarische WK-shirts tot zeldzame clubshirts — wij brengen de mooiste 

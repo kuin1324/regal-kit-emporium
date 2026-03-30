@@ -16,20 +16,20 @@ const leagues = [
   { name: "Alle", teams: [] },
   { name: "Eredivisie", teams: ["Ajax"] },
   { name: "Serie A", teams: ["SSC Napoli"] },
-  { name: "La Liga", teams: [] },
+  { name: "La Liga", teams: ["FC Barcelona"] },
   { name: "Ligue 1", teams: ["Olympique Marseille"] },
   { name: "Nationaal", teams: ["Italië", "Portugal", "Spanje"] },
   { name: "Special", teams: ["Special Edition", "FC Barcelona", "Italië"] },
 ];
 
 const allProducts = [
-  { image: shirt1, name: "Stone Island x Ajax", team: "Ajax", league: "Eredivisie", price: "€30", description: "Exclusieve samenwerking tussen Stone Island en Ajax. Premium kwaliteit met uniek design.", sizes: ["S", "M", "L", "XL", "2XL"] },
-  { image: shirt2, name: "Italy x Versace", team: "Italië", league: "Nationaal", price: "€30", description: "Luxe Italiaans design met Versace-elementen. Een stijlvol eerbetoon aan het Italiaanse voetbal.", sizes: ["S", "M", "L", "XL", "2XL"] },
-  { image: shirt3, name: "SSC Napoli EA7 2025/26 Halloween Kit", team: "SSC Napoli", league: "Serie A", price: "€30", description: "Het exclusieve Halloween kit van SSC Napoli in samenwerking met EA7.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"] },
-  { image: shirt4, name: "Portugal x Louis Vuitton", team: "Portugal", league: "Nationaal", price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"] },
-  { image: shirt5, name: "Italië Special Trainingsshirt", team: "Italië", league: "Special", price: "€30", description: "Exclusief Italiaans trainingsshirt met uniek design. Een must-have voor elke voetballiefhebber.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"] },
-  { image: shirt6, name: "Barcelona Special Flower Design", team: "FC Barcelona", league: "Special", price: "€30", description: "Unieke Barcelona editie met bloemenpatroon en premium afwerking.", sizes: ["S", "M", "L", "XL", "2XL"] },
-  { image: shirt7, name: "Marseille Third", team: "Olympique Marseille", league: "Ligue 1", price: "€30", description: "Het stijlvolle third shirt van Olympique Marseille. Frans design op zijn best.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt1, name: "Stone Island x Ajax", team: "Ajax", leagues: ["Eredivisie"], price: "€30", description: "Exclusieve samenwerking tussen Stone Island en Ajax. Premium kwaliteit met uniek design.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt2, name: "Italy x Versace", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Italiaans design met Versace-elementen. Een stijlvol eerbetoon aan het Italiaanse voetbal.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt3, name: "SSC Napoli EA7 2025/26 Halloween Kit", team: "SSC Napoli", leagues: ["Serie A"], price: "€30", description: "Het exclusieve Halloween kit van SSC Napoli in samenwerking met EA7.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"] },
+  { image: shirt4, name: "Portugal x Louis Vuitton", team: "Portugal", leagues: ["Nationaal"], price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt5, name: "Italië Special Trainingsshirt", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Exclusief Italiaans trainingsshirt met uniek design. Een must-have voor elke voetballiefhebber.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"] },
+  { image: shirt6, name: "Barcelona Special Flower Design", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "Unieke Barcelona editie met bloemenpatroon en premium afwerking.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt7, name: "Marseille Third", team: "Olympique Marseille", leagues: ["Ligue 1"], price: "€30", description: "Het stijlvolle third shirt van Olympique Marseille. Frans design op zijn best.", sizes: ["S", "M", "L", "XL", "2XL"] },
 ];
 
 const Collectie = () => {
@@ -49,7 +49,7 @@ const Collectie = () => {
     allProducts.filter(p => {
       const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.team.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesLeague = selectedLeague === "Alle" || p.league === selectedLeague;
+      const matchesLeague = selectedLeague === "Alle" || p.leagues.includes(selectedLeague);
       const matchesTeam = !selectedTeam || p.team === selectedTeam;
       return matchesSearch && matchesLeague && matchesTeam;
     }), [searchQuery, selectedLeague, selectedTeam]

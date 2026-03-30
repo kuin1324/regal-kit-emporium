@@ -30,7 +30,7 @@ const SpecialEdition = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Navbar />
       <section className="pt-28 pb-24">
         <div className="container mx-auto px-6">

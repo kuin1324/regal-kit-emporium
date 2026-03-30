@@ -16,7 +16,7 @@ const leagues = [
   { name: "Alle", teams: [] },
   { name: "Eredivisie", teams: ["Ajax"] },
   { name: "Serie A", teams: ["SSC Napoli"] },
-  { name: "La Liga", teams: ["FC Barcelona"] },
+  { name: "La Liga", teams: [] },
   { name: "Ligue 1", teams: ["Olympique Marseille"] },
   { name: "Nationaal", teams: ["Italië", "Portugal", "Spanje"] },
   { name: "Special", teams: ["Special Edition"] },

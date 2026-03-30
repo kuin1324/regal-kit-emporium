@@ -19,7 +19,7 @@ const leagues = [
   { name: "La Liga", teams: [] },
   { name: "Ligue 1", teams: ["Olympique Marseille"] },
   { name: "Nationaal", teams: ["Italië", "Portugal", "Spanje"] },
-  { name: "Special", teams: ["Special Edition"] },
+  { name: "Special", teams: ["Special Edition", "FC Barcelona", "Italië"] },
 ];
 
 const allProducts = [

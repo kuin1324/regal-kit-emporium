@@ -41,9 +41,6 @@ const OverOns = () => {
               Europa duurt ongeveer 15 dagen. Heb je vragen? Neem gerust contact met ons 
               op — wij helpen je graag.
             </p>
-            <p className="mt-4">
-              📧 <a href="mailto:quinnkuipers2012@gmail.com" className="text-primary hover:underline">quinnkuipers2012@gmail.com</a>
-            </p>
           </motion.div>
         </div>
       </section>

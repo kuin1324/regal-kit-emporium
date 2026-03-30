@@ -28,7 +28,7 @@ const allProducts = [
   { image: shirt3, name: "SSC Napoli EA7 2025/26 Halloween Kit", team: "SSC Napoli", league: "Serie A", price: "€30", description: "Het exclusieve Halloween kit van SSC Napoli in samenwerking met EA7.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"] },
   { image: shirt4, name: "Portugal x Louis Vuitton", team: "Portugal", league: "Nationaal", price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"] },
   { image: shirt5, name: "Italië Special Trainingsshirt", team: "Italië", league: "Special", price: "€30", description: "Exclusief Italiaans trainingsshirt met uniek design. Een must-have voor elke voetballiefhebber.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"] },
-  { image: shirt6, name: "Barcelona Special Flower Design", team: "FC Barcelona", league: "La Liga", price: "€30", description: "Unieke Barcelona editie met bloemenpatroon en premium afwerking.", sizes: ["S", "M", "L", "XL", "2XL"] },
+  { image: shirt6, name: "Barcelona Special Flower Design", team: "FC Barcelona", league: "Special", price: "€30", description: "Unieke Barcelona editie met bloemenpatroon en premium afwerking.", sizes: ["S", "M", "L", "XL", "2XL"] },
   { image: shirt7, name: "Marseille Third", team: "Olympique Marseille", league: "Ligue 1", price: "€30", description: "Het stijlvolle third shirt van Olympique Marseille. Frans design op zijn best.", sizes: ["S", "M", "L", "XL", "2XL"] },
 ];
 

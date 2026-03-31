@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useAnimationControls, PanInfo } from "framer-motion";
 import { Star } from "lucide-react";
 
@@ -13,7 +13,7 @@ const reviews = [
   { name: "Finn", text: "Hele gave special editions, super tevreden.", rating: 5 },
 ];
 
-const CARD_WIDTH = 280 + 24; // width + margin
+const CARD_WIDTH = 280 + 24;
 const TOTAL_WIDTH = reviews.length * CARD_WIDTH;
 
 const ReviewCard = ({ name, text, rating }: { name: string; text: string; rating: number }) => (
@@ -38,12 +38,11 @@ const ReviewsMarquee = () => {
   const [isDragging, setIsDragging] = useState(false);
 
   const startAutoScroll = (fromX: number) => {
-    // Normalize position within the loop
     let normalized = fromX % TOTAL_WIDTH;
     if (normalized > 0) normalized -= TOTAL_WIDTH;
 
     const remaining = Math.abs(normalized + TOTAL_WIDTH);
-    const speed = TOTAL_WIDTH / 30; // pixels per second (matches 30s duration)
+    const speed = TOTAL_WIDTH / 30;
     const duration = remaining / speed;
 
     controls.set({ x: normalized });
@@ -53,6 +52,10 @@ const ReviewsMarquee = () => {
     });
   };
 
+  useEffect(() => {
+    startAutoScroll(0);
+  }, []);
+
   const handleDragStart = () => {
     setIsDragging(true);
     controls.stop();
@@ -60,7 +63,6 @@ const ReviewsMarquee = () => {
 
   const handleDragEnd = (_: any, info: PanInfo) => {
     setIsDragging(false);
-    // Get current position from the velocity-adjusted offset
     const currentX = xRef.current + info.offset.x;
     startAutoScroll(currentX);
   };
@@ -84,17 +86,6 @@ const ReviewsMarquee = () => {
           initial={{ x: 0 }}
           onUpdate={(latest) => {
             xRef.current = latest.x as number;
-          }}
-          onAnimationStart={() => {
-            if (!isDragging) {
-              // initial auto scroll
-            }
-          }}
-          ref={(el) => {
-            // Start auto-scroll on mount
-            if (el && !isDragging) {
-              startAutoScroll(0);
-            }
           }}
         >
           {doubled.map((review, i) => (

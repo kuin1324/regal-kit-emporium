@@ -37,9 +37,13 @@ const OverOns = () => {
               delen van voetbalerfgoed door middel van premium kwaliteit shirts.
             </p>
             <p>
-              Elke aankoop wordt veilig verpakt en wereldwijd verzonden. Verzending naar 
+            Elke aankoop wordt veilig verpakt en wereldwijd verzonden. Verzending naar 
               Europa duurt ongeveer 15 dagen. Heb je vragen? Neem gerust contact met ons 
-              op — wij helpen je graag.
+              op via{" "}
+              <a href="mailto:the_home_of_football_style@outlook.com" className="text-primary hover:underline">
+                the_home_of_football_style@outlook.com
+              </a>
+              {" "}— wij helpen je graag.
             </p>
           </motion.div>
         </div>

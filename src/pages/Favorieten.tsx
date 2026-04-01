@@ -1,29 +1,15 @@
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { useCart } from "@/context/CartContext";
 import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
-import shirt1 from "@/assets/shirt-new-1.png";
-import shirt2 from "@/assets/shirt-new-2.png";
-import shirt3 from "@/assets/shirt-new-3.png";
-import shirt4 from "@/assets/shirt-new-4.png";
-import shirt5 from "@/assets/shirt-new-5.png";
-import shirt6 from "@/assets/shirt-new-6.png";
-import shirt7 from "@/assets/shirt-new-7.png";
-
-const allProducts = [
-  { image: shirt1, name: "Stone Island x Ajax", team: "Ajax", price: "€30" },
-  { image: shirt2, name: "Italy x Versace", team: "Italië", price: "€30" },
-  { image: shirt3, name: "SSC Napoli EA7 2025/26 Halloween Kit", team: "SSC Napoli", price: "€30" },
-  { image: shirt4, name: "Portugal x Louis Vuitton", team: "Portugal", price: "€30" },
-  { image: shirt5, name: "Italië Special Trainingsshirt", team: "Special Edition", price: "€30" },
-  { image: shirt6, name: "Barcelona Special Flower Design", team: "FC Barcelona", price: "€30" },
-  { image: shirt7, name: "Marseille Third", team: "Olympique Marseille", price: "€30" },
-];
+import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 
 const Favorieten = () => {
   const { favorites, toggleFavorite } = useCart();
+  const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const favoriteProducts = allProducts.filter(p => favorites.has(p.name));
 
   return (
@@ -50,15 +36,15 @@ const Favorieten = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.08 }}
-                  className="group relative"
+                  className="group relative cursor-pointer"
                 >
                   <button
-                    onClick={() => toggleFavorite(product.name)}
+                    onClick={(e) => { e.stopPropagation(); toggleFavorite(product.name); }}
                     className="absolute top-3 right-3 z-10 p-2 rounded-full bg-background/70 backdrop-blur-sm"
                   >
                     <Heart className="h-4 w-4 fill-red-500 text-red-500" />
                   </button>
-                  <Link to="/collectie">
+                  <div onClick={() => setSelectedProduct(product.name)}>
                     <div className="relative overflow-hidden rounded bg-card border border-border/50 transition-all duration-500 group-hover:border-primary/30">
                       <div className="aspect-[4/5] overflow-hidden">
                         <img src={product.image} alt={product.name} className="h-full w-full object-cover" />
@@ -69,7 +55,7 @@ const Favorieten = () => {
                         <p className="font-display text-lg font-bold text-gradient-gold">{product.price}</p>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -77,6 +63,7 @@ const Favorieten = () => {
         </div>
       </section>
       <Footer />
+      <ProductDetailModal productName={selectedProduct} onClose={() => setSelectedProduct(null)} />
     </div>
   );
 };

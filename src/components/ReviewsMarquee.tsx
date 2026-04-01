@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { useRef, useEffect, useCallback } from "react";
 
 const reviews = [
   { name: "Jayden", text: "Super snelle levering en top kwaliteit shirt!", rating: 5 },
@@ -27,6 +28,42 @@ const ReviewCard = ({ name, text, rating }: { name: string; text: string; rating
 );
 
 const ReviewsMarquee = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const animationRef = useRef<number>();
+  const speedRef = useRef(0.5);
+  const isInteracting = useRef(false);
+
+  const animate = useCallback(() => {
+    const el = scrollRef.current;
+    if (el && !isInteracting.current) {
+      el.scrollLeft += speedRef.current;
+      // Loop: when scrolled past half (the duplicated content), reset
+      const halfWidth = el.scrollWidth / 2;
+      if (el.scrollLeft >= halfWidth) {
+        el.scrollLeft -= halfWidth;
+      }
+    }
+    animationRef.current = requestAnimationFrame(animate);
+  }, []);
+
+  useEffect(() => {
+    animationRef.current = requestAnimationFrame(animate);
+    return () => {
+      if (animationRef.current) cancelAnimationFrame(animationRef.current);
+    };
+  }, [animate]);
+
+  const handleInteractionStart = () => {
+    isInteracting.current = true;
+  };
+
+  const handleInteractionEnd = () => {
+    // Resume after a short delay
+    setTimeout(() => {
+      isInteracting.current = false;
+    }, 1500);
+  };
+
   return (
     <section className="py-16 bg-background overflow-hidden">
       <div className="container mx-auto px-6 mb-8">
@@ -35,19 +72,20 @@ const ReviewsMarquee = () => {
         </h2>
       </div>
 
-      <div className="relative overflow-x-auto scrollbar-hide">
-        <div className="flex marquee-container w-max" style={{ touchAction: "pan-x" }}>
-          <div className="flex animate-marquee min-w-max">
-            {reviews.map((review, i) => (
-              <ReviewCard key={`a-${i}`} {...review} />
-            ))}
-          </div>
-          <div className="flex animate-marquee min-w-max">
-            {reviews.map((review, i) => (
-              <ReviewCard key={`b-${i}`} {...review} />
-            ))}
-          </div>
-        </div>
+      <div
+        ref={scrollRef}
+        className="flex overflow-x-auto scrollbar-hide"
+        style={{ touchAction: "pan-x" }}
+        onMouseDown={handleInteractionStart}
+        onMouseUp={handleInteractionEnd}
+        onMouseLeave={handleInteractionEnd}
+        onTouchStart={handleInteractionStart}
+        onTouchEnd={handleInteractionEnd}
+      >
+        {/* Duplicate reviews for seamless loop */}
+        {[...reviews, ...reviews].map((review, i) => (
+          <ReviewCard key={i} {...review} />
+        ))}
       </div>
     </section>
   );

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import { useCart } from "@/context/CartContext";
 import CartDrawer from "./CartDrawer";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { label: "Collectie", path: "/collectie" },

@@ -1,5 +1,4 @@
 import { Star } from "lucide-react";
-import { useRef } from "react";
 
 const reviews = [
   { name: "Jayden", text: "Super snelle levering en top kwaliteit shirt!", rating: 5 },
@@ -28,8 +27,6 @@ const ReviewCard = ({ name, text, rating }: { name: string; text: string; rating
 );
 
 const ReviewsMarquee = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
   return (
     <section className="py-16 bg-background overflow-hidden">
       <div className="container mx-auto px-6 mb-8">
@@ -38,16 +35,19 @@ const ReviewsMarquee = () => {
         </h2>
       </div>
 
-      {/* Scrollable track with CSS marquee animation */}
-      <div
-        ref={scrollRef}
-        className="overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing"
-        style={{ WebkitOverflowScrolling: "touch" }}
-      >
-        <div className="inline-flex animate-marquee hover:[animation-play-state:paused] active:[animation-play-state:paused]">
-          {[...reviews, ...reviews].map((review, i) => (
-            <ReviewCard key={i} {...review} />
-          ))}
+      <div className="relative">
+        {/* Seamless infinite marquee using two identical tracks */}
+        <div className="flex marquee-container hover:[animation-play-state:paused]">
+          <div className="flex animate-marquee min-w-max">
+            {reviews.map((review, i) => (
+              <ReviewCard key={`a-${i}`} {...review} />
+            ))}
+          </div>
+          <div className="flex animate-marquee min-w-max">
+            {reviews.map((review, i) => (
+              <ReviewCard key={`b-${i}`} {...review} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

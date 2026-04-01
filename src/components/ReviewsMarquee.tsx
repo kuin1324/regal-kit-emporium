@@ -35,9 +35,8 @@ const ReviewsMarquee = () => {
         </h2>
       </div>
 
-      <div className="relative">
-        {/* Seamless infinite marquee using two identical tracks */}
-        <div className="flex marquee-container hover:[animation-play-state:paused]">
+      <div className="relative overflow-x-auto scrollbar-hide">
+        <div className="flex marquee-container w-max" style={{ touchAction: "pan-x" }}>
           <div className="flex animate-marquee min-w-max">
             {reviews.map((review, i) => (
               <ReviewCard key={`a-${i}`} {...review} />

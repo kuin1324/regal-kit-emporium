@@ -5,37 +5,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 @layer base {
-  :root {
+  :root,
+  .dark {
     --background: 0 0% 4%;
     --foreground: 40 20% 95%;
-
     --card: 0 0% 7%;
     --card-foreground: 40 20% 95%;
-
     --popover: 0 0% 7%;
     --popover-foreground: 40 20% 95%;
-
     --primary: 43 74% 54%;
     --primary-foreground: 0 0% 4%;
-
     --secondary: 0 0% 12%;
     --secondary-foreground: 40 20% 95%;
-
     --muted: 0 0% 14%;
     --muted-foreground: 0 0% 55%;
-
     --accent: 43 74% 54%;
     --accent-foreground: 0 0% 4%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 0 0% 16%;
     --input: 0 0% 16%;
     --ring: 43 74% 54%;
-
     --radius: 0.25rem;
-
     --gold: 43 74% 54%;
     --gold-light: 43 74% 68%;
     --gold-dark: 43 74% 38%;
@@ -44,6 +35,37 @@
     --gold-gradient: linear-gradient(135deg, hsl(43 74% 54%), hsl(43 74% 68%));
     --shadow-gold: 0 4px 30px -8px hsl(43 74% 54% / 0.15);
     --shadow-card: 0 8px 40px -12px hsl(0 0% 0% / 0.6);
+  }
+
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 93%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 43 74% 49%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 87%;
+    --input: 0 0% 87%;
+    --ring: 43 74% 49%;
+    --radius: 0.25rem;
+    --gold: 43 74% 49%;
+    --gold-light: 43 74% 62%;
+    --gold-dark: 43 74% 35%;
+    --surface-hover: 0 0% 95%;
+    --hero-gradient: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(0 0% 94%) 50%, hsl(43 20% 95%) 100%);
+    --gold-gradient: linear-gradient(135deg, hsl(43 74% 49%), hsl(43 74% 62%));
+    --shadow-gold: 0 4px 30px -8px hsl(43 74% 49% / 0.2);
+    --shadow-card: 0 8px 40px -12px hsl(0 0% 0% / 0.1);
   }
 }
 
@@ -84,5 +106,12 @@
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  .marquee-container > div {
+    animation: marquee 30s linear infinite;
+  }
+  .marquee-container:hover > div {
+    animation-play-state: paused;
   }
 }

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import { useCart } from "@/context/CartContext";
 import CartDrawer from "./CartDrawer";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { label: "Collectie", path: "/collectie" },
@@ -43,6 +44,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4">
+            <ThemeToggle />
             <Link to="/favorieten" className="relative text-foreground hover:text-primary transition-colors">
               <Heart className={`h-5 w-5 ${favorites.size > 0 ? "fill-red-500 text-red-500" : ""}`} />
               {favorites.size > 0 && (

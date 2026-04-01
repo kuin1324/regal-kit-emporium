@@ -44,6 +44,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4">
+            <ThemeToggle />
             <Link to="/favorieten" className="relative text-foreground hover:text-primary transition-colors">
               <Heart className={`h-5 w-5 ${favorites.size > 0 ? "fill-red-500 text-red-500" : ""}`} />
               {favorites.size > 0 && (

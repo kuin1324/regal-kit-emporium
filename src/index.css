@@ -107,4 +107,11 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
+  .marquee-container > div {
+    animation: marquee 30s linear infinite;
+  }
+  .marquee-container:hover > div {
+    animation-play-state: paused;
+  }
 }

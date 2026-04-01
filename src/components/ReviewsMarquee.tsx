@@ -35,14 +35,14 @@ const ReviewsMarquee = () => {
         </h2>
       </div>
 
-      <div className="relative overflow-x-auto scrollbar-hide">
-        <div className="flex marquee-container w-max" style={{ touchAction: "pan-x" }}>
-          <div className="flex animate-marquee min-w-max">
+      <div className="relative overflow-hidden">
+        <div className="flex marquee-container w-max">
+          <div className="flex min-w-max">
             {reviews.map((review, i) => (
               <ReviewCard key={`a-${i}`} {...review} />
             ))}
           </div>
-          <div className="flex animate-marquee min-w-max">
+          <div className="flex min-w-max">
             {reviews.map((review, i) => (
               <ReviewCard key={`b-${i}`} {...review} />
             ))}

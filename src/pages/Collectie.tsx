@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { motion } from "framer-motion";
-import { useState, useMemo } from "react";
-import { Search, Heart } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useMemo, useRef } from "react";
+import { Search, Heart, Upload, X, ImageIcon } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 

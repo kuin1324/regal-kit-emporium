@@ -16,11 +16,26 @@ const leagues = [
   { name: "Special", teams: ["Special Edition", "FC Barcelona", "Italië"] },
 ];
 
+const colorMap: Record<string, string> = {
+  zwart: "#000000",
+  wit: "#FFFFFF",
+  blauw: "#1E40AF",
+  rood: "#DC2626",
+  goud: "#D4A017",
+  groen: "#16A34A",
+  oranje: "#EA580C",
+};
+
+const allColors = Object.keys(colorMap);
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
 const Collectie = () => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedLeague, setSelectedLeague] = useState("Alle");
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
+  const [selectedColor, setSelectedColor] = useState<string | null>(null);
+  const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
   const { favorites, toggleFavorite } = useCart();
 
   const currentLeague = leagues.find(l => l.name === selectedLeague);
@@ -32,8 +47,10 @@ const Collectie = () => {
         p.team.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesLeague = selectedLeague === "Alle" || p.leagues.includes(selectedLeague);
       const matchesTeam = !selectedTeam || p.team === selectedTeam;
-      return matchesSearch && matchesLeague && matchesTeam;
-    }), [searchQuery, selectedLeague, selectedTeam]
+      const matchesColor = !selectedColor || p.colors?.includes(selectedColor);
+      const matchesLetter = !selectedLetter || p.name.charAt(0).toUpperCase() === selectedLetter;
+      return matchesSearch && matchesLeague && matchesTeam && matchesColor && matchesLetter;
+    }), [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter]
   );
 
   return (
@@ -51,7 +68,8 @@ const Collectie = () => {
             <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight">Hele Collectie</h1>
           </motion.div>
 
-          <div className="relative max-w-md mx-auto mb-8">
+          {/* Zoekbalk */}
+          <div className="relative max-w-md mx-auto mb-6">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <input
               type="text"
@@ -62,6 +80,70 @@ const Collectie = () => {
             />
           </div>
 
+          {/* Kleurfilter */}
+          <div className="flex flex-wrap justify-center gap-2 mb-4">
+            <button
+              onClick={() => setSelectedColor(null)}
+              className={`px-3 py-1.5 rounded-full text-[11px] font-medium tracking-wide transition-all border ${
+                !selectedColor ? "bg-primary/20 text-primary border-primary/40" : "bg-transparent text-muted-foreground border-border/30 hover:border-primary/20"
+              }`}
+            >
+              Alle kleuren
+            </button>
+            {allColors.map((color) => (
+              <button
+                key={color}
+                onClick={() => setSelectedColor(selectedColor === color ? null : color)}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium tracking-wide transition-all border ${
+                  selectedColor === color ? "bg-primary/20 text-primary border-primary/40" : "bg-transparent text-muted-foreground border-border/30 hover:border-primary/20"
+                }`}
+              >
+                <span
+                  className="w-3 h-3 rounded-full border border-border/50 shrink-0"
+                  style={{ backgroundColor: colorMap[color] }}
+                />
+                {color}
+              </button>
+            ))}
+          </div>
+
+          {/* Letterfilter */}
+          <div className="flex flex-wrap justify-center gap-1 mb-4">
+            <button
+              onClick={() => setSelectedLetter(null)}
+              className={`w-7 h-7 rounded text-[10px] font-semibold transition-all ${
+                !selectedLetter ? "bg-primary text-primary-foreground" : "bg-transparent text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              Alle
+            </button>
+            {alphabet.map((letter) => (
+              <button
+                key={letter}
+                onClick={() => setSelectedLetter(selectedLetter === letter ? null : letter)}
+                className={`w-7 h-7 rounded text-[10px] font-semibold transition-all ${
+                  selectedLetter === letter ? "bg-primary text-primary-foreground" : "bg-transparent text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {letter}
+              </button>
+            ))}
+          </div>
+
+          {/* Foto-thumbnails */}
+          <div className="flex gap-2 overflow-x-auto pb-2 mb-6 scrollbar-hide">
+            {allProducts.map((product) => (
+              <button
+                key={product.name}
+                onClick={() => setSelectedProduct(product.name)}
+                className="shrink-0 w-16 h-20 rounded border border-border/50 overflow-hidden hover:border-primary/50 transition-all"
+              >
+                <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+              </button>
+            ))}
+          </div>
+
+          {/* League filters */}
           <div className="flex flex-wrap justify-center gap-2 mb-4">
             {leagues.map((league) => (
               <button

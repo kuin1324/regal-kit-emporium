@@ -36,7 +36,18 @@ const Collectie = () => {
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
+  const [uploadedImage, setUploadedImage] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const { favorites, toggleFavorite } = useCart();
+
+  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file && file.type.startsWith("image/")) {
+      const reader = new FileReader();
+      reader.onload = (ev) => setUploadedImage(ev.target?.result as string);
+      reader.readAsDataURL(file);
+    }
+  };
 
   const currentLeague = leagues.find(l => l.name === selectedLeague);
   const teamsForLeague = currentLeague?.teams || [];

@@ -91,6 +91,45 @@ const Collectie = () => {
             />
           </div>
 
+          {/* Foto uploaden */}
+          <div className="flex justify-center mb-6">
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className="hidden"
+            />
+            {!uploadedImage ? (
+              <button
+                onClick={() => fileInputRef.current?.click()}
+                className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-dashed border-border/60 text-sm text-muted-foreground hover:border-primary/40 hover:text-foreground transition-all"
+              >
+                <Upload className="h-4 w-4" />
+                Upload een foto om te vergelijken
+              </button>
+            ) : (
+              <div className="relative">
+                <div className="flex items-center gap-4 p-3 rounded-lg border border-primary/30 bg-card">
+                  <img src={uploadedImage} alt="Jouw foto" className="w-20 h-24 object-cover rounded" />
+                  <div className="flex flex-col gap-1">
+                    <p className="text-xs font-semibold text-foreground flex items-center gap-1.5">
+                      <ImageIcon className="h-3.5 w-3.5 text-primary" />
+                      Jouw foto
+                    </p>
+                    <p className="text-[11px] text-muted-foreground">Vergelijk met onze shirts hieronder</p>
+                  </div>
+                  <button
+                    onClick={() => { setUploadedImage(null); if (fileInputRef.current) fileInputRef.current.value = ""; }}
+                    className="p-1.5 rounded-full hover:bg-muted transition-colors"
+                  >
+                    <X className="h-3.5 w-3.5 text-muted-foreground" />
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+
           {/* Kleurfilter */}
           <div className="flex flex-wrap justify-center gap-2 mb-4">
             <button

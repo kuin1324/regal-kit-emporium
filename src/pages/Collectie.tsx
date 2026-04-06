@@ -97,6 +97,7 @@ const Collectie = () => {
               ref={fileInputRef}
               type="file"
               accept="image/*"
+              capture="environment"
               onChange={handleImageUpload}
               className="hidden"
             />
@@ -109,22 +110,30 @@ const Collectie = () => {
                 Upload een foto om te vergelijken
               </button>
             ) : (
-              <div className="relative">
-                <div className="flex items-center gap-4 p-3 rounded-lg border border-primary/30 bg-card">
-                  <img src={uploadedImage} alt="Jouw foto" className="w-20 h-24 object-cover rounded" />
-                  <div className="flex flex-col gap-1">
-                    <p className="text-xs font-semibold text-foreground flex items-center gap-1.5">
-                      <ImageIcon className="h-3.5 w-3.5 text-primary" />
+              <div className="w-full max-w-2xl mx-auto">
+                <div className="flex items-start gap-4 p-4 rounded-lg border border-primary/30 bg-card">
+                  <img src={uploadedImage} alt="Jouw foto" className="w-32 h-40 object-cover rounded shadow-md" />
+                  <div className="flex flex-col gap-2 flex-1">
+                    <p className="text-sm font-semibold text-foreground flex items-center gap-1.5">
+                      <ImageIcon className="h-4 w-4 text-primary" />
                       Jouw foto
                     </p>
-                    <p className="text-[11px] text-muted-foreground">Vergelijk met onze shirts hieronder</p>
+                    <p className="text-xs text-muted-foreground">Scroll naar beneden om jouw foto te vergelijken met onze shirts.</p>
+                    <div className="flex gap-2 mt-1">
+                      <button
+                        onClick={() => fileInputRef.current?.click()}
+                        className="px-3 py-1.5 rounded text-[11px] font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+                      >
+                        Andere foto
+                      </button>
+                      <button
+                        onClick={() => { setUploadedImage(null); if (fileInputRef.current) fileInputRef.current.value = ""; }}
+                        className="px-3 py-1.5 rounded text-[11px] font-medium text-muted-foreground hover:bg-muted transition-colors"
+                      >
+                        Verwijderen
+                      </button>
+                    </div>
                   </div>
-                  <button
-                    onClick={() => { setUploadedImage(null); if (fileInputRef.current) fileInputRef.current.value = ""; }}
-                    className="p-1.5 rounded-full hover:bg-muted transition-colors"
-                  >
-                    <X className="h-3.5 w-3.5 text-muted-foreground" />
-                  </button>
                 </div>
               </div>
             )}
@@ -180,18 +189,7 @@ const Collectie = () => {
             ))}
           </div>
 
-          {/* Foto-thumbnails */}
-          <div className="flex gap-2 overflow-x-auto pb-2 mb-6 scrollbar-hide">
-            {allProducts.map((product) => (
-              <button
-                key={product.name}
-                onClick={() => setSelectedProduct(product.name)}
-                className="shrink-0 w-16 h-20 rounded border border-border/50 overflow-hidden hover:border-primary/50 transition-all"
-              >
-                <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-              </button>
-            ))}
-          </div>
+
 
           {/* League filters */}
           <div className="flex flex-wrap justify-center gap-2 mb-4">

@@ -92,17 +92,17 @@ const Collectie = () => {
           </div>
 
           {/* Foto uploaden */}
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="image/*"
+            onChange={handleImageUpload}
+            className="hidden"
+          />
           <div className="flex justify-center mb-6">
-            <input
-              ref={fileInputRef}
-              type="file"
-              accept="image/*"
-              capture="environment"
-              onChange={handleImageUpload}
-              className="hidden"
-            />
             {!uploadedImage ? (
               <button
+                type="button"
                 onClick={() => fileInputRef.current?.click()}
                 className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-dashed border-border/60 text-sm text-muted-foreground hover:border-primary/40 hover:text-foreground transition-all"
               >
@@ -110,31 +110,24 @@ const Collectie = () => {
                 Upload een foto om te vergelijken
               </button>
             ) : (
-              <div className="w-full max-w-2xl mx-auto">
-                <div className="flex items-start gap-4 p-4 rounded-lg border border-primary/30 bg-card">
-                  <img src={uploadedImage} alt="Jouw foto" className="w-32 h-40 object-cover rounded shadow-md" />
-                  <div className="flex flex-col gap-2 flex-1">
-                    <p className="text-sm font-semibold text-foreground flex items-center gap-1.5">
-                      <ImageIcon className="h-4 w-4 text-primary" />
-                      Jouw foto
-                    </p>
-                    <p className="text-xs text-muted-foreground">Scroll naar beneden om jouw foto te vergelijken met onze shirts.</p>
-                    <div className="flex gap-2 mt-1">
-                      <button
-                        onClick={() => fileInputRef.current?.click()}
-                        className="px-3 py-1.5 rounded text-[11px] font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
-                      >
-                        Andere foto
-                      </button>
-                      <button
-                        onClick={() => { setUploadedImage(null); if (fileInputRef.current) fileInputRef.current.value = ""; }}
-                        className="px-3 py-1.5 rounded text-[11px] font-medium text-muted-foreground hover:bg-muted transition-colors"
-                      >
-                        Verwijderen
-                      </button>
-                    </div>
-                  </div>
-                </div>
+              <div className="flex items-center gap-3 px-4 py-2 rounded-full border border-primary/30 bg-card">
+                <ImageIcon className="h-4 w-4 text-primary" />
+                <span className="text-xs text-muted-foreground">Foto geladen — zie hieronder</span>
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current?.click()}
+                  className="text-[11px] font-medium text-primary hover:underline"
+                >
+                  Wijzig
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { setUploadedImage(null); if (fileInputRef.current) fileInputRef.current.value = ""; }}
+                  className="p-1 rounded-full hover:bg-muted transition-colors"
+                  aria-label="Verwijder foto"
+                >
+                  <X className="h-3 w-3" />
+                </button>
               </div>
             )}
           </div>

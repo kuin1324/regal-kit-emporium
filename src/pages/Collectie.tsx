@@ -264,6 +264,24 @@ const Collectie = () => {
             <p className="text-center text-muted-foreground mt-12">Geen shirts gevonden.</p>
           )}
         </div>
+
+        {/* Floating compare preview */}
+        {uploadedImage && (
+          <div className="fixed bottom-4 right-4 z-40 w-28 sm:w-36 rounded-lg overflow-hidden border border-primary/40 bg-card shadow-[var(--shadow-gold)]">
+            <div className="relative">
+              <img src={uploadedImage} alt="Jouw foto" className="w-full h-36 sm:h-44 object-cover" />
+              <button
+                type="button"
+                onClick={() => { setUploadedImage(null); if (fileInputRef.current) fileInputRef.current.value = ""; }}
+                className="absolute top-1 right-1 p-1 rounded-full bg-background/80 hover:bg-background"
+                aria-label="Sluiten"
+              >
+                <X className="h-3 w-3" />
+              </button>
+            </div>
+            <p className="text-[10px] text-center py-1 text-muted-foreground bg-card">Jouw foto</p>
+          </div>
+        )}
       </section>
       <Footer />
       <ProductDetailModal productName={selectedProduct} onClose={() => setSelectedProduct(null)} />

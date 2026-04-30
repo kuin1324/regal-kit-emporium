@@ -33,6 +33,7 @@ const ReviewsMarquee = () => {
   const animationRef = useRef<number>();
   const speedRef = useRef(0.5);
   const isInteracting = useRef(false);
+  const { t } = useTranslation();
 
   const animate = useCallback(() => {
     const el = scrollRef.current;

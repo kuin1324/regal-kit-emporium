@@ -1,35 +1,32 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState, useMemo, useRef } from "react";
 import { Search, Heart, Upload, X, ImageIcon } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 
 const leagues = [
-  { name: "Alle", teams: [] },
-  { name: "Eredivisie", teams: ["Ajax"] },
-  { name: "Serie A", teams: ["SSC Napoli"] },
-  { name: "La Liga", teams: ["FC Barcelona"] },
-  { name: "Ligue 1", teams: ["Olympique Marseille"] },
-  { name: "Nationaal", teams: ["Italië", "Portugal", "Spanje"] },
-  { name: "Special", teams: ["Special Edition", "FC Barcelona", "Italië"] },
+  { key: "all", value: "Alle", teams: [] },
+  { key: "eredivisie", value: "Eredivisie", teams: ["Ajax"] },
+  { key: "serieA", value: "Serie A", teams: ["SSC Napoli"] },
+  { key: "laLiga", value: "La Liga", teams: ["FC Barcelona"] },
+  { key: "ligue1", value: "Ligue 1", teams: ["Olympique Marseille"] },
+  { key: "national", value: "Nationaal", teams: ["Italië", "Portugal", "Spanje"] },
+  { key: "special", value: "Special", teams: ["Special Edition", "FC Barcelona", "Italië"] },
 ];
 
 const colorMap: Record<string, string> = {
-  zwart: "#000000",
-  wit: "#FFFFFF",
-  blauw: "#1E40AF",
-  rood: "#DC2626",
-  goud: "#D4A017",
-  groen: "#16A34A",
-  oranje: "#EA580C",
+  zwart: "#000000", wit: "#FFFFFF", blauw: "#1E40AF", rood: "#DC2626",
+  goud: "#D4A017", groen: "#16A34A", oranje: "#EA580C",
 };
 
 const allColors = Object.keys(colorMap);
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 const Collectie = () => {
+  const { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedLeague, setSelectedLeague] = useState("Alle");
@@ -49,7 +46,7 @@ const Collectie = () => {
     }
   };
 
-  const currentLeague = leagues.find(l => l.name === selectedLeague);
+  const currentLeague = leagues.find(l => l.value === selectedLeague);
   const teamsForLeague = currentLeague?.teams || [];
 
   const filteredProducts = useMemo(() =>
@@ -69,36 +66,23 @@ const Collectie = () => {
       <Navbar />
       <section className="pt-28 pb-24">
         <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-3">Onze Shirts</p>
-            <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight">Hele Collectie</h1>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center mb-12">
+            <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-3">{t("collection.eyebrow")}</p>
+            <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight">{t("collection.title")}</h1>
           </motion.div>
 
-          {/* Zoekbalk */}
           <div className="relative max-w-md mx-auto mb-6">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <input
               type="text"
-              placeholder="Zoek op naam of team..."
+              placeholder={t("search.placeholderShort")}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-11 pr-4 py-3 rounded border border-border/50 bg-card text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors"
             />
           </div>
 
-          {/* Foto uploaden */}
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="image/*"
-            onChange={handleImageUpload}
-            className="hidden"
-          />
+          <input ref={fileInputRef} type="file" accept="image/*" onChange={handleImageUpload} className="hidden" />
           <div className="flex justify-center mb-6">
             {!uploadedImage ? (
               <button
@@ -107,24 +91,20 @@ const Collectie = () => {
                 className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-dashed border-border/60 text-sm text-muted-foreground hover:border-primary/40 hover:text-foreground transition-all"
               >
                 <Upload className="h-4 w-4" />
-                Upload een foto om te vergelijken
+                {t("collection.uploadCta")}
               </button>
             ) : (
               <div className="flex items-center gap-3 px-4 py-2 rounded-full border border-primary/30 bg-card">
                 <ImageIcon className="h-4 w-4 text-primary" />
-                <span className="text-xs text-muted-foreground">Foto geladen — zie hieronder</span>
-                <button
-                  type="button"
-                  onClick={() => fileInputRef.current?.click()}
-                  className="text-[11px] font-medium text-primary hover:underline"
-                >
-                  Wijzig
+                <span className="text-xs text-muted-foreground">{t("collection.photoLoaded")}</span>
+                <button type="button" onClick={() => fileInputRef.current?.click()} className="text-[11px] font-medium text-primary hover:underline">
+                  {t("collection.edit")}
                 </button>
                 <button
                   type="button"
                   onClick={() => { setUploadedImage(null); if (fileInputRef.current) fileInputRef.current.value = ""; }}
                   className="p-1 rounded-full hover:bg-muted transition-colors"
-                  aria-label="Verwijder foto"
+                  aria-label={t("collection.removePhoto")}
                 >
                   <X className="h-3 w-3" />
                 </button>
@@ -132,7 +112,6 @@ const Collectie = () => {
             )}
           </div>
 
-          {/* Kleurfilter */}
           <div className="flex flex-wrap justify-center gap-2 mb-4">
             <button
               onClick={() => setSelectedColor(null)}
@@ -140,7 +119,7 @@ const Collectie = () => {
                 !selectedColor ? "bg-primary/20 text-primary border-primary/40" : "bg-transparent text-muted-foreground border-border/30 hover:border-primary/20"
               }`}
             >
-              Alle kleuren
+              {t("collection.allColors")}
             </button>
             {allColors.map((color) => (
               <button
@@ -150,16 +129,12 @@ const Collectie = () => {
                   selectedColor === color ? "bg-primary/20 text-primary border-primary/40" : "bg-transparent text-muted-foreground border-border/30 hover:border-primary/20"
                 }`}
               >
-                <span
-                  className="w-3 h-3 rounded-full border border-border/50 shrink-0"
-                  style={{ backgroundColor: colorMap[color] }}
-                />
-                {color}
+                <span className="w-3 h-3 rounded-full border border-border/50 shrink-0" style={{ backgroundColor: colorMap[color] }} />
+                {t(`collection.colors.${color}`)}
               </button>
             ))}
           </div>
 
-          {/* Letterfilter */}
           <div className="flex flex-wrap justify-center gap-1 mb-4">
             <button
               onClick={() => setSelectedLetter(null)}
@@ -167,7 +142,7 @@ const Collectie = () => {
                 !selectedLetter ? "bg-primary text-primary-foreground" : "bg-transparent text-muted-foreground hover:text-foreground"
               }`}
             >
-              Alle
+              {t("leagues.all")}
             </button>
             {alphabet.map((letter) => (
               <button
@@ -182,21 +157,18 @@ const Collectie = () => {
             ))}
           </div>
 
-
-
-          {/* League filters */}
           <div className="flex flex-wrap justify-center gap-2 mb-4">
             {leagues.map((league) => (
               <button
-                key={league.name}
-                onClick={() => { setSelectedLeague(league.name); setSelectedTeam(null); }}
+                key={league.key}
+                onClick={() => { setSelectedLeague(league.value); setSelectedTeam(null); }}
                 className={`px-4 py-2 rounded-full text-xs font-medium tracking-wide uppercase transition-all duration-300 border ${
-                  selectedLeague === league.name
+                  selectedLeague === league.value
                     ? "bg-primary text-primary-foreground border-primary"
                     : "bg-transparent text-muted-foreground border-border/50 hover:border-primary/30 hover:text-foreground"
                 }`}
               >
-                {league.name}
+                {t(`leagues.${league.key}`)}
               </button>
             ))}
           </div>
@@ -209,7 +181,7 @@ const Collectie = () => {
                   !selectedTeam ? "bg-primary/20 text-primary border-primary/40" : "bg-transparent text-muted-foreground border-border/30 hover:border-primary/20"
                 }`}
               >
-                Alle teams
+                {t("collection.allTeams")}
               </button>
               {teamsForLeague.map((team) => (
                 <button
@@ -261,25 +233,24 @@ const Collectie = () => {
           </div>
 
           {filteredProducts.length === 0 && (
-            <p className="text-center text-muted-foreground mt-12">Geen shirts gevonden.</p>
+            <p className="text-center text-muted-foreground mt-12">{t("collection.noResults")}</p>
           )}
         </div>
 
-        {/* Floating compare preview */}
         {uploadedImage && (
           <div className="fixed bottom-4 right-4 z-40 w-28 sm:w-36 rounded-lg overflow-hidden border border-primary/40 bg-card shadow-[var(--shadow-gold)]">
             <div className="relative">
-              <img src={uploadedImage} alt="Jouw foto" className="w-full h-36 sm:h-44 object-cover" />
+              <img src={uploadedImage} alt={t("collection.yourPhoto")} className="w-full h-36 sm:h-44 object-cover" />
               <button
                 type="button"
                 onClick={() => { setUploadedImage(null); if (fileInputRef.current) fileInputRef.current.value = ""; }}
                 className="absolute top-1 right-1 p-1 rounded-full bg-background/80 hover:bg-background"
-                aria-label="Sluiten"
+                aria-label={t("collection.close")}
               >
                 <X className="h-3 w-3" />
               </button>
             </div>
-            <p className="text-[10px] text-center py-1 text-muted-foreground bg-card">Jouw foto</p>
+            <p className="text-[10px] text-center py-1 text-muted-foreground bg-card">{t("collection.yourPhoto")}</p>
           </div>
         )}
       </section>

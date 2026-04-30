@@ -69,7 +69,7 @@ const ReviewsMarquee = () => {
     <section className="py-16 bg-background overflow-hidden">
       <div className="container mx-auto px-6 mb-8">
         <h2 className="font-display text-2xl sm:text-3xl font-bold text-center">
-          Wat onze klanten <span className="text-gradient-gold">zeggen</span>
+          {t("home.reviewsTitle")} <span className="text-gradient-gold">{t("home.reviewsTitleAccent")}</span>
         </h2>
       </div>
 

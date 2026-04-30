@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import shirt1 from "@/assets/shirt-new-1.png";
 import shirt2 from "@/assets/shirt-new-2.png";
@@ -30,6 +31,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
   const [quantity, setQuantity] = useState(1);
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const { favorites, toggleFavorite, addItem } = useCart();
+  const { t } = useTranslation();
 
   const selected = productName ? allProducts.find(p => p.name === productName) : null;
 
@@ -80,7 +82,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
               <p className="font-display text-3xl font-bold text-gradient-gold mb-8">{selected.price}</p>
 
               <div className="mb-6">
-                <p className="text-sm font-semibold mb-3">Maat</p>
+                <p className="text-sm font-semibold mb-3">{t("product.size")}</p>
                 <div className="flex flex-wrap gap-2">
                   {selected.sizes.map((size) => (
                     <button
@@ -99,7 +101,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
               </div>
 
               <div className="mb-8">
-                <p className="text-sm font-semibold mb-3">Aantal</p>
+                <p className="text-sm font-semibold mb-3">{t("product.quantity")}</p>
                 <div className="flex items-center border border-border rounded w-fit">
                   <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="p-2 hover:bg-muted transition-colors">
                     <Minus className="h-4 w-4" />
@@ -121,14 +123,14 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 }`}
               >
                 <ShoppingBag className="h-4 w-4" />
-                {selectedSize ? "In Winkelmandje" : "Kies eerst een maat"}
+                {selectedSize ? t("product.addToCart") : t("product.pickSize")}
               </button>
 
               <div className="border-t border-border">
                 {[
-                  { key: "description", label: "Beschrijving", content: selected.description },
-                  { key: "shipping", label: "Verzending", content: "Wereldwijde verzending. Levertijd naar Europa is ongeveer 15 dagen. Gratis verzending bij bestellingen boven €75." },
-                  { key: "returns", label: "Retourneren", content: "Niet tevreden? Je kunt het shirt binnen 14 dagen retourneren in originele staat." },
+                  { key: "description", label: t("product.description"), content: selected.description },
+                  { key: "shipping", label: t("product.shipping"), content: t("product.shippingInfo") },
+                  { key: "returns", label: t("product.returns"), content: t("product.returnsInfo") },
                 ].map((item) => (
                   <div key={item.key} className="border-b border-border">
                     <button

@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { Plus, ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 
 export interface RowProduct {
@@ -21,6 +22,7 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
   const scrollRef = useRef<HTMLDivElement>(null);
   const { addItem } = useCart();
   const [added, setAdded] = useState<string | null>(null);
+  const { t } = useTranslation();
 
   const scroll = (dir: "left" | "right") => {
     scrollRef.current?.scrollBy({ left: dir === "left" ? -300 : 300, behavior: "smooth" });
@@ -41,30 +43,27 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
           <div className="flex items-center gap-2">
             {seeAllHref && (
               <Link to={seeAllHref} className="text-xs font-medium text-primary underline-offset-4 hover:underline mr-2">
-                Bekijk alles
+                {t("home.seeAll")}
               </Link>
             )}
             <button
               onClick={() => scroll("left")}
               className="hidden sm:flex h-9 w-9 items-center justify-center rounded-full border border-border/60 hover:border-primary/40 hover:text-primary transition-colors"
-              aria-label="Vorige"
+              aria-label={t("home.prev")}
             >
               <ChevronLeft className="h-4 w-4" />
             </button>
             <button
               onClick={() => scroll("right")}
               className="hidden sm:flex h-9 w-9 items-center justify-center rounded-full border border-border/60 hover:border-primary/40 hover:text-primary transition-colors"
-              aria-label="Volgende"
+              aria-label={t("home.next")}
             >
               <ChevronRight className="h-4 w-4" />
             </button>
           </div>
         </div>
 
-        <div
-          ref={scrollRef}
-          className="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory -mx-6 px-6 pb-2"
-        >
+        <div ref={scrollRef} className="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory -mx-6 px-6 pb-2">
           {products.map((p) => (
             <div
               key={p.name}
@@ -73,17 +72,12 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
             >
               <div className="relative overflow-hidden rounded-lg bg-card border border-border/50 transition-all duration-300 group-hover:border-primary/40">
                 <div className="aspect-[4/5] overflow-hidden">
-                  <img
-                    src={p.image}
-                    alt={p.name}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                  <img src={p.image} alt={p.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <button
                   onClick={(e) => handleAdd(e, p)}
                   className="absolute top-3 right-3 h-9 w-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-[var(--shadow-gold)] hover:scale-110 transition-transform"
-                  aria-label="Voeg toe aan winkelmandje"
+                  aria-label={t("home.addToCart")}
                 >
                   {added === p.name ? <Check className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
                 </button>

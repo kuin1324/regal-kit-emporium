@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Navbar from "@/components/Navbar";
 import HeroCarousel from "@/components/HeroCarousel";
 import SearchHero from "@/components/SearchHero";
@@ -11,6 +12,7 @@ import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal
 
 const Index = () => {
   const [selected, setSelected] = useState<string | null>(null);
+  const { t } = useTranslation();
 
   const recommendations = allProducts.slice(0, 6);
   const specials = allProducts.filter((p) => p.leagues.includes("Special"));
@@ -22,25 +24,10 @@ const Index = () => {
       <HeroCarousel />
       <SearchHero />
       <FeatureBanner />
-      <ProductRow
-        title="Aanbevolen"
-        products={recommendations}
-        seeAllHref="/collectie"
-        onProductClick={setSelected}
-      />
-      <ProductRow
-        title="Special Editions"
-        products={specials}
-        seeAllHref="/special-edition"
-        onProductClick={setSelected}
-      />
+      <ProductRow title={t("home.recommended")} products={recommendations} seeAllHref="/collectie" onProductClick={setSelected} />
+      <ProductRow title={t("home.specials")} products={specials} seeAllHref="/special-edition" onProductClick={setSelected} />
       <ShopByLeague />
-      <ProductRow
-        title="Nationale Teams"
-        products={national}
-        seeAllHref="/collectie"
-        onProductClick={setSelected}
-      />
+      <ProductRow title={t("home.national")} products={national} seeAllHref="/collectie" onProductClick={setSelected} />
       <ReviewsMarquee />
       <Footer />
       <ProductDetailModal productName={selected} onClose={() => setSelected(null)} />

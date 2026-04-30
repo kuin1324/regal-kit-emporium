@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -11,6 +12,7 @@ const Favorieten = () => {
   const { favorites, toggleFavorite } = useCart();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const favoriteProducts = allProducts.filter(p => favorites.has(p.name));
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen bg-background">
@@ -19,29 +21,20 @@ const Favorieten = () => {
         <div className="container mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-12">
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-3">❤️</p>
-            <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight">Favorieten</h1>
+            <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight">{t("favorites.title")}</h1>
           </motion.div>
 
           {favoriteProducts.length === 0 ? (
             <div className="text-center py-20">
               <Heart className="h-16 w-16 mx-auto mb-4 text-muted-foreground/30" />
-              <p className="text-muted-foreground mb-4">Je hebt nog geen favorieten</p>
-              <Link to="/collectie" className="text-primary text-sm hover:underline">Bekijk de collectie →</Link>
+              <p className="text-muted-foreground mb-4">{t("favorites.empty")}</p>
+              <Link to="/collectie" className="text-primary text-sm hover:underline">{t("favorites.browse")}</Link>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {favoriteProducts.map((product, i) => (
-                <motion.div
-                  key={product.name}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.08 }}
-                  className="group relative cursor-pointer"
-                >
-                  <button
-                    onClick={(e) => { e.stopPropagation(); toggleFavorite(product.name); }}
-                    className="absolute top-3 right-3 z-10 p-2 rounded-full bg-background/70 backdrop-blur-sm"
-                  >
+                <motion.div key={product.name} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }} className="group relative cursor-pointer">
+                  <button onClick={(e) => { e.stopPropagation(); toggleFavorite(product.name); }} className="absolute top-3 right-3 z-10 p-2 rounded-full bg-background/70 backdrop-blur-sm">
                     <Heart className="h-4 w-4 fill-red-500 text-red-500" />
                   </button>
                   <div onClick={() => setSelectedProduct(product.name)}>

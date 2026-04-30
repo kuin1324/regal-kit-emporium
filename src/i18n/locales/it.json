@@ -1,39 +1,92 @@
 {
   "nav": {
-    "collection": "Collezione",
-    "retro": "Retro",
-    "specialEdition": "Edizione Speciale",
-    "about": "Chi Siamo",
-    "favorites": "Preferiti",
-    "cart": "Carrello",
-    "login": "Accedi",
-    "logout": "Esci",
-    "account": "Account"
+    "collection": "Collezione", "retro": "Retro", "specialEdition": "Edizione Speciale",
+    "about": "Chi Siamo", "favorites": "Preferiti", "cart": "Carrello",
+    "login": "Accedi", "logout": "Esci", "account": "Account"
   },
-  "search": { "placeholder": "Cerca una maglia, squadra o lega..." },
+  "search": {
+    "placeholder": "Cerca una maglia, squadra o lega...",
+    "placeholderShort": "Cerca per nome o squadra..."
+  },
   "home": {
-    "recommended": "Consigliati",
-    "specials": "Edizioni Speciali",
-    "national": "Nazionali",
-    "shopByLeague": "Acquista per lega"
+    "tagline": "The Home of Football Style",
+    "recommended": "Consigliati", "specials": "Edizioni Speciali", "national": "Nazionali",
+    "shopByLeague": "Acquista per lega", "seeAll": "Vedi tutto", "prev": "Precedente", "next": "Successivo",
+    "addToCart": "Aggiungi al carrello",
+    "slides": {
+      "specialTitle": "Edizioni Speciali",
+      "specialSubtitle": "Maglie di lusso, fatte per distinguersi.",
+      "specialCta": "Edizione Speciale",
+      "nationalTitle": "Orgoglio Nazionale",
+      "nationalSubtitle": "Indossa i colori del tuo paese — qualità premium.",
+      "nationalCta": "Vedi Nazionali",
+      "italyTitle": "Italia x Versace",
+      "italySubtitle": "Design italiano, icona mondiale.",
+      "italyCta": "Acquista"
+    },
+    "features": {
+      "qualityTitle": "Qualità Premium", "qualityDesc": "Selezionato e conservato con cura",
+      "shippingTitle": "Spedizione Mondiale", "shippingDesc": "Imballato in sicurezza e assicurato"
+    },
+    "reviewsTitle": "Cosa dicono i nostri", "reviewsTitleAccent": "clienti"
+  },
+  "leagues": {
+    "all": "Tutte", "eredivisie": "Eredivisie", "serieA": "Serie A", "laLiga": "La Liga",
+    "ligue1": "Ligue 1", "national": "Nazionale", "special": "Speciale"
+  },
+  "collection": {
+    "eyebrow": "Le Nostre Maglie", "title": "Collezione Completa",
+    "uploadCta": "Carica una foto per confrontare", "photoLoaded": "Foto caricata — vedi sotto",
+    "edit": "Modifica", "removePhoto": "Rimuovi foto", "yourPhoto": "La tua foto", "close": "Chiudi",
+    "allColors": "Tutti i colori", "allTeams": "Tutte le squadre", "noResults": "Nessuna maglia trovata.",
+    "colors": {
+      "zwart": "nero", "wit": "bianco", "blauw": "blu", "rood": "rosso",
+      "goud": "oro", "groen": "verde", "oranje": "arancione"
+    }
+  },
+  "retro": {
+    "eyebrow": "Indietro nel tempo", "title": "Collezione Retro",
+    "subtitle": "Rivivi i momenti più belli della storia del calcio con le nostre maglie retro."
+  },
+  "special": {
+    "eyebrow": "Esclusivo", "title": "Edizione Speciale",
+    "subtitle": "Scopri le nostre maglie edizione speciale — uniche ed eleganti."
+  },
+  "favorites": {
+    "title": "Preferiti", "empty": "Non hai ancora preferiti", "browse": "Vedi la collezione →"
+  },
+  "about": {
+    "eyebrow": "Chi Siamo", "title": "La Passione Dietro",
+    "p1": "Siamo un team di appassionati di calcio con la passione per le maglie iconiche. Ogni maglia è selezionata con cura per qualità e stile.",
+    "p2": "Dalle leggendarie maglie dei Mondiali ai kit di club rari — portiamo la più bella storia del calcio nel tuo guardaroba.",
+    "p3Before": "Ogni ordine è imballato in sicurezza e spedito in tutto il mondo. Consegna in Europa in circa 15 giorni. Domande? Contattaci a ",
+    "p3After": " — siamo qui per aiutarti."
+  },
+  "product": {
+    "size": "Taglia", "quantity": "Quantità", "addToCart": "Aggiungi al carrello",
+    "pickSize": "Scegli prima una taglia",
+    "description": "Descrizione", "shipping": "Spedizione",
+    "shippingInfo": "Spedizione mondiale. Consegna in Europa in circa 15 giorni.",
+    "returns": "Resi",
+    "returnsInfo": "Non sei soddisfatto? Puoi restituire la maglia entro 14 giorni nelle condizioni originali."
+  },
+  "cart": {
+    "title": "Carrello", "empty": "Il tuo carrello è vuoto", "size": "Taglia", "total": "Totale",
+    "checkout": "Ordina via WhatsApp", "clear": "Svuota carrello",
+    "orderGreeting": "Ciao, vorrei ordinare:", "orderTotal": "Totale"
+  },
+  "footer": {
+    "tagline": "La destinazione definitiva per maglie da calcio rare e iconiche.",
+    "shop": "Shop", "info": "Info", "follow": "Seguici",
+    "rights": "© 2026 The Home of Football Style. Tutti i diritti riservati."
   },
   "auth": {
-    "signIn": "Accedi",
-    "signUp": "Crea account",
-    "email": "E-mail",
-    "password": "Password",
-    "displayName": "Nome (opzionale)",
-    "submitSignIn": "Accedi",
-    "submitSignUp": "Crea account",
-    "noAccount": "Non hai un account?",
-    "hasAccount": "Hai già un account?",
-    "continueWith": "O continua con",
-    "google": "Continua con Google",
-    "apple": "Continua con Apple",
-    "loggedIn": "Sei connesso",
-    "loggedOut": "Disconnesso",
-    "checkEmail": "Conferma la tua e-mail per continuare",
-    "errorTitle": "Qualcosa è andato storto"
+    "signIn": "Accedi", "signUp": "Crea account", "email": "E-mail", "password": "Password",
+    "displayName": "Nome (opzionale)", "submitSignIn": "Accedi", "submitSignUp": "Crea account",
+    "noAccount": "Non hai un account?", "hasAccount": "Hai già un account?",
+    "continueWith": "O continua con", "google": "Continua con Google", "apple": "Continua con Apple",
+    "loggedIn": "Sei connesso", "loggedOut": "Disconnesso",
+    "checkEmail": "Conferma la tua e-mail per continuare", "errorTitle": "Qualcosa è andato storto"
   },
   "common": { "language": "Lingua", "loading": "Caricamento..." }
 }

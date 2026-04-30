@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
 import { Award, Truck } from "lucide-react";
-
-const features = [
-  { icon: Award, title: "Premium Kwaliteit", desc: "Zorgvuldig geselecteerd & bewaard" },
-  { icon: Truck, title: "Wereldwijde Verzending", desc: "Veilig verpakt & verzekerd" },
-];
+import { useTranslation } from "react-i18next";
 
 const FeatureBanner = () => {
+  const { t } = useTranslation();
+  const features = [
+    { icon: Award, title: t("home.features.qualityTitle"), desc: t("home.features.qualityDesc") },
+    { icon: Truck, title: t("home.features.shippingTitle"), desc: t("home.features.shippingDesc") },
+  ];
+
   return (
     <section className="border-y border-border bg-card/50 py-16">
       <div className="container mx-auto px-6">

@@ -1,10 +1,12 @@
 import { Search } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const SearchHero = () => {
   const [q, setQ] = useState("");
   const nav = useNavigate();
+  const { t } = useTranslation();
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,7 +22,7 @@ const SearchHero = () => {
             value={q}
             onChange={(e) => setQ(e.target.value)}
             type="text"
-            placeholder="Zoek een shirt, team of league..."
+            placeholder={t("search.placeholder")}
             className="w-full pl-12 pr-4 py-4 rounded-full border border-border/60 bg-card text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors"
           />
         </form>

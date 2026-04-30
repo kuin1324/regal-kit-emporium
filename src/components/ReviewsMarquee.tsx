@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import { useRef, useEffect, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 
 const reviews = [
   { name: "Jayden", text: "Super snelle levering en top kwaliteit shirt!", rating: 5 },

@@ -5,8 +5,10 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { CartProvider } from "@/context/CartContext";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { AuthProvider } from "@/context/AuthContext";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index.tsx";
+import Auth from "./pages/Auth.tsx";
 import OverOns from "./pages/OverOns.tsx";
 import Collectie from "./pages/Collectie.tsx";
 import Retro from "./pages/Retro.tsx";
@@ -19,6 +21,7 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider>
+    <AuthProvider>
     <TooltipProvider>
       <CartProvider>
         <Toaster />
@@ -32,12 +35,14 @@ const App = () => (
             <Route path="/retro" element={<Retro />} />
             <Route path="/special-edition" element={<SpecialEdition />} />
             <Route path="/favorieten" element={<Favorieten />} />
+            <Route path="/auth" element={<Auth />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>
     </TooltipProvider>
+    </AuthProvider>
     </ThemeProvider>
   </QueryClientProvider>
 );

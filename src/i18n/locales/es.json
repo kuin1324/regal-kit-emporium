@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "collection": "Colección",
+    "retro": "Retro",
+    "specialEdition": "Edición Especial",
+    "about": "Sobre Nosotros",
+    "favorites": "Favoritos",
+    "cart": "Carrito",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "account": "Cuenta"
+  },
+  "search": { "placeholder": "Busca una camiseta, equipo o liga..." },
+  "home": {
+    "recommended": "Recomendado",
+    "specials": "Ediciones Especiales",
+    "national": "Selecciones Nacionales",
+    "shopByLeague": "Compra por liga"
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "signUp": "Crear cuenta",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "displayName": "Nombre (opcional)",
+    "submitSignIn": "Iniciar sesión",
+    "submitSignUp": "Crear cuenta",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "continueWith": "O continúa con",
+    "google": "Continuar con Google",
+    "apple": "Continuar con Apple",
+    "loggedIn": "Has iniciado sesión",
+    "loggedOut": "Has cerrado sesión",
+    "checkEmail": "Confirma tu correo para continuar",
+    "errorTitle": "Algo salió mal"
+  },
+  "common": { "language": "Idioma", "loading": "Cargando..." }
+}

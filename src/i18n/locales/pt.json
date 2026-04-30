@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "collection": "Coleção",
+    "retro": "Retro",
+    "specialEdition": "Edição Especial",
+    "about": "Sobre Nós",
+    "favorites": "Favoritos",
+    "cart": "Carrinho",
+    "login": "Entrar",
+    "logout": "Sair",
+    "account": "Conta"
+  },
+  "search": { "placeholder": "Procura uma camisola, equipa ou liga..." },
+  "home": {
+    "recommended": "Recomendado",
+    "specials": "Edições Especiais",
+    "national": "Seleções Nacionais",
+    "shopByLeague": "Comprar por liga"
+  },
+  "auth": {
+    "signIn": "Entrar",
+    "signUp": "Criar conta",
+    "email": "E-mail",
+    "password": "Palavra-passe",
+    "displayName": "Nome (opcional)",
+    "submitSignIn": "Entrar",
+    "submitSignUp": "Criar conta",
+    "noAccount": "Ainda não tens conta?",
+    "hasAccount": "Já tens conta?",
+    "continueWith": "Ou continua com",
+    "google": "Continuar com Google",
+    "apple": "Continuar com Apple",
+    "loggedIn": "Sessão iniciada",
+    "loggedOut": "Sessão terminada",
+    "checkEmail": "Confirma o teu e-mail para continuar",
+    "errorTitle": "Algo correu mal"
+  },
+  "common": { "language": "Idioma", "loading": "A carregar..." }
+}

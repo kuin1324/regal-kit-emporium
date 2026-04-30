@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "collection": "Kollektion",
+    "retro": "Retro",
+    "specialEdition": "Special Edition",
+    "about": "Über Uns",
+    "favorites": "Favoriten",
+    "cart": "Warenkorb",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "account": "Konto"
+  },
+  "search": { "placeholder": "Trikot, Team oder Liga suchen..." },
+  "home": {
+    "recommended": "Empfohlen",
+    "specials": "Special Editions",
+    "national": "Nationalmannschaften",
+    "shopByLeague": "Nach Liga shoppen"
+  },
+  "auth": {
+    "signIn": "Anmelden",
+    "signUp": "Konto erstellen",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "displayName": "Name (optional)",
+    "submitSignIn": "Anmelden",
+    "submitSignUp": "Konto erstellen",
+    "noAccount": "Noch kein Konto?",
+    "hasAccount": "Schon ein Konto?",
+    "continueWith": "Oder weiter mit",
+    "google": "Mit Google fortfahren",
+    "apple": "Mit Apple fortfahren",
+    "loggedIn": "Du bist angemeldet",
+    "loggedOut": "Du bist abgemeldet",
+    "checkEmail": "Bestätige deine E-Mail um fortzufahren",
+    "errorTitle": "Etwas ist schiefgelaufen"
+  },
+  "common": { "language": "Sprache", "loading": "Laden..." }
+}

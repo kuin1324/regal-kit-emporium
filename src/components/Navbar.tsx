@@ -1,23 +1,36 @@
-import { ShoppingBag, Menu, X, Heart } from "lucide-react";
+import { ShoppingBag, Menu, X, Heart, User, LogOut } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
+import { useAuth } from "@/context/AuthContext";
 import CartDrawer from "./CartDrawer";
 import ThemeToggle from "./ThemeToggle";
-
-const navItems = [
-  { label: "Collectie", path: "/collectie" },
-  { label: "Retro", path: "/retro" },
-  { label: "Special Edition", path: "/special-edition" },
-  { label: "Over Ons", path: "/over-ons" },
-];
+import LanguageSwitcher from "./LanguageSwitcher";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuSeparator,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const { count, favorites } = useCart();
+  const { user, signOut } = useAuth();
+  const { t } = useTranslation();
+
+  const navItems = [
+    { label: t("nav.collection"), path: "/collectie" },
+    { label: t("nav.retro"), path: "/retro" },
+    { label: t("nav.specialEdition"), path: "/special-edition" },
+    { label: t("nav.about"), path: "/over-ons" },
+  ];
 
   return (
     <>
@@ -30,12 +43,10 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
-                key={item.label}
+                key={item.path}
                 to={item.path}
                 className={`text-sm font-medium tracking-wide transition-colors duration-300 uppercase ${
-                  location.pathname === item.path
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-primary"
+                  location.pathname === item.path ? "text-primary" : "text-muted-foreground hover:text-primary"
                 }`}
               >
                 {item.label}
@@ -43,9 +54,10 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
+            <LanguageSwitcher />
             <ThemeToggle />
-            <Link to="/favorieten" className="relative text-foreground hover:text-primary transition-colors">
+            <Link to="/favorieten" className="relative text-foreground hover:text-primary transition-colors" aria-label={t("nav.favorites")}>
               <Heart className={`h-5 w-5 ${favorites.size > 0 ? "fill-red-500 text-red-500" : ""}`} />
               {favorites.size > 0 && (
                 <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-red-500 text-white text-[10px] flex items-center justify-center font-bold">
@@ -53,7 +65,7 @@ const Navbar = () => {
                 </span>
               )}
             </Link>
-            <button onClick={() => setCartOpen(true)} className="relative text-foreground hover:text-primary transition-colors">
+            <button onClick={() => setCartOpen(true)} className="relative text-foreground hover:text-primary transition-colors" aria-label={t("nav.cart")}>
               <ShoppingBag className="h-5 w-5" />
               {count > 0 && (
                 <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-primary text-primary-foreground text-[10px] flex items-center justify-center font-bold">
@@ -61,6 +73,33 @@ const Navbar = () => {
                 </span>
               )}
             </button>
+
+            {user ? (
+              <DropdownMenu>
+                <DropdownMenuTrigger className="text-foreground hover:text-primary transition-colors" aria-label={t("nav.account")}>
+                  <User className="h-5 w-5" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="bg-popover">
+                  <DropdownMenuItem disabled className="text-xs text-muted-foreground">
+                    {user.email}
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem onClick={() => signOut()}>
+                    <LogOut className="h-4 w-4 mr-2" />
+                    {t("nav.logout")}
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
+              <button
+                onClick={() => navigate("/auth")}
+                className="text-foreground hover:text-primary transition-colors"
+                aria-label={t("nav.login")}
+              >
+                <User className="h-5 w-5" />
+              </button>
+            )}
+
             <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
               {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -78,18 +117,25 @@ const Navbar = () => {
               <div className="flex flex-col gap-4 p-6">
                 {navItems.map((item) => (
                   <Link
-                    key={item.label}
+                    key={item.path}
                     to={item.path}
                     onClick={() => setMobileOpen(false)}
                     className={`text-sm font-medium tracking-wide transition-colors uppercase ${
-                      location.pathname === item.path
-                        ? "text-primary"
-                        : "text-muted-foreground hover:text-primary"
+                      location.pathname === item.path ? "text-primary" : "text-muted-foreground hover:text-primary"
                     }`}
                   >
                     {item.label}
                   </Link>
                 ))}
+                {!user && (
+                  <Link
+                    to="/auth"
+                    onClick={() => setMobileOpen(false)}
+                    className="text-sm font-medium tracking-wide uppercase text-primary"
+                  >
+                    {t("nav.login")}
+                  </Link>
+                )}
               </div>
             </motion.div>
           )}

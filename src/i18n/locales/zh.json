@@ -1,39 +1,92 @@
 {
   "nav": {
-    "collection": "系列",
-    "retro": "复古",
-    "specialEdition": "特别版",
-    "about": "关于我们",
-    "favorites": "收藏",
-    "cart": "购物车",
-    "login": "登录",
-    "logout": "退出",
-    "account": "账户"
+    "collection": "系列", "retro": "复古", "specialEdition": "特别版",
+    "about": "关于我们", "favorites": "收藏", "cart": "购物车",
+    "login": "登录", "logout": "退出", "account": "账户"
   },
-  "search": { "placeholder": "搜索球衣、球队或联赛..." },
+  "search": {
+    "placeholder": "搜索球衣、球队或联赛...",
+    "placeholderShort": "按名称或球队搜索..."
+  },
   "home": {
-    "recommended": "推荐",
-    "specials": "特别版",
-    "national": "国家队",
-    "shopByLeague": "按联赛购买"
+    "tagline": "The Home of Football Style",
+    "recommended": "推荐", "specials": "特别版", "national": "国家队",
+    "shopByLeague": "按联赛购买", "seeAll": "查看全部", "prev": "上一个", "next": "下一个",
+    "addToCart": "加入购物车",
+    "slides": {
+      "specialTitle": "特别版",
+      "specialSubtitle": "奢华球衣，为脱颖而出而生。",
+      "specialCta": "特别版",
+      "nationalTitle": "民族骄傲",
+      "nationalSubtitle": "穿上你国家的颜色——优质品质。",
+      "nationalCta": "查看国家队",
+      "italyTitle": "意大利 x Versace",
+      "italySubtitle": "意大利设计，全球偶像。",
+      "italyCta": "立即购买"
+    },
+    "features": {
+      "qualityTitle": "优质品质", "qualityDesc": "精心挑选并保存",
+      "shippingTitle": "全球配送", "shippingDesc": "安全包装并保险"
+    },
+    "reviewsTitle": "我们的客户", "reviewsTitleAccent": "评价"
+  },
+  "leagues": {
+    "all": "全部", "eredivisie": "荷甲", "serieA": "意甲", "laLiga": "西甲",
+    "ligue1": "法甲", "national": "国家队", "special": "特别版"
+  },
+  "collection": {
+    "eyebrow": "我们的球衣", "title": "全部系列",
+    "uploadCta": "上传照片进行比较", "photoLoaded": "照片已加载——见下方",
+    "edit": "更改", "removePhoto": "删除照片", "yourPhoto": "你的照片", "close": "关闭",
+    "allColors": "所有颜色", "allTeams": "所有球队", "noResults": "未找到球衣。",
+    "colors": {
+      "zwart": "黑色", "wit": "白色", "blauw": "蓝色", "rood": "红色",
+      "goud": "金色", "groen": "绿色", "oranje": "橙色"
+    }
+  },
+  "retro": {
+    "eyebrow": "回到过去", "title": "复古系列",
+    "subtitle": "用我们的复古球衣重温足球历史最美好的时刻。"
+  },
+  "special": {
+    "eyebrow": "独家", "title": "特别版",
+    "subtitle": "探索我们的独家特别版球衣——独一无二，时尚优雅。"
+  },
+  "favorites": {
+    "title": "收藏", "empty": "你还没有收藏", "browse": "查看系列 →"
+  },
+  "about": {
+    "eyebrow": "关于我们", "title": "背后的热情",
+    "p1": "我们是一群热爱足球、热爱标志性球衣的团队。每一件球衣都经过精心挑选，注重品质与风格。",
+    "p2": "从传奇世界杯球衣到稀有俱乐部球衣——我们将最美好的足球历史带入你的衣柜。",
+    "p3Before": "每个订单都安全包装并发往全球。运往欧洲约需15天。有问题吗？请通过 ",
+    "p3After": " 联系我们——我们很乐意帮助。"
+  },
+  "product": {
+    "size": "尺码", "quantity": "数量", "addToCart": "加入购物车",
+    "pickSize": "请先选择尺码",
+    "description": "描述", "shipping": "配送",
+    "shippingInfo": "全球配送。欧洲送达约需15天。",
+    "returns": "退货",
+    "returnsInfo": "不满意？可在14天内以原状退货。"
+  },
+  "cart": {
+    "title": "购物车", "empty": "你的购物车是空的", "size": "尺码", "total": "总计",
+    "checkout": "通过 WhatsApp 下单", "clear": "清空购物车",
+    "orderGreeting": "你好，我想下单：", "orderTotal": "总计"
+  },
+  "footer": {
+    "tagline": "稀有和标志性足球球衣的终极目的地。",
+    "shop": "商店", "info": "信息", "follow": "关注我们",
+    "rights": "© 2026 The Home of Football Style. 版权所有。"
   },
   "auth": {
-    "signIn": "登录",
-    "signUp": "创建账户",
-    "email": "电子邮箱",
-    "password": "密码",
-    "displayName": "名字（可选）",
-    "submitSignIn": "登录",
-    "submitSignUp": "创建账户",
-    "noAccount": "还没有账户？",
-    "hasAccount": "已有账户？",
-    "continueWith": "或使用以下方式继续",
-    "google": "使用 Google 继续",
-    "apple": "使用 Apple 继续",
-    "loggedIn": "您已登录",
-    "loggedOut": "您已退出",
-    "checkEmail": "请确认您的邮箱以继续",
-    "errorTitle": "出错了"
+    "signIn": "登录", "signUp": "创建账户", "email": "电子邮箱", "password": "密码",
+    "displayName": "名字（可选）", "submitSignIn": "登录", "submitSignUp": "创建账户",
+    "noAccount": "还没有账户？", "hasAccount": "已有账户？",
+    "continueWith": "或使用以下方式继续", "google": "使用 Google 继续", "apple": "使用 Apple 继续",
+    "loggedIn": "您已登录", "loggedOut": "您已退出",
+    "checkEmail": "请确认您的邮箱以继续", "errorTitle": "出错了"
   },
   "common": { "language": "语言", "loading": "加载中..." }
 }

@@ -1,39 +1,91 @@
 {
   "nav": {
-    "collection": "Collection",
-    "retro": "Retro",
-    "specialEdition": "Special Edition",
-    "about": "About Us",
-    "favorites": "Favorites",
-    "cart": "Cart",
-    "login": "Sign in",
-    "logout": "Sign out",
-    "account": "Account"
+    "collection": "Collection", "retro": "Retro", "specialEdition": "Special Edition",
+    "about": "About Us", "favorites": "Favorites", "cart": "Cart",
+    "login": "Sign in", "logout": "Sign out", "account": "Account"
   },
-  "search": { "placeholder": "Search a shirt, team or league..." },
+  "search": {
+    "placeholder": "Search a shirt, team or league...",
+    "placeholderShort": "Search by name or team..."
+  },
   "home": {
-    "recommended": "Recommended",
-    "specials": "Special Editions",
-    "national": "National Teams",
-    "shopByLeague": "Shop by league"
+    "tagline": "The Home of Football Style",
+    "recommended": "Recommended", "specials": "Special Editions", "national": "National Teams",
+    "shopByLeague": "Shop by league", "seeAll": "View all", "prev": "Previous", "next": "Next",
+    "addToCart": "Add to cart",
+    "slides": {
+      "specialTitle": "Special Editions",
+      "specialSubtitle": "Luxury shirts, made to stand out.",
+      "specialCta": "Special Edition",
+      "nationalTitle": "National Pride",
+      "nationalSubtitle": "Wear your country's colors — premium quality.",
+      "nationalCta": "Shop National",
+      "italyTitle": "Italy x Versace",
+      "italySubtitle": "Italian design, global icon.",
+      "italyCta": "Shop Now"
+    },
+    "features": {
+      "qualityTitle": "Premium Quality", "qualityDesc": "Carefully selected & preserved",
+      "shippingTitle": "Worldwide Shipping", "shippingDesc": "Safely packed & insured"
+    },
+    "reviewsTitle": "What our customers", "reviewsTitleAccent": "say"
+  },
+  "leagues": {
+    "all": "All", "eredivisie": "Eredivisie", "serieA": "Serie A", "laLiga": "La Liga",
+    "ligue1": "Ligue 1", "national": "National", "special": "Special"
+  },
+  "collection": {
+    "eyebrow": "Our Shirts", "title": "Full Collection",
+    "uploadCta": "Upload a photo to compare", "photoLoaded": "Photo loaded — see below",
+    "edit": "Change", "removePhoto": "Remove photo", "yourPhoto": "Your photo", "close": "Close",
+    "allColors": "All colors", "allTeams": "All teams", "noResults": "No shirts found.",
+    "colors": {
+      "zwart": "black", "wit": "white", "blauw": "blue", "rood": "red",
+      "goud": "gold", "groen": "green", "oranje": "orange"
+    }
+  },
+  "retro": {
+    "eyebrow": "Back in time", "title": "Retro Collection",
+    "subtitle": "Relive the greatest moments of football history with our retro shirts."
+  },
+  "special": {
+    "eyebrow": "Exclusive", "title": "Special Edition",
+    "subtitle": "Discover our exclusive special edition shirts — unique and stylish."
+  },
+  "favorites": {
+    "title": "Favorites", "empty": "You don't have any favorites yet", "browse": "Browse the collection →"
+  },
+  "about": {
+    "eyebrow": "About Us", "title": "The Passion Behind",
+    "p1": "We are a team of football lovers passionate about iconic shirts. Every shirt in our collection is carefully selected for quality and style.",
+    "p2": "From legendary World Cup shirts to rare club kits — we bring the finest football history to your wardrobe. Our mission is simple: preserve and share football heritage through premium quality shirts.",
+    "p3Before": "Every order is securely packed and shipped worldwide. Shipping to Europe takes around 15 days. Got questions? Reach out via ",
+    "p3After": " — we're happy to help."
+  },
+  "product": {
+    "size": "Size", "quantity": "Quantity", "addToCart": "Add to cart", "pickSize": "Pick a size first",
+    "description": "Description", "shipping": "Shipping",
+    "shippingInfo": "Worldwide shipping. Delivery to Europe takes around 15 days.",
+    "returns": "Returns",
+    "returnsInfo": "Not satisfied? You can return the shirt within 14 days in its original condition."
+  },
+  "cart": {
+    "title": "Cart", "empty": "Your cart is empty", "size": "Size", "total": "Total",
+    "checkout": "Order via WhatsApp", "clear": "Empty cart",
+    "orderGreeting": "Hello, I would like to order:", "orderTotal": "Total"
+  },
+  "footer": {
+    "tagline": "The ultimate destination for rare and iconic football shirts.",
+    "shop": "Shop", "info": "Info", "follow": "Follow Us",
+    "rights": "© 2026 The Home of Football Style. All rights reserved."
   },
   "auth": {
-    "signIn": "Sign in",
-    "signUp": "Create account",
-    "email": "Email",
-    "password": "Password",
-    "displayName": "Name (optional)",
-    "submitSignIn": "Sign in",
-    "submitSignUp": "Create account",
-    "noAccount": "No account yet?",
-    "hasAccount": "Already have an account?",
-    "continueWith": "Or continue with",
-    "google": "Continue with Google",
-    "apple": "Continue with Apple",
-    "loggedIn": "You are signed in",
-    "loggedOut": "You are signed out",
-    "checkEmail": "Confirm your email to continue",
-    "errorTitle": "Something went wrong"
+    "signIn": "Sign in", "signUp": "Create account", "email": "Email", "password": "Password",
+    "displayName": "Name (optional)", "submitSignIn": "Sign in", "submitSignUp": "Create account",
+    "noAccount": "No account yet?", "hasAccount": "Already have an account?",
+    "continueWith": "Or continue with", "google": "Continue with Google", "apple": "Continue with Apple",
+    "loggedIn": "You are signed in", "loggedOut": "You are signed out",
+    "checkEmail": "Confirm your email to continue", "errorTitle": "Something went wrong"
   },
   "common": { "language": "Language", "loading": "Loading..." }
 }

@@ -11,13 +11,120 @@
     "account": "Account"
   },
   "search": {
-    "placeholder": "Zoek een shirt, team of league..."
+    "placeholder": "Zoek een shirt, team of league...",
+    "placeholderShort": "Zoek op naam of team..."
   },
   "home": {
+    "tagline": "The Home of Football Style",
     "recommended": "Aanbevolen",
     "specials": "Special Editions",
     "national": "Nationale Teams",
-    "shopByLeague": "Shop by league"
+    "shopByLeague": "Shop by league",
+    "seeAll": "Bekijk alles",
+    "prev": "Vorige",
+    "next": "Volgende",
+    "addToCart": "Voeg toe aan winkelmandje",
+    "slides": {
+      "specialTitle": "Special Editions",
+      "specialSubtitle": "Luxe shirts, gemaakt om op te vallen.",
+      "specialCta": "Special Edition",
+      "nationalTitle": "Nationale Trots",
+      "nationalSubtitle": "Draag de kleuren van je land — premium kwaliteit.",
+      "nationalCta": "Bekijk Nationaal",
+      "italyTitle": "Italië x Versace",
+      "italySubtitle": "Italiaans design, wereldwijd icoon.",
+      "italyCta": "Shop Now"
+    },
+    "features": {
+      "qualityTitle": "Premium Kwaliteit",
+      "qualityDesc": "Zorgvuldig geselecteerd & bewaard",
+      "shippingTitle": "Wereldwijde Verzending",
+      "shippingDesc": "Veilig verpakt & verzekerd"
+    },
+    "reviewsTitle": "Wat onze klanten",
+    "reviewsTitleAccent": "zeggen"
+  },
+  "leagues": {
+    "all": "Alle",
+    "eredivisie": "Eredivisie",
+    "serieA": "Serie A",
+    "laLiga": "La Liga",
+    "ligue1": "Ligue 1",
+    "national": "Nationaal",
+    "special": "Special"
+  },
+  "collection": {
+    "eyebrow": "Onze Shirts",
+    "title": "Hele Collectie",
+    "uploadCta": "Upload een foto om te vergelijken",
+    "photoLoaded": "Foto geladen — zie hieronder",
+    "edit": "Wijzig",
+    "removePhoto": "Verwijder foto",
+    "yourPhoto": "Jouw foto",
+    "close": "Sluiten",
+    "allColors": "Alle kleuren",
+    "allTeams": "Alle teams",
+    "noResults": "Geen shirts gevonden.",
+    "colors": {
+      "zwart": "zwart",
+      "wit": "wit",
+      "blauw": "blauw",
+      "rood": "rood",
+      "goud": "goud",
+      "groen": "groen",
+      "oranje": "oranje"
+    }
+  },
+  "retro": {
+    "eyebrow": "Terug in de tijd",
+    "title": "Retro Collectie",
+    "subtitle": "Herbeleef de mooiste momenten uit de voetbalgeschiedenis met onze retro shirts."
+  },
+  "special": {
+    "eyebrow": "Exclusief",
+    "title": "Special Edition",
+    "subtitle": "Ontdek onze exclusieve special edition shirts — uniek en stijlvol."
+  },
+  "favorites": {
+    "title": "Favorieten",
+    "empty": "Je hebt nog geen favorieten",
+    "browse": "Bekijk de collectie →"
+  },
+  "about": {
+    "eyebrow": "Over Ons",
+    "title": "De Passie Achter",
+    "p1": "Wij zijn een team van voetballiefhebbers met een passie voor iconische shirts. Elk shirt in onze collectie is zorgvuldig geselecteerd op kwaliteit en stijl.",
+    "p2": "Van legendarische WK-shirts tot zeldzame clubshirts — wij brengen de mooiste voetbalgeschiedenis naar jouw garderobe. Onze missie is simpel: het bewaren en delen van voetbalerfgoed door middel van premium kwaliteit shirts.",
+    "p3Before": "Elke aankoop wordt veilig verpakt en wereldwijd verzonden. Verzending naar Europa duurt ongeveer 15 dagen. Heb je vragen? Neem gerust contact met ons op via ",
+    "p3After": " — wij helpen je graag."
+  },
+  "product": {
+    "size": "Maat",
+    "quantity": "Aantal",
+    "addToCart": "In Winkelmandje",
+    "pickSize": "Kies eerst een maat",
+    "description": "Beschrijving",
+    "shipping": "Verzending",
+    "shippingInfo": "Wereldwijde verzending. Levertijd naar Europa is ongeveer 15 dagen.",
+    "returns": "Retourneren",
+    "returnsInfo": "Niet tevreden? Je kunt het shirt binnen 14 dagen retourneren in originele staat."
+  },
+  "cart": {
+    "title": "Winkelmandje",
+    "empty": "Je winkelmandje is leeg",
+    "size": "Maat",
+    "total": "Totaal",
+    "checkout": "Bestellen via WhatsApp",
+    "clear": "Winkelmandje legen",
+    "orderGreeting": "Hallo, ik wil graag bestellen:",
+    "orderTotal": "Totaal"
+  },
+  "footer": {
+    "tagline": "De ultieme bestemming voor zeldzame en iconische voetbalshirts.",
+    "shop": "Shop",
+    "info": "Info",
+    "follow": "Volg Ons",
+    "rights": "© 2026 The Home of Football Style. Alle rechten voorbehouden."
   },
   "auth": {
     "signIn": "Inloggen",
@@ -37,8 +144,5 @@
     "checkEmail": "Bevestig je e-mailadres om door te gaan",
     "errorTitle": "Er ging iets mis"
   },
-  "common": {
-    "language": "Taal",
-    "loading": "Laden..."
-  }
+  "common": { "language": "Taal", "loading": "Laden..." }
 }

@@ -1,39 +1,92 @@
 {
   "nav": {
-    "collection": "Kollektion",
-    "retro": "Retro",
-    "specialEdition": "Special Edition",
-    "about": "Über Uns",
-    "favorites": "Favoriten",
-    "cart": "Warenkorb",
-    "login": "Anmelden",
-    "logout": "Abmelden",
-    "account": "Konto"
+    "collection": "Kollektion", "retro": "Retro", "specialEdition": "Special Edition",
+    "about": "Über Uns", "favorites": "Favoriten", "cart": "Warenkorb",
+    "login": "Anmelden", "logout": "Abmelden", "account": "Konto"
   },
-  "search": { "placeholder": "Trikot, Team oder Liga suchen..." },
+  "search": {
+    "placeholder": "Trikot, Team oder Liga suchen...",
+    "placeholderShort": "Nach Name oder Team suchen..."
+  },
   "home": {
-    "recommended": "Empfohlen",
-    "specials": "Special Editions",
-    "national": "Nationalmannschaften",
-    "shopByLeague": "Nach Liga shoppen"
+    "tagline": "The Home of Football Style",
+    "recommended": "Empfohlen", "specials": "Special Editions", "national": "Nationalmannschaften",
+    "shopByLeague": "Nach Liga shoppen", "seeAll": "Alle ansehen", "prev": "Zurück", "next": "Weiter",
+    "addToCart": "In den Warenkorb",
+    "slides": {
+      "specialTitle": "Special Editions",
+      "specialSubtitle": "Luxus-Trikots, gemacht um aufzufallen.",
+      "specialCta": "Special Edition",
+      "nationalTitle": "Nationaler Stolz",
+      "nationalSubtitle": "Trage die Farben deines Landes — Premium-Qualität.",
+      "nationalCta": "National ansehen",
+      "italyTitle": "Italien x Versace",
+      "italySubtitle": "Italienisches Design, weltweite Ikone.",
+      "italyCta": "Jetzt shoppen"
+    },
+    "features": {
+      "qualityTitle": "Premium Qualität", "qualityDesc": "Sorgfältig ausgewählt & bewahrt",
+      "shippingTitle": "Weltweiter Versand", "shippingDesc": "Sicher verpackt & versichert"
+    },
+    "reviewsTitle": "Was unsere Kunden", "reviewsTitleAccent": "sagen"
+  },
+  "leagues": {
+    "all": "Alle", "eredivisie": "Eredivisie", "serieA": "Serie A", "laLiga": "La Liga",
+    "ligue1": "Ligue 1", "national": "National", "special": "Special"
+  },
+  "collection": {
+    "eyebrow": "Unsere Trikots", "title": "Ganze Kollektion",
+    "uploadCta": "Lade ein Foto zum Vergleichen hoch", "photoLoaded": "Foto geladen — siehe unten",
+    "edit": "Ändern", "removePhoto": "Foto entfernen", "yourPhoto": "Dein Foto", "close": "Schließen",
+    "allColors": "Alle Farben", "allTeams": "Alle Teams", "noResults": "Keine Trikots gefunden.",
+    "colors": {
+      "zwart": "schwarz", "wit": "weiß", "blauw": "blau", "rood": "rot",
+      "goud": "gold", "groen": "grün", "oranje": "orange"
+    }
+  },
+  "retro": {
+    "eyebrow": "Zurück in die Zeit", "title": "Retro Kollektion",
+    "subtitle": "Erlebe die schönsten Momente der Fußballgeschichte mit unseren Retro-Trikots."
+  },
+  "special": {
+    "eyebrow": "Exklusiv", "title": "Special Edition",
+    "subtitle": "Entdecke unsere exklusiven Special Edition Trikots — einzigartig und stilvoll."
+  },
+  "favorites": {
+    "title": "Favoriten", "empty": "Du hast noch keine Favoriten", "browse": "Kollektion ansehen →"
+  },
+  "about": {
+    "eyebrow": "Über Uns", "title": "Die Leidenschaft Hinter",
+    "p1": "Wir sind ein Team von Fußballfans mit einer Leidenschaft für ikonische Trikots. Jedes Trikot wird sorgfältig nach Qualität und Stil ausgewählt.",
+    "p2": "Von legendären WM-Trikots bis zu seltenen Vereinsshirts — wir bringen die schönste Fußballgeschichte in deinen Kleiderschrank.",
+    "p3Before": "Jede Bestellung wird sicher verpackt und weltweit versandt. Versand nach Europa dauert ca. 15 Tage. Fragen? Kontaktiere uns unter ",
+    "p3After": " — wir helfen gern."
+  },
+  "product": {
+    "size": "Größe", "quantity": "Menge", "addToCart": "In den Warenkorb",
+    "pickSize": "Wähle zuerst eine Größe",
+    "description": "Beschreibung", "shipping": "Versand",
+    "shippingInfo": "Weltweiter Versand. Lieferung nach Europa dauert ca. 15 Tage.",
+    "returns": "Rückgabe",
+    "returnsInfo": "Nicht zufrieden? Rückgabe innerhalb von 14 Tagen im Originalzustand möglich."
+  },
+  "cart": {
+    "title": "Warenkorb", "empty": "Dein Warenkorb ist leer", "size": "Größe", "total": "Gesamt",
+    "checkout": "Über WhatsApp bestellen", "clear": "Warenkorb leeren",
+    "orderGreeting": "Hallo, ich möchte gerne bestellen:", "orderTotal": "Gesamt"
+  },
+  "footer": {
+    "tagline": "Das ultimative Ziel für seltene und ikonische Fußballtrikots.",
+    "shop": "Shop", "info": "Info", "follow": "Folge Uns",
+    "rights": "© 2026 The Home of Football Style. Alle Rechte vorbehalten."
   },
   "auth": {
-    "signIn": "Anmelden",
-    "signUp": "Konto erstellen",
-    "email": "E-Mail",
-    "password": "Passwort",
-    "displayName": "Name (optional)",
-    "submitSignIn": "Anmelden",
-    "submitSignUp": "Konto erstellen",
-    "noAccount": "Noch kein Konto?",
-    "hasAccount": "Schon ein Konto?",
-    "continueWith": "Oder weiter mit",
-    "google": "Mit Google fortfahren",
-    "apple": "Mit Apple fortfahren",
-    "loggedIn": "Du bist angemeldet",
-    "loggedOut": "Du bist abgemeldet",
-    "checkEmail": "Bestätige deine E-Mail um fortzufahren",
-    "errorTitle": "Etwas ist schiefgelaufen"
+    "signIn": "Anmelden", "signUp": "Konto erstellen", "email": "E-Mail", "password": "Passwort",
+    "displayName": "Name (optional)", "submitSignIn": "Anmelden", "submitSignUp": "Konto erstellen",
+    "noAccount": "Noch kein Konto?", "hasAccount": "Schon ein Konto?",
+    "continueWith": "Oder weiter mit", "google": "Mit Google fortfahren", "apple": "Mit Apple fortfahren",
+    "loggedIn": "Du bist angemeldet", "loggedOut": "Du bist abgemeldet",
+    "checkEmail": "Bestätige deine E-Mail um fortzufahren", "errorTitle": "Etwas ist schiefgelaufen"
   },
   "common": { "language": "Sprache", "loading": "Laden..." }
 }

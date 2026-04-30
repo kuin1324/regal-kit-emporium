@@ -1,39 +1,92 @@
 {
   "nav": {
-    "collection": "Collection",
-    "retro": "Rétro",
-    "specialEdition": "Édition Spéciale",
-    "about": "À Propos",
-    "favorites": "Favoris",
-    "cart": "Panier",
-    "login": "Connexion",
-    "logout": "Déconnexion",
-    "account": "Compte"
+    "collection": "Collection", "retro": "Rétro", "specialEdition": "Édition Spéciale",
+    "about": "À Propos", "favorites": "Favoris", "cart": "Panier",
+    "login": "Connexion", "logout": "Déconnexion", "account": "Compte"
   },
-  "search": { "placeholder": "Rechercher un maillot, équipe ou ligue..." },
+  "search": {
+    "placeholder": "Rechercher un maillot, équipe ou ligue...",
+    "placeholderShort": "Rechercher par nom ou équipe..."
+  },
   "home": {
-    "recommended": "Recommandés",
-    "specials": "Éditions Spéciales",
-    "national": "Équipes Nationales",
-    "shopByLeague": "Acheter par ligue"
+    "tagline": "The Home of Football Style",
+    "recommended": "Recommandés", "specials": "Éditions Spéciales", "national": "Équipes Nationales",
+    "shopByLeague": "Acheter par ligue", "seeAll": "Voir tout", "prev": "Précédent", "next": "Suivant",
+    "addToCart": "Ajouter au panier",
+    "slides": {
+      "specialTitle": "Éditions Spéciales",
+      "specialSubtitle": "Maillots de luxe, faits pour se démarquer.",
+      "specialCta": "Édition Spéciale",
+      "nationalTitle": "Fierté Nationale",
+      "nationalSubtitle": "Portez les couleurs de votre pays — qualité premium.",
+      "nationalCta": "Voir National",
+      "italyTitle": "Italie x Versace",
+      "italySubtitle": "Design italien, icône mondiale.",
+      "italyCta": "Acheter"
+    },
+    "features": {
+      "qualityTitle": "Qualité Premium", "qualityDesc": "Soigneusement sélectionné et conservé",
+      "shippingTitle": "Livraison Mondiale", "shippingDesc": "Emballé en sécurité et assuré"
+    },
+    "reviewsTitle": "Ce que nos clients", "reviewsTitleAccent": "disent"
+  },
+  "leagues": {
+    "all": "Tous", "eredivisie": "Eredivisie", "serieA": "Serie A", "laLiga": "La Liga",
+    "ligue1": "Ligue 1", "national": "National", "special": "Spécial"
+  },
+  "collection": {
+    "eyebrow": "Nos Maillots", "title": "Collection Complète",
+    "uploadCta": "Téléchargez une photo pour comparer", "photoLoaded": "Photo chargée — voir ci-dessous",
+    "edit": "Modifier", "removePhoto": "Supprimer la photo", "yourPhoto": "Votre photo", "close": "Fermer",
+    "allColors": "Toutes les couleurs", "allTeams": "Toutes les équipes", "noResults": "Aucun maillot trouvé.",
+    "colors": {
+      "zwart": "noir", "wit": "blanc", "blauw": "bleu", "rood": "rouge",
+      "goud": "or", "groen": "vert", "oranje": "orange"
+    }
+  },
+  "retro": {
+    "eyebrow": "Retour dans le temps", "title": "Collection Rétro",
+    "subtitle": "Revivez les plus beaux moments du foot avec nos maillots rétro."
+  },
+  "special": {
+    "eyebrow": "Exclusif", "title": "Édition Spéciale",
+    "subtitle": "Découvrez nos maillots édition spéciale — uniques et élégants."
+  },
+  "favorites": {
+    "title": "Favoris", "empty": "Vous n'avez pas encore de favoris", "browse": "Voir la collection →"
+  },
+  "about": {
+    "eyebrow": "À Propos", "title": "La Passion Derrière",
+    "p1": "Nous sommes une équipe de passionnés de football, fans de maillots iconiques. Chaque maillot est soigneusement sélectionné pour sa qualité et son style.",
+    "p2": "Des maillots de Coupe du Monde légendaires aux kits de club rares — nous apportons la plus belle histoire du football dans votre garde-robe.",
+    "p3Before": "Chaque commande est emballée en sécurité et expédiée dans le monde entier. Livraison vers l'Europe en environ 15 jours. Des questions ? Contactez-nous via ",
+    "p3After": " — nous sommes là pour vous aider."
+  },
+  "product": {
+    "size": "Taille", "quantity": "Quantité", "addToCart": "Ajouter au panier",
+    "pickSize": "Choisissez d'abord une taille",
+    "description": "Description", "shipping": "Livraison",
+    "shippingInfo": "Livraison mondiale. Livraison en Europe en environ 15 jours.",
+    "returns": "Retours",
+    "returnsInfo": "Pas satisfait ? Retour possible sous 14 jours dans son état d'origine."
+  },
+  "cart": {
+    "title": "Panier", "empty": "Votre panier est vide", "size": "Taille", "total": "Total",
+    "checkout": "Commander via WhatsApp", "clear": "Vider le panier",
+    "orderGreeting": "Bonjour, je souhaite commander :", "orderTotal": "Total"
+  },
+  "footer": {
+    "tagline": "La destination ultime pour les maillots de foot rares et iconiques.",
+    "shop": "Boutique", "info": "Info", "follow": "Suivez-nous",
+    "rights": "© 2026 The Home of Football Style. Tous droits réservés."
   },
   "auth": {
-    "signIn": "Connexion",
-    "signUp": "Créer un compte",
-    "email": "E-mail",
-    "password": "Mot de passe",
-    "displayName": "Nom (facultatif)",
-    "submitSignIn": "Se connecter",
-    "submitSignUp": "Créer le compte",
-    "noAccount": "Pas encore de compte ?",
-    "hasAccount": "Vous avez déjà un compte ?",
-    "continueWith": "Ou continuer avec",
-    "google": "Continuer avec Google",
-    "apple": "Continuer avec Apple",
-    "loggedIn": "Vous êtes connecté",
-    "loggedOut": "Vous êtes déconnecté",
-    "checkEmail": "Confirmez votre e-mail pour continuer",
-    "errorTitle": "Une erreur est survenue"
+    "signIn": "Connexion", "signUp": "Créer un compte", "email": "E-mail", "password": "Mot de passe",
+    "displayName": "Nom (facultatif)", "submitSignIn": "Se connecter", "submitSignUp": "Créer le compte",
+    "noAccount": "Pas encore de compte ?", "hasAccount": "Vous avez déjà un compte ?",
+    "continueWith": "Ou continuer avec", "google": "Continuer avec Google", "apple": "Continuer avec Apple",
+    "loggedIn": "Vous êtes connecté", "loggedOut": "Vous êtes déconnecté",
+    "checkEmail": "Confirmez votre e-mail pour continuer", "errorTitle": "Une erreur est survenue"
   },
   "common": { "language": "Langue", "loading": "Chargement..." }
 }

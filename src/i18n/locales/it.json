@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "collection": "Collezione",
+    "retro": "Retro",
+    "specialEdition": "Edizione Speciale",
+    "about": "Chi Siamo",
+    "favorites": "Preferiti",
+    "cart": "Carrello",
+    "login": "Accedi",
+    "logout": "Esci",
+    "account": "Account"
+  },
+  "search": { "placeholder": "Cerca una maglia, squadra o lega..." },
+  "home": {
+    "recommended": "Consigliati",
+    "specials": "Edizioni Speciali",
+    "national": "Nazionali",
+    "shopByLeague": "Acquista per lega"
+  },
+  "auth": {
+    "signIn": "Accedi",
+    "signUp": "Crea account",
+    "email": "E-mail",
+    "password": "Password",
+    "displayName": "Nome (opzionale)",
+    "submitSignIn": "Accedi",
+    "submitSignUp": "Crea account",
+    "noAccount": "Non hai un account?",
+    "hasAccount": "Hai già un account?",
+    "continueWith": "O continua con",
+    "google": "Continua con Google",
+    "apple": "Continua con Apple",
+    "loggedIn": "Sei connesso",
+    "loggedOut": "Disconnesso",
+    "checkEmail": "Conferma la tua e-mail per continuare",
+    "errorTitle": "Qualcosa è andato storto"
+  },
+  "common": { "language": "Lingua", "loading": "Caricamento..." }
+}

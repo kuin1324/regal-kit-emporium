@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "collection": "Collection",
+    "retro": "Rétro",
+    "specialEdition": "Édition Spéciale",
+    "about": "À Propos",
+    "favorites": "Favoris",
+    "cart": "Panier",
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "account": "Compte"
+  },
+  "search": { "placeholder": "Rechercher un maillot, équipe ou ligue..." },
+  "home": {
+    "recommended": "Recommandés",
+    "specials": "Éditions Spéciales",
+    "national": "Équipes Nationales",
+    "shopByLeague": "Acheter par ligue"
+  },
+  "auth": {
+    "signIn": "Connexion",
+    "signUp": "Créer un compte",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "displayName": "Nom (facultatif)",
+    "submitSignIn": "Se connecter",
+    "submitSignUp": "Créer le compte",
+    "noAccount": "Pas encore de compte ?",
+    "hasAccount": "Vous avez déjà un compte ?",
+    "continueWith": "Ou continuer avec",
+    "google": "Continuer avec Google",
+    "apple": "Continuer avec Apple",
+    "loggedIn": "Vous êtes connecté",
+    "loggedOut": "Vous êtes déconnecté",
+    "checkEmail": "Confirmez votre e-mail pour continuer",
+    "errorTitle": "Une erreur est survenue"
+  },
+  "common": { "language": "Langue", "loading": "Chargement..." }
+}

@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "collection": "Collectie",
+    "retro": "Retro",
+    "specialEdition": "Special Edition",
+    "about": "Over Ons",
+    "favorites": "Favorieten",
+    "cart": "Winkelmandje",
+    "login": "Inloggen",
+    "logout": "Uitloggen",
+    "account": "Account"
+  },
+  "search": {
+    "placeholder": "Zoek een shirt, team of league..."
+  },
+  "home": {
+    "recommended": "Aanbevolen",
+    "specials": "Special Editions",
+    "national": "Nationale Teams",
+    "shopByLeague": "Shop by league"
+  },
+  "auth": {
+    "signIn": "Inloggen",
+    "signUp": "Account aanmaken",
+    "email": "E-mailadres",
+    "password": "Wachtwoord",
+    "displayName": "Naam (optioneel)",
+    "submitSignIn": "Inloggen",
+    "submitSignUp": "Account aanmaken",
+    "noAccount": "Nog geen account?",
+    "hasAccount": "Heb je al een account?",
+    "continueWith": "Of ga verder met",
+    "google": "Doorgaan met Google",
+    "apple": "Doorgaan met Apple",
+    "loggedIn": "Je bent ingelogd",
+    "loggedOut": "Je bent uitgelogd",
+    "checkEmail": "Bevestig je e-mailadres om door te gaan",
+    "errorTitle": "Er ging iets mis"
+  },
+  "common": {
+    "language": "Taal",
+    "loading": "Laden..."
+  }
+}

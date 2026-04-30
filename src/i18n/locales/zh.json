@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "collection": "系列",
+    "retro": "复古",
+    "specialEdition": "特别版",
+    "about": "关于我们",
+    "favorites": "收藏",
+    "cart": "购物车",
+    "login": "登录",
+    "logout": "退出",
+    "account": "账户"
+  },
+  "search": { "placeholder": "搜索球衣、球队或联赛..." },
+  "home": {
+    "recommended": "推荐",
+    "specials": "特别版",
+    "national": "国家队",
+    "shopByLeague": "按联赛购买"
+  },
+  "auth": {
+    "signIn": "登录",
+    "signUp": "创建账户",
+    "email": "电子邮箱",
+    "password": "密码",
+    "displayName": "名字（可选）",
+    "submitSignIn": "登录",
+    "submitSignUp": "创建账户",
+    "noAccount": "还没有账户？",
+    "hasAccount": "已有账户？",
+    "continueWith": "或使用以下方式继续",
+    "google": "使用 Google 继续",
+    "apple": "使用 Apple 继续",
+    "loggedIn": "您已登录",
+    "loggedOut": "您已退出",
+    "checkEmail": "请确认您的邮箱以继续",
+    "errorTitle": "出错了"
+  },
+  "common": { "language": "语言", "loading": "加载中..." }
+}

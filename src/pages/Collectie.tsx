@@ -5,6 +5,7 @@ import { useState, useMemo, useRef } from "react";
 import { Search, Heart, Upload, X, ImageIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
+import { useProductName } from "@/lib/productName";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 
 const leagues = [

@@ -1,8 +1,14 @@
 {
   "nav": {
-    "collection": "Colección", "retro": "Retro", "specialEdition": "Edición Especial",
-    "about": "Sobre Nosotros", "favorites": "Favoritos", "cart": "Carrito",
-    "login": "Iniciar sesión", "logout": "Cerrar sesión", "account": "Cuenta"
+    "collection": "Colección",
+    "retro": "Retro",
+    "specialEdition": "Edición Especial",
+    "about": "Sobre Nosotros",
+    "favorites": "Favoritos",
+    "cart": "Carrito",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "account": "Cuenta"
   },
   "search": {
     "placeholder": "Busca una camiseta, equipo o liga...",
@@ -10,8 +16,13 @@
   },
   "home": {
     "tagline": "The Home of Football Style",
-    "recommended": "Recomendado", "specials": "Ediciones Especiales", "national": "Selecciones Nacionales",
-    "shopByLeague": "Compra por liga", "seeAll": "Ver todo", "prev": "Anterior", "next": "Siguiente",
+    "recommended": "Recomendado",
+    "specials": "Ediciones Especiales",
+    "national": "Selecciones Nacionales",
+    "shopByLeague": "Compra por liga",
+    "seeAll": "Ver todo",
+    "prev": "Anterior",
+    "next": "Siguiente",
     "addToCart": "Añadir al carrito",
     "slides": {
       "specialTitle": "Ediciones Especiales",
@@ -25,68 +36,125 @@
       "italyCta": "Comprar"
     },
     "features": {
-      "qualityTitle": "Calidad Premium", "qualityDesc": "Cuidadosamente seleccionado y conservado",
-      "shippingTitle": "Envío Mundial", "shippingDesc": "Empaquetado seguro y asegurado"
+      "qualityTitle": "Calidad Premium",
+      "qualityDesc": "Cuidadosamente seleccionado y conservado",
+      "shippingTitle": "Envío Mundial",
+      "shippingDesc": "Empaquetado seguro y asegurado"
     },
-    "reviewsTitle": "Lo que dicen nuestros", "reviewsTitleAccent": "clientes"
+    "reviewsTitle": "Lo que dicen nuestros",
+    "reviewsTitleAccent": "clientes"
   },
   "leagues": {
-    "all": "Todas", "eredivisie": "Eredivisie", "serieA": "Serie A", "laLiga": "La Liga",
-    "ligue1": "Ligue 1", "national": "Nacional", "special": "Especial"
+    "all": "Todas",
+    "eredivisie": "Eredivisie",
+    "serieA": "Serie A",
+    "laLiga": "La Liga",
+    "ligue1": "Ligue 1",
+    "national": "Nacional",
+    "special": "Especial"
   },
   "collection": {
-    "eyebrow": "Nuestras Camisetas", "title": "Colección Completa",
-    "uploadCta": "Sube una foto para comparar", "photoLoaded": "Foto cargada — ver abajo",
-    "edit": "Cambiar", "removePhoto": "Eliminar foto", "yourPhoto": "Tu foto", "close": "Cerrar",
-    "allColors": "Todos los colores", "allTeams": "Todos los equipos", "noResults": "No se encontraron camisetas.",
+    "eyebrow": "Nuestras Camisetas",
+    "title": "Colección Completa",
+    "uploadCta": "Sube una foto para comparar",
+    "photoLoaded": "Foto cargada — ver abajo",
+    "edit": "Cambiar",
+    "removePhoto": "Eliminar foto",
+    "yourPhoto": "Tu foto",
+    "close": "Cerrar",
+    "allColors": "Todos los colores",
+    "allTeams": "Todos los equipos",
+    "noResults": "No se encontraron camisetas.",
     "colors": {
-      "zwart": "negro", "wit": "blanco", "blauw": "azul", "rood": "rojo",
-      "goud": "dorado", "groen": "verde", "oranje": "naranja"
+      "zwart": "negro",
+      "wit": "blanco",
+      "blauw": "azul",
+      "rood": "rojo",
+      "goud": "dorado",
+      "groen": "verde",
+      "oranje": "naranja"
     }
   },
   "retro": {
-    "eyebrow": "Vuelta al pasado", "title": "Colección Retro",
+    "eyebrow": "Vuelta al pasado",
+    "title": "Colección Retro",
     "subtitle": "Revive los mejores momentos de la historia del fútbol con nuestras camisetas retro."
   },
   "special": {
-    "eyebrow": "Exclusivo", "title": "Edición Especial",
+    "eyebrow": "Exclusivo",
+    "title": "Edición Especial",
     "subtitle": "Descubre nuestras camisetas de edición especial — únicas y con estilo."
   },
   "favorites": {
-    "title": "Favoritos", "empty": "Aún no tienes favoritos", "browse": "Ver la colección →"
+    "title": "Favoritos",
+    "empty": "Aún no tienes favoritos",
+    "browse": "Ver la colección →"
   },
   "about": {
-    "eyebrow": "Sobre Nosotros", "title": "La Pasión Detrás De",
+    "eyebrow": "Sobre Nosotros",
+    "title": "La Pasión Detrás De",
     "p1": "Somos un equipo de amantes del fútbol con pasión por las camisetas icónicas. Cada camiseta se selecciona cuidadosamente por su calidad y estilo.",
     "p2": "Desde camisetas legendarias de Mundiales hasta kits de club raros — traemos lo mejor de la historia del fútbol a tu armario.",
     "p3Before": "Cada pedido se empaqueta de forma segura y se envía a todo el mundo. Envío a Europa en aproximadamente 15 días. ¿Preguntas? Contáctanos en ",
     "p3After": " — estamos aquí para ayudarte."
   },
   "product": {
-    "size": "Talla", "quantity": "Cantidad", "addToCart": "Añadir al carrito",
+    "size": "Talla",
+    "quantity": "Cantidad",
+    "addToCart": "Añadir al carrito",
     "pickSize": "Elige primero una talla",
-    "description": "Descripción", "shipping": "Envío",
+    "description": "Descripción",
+    "shipping": "Envío",
     "shippingInfo": "Envío mundial. Entrega a Europa en aproximadamente 15 días.",
     "returns": "Devoluciones",
     "returnsInfo": "¿No estás satisfecho? Puedes devolver la camiseta en 14 días en su estado original."
   },
   "cart": {
-    "title": "Carrito", "empty": "Tu carrito está vacío", "size": "Talla", "total": "Total",
-    "checkout": "Pedir por WhatsApp", "clear": "Vaciar carrito",
-    "orderGreeting": "Hola, me gustaría pedir:", "orderTotal": "Total"
+    "title": "Carrito",
+    "empty": "Tu carrito está vacío",
+    "size": "Talla",
+    "total": "Total",
+    "checkout": "Pedir por WhatsApp",
+    "clear": "Vaciar carrito",
+    "orderGreeting": "Hola, me gustaría pedir:",
+    "orderTotal": "Total"
   },
   "footer": {
     "tagline": "El destino definitivo para camisetas de fútbol raras e icónicas.",
-    "shop": "Tienda", "info": "Info", "follow": "Síguenos",
+    "shop": "Tienda",
+    "info": "Info",
+    "follow": "Síguenos",
     "rights": "© 2026 The Home of Football Style. Todos los derechos reservados."
   },
   "auth": {
-    "signIn": "Iniciar sesión", "signUp": "Crear cuenta", "email": "Correo electrónico", "password": "Contraseña",
-    "displayName": "Nombre (opcional)", "submitSignIn": "Iniciar sesión", "submitSignUp": "Crear cuenta",
-    "noAccount": "¿No tienes cuenta?", "hasAccount": "¿Ya tienes cuenta?",
-    "continueWith": "O continúa con", "google": "Continuar con Google", "apple": "Continuar con Apple",
-    "loggedIn": "Has iniciado sesión", "loggedOut": "Has cerrado sesión",
-    "checkEmail": "Confirma tu correo para continuar", "errorTitle": "Algo salió mal"
+    "signIn": "Iniciar sesión",
+    "signUp": "Crear cuenta",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "displayName": "Nombre (opcional)",
+    "submitSignIn": "Iniciar sesión",
+    "submitSignUp": "Crear cuenta",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "continueWith": "O continúa con",
+    "google": "Continuar con Google",
+    "apple": "Continuar con Apple",
+    "loggedIn": "Has iniciado sesión",
+    "loggedOut": "Has cerrado sesión",
+    "checkEmail": "Confirma tu correo para continuar",
+    "errorTitle": "Algo salió mal"
   },
-  "common": { "language": "Idioma", "loading": "Cargando..." }
+  "common": {
+    "language": "Idioma",
+    "loading": "Cargando..."
+  },
+  "products": {
+    "stoneIslandAjax": "Stone Island x Ajax",
+    "italyVersace": "Italia x Versace",
+    "napoliHalloween": "Camiseta Halloween SSC Napoli EA7",
+    "portugalLV": "Portugal x Louis Vuitton",
+    "italyTraining": "Camiseta Entrenamiento Especial Italia",
+    "barcaFlower": "Barcelona Edición Especial Flores",
+    "marseilleThird": "Marsella Tercera"
+  }
 }

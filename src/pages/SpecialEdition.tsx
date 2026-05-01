@@ -6,11 +6,13 @@ import { Heart } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
+import { useProductName } from "@/lib/productName";
 
 const SpecialEdition = () => {
   const { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const { favorites, toggleFavorite } = useCart();
+  const productName = useProductName();
 
   const specialProducts = allProducts.filter(p => p.leagues.includes("Special"));
 
@@ -46,10 +48,10 @@ const SpecialEdition = () => {
                   className="relative overflow-hidden rounded bg-card border border-border/50 transition-all duration-500 group-hover:border-primary/30 group-hover:shadow-[var(--shadow-gold)]"
                 >
                   <div className="aspect-[4/5] overflow-hidden">
-                    <img src={product.image} alt={product.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <img src={product.image} alt={productName(product.name)} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-5 pt-12">
-                    <h3 className="font-display text-base font-semibold tracking-wide">{product.name}</h3>
+                    <h3 className="font-display text-base font-semibold tracking-wide">{productName(product.name)}</h3>
                     <p className="text-xs text-muted-foreground mb-2">{product.team}</p>
                     <p className="font-display text-lg font-bold text-gradient-gold">{product.price}</p>
                   </div>

@@ -6,6 +6,7 @@ import { X, Minus, Plus, Trash2, ShoppingBag } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { useTranslation } from "react-i18next";
 import ProductDetailModal from "./ProductDetailModal";
+import { useProductName } from "@/lib/productName";
 
 interface CartDrawerProps {
   open: boolean;
@@ -16,10 +17,11 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const { items, removeItem, updateQuantity, total, clearCart } = useCart();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const { t } = useTranslation();
+  const productName = useProductName();
 
   const handleOrder = () => {
     if (items.length === 0) return;
-    const lines = items.map(i => `🏷️ ${i.name} (${i.size}) x${i.quantity} — €${i.price * i.quantity}`).join("\n");
+    const lines = items.map(i => `🏷️ ${productName(i.name)} (${i.size}) x${i.quantity} — €${i.price * i.quantity}`).join("\n");
     const message = `${t("cart.orderGreeting")}\n\n${lines}\n\n💰 ${t("cart.orderTotal")}: €${total}`;
     window.open(`https://wa.me/31612345678?text=${encodeURIComponent(message)}`, "_blank");
   };
@@ -50,9 +52,9 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                   <div className="space-y-4">
                     {items.map((item) => (
                       <div key={`${item.name}-${item.size}`} className="flex gap-4 border border-border rounded p-3">
-                        <img src={item.image} alt={item.name} className="w-20 h-24 object-cover rounded cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setSelectedProduct(item.name)} />
+                        <img src={item.image} alt={productName(item.name)} className="w-20 h-24 object-cover rounded cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setSelectedProduct(item.name)} />
                         <div className="flex-1 min-w-0">
-                          <h3 className="text-sm font-semibold truncate cursor-pointer hover:text-primary transition-colors" onClick={() => setSelectedProduct(item.name)}>{item.name}</h3>
+                          <h3 className="text-sm font-semibold truncate cursor-pointer hover:text-primary transition-colors" onClick={() => setSelectedProduct(item.name)}>{productName(item.name)}</h3>
                           <p className="text-xs text-muted-foreground">{t("cart.size")}: {item.size}</p>
                           <p className="text-sm font-bold text-gradient-gold mt-1">€{item.price * item.quantity}</p>
                           <div className="flex items-center gap-2 mt-2">

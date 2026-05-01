@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -10,15 +10,29 @@ import shirt4 from "@/assets/shirt-new-4.png";
 import shirt5 from "@/assets/shirt-new-5.png";
 import shirt6 from "@/assets/shirt-new-6.png";
 import shirt7 from "@/assets/shirt-new-7.png";
+import shirt1Back from "@/assets/shirt-1-back.jpg";
+import shirt1Detail from "@/assets/shirt-1-detail.jpg";
+import shirt2Back from "@/assets/shirt-2-back.jpg";
+import shirt2Detail from "@/assets/shirt-2-detail.jpg";
+import shirt3Back from "@/assets/shirt-3-back.jpg";
+import shirt3Detail from "@/assets/shirt-3-detail.jpg";
+import shirt4Back from "@/assets/shirt-4-back.jpg";
+import shirt4Detail from "@/assets/shirt-4-detail.jpg";
+import shirt5Back from "@/assets/shirt-5-back.jpg";
+import shirt5Detail from "@/assets/shirt-5-detail.jpg";
+import shirt6Back from "@/assets/shirt-6-back.jpg";
+import shirt6Detail from "@/assets/shirt-6-detail.jpg";
+import shirt7Back from "@/assets/shirt-7-back.jpg";
+import shirt7Detail from "@/assets/shirt-7-detail.jpg";
 
 export const allProducts = [
-  { image: shirt1, name: "Stone Island x Ajax", team: "Ajax", leagues: ["Eredivisie"], price: "€30", description: "Exclusieve samenwerking tussen Stone Island en Ajax. Premium kwaliteit met uniek design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "rood"] },
-  { image: shirt2, name: "Italy x Versace", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Italiaans design met Versace-elementen. Een stijlvol eerbetoon aan het Italiaanse voetbal.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw", "goud"] },
-  { image: shirt3, name: "SSC Napoli EA7 2025/26 Halloween Kit", team: "SSC Napoli", leagues: ["Serie A"], price: "€30", description: "Het exclusieve Halloween kit van SSC Napoli in samenwerking met EA7.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"], colors: ["zwart", "oranje"] },
-  { image: shirt4, name: "Portugal x Louis Vuitton", team: "Portugal", leagues: ["Nationaal"], price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["rood", "groen", "goud"] },
-  { image: shirt5, name: "Italië Special Trainingsshirt", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Exclusief Italiaans trainingsshirt met uniek design. Een must-have voor elke voetballiefhebber.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"], colors: ["blauw", "wit"] },
-  { image: shirt6, name: "Barcelona Special Flower Design", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "Unieke Barcelona editie met bloemenpatroon en premium afwerking.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["rood", "blauw", "goud"] },
-  { image: shirt7, name: "Marseille Third", team: "Olympique Marseille", leagues: ["Ligue 1"], price: "€30", description: "Het stijlvolle third shirt van Olympique Marseille. Frans design op zijn best.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "blauw"] },
+  { image: shirt1, gallery: [shirt1, shirt1Back, shirt1Detail], name: "Stone Island x Ajax", team: "Ajax", leagues: ["Eredivisie"], price: "€30", description: "Exclusieve samenwerking tussen Stone Island en Ajax. Premium kwaliteit met uniek design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "rood"] },
+  { image: shirt2, gallery: [shirt2, shirt2Back, shirt2Detail], name: "Italy x Versace", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Italiaans design met Versace-elementen. Een stijlvol eerbetoon aan het Italiaanse voetbal.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw", "goud"] },
+  { image: shirt3, gallery: [shirt3, shirt3Back, shirt3Detail], name: "SSC Napoli EA7 2025/26 Halloween Kit", team: "SSC Napoli", leagues: ["Serie A"], price: "€30", description: "Het exclusieve Halloween kit van SSC Napoli in samenwerking met EA7.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"], colors: ["zwart", "oranje"] },
+  { image: shirt4, gallery: [shirt4, shirt4Back, shirt4Detail], name: "Portugal x Louis Vuitton", team: "Portugal", leagues: ["Nationaal"], price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["rood", "groen", "goud"] },
+  { image: shirt5, gallery: [shirt5, shirt5Back, shirt5Detail], name: "Italië Special Trainingsshirt", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Exclusief Italiaans trainingsshirt met uniek design. Een must-have voor elke voetballiefhebber.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"], colors: ["blauw", "wit"] },
+  { image: shirt6, gallery: [shirt6, shirt6Back, shirt6Detail], name: "Barcelona Special Flower Design", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "Unieke Barcelona editie met bloemenpatroon en premium afwerking.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["rood", "blauw", "goud"] },
+  { image: shirt7, gallery: [shirt7, shirt7Back, shirt7Detail], name: "Marseille Third", team: "Olympique Marseille", leagues: ["Ligue 1"], price: "€30", description: "Het stijlvolle third shirt van Olympique Marseille. Frans design op zijn best.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "blauw"] },
 ];
 
 interface ProductDetailModalProps {
@@ -30,16 +44,25 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const [quantity, setQuantity] = useState(1);
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
+  const [activeImage, setActiveImage] = useState(0);
   const { favorites, toggleFavorite, addItem } = useCart();
   const { t } = useTranslation();
 
   const selected = productName ? allProducts.find(p => p.name === productName) : null;
+
+  useEffect(() => {
+    setActiveImage(0);
+    setSelectedSize(null);
+    setQuantity(1);
+  }, [productName]);
 
   const handleAddToCart = () => {
     if (!selected || !selectedSize) return;
     addItem({ name: selected.name, image: selected.image, size: selectedSize, quantity, price: 30 });
     onClose();
   };
+
+  const gallery = selected?.gallery || (selected ? [selected.image] : []);
 
   return (
     <AnimatePresence>
@@ -66,14 +89,33 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
           </div>
 
           <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
-            <div className="bg-card flex items-center justify-center p-4">
+            <div className="bg-card flex flex-col items-center justify-center p-4 gap-4">
               <motion.img
-                initial={{ scale: 0.9, opacity: 0 }}
+                key={activeImage}
+                initial={{ scale: 0.95, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                src={selected.image}
+                transition={{ duration: 0.3 }}
+                src={gallery[activeImage]}
                 alt={selected.name}
-                className="max-h-[85vh] w-auto object-contain"
+                className="max-h-[70vh] w-auto object-contain"
               />
+              {gallery.length > 1 && (
+                <div className="flex gap-3 flex-wrap justify-center">
+                  {gallery.map((img, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setActiveImage(idx)}
+                      className={`w-20 h-20 rounded overflow-hidden border-2 transition-all ${
+                        activeImage === idx
+                          ? "border-primary shadow-[var(--shadow-gold)]"
+                          : "border-border hover:border-primary/50 opacity-70 hover:opacity-100"
+                      }`}
+                    >
+                      <img src={img} alt={`${selected.name} ${idx + 1}`} className="w-full h-full object-cover" />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             <div className="p-8 md:p-12 flex flex-col justify-center max-w-lg mx-auto w-full">

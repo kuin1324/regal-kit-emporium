@@ -3,6 +3,7 @@ import { Plus, ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
+import { useProductName } from "@/lib/productName";
 
 export interface RowProduct {
   name: string;
@@ -23,6 +24,7 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
   const { addItem } = useCart();
   const [added, setAdded] = useState<string | null>(null);
   const { t } = useTranslation();
+  const productName = useProductName();
 
   const scroll = (dir: "left" | "right") => {
     scrollRef.current?.scrollBy({ left: dir === "left" ? -300 : 300, behavior: "smooth" });
@@ -72,7 +74,7 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
             >
               <div className="relative overflow-hidden rounded-lg bg-card border border-border/50 transition-all duration-300 group-hover:border-primary/40">
                 <div className="aspect-[4/5] overflow-hidden">
-                  <img src={p.image} alt={p.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <img src={p.image} alt={productName(p.name)} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <button
                   onClick={(e) => handleAdd(e, p)}
@@ -84,7 +86,7 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
               </div>
               <div className="pt-3 px-1">
                 <p className="text-[10px] font-medium tracking-[0.2em] uppercase text-muted-foreground mb-1">{p.team}</p>
-                <h3 className="font-display text-sm font-semibold tracking-wide line-clamp-2">{p.name}</h3>
+                <h3 className="font-display text-sm font-semibold tracking-wide line-clamp-2">{productName(p.name)}</h3>
                 <p className="font-display text-base font-bold text-gradient-gold mt-1">{p.price}</p>
               </div>
             </div>

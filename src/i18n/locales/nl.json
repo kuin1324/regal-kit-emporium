@@ -144,5 +144,17 @@
     "checkEmail": "Bevestig je e-mailadres om door te gaan",
     "errorTitle": "Er ging iets mis"
   },
-  "common": { "language": "Taal", "loading": "Laden..." }
+  "common": {
+    "language": "Taal",
+    "loading": "Laden..."
+  },
+  "products": {
+    "stoneIslandAjax": "Stone Island x Ajax",
+    "italyVersace": "Italië x Versace",
+    "napoliHalloween": "SSC Napoli EA7 Halloween Kit",
+    "portugalLV": "Portugal x Louis Vuitton",
+    "italyTraining": "Italië Special Trainingsshirt",
+    "barcaFlower": "Barcelona Special Bloemen Design",
+    "marseilleThird": "Marseille Third"
+  }
 }

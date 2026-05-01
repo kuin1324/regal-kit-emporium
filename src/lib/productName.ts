@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { allProducts } from "@/components/ProductDetailModal";
 
-/** Returns the translated display name for a given internal product name (id). */
+/** Returns a function that translates an internal product name (id) to display name. */
 export const useProductName = () => {
   const { t } = useTranslation();
   return (name: string): string => {

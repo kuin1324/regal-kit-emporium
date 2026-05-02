@@ -122,9 +122,11 @@
     "size": "Maat",
     "total": "Totaal",
     "checkout": "Bestellen via WhatsApp",
+    "checkoutEmail": "Bestellen via e-mail",
     "clear": "Winkelmandje legen",
     "orderGreeting": "Hallo, ik wil graag bestellen:",
-    "orderTotal": "Totaal"
+    "orderTotal": "Totaal",
+    "paymentNote": "Betalen via PayPal, Tikkie of andere betaalmethode mogelijk."
   },
   "footer": {
     "tagline": "De ultieme bestemming voor zeldzame en iconische voetbalshirts.",

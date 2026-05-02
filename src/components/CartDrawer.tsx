@@ -94,7 +94,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
               </div>
 
               {items.length > 0 && (
-                <div className="border-t border-border p-6 space-y-4">
+                <div className="border-t border-border p-6 space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-sm font-semibold">{t("cart.total")}</span>
                     <span className="font-display text-xl font-bold text-gradient-gold">€{total}</span>
@@ -102,6 +102,12 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                   <button onClick={handleOrder} className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors">
                     {t("cart.checkout")}
                   </button>
+                  <button onClick={handleEmailOrder} className="w-full py-3 rounded border border-primary/50 text-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/10 transition-colors">
+                    {t("cart.checkoutEmail")}
+                  </button>
+                  <div className="border-t border-border/50 pt-2">
+                    <p className="text-[10px] text-muted-foreground text-center leading-relaxed">{t("cart.paymentNote")}</p>
+                  </div>
                   <button onClick={clearCart} className="w-full py-2 text-xs text-muted-foreground hover:text-foreground transition-colors">
                     {t("cart.clear")}
                   </button>

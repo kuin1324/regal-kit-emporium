@@ -20,7 +20,8 @@ const leagues = [
 
 const colorMap: Record<string, string> = {
   zwart: "#000000", wit: "#FFFFFF", blauw: "#1E40AF", rood: "#DC2626",
-  goud: "#D4A017", groen: "#16A34A", oranje: "#EA580C",
+  geel: "#FACC15", groen: "#16A34A", oranje: "#EA580C",
+  meerkleurig: "linear-gradient(135deg,#DC2626,#FACC15,#16A34A,#1E40AF)",
 };
 
 const allColors = Object.keys(colorMap);

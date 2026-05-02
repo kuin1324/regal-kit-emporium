@@ -108,7 +108,13 @@
     "shipping": "Verzending",
     "shippingInfo": "Wereldwijde verzending. Levertijd naar Europa is ongeveer 15 dagen.",
     "returns": "Retourneren",
-    "returnsInfo": "Niet tevreden? Je kunt het shirt binnen 14 dagen retourneren in originele staat."
+    "returnsInfo": "Niet tevreden? Je kunt het shirt binnen 14 dagen retourneren in originele staat.",
+    "customize": "Naam & nummer toevoegen",
+    "namePlaceholder": "Naam (bv. MESSI)",
+    "numberPlaceholder": "Nr.",
+    "doubleClickHint": "Dubbel-klik om in te zoomen",
+    "doubleClickZoom": "Dubbel-klik om te zoomen",
+    "exitFocus": "Dubbel-klik om te sluiten"
   },
   "cart": {
     "title": "Winkelmandje",

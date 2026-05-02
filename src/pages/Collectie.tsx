@@ -132,7 +132,7 @@ const Collectie = () => {
                   selectedColor === color ? "bg-primary/20 text-primary border-primary/40" : "bg-transparent text-muted-foreground border-border/30 hover:border-primary/20"
                 }`}
               >
-                <span className="w-3 h-3 rounded-full border border-border/50 shrink-0" style={{ backgroundColor: colorMap[color] }} />
+                <span className="w-3 h-3 rounded-full border border-border/50 shrink-0" style={colorMap[color].startsWith("linear") ? { backgroundImage: colorMap[color] } : { backgroundColor: colorMap[color] }} />
                 {t(`collection.colors.${color}`)}
               </button>
             ))}

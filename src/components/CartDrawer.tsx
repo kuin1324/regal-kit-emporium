@@ -19,11 +19,34 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const { t } = useTranslation();
   const productName = useProductName();
 
+  const buildOrderText = () => {
+    const lines = items.map(i => `🏷️ ${productName(i.name)} (${t("cart.size")}: ${i.size}) x${i.quantity} — €${i.price * i.quantity}`).join("\n");
+    return `${t("cart.orderGreeting")}\n\n${lines}\n\n💰 ${t("cart.orderTotal")}: €${total}`;
+  };
+
   const handleOrder = () => {
     if (items.length === 0) return;
-    const lines = items.map(i => `🏷️ ${productName(i.name)} (${i.size}) x${i.quantity} — €${i.price * i.quantity}`).join("\n");
-    const message = `${t("cart.orderGreeting")}\n\n${lines}\n\n💰 ${t("cart.orderTotal")}: €${total}`;
-    window.open(`https://wa.me/31612345678?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/31612345678?text=${encodeURIComponent(buildOrderText())}`, "_blank");
+  };
+
+  const handleEmailOrder = async () => {
+    if (items.length === 0) return;
+    const orderText = buildOrderText();
+    const subject = `Nieuwe bestelling — €${total}`;
+    // Try to send via backend (Outlook), fallback to mailto
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      const { error } = await supabase.functions.invoke("send-order-email", {
+        body: { subject, body: orderText, items, total },
+      });
+      if (error) throw error;
+      alert("✅ Bestelling verzonden!");
+      clearCart();
+      onClose();
+      return;
+    } catch {
+      window.location.href = `mailto:thehomeoffootballstyle@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(orderText)}`;
+    }
   };
 
   return (

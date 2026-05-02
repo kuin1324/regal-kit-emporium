@@ -20,7 +20,8 @@ const leagues = [
 
 const colorMap: Record<string, string> = {
   zwart: "#000000", wit: "#FFFFFF", blauw: "#1E40AF", rood: "#DC2626",
-  goud: "#D4A017", groen: "#16A34A", oranje: "#EA580C",
+  geel: "#FACC15", groen: "#16A34A", oranje: "#EA580C",
+  meerkleurig: "linear-gradient(135deg,#DC2626,#FACC15,#16A34A,#1E40AF)",
 };
 
 const allColors = Object.keys(colorMap);
@@ -131,7 +132,7 @@ const Collectie = () => {
                   selectedColor === color ? "bg-primary/20 text-primary border-primary/40" : "bg-transparent text-muted-foreground border-border/30 hover:border-primary/20"
                 }`}
               >
-                <span className="w-3 h-3 rounded-full border border-border/50 shrink-0" style={{ backgroundColor: colorMap[color] }} />
+                <span className="w-3 h-3 rounded-full border border-border/50 shrink-0" style={colorMap[color].startsWith("linear") ? { backgroundImage: colorMap[color] } : { backgroundColor: colorMap[color] }} />
                 {t(`collection.colors.${color}`)}
               </button>
             ))}

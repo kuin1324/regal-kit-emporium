@@ -70,9 +70,10 @@
       "wit": "blanco",
       "blauw": "azul",
       "rood": "rojo",
-      "goud": "dorado",
       "groen": "verde",
-      "oranje": "naranja"
+      "oranje": "naranja",
+      "geel": "amarillo",
+      "meerkleurig": "multicolor"
     }
   },
   "retro": {
@@ -107,7 +108,13 @@
     "shipping": "Envío",
     "shippingInfo": "Envío mundial. Entrega a Europa en aproximadamente 15 días.",
     "returns": "Devoluciones",
-    "returnsInfo": "¿No estás satisfecho? Puedes devolver la camiseta en 14 días en su estado original."
+    "returnsInfo": "¿No estás satisfecho? Puedes devolver la camiseta en 14 días en su estado original.",
+    "customize": "Añadir nombre y número",
+    "namePlaceholder": "Nombre (ej. MESSI)",
+    "numberPlaceholder": "N°",
+    "doubleClickHint": "Doble-clic para acercar",
+    "doubleClickZoom": "Doble-clic para acercar",
+    "exitFocus": "Doble-clic para salir"
   },
   "cart": {
     "title": "Carrito",
@@ -117,7 +124,9 @@
     "checkout": "Pedir por WhatsApp",
     "clear": "Vaciar carrito",
     "orderGreeting": "Hola, me gustaría pedir:",
-    "orderTotal": "Total"
+    "orderTotal": "Total",
+    "checkoutEmail": "Pedir por correo",
+    "paymentNote": "Pago vía PayPal, Tikkie u otros métodos posible."
   },
   "footer": {
     "tagline": "El destino definitivo para camisetas de fútbol raras e icónicas.",
@@ -149,7 +158,7 @@
     "loading": "Cargando..."
   },
   "products": {
-    "stoneIslandAjax": "Stone Island x Ajax",
+    "ajaxStoneIsland": "Ajax x Stone Island",
     "italyVersace": "Italia x Versace",
     "napoliHalloween": "Camiseta Halloween SSC Napoli EA7",
     "portugalLV": "Portugal x Louis Vuitton",

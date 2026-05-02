@@ -70,9 +70,10 @@
       "wit": "bianco",
       "blauw": "blu",
       "rood": "rosso",
-      "goud": "oro",
       "groen": "verde",
-      "oranje": "arancione"
+      "oranje": "arancione",
+      "geel": "giallo",
+      "meerkleurig": "multicolore"
     }
   },
   "retro": {
@@ -107,7 +108,13 @@
     "shipping": "Spedizione",
     "shippingInfo": "Spedizione mondiale. Consegna in Europa in circa 15 giorni.",
     "returns": "Resi",
-    "returnsInfo": "Non sei soddisfatto? Puoi restituire la maglia entro 14 giorni nelle condizioni originali."
+    "returnsInfo": "Non sei soddisfatto? Puoi restituire la maglia entro 14 giorni nelle condizioni originali.",
+    "customize": "Aggiungi nome e numero",
+    "namePlaceholder": "Nome (es. MESSI)",
+    "numberPlaceholder": "N°",
+    "doubleClickHint": "Doppio clic per zoomare",
+    "doubleClickZoom": "Doppio clic per zoomare",
+    "exitFocus": "Doppio clic per uscire"
   },
   "cart": {
     "title": "Carrello",
@@ -117,7 +124,9 @@
     "checkout": "Ordina via WhatsApp",
     "clear": "Svuota carrello",
     "orderGreeting": "Ciao, vorrei ordinare:",
-    "orderTotal": "Totale"
+    "orderTotal": "Totale",
+    "checkoutEmail": "Ordina via email",
+    "paymentNote": "Pagamento tramite PayPal, Tikkie o altri metodi possibile."
   },
   "footer": {
     "tagline": "La destinazione definitiva per maglie da calcio rare e iconiche.",
@@ -149,7 +158,7 @@
     "loading": "Caricamento..."
   },
   "products": {
-    "stoneIslandAjax": "Stone Island x Ajax",
+    "ajaxStoneIsland": "Ajax x Stone Island",
     "italyVersace": "Italia x Versace",
     "napoliHalloween": "Maglia Halloween SSC Napoli EA7",
     "portugalLV": "Portogallo x Louis Vuitton",

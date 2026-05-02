@@ -19,11 +19,34 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const { t } = useTranslation();
   const productName = useProductName();
 
+  const buildOrderText = () => {
+    const lines = items.map(i => `🏷️ ${productName(i.name)} (${t("cart.size")}: ${i.size}) x${i.quantity} — €${i.price * i.quantity}`).join("\n");
+    return `${t("cart.orderGreeting")}\n\n${lines}\n\n💰 ${t("cart.orderTotal")}: €${total}`;
+  };
+
   const handleOrder = () => {
     if (items.length === 0) return;
-    const lines = items.map(i => `🏷️ ${productName(i.name)} (${i.size}) x${i.quantity} — €${i.price * i.quantity}`).join("\n");
-    const message = `${t("cart.orderGreeting")}\n\n${lines}\n\n💰 ${t("cart.orderTotal")}: €${total}`;
-    window.open(`https://wa.me/31612345678?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/31612345678?text=${encodeURIComponent(buildOrderText())}`, "_blank");
+  };
+
+  const handleEmailOrder = async () => {
+    if (items.length === 0) return;
+    const orderText = buildOrderText();
+    const subject = `Nieuwe bestelling — €${total}`;
+    // Try to send via backend (Outlook), fallback to mailto
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      const { error } = await supabase.functions.invoke("send-order-email", {
+        body: { subject, body: orderText, items, total },
+      });
+      if (error) throw error;
+      alert("✅ Bestelling verzonden!");
+      clearCart();
+      onClose();
+      return;
+    } catch {
+      window.location.href = `mailto:thehomeoffootballstyle@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(orderText)}`;
+    }
   };
 
   return (
@@ -71,7 +94,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
               </div>
 
               {items.length > 0 && (
-                <div className="border-t border-border p-6 space-y-4">
+                <div className="border-t border-border p-6 space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-sm font-semibold">{t("cart.total")}</span>
                     <span className="font-display text-xl font-bold text-gradient-gold">€{total}</span>
@@ -79,6 +102,12 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                   <button onClick={handleOrder} className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors">
                     {t("cart.checkout")}
                   </button>
+                  <button onClick={handleEmailOrder} className="w-full py-3 rounded border border-primary/50 text-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/10 transition-colors">
+                    {t("cart.checkoutEmail")}
+                  </button>
+                  <div className="border-t border-border/50 pt-2">
+                    <p className="text-[10px] text-muted-foreground text-center leading-relaxed">{t("cart.paymentNote")}</p>
+                  </div>
                   <button onClick={clearCart} className="w-full py-2 text-xs text-muted-foreground hover:text-foreground transition-colors">
                     {t("cart.clear")}
                   </button>

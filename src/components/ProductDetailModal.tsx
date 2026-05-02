@@ -52,6 +52,10 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const [activeImage, setActiveImage] = useState(0);
   const [zoom, setZoom] = useState({ active: false, x: 50, y: 50 });
+  const [focusMode, setFocusMode] = useState(false); // double-click toggles
+  const [customize, setCustomize] = useState(false);
+  const [customName, setCustomName] = useState("");
+  const [customNumber, setCustomNumber] = useState("");
   const imgWrapRef = useRef<HTMLDivElement>(null);
   const { favorites, toggleFavorite, addItem } = useCart();
   const { t } = useTranslation();
@@ -64,11 +68,26 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
     setSelectedSize(null);
     setQuantity(1);
     setZoom({ active: false, x: 50, y: 50 });
+    setFocusMode(false);
+    setCustomize(false);
+    setCustomName("");
+    setCustomNumber("");
   }, [productName]);
+
+  const unitPrice = customize ? 37 : 30;
 
   const handleAddToCart = () => {
     if (!selected || !selectedSize) return;
-    addItem({ name: selected.name, image: selected.image, size: selectedSize, quantity, price: 30 });
+    const suffix = customize && (customName || customNumber)
+      ? ` [${customName || "—"}${customNumber ? ` #${customNumber}` : ""}]`
+      : "";
+    addItem({
+      name: selected.name + suffix,
+      image: selected.image,
+      size: selectedSize,
+      quantity,
+      price: unitPrice,
+    });
     onClose();
   };
 
@@ -79,6 +98,8 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
     const y = ((e.clientY - rect.top) / rect.height) * 100;
     setZoom({ active: true, x, y });
   };
+
+  const handleDoubleClick = () => setFocusMode((f) => !f);
 
   const gallery = selected?.gallery || (selected ? [selected.image] : []);
 
@@ -92,70 +113,62 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
           className="fixed inset-0 z-[60] bg-background overflow-y-auto"
         >
           <div className="absolute top-4 right-4 z-10 flex gap-2">
-            <button
-              onClick={() => toggleFavorite(selected.name)}
-              className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors"
-              aria-label="favorite"
-            >
+            <button onClick={() => toggleFavorite(selected.name)} className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors" aria-label="favorite">
               <Heart className={`h-5 w-5 ${favorites.has(selected.name) ? "fill-red-500 text-red-500" : "text-foreground"}`} />
             </button>
-            <button
-              onClick={onClose}
-              className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors"
-              aria-label="close"
-            >
+            <button onClick={onClose} className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors" aria-label="close">
               <X className="h-5 w-5" />
             </button>
           </div>
 
           <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
-            {/* Image side: vertical thumbnail rail + main image with zoom */}
             <div className="bg-card flex flex-col md:flex-row p-4 gap-4 md:max-h-screen md:sticky md:top-0">
-              {/* Thumbnail rail — vertical on desktop, horizontal scrollable on mobile */}
-              <div className="order-2 md:order-1 flex md:flex-col gap-2 md:gap-3 overflow-x-auto md:overflow-y-auto md:overflow-x-hidden md:max-h-[85vh] md:w-20 shrink-0 pb-2 md:pb-0 scrollbar-thin">
-                {gallery.map((img, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setActiveImage(idx)}
-                    className={`shrink-0 w-16 h-16 md:w-20 md:h-20 rounded overflow-hidden border-2 transition-all ${
-                      activeImage === idx
-                        ? "border-primary shadow-[var(--shadow-gold)]"
-                        : "border-border hover:border-primary/50 opacity-70 hover:opacity-100"
-                    }`}
-                    aria-label={`view ${idx + 1}`}
-                  >
-                    <img src={img} alt={`${displayName} ${idx + 1}`} className="w-full h-full object-cover" loading="lazy" />
-                  </button>
-                ))}
-              </div>
+              {/* Thumbnails — hidden in focus mode */}
+              {!focusMode && (
+                <div className="order-2 md:order-1 flex md:flex-col gap-2 md:gap-3 overflow-x-auto md:overflow-y-auto md:overflow-x-hidden md:max-h-[85vh] md:w-20 shrink-0 pb-2 md:pb-0 scrollbar-thin">
+                  {gallery.map((img, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setActiveImage(idx)}
+                      className={`shrink-0 w-16 h-16 md:w-20 md:h-20 rounded overflow-hidden border-2 transition-all ${
+                        activeImage === idx ? "border-primary shadow-[var(--shadow-gold)]" : "border-border hover:border-primary/50 opacity-70 hover:opacity-100"
+                      }`}
+                      aria-label={`view ${idx + 1}`}
+                    >
+                      <img src={img} alt={`${displayName} ${idx + 1}`} className="w-full h-full object-cover" loading="lazy" />
+                    </button>
+                  ))}
+                </div>
+              )}
 
-              {/* Main image with hover zoom */}
               <div className="order-1 md:order-2 flex-1 flex items-center justify-center min-h-[60vh] md:min-h-0">
                 <div
                   ref={imgWrapRef}
-                  onMouseEnter={() => setZoom((z) => ({ ...z, active: true }))}
-                  onMouseLeave={() => setZoom((z) => ({ ...z, active: false }))}
-                  onMouseMove={handleMouseMove}
-                  className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded cursor-zoom-in group"
+                  onMouseEnter={() => !focusMode && setZoom((z) => ({ ...z, active: true }))}
+                  onMouseLeave={() => !focusMode && setZoom((z) => ({ ...z, active: false }))}
+                  onMouseMove={(e) => !focusMode && handleMouseMove(e)}
+                  onDoubleClick={handleDoubleClick}
+                  className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded cursor-zoom-in group select-none"
+                  title={t("product.doubleClickHint")}
                 >
                   <motion.img
-                    key={activeImage}
+                    key={activeImage + (focusMode ? "-focus" : "")}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.25 }}
                     src={gallery[activeImage]}
                     alt={displayName}
+                    draggable={false}
                     className="w-full h-full object-contain transition-transform duration-200 ease-out"
                     style={{
-                      transformOrigin: `${zoom.x}% ${zoom.y}%`,
-                      transform: zoom.active ? "scale(2)" : "scale(1)",
+                      transformOrigin: focusMode ? "50% 50%" : `${zoom.x}% ${zoom.y}%`,
+                      transform: focusMode ? "scale(2)" : zoom.active ? "scale(2)" : "scale(1)",
                     }}
                   />
-                  {!zoom.active && (
-                    <div className="absolute bottom-3 right-3 p-2 rounded-full bg-background/70 backdrop-blur-sm text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                      <ZoomIn className="h-4 w-4" />
-                    </div>
-                  )}
+                  <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur-sm text-[10px] uppercase tracking-wider text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-1">
+                    <ZoomIn className="h-3 w-3" />
+                    {focusMode ? t("product.exitFocus") : t("product.doubleClickZoom")}
+                  </div>
                 </div>
               </div>
             </div>
@@ -163,7 +176,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
             <div className="p-8 md:p-12 flex flex-col justify-center max-w-lg mx-auto w-full">
               <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{selected.team}</p>
               <h2 className="font-display text-3xl md:text-4xl font-bold tracking-wide mb-2">{displayName}</h2>
-              <p className="font-display text-3xl font-bold text-gradient-gold mb-8">{selected.price}</p>
+              <p className="font-display text-3xl font-bold text-gradient-gold mb-8">€{unitPrice}</p>
 
               <div className="mb-6">
                 <p className="text-sm font-semibold mb-3">{t("product.size")}</p>
@@ -173,9 +186,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                       key={size}
                       onClick={() => setSelectedSize(size)}
                       className={`min-w-[48px] h-10 px-3 rounded border text-sm font-medium transition-all ${
-                        selectedSize === size
-                          ? "bg-primary text-primary-foreground border-primary"
-                          : "bg-transparent text-foreground border-border hover:border-primary/50"
+                        selectedSize === size ? "bg-primary text-primary-foreground border-primary" : "bg-transparent text-foreground border-border hover:border-primary/50"
                       }`}
                     >
                       {size}
@@ -184,16 +195,41 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 </div>
               </div>
 
+              {/* Customization: name + number = €37 */}
+              <div className="mb-6 border border-border rounded p-4">
+                <label className="flex items-center gap-2 cursor-pointer mb-3">
+                  <input type="checkbox" checked={customize} onChange={(e) => setCustomize(e.target.checked)} className="accent-primary h-4 w-4" />
+                  <span className="text-sm font-semibold">{t("product.customize")}</span>
+                  <span className="text-xs text-primary ml-auto">+€7</span>
+                </label>
+                {customize && (
+                  <div className="grid grid-cols-2 gap-2">
+                    <input
+                      type="text"
+                      maxLength={20}
+                      value={customName}
+                      onChange={(e) => setCustomName(e.target.value.toUpperCase())}
+                      placeholder={t("product.namePlaceholder")}
+                      className="px-3 py-2 rounded border border-border bg-background text-sm focus:outline-none focus:border-primary"
+                    />
+                    <input
+                      type="text"
+                      maxLength={2}
+                      value={customNumber}
+                      onChange={(e) => setCustomNumber(e.target.value.replace(/\D/g, ""))}
+                      placeholder={t("product.numberPlaceholder")}
+                      className="px-3 py-2 rounded border border-border bg-background text-sm focus:outline-none focus:border-primary"
+                    />
+                  </div>
+                )}
+              </div>
+
               <div className="mb-8">
                 <p className="text-sm font-semibold mb-3">{t("product.quantity")}</p>
                 <div className="flex items-center border border-border rounded w-fit">
-                  <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="p-2 hover:bg-muted transition-colors">
-                    <Minus className="h-4 w-4" />
-                  </button>
+                  <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="p-2 hover:bg-muted transition-colors"><Minus className="h-4 w-4" /></button>
                   <span className="px-5 text-sm font-medium min-w-[40px] text-center">{quantity}</span>
-                  <button onClick={() => setQuantity(quantity + 1)} className="p-2 hover:bg-muted transition-colors">
-                    <Plus className="h-4 w-4" />
-                  </button>
+                  <button onClick={() => setQuantity(quantity + 1)} className="p-2 hover:bg-muted transition-colors"><Plus className="h-4 w-4" /></button>
                 </div>
               </div>
 
@@ -201,9 +237,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 onClick={handleAddToCart}
                 disabled={!selectedSize}
                 className={`w-full flex items-center justify-center gap-2 py-4 rounded font-semibold text-sm tracking-wide uppercase transition-all duration-300 mb-6 ${
-                  selectedSize
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[var(--shadow-gold)]"
-                    : "bg-muted text-muted-foreground cursor-not-allowed"
+                  selectedSize ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[var(--shadow-gold)]" : "bg-muted text-muted-foreground cursor-not-allowed"
                 }`}
               >
                 <ShoppingBag className="h-4 w-4" />
@@ -217,10 +251,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                   { key: "returns", label: t("product.returns"), content: t("product.returnsInfo") },
                 ].map((item) => (
                   <div key={item.key} className="border-b border-border">
-                    <button
-                      onClick={() => setOpenAccordion(openAccordion === item.key ? null : item.key)}
-                      className="w-full flex items-center justify-between py-4 text-sm font-semibold hover:text-primary transition-colors"
-                    >
+                    <button onClick={() => setOpenAccordion(openAccordion === item.key ? null : item.key)} className="w-full flex items-center justify-between py-4 text-sm font-semibold hover:text-primary transition-colors">
                       {item.label}
                       <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${openAccordion === item.key ? "rotate-180" : ""}`} />
                     </button>
@@ -243,3 +274,4 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
 };
 
 export default ProductDetailModal;
+

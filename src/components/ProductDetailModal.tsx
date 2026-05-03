@@ -109,6 +109,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                   </button>
                 ))}
               </div>
+              )}
 
               <div className="order-1 md:order-1 flex-1 flex items-center justify-center min-h-[60vh] md:min-h-0">
                 <div className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded select-none">

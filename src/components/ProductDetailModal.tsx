@@ -108,7 +108,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
 
           <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
             <div className="bg-card flex flex-col md:flex-row p-4 gap-4 md:max-h-screen md:sticky md:top-0">
-              <div className="order-2 md:order-1 flex md:flex-col gap-2 md:gap-3 overflow-x-auto md:overflow-y-auto md:overflow-x-hidden md:max-h-[85vh] md:w-20 shrink-0 pb-2 md:pb-0 scrollbar-thin">
+              <div className="order-2 md:order-2 flex md:flex-col gap-2 md:gap-3 overflow-x-auto md:overflow-y-auto md:overflow-x-hidden md:max-h-[85vh] md:w-20 shrink-0 pb-2 md:pb-0 scrollbar-thin">
                 {gallery.map((img, idx) => (
                   <button
                     key={idx}
@@ -123,7 +123,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 ))}
               </div>
 
-              <div className="order-1 md:order-2 flex-1 flex items-center justify-center min-h-[60vh] md:min-h-0">
+              <div className="order-1 md:order-1 flex-1 flex items-center justify-center min-h-[60vh] md:min-h-0">
                 <div className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded select-none">
                   <motion.img
                     key={activeImage}

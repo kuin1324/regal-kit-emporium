@@ -56,12 +56,8 @@ Deno.serve(async (req) => {
         <pre style="font-family:Arial;white-space:pre-wrap;color:#444">${escapeHtml(body)}</pre>
       </div>`;
 
-    // Send to self (the connected mailbox owner)
-    const profileRes = await fetch(`${GATEWAY_URL}/me`, {
-      headers: { Authorization: `Bearer ${LOVABLE_API_KEY}`, "X-Connection-Api-Key": OUTLOOK_API_KEY },
-    });
-    const profile = await profileRes.json();
-    const recipient = profile?.mail || profile?.userPrincipalName;
+    // Always send to the shop's Outlook inbox
+    const recipient = "the_home_of_football_style@outlook.com";
 
     const sendRes = await fetch(`${GATEWAY_URL}/me/sendMail`, {
       method: "POST",

@@ -45,7 +45,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
       onClose();
       return;
     } catch {
-      window.location.href = `mailto:thehomeoffootballstyle@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(orderText)}`;
+      window.location.href = `mailto:the_home_of_football_style@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(orderText)}`;
     }
   };
 

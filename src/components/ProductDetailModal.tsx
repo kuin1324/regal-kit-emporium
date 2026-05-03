@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef, MouseEvent } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag, ZoomIn } from "lucide-react";
+import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import shirt1 from "@/assets/shirt-new-1.png";
@@ -51,12 +51,9 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
   const [quantity, setQuantity] = useState(1);
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const [activeImage, setActiveImage] = useState(0);
-  const [zoom, setZoom] = useState({ active: false, x: 50, y: 50 });
-  const [focusMode, setFocusMode] = useState(false); // double-click toggles
   const [customize, setCustomize] = useState(false);
   const [customName, setCustomName] = useState("");
   const [customNumber, setCustomNumber] = useState("");
-  const imgWrapRef = useRef<HTMLDivElement>(null);
   const { favorites, toggleFavorite, addItem } = useCart();
   const { t } = useTranslation();
 
@@ -67,8 +64,6 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
     setActiveImage(0);
     setSelectedSize(null);
     setQuantity(1);
-    setZoom({ active: false, x: 50, y: 50 });
-    setFocusMode(false);
     setCustomize(false);
     setCustomName("");
     setCustomNumber("");
@@ -90,16 +85,6 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
     });
     onClose();
   };
-
-  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
-    if (!imgWrapRef.current) return;
-    const rect = imgWrapRef.current.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    setZoom({ active: true, x, y });
-  };
-
-  const handleDoubleClick = () => setFocusMode((f) => !f);
 
   const gallery = selected?.gallery || (selected ? [selected.image] : []);
 
@@ -123,52 +108,33 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
 
           <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
             <div className="bg-card flex flex-col md:flex-row p-4 gap-4 md:max-h-screen md:sticky md:top-0">
-              {/* Thumbnails — hidden in focus mode */}
-              {!focusMode && (
-                <div className="order-2 md:order-1 flex md:flex-col gap-2 md:gap-3 overflow-x-auto md:overflow-y-auto md:overflow-x-hidden md:max-h-[85vh] md:w-20 shrink-0 pb-2 md:pb-0 scrollbar-thin">
-                  {gallery.map((img, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setActiveImage(idx)}
-                      className={`shrink-0 w-16 h-16 md:w-20 md:h-20 rounded overflow-hidden border-2 transition-all ${
-                        activeImage === idx ? "border-primary shadow-[var(--shadow-gold)]" : "border-border hover:border-primary/50 opacity-70 hover:opacity-100"
-                      }`}
-                      aria-label={`view ${idx + 1}`}
-                    >
-                      <img src={img} alt={`${displayName} ${idx + 1}`} className="w-full h-full object-cover" loading="lazy" />
-                    </button>
-                  ))}
-                </div>
-              )}
+              <div className="order-2 md:order-1 flex md:flex-col gap-2 md:gap-3 overflow-x-auto md:overflow-y-auto md:overflow-x-hidden md:max-h-[85vh] md:w-20 shrink-0 pb-2 md:pb-0 scrollbar-thin">
+                {gallery.map((img, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setActiveImage(idx)}
+                    className={`shrink-0 w-16 h-16 md:w-20 md:h-20 rounded overflow-hidden border-2 transition-all ${
+                      activeImage === idx ? "border-primary shadow-[var(--shadow-gold)]" : "border-border hover:border-primary/50 opacity-70 hover:opacity-100"
+                    }`}
+                    aria-label={`view ${idx + 1}`}
+                  >
+                    <img src={img} alt={`${displayName} ${idx + 1}`} className="w-full h-full object-cover" loading="lazy" />
+                  </button>
+                ))}
+              </div>
 
               <div className="order-1 md:order-2 flex-1 flex items-center justify-center min-h-[60vh] md:min-h-0">
-                <div
-                  ref={imgWrapRef}
-                  onMouseEnter={() => !focusMode && setZoom((z) => ({ ...z, active: true }))}
-                  onMouseLeave={() => !focusMode && setZoom((z) => ({ ...z, active: false }))}
-                  onMouseMove={(e) => !focusMode && handleMouseMove(e)}
-                  onDoubleClick={handleDoubleClick}
-                  className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded cursor-zoom-in group select-none"
-                  title={t("product.doubleClickHint")}
-                >
+                <div className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded select-none">
                   <motion.img
-                    key={activeImage + (focusMode ? "-focus" : "")}
+                    key={activeImage}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.25 }}
                     src={gallery[activeImage]}
                     alt={displayName}
                     draggable={false}
-                    className="w-full h-full object-contain transition-transform duration-200 ease-out"
-                    style={{
-                      transformOrigin: focusMode ? "50% 50%" : `${zoom.x}% ${zoom.y}%`,
-                      transform: focusMode ? "scale(2)" : zoom.active ? "scale(2)" : "scale(1)",
-                    }}
+                    className="w-full h-full object-contain"
                   />
-                  <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-full bg-background/70 backdrop-blur-sm text-[10px] uppercase tracking-wider text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-1">
-                    <ZoomIn className="h-3 w-3" />
-                    {focusMode ? t("product.exitFocus") : t("product.doubleClickZoom")}
-                  </div>
                 </div>
               </div>
             </div>

@@ -11,34 +11,20 @@ import shirt5 from "@/assets/shirt-new-5.png";
 import shirt6 from "@/assets/shirt-new-6.png";
 import shirt7 from "@/assets/shirt-new-7.png";
 
-// Extra product images sourced from Unsplash (free stock) — back/detail/lifestyle views
-const EXTRA = {
-  ajax: ["https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&q=80", "https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?w=800&q=80"],
-  italy: ["https://images.unsplash.com/photo-1593341646782-e0b495cff86d?w=800&q=80", "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&q=80"],
-  napoli: ["https://images.unsplash.com/photo-1580087256394-dc596e1c8f4f?w=800&q=80", "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&q=80"],
-  portugal: ["https://images.unsplash.com/photo-1551854838-212c50b4c184?w=800&q=80", "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=800&q=80"],
-  italyTraining: ["https://images.unsplash.com/photo-1571736772567-8e3ec1a45ddc?w=800&q=80", "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=80"],
-  barca: ["https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80", "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800&q=80"],
-  marseille: ["https://images.unsplash.com/photo-1580087632545-cd0d9d671b1d?w=800&q=80", "https://images.unsplash.com/photo-1565992441121-4367c2967103?w=800&q=80"],
-};
-
-// Color rules per user request:
-// - blauw: napoli, marseille, italy x versace, italy training (italy shirts moved from blauw -> wit too)
+// Color rules:
+// - blauw: napoli (italy shirts removed)
 // - wit: italy x versace, italy training, portugal
-// - rood: marseille (only) — ajax/portugal/barca removed
-// - geel (was goud): empty
-// - groen: empty (portugal removed)
-// - oranje: empty (napoli removed)
+// - rood: (empty — marseille removed)
 // - meerkleurig: barcelona
-// - zwart: ajax (napoli & marseille removed)
+// - zwart: ajax
 export const allProducts = [
-  { image: shirt1, gallery: [shirt1, ...EXTRA.ajax], name: "Ajax x Stone Island", nameKey: "ajaxStoneIsland", team: "Ajax", leagues: ["Eredivisie"], price: "€30", description: "Exclusieve samenwerking tussen Ajax en Stone Island. Premium kwaliteit met uniek design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart"] },
-  { image: shirt2, gallery: [shirt2, ...EXTRA.italy], name: "Italy x Versace", nameKey: "italyVersace", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Italiaans design met Versace-elementen. Een stijlvol eerbetoon aan het Italiaanse voetbal.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw", "wit"] },
-  { image: shirt3, gallery: [shirt3, ...EXTRA.napoli], name: "SSC Napoli EA7 2025/26 Halloween Kit", nameKey: "napoliHalloween", team: "SSC Napoli", leagues: ["Serie A"], price: "€30", description: "Het exclusieve Halloween kit van SSC Napoli in samenwerking met EA7.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"], colors: ["blauw"] },
-  { image: shirt4, gallery: [shirt4, ...EXTRA.portugal], name: "Portugal x Louis Vuitton", nameKey: "portugalLV", team: "Portugal", leagues: ["Nationaal"], price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit"] },
-  { image: shirt5, gallery: [shirt5, ...EXTRA.italyTraining], name: "Italië Special Trainingsshirt", nameKey: "italyTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Exclusief Italiaans trainingsshirt met uniek design. Een must-have voor elke voetballiefhebber.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"], colors: ["blauw", "wit"] },
-  { image: shirt6, gallery: [shirt6, ...EXTRA.barca], name: "Barcelona Special Flower Design", nameKey: "barcaFlower", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "Unieke Barcelona editie met bloemenpatroon en premium afwerking.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["meerkleurig"] },
-  { image: shirt7, gallery: [shirt7, ...EXTRA.marseille], name: "Marseille Third", nameKey: "marseilleThird", team: "Olympique Marseille", leagues: ["Ligue 1"], price: "€30", description: "Het stijlvolle third shirt van Olympique Marseille. Frans design op zijn best.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw", "rood"] },
+  { image: shirt1, gallery: [shirt1], name: "Ajax x Stone Island", nameKey: "ajaxStoneIsland", team: "Ajax", leagues: ["Eredivisie"], price: "€30", description: "Exclusieve samenwerking tussen Ajax en Stone Island. Premium kwaliteit met uniek design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart"] },
+  { image: shirt2, gallery: [shirt2], name: "Italy x Versace", nameKey: "italyVersace", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Italiaans design met Versace-elementen. Een stijlvol eerbetoon aan het Italiaanse voetbal.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit"] },
+  { image: shirt3, gallery: [shirt3], name: "SSC Napoli EA7 2025/26 Halloween Kit", nameKey: "napoliHalloween", team: "SSC Napoli", leagues: ["Serie A"], price: "€30", description: "Het exclusieve Halloween kit van SSC Napoli in samenwerking met EA7.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"], colors: ["blauw"] },
+  { image: shirt4, gallery: [shirt4], name: "Portugal x Louis Vuitton", nameKey: "portugalLV", team: "Portugal", leagues: ["Nationaal"], price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit"] },
+  { image: shirt5, gallery: [shirt5], name: "Italië Special Trainingsshirt", nameKey: "italyTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Exclusief Italiaans trainingsshirt met uniek design. Een must-have voor elke voetballiefhebber.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"], colors: ["wit"] },
+  { image: shirt6, gallery: [shirt6], name: "Barcelona Special Flower Design", nameKey: "barcaFlower", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "Unieke Barcelona editie met bloemenpatroon en premium afwerking.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["meerkleurig"] },
+  { image: shirt7, gallery: [shirt7], name: "Marseille Third", nameKey: "marseilleThird", team: "Olympique Marseille", leagues: ["Ligue 1"], price: "€30", description: "Het stijlvolle third shirt van Olympique Marseille. Frans design op zijn best.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
 ];
 
 interface ProductDetailModalProps {

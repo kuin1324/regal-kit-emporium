@@ -33,17 +33,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
 
   const addItem = (item: CartItem) => {
-    setItems(prev => {
-      const existing = prev.find(i => i.name === item.name && i.size === item.size);
-      if (existing) {
-        return prev.map(i =>
-          i.name === item.name && i.size === item.size
-            ? { ...i, quantity: i.quantity + item.quantity }
-            : i
-        );
-      }
-      return [...prev, item];
-    });
+    setItems(prev => [...prev, item]);
   };
 
   const removeItem = (name: string, size: string) => {

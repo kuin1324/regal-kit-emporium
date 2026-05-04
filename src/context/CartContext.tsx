@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 
 export interface CartItem {
+  id: string;
   name: string;
   image: string;
   size: string;
@@ -10,9 +11,9 @@ export interface CartItem {
 
 interface CartContextType {
   items: CartItem[];
-  addItem: (item: CartItem) => void;
-  removeItem: (name: string, size: string) => void;
-  updateQuantity: (name: string, size: string, quantity: number) => void;
+  addItem: (item: Omit<CartItem, "id">) => void;
+  removeItem: (id: string) => void;
+  updateQuantity: (id: string, quantity: number) => void;
   clearCart: () => void;
   total: number;
   count: number;
@@ -32,19 +33,17 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [items, setItems] = useState<CartItem[]>([]);
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
 
-  const addItem = (item: CartItem) => {
-    setItems(prev => [...prev, item]);
+  const addItem = (item: Omit<CartItem, "id">) => {
+    setItems(prev => [...prev, { ...item, id: crypto.randomUUID() }]);
   };
 
-  const removeItem = (name: string, size: string) => {
-    setItems(prev => prev.filter(i => !(i.name === name && i.size === size)));
+  const removeItem = (id: string) => {
+    setItems(prev => prev.filter(i => i.id !== id));
   };
 
-  const updateQuantity = (name: string, size: string, quantity: number) => {
-    if (quantity <= 0) return removeItem(name, size);
-    setItems(prev => prev.map(i =>
-      i.name === name && i.size === size ? { ...i, quantity } : i
-    ));
+  const updateQuantity = (id: string, quantity: number) => {
+    if (quantity <= 0) return removeItem(id);
+    setItems(prev => prev.map(i => (i.id === id ? { ...i, quantity } : i)));
   };
 
   const clearCart = () => setItems([]);

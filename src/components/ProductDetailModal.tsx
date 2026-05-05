@@ -150,72 +150,93 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
             <div className="p-8 md:p-12 flex flex-col justify-center max-w-lg mx-auto w-full">
               <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{selected.team}</p>
               <h2 className="font-display text-3xl md:text-4xl font-bold tracking-wide mb-2">{displayName}</h2>
-              <p className="font-display text-3xl font-bold text-gradient-gold mb-8">€{unitPrice}</p>
+              <p className="font-display text-3xl font-bold text-gradient-gold mb-8">€{totalPrice}</p>
 
-              <div className="mb-6">
-                <p className="text-sm font-semibold mb-3">{t("product.size")}</p>
-                <div className="flex flex-wrap gap-2">
-                  {selected.sizes.map((size) => (
-                    <button
-                      key={size}
-                      onClick={() => setSelectedSize(size)}
-                      className={`min-w-[48px] h-10 px-3 rounded border text-sm font-medium transition-all ${
-                        selectedSize === size ? "bg-primary text-primary-foreground border-primary" : "bg-transparent text-foreground border-border hover:border-primary/50"
-                      }`}
-                    >
-                      {size}
-                    </button>
-                  ))}
-                </div>
-              </div>
+              <div className="space-y-6 mb-6">
+                {variants.map((v, idx) => (
+                  <div key={v.id} className="border border-border rounded p-4 space-y-4 relative">
+                    <div className="flex items-center justify-between">
+                      <p className="text-xs font-semibold tracking-wide uppercase text-primary">Shirt {idx + 1}</p>
+                      {variants.length > 1 && (
+                        <button onClick={() => removeVariant(v.id)} className="p-1 hover:bg-destructive/20 rounded" aria-label="remove">
+                          <Trash2 className="h-4 w-4 text-destructive" />
+                        </button>
+                      )}
+                    </div>
 
-              {/* Customization: name + number = €37 */}
-              <div className="mb-6 border border-border rounded p-4">
-                <label className="flex items-center gap-2 cursor-pointer mb-3">
-                  <input type="checkbox" checked={customize} onChange={(e) => setCustomize(e.target.checked)} className="accent-primary h-4 w-4" />
-                  <span className="text-sm font-semibold">{t("product.customize")}</span>
-                  <span className="text-xs text-primary ml-auto">+€7</span>
-                </label>
-                {customize && (
-                  <div className="grid grid-cols-2 gap-2">
-                    <input
-                      type="text"
-                      maxLength={20}
-                      value={customName}
-                      onChange={(e) => setCustomName(e.target.value.toUpperCase())}
-                      placeholder={t("product.namePlaceholder")}
-                      className="px-3 py-2 rounded border border-border bg-background text-sm focus:outline-none focus:border-primary"
-                    />
-                    <input
-                      type="text"
-                      maxLength={2}
-                      value={customNumber}
-                      onChange={(e) => setCustomNumber(e.target.value.replace(/\D/g, ""))}
-                      placeholder={t("product.numberPlaceholder")}
-                      className="px-3 py-2 rounded border border-border bg-background text-sm focus:outline-none focus:border-primary"
-                    />
+                    <div>
+                      <p className="text-sm font-semibold mb-3">{t("product.size")}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {selected.sizes.map((size) => (
+                          <button
+                            key={size}
+                            onClick={() => updateVariant(v.id, { size })}
+                            className={`min-w-[48px] h-10 px-3 rounded border text-sm font-medium transition-all ${
+                              v.size === size ? "bg-primary text-primary-foreground border-primary" : "bg-transparent text-foreground border-border hover:border-primary/50"
+                            }`}
+                          >
+                            {size}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="flex items-center gap-2 cursor-pointer mb-3">
+                        <input type="checkbox" checked={v.customize} onChange={(e) => updateVariant(v.id, { customize: e.target.checked })} className="accent-primary h-4 w-4" />
+                        <span className="text-sm font-semibold">{t("product.customize")}</span>
+                        <span className="text-xs text-primary ml-auto">+€7</span>
+                      </label>
+                      {v.customize && (
+                        <div className="grid grid-cols-2 gap-2">
+                          <input
+                            type="text"
+                            maxLength={20}
+                            value={v.customName}
+                            onChange={(e) => updateVariant(v.id, { customName: e.target.value.toUpperCase() })}
+                            placeholder={t("product.namePlaceholder")}
+                            className="px-3 py-2 rounded border border-border bg-background text-sm focus:outline-none focus:border-primary"
+                          />
+                          <input
+                            type="text"
+                            maxLength={2}
+                            value={v.customNumber}
+                            onChange={(e) => updateVariant(v.id, { customNumber: e.target.value.replace(/\D/g, "") })}
+                            placeholder={t("product.numberPlaceholder")}
+                            className="px-3 py-2 rounded border border-border bg-background text-sm focus:outline-none focus:border-primary"
+                          />
+                        </div>
+                      )}
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-semibold mb-3">{t("product.quantity")}</p>
+                      <div className="flex items-center border border-border rounded w-fit">
+                        <button onClick={() => updateVariant(v.id, { quantity: Math.max(1, v.quantity - 1) })} className="p-2 hover:bg-muted transition-colors"><Minus className="h-4 w-4" /></button>
+                        <span className="px-5 text-sm font-medium min-w-[40px] text-center">{v.quantity}</span>
+                        <button onClick={() => updateVariant(v.id, { quantity: v.quantity + 1 })} className="p-2 hover:bg-muted transition-colors"><Plus className="h-4 w-4" /></button>
+                      </div>
+                    </div>
                   </div>
-                )}
-              </div>
-
-              <div className="mb-8">
-                <p className="text-sm font-semibold mb-3">{t("product.quantity")}</p>
-                <div className="flex items-center border border-border rounded w-fit">
-                  <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="p-2 hover:bg-muted transition-colors"><Minus className="h-4 w-4" /></button>
-                  <span className="px-5 text-sm font-medium min-w-[40px] text-center">{quantity}</span>
-                  <button onClick={() => setQuantity(quantity + 1)} className="p-2 hover:bg-muted transition-colors"><Plus className="h-4 w-4" /></button>
-                </div>
+                ))}
               </div>
 
               <button
+                onClick={() => setVariants(prev => [...prev, newVariant()])}
+                className="w-full py-3 rounded border border-dashed border-primary/50 text-primary font-semibold text-sm tracking-wide uppercase hover:bg-primary/10 transition-colors mb-6"
+              >
+                + Nog een shirt toevoegen
+              </button>
+
+              <button
                 onClick={handleAddToCart}
-                disabled={!selectedSize}
+                disabled={!allValid}
                 className={`w-full flex items-center justify-center gap-2 py-4 rounded font-semibold text-sm tracking-wide uppercase transition-all duration-300 mb-6 ${
-                  selectedSize ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[var(--shadow-gold)]" : "bg-muted text-muted-foreground cursor-not-allowed"
+                  allValid ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[var(--shadow-gold)]" : "bg-muted text-muted-foreground cursor-not-allowed"
                 }`}
               >
                 <ShoppingBag className="h-4 w-4" />
-                {selectedSize ? t("product.addToCart") : t("product.pickSize")}
+                {allValid ? t("product.addToCart") : t("product.pickSize")}
               </button>
 
               <div className="border-t border-border">

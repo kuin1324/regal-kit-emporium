@@ -32,14 +32,28 @@ interface ProductDetailModalProps {
   onClose: () => void;
 }
 
+interface Variant {
+  id: string;
+  size: string | null;
+  quantity: number;
+  customize: boolean;
+  customName: string;
+  customNumber: string;
+}
+
+const newVariant = (): Variant => ({
+  id: crypto.randomUUID(),
+  size: null,
+  quantity: 1,
+  customize: false,
+  customName: "",
+  customNumber: "",
+});
+
 const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) => {
-  const [selectedSize, setSelectedSize] = useState<string | null>(null);
-  const [quantity, setQuantity] = useState(1);
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const [activeImage, setActiveImage] = useState(0);
-  const [customize, setCustomize] = useState(false);
-  const [customName, setCustomName] = useState("");
-  const [customNumber, setCustomNumber] = useState("");
+  const [variants, setVariants] = useState<Variant[]>([newVariant()]);
   const { favorites, toggleFavorite, addItem } = useCart();
   const { t } = useTranslation();
 
@@ -48,26 +62,32 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
 
   useEffect(() => {
     setActiveImage(0);
-    setSelectedSize(null);
-    setQuantity(1);
-    setCustomize(false);
-    setCustomName("");
-    setCustomNumber("");
+    setVariants([newVariant()]);
   }, [productName]);
 
-  const unitPrice = customize ? 37 : 30;
+  const updateVariant = (id: string, patch: Partial<Variant>) => {
+    setVariants(prev => prev.map(v => (v.id === id ? { ...v, ...patch } : v)));
+  };
+  const removeVariant = (id: string) => {
+    setVariants(prev => (prev.length > 1 ? prev.filter(v => v.id !== id) : prev));
+  };
+
+  const totalPrice = variants.reduce((sum, v) => sum + (v.customize ? 37 : 30) * v.quantity, 0);
+  const allValid = variants.every(v => !!v.size);
 
   const handleAddToCart = () => {
-    if (!selected || !selectedSize) return;
-    const suffix = customize && (customName || customNumber)
-      ? ` [${customName || "—"}${customNumber ? ` #${customNumber}` : ""}]`
-      : "";
-    addItem({
-      name: selected.name + suffix,
-      image: selected.image,
-      size: selectedSize,
-      quantity,
-      price: unitPrice,
+    if (!selected || !allValid) return;
+    variants.forEach(v => {
+      const suffix = v.customize && (v.customName || v.customNumber)
+        ? ` [${v.customName || "—"}${v.customNumber ? ` #${v.customNumber}` : ""}]`
+        : "";
+      addItem({
+        name: selected.name + suffix,
+        image: selected.image,
+        size: v.size!,
+        quantity: v.quantity,
+        price: v.customize ? 37 : 30,
+      });
     });
     onClose();
   };

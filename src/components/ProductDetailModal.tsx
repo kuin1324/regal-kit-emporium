@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag } from "lucide-react";
+import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag, Trash2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import shirt1 from "@/assets/shirt-new-1.png";

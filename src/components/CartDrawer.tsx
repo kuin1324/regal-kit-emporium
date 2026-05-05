@@ -77,16 +77,14 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                       <div key={item.id} className="flex gap-4 border border-border rounded p-3">
                         <img src={item.image} alt={productName(item.name)} className="w-20 h-24 object-cover rounded cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setSelectedProduct(item.name)} />
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-start justify-between gap-2">
-                            <h3 className="text-sm font-semibold truncate cursor-pointer hover:text-primary transition-colors" onClick={() => setSelectedProduct(item.name)}>{productName(item.name)}</h3>
-                            <button onClick={() => removeItem(item.id)} className="p-1 hover:bg-destructive/20 rounded shrink-0"><Trash2 className="h-3 w-3 text-destructive" /></button>
-                          </div>
+                          <h3 className="text-sm font-semibold truncate cursor-pointer hover:text-primary transition-colors" onClick={() => setSelectedProduct(item.name)}>{productName(item.name)}</h3>
                           <p className="text-xs text-muted-foreground">{t("cart.size")}: {item.size}</p>
                           <p className="text-sm font-bold text-gradient-gold mt-1">€{item.price * item.quantity}</p>
                           <div className="flex items-center gap-2 mt-2">
                             <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="p-1 hover:bg-muted rounded"><Minus className="h-3 w-3" /></button>
                             <span className="text-xs font-medium w-6 text-center">{item.quantity}</span>
                             <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="p-1 hover:bg-muted rounded"><Plus className="h-3 w-3" /></button>
+                            <button onClick={() => removeItem(item.id)} className="p-1 hover:bg-destructive/20 rounded ml-auto"><Trash2 className="h-3 w-3 text-destructive" /></button>
                           </div>
                         </div>
                       </div>

@@ -24,11 +24,6 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     return `${t("cart.orderGreeting")}\n\n${lines}\n\n💰 ${t("cart.orderTotal")}: €${total}`;
   };
 
-  const handleOrder = () => {
-    if (items.length === 0) return;
-    window.open(`https://wa.me/31612345678?text=${encodeURIComponent(buildOrderText())}`, "_blank");
-  };
-
   const handleEmailOrder = async () => {
     if (items.length === 0) return;
     const orderText = buildOrderText();
@@ -99,10 +94,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                     <span className="text-sm font-semibold">{t("cart.total")}</span>
                     <span className="font-display text-xl font-bold text-gradient-gold">€{total}</span>
                   </div>
-                  <button onClick={handleOrder} className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors">
-                    {t("cart.checkout")}
-                  </button>
-                  <button onClick={handleEmailOrder} className="w-full py-3 rounded border border-primary/50 text-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/10 transition-colors">
+                  <button onClick={handleEmailOrder} className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors">
                     {t("cart.checkoutEmail")}
                   </button>
                   <div className="border-t border-border/50 pt-2">

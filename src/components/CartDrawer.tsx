@@ -88,6 +88,10 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                           </div>
                         </div>
                       </div>
+                    ))}
+                  </div>
+                )}
+              </div>
 
               {items.length > 0 && (
                 <div className="border-t border-border p-6 space-y-3">

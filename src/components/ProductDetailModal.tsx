@@ -7,12 +7,27 @@ import shirt4 from "@/assets/shirt-new-4.png";
 import shirt5 from "@/assets/shirt-new-5.png";
 import shirt7 from "@/assets/shirt-new-7.png";
 import shirtGermany from "@/assets/shirt-germany.jpg";
+import barcaGolfFront from "@/assets/shirt-barcelona-golf-front.jpg";
+import barcaGolfBack from "@/assets/shirt-barcelona-golf-back.jpg";
+import italyVersaceFront from "@/assets/shirt-italy-versace-front.jpg";
+import italyVersaceBack from "@/assets/shirt-italy-versace-back.jpg";
+import spainAdidasFront from "@/assets/shirt-spain-adidas-front.jpg";
+import spainAdidasBack from "@/assets/shirt-spain-adidas-back.jpg";
+import napoliFront from "@/assets/shirt-napoli-front.jpg";
+import napoliBack from "@/assets/shirt-napoli-back.jpg";
+import stoneIslandAjaxFront from "@/assets/shirt-stone-island-ajax-front.jpg";
+import stoneIslandAjaxBack from "@/assets/shirt-stone-island-ajax-back.jpg";
 
 export const allProducts = [
   { image: shirt4, gallery: [shirt4], name: "Portugal x Louis Vuitton", nameKey: "portugalLV", team: "Portugal", leagues: ["Nationaal"], price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit"] },
   { image: shirt5, gallery: [shirt5], name: "Italië Special Trainingsshirt", nameKey: "italyTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Exclusief Italiaans trainingsshirt met uniek design. Een must-have voor elke voetballiefhebber.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"], colors: ["wit"] },
   { image: shirt7, gallery: [shirt7], name: "Marseille Third", nameKey: "marseilleThird", team: "Olympique Marseille", leagues: ["Ligue 1"], price: "€30", description: "Het stijlvolle third shirt van Olympique Marseille. Frans design op zijn best.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
   { image: shirtGermany, gallery: [shirtGermany], name: "Duitsland x Adidas Originals", nameKey: "germanyAdidas", team: "Duitsland", leagues: ["Nationaal", "Special"], price: "€30", description: "Stijlvol Duitsland shirt in samenwerking met Adidas Originals. Donkerblauw met mintgroene accenten en subtiel patroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
+  { image: barcaGolfFront, gallery: [barcaGolfFront, barcaGolfBack], name: "Barcelona x Tyler The Creator Golf", nameKey: "barcaGolf", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "Unieke Barcelona x Golf le Fleur editie met bloemen en sterren. Speels en kleurrijk design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "roze"] },
+  { image: italyVersaceFront, gallery: [italyVersaceFront, italyVersaceBack], name: "Italië x Versace", nameKey: "italyVersace", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Italië shirt geïnspireerd door Versace barok print. Goud en zwart op wit.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "goud"] },
+  { image: spainAdidasFront, gallery: [spainAdidasFront, spainAdidasBack], name: "Spanje x Adidas Special", nameKey: "spainAdidas", team: "Spanje", leagues: ["Nationaal", "Special"], price: "€30", description: "Spanje special edition van Adidas met pastel roze en blauwe gradient. Uniek artistiek design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["roze", "blauw"] },
+  { image: napoliFront, gallery: [napoliFront, napoliBack], name: "Napoli Third EA7", nameKey: "napoliThird", team: "SSC Napoli", leagues: ["Serie A"], price: "€30", description: "Napoli third shirt met EA7 en MSC sponsoring. Donkerblauw met oranje accenten.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw", "oranje"] },
+  { image: stoneIslandAjaxFront, gallery: [stoneIslandAjaxFront, stoneIslandAjaxBack], name: "Ajax x Stone Island", nameKey: "ajaxStoneIsland", team: "Ajax", leagues: ["Eredivisie", "Special"], price: "€30", description: "Exclusieve Ajax x Stone Island samenwerking. Volledig zwart met subtiel camo patroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart"] },
 ];
 
 interface ProductDetailModalProps {

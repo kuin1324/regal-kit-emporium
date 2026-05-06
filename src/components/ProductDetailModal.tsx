@@ -17,6 +17,8 @@ import napoliFront from "@/assets/shirt-napoli-front.jpg";
 import napoliBack from "@/assets/shirt-napoli-back.jpg";
 import stoneIslandAjaxFront from "@/assets/shirt-stone-island-ajax-front.jpg";
 import stoneIslandAjaxBack from "@/assets/shirt-stone-island-ajax-back.jpg";
+import franceFront from "@/assets/shirt-france-front.jpg";
+import franceBack from "@/assets/shirt-france-back.jpg";
 
 export const allProducts = [
   { image: shirt4, gallery: [shirt4], name: "Portugal x Louis Vuitton", nameKey: "portugalLV", team: "Portugal", leagues: ["Nationaal"], price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit"] },
@@ -28,6 +30,7 @@ export const allProducts = [
   { image: spainAdidasFront, gallery: [spainAdidasFront, spainAdidasBack], name: "Spanje x Adidas Special", nameKey: "spainAdidas", team: "Spanje", leagues: ["Nationaal", "Special"], price: "€30", description: "Spanje special edition van Adidas met pastel roze en blauwe gradient. Uniek artistiek design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["roze", "blauw"] },
   { image: napoliFront, gallery: [napoliFront, napoliBack], name: "Napoli Third EA7", nameKey: "napoliThird", team: "SSC Napoli", leagues: ["Serie A"], price: "€30", description: "Napoli third shirt met EA7 en MSC sponsoring. Donkerblauw met oranje accenten.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw", "oranje"] },
   { image: stoneIslandAjaxFront, gallery: [stoneIslandAjaxFront, stoneIslandAjaxBack], name: "Ajax x Stone Island", nameKey: "ajaxStoneIsland", team: "Ajax", leagues: ["Eredivisie", "Special"], price: "€30", description: "Exclusieve Ajax x Stone Island samenwerking. Volledig zwart met subtiel camo patroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart"] },
+  { image: franceFront, gallery: [franceFront, franceBack], name: "Frankrijk Pre-Match", nameKey: "francePrematch", team: "Frankrijk", leagues: ["Nationaal"], price: "€30", description: "Stijlvol Frankrijk pre-match shirt met diagonaal patroon. Donkerblauw met crème kraag.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
 ];
 
 interface ProductDetailModalProps {

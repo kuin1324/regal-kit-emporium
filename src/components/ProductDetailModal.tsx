@@ -1,11 +1,18 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag, Trash2 } from "lucide-react";
+import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag, Trash2, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
-import shirt4 from "@/assets/shirt-new-4.png";
-import shirt5 from "@/assets/shirt-new-5.png";
 import shirt7 from "@/assets/shirt-new-7.png";
+import italySpecialFront from "@/assets/shirt-italy-special-front.jpg";
+import italySpecialBack from "@/assets/shirt-italy-special-back.jpg";
+import marseilleBack from "@/assets/shirt-marseille-back.jpg";
+import portugalEusebioFront from "@/assets/shirt-portugal-eusebio-front.jpg";
+import portugalEusebioBack from "@/assets/shirt-portugal-eusebio-back.jpg";
+import portugalLvFront from "@/assets/shirt-portugal-lv-front.jpg";
+import portugalLvBack from "@/assets/shirt-portugal-lv-back.jpg";
+import barcaBlackGoldFront from "@/assets/shirt-barca-black-gold-front.jpg";
+import barcaBlackGoldBack from "@/assets/shirt-barca-black-gold-back.jpg";
 import shirtGermany from "@/assets/shirt-germany.jpg";
 import barcaGolfFront from "@/assets/shirt-barcelona-golf-front.jpg";
 import barcaGolfBack from "@/assets/shirt-barcelona-golf-back.jpg";
@@ -30,9 +37,11 @@ import argentinieFront from "@/assets/shirt-argentinie-front.jpg";
 import argentinieBack from "@/assets/shirt-argentinie-back.jpg";
 
 export const allProducts = [
-  { image: shirt4, gallery: [shirt4], name: "Portugal Special Shirt WK 26", nameKey: "portugalLV", team: "Portugal", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Portugal editie geïnspireerd door Louis Vuitton. Uniek design met Portugese flair.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit"] },
-  { image: shirt5, gallery: [shirt5], name: "Italië Trainingsshirt WK 26", nameKey: "italyTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Exclusief Italiaans trainingsshirt met uniek design.", sizes: ["S", "M", "L", "XL", "2XL", "3XL"], colors: ["wit"] },
-  { image: shirt7, gallery: [shirt7], name: "OM-shirt Special Edition 2025/26", nameKey: "marseilleThird", team: "Olympique Marseille", leagues: ["Ligue 1", "Special"], price: "€30", description: "Het stijlvolle special edition shirt van Olympique Marseille seizoen 2025/26.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
+  { image: italySpecialFront, gallery: [italySpecialFront, italySpecialBack], name: "Italië Special Trainingsshirt", nameKey: "italySpecialTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Italië special trainingsshirt met uniek zwart-wit ornament design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "zwart"] },
+  { image: shirt7, gallery: [shirt7, marseilleBack], name: "OM-shirt Special Edition 2025/26", nameKey: "marseilleThird", team: "Olympique Marseille", leagues: ["Ligue 1", "Special"], price: "€30", description: "Het stijlvolle special edition shirt van Olympique Marseille seizoen 2025/26.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
+  { image: portugalEusebioFront, gallery: [portugalEusebioFront, portugalEusebioBack], name: "Portugal 25/26 Special Edition Eusébio", nameKey: "portugalEusebio", team: "Portugal", leagues: ["Nationaal", "Special"], price: "€30", description: "Portugal 25/26 Special Edition ter ere van Eusébio. Volledig zwart met subtiel wapen patroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart"] },
+  { image: portugalLvFront, gallery: [portugalLvFront, portugalLvBack], name: "Portugal x Louis Vuitton", nameKey: "portugalLV", team: "Portugal", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Portugal x Louis Vuitton editie met iconisch monogram tegelpatroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "blauw"] },
+  { image: barcaBlackGoldFront, gallery: [barcaBlackGoldFront, barcaBlackGoldBack], name: "FC Barcelona Black and Gold City", nameKey: "barcaBlackGold", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "FC Barcelona Black and Gold City editie met stadsillustratie en gouden details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "goud"] },
   { image: shirtGermany, gallery: [shirtGermany, mysteryNavy], name: "Duitsland Uit Shirt WK 26", nameKey: "germanyAdidas", team: "Duitsland", leagues: ["Nationaal", "Special"], price: "€30", description: "Stijlvol Duitsland uit shirt in samenwerking met Adidas Originals. Donkerblauw met mintgroene accenten.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
   { image: barcaGolfFront, gallery: [barcaGolfFront, barcaGolfBack], name: "FC Barcelona Golf Special Edition shirt", nameKey: "barcaGolf", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "Unieke FC Barcelona x Golf le Fleur special edition met bloemen en sterren.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "roze"] },
   { image: italyVersaceFront, gallery: [italyVersaceFront, italyVersaceBack], name: "Italië Versace Shirt WK 26", nameKey: "italyVersace", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Italië shirt geïnspireerd door Versace barok print.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "goud"] },
@@ -150,7 +159,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
               </div>
               )}
 
-              <div className="order-1 md:order-1 flex-1 flex items-center justify-center min-h-[60vh] md:min-h-0">
+              <div className="order-1 md:order-1 flex-1 flex flex-col items-center justify-center min-h-[60vh] md:min-h-0 gap-3">
                 <div className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded select-none">
                   <motion.img
                     key={activeImage}
@@ -163,6 +172,25 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                     className="w-full h-full object-contain"
                   />
                 </div>
+                {gallery.length > 1 && (
+                  <div className="flex items-center gap-4">
+                    <button
+                      onClick={() => setActiveImage((activeImage - 1 + gallery.length) % gallery.length)}
+                      className="p-2 rounded-full bg-card border border-border hover:bg-muted transition-colors"
+                      aria-label="previous"
+                    >
+                      <ChevronLeft className="h-5 w-5" />
+                    </button>
+                    <span className="text-xs text-muted-foreground tabular-nums">{activeImage + 1} / {gallery.length}</span>
+                    <button
+                      onClick={() => setActiveImage((activeImage + 1) % gallery.length)}
+                      className="p-2 rounded-full bg-card border border-border hover:bg-muted transition-colors"
+                      aria-label="next"
+                    >
+                      <ChevronRight className="h-5 w-5" />
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
 

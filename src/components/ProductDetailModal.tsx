@@ -159,7 +159,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
               </div>
               )}
 
-              <div className="order-1 md:order-1 flex-1 flex items-center justify-center min-h-[60vh] md:min-h-0">
+              <div className="order-1 md:order-1 flex-1 flex flex-col items-center justify-center min-h-[60vh] md:min-h-0 gap-3">
                 <div className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded select-none">
                   <motion.img
                     key={activeImage}
@@ -172,6 +172,25 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                     className="w-full h-full object-contain"
                   />
                 </div>
+                {gallery.length > 1 && (
+                  <div className="flex items-center gap-4">
+                    <button
+                      onClick={() => setActiveImage((activeImage - 1 + gallery.length) % gallery.length)}
+                      className="p-2 rounded-full bg-card border border-border hover:bg-muted transition-colors"
+                      aria-label="previous"
+                    >
+                      <ChevronLeft className="h-5 w-5" />
+                    </button>
+                    <span className="text-xs text-muted-foreground tabular-nums">{activeImage + 1} / {gallery.length}</span>
+                    <button
+                      onClick={() => setActiveImage((activeImage + 1) % gallery.length)}
+                      className="p-2 rounded-full bg-card border border-border hover:bg-muted transition-colors"
+                      aria-label="next"
+                    >
+                      <ChevronRight className="h-5 w-5" />
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
 

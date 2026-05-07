@@ -5,10 +5,11 @@ import { useTranslation } from "react-i18next";
 import shirt2 from "@/assets/shirt-new-2.png";
 import shirt4 from "@/assets/shirt-new-4.png";
 import shirt6 from "@/assets/shirt-new-6.png";
+import jerseysClothesline from "@/assets/jerseys-clothesline.png";
 
 const slidesData = [
   { titleKey: "home.slides.specialTitle", subtitleKey: "home.slides.specialSubtitle", ctaKey: "home.slides.specialCta", href: "/special-edition", image: shirt6 },
-  { titleKey: "home.slides.nationalTitle", subtitleKey: "home.slides.nationalSubtitle", ctaKey: "home.slides.nationalCta", href: "/collectie", image: shirt4 },
+  { titleKey: "home.slides.nationalTitle", subtitleKey: "home.slides.nationalSubtitle", ctaKey: "home.slides.nationalCta", href: "/collectie", image: jerseysClothesline },
   { titleKey: "home.slides.italyTitle", subtitleKey: "home.slides.italySubtitle", ctaKey: "home.slides.italyCta", href: "/collectie", image: shirt2 },
 ];
 

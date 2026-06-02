@@ -56,7 +56,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="flex items-center gap-3 sm:gap-4">
+          <div className="flex items-center gap-1.5 sm:gap-4">
             <LanguageSwitcher />
             <ThemeToggle />
             <Link to="/favorieten" className="relative text-foreground hover:text-primary transition-colors" aria-label={t("nav.favorites")}>

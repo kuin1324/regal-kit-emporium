@@ -36,9 +36,10 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
-        <div className="container mx-auto flex h-16 items-center justify-between px-6">
-          <Link to="/" className="font-display text-xl font-bold tracking-widest uppercase text-gradient-gold">
-            The Home of Football Style
+        <div className="container mx-auto flex h-14 sm:h-16 items-center justify-between px-3 sm:px-6 gap-2">
+          <Link to="/" className="font-display text-[11px] sm:text-xl font-bold tracking-wider sm:tracking-widest uppercase text-gradient-gold truncate max-w-[42%] sm:max-w-none">
+            <span className="sm:hidden">HOFS</span>
+            <span className="hidden sm:inline">The Home of Football Style</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">

@@ -37,6 +37,7 @@ const App = () => (
             <Route path="/special-edition" element={<SpecialEdition />} />
             <Route path="/favorieten" element={<Favorieten />} />
             <Route path="/auth" element={<Auth />} />
+            <Route path="/voorraad" element={<Voorraad />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

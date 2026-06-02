@@ -15,6 +15,7 @@ import Retro from "./pages/Retro.tsx";
 import SpecialEdition from "./pages/SpecialEdition.tsx";
 import Favorieten from "./pages/Favorieten.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import Voorraad from "./pages/Voorraad.tsx";
 
 const queryClient = new QueryClient();
 

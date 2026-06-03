@@ -1,35 +1,50 @@
+## Wijzigingen
 
+### 1. Homepage carrousel (HeroCarousel.tsx)
+De huidige carrousel toont 3 slides met oude shirtfoto's (`shirt-new-2.png`, `shirt-new-6.png`) en de jerseys-clothesline. Deze worden vervangen door de nieuwe shirt-foto's:
 
-## Plan: Filters toevoegen — Kleur, Letter en Foto
+- Slide "Special Editions" → foto van **FC Barcelona Black & Gold** (voorkant)
+- Slide "Nationale Trots" → foto van **Portugal x Louis Vuitton** (voorkant)
+- Slide "Italië x Versace" → vervangen door **Italië Special Trainingsshirt** (voorkant), titel/CTA aangepast naar "Italië Special Edition"
 
-### Wat wordt er gebouwd
+De oude imports (`shirt-new-2`, `shirt-new-6`, `jerseys-clothesline`) worden verwijderd uit dit bestand. De vertaalsleutels in `nl.json`/`en.json` voor `home.slides.italyTitle/Subtitle/Cta` worden bijgewerkt.
 
-Drie nieuwe filteropties op de Collectie-pagina, naast de bestaande zoekbalk en league/team filters:
+### 2. Verzendinformatie bij elk shirt (ProductDetailModal)
+In het product-modal komt een nieuw blok onder de prijs / boven "In Winkelmandje" met de verzendtarieven:
 
-1. **Kleurfilter** — Gekleurde bolletjes (zwart, wit, blauw, rood, goud, groen, etc.) waarop je kunt klikken om shirts van die kleur te tonen
-2. **Letterfilter** — Een A-Z rij knoppen waarmee je shirts filtert op beginletter van de naam
-3. **Fotofilter** — Kleine thumbnail-previews van alle shirts zodat je visueel kunt zoeken en direct naar een shirt kunt springen
+```
+Verzendkosten
+1–2 shirts: €10
+3–4 shirts: €8
+5–6 shirts: €6
+7–8 shirts: GRATIS
+```
 
-### Technische aanpak
+Compacte tabel-achtige weergave, met de gratis-regel in goud-accent.
 
-**1. Product data uitbreiden** (`src/components/ProductDetailModal.tsx`)
-- Voeg een `colors` property toe aan elk product in `allProducts`, bijv.:
-  - Stone Island x Ajax → `["zwart", "rood"]`
-  - Italy x Versace → `["blauw", "goud"]`
-  - etc.
+### 3. Dynamische verzending in winkelmandje (CartDrawer + CartContext)
+Een helperfunctie `calculateShipping(count)` wordt toegevoegd:
 
-**2. Filters toevoegen aan Collectie** (`src/pages/Collectie.tsx`)
-- Nieuwe state: `selectedColor`, `selectedLetter`
-- **Kleurbollen**: Een rij met gekleurde cirkels onder de zoekbalk. Klik = filter op die kleur
-- **Letterbalk**: A-Z knoppen. Klik op een letter = toon alleen shirts die met die letter beginnen. "Alle" knop om te resetten
-- **Foto-rij**: Horizontaal scrollbare rij met kleine thumbnails van alle shirts. Klik = open dat product direct
-- Alle filters werken samen (kleur + letter + league + zoekterm)
+```
+count <= 2 → €10
+count 3-4 → €8
+count 5-6 → €6
+count >= 7 → €0 (gratis)
+```
 
-**3. Layout**
-De filters komen onder de zoekbalk in deze volgorde:
-1. Zoekbalk (bestaand)
-2. Kleurbollen + Letterbalk (nieuwe rij)
-3. Foto-thumbnails (scrollbare rij)
-4. League/Team tabs (bestaand)
-5. Product grid (bestaand)
+In `CartDrawer`:
+- Nieuwe regel "Verzending" boven het totaal met het berekende bedrag (of "GRATIS" in goud).
+- Bij minder dan 7 shirts: een hint "Voeg X shirt(s) toe voor gratis verzending".
+- Het totaalbedrag wordt: `items-totaal + verzending`.
+- De WhatsApp/e-mail-bestelregels krijgen een extra regel "Verzending: €X" (of "GRATIS").
 
+### 4. Vertalingen
+Nieuwe sleutels in `nl.json` en `en.json`:
+- `product.shippingRates` (titel)
+- `cart.shipping`, `cart.shippingFree`, `cart.shippingHint`
+- Bijgewerkte `home.slides.italyTitle/Subtitle/Cta`
+
+### Niet aangepast
+- Productlijst blijft volledig intact (geen shirts verwijderd).
+- Bestaande "shipping" tab in product-modal blijft, hier komt enkel het tarievenblok bij.
+- Geen backend-/edge-function-wijzigingen nodig.

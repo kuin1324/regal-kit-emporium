@@ -42,11 +42,11 @@ export const allProducts = [
   { image: portugalEusebioFront, gallery: [portugalEusebioFront, portugalEusebioBack], name: "Portugal 25/26 Special Edition Eusébio", nameKey: "portugalEusebio", team: "Portugal", leagues: ["Nationaal", "Special"], price: "€30", description: "Portugal 25/26 Special Edition ter ere van Eusébio. Volledig zwart met subtiel wapen patroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart"], availability: "incoming" as const },
   { image: portugalLvFront, gallery: [portugalLvFront, portugalLvBack], name: "Portugal x Louis Vuitton", nameKey: "portugalLV", team: "Portugal", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Portugal x Louis Vuitton editie met iconisch monogram tegelpatroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "blauw"], availability: "incoming" as const },
   { image: barcaBlackGoldFront, gallery: [barcaBlackGoldFront, barcaBlackGoldBack], name: "FC Barcelona Black and Gold City", nameKey: "barcaBlackGold", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "FC Barcelona Black and Gold City editie met stadsillustratie en gouden details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "goud"], availability: "incoming" as const },
-  { image: shirtGermany, gallery: [shirtGermany, mysteryNavy], name: "Duitsland Uit Shirt WK 26", nameKey: "germanyAdidas", team: "Duitsland", leagues: ["Nationaal", "Special"], price: "€30", description: "Stijlvol Duitsland uit shirt in samenwerking met Adidas Originals. Donkerblauw met mintgroene accenten.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
+  { image: shirtGermany, gallery: [shirtGermany, mysteryNavy], name: "Duitsland Uit Shirt WK 26", nameKey: "germanyAdidas", team: "Duitsland", leagues: ["Nationaal", "Special"], price: "€30", description: "Stijlvol Duitsland uit shirt in samenwerking met Adidas Originals. Donkerblauw met mintgroene accenten.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"], availability: "incoming" as const },
   { image: barcaGolfFront, gallery: [barcaGolfFront, barcaGolfBack], name: "FC Barcelona Golf Special Edition shirt", nameKey: "barcaGolf", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "Unieke FC Barcelona x Golf le Fleur special edition met bloemen en sterren.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "roze"] },
-  { image: italyVersaceFront, gallery: [italyVersaceFront, italyVersaceBack], name: "Italië Versace Shirt WK 26", nameKey: "italyVersace", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Italië shirt geïnspireerd door Versace barok print.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "goud"] },
+  { image: italyVersaceFront, gallery: [italyVersaceFront, italyVersaceBack], name: "Italië Versace Shirt WK 26", nameKey: "italyVersace", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Italië shirt geïnspireerd door Versace barok print.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "goud"], availability: "incoming" as const },
   { image: spainAdidasFront, gallery: [spainAdidasFront, spainAdidasBack], name: "België WK Uit Shirt", nameKey: "spainAdidas", team: "België", leagues: ["Nationaal", "Special"], price: "€30", description: "België WK uit shirt met pastel roze en blauwe gradient.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["roze", "blauw"] },
-  { image: napoliFront, gallery: [napoliFront, napoliBack], name: "SSC Napoli Halloween Edition 2025/2026", nameKey: "napoliThird", team: "SSC Napoli", leagues: ["Serie A", "Special"], price: "€30", description: "SSC Napoli Halloween Edition shirt seizoen 2025/2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
+  { image: napoliFront, gallery: [napoliFront, napoliBack], name: "SSC Napoli Halloween Edition 2025/2026", nameKey: "napoliThird", team: "SSC Napoli", leagues: ["Serie A", "Special"], price: "€30", description: "SSC Napoli Halloween Edition shirt seizoen 2025/2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"], availability: "incoming" as const },
   { image: stoneIslandAjaxFront, gallery: [stoneIslandAjaxFront, stoneIslandAjaxBack], name: "Ajax Special Shirt WK 26", nameKey: "ajaxStoneIsland", team: "Ajax", leagues: ["Eredivisie", "Special"], price: "€30", description: "Exclusieve Ajax x Stone Island samenwerking. Volledig zwart met camo patroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart"] },
   { image: nederlandFront, gallery: [nederlandFront, nederlandBack], name: "Nederland Thuis Shirt WK 26", nameKey: "nederlandRetro", team: "Nederland", leagues: ["Nationaal"], price: "€30", description: "Klassiek oranje Nederland thuis shirt van Nike.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["oranje"] },
   { image: psgFront, gallery: [psgFront, psgBack], name: "Nike Paris Saint-Germain x Jordan Pre-Match Training Shirt", nameKey: "psgFourth", team: "Paris Saint-Germain", leagues: ["Ligue 1", "Special"], price: "€30", description: "Nike Paris Saint-Germain x Jordan Pre-Match Training Shirt.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["roze"] },
@@ -277,12 +277,20 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
 
               <div className="mb-4 rounded-lg border border-border bg-muted/30 p-4">
                 <p className="text-xs font-semibold tracking-wide uppercase mb-2">{t("product.shippingRates", { defaultValue: "Verzendkosten" })}</p>
-                <ul className="text-xs space-y-1">
-                  <li className="flex justify-between"><span className="text-muted-foreground">1–2 shirts</span><span className="font-semibold">€10</span></li>
-                  <li className="flex justify-between"><span className="text-muted-foreground">3–4 shirts</span><span className="font-semibold">€8</span></li>
-                  <li className="flex justify-between"><span className="text-muted-foreground">5–6 shirts</span><span className="font-semibold">€6</span></li>
-                  <li className="flex justify-between"><span className="text-muted-foreground">7+ shirts</span><span className="font-semibold text-gradient-gold">GRATIS</span></li>
-                </ul>
+                {selected.availability === "incoming" ? (
+                  <ul className="text-xs space-y-1">
+                    <li className="flex justify-between"><span className="text-muted-foreground">1–2 shirts</span><span className="font-semibold">€10</span></li>
+                    <li className="flex justify-between"><span className="text-muted-foreground">3–4 shirts</span><span className="font-semibold">€8</span></li>
+                    <li className="flex justify-between"><span className="text-muted-foreground">5–6 shirts</span><span className="font-semibold">€7</span></li>
+                    <li className="flex justify-between"><span className="text-muted-foreground">7+ shirts</span><span className="font-semibold text-gradient-gold">GRATIS</span></li>
+                  </ul>
+                ) : (
+                  <ul className="text-xs space-y-1">
+                    <li className="flex justify-between"><span className="text-muted-foreground">1–2 shirts</span><span className="font-semibold">€10</span></li>
+                    <li className="flex justify-between"><span className="text-muted-foreground">3 shirts</span><span className="font-semibold">€8</span></li>
+                    <li className="flex justify-between"><span className="text-muted-foreground">4+ shirts</span><span className="font-semibold text-gradient-gold">GRATIS</span></li>
+                  </ul>
+                )}
               </div>
 
               <button

@@ -275,6 +275,16 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 + Nog een shirt toevoegen
               </button>
 
+              <div className="mb-4 rounded-lg border border-border bg-muted/30 p-4">
+                <p className="text-xs font-semibold tracking-wide uppercase mb-2">{t("product.shippingRates", { defaultValue: "Verzendkosten" })}</p>
+                <ul className="text-xs space-y-1">
+                  <li className="flex justify-between"><span className="text-muted-foreground">1–2 shirts</span><span className="font-semibold">€10</span></li>
+                  <li className="flex justify-between"><span className="text-muted-foreground">3–4 shirts</span><span className="font-semibold">€8</span></li>
+                  <li className="flex justify-between"><span className="text-muted-foreground">5–6 shirts</span><span className="font-semibold">€6</span></li>
+                  <li className="flex justify-between"><span className="text-muted-foreground">7+ shirts</span><span className="font-semibold text-gradient-gold">GRATIS</span></li>
+                </ul>
+              </div>
+
               <button
                 onClick={handleAddToCart}
                 disabled={!allValid}
@@ -285,6 +295,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 <ShoppingBag className="h-4 w-4" />
                 {allValid ? t("product.addToCart") : t("product.pickSize")}
               </button>
+
 
               <div className="border-t border-border">
                 {[

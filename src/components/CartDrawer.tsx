@@ -7,6 +7,7 @@ import { useCart } from "@/context/CartContext";
 import { useTranslation } from "react-i18next";
 import ProductDetailModal from "./ProductDetailModal";
 import { useProductName } from "@/lib/productName";
+import { calculateShipping } from "@/lib/shipping";
 
 interface CartDrawerProps {
   open: boolean;
@@ -14,20 +15,26 @@ interface CartDrawerProps {
 }
 
 const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
-  const { items, removeItem, updateQuantity, total, clearCart } = useCart();
+  const { items, removeItem, updateQuantity, total, count, clearCart } = useCart();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const { t } = useTranslation();
   const productName = useProductName();
 
+  const shipping = calculateShipping(count);
+  const grandTotal = total + shipping;
+  const shirtsToFree = count > 0 && count < 7 ? 7 - count : 0;
+
   const buildOrderText = () => {
     const lines = items.map(i => `🏷️ ${productName(i.name)} (${t("cart.size")}: ${i.size}) x${i.quantity} — €${i.price * i.quantity}`).join("\n");
-    return `${t("cart.orderGreeting")}\n\n${lines}\n\n💰 ${t("cart.orderTotal")}: €${total}`;
+    const shippingLine = shipping === 0 ? "🚚 Verzending: GRATIS" : `🚚 Verzending: €${shipping}`;
+    return `${t("cart.orderGreeting")}\n\n${lines}\n\n${shippingLine}\n💰 ${t("cart.orderTotal")}: €${grandTotal}`;
   };
 
   const handleEmailOrder = async () => {
     if (items.length === 0) return;
     const orderText = buildOrderText();
-    const subject = `Nieuwe bestelling — €${total}`;
+    const subject = `Nieuwe bestelling — €${grandTotal}`;
+
     // Try to send via backend (Outlook), fallback to mailto
     try {
       const { supabase } = await import("@/integrations/supabase/client");
@@ -90,10 +97,28 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
 
               {items.length > 0 && (
                 <div className="border-t border-border p-6 space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm font-semibold">{t("cart.total")}</span>
-                    <span className="font-display text-xl font-bold text-gradient-gold">€{total}</span>
+                  <div className="space-y-1.5 text-sm">
+                    <div className="flex justify-between text-muted-foreground">
+                      <span>Subtotaal</span>
+                      <span>€{total}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Verzending ({count} shirt{count !== 1 ? "s" : ""})</span>
+                      <span className={shipping === 0 ? "font-bold text-gradient-gold" : "font-semibold"}>
+                        {shipping === 0 ? "GRATIS" : `€${shipping}`}
+                      </span>
+                    </div>
+                    {shirtsToFree > 0 && (
+                      <p className="text-[11px] text-primary/80 italic pt-1">
+                        + {shirtsToFree} shirt{shirtsToFree !== 1 ? "s" : ""} voor gratis verzending
+                      </p>
+                    )}
                   </div>
+                  <div className="flex justify-between items-center border-t border-border/50 pt-3">
+                    <span className="text-sm font-semibold">{t("cart.total")}</span>
+                    <span className="font-display text-xl font-bold text-gradient-gold">€{grandTotal}</span>
+                  </div>
+
                   <button onClick={handleEmailOrder} className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors">
                     {t("cart.checkoutEmail")}
                   </button>

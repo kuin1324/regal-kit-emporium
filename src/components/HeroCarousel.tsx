@@ -2,15 +2,14 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import shirt2 from "@/assets/shirt-new-2.png";
-import shirt4 from "@/assets/shirt-new-4.png";
-import shirt6 from "@/assets/shirt-new-6.png";
-import jerseysClothesline from "@/assets/jerseys-clothesline.png";
+import barcaBlackGoldFront from "@/assets/shirt-barca-black-gold-front.jpg";
+import portugalLvFront from "@/assets/shirt-portugal-lv-front.jpg";
+import italySpecialFront from "@/assets/shirt-italy-special-front.jpg";
 
 const slidesData = [
-  { titleKey: "home.slides.specialTitle", subtitleKey: "home.slides.specialSubtitle", ctaKey: "home.slides.specialCta", href: "/special-edition", image: shirt6 },
-  { titleKey: "home.slides.nationalTitle", subtitleKey: "home.slides.nationalSubtitle", ctaKey: "home.slides.nationalCta", href: "/collectie", image: jerseysClothesline },
-  { titleKey: "home.slides.italyTitle", subtitleKey: "home.slides.italySubtitle", ctaKey: "home.slides.italyCta", href: "/collectie", image: shirt2 },
+  { titleKey: "home.slides.specialTitle", subtitleKey: "home.slides.specialSubtitle", ctaKey: "home.slides.specialCta", href: "/special-edition", image: barcaBlackGoldFront },
+  { titleKey: "home.slides.nationalTitle", subtitleKey: "home.slides.nationalSubtitle", ctaKey: "home.slides.nationalCta", href: "/collectie", image: portugalLvFront },
+  { titleKey: "home.slides.italyTitle", subtitleKey: "home.slides.italySubtitle", ctaKey: "home.slides.italyCta", href: "/collectie", image: italySpecialFront },
 ];
 
 const HeroCarousel = () => {

@@ -35,6 +35,26 @@ import spanjeCreamFront from "@/assets/shirt-spanje-cream-front.jpg";
 import spanjeCreamBack from "@/assets/shirt-spanje-cream-back.jpg";
 import argentinieFront from "@/assets/shirt-argentinie-front.jpg";
 import argentinieBack from "@/assets/shirt-argentinie-back.jpg";
+import ajaxRetroFrontAsset from "@/assets/shirt-ajax-retro-front.jpg.asset.json";
+import ajaxRetroBackAsset from "@/assets/shirt-ajax-retro-back.jpg.asset.json";
+import bayernRetroFrontAsset from "@/assets/shirt-bayern-retro-front.jpg.asset.json";
+import bayernRetroBackAsset from "@/assets/shirt-bayern-retro-back.jpg.asset.json";
+import liverpoolRedRetroFrontAsset from "@/assets/shirt-liverpool-red-retro-front.jpg.asset.json";
+import liverpoolRedRetroBackAsset from "@/assets/shirt-liverpool-red-retro-back.jpg.asset.json";
+import liverpoolYellowRetroFrontAsset from "@/assets/shirt-liverpool-yellow-retro-front.jpg.asset.json";
+import liverpoolYellowRetroBackAsset from "@/assets/shirt-liverpool-yellow-retro-back.jpg.asset.json";
+import realMadridRetroFrontAsset from "@/assets/shirt-real-madrid-retro-front.png.asset.json";
+import realMadridRetroBackAsset from "@/assets/shirt-real-madrid-retro-back.png.asset.json";
+const ajaxRetroFront = ajaxRetroFrontAsset.url;
+const ajaxRetroBack = ajaxRetroBackAsset.url;
+const bayernRetroFront = bayernRetroFrontAsset.url;
+const bayernRetroBack = bayernRetroBackAsset.url;
+const liverpoolRedRetroFront = liverpoolRedRetroFrontAsset.url;
+const liverpoolRedRetroBack = liverpoolRedRetroBackAsset.url;
+const liverpoolYellowRetroFront = liverpoolYellowRetroFrontAsset.url;
+const liverpoolYellowRetroBack = liverpoolYellowRetroBackAsset.url;
+const realMadridRetroFront = realMadridRetroFrontAsset.url;
+const realMadridRetroBack = realMadridRetroBackAsset.url;
 
 export const allProducts = [
   { image: italySpecialFront, gallery: [italySpecialFront, italySpecialBack], name: "Italië Special Trainingsshirt", nameKey: "italySpecialTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Italië special trainingsshirt met uniek zwart-wit ornament design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "zwart"], availability: "incoming" as const },

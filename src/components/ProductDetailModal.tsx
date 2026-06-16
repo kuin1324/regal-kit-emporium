@@ -45,6 +45,16 @@ import liverpoolYellowRetroFrontAsset from "@/assets/shirt-liverpool-yellow-retr
 import liverpoolYellowRetroBackAsset from "@/assets/shirt-liverpool-yellow-retro-back.jpg.asset.json";
 import realMadridRetroFrontAsset from "@/assets/shirt-real-madrid-retro-front.png.asset.json";
 import realMadridRetroBackAsset from "@/assets/shirt-real-madrid-retro-back.png.asset.json";
+import arsenalSegaFrontAsset from "@/assets/shirt-arsenal-sega-front.jpg.asset.json";
+import arsenalSegaBackAsset from "@/assets/shirt-arsenal-sega-back.jpg.asset.json";
+import barcelonaRetroFrontAsset from "@/assets/shirt-barcelona-retro-front.jpg.asset.json";
+import barcelonaRetroBackAsset from "@/assets/shirt-barcelona-retro-back.jpg.asset.json";
+import liverpoolCarlsbergFrontAsset from "@/assets/shirt-liverpool-carlsberg-front.jpg.asset.json";
+import liverpoolCarlsbergBackAsset from "@/assets/shirt-liverpool-carlsberg-back.jpg.asset.json";
+import psgOpelFrontAsset from "@/assets/shirt-psg-opel-front.jpg.asset.json";
+import psgOpelBackAsset from "@/assets/shirt-psg-opel-back.jpg.asset.json";
+import realMadridAwayRetroFrontAsset from "@/assets/shirt-real-madrid-away-retro-front.png.asset.json";
+import realMadridAwayRetroBackAsset from "@/assets/shirt-real-madrid-away-retro-back.png.asset.json";
 const ajaxRetroFront = ajaxRetroFrontAsset.url;
 const ajaxRetroBack = ajaxRetroBackAsset.url;
 const bayernRetroFront = bayernRetroFrontAsset.url;
@@ -55,6 +65,16 @@ const liverpoolYellowRetroFront = liverpoolYellowRetroFrontAsset.url;
 const liverpoolYellowRetroBack = liverpoolYellowRetroBackAsset.url;
 const realMadridRetroFront = realMadridRetroFrontAsset.url;
 const realMadridRetroBack = realMadridRetroBackAsset.url;
+const arsenalSegaFront = arsenalSegaFrontAsset.url;
+const arsenalSegaBack = arsenalSegaBackAsset.url;
+const barcelonaRetroFront = barcelonaRetroFrontAsset.url;
+const barcelonaRetroBack = barcelonaRetroBackAsset.url;
+const liverpoolCarlsbergFront = liverpoolCarlsbergFrontAsset.url;
+const liverpoolCarlsbergBack = liverpoolCarlsbergBackAsset.url;
+const psgOpelFront = psgOpelFrontAsset.url;
+const psgOpelBack = psgOpelBackAsset.url;
+const realMadridAwayRetroFront = realMadridAwayRetroFrontAsset.url;
+const realMadridAwayRetroBack = realMadridAwayRetroBackAsset.url;
 
 export const allProducts = [
   { image: italySpecialFront, gallery: [italySpecialFront, italySpecialBack], name: "Italië Special Trainingsshirt", nameKey: "italySpecialTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Italië special trainingsshirt met uniek zwart-wit ornament design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "zwart"], availability: "incoming" as const },
@@ -78,6 +98,11 @@ export const allProducts = [
   { image: liverpoolRedRetroFront, gallery: [liverpoolRedRetroFront, liverpoolRedRetroBack], name: "Liverpool FA Cup Final Retro Shirt 2001", nameKey: "liverpoolRedRetro", team: "Liverpool", leagues: ["Premier League", "Retro"], price: "€30", description: "Liverpool FA Cup Final retro shirt 2001 met Reebok en Carlsberg.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["rood"], availability: "ready" as const },
   { image: liverpoolYellowRetroFront, gallery: [liverpoolYellowRetroFront, liverpoolYellowRetroBack], name: "Liverpool Uit Retro Shirt 2000/02", nameKey: "liverpoolYellowRetro", team: "Liverpool", leagues: ["Premier League", "Retro"], price: "€30", description: "Liverpool uit retro shirt seizoen 2000/02 in geel met navy details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["geel", "blauw"], availability: "ready" as const },
   { image: realMadridRetroFront, gallery: [realMadridRetroFront, realMadridRetroBack], name: "Real Madrid Thuis Retro Shirt 2000/01", nameKey: "realMadridRetro", team: "Real Madrid", leagues: ["La Liga", "Retro"], price: "€30", description: "Real Madrid thuis retro shirt seizoen 2000/01 met Teka sponsor.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit"], availability: "ready" as const },
+  { image: arsenalSegaFront, gallery: [arsenalSegaFront, arsenalSegaBack], name: "Arsenal Uit Retro Shirt SEGA", nameKey: "arsenalSegaRetro", team: "Arsenal", leagues: ["Premier League", "Retro"], price: "€30", description: "Klassiek Arsenal uit retro shirt met SEGA sponsor en Nike details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["geel", "blauw"], availability: "ready" as const },
+  { image: barcelonaRetroFront, gallery: [barcelonaRetroFront, barcelonaRetroBack], name: "FC Barcelona Thuis Retro Shirt", nameKey: "barcelonaRetro", team: "FC Barcelona", leagues: ["La Liga", "Retro"], price: "€30", description: "FC Barcelona thuis retro shirt met iconische blaugrana strepen en Nike details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["rood", "blauw"], availability: "ready" as const },
+  { image: liverpoolCarlsbergFront, gallery: [liverpoolCarlsbergFront, liverpoolCarlsbergBack], name: "Liverpool UEFA Super Cup Retro Shirt 2001", nameKey: "liverpoolCarlsbergRetro", team: "Liverpool", leagues: ["Premier League", "Retro"], price: "€30", description: "Liverpool UEFA Super Cup Monaco 2001 retro shirt met Reebok en Carlsberg.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit"], availability: "ready" as const },
+  { image: psgOpelFront, gallery: [psgOpelFront, psgOpelBack], name: "Paris Saint-Germain Thuis Retro Shirt OPEL", nameKey: "psgOpelRetro", team: "Paris Saint-Germain", leagues: ["Ligue 1", "Retro"], price: "€30", description: "Klassiek PSG thuis retro shirt met OPEL sponsor en Nike details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw", "rood"], availability: "ready" as const },
+  { image: realMadridAwayRetroFront, gallery: [realMadridAwayRetroFront, realMadridAwayRetroBack], name: "Real Madrid Uit Retro Shirt 2000/01", nameKey: "realMadridAwayRetro", team: "Real Madrid", leagues: ["La Liga", "Retro"], price: "€30", description: "Real Madrid uit retro shirt seizoen 2000/01 in zwart met Realmadrid.com sponsor.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "wit"], availability: "ready" as const },
 ];
 
 interface ProductDetailModalProps {

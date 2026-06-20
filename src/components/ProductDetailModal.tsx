@@ -35,46 +35,7 @@ import spanjeCreamFront from "@/assets/shirt-spanje-cream-front.jpg";
 import spanjeCreamBack from "@/assets/shirt-spanje-cream-back.jpg";
 import argentinieFront from "@/assets/shirt-argentinie-front.jpg";
 import argentinieBack from "@/assets/shirt-argentinie-back.jpg";
-import ajaxRetroFrontAsset from "@/assets/shirt-ajax-retro-front.jpg.asset.json";
-import ajaxRetroBackAsset from "@/assets/shirt-ajax-retro-back.jpg.asset.json";
-import bayernRetroFrontAsset from "@/assets/shirt-bayern-retro-front.jpg.asset.json";
-import bayernRetroBackAsset from "@/assets/shirt-bayern-retro-back.jpg.asset.json";
-import liverpoolRedRetroFrontAsset from "@/assets/shirt-liverpool-red-retro-front.jpg.asset.json";
-import liverpoolRedRetroBackAsset from "@/assets/shirt-liverpool-red-retro-back.jpg.asset.json";
-import liverpoolYellowRetroFrontAsset from "@/assets/shirt-liverpool-yellow-retro-front.jpg.asset.json";
-import liverpoolYellowRetroBackAsset from "@/assets/shirt-liverpool-yellow-retro-back.jpg.asset.json";
-import realMadridRetroFrontAsset from "@/assets/shirt-real-madrid-retro-front.png.asset.json";
-import realMadridRetroBackAsset from "@/assets/shirt-real-madrid-retro-back.png.asset.json";
-import arsenalSegaFrontAsset from "@/assets/shirt-arsenal-sega-front.jpg.asset.json";
-import arsenalSegaBackAsset from "@/assets/shirt-arsenal-sega-back.jpg.asset.json";
-import barcelonaRetroFrontAsset from "@/assets/shirt-barcelona-retro-front.jpg.asset.json";
-import barcelonaRetroBackAsset from "@/assets/shirt-barcelona-retro-back.jpg.asset.json";
-import liverpoolCarlsbergFrontAsset from "@/assets/shirt-liverpool-carlsberg-front.jpg.asset.json";
-import liverpoolCarlsbergBackAsset from "@/assets/shirt-liverpool-carlsberg-back.jpg.asset.json";
-import psgOpelFrontAsset from "@/assets/shirt-psg-opel-front.jpg.asset.json";
-import psgOpelBackAsset from "@/assets/shirt-psg-opel-back.jpg.asset.json";
-import realMadridAwayRetroFrontAsset from "@/assets/shirt-real-madrid-away-retro-front.png.asset.json";
-import realMadridAwayRetroBackAsset from "@/assets/shirt-real-madrid-away-retro-back.png.asset.json";
-const ajaxRetroFront = ajaxRetroFrontAsset.url;
-const ajaxRetroBack = ajaxRetroBackAsset.url;
-const bayernRetroFront = bayernRetroFrontAsset.url;
-const bayernRetroBack = bayernRetroBackAsset.url;
-const liverpoolRedRetroFront = liverpoolRedRetroFrontAsset.url;
-const liverpoolRedRetroBack = liverpoolRedRetroBackAsset.url;
-const liverpoolYellowRetroFront = liverpoolYellowRetroFrontAsset.url;
-const liverpoolYellowRetroBack = liverpoolYellowRetroBackAsset.url;
-const realMadridRetroFront = realMadridRetroFrontAsset.url;
-const realMadridRetroBack = realMadridRetroBackAsset.url;
-const arsenalSegaFront = arsenalSegaFrontAsset.url;
-const arsenalSegaBack = arsenalSegaBackAsset.url;
-const barcelonaRetroFront = barcelonaRetroFrontAsset.url;
-const barcelonaRetroBack = barcelonaRetroBackAsset.url;
-const liverpoolCarlsbergFront = liverpoolCarlsbergFrontAsset.url;
-const liverpoolCarlsbergBack = liverpoolCarlsbergBackAsset.url;
-const psgOpelFront = psgOpelFrontAsset.url;
-const psgOpelBack = psgOpelBackAsset.url;
-const realMadridAwayRetroFront = realMadridAwayRetroFrontAsset.url;
-const realMadridAwayRetroBack = realMadridAwayRetroBackAsset.url;
+import { retroShirts } from "@/data/retro_shirts";
 
 export const allProducts = [
   { image: italySpecialFront, gallery: [italySpecialFront, italySpecialBack], name: "Italië Special Trainingsshirt", nameKey: "italySpecialTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Italië special trainingsshirt met uniek zwart-wit ornament design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "zwart"], availability: "incoming" as const },
@@ -93,16 +54,7 @@ export const allProducts = [
   { image: spanjeCreamFront, gallery: [spanjeCreamFront, spanjeCreamBack], name: "Spanje Uit Shirt WK", nameKey: "spanjeOriginals", team: "Spanje", leagues: ["Nationaal"], price: "€30", description: "Spanje uit shirt voor het WK met klassieke Adidas details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "goud"] },
   { image: argentinieFront, gallery: [argentinieFront, argentinieBack], name: "Argentinië Uit Shirt WK 2026", nameKey: "argentinieSpecial", team: "Argentinië", leagues: ["Nationaal"], price: "€30", description: "Argentinië uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "blauw"] },
   { image: franceFront, gallery: [franceFront, franceBack], name: "Frankrijk Uit Shirt WK 2026", nameKey: "francePrematch", team: "Frankrijk", leagues: ["Nationaal"], price: "€30", description: "Frankrijk uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
-  { image: ajaxRetroFront, gallery: [ajaxRetroFront, ajaxRetroBack], name: "Ajax Uit Shirt 2000/01", nameKey: "ajaxRetro", team: "Ajax", leagues: ["Eredivisie", "Retro"], price: "€30", description: "Klassiek Ajax uit retro shirt met ABN AMRO.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw", "geel"], availability: "ready" as const },
-  { image: bayernRetroFront, gallery: [bayernRetroFront, bayernRetroBack], name: "Bayern Munich Shirt 2000/01", nameKey: "bayernRetro", team: "Bayern München", leagues: ["Bundesliga", "Retro"], price: "€30", description: "Bayern München retro shirt met Opel sponsor.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["rood"], availability: "ready" as const },
-  { image: liverpoolRedRetroFront, gallery: [liverpoolRedRetroFront, liverpoolRedRetroBack], name: "Liverpool Thuis Shirt 2000/01", nameKey: "liverpoolRedRetro", team: "Liverpool", leagues: ["Premier League", "Retro"], price: "€30", description: "Liverpool thuis retro shirt met Reebok en Carlsberg.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["rood"], availability: "ready" as const },
-  { image: liverpoolYellowRetroFront, gallery: [liverpoolYellowRetroFront, liverpoolYellowRetroBack], name: "Liverpool Tweede Uit Shirt 2000/01", nameKey: "liverpoolYellowRetro", team: "Liverpool", leagues: ["Premier League", "Retro"], price: "€30", description: "Liverpool tweede uit retro shirt in geel met navy details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["geel", "blauw"], availability: "ready" as const },
-  { image: realMadridRetroFront, gallery: [realMadridRetroFront, realMadridRetroBack], name: "Real Madrid Thuis Shirt 2000/01", nameKey: "realMadridRetro", team: "Real Madrid", leagues: ["La Liga", "Retro"], price: "€30", description: "Real Madrid thuis retro shirt met Teka sponsor.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit"], availability: "ready" as const },
-  { image: arsenalSegaFront, gallery: [arsenalSegaFront, arsenalSegaBack], name: "Arsenal Uit Shirt 2001/02", nameKey: "arsenalSegaRetro", team: "Arsenal", leagues: ["Premier League", "Retro"], price: "€30", description: "Klassiek Arsenal uit retro shirt met SEGA sponsor en Nike details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["geel", "blauw"], availability: "ready" as const },
-  { image: barcelonaRetroFront, gallery: [barcelonaRetroFront, barcelonaRetroBack], name: "Barcelona Thuis Shirt 2001/02", nameKey: "barcelonaRetro", team: "FC Barcelona", leagues: ["La Liga", "Retro"], price: "€30", description: "FC Barcelona thuis retro shirt met iconische blaugrana strepen en Nike details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["rood", "blauw"], availability: "ready" as const },
-  { image: liverpoolCarlsbergFront, gallery: [liverpoolCarlsbergFront, liverpoolCarlsbergBack], name: "Liverpool Uit Shirt 2001/02", nameKey: "liverpoolCarlsbergRetro", team: "Liverpool", leagues: ["Premier League", "Retro"], price: "€30", description: "Liverpool uit retro shirt met Reebok en Carlsberg.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit"], availability: "ready" as const },
-  { image: psgOpelFront, gallery: [psgOpelFront, psgOpelBack], name: "Paris Thuis Shirt 2001/02", nameKey: "psgOpelRetro", team: "Paris Saint-Germain", leagues: ["Ligue 1", "Retro"], price: "€30", description: "Klassiek PSG thuis retro shirt met OPEL sponsor en Nike details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw", "rood"], availability: "ready" as const },
-  { image: realMadridAwayRetroFront, gallery: [realMadridAwayRetroFront, realMadridAwayRetroBack], name: "Real Madrid Uit Shirt 2000/01", nameKey: "realMadridAwayRetro", team: "Real Madrid", leagues: ["La Liga", "Retro"], price: "€30", description: "Real Madrid retro shirt in zwart met Realmadrid.com sponsor.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "wit"], availability: "ready" as const },
+  ...retroShirts,
 ];
 
 interface ProductDetailModalProps {

@@ -28,6 +28,7 @@ const Navbar = () => {
   const navItems = [
     { label: t("nav.collection"), path: "/collectie" },
     { label: t("nav.retro"), path: "/retro" },
+    { label: t("nav.longSleeves", { defaultValue: "Long Sleeves" }), path: "/long-sleeves" },
     { label: t("nav.specialEdition"), path: "/special-edition" },
     { label: t("nav.stock", { defaultValue: "Voorraad" }), path: "/voorraad" },
     { label: t("nav.about"), path: "/over-ons" },

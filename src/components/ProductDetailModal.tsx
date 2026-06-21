@@ -102,7 +102,8 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
     setVariants(prev => (prev.length > 1 ? prev.filter(v => v.id !== id) : prev));
   };
 
-  const totalPrice = variants.reduce((sum, v) => sum + (v.customize ? 37 : 30) * v.quantity, 0);
+  const basePrice = selected ? parseInt(selected.price.replace(/[^\d]/g, ""), 10) || 30 : 30;
+  const totalPrice = variants.reduce((sum, v) => sum + (v.customize ? basePrice + 7 : basePrice) * v.quantity, 0);
   const allValid = variants.every(v => !!v.size);
 
   const handleAddToCart = () => {
@@ -116,7 +117,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
         image: selected.image,
         size: v.size!,
         quantity: v.quantity,
-        price: v.customize ? 37 : 30,
+        price: v.customize ? basePrice + 7 : basePrice,
       });
     });
     onClose();

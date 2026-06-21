@@ -12,6 +12,7 @@ import Auth from "./pages/Auth.tsx";
 import OverOns from "./pages/OverOns.tsx";
 import Collectie from "./pages/Collectie.tsx";
 import Retro from "./pages/Retro.tsx";
+import LongSleeves from "./pages/LongSleeves.tsx";
 import SpecialEdition from "./pages/SpecialEdition.tsx";
 import Favorieten from "./pages/Favorieten.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/over-ons" element={<OverOns />} />
             <Route path="/collectie" element={<Collectie />} />
             <Route path="/retro" element={<Retro />} />
+            <Route path="/long-sleeves" element={<LongSleeves />} />
             <Route path="/special-edition" element={<SpecialEdition />} />
             <Route path="/favorieten" element={<Favorieten />} />
             <Route path="/auth" element={<Auth />} />

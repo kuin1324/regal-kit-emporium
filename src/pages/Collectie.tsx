@@ -7,6 +7,9 @@ import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import { useProductName } from "@/lib/productName";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
+import Pagination from "@/components/Pagination";
+
+const PAGE_SIZE = 60;
 
 const leagues = [
   { key: "all", value: "Alle", teams: [] },
@@ -36,6 +39,7 @@ const Collectie = () => {
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();
@@ -63,6 +67,13 @@ const Collectie = () => {
       return matchesSearch && matchesLeague && matchesTeam && matchesColor && matchesLetter;
     }), [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter]
   );
+
+  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PAGE_SIZE));
+  const currentPage = Math.min(page, totalPages);
+  const pageProducts = filteredProducts.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+
+  // Reset to page 1 when filters change
+  useMemo(() => { setPage(1); }, [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -203,12 +214,12 @@ const Collectie = () => {
           {teamsForLeague.length === 0 && <div className="mb-8" />}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProducts.map((product, i) => (
+            {pageProducts.map((product, i) => (
               <motion.div
                 key={product.name}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
+                transition={{ duration: 0.4, delay: Math.min(i, 8) * 0.03 }}
                 viewport={{ once: true }}
                 className="group cursor-pointer relative"
               >
@@ -234,6 +245,15 @@ const Collectie = () => {
               </motion.div>
             ))}
           </div>
+
+          {filteredProducts.length > 0 && (
+            <>
+              <Pagination page={currentPage} totalPages={totalPages} onChange={setPage} />
+              <p className="text-center text-xs text-muted-foreground mt-4">
+                {(currentPage - 1) * PAGE_SIZE + 1}–{Math.min(currentPage * PAGE_SIZE, filteredProducts.length)} / {filteredProducts.length}
+              </p>
+            </>
+          )}
 
           {filteredProducts.length === 0 && (
             <p className="text-center text-muted-foreground mt-12">{t("collection.noResults")}</p>

@@ -1,20 +1,26 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Heart } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 import { useProductName } from "@/lib/productName";
+import Pagination from "@/components/Pagination";
+
+const PAGE_SIZE = 60;
 
 const LongSleeves = () => {
   const { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();
 
-  const longSleeveProducts = allProducts.filter(p => p.leagues.includes("Long Sleeve"));
+  const longSleeveProducts = useMemo(() => allProducts.filter(p => p.leagues.includes("Long Sleeve")), []);
+  const totalPages = Math.max(1, Math.ceil(longSleeveProducts.length / PAGE_SIZE));
+  const pageProducts = longSleeveProducts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   return (
     <div className="min-h-screen bg-background">
@@ -28,12 +34,12 @@ const LongSleeves = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {longSleeveProducts.map((product, i) => (
+            {pageProducts.map((product, i) => (
               <motion.div
                 key={product.name}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
+                transition={{ duration: 0.4, delay: Math.min(i, 8) * 0.03 }}
                 viewport={{ once: true }}
                 className="group cursor-pointer relative"
               >
@@ -59,6 +65,11 @@ const LongSleeves = () => {
               </motion.div>
             ))}
           </div>
+
+          <Pagination page={page} totalPages={totalPages} onChange={setPage} />
+          <p className="text-center text-xs text-muted-foreground mt-4">
+            {longSleeveProducts.length === 0 ? 0 : (page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, longSleeveProducts.length)} / {longSleeveProducts.length}
+          </p>
         </div>
       </section>
       <Footer />

@@ -7,6 +7,9 @@ import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import { useProductName } from "@/lib/productName";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
+import Pagination from "@/components/Pagination";
+
+const PAGE_SIZE = 60;
 
 const leagues = [
   { key: "all", value: "Alle", teams: [] },

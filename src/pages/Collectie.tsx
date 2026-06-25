@@ -214,12 +214,12 @@ const Collectie = () => {
           {teamsForLeague.length === 0 && <div className="mb-8" />}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProducts.map((product, i) => (
+            {pageProducts.map((product, i) => (
               <motion.div
                 key={product.name}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
+                transition={{ duration: 0.4, delay: Math.min(i, 8) * 0.03 }}
                 viewport={{ once: true }}
                 className="group cursor-pointer relative"
               >
@@ -245,6 +245,15 @@ const Collectie = () => {
               </motion.div>
             ))}
           </div>
+
+          {filteredProducts.length > 0 && (
+            <>
+              <Pagination page={currentPage} totalPages={totalPages} onChange={setPage} />
+              <p className="text-center text-xs text-muted-foreground mt-4">
+                {(currentPage - 1) * PAGE_SIZE + 1}–{Math.min(currentPage * PAGE_SIZE, filteredProducts.length)} / {filteredProducts.length}
+              </p>
+            </>
+          )}
 
           {filteredProducts.length === 0 && (
             <p className="text-center text-muted-foreground mt-12">{t("collection.noResults")}</p>

@@ -1,20 +1,26 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Heart } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 import { useProductName } from "@/lib/productName";
+import Pagination from "@/components/Pagination";
+
+const PAGE_SIZE = 60;
 
 const Retro = () => {
   const { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();
 
-  const retroProducts = allProducts.filter(p => p.leagues.includes("Retro"));
+  const retroProducts = useMemo(() => allProducts.filter(p => p.leagues.includes("Retro")), []);
+  const totalPages = Math.max(1, Math.ceil(retroProducts.length / PAGE_SIZE));
+  const pageProducts = retroProducts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   return (
     <div className="min-h-screen bg-background">

@@ -68,6 +68,13 @@ const Collectie = () => {
     }), [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter]
   );
 
+  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PAGE_SIZE));
+  const currentPage = Math.min(page, totalPages);
+  const pageProducts = filteredProducts.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+
+  // Reset to page 1 when filters change
+  useMemo(() => { setPage(1); }, [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter]);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />

@@ -39,6 +39,7 @@ const Collectie = () => {
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();

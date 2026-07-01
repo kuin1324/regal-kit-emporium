@@ -34,15 +34,71 @@ const Navbar = () => {
     { label: t("nav.about"), path: "/over-ons" },
   ];
 
+  const IconActions = ({ inMenu = false }: { inMenu?: boolean }) => (
+    <div className={inMenu ? "flex flex-wrap items-center gap-4" : "flex items-center gap-4"}>
+      <LanguageSwitcher />
+      <ThemeToggle />
+      <Link
+        to="/favorieten"
+        onClick={() => setMobileOpen(false)}
+        className="relative text-foreground hover:text-primary transition-colors"
+        aria-label={t("nav.favorites")}
+      >
+        <Heart className={`h-5 w-5 ${favorites.size > 0 ? "fill-red-500 text-red-500" : ""}`} />
+        {favorites.size > 0 && (
+          <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-red-500 text-white text-[10px] flex items-center justify-center font-bold">
+            {favorites.size}
+          </span>
+        )}
+      </Link>
+      <button
+        onClick={() => { setCartOpen(true); setMobileOpen(false); }}
+        className="relative text-foreground hover:text-primary transition-colors"
+        aria-label={t("nav.cart")}
+      >
+        <ShoppingBag className="h-5 w-5" />
+        {count > 0 && (
+          <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-primary text-primary-foreground text-[10px] flex items-center justify-center font-bold">
+            {count}
+          </span>
+        )}
+      </button>
+      {user ? (
+        <DropdownMenu>
+          <DropdownMenuTrigger className="text-foreground hover:text-primary transition-colors" aria-label={t("nav.account")}>
+            <User className="h-5 w-5" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="bg-popover">
+            <DropdownMenuItem disabled className="text-xs text-muted-foreground">{user.email}</DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem onClick={() => signOut()}>
+              <LogOut className="h-4 w-4 mr-2" />
+              {t("nav.logout")}
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      ) : (
+        <button
+          onClick={() => { navigate("/auth"); setMobileOpen(false); }}
+          className="text-foreground hover:text-primary transition-colors"
+          aria-label={t("nav.login")}
+        >
+          <User className="h-5 w-5" />
+        </button>
+      )}
+    </div>
+  );
+
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
         <div className="container mx-auto flex h-14 sm:h-16 items-center justify-between px-3 sm:px-6 gap-2">
-          <Link to="/" className="font-display text-[11px] sm:text-xl font-bold tracking-wider sm:tracking-widest uppercase text-gradient-gold truncate max-w-[42%] sm:max-w-none">
+          <Link to="/" className="font-display text-[11px] sm:text-xl font-bold tracking-wider sm:tracking-widest uppercase text-gradient-gold truncate">
             <span className="sm:hidden">HOFS</span>
             <span className="hidden sm:inline">The Home of Football Style</span>
           </Link>
 
+          {/* Desktop nav links (center) */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
@@ -57,56 +113,32 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="flex items-center gap-1.5 sm:gap-4">
-            <LanguageSwitcher />
-            <ThemeToggle />
-            <Link to="/favorieten" className="relative text-foreground hover:text-primary transition-colors" aria-label={t("nav.favorites")}>
-              <Heart className={`h-5 w-5 ${favorites.size > 0 ? "fill-red-500 text-red-500" : ""}`} />
-              {favorites.size > 0 && (
-                <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-red-500 text-white text-[10px] flex items-center justify-center font-bold">
-                  {favorites.size}
-                </span>
-              )}
-            </Link>
-            <button onClick={() => setCartOpen(true)} className="relative text-foreground hover:text-primary transition-colors" aria-label={t("nav.cart")}>
-              <ShoppingBag className="h-5 w-5" />
-              {count > 0 && (
-                <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-primary text-primary-foreground text-[10px] flex items-center justify-center font-bold">
-                  {count}
-                </span>
-              )}
-            </button>
-
-            {user ? (
-              <DropdownMenu>
-                <DropdownMenuTrigger className="text-foreground hover:text-primary transition-colors" aria-label={t("nav.account")}>
-                  <User className="h-5 w-5" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="bg-popover">
-                  <DropdownMenuItem disabled className="text-xs text-muted-foreground">
-                    {user.email}
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem onClick={() => signOut()}>
-                    <LogOut className="h-4 w-4 mr-2" />
-                    {t("nav.logout")}
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
-              <button
-                onClick={() => navigate("/auth")}
-                className="text-foreground hover:text-primary transition-colors"
-                aria-label={t("nav.login")}
-              >
-                <User className="h-5 w-5" />
-              </button>
-            )}
-
-            <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
-              {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </button>
+          {/* Mobile: horizontally scrollable nav links in place of icons */}
+          <div className="md:hidden flex-1 min-w-0 overflow-x-auto no-scrollbar">
+            <div className="flex items-center gap-4 px-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-[11px] font-medium tracking-wide uppercase whitespace-nowrap ${
+                    location.pathname === item.path ? "text-primary" : "text-muted-foreground"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
           </div>
+
+          {/* Desktop icon actions on the right */}
+          <div className="hidden md:flex items-center gap-4">
+            <IconActions />
+          </div>
+
+          {/* Mobile hamburger */}
+          <button className="md:hidden text-foreground shrink-0" onClick={() => setMobileOpen(!mobileOpen)} aria-label="menu">
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
 
         <AnimatePresence>
@@ -118,27 +150,7 @@ const Navbar = () => {
               className="md:hidden border-t border-border overflow-hidden bg-background"
             >
               <div className="flex flex-col gap-4 p-6">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    onClick={() => setMobileOpen(false)}
-                    className={`text-sm font-medium tracking-wide transition-colors uppercase ${
-                      location.pathname === item.path ? "text-primary" : "text-muted-foreground hover:text-primary"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-                {!user && (
-                  <Link
-                    to="/auth"
-                    onClick={() => setMobileOpen(false)}
-                    className="text-sm font-medium tracking-wide uppercase text-primary"
-                  >
-                    {t("nav.login")}
-                  </Link>
-                )}
+                <IconActions inMenu />
               </div>
             </motion.div>
           )}

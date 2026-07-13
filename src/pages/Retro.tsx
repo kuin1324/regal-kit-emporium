@@ -1,13 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Heart } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 import { useProductName } from "@/lib/productName";
 import Pagination from "@/components/Pagination";
+import SortDecadeBar from "@/components/SortDecadeBar";
+import { extractYear, getDecade, sortProducts, SortKey } from "@/lib/productMeta";
 
 const PAGE_SIZE = 60;
 
@@ -15,10 +17,17 @@ const Retro = () => {
   const { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const [page, setPage] = useState(1);
+  const [sort, setSort] = useState<SortKey>("newest");
+  const [decade, setDecade] = useState<string | null>(null);
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();
 
-  const retroProducts = useMemo(() => allProducts.filter(p => p.leagues.includes("Retro")), []);
+  const retroProducts = useMemo(() => {
+    const base = allProducts.filter(p => p.leagues.includes("Retro"));
+    const filtered = decade ? base.filter(p => getDecade(extractYear(p.name)) === decade) : base;
+    return sortProducts(filtered, sort);
+  }, [sort, decade]);
+  useEffect(() => { setPage(1); }, [sort, decade]);
   const totalPages = Math.max(1, Math.ceil(retroProducts.length / PAGE_SIZE));
   const pageProducts = retroProducts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 

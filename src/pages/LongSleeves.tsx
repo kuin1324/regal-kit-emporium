@@ -42,6 +42,10 @@ const LongSleeves = () => {
             <p className="text-muted-foreground mt-4 max-w-lg mx-auto">{t("longSleeves.subtitle", { defaultValue: "Klassieke shirts met lange mouwen — premium kwaliteit." })}</p>
           </motion.div>
 
+          <SortDecadeBar sort={sort} onSortChange={setSort} decade={decade} onDecadeChange={setDecade} />
+
+
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {pageProducts.map((product, i) => (
               <motion.div

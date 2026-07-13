@@ -1,13 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { Search, Heart, Upload, X, ImageIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import { useProductName } from "@/lib/productName";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 import Pagination from "@/components/Pagination";
+import SortDecadeBar from "@/components/SortDecadeBar";
+import { extractYear, getDecade, sortProducts, SortKey } from "@/lib/productMeta";
 
 const PAGE_SIZE = 60;
 

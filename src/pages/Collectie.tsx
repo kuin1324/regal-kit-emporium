@@ -42,6 +42,8 @@ const Collectie = () => {
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
   const [page, setPage] = useState(1);
+  const [sort, setSort] = useState<SortKey>("newest");
+  const [decade, setDecade] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();

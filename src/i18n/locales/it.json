@@ -165,5 +165,16 @@
     "italyTraining": "Maglia Allenamento Speciale Italia",
     "barcaFlower": "Barcellona Edizione Speciale Fiori",
     "marseilleThird": "Marsiglia Third"
+  },
+  "filters": {
+    "sortLabel": "Ordina",
+    "allDecades": "Tutti gli anni",
+    "sort": {
+      "newest": "Più recenti",
+      "oldest": "Meno recenti",
+      "az": "A–Z",
+      "priceAsc": "Prezzo ↑",
+      "priceDesc": "Prezzo ↓"
+    }
   }
 }

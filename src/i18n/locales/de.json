@@ -165,5 +165,16 @@
     "italyTraining": "Italien Spezial Trainingstrikot",
     "barcaFlower": "Barcelona Special Blumen Design",
     "marseilleThird": "Marseille Third"
+  },
+  "filters": {
+    "sortLabel": "Sortieren",
+    "allDecades": "Alle Jahre",
+    "sort": {
+      "newest": "Neueste zuerst",
+      "oldest": "Älteste zuerst",
+      "az": "A–Z",
+      "priceAsc": "Preis ↑",
+      "priceDesc": "Preis ↓"
+    }
   }
 }

@@ -1,13 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Heart } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 import { useProductName } from "@/lib/productName";
 import Pagination from "@/components/Pagination";
+import SortDecadeBar from "@/components/SortDecadeBar";
+import { extractYear, getDecade, sortProducts, SortKey } from "@/lib/productMeta";
 
 const PAGE_SIZE = 60;
 
@@ -15,10 +17,17 @@ const LongSleeves = () => {
   const { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const [page, setPage] = useState(1);
+  const [sort, setSort] = useState<SortKey>("newest");
+  const [decade, setDecade] = useState<string | null>(null);
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();
 
-  const longSleeveProducts = useMemo(() => allProducts.filter(p => p.leagues.includes("Long Sleeve")), []);
+  const longSleeveProducts = useMemo(() => {
+    const base = allProducts.filter(p => p.leagues.includes("Long Sleeve"));
+    const filtered = decade ? base.filter(p => getDecade(extractYear(p.name)) === decade) : base;
+    return sortProducts(filtered, sort);
+  }, [sort, decade]);
+  useEffect(() => { setPage(1); }, [sort, decade]);
   const totalPages = Math.max(1, Math.ceil(longSleeveProducts.length / PAGE_SIZE));
   const pageProducts = longSleeveProducts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
@@ -32,6 +41,10 @@ const LongSleeves = () => {
             <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight">{t("longSleeves.title", { defaultValue: "Long Sleeve Collectie" })}</h1>
             <p className="text-muted-foreground mt-4 max-w-lg mx-auto">{t("longSleeves.subtitle", { defaultValue: "Klassieke shirts met lange mouwen — premium kwaliteit." })}</p>
           </motion.div>
+
+          <SortDecadeBar sort={sort} onSortChange={setSort} decade={decade} onDecadeChange={setDecade} />
+
+
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {pageProducts.map((product, i) => (

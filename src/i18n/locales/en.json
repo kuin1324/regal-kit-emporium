@@ -166,5 +166,16 @@
     "italyTraining": "Italy Special Training Shirt",
     "barcaFlower": "Barcelona Special Flower Design",
     "marseilleThird": "Marseille Third"
+  },
+  "filters": {
+    "sortLabel": "Sort",
+    "allDecades": "All years",
+    "sort": {
+      "newest": "Newest first",
+      "oldest": "Oldest first",
+      "az": "A–Z",
+      "priceAsc": "Price ↑",
+      "priceDesc": "Price ↓"
+    }
   }
 }

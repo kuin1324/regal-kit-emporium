@@ -1,13 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { Search, Heart, Upload, X, ImageIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import { useProductName } from "@/lib/productName";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 import Pagination from "@/components/Pagination";
+import SortDecadeBar from "@/components/SortDecadeBar";
+import { extractYear, getDecade, sortProducts, SortKey } from "@/lib/productMeta";
 
 const PAGE_SIZE = 60;
 
@@ -40,6 +42,8 @@ const Collectie = () => {
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
   const [page, setPage] = useState(1);
+  const [sort, setSort] = useState<SortKey>("newest");
+  const [decade, setDecade] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();
@@ -56,24 +60,26 @@ const Collectie = () => {
   const currentLeague = leagues.find(l => l.value === selectedLeague);
   const teamsForLeague = currentLeague?.teams || [];
 
-  const filteredProducts = useMemo(() =>
-    allProducts.filter(p => {
+  const filteredProducts = useMemo(() => {
+    const base = allProducts.filter(p => {
       const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.team.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesLeague = selectedLeague === "Alle" || p.leagues.includes(selectedLeague);
       const matchesTeam = !selectedTeam || p.team === selectedTeam;
       const matchesColor = !selectedColor || p.colors?.includes(selectedColor);
       const matchesLetter = !selectedLetter || p.name.charAt(0).toUpperCase() === selectedLetter;
-      return matchesSearch && matchesLeague && matchesTeam && matchesColor && matchesLetter;
-    }), [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter]
-  );
+      const matchesDecade = !decade || getDecade(extractYear(p.name)) === decade;
+      return matchesSearch && matchesLeague && matchesTeam && matchesColor && matchesLetter && matchesDecade;
+    });
+    return sortProducts(base, sort);
+  }, [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter, decade, sort]);
 
   const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PAGE_SIZE));
   const currentPage = Math.min(page, totalPages);
   const pageProducts = filteredProducts.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
   // Reset to page 1 when filters change
-  useMemo(() => { setPage(1); }, [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter]);
+  useEffect(() => { setPage(1); }, [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter, decade, sort]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -212,6 +218,8 @@ const Collectie = () => {
           )}
 
           {teamsForLeague.length === 0 && <div className="mb-8" />}
+
+          <SortDecadeBar sort={sort} onSortChange={setSort} decade={decade} onDecadeChange={setDecade} />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {pageProducts.map((product, i) => (

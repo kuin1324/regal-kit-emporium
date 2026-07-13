@@ -165,5 +165,16 @@
     "italyTraining": "Maillot d'Entraînement Spécial Italie",
     "barcaFlower": "Barcelone Édition Spéciale Fleurs",
     "marseilleThird": "Marseille Third"
+  },
+  "filters": {
+    "sortLabel": "Trier",
+    "allDecades": "Toutes les années",
+    "sort": {
+      "newest": "Plus récents",
+      "oldest": "Plus anciens",
+      "az": "A–Z",
+      "priceAsc": "Prix ↑",
+      "priceDesc": "Prix ↓"
+    }
   }
 }

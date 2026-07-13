@@ -165,5 +165,16 @@
     "italyTraining": "Camisa de Treino Especial Itália",
     "barcaFlower": "Barcelona Edição Especial Floral",
     "marseilleThird": "Marselha Third"
+  },
+  "filters": {
+    "sortLabel": "Ordenar",
+    "allDecades": "Todos os anos",
+    "sort": {
+      "newest": "Mais recentes",
+      "oldest": "Mais antigos",
+      "az": "A–Z",
+      "priceAsc": "Preço ↑",
+      "priceDesc": "Preço ↓"
+    }
   }
 }

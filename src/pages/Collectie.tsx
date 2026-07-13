@@ -60,24 +60,26 @@ const Collectie = () => {
   const currentLeague = leagues.find(l => l.value === selectedLeague);
   const teamsForLeague = currentLeague?.teams || [];
 
-  const filteredProducts = useMemo(() =>
-    allProducts.filter(p => {
+  const filteredProducts = useMemo(() => {
+    const base = allProducts.filter(p => {
       const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.team.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesLeague = selectedLeague === "Alle" || p.leagues.includes(selectedLeague);
       const matchesTeam = !selectedTeam || p.team === selectedTeam;
       const matchesColor = !selectedColor || p.colors?.includes(selectedColor);
       const matchesLetter = !selectedLetter || p.name.charAt(0).toUpperCase() === selectedLetter;
-      return matchesSearch && matchesLeague && matchesTeam && matchesColor && matchesLetter;
-    }), [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter]
-  );
+      const matchesDecade = !decade || getDecade(extractYear(p.name)) === decade;
+      return matchesSearch && matchesLeague && matchesTeam && matchesColor && matchesLetter && matchesDecade;
+    });
+    return sortProducts(base, sort);
+  }, [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter, decade, sort]);
 
   const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PAGE_SIZE));
   const currentPage = Math.min(page, totalPages);
   const pageProducts = filteredProducts.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
   // Reset to page 1 when filters change
-  useMemo(() => { setPage(1); }, [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter]);
+  useEffect(() => { setPage(1); }, [searchQuery, selectedLeague, selectedTeam, selectedColor, selectedLetter, decade, sort]);
 
   return (
     <div className="min-h-screen bg-background">

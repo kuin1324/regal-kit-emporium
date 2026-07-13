@@ -165,5 +165,16 @@
     "italyTraining": "意大利特别训练球衣",
     "barcaFlower": "巴塞罗那特别花卉设计",
     "marseilleThird": "马赛第三客场"
+  },
+  "filters": {
+    "sortLabel": "排序",
+    "allDecades": "全部年份",
+    "sort": {
+      "newest": "最新优先",
+      "oldest": "最早优先",
+      "az": "A–Z",
+      "priceAsc": "价格 ↑",
+      "priceDesc": "价格 ↓"
+    }
   }
 }

@@ -165,5 +165,16 @@
     "italyTraining": "Camiseta Entrenamiento Especial Italia",
     "barcaFlower": "Barcelona Edición Especial Flores",
     "marseilleThird": "Marsella Tercera"
+  },
+  "filters": {
+    "sortLabel": "Ordenar",
+    "allDecades": "Todos los años",
+    "sort": {
+      "newest": "Más nuevos",
+      "oldest": "Más antiguos",
+      "az": "A–Z",
+      "priceAsc": "Precio ↑",
+      "priceDesc": "Precio ↓"
+    }
   }
 }

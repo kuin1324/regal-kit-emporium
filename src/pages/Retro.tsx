@@ -38,7 +38,7 @@ const Retro = () => {
             <p className="text-muted-foreground mt-4 max-w-lg mx-auto">{t("retro.subtitle")}</p>
           </motion.div>
 
-          <SortDecadeBar sort={sort} onSortChange={setSort} decade={decade} onDecadeChange={setDecade} />
+          <ProductFilters items={baseProducts} state={filters} onChange={(patch) => setFilters((f) => ({ ...f, ...patch }))} />
 
 
 

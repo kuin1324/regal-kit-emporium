@@ -38,7 +38,7 @@ const LongSleeves = () => {
             <p className="text-muted-foreground mt-4 max-w-lg mx-auto">{t("longSleeves.subtitle", { defaultValue: "Klassieke shirts met lange mouwen — premium kwaliteit." })}</p>
           </motion.div>
 
-          <SortDecadeBar sort={sort} onSortChange={setSort} decade={decade} onDecadeChange={setDecade} />
+          <ProductFilters items={baseProducts} state={filters} onChange={(patch) => setFilters((f) => ({ ...f, ...patch }))} />
 
 
 

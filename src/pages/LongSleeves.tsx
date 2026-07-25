@@ -8,8 +8,8 @@ import { useCart } from "@/context/CartContext";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 import { useProductName } from "@/lib/productName";
 import Pagination from "@/components/Pagination";
-import SortDecadeBar from "@/components/SortDecadeBar";
-import { extractYear, getDecade, sortProducts, SortKey } from "@/lib/productMeta";
+import ProductFilters from "@/components/ProductFilters";
+import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
 
 const PAGE_SIZE = 60;
 
@@ -17,17 +17,13 @@ const LongSleeves = () => {
   const { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const [page, setPage] = useState(1);
-  const [sort, setSort] = useState<SortKey>("newest");
-  const [decade, setDecade] = useState<string | null>(null);
+  const [filters, setFilters] = useState<FilterState>(initialFilterState);
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();
 
-  const longSleeveProducts = useMemo(() => {
-    const base = allProducts.filter(p => p.leagues.includes("Long Sleeve"));
-    const filtered = decade ? base.filter(p => getDecade(extractYear(p.name)) === decade) : base;
-    return sortProducts(filtered, sort);
-  }, [sort, decade]);
-  useEffect(() => { setPage(1); }, [sort, decade]);
+  const baseProducts = useMemo(() => allProducts.filter(p => p.leagues.includes("Long Sleeve")), []);
+  const longSleeveProducts = useMemo(() => applyFilters(baseProducts, filters), [baseProducts, filters]);
+  useEffect(() => { setPage(1); }, [filters]);
   const totalPages = Math.max(1, Math.ceil(longSleeveProducts.length / PAGE_SIZE));
   const pageProducts = longSleeveProducts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 

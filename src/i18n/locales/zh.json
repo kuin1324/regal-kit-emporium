@@ -73,7 +73,8 @@
       "groen": "绿色",
       "oranje": "橙色",
       "geel": "黄色",
-      "meerkleurig": "多彩"
+      "meerkleurig": "多彩",
+      "roze": "粉色"
     }
   },
   "retro": {
@@ -175,6 +176,7 @@
       "az": "A–Z",
       "priceAsc": "价格 ↑",
       "priceDesc": "价格 ↓"
-    }
+    },
+    "allCountries": "所有国家"
   }
 }

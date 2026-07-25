@@ -74,7 +74,8 @@
       "geel": "geel",
       "groen": "groen",
       "oranje": "oranje",
-      "meerkleurig": "meerkleurig"
+      "meerkleurig": "meerkleurig",
+      "roze": "Roze"
     }
   },
   "retro": {
@@ -176,6 +177,7 @@
       "az": "A–Z",
       "priceAsc": "Prijs ↑",
       "priceDesc": "Prijs ↓"
-    }
+    },
+    "allCountries": "Alle landen"
   }
 }

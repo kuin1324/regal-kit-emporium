@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Heart, Truck, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -8,6 +8,8 @@ import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal
 import { useCart } from "@/context/CartContext";
 import { useProductName } from "@/lib/productName";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import ProductFilters from "@/components/ProductFilters";
+import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
 
 const Voorraad = () => {
   const { t } = useTranslation();
@@ -15,8 +17,13 @@ const Voorraad = () => {
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();
 
-  const ready = allProducts.filter((p) => (p as any).availability !== "incoming");
-  const incoming = allProducts.filter((p) => (p as any).availability === "incoming");
+  const [readyFilters, setReadyFilters] = useState<FilterState>(initialFilterState);
+  const [incomingFilters, setIncomingFilters] = useState<FilterState>(initialFilterState);
+
+  const readyBase = useMemo(() => allProducts.filter((p) => (p as any).availability !== "incoming"), []);
+  const incomingBase = useMemo(() => allProducts.filter((p) => (p as any).availability === "incoming"), []);
+  const ready = useMemo(() => applyFilters(readyBase, readyFilters), [readyBase, readyFilters]);
+  const incoming = useMemo(() => applyFilters(incomingBase, incomingFilters), [incomingBase, incomingFilters]);
 
   const Grid = ({ items, incoming: isIncoming }: { items: typeof allProducts; incoming?: boolean }) => (
     <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -102,6 +109,7 @@ const Voorraad = () => {
               <div className="mb-6 p-4 rounded border border-primary/30 bg-primary/5 text-sm text-foreground/80 max-w-2xl mx-auto text-center">
                 <span className="text-primary font-semibold">Gratis verzending vanaf 4 shirts.</span> Prijzen per shirt staan hieronder bij elk product.
               </div>
+              <ProductFilters items={readyBase} state={readyFilters} onChange={(patch) => setReadyFilters((f) => ({ ...f, ...patch }))} />
               <Grid items={ready} />
             </TabsContent>
 
@@ -110,6 +118,7 @@ const Voorraad = () => {
                 <p>Deze shirts zijn nog onderweg. Je kunt ze nu al <span className="text-primary font-semibold">pre-orderen</span> — wij sturen ze zodra ze binnenkomen.</p>
                 <p><span className="text-primary font-semibold">Gratis verzending vanaf 7 shirts</span> — of wacht tot er in totaal 7 shirts pre-ordered zijn door andere klanten, dan krijg jij ook gratis verzending. Prijzen per shirt staan hieronder bij elk product.</p>
               </div>
+              <ProductFilters items={incomingBase} state={incomingFilters} onChange={(patch) => setIncomingFilters((f) => ({ ...f, ...patch }))} />
               <Grid items={incoming} incoming />
             </TabsContent>
           </Tabs>

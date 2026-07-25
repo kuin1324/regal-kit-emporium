@@ -73,7 +73,8 @@
       "groen": "verde",
       "oranje": "laranja",
       "geel": "amarelo",
-      "meerkleurig": "multicor"
+      "meerkleurig": "multicor",
+      "roze": "Rosa"
     }
   },
   "retro": {
@@ -175,6 +176,7 @@
       "az": "A–Z",
       "priceAsc": "Preço ↑",
       "priceDesc": "Preço ↓"
-    }
+    },
+    "allCountries": "Todos os países"
   }
 }

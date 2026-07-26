@@ -280,21 +280,13 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
 
               <div className="mb-4 rounded-lg border border-border bg-muted/30 p-4">
                 <p className="text-xs font-semibold tracking-wide uppercase mb-2">{t("product.shippingRates", { defaultValue: "Verzendkosten" })}</p>
-                {selected.availability === "incoming" ? (
-                  <ul className="text-xs space-y-1">
-                    <li className="flex justify-between"><span className="text-muted-foreground">1–2 shirts</span><span className="font-semibold">€10</span></li>
-                    <li className="flex justify-between"><span className="text-muted-foreground">3–4 shirts</span><span className="font-semibold">€8</span></li>
-                    <li className="flex justify-between"><span className="text-muted-foreground">5–6 shirts</span><span className="font-semibold">€7</span></li>
-                    <li className="flex justify-between"><span className="text-muted-foreground">7+ shirts</span><span className="font-semibold text-gradient-gold">GRATIS</span></li>
-                  </ul>
-                ) : (
-                  <ul className="text-xs space-y-1">
-                    <li className="flex justify-between"><span className="text-muted-foreground">1–2 shirts</span><span className="font-semibold">€10</span></li>
-                    <li className="flex justify-between"><span className="text-muted-foreground">3 shirts</span><span className="font-semibold">€8</span></li>
-                    <li className="flex justify-between"><span className="text-muted-foreground">4+ shirts</span><span className="font-semibold text-gradient-gold">GRATIS</span></li>
-                  </ul>
-                )}
+                <ul className="text-xs space-y-1">
+                  <li className="flex justify-between"><span className="text-muted-foreground">1–2 shirts</span><span className="font-semibold">€5</span></li>
+                  <li className="flex justify-between"><span className="text-muted-foreground">3–5 shirts</span><span className="font-semibold">€3</span></li>
+                  <li className="flex justify-between"><span className="text-muted-foreground">6+ shirts</span><span className="font-semibold text-gradient-gold">GRATIS</span></li>
+                </ul>
               </div>
+
 
               <button
                 onClick={handleAddToCart}

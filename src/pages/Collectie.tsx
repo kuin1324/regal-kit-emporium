@@ -21,7 +21,17 @@ const Collectie = () => {
   const [filters, setFilters] = useState<FilterState>({
     ...initialFilterState,
     q: searchParams.get("q") || "",
+    league: searchParams.get("league") || null,
   });
+
+  useEffect(() => {
+    setFilters((f) => ({
+      ...f,
+      q: searchParams.get("q") || "",
+      league: searchParams.get("league") || null,
+    }));
+  }, [searchParams]);
+
   const [page, setPage] = useState(1);
   const { favorites, toggleFavorite } = useCart();
   const productName = useProductName();

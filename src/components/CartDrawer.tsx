@@ -7,7 +7,8 @@ import { useCart } from "@/context/CartContext";
 import { useTranslation } from "react-i18next";
 import ProductDetailModal from "./ProductDetailModal";
 import { useProductName } from "@/lib/productName";
-import { calculateShipping } from "@/lib/shipping";
+import { calculateShipping, FREE_SHIPPING_FROM } from "@/lib/shipping";
+import { useAuth } from "@/context/AuthContext";
 
 interface CartDrawerProps {
   open: boolean;
@@ -19,30 +20,49 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const { t } = useTranslation();
   const productName = useProductName();
+  const { user } = useAuth();
 
   const shipping = calculateShipping(count);
   const grandTotal = total + shipping;
-  const shirtsToFree = count > 0 && count < 7 ? 7 - count : 0;
+  const shirtsToFree = count > 0 && count < FREE_SHIPPING_FROM ? FREE_SHIPPING_FROM - count : 0;
 
-  const buildOrderText = () => {
+  const buildOrderText = (orderNumber: string, email: string) => {
     const lines = items.map(i => `🏷️ ${productName(i.name)} (${t("cart.size")}: ${i.size}) x${i.quantity} — €${i.price * i.quantity}`).join("\n");
     const shippingLine = shipping === 0 ? "🚚 Verzending: GRATIS" : `🚚 Verzending: €${shipping}`;
-    return `${t("cart.orderGreeting")}\n\n${lines}\n\n${shippingLine}\n💰 ${t("cart.orderTotal")}: €${grandTotal}`;
+    return `${t("cart.orderGreeting")}\n\n📦 Bestelnummer: ${orderNumber}\n✉️ E-mail: ${email}\n\n${lines}\n\n${shippingLine}\n💰 ${t("cart.orderTotal")}: €${grandTotal}`;
   };
 
   const handleEmailOrder = async () => {
     if (items.length === 0) return;
-    const orderText = buildOrderText();
-    const subject = `Nieuwe bestelling — €${grandTotal}`;
+    const email = user?.email || window.prompt("Wat is je e-mailadres? (nodig voor track & trace)")?.trim();
+    if (!email) return;
 
-    // Try to send via backend (Outlook), fallback to mailto
+    const orderNumber = `HOFS-${Math.random().toString(36).slice(2, 7).toUpperCase()}`;
+    const { supabase } = await import("@/integrations/supabase/client");
+
     try {
-      const { supabase } = await import("@/integrations/supabase/client");
+      await supabase.from("orders").insert({
+        order_number: orderNumber,
+        user_id: user?.id ?? null,
+        email,
+        items: items.map(i => ({ name: i.name, size: i.size, quantity: i.quantity, price: i.price })),
+        subtotal: total,
+        shipping,
+        total: grandTotal,
+      });
+    } catch {
+      /* bestelling kan alsnog per mail door */
+    }
+
+    const orderText = buildOrderText(orderNumber, email);
+    const subject = `Nieuwe bestelling ${orderNumber} — €${grandTotal}`;
+
+    try {
       const { error } = await supabase.functions.invoke("send-order-email", {
-        body: { subject, body: orderText, items, total },
+        body: { subject, body: orderText, items, total, orderNumber, email },
       });
       if (error) throw error;
-      alert("✅ Bestelling verzonden!");
+      alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${orderNumber}\nVolg je bestelling via Track & Trace.`);
       clearCart();
       onClose();
       return;
@@ -50,6 +70,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
       window.location.href = `mailto:the_home_of_football_style@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(orderText)}`;
     }
   };
+
 
   return (
     <>

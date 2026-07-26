@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const leagues = [
-  { key: "eredivisie", emoji: "🇳🇱", href: "/collectie" },
-  { key: "serieA", emoji: "🇮🇹", href: "/collectie" },
-  { key: "laLiga", emoji: "🇪🇸", href: "/collectie" },
-  { key: "ligue1", emoji: "🇫🇷", href: "/collectie" },
-  { key: "national", emoji: "🌍", href: "/collectie" },
+  { key: "eredivisie", emoji: "🇳🇱", href: "/collectie?league=Eredivisie" },
+  { key: "serieA", emoji: "🇮🇹", href: "/collectie?league=Serie%20A" },
+  { key: "laLiga", emoji: "🇪🇸", href: "/collectie?league=La%20Liga" },
+  { key: "ligue1", emoji: "🇫🇷", href: "/collectie?league=Ligue%201" },
+  { key: "national", emoji: "🌍", href: "/collectie?league=Nationaal" },
   { key: "special", emoji: "⭐", href: "/special-edition" },
 ];
+
 
 const ShopByLeague = () => {
   const { t } = useTranslation();

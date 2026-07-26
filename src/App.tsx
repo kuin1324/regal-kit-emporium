@@ -17,6 +17,7 @@ import SpecialEdition from "./pages/SpecialEdition.tsx";
 import Favorieten from "./pages/Favorieten.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Voorraad from "./pages/Voorraad.tsx";
+import TrackTrace from "./pages/TrackTrace.tsx";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/favorieten" element={<Favorieten />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/voorraad" element={<Voorraad />} />
+            <Route path="/track-trace" element={<TrackTrace />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

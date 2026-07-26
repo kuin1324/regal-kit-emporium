@@ -79,13 +79,15 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
             className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-dashed border-border/60 text-sm text-muted-foreground hover:border-primary/40 hover:text-foreground transition-all"
           >
             <Upload className="h-4 w-4" />
-            {t("collection.uploadCta")}
+            {t("collection.photoSearchCta", { defaultValue: "Zoek met een foto" })}
           </button>
         ) : (
           <div className="flex items-center gap-3 px-4 py-2 rounded-full border border-primary/30 bg-card">
             <img src={photo} alt={t("collection.yourPhoto")} className="h-8 w-8 rounded object-cover" />
             <ImageIcon className="h-4 w-4 text-primary" />
-            <span className="text-xs text-muted-foreground">{t("collection.photoLoaded")}</span>
+            <span className="text-xs text-muted-foreground">
+              {t("collection.photoSearchActive", { defaultValue: "Zoekresultaten op basis van je foto" })}
+            </span>
             <button
               type="button"
               onClick={() => fileInputRef.current?.click()}
@@ -103,6 +105,7 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
             </button>
           </div>
         )}
+
       </div>
 
       {colors.length > 0 && (

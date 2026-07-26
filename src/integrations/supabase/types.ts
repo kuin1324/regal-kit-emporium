@@ -14,6 +14,57 @@ export type Database = {
   }
   public: {
     Tables: {
+      orders: {
+        Row: {
+          carrier: string | null
+          created_at: string
+          email: string
+          id: string
+          items: Json
+          order_number: string
+          shipping: number
+          status: string
+          subtotal: number
+          total: number
+          tracking_code: string | null
+          tracking_url: string | null
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          carrier?: string | null
+          created_at?: string
+          email: string
+          id?: string
+          items?: Json
+          order_number: string
+          shipping?: number
+          status?: string
+          subtotal?: number
+          total?: number
+          tracking_code?: string | null
+          tracking_url?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          carrier?: string | null
+          created_at?: string
+          email?: string
+          id?: string
+          items?: Json
+          order_number?: string
+          shipping?: number
+          status?: string
+          subtotal?: number
+          total?: number
+          tracking_code?: string | null
+          tracking_url?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_url: string | null
@@ -43,7 +94,20 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      track_order: {
+        Args: { _email: string; _order_number: string }
+        Returns: {
+          carrier: string
+          created_at: string
+          items: Json
+          order_number: string
+          status: string
+          total: number
+          tracking_code: string
+          tracking_url: string
+          updated_at: string
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never

@@ -122,14 +122,17 @@ export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState
   });
 
   if (s.photoSig) {
-    return [...base].sort((a, b) => {
-      const sa = shirtSignatures[a.nameKey ?? ""];
-      const sb = shirtSignatures[b.nameKey ?? ""];
-      const da = sa ? distance(sa, s.photoSig!) : Infinity;
-      const db = sb ? distance(sb, s.photoSig!) : Infinity;
-      return da - db;
-    });
+    // Zoeken met een foto: alleen de best gelijkende shirts tonen.
+    const scored = base
+      .map((p) => {
+        const sig = shirtSignatures[p.nameKey ?? ""];
+        return { p, d: sig ? distance(sig, s.photoSig!) : Infinity };
+      })
+      .filter((x) => Number.isFinite(x.d))
+      .sort((a, b) => a.d - b.d);
+    return scored.slice(0, 24).map((x) => x.p);
   }
+
 
   return sortProducts(base, s.sort);
 };

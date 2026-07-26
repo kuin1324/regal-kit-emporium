@@ -44,16 +44,32 @@ export const getCountry = (p: FilterProduct): string | null => {
   return null;
 };
 
-export const collectLeagues = (items: FilterProduct[]): string[] =>
-  Array.from(new Set(items.flatMap((p) => p.leagues)))
-    .filter((l) => l !== "Retro" && l !== "Long Sleeve" && l !== "Special")
-    .sort();
+/** Alleen opties tonen waar meer dan één shirt onder valt. */
+const countBy = <T>(values: T[]): Map<T, number> => {
+  const m = new Map<T, number>();
+  for (const v of values) m.set(v, (m.get(v) ?? 0) + 1);
+  return m;
+};
 
-export const collectCountries = (items: FilterProduct[]): string[] =>
-  Array.from(new Set(items.map(getCountry).filter(Boolean) as string[])).sort();
+export const collectLeagues = (items: FilterProduct[]): string[] => {
+  const counts = countBy(items.flatMap((p) => p.leagues));
+  return Array.from(counts.entries())
+    .filter(([l, n]) => n > 1 && l !== "Retro" && l !== "Long Sleeve" && l !== "Special")
+    .map(([l]) => l)
+    .sort();
+};
+
+export const collectCountries = (items: FilterProduct[]): string[] => {
+  const counts = countBy(items.map(getCountry).filter(Boolean) as string[]);
+  return Array.from(counts.entries())
+    .filter(([, n]) => n > 1)
+    .map(([c]) => c)
+    .sort();
+};
 
 export const collectColors = (items: FilterProduct[]): string[] =>
-  FILTER_COLORS.filter((c) => items.some((p) => p.colors?.includes(c)));
+  FILTER_COLORS.filter((c) => items.filter((p) => p.colors?.includes(c)).length > 1);
+
 
 export interface FilterState {
   q: string;

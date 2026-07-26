@@ -31,6 +31,7 @@ const Navbar = () => {
     { label: t("nav.longSleeves", { defaultValue: "Long Sleeves" }), path: "/long-sleeves" },
     { label: t("nav.specialEdition"), path: "/special-edition" },
     { label: t("nav.stock", { defaultValue: "Voorraad" }), path: "/voorraad" },
+    { label: t("nav.track", { defaultValue: "Track & Trace" }), path: "/track-trace" },
     { label: t("nav.about"), path: "/over-ons" },
   ];
 

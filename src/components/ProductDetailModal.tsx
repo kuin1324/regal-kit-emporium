@@ -288,9 +288,10 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 </ul>
               </div>
 
-              {product.availability === "incoming" && (
-                <PreorderProgress productKey={product.nameKey} className="mb-4" />
+              {selected?.availability === "incoming" && (
+                <PreorderProgress productKey={selected.nameKey} className="mb-4" />
               )}
+
 
 
 

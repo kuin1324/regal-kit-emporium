@@ -114,10 +114,14 @@ const Voorraad = () => {
             </TabsContent>
 
             <TabsContent value="incoming">
-              <div className="mb-6 p-4 rounded border border-primary/30 bg-primary/5 text-sm text-foreground/80 max-w-2xl mx-auto text-center space-y-2">
-                <p>Deze shirts zijn nog onderweg. Je kunt ze nu al <span className="text-primary font-semibold">pre-orderen</span> — wij sturen ze zodra ze binnenkomen.</p>
-                <p><span className="text-primary font-semibold">Gratis verzending vanaf 6 shirts</span> — 1–2 shirts €5, 3–5 shirts €3. Of wacht tot er in totaal 6 shirts pre-ordered zijn door andere klanten, dan krijg jij ook gratis verzending. Prijzen per shirt staan hieronder bij elk product.</p>
+              <div className="mb-6 max-w-2xl mx-auto space-y-4">
+                <div className="p-4 rounded-xl border border-primary/25 bg-primary/5 text-sm text-foreground/80 text-center space-y-2">
+                  <p>Deze shirts zijn nog onderweg. Je kunt ze nu al <span className="text-primary font-semibold">pre-orderen</span> — wij sturen ze zodra ze binnenkomen.</p>
+                  <p><span className="text-primary font-semibold">Gratis verzending vanaf 6 shirts</span> — 1–2 shirts €5, 3–5 shirts €3.</p>
+                </div>
+                <PreorderProgress />
               </div>
+
               <ProductFilters items={incomingBase} state={incomingFilters} onChange={(patch) => setIncomingFilters((f) => ({ ...f, ...patch }))} />
               <Grid items={incoming} incoming />
             </TabsContent>

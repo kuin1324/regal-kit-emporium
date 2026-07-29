@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag, Trash2, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
+import PreorderProgress from "@/components/PreorderProgress";
+
 import shirt7 from "@/assets/shirt-new-7.png";
 import italySpecialFront from "@/assets/shirt-italy-special-front.jpg";
 import italySpecialBack from "@/assets/shirt-italy-special-back.jpg";
@@ -56,7 +58,6 @@ export const allProducts = [
   { image: argentinieFront, gallery: [argentinieFront, argentinieBack], name: "Argentinië Uit Shirt WK 2026", nameKey: "argentinieSpecial", team: "Argentinië", leagues: ["Nationaal"], price: "€30", description: "Argentinië uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "blauw"] },
   { image: franceFront, gallery: [franceFront, franceBack], name: "Frankrijk Uit Shirt WK 2026", nameKey: "francePrematch", team: "Frankrijk", leagues: ["Nationaal"], price: "€30", description: "Frankrijk uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
   ...retroShirts,
-  ...collectieShirts,
 ];
 
 interface ProductDetailModalProps {
@@ -288,6 +289,13 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                   <li className="flex justify-between"><span className="text-muted-foreground">6+ shirts</span><span className="font-semibold text-gradient-gold">GRATIS</span></li>
                 </ul>
               </div>
+
+              {selected?.availability === "incoming" && (
+                <PreorderProgress productKey={selected.nameKey} className="mb-4" />
+              )}
+
+
+
 
 
               <button

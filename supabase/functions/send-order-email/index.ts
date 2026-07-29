@@ -22,14 +22,40 @@ Deno.serve(async (req) => {
     if (!LOVABLE_API_KEY) throw new Error("LOVABLE_API_KEY missing");
     if (!OUTLOOK_API_KEY) throw new Error("MICROSOFT_OUTLOOK_API_KEY missing");
 
-    const { subject, body, items, total } = await req.json() as {
+    const { subject, body, items, total, preorders } = await req.json() as {
       subject?: string; body?: string; items?: OrderItem[]; total?: number;
+      preorders?: { key: string; quantity: number }[];
     };
     if (!subject || !body) {
       return new Response(JSON.stringify({ error: "subject and body required" }), {
         status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
+
+    // Pre-order tellers bijwerken (alleen server-side, met service role).
+    if (preorders?.length) {
+      const url = Deno.env.get("SUPABASE_URL");
+      const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+      if (url && serviceKey) {
+        for (const p of preorders) {
+          if (!p?.key || !p.quantity) continue;
+          try {
+            await fetch(`${url}/rest/v1/rpc/increment_preorder`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                apikey: serviceKey,
+                Authorization: `Bearer ${serviceKey}`,
+              },
+              body: JSON.stringify({ _product_key: p.key, _qty: p.quantity }),
+            });
+          } catch (err) {
+            console.error("increment_preorder failed", p.key, err);
+          }
+        }
+      }
+    }
+
 
     // Build a nice HTML body
     const rows = (items ?? []).map(i =>

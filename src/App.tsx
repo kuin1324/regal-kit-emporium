@@ -7,6 +7,8 @@ import { CartProvider } from "@/context/CartContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { AuthProvider } from "@/context/AuthContext";
 import ScrollToTop from "@/components/ScrollToTop";
+import ChatWidget from "@/components/ChatWidget";
+
 import Index from "./pages/Index.tsx";
 import Auth from "./pages/Auth.tsx";
 import OverOns from "./pages/OverOns.tsx";
@@ -46,6 +48,8 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+        <ChatWidget />
+
       </CartProvider>
     </TooltipProvider>
     </AuthProvider>

@@ -9,6 +9,8 @@ import { useCart } from "@/context/CartContext";
 import { useProductName } from "@/lib/productName";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ProductFilters from "@/components/ProductFilters";
+import PreorderProgress from "@/components/PreorderProgress";
+
 import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
 
 const Voorraad = () => {

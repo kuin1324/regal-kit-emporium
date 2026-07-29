@@ -1,5 +1,9 @@
 import { extractYear, getDecade, sortProducts, SortKey } from "@/lib/productMeta";
 import { shirtSignatures } from "@/data/shirtSignatures";
+import { buildPhotoSignature, derivedColors, similarity } from "@/lib/imageSignature";
+
+export { buildPhotoSignature };
+
 
 export interface FilterProduct {
   name: string;

@@ -47,7 +47,7 @@ Deno.serve(async (req) => {
                 apikey: serviceKey,
                 Authorization: `Bearer ${serviceKey}`,
               },
-              body: JSON.stringify({ _product_key: p.key, _amount: p.quantity }),
+              body: JSON.stringify({ _product_key: p.key, _qty: p.quantity }),
             });
           } catch (err) {
             console.error("increment_preorder failed", p.key, err);

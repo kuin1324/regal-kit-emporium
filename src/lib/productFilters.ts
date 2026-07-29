@@ -72,7 +72,8 @@ export const collectCountries = (items: FilterProduct[]): string[] => {
 };
 
 export const collectColors = (items: FilterProduct[]): string[] =>
-  FILTER_COLORS.filter((c) => items.filter((p) => p.colors?.includes(c)).length > 1);
+  FILTER_COLORS.filter((c) => items.filter((p) => productColors(p).has(c)).length > 1);
+
 
 
 export interface FilterState {

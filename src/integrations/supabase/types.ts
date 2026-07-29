@@ -65,6 +65,27 @@ export type Database = {
         }
         Relationships: []
       }
+      preorder_counts: {
+        Row: {
+          goal: number
+          ordered: number
+          product_key: string
+          updated_at: string
+        }
+        Insert: {
+          goal?: number
+          ordered?: number
+          product_key: string
+          updated_at?: string
+        }
+        Update: {
+          goal?: number
+          ordered?: number
+          product_key?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_url: string | null
@@ -94,6 +115,21 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      increment_preorder: {
+        Args: { _product_key: string; _qty: number }
+        Returns: {
+          goal: number
+          ordered: number
+          product_key: string
+          updated_at: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "preorder_counts"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
       track_order: {
         Args: { _email: string; _order_number: string }
         Returns: {

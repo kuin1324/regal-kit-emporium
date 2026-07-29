@@ -97,26 +97,29 @@ export const initialFilterState: FilterState = {
   photoSig: null,
 };
 
-const distance = (a: number[], b: number[]): number => {
-  let sum = 0;
-  for (let i = 0; i < Math.min(a.length, b.length); i++) {
-    const d = a[i] - b[i];
-    sum += d * d;
-  }
-  return Math.sqrt(sum);
+/** Kleuren van een shirt: handmatige labels + kleuren afgeleid uit de foto. */
+const colorCache = new Map<string, Set<string>>();
+export const productColors = (p: FilterProduct): Set<string> => {
+  const key = p.nameKey ?? p.name;
+  const cached = colorCache.get(key);
+  if (cached) return cached;
+  const set = new Set<string>([...(p.colors ?? []), ...derivedColors(shirtSignatures[p.nameKey ?? ""])]);
+  colorCache.set(key, set);
+  return set;
 };
 
 export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState): T[] => {
   const q = s.q.trim().toLowerCase();
   const base = items.filter((p) => {
+    const colors = productColors(p);
     const matchesSearch =
       !q ||
       p.name.toLowerCase().includes(q) ||
       p.team.toLowerCase().includes(q) ||
       p.leagues.some((l) => l.toLowerCase().includes(q)) ||
       (getCountry(p) || "").toLowerCase().includes(q) ||
-      (p.colors || []).some((c) => c.includes(q));
-    const matchesColor = !s.color || p.colors?.includes(s.color);
+      Array.from(colors).some((c) => c.includes(q));
+    const matchesColor = !s.color || colors.has(s.color);
     const matchesLeague = !s.league || p.leagues.includes(s.league);
     const matchesCountry = !s.country || getCountry(p) === s.country;
     const matchesLetter =
@@ -126,37 +129,21 @@ export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState
   });
 
   if (s.photoSig) {
-    // Zoeken met een foto: alleen de best gelijkende shirts tonen.
+    // Zoeken met een foto: score op kleurverdeling + grove layout, alleen relevante treffers.
     const scored = base
-      .map((p) => {
-        const sig = shirtSignatures[p.nameKey ?? ""];
-        return { p, d: sig ? distance(sig, s.photoSig!) : Infinity };
-      })
-      .filter((x) => Number.isFinite(x.d))
-      .sort((a, b) => a.d - b.d);
-    return scored.slice(0, 24).map((x) => x.p);
+      .map((p) => ({ p, score: similarity(shirtSignatures[p.nameKey ?? ""], s.photoSig!) }))
+      .filter((x) => x.score > 0)
+      .sort((a, b) => b.score - a.score);
+    if (!scored.length) return [];
+    const best = scored[0].score;
+    // Relatieve drempel: houdt alleen wat echt in de buurt komt van de beste match.
+    return scored
+      .filter((x) => x.score >= Math.max(0.35, best * 0.82))
+      .slice(0, 24)
+      .map((x) => x.p);
   }
-
 
   return sortProducts(base, s.sort);
 };
 
-/** Maakt een 4x4 RGB signatuur van een geüploade foto voor overeenkomst-zoeken. */
-export const buildPhotoSignature = (dataUrl: string): Promise<number[]> =>
-  new Promise((resolve, reject) => {
-    const img = new Image();
-    img.onload = () => {
-      const canvas = document.createElement("canvas");
-      canvas.width = 4;
-      canvas.height = 4;
-      const ctx = canvas.getContext("2d");
-      if (!ctx) return reject(new Error("no canvas"));
-      ctx.drawImage(img, 0, 0, 4, 4);
-      const { data } = ctx.getImageData(0, 0, 4, 4);
-      const out: number[] = [];
-      for (let i = 0; i < data.length; i += 4) out.push(data[i], data[i + 1], data[i + 2]);
-      resolve(out);
-    };
-    img.onerror = () => reject(new Error("bad image"));
-    img.src = dataUrl;
   });

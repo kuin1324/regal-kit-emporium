@@ -58,9 +58,19 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     const subject = `Nieuwe bestelling ${orderNumber} — €${grandTotal}`;
 
     try {
+      const { allProducts } = await import("./ProductDetailModal");
+      const preorders = items
+        .map((i) => {
+          const p = allProducts.find((x) => x.name === i.name);
+          return p?.availability === "incoming" && p.nameKey
+            ? { key: p.nameKey, quantity: i.quantity }
+            : null;
+        })
+        .filter(Boolean);
       const { error } = await supabase.functions.invoke("send-order-email", {
-        body: { subject, body: orderText, items, total, orderNumber, email },
+        body: { subject, body: orderText, items, total, orderNumber, email, preorders },
       });
+
       if (error) throw error;
       alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${orderNumber}\nVolg je bestelling via Track & Trace.`);
       clearCart();

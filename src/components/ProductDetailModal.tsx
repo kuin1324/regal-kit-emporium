@@ -288,6 +288,12 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 </ul>
               </div>
 
+              {product.availability === "incoming" && (
+                <PreorderProgress productKey={product.nameKey} className="mb-4" />
+              )}
+
+
+
 
               <button
                 onClick={handleAddToCart}

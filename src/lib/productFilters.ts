@@ -145,5 +145,3 @@ export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState
 
   return sortProducts(base, s.sort);
 };
-
-  });

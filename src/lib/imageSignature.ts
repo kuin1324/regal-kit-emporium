@@ -128,21 +128,45 @@ export const derivedColors = (sig: number[] | undefined): string[] => {
   return out;
 };
 
+/** Hue-histogram met lichte uitsmering, zodat kleurzweem/onscherpte minder uitmaakt. */
+const smoothHue = (v: number[]): number[] => {
+  const out = new Array(IDX_GRAY + 1).fill(0);
+  for (let i = 0; i < HUE_BINS; i++) {
+    const prev = v[(i - 1 + HUE_BINS) % HUE_BINS] / 255;
+    const cur = v[i] / 255;
+    const next = v[(i + 1) % HUE_BINS] / 255;
+    out[i] = cur * 0.6 + (prev + next) * 0.2;
+  }
+  out[IDX_WHITE] = v[IDX_WHITE] / 255;
+  out[IDX_BLACK] = v[IDX_BLACK] / 255;
+  out[IDX_GRAY] = v[IDX_GRAY] / 255;
+  return out;
+};
+
 /** Gelijkenis 0..1 tussen twee descriptoren (hoger = beter). */
 export const similarity = (a: number[], b: number[]): number => {
   if (!a || !b || a.length < IDX_GRID || b.length < IDX_GRID) return 0;
-  // 1) Histogram-overlap over de eerste 15 waarden (kleurverdeling).
+  const ha = smoothHue(a);
+  const hb = smoothHue(b);
+
+  // 1) Histogram-overlap (kleurverdeling), tolerant voor kleine hue-verschuivingen.
   let overlap = 0;
   let total = 0;
-  for (let i = 0; i < IDX_GRAY + 1; i++) {
-    const x = a[i] / 255;
-    const y = b[i] / 255;
-    overlap += Math.min(x, y);
-    total += Math.max(x, y);
+  let dot = 0;
+  let na = 0;
+  let nb = 0;
+  for (let i = 0; i < ha.length; i++) {
+    overlap += Math.min(ha[i], hb[i]);
+    total += Math.max(ha[i], hb[i]);
+    dot += ha[i] * hb[i];
+    na += ha[i] * ha[i];
+    nb += hb[i] * hb[i];
   }
   const hist = total > 0 ? overlap / total : 0;
+  // 2) Cosinus-gelijkenis: minder gevoelig voor belichting/uitsnede-verhoudingen.
+  const cos = na > 0 && nb > 0 ? dot / Math.sqrt(na * nb) : 0;
 
-  // 2) Grove layout-gelijkenis via het 2x2 grid (helderheid-genormaliseerd).
+  // 3) Grove layout-gelijkenis via het 2x2 grid (helderheid-genormaliseerd).
   const gridA = a.slice(IDX_GRID);
   const gridB = b.slice(IDX_GRID);
   const mean = (v: number[]) => v.reduce((s, x) => s + x, 0) / Math.max(1, v.length);
@@ -154,5 +178,37 @@ export const similarity = (a: number[], b: number[]): number => {
   }
   const layout = Math.max(0, 1 - diff / gridA.length / 1.2);
 
-  return hist * 0.75 + layout * 0.25;
+  return hist * 0.45 + cos * 0.35 + layout * 0.2;
+};
+
+/** Beste score over meerdere uitsnedes van dezelfde foto. */
+export const bestSimilarity = (target: number[] | undefined, sigs: number[][]): number => {
+  if (!target) return 0;
+  let best = 0;
+  for (const s of sigs) {
+    const score = similarity(target, s);
+    if (score > best) best = score;
+  }
+  return best;
+};
+
+/** Kleurnaam die het dichtst bij een gekozen hex-kleur ligt (voor de color picker). */
+export const nearestColorName = (hex: string): string => {
+  const m = /^#?([0-9a-f]{6})$/i.exec(hex.trim());
+  if (!m) return "zwart";
+  const int = parseInt(m[1], 16);
+  const { h, l, s } = rgbToHls((int >> 16) & 255, (int >> 8) & 255, int & 255);
+  if (l > 0.85 && s < 0.25) return "wit";
+  if (l < 0.18) return "zwart";
+  if (s < 0.16) return "grijs";
+  const deg = h * 360;
+  if (deg < 15 || deg >= 340) return "rood";
+  if (deg < 45) return "oranje";
+  if (deg < 70) return "geel";
+  if (deg < 165) return "groen";
+  if (deg < 260) return "blauw";
+  if (deg < 300) return "paars";
+  return "roze";
+};
+
 };

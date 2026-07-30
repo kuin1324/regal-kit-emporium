@@ -61,10 +61,13 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
       const { allProducts } = await import("./ProductDetailModal");
       const preorders = items
         .map((i) => {
-          const p = allProducts.find((x) => x.name === i.name);
+          const p = allProducts.find((x) => x.name === i.name) as
+            | { availability?: string; nameKey?: string }
+            | undefined;
           return p?.availability === "incoming" && p.nameKey
             ? { key: p.nameKey, quantity: i.quantity }
             : null;
+
         })
         .filter(Boolean);
       const { error } = await supabase.functions.invoke("send-order-email", {

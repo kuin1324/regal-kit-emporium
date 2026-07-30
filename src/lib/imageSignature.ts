@@ -210,5 +210,3 @@ export const nearestColorName = (hex: string): string => {
   if (deg < 300) return "paars";
   return "roze";
 };
-
-};

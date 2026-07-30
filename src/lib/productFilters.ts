@@ -1,8 +1,15 @@
 import { extractYear, getDecade, sortProducts, SortKey } from "@/lib/productMeta";
 import { shirtSignatures } from "@/data/shirtSignatures";
-import { buildPhotoSignature, derivedColors, similarity } from "@/lib/imageSignature";
+import {
+  buildPhotoSignature,
+  buildPhotoSignatures,
+  bestSimilarity,
+  derivedColors,
+  nearestColorName,
+} from "@/lib/imageSignature";
 
-export { buildPhotoSignature };
+export { buildPhotoSignature, buildPhotoSignatures, nearestColorName };
+
 
 
 export interface FilterProduct {
@@ -78,24 +85,26 @@ export const collectColors = (items: FilterProduct[]): string[] =>
 
 export interface FilterState {
   q: string;
-  color: string | null;
+  /** Meerdere kleuren tegelijk; een shirt matcht als het één van de kleuren bevat. */
+  colors: string[];
   league: string | null;
   country: string | null;
   letter: string | null;
   decade: string | null;
   sort: SortKey;
-  photoSig: number[] | null;
+  /** Descriptoren van meerdere uitsnedes van de geüploade foto. */
+  photoSigs: number[][] | null;
 }
 
 export const initialFilterState: FilterState = {
   q: "",
-  color: null,
+  colors: [],
   league: null,
   country: null,
   letter: null,
   decade: null,
   sort: "newest",
-  photoSig: null,
+  photoSigs: null,
 };
 
 /** Kleuren van een shirt: handmatige labels + kleuren afgeleid uit de foto. */
@@ -120,7 +129,7 @@ export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState
       p.leagues.some((l) => l.toLowerCase().includes(q)) ||
       (getCountry(p) || "").toLowerCase().includes(q) ||
       Array.from(colors).some((c) => c.includes(q));
-    const matchesColor = !s.color || colors.has(s.color);
+    const matchesColor = s.colors.length === 0 || s.colors.some((c) => colors.has(c));
     const matchesLeague = !s.league || p.leagues.includes(s.league);
     const matchesCountry = !s.country || getCountry(p) === s.country;
     const matchesLetter =
@@ -129,20 +138,21 @@ export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState
     return matchesSearch && matchesColor && matchesLeague && matchesCountry && matchesLetter && matchesDecade;
   });
 
-  if (s.photoSig) {
-    // Zoeken met een foto: score op kleurverdeling + grove layout, alleen relevante treffers.
+  if (s.photoSigs && s.photoSigs.length) {
+    // Zoeken met een foto: beste score over meerdere uitsnedes, meest gelijkende bovenaan.
     const scored = base
-      .map((p) => ({ p, score: similarity(shirtSignatures[p.nameKey ?? ""], s.photoSig!) }))
+      .map((p) => ({ p, score: bestSimilarity(shirtSignatures[p.nameKey ?? ""], s.photoSigs!) }))
       .filter((x) => x.score > 0)
       .sort((a, b) => b.score - a.score);
     if (!scored.length) return [];
     const best = scored[0].score;
     // Relatieve drempel: houdt alleen wat echt in de buurt komt van de beste match.
     return scored
-      .filter((x) => x.score >= Math.max(0.35, best * 0.82))
+      .filter((x) => x.score >= Math.max(0.3, best * 0.8))
       .slice(0, 24)
       .map((x) => x.p);
   }
+
 
   return sortProducts(base, s.sort);
 };

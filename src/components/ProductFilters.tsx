@@ -1,11 +1,12 @@
 import { useRef, useState } from "react";
-import { Search, Upload, X, ImageIcon } from "lucide-react";
+import { Search, Upload, X, ImageIcon, Pipette } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import SortDecadeBar from "@/components/SortDecadeBar";
 import {
   COLOR_MAP,
   FilterState,
-  buildPhotoSignature,
+  buildPhotoSignatures,
+  nearestColorName,
   collectColors,
   collectCountries,
   collectLeagues,
@@ -30,10 +31,18 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
   const { t } = useTranslation();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [photo, setPhoto] = useState<string | null>(null);
+  const [picked, setPicked] = useState("#1E40AF");
 
   const leagues = collectLeagues(items);
   const countries = collectCountries(items);
   const colors = collectColors(items);
+
+  const toggleColor = (color: string) =>
+    onChange({
+      colors: state.colors.includes(color)
+        ? state.colors.filter((c) => c !== color)
+        : [...state.colors, color],
+    });
 
   const handleUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -43,9 +52,9 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
       const url = ev.target?.result as string;
       setPhoto(url);
       try {
-        onChange({ photoSig: await buildPhotoSignature(url) });
+        onChange({ photoSigs: await buildPhotoSignatures(url) });
       } catch {
-        onChange({ photoSig: null });
+        onChange({ photoSigs: null });
       }
     };
     reader.readAsDataURL(file);
@@ -53,9 +62,10 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
 
   const clearPhoto = () => {
     setPhoto(null);
-    onChange({ photoSig: null });
+    onChange({ photoSigs: null });
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
+
 
   return (
     <div className="mb-8">
@@ -109,15 +119,15 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
       </div>
 
       {colors.length > 0 && (
-        <div className="flex flex-wrap justify-center gap-2 mb-3">
-          <button onClick={() => onChange({ color: null })} className={chip(!state.color)}>
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-3">
+          <button onClick={() => onChange({ colors: [] })} className={chip(state.colors.length === 0)}>
             {t("collection.allColors")}
           </button>
           {colors.map((color) => (
             <button
               key={color}
-              onClick={() => onChange({ color: state.color === color ? null : color })}
-              className={`flex items-center gap-1.5 ${chip(state.color === color)}`}
+              onClick={() => toggleColor(color)}
+              className={`flex items-center gap-1.5 ${chip(state.colors.includes(color))}`}
             >
               <span
                 className="w-3 h-3 rounded-full border border-border/50 shrink-0"
@@ -130,8 +140,23 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
               {t(`collection.colors.${color}`, { defaultValue: color })}
             </button>
           ))}
+          <label className={`flex cursor-pointer items-center gap-1.5 ${chip(false)}`}>
+            <Pipette className="h-3 w-3" />
+            {t("filters.colorPicker", { defaultValue: "Kleur kiezen" })}
+            <input
+              type="color"
+              value={picked}
+              onChange={(e) => {
+                setPicked(e.target.value);
+                const name = nearestColorName(e.target.value);
+                if (!state.colors.includes(name)) onChange({ colors: [...state.colors, name] });
+              }}
+              className="h-4 w-4 cursor-pointer appearance-none rounded-full border-0 bg-transparent p-0"
+            />
+          </label>
         </div>
       )}
+
 
       {leagues.length > 0 && (
         <div className="flex flex-wrap justify-center gap-2 mb-3">

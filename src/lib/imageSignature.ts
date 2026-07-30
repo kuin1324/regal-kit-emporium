@@ -30,7 +30,7 @@ const rgbToHls = (r: number, g: number, b: number) => {
 };
 
 /** Bouwt dezelfde descriptor als het generatiescript, uit een data-URL. */
-export const buildPhotoSignature = (dataUrl: string): Promise<number[]> =>
+export const buildPhotoSignature = (dataUrl: string, crop = { x: 0.18, y: 0.15, w: 0.64, h: 0.7 }): Promise<number[]> =>
   new Promise((resolve, reject) => {
     const img = new Image();
     img.onload = () => {
@@ -40,9 +40,9 @@ export const buildPhotoSignature = (dataUrl: string): Promise<number[]> =>
       const ctx = canvas.getContext("2d", { willReadFrequently: true });
       if (!ctx) return reject(new Error("no canvas"));
       // Zelfde centrale uitsnede als offline: 18%-82% breed, 15%-85% hoog.
-      const sx = img.width * 0.18;
-      const sy = img.height * 0.15;
-      ctx.drawImage(img, sx, sy, img.width * 0.64, img.height * 0.7, 0, 0, 24, 24);
+      const sx = img.width * crop.x;
+      const sy = img.height * crop.y;
+      ctx.drawImage(img, sx, sy, img.width * crop.w, img.height * crop.h, 0, 0, 24, 24);
       const { data } = ctx.getImageData(0, 0, 24, 24);
 
       const hue = new Array(HUE_BINS).fill(0);
@@ -79,6 +79,19 @@ export const buildPhotoSignature = (dataUrl: string): Promise<number[]> =>
     img.onerror = () => reject(new Error("bad image"));
     img.src = dataUrl;
   });
+
+/**
+ * Meerdere descriptoren van dezelfde foto (verschillende uitsnedes).
+ * Zo werkt zoeken ook met een bijgesneden of ruime/onscherpe foto: bij het
+ * vergelijken telt steeds de best passende uitsnede.
+ */
+export const buildPhotoSignatures = (dataUrl: string): Promise<number[][]> =>
+  Promise.all([
+    buildPhotoSignature(dataUrl, { x: 0.18, y: 0.15, w: 0.64, h: 0.7 }),
+    buildPhotoSignature(dataUrl, { x: 0.02, y: 0.02, w: 0.96, h: 0.96 }),
+    buildPhotoSignature(dataUrl, { x: 0.3, y: 0.28, w: 0.4, h: 0.44 }),
+  ]);
+
 
 /** Aandeel (0-1) per kleurcategorie, afgeleid uit de descriptor. */
 export const colorShares = (sig: number[]): Record<string, number> => {

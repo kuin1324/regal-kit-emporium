@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { Package, Search, Truck, CheckCircle2 } from "lucide-react";
+import { Package, Search, Truck, CheckCircle2, Clock, MapPin, Copy, Check, ExternalLink, RefreshCw } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 
 interface TrackResult {
@@ -17,7 +17,37 @@ interface TrackResult {
   updated_at: string;
 }
 
-const STEPS = ["ontvangen", "in behandeling", "verzonden", "geleverd"];
+/** Volledige statusketen zoals getoond aan de klant. */
+const STEPS = [
+  { key: "ontvangen", label: "Order ontvangen", icon: Package },
+  { key: "in behandeling", label: "In behandeling", icon: Clock },
+  { key: "pre-order", label: "Pre-order", icon: Clock },
+  { key: "verzonden", label: "Verzonden", icon: Truck },
+  { key: "onderweg", label: "Onderweg", icon: MapPin },
+  { key: "afgeleverd", label: "Afgeleverd", icon: CheckCircle2 },
+];
+
+/** Oudere statuswaarden blijven werken. */
+const STATUS_ALIAS: Record<string, string> = {
+  geleverd: "afgeleverd",
+  preorder: "pre-order",
+  behandeling: "in behandeling",
+};
+
+const normalizeStatus = (s: string) => {
+  const v = s.trim().toLowerCase();
+  return STATUS_ALIAS[v] ?? v;
+};
+
+/** Geschatte leverdatum op basis van status en verzenddatum. */
+const estimatedDelivery = (r: TrackResult): string | null => {
+  const status = normalizeStatus(r.status);
+  if (status === "afgeleverd") return null;
+  const base = new Date(status === "verzonden" || status === "onderweg" ? r.updated_at : r.created_at);
+  const days = status === "onderweg" ? 1 : status === "verzonden" ? 3 : status === "pre-order" ? 21 : 6;
+  const eta = new Date(base.getTime() + days * 86400000);
+  return eta.toLocaleDateString("nl-NL", { weekday: "long", day: "numeric", month: "long" });
+};
 
 const TrackTrace = () => {
   const [orderNumber, setOrderNumber] = useState("");
@@ -25,32 +55,62 @@ const TrackTrace = () => {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<TrackResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
+  const [refreshedAt, setRefreshedAt] = useState<Date | null>(null);
+  const lastQuery = useRef<{ order: string; email: string } | null>(null);
 
-  const handleSearch = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!orderNumber.trim() || !email.trim()) return;
-    setLoading(true);
-    setError(null);
-    setResult(null);
+  const fetchOrder = useCallback(async (order: string, mail: string, silent = false) => {
+    if (!silent) {
+      setLoading(true);
+      setError(null);
+      setResult(null);
+    }
     const { data, error: err } = await supabase.rpc("track_order", {
-      _order_number: orderNumber.trim(),
-      _email: email.trim(),
+      _order_number: order,
+      _email: mail,
     });
-    setLoading(false);
+    if (!silent) setLoading(false);
     if (err) {
-      setError("Er ging iets mis. Probeer het opnieuw.");
+      if (!silent) setError("Er ging iets mis. Probeer het opnieuw.");
       return;
     }
     const row = (data as TrackResult[] | null)?.[0];
     if (!row) {
-      setError("Geen bestelling gevonden met dit bestelnummer en e-mailadres.");
+      if (!silent) setError("Geen bestelling gevonden met dit bestelnummer en e-mailadres.");
       return;
     }
     setResult(row);
+    setRefreshedAt(new Date());
+  }, []);
+
+  const handleSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!orderNumber.trim() || !email.trim()) return;
+    lastQuery.current = { order: orderNumber.trim(), email: email.trim() };
+    await fetchOrder(orderNumber.trim(), email.trim());
   };
 
-  const stepIndex = result ? Math.max(0, STEPS.indexOf(result.status.toLowerCase())) : 0;
+  // Status automatisch verversen zolang de bestelling nog niet is afgeleverd.
+  useEffect(() => {
+    if (!result || normalizeStatus(result.status) === "afgeleverd") return;
+    const id = setInterval(() => {
+      const q = lastQuery.current;
+      if (q) void fetchOrder(q.order, q.email, true);
+    }, 30000);
+    return () => clearInterval(id);
+  }, [result, fetchOrder]);
+
+  const copyTracking = async () => {
+    if (!result?.tracking_code) return;
+    await navigator.clipboard.writeText(result.tracking_code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  const stepIndex = result ? Math.max(0, STEPS.findIndex((s) => s.key === normalizeStatus(result.status))) : 0;
   const items = Array.isArray(result?.items) ? (result!.items as Array<Record<string, unknown>>) : [];
+  const eta = result ? estimatedDelivery(result) : null;
+
 
   return (
     <div className="min-h-screen bg-background">

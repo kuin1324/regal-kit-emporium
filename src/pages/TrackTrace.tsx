@@ -159,34 +159,58 @@ const TrackTrace = () => {
                 <span className="px-3 py-1 rounded-full text-[11px] font-semibold bg-primary/15 text-primary capitalize">{result.status}</span>
               </div>
 
-              <div className="flex items-center mb-6">
-                {STEPS.map((s, i) => (
-                  <div key={s} className="flex-1 flex items-center last:flex-none">
-                    <div className={`flex flex-col items-center ${i <= stepIndex ? "text-primary" : "text-muted-foreground"}`}>
-                      {i === 0 && <Package className="h-5 w-5" />}
-                      {i === 1 && <Package className="h-5 w-5" />}
-                      {i === 2 && <Truck className="h-5 w-5" />}
-                      {i === 3 && <CheckCircle2 className="h-5 w-5" />}
-                      <span className="text-[10px] mt-1 capitalize whitespace-nowrap">{s}</span>
+              <div className="flex items-start mb-6">
+                {STEPS.map((s, i) => {
+                  const Icon = s.icon;
+                  return (
+                    <div key={s.key} className="flex-1 flex items-start last:flex-none">
+                      <div className={`flex w-12 flex-col items-center ${i <= stepIndex ? "text-primary" : "text-muted-foreground"}`}>
+                        <Icon className="h-5 w-5" />
+                        <span className="text-[9px] mt-1 text-center leading-tight">{s.label}</span>
+                      </div>
+                      {i < STEPS.length - 1 && (
+                        <div className={`h-[2px] flex-1 mt-2.5 mx-1 ${i < stepIndex ? "bg-primary" : "bg-border"}`} />
+                      )}
                     </div>
-                    {i < STEPS.length - 1 && (
-                      <div className={`h-[2px] flex-1 mx-2 ${i < stepIndex ? "bg-primary" : "bg-border"}`} />
-                    )}
-                  </div>
-                ))}
+                  );
+                })}
               </div>
+
+              {eta && (
+                <div className="rounded border border-primary/25 bg-primary/5 p-3 mb-4 text-sm">
+                  <span className="text-muted-foreground text-xs">Verwachte levering: </span>
+                  <span className="font-semibold capitalize">{eta}</span>
+                </div>
+              )}
 
               {result.tracking_code && (
                 <div className="rounded border border-border/60 p-4 mb-4 text-sm">
                   <p className="text-muted-foreground text-xs mb-1">{result.carrier || "Vervoerder"}</p>
-                  <p className="font-semibold">{result.tracking_code}</p>
-                  {result.tracking_url && (
-                    <a href={result.tracking_url} target="_blank" rel="noreferrer" className="text-primary text-xs hover:underline">
-                      Volg bij vervoerder →
-                    </a>
-                  )}
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <p className="font-semibold">{result.tracking_code}</p>
+                    <button
+                      type="button"
+                      onClick={copyTracking}
+                      className="flex items-center gap-1 rounded border border-border/60 px-2 py-1 text-[11px] hover:border-primary/50 transition-colors"
+                    >
+                      {copied ? <Check className="h-3 w-3 text-primary" /> : <Copy className="h-3 w-3" />}
+                      {copied ? "Gekopieerd" : "Kopieer"}
+                    </button>
+                    {result.tracking_url && (
+                      <a
+                        href={result.tracking_url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-1 rounded bg-primary px-2 py-1 text-[11px] font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        Volg bij vervoerder
+                      </a>
+                    )}
+                  </div>
                 </div>
               )}
+
 
               {items.length > 0 && (
                 <ul className="text-sm space-y-1 mb-4">

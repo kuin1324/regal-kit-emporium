@@ -1,8 +1,15 @@
 import { extractYear, getDecade, sortProducts, SortKey } from "@/lib/productMeta";
 import { shirtSignatures } from "@/data/shirtSignatures";
-import { buildPhotoSignature, derivedColors, similarity } from "@/lib/imageSignature";
+import {
+  buildPhotoSignature,
+  buildPhotoSignatures,
+  bestSimilarity,
+  derivedColors,
+  nearestColorName,
+} from "@/lib/imageSignature";
 
-export { buildPhotoSignature };
+export { buildPhotoSignature, buildPhotoSignatures, nearestColorName };
+
 
 
 export interface FilterProduct {

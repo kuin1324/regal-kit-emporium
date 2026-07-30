@@ -182,10 +182,11 @@ const ChatWidget = () => {
                   onClick={() => void send()}
                   disabled={busy || !input.trim()}
                   aria-label={t("chat.send", { defaultValue: "Versturen" })}
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground transition-opacity disabled:opacity-40"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[linear-gradient(135deg,#6366F1,#EC4899)] text-white transition-opacity disabled:opacity-40"
                 >
                   <Send className="h-4 w-4" />
                 </button>
+
               </div>
             </div>
           </motion.div>

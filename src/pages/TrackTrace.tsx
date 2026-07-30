@@ -229,9 +229,21 @@ const TrackTrace = () => {
                 <span className="font-semibold">Totaal</span>
                 <span className="font-display font-bold text-gradient-gold">€{result.total}</span>
               </div>
-              <p className="text-[11px] text-muted-foreground mt-3">
-                Laatste update: {new Date(result.updated_at).toLocaleString("nl-NL")}
-              </p>
+              <div className="flex items-center justify-between mt-3 text-[11px] text-muted-foreground">
+                <span>Laatste update: {new Date(result.updated_at).toLocaleString("nl-NL")}</span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const q = lastQuery.current;
+                    if (q) void fetchOrder(q.order, q.email, true);
+                  }}
+                  className="flex items-center gap-1 hover:text-foreground transition-colors"
+                >
+                  <RefreshCw className="h-3 w-3" />
+                  {refreshedAt ? `Ververst ${refreshedAt.toLocaleTimeString("nl-NL", { hour: "2-digit", minute: "2-digit" })}` : "Ververs"}
+                </button>
+              </div>
+
             </motion.div>
           )}
         </div>

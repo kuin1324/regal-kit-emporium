@@ -1,11 +1,12 @@
 import { useRef, useState } from "react";
-import { Search, Upload, X, ImageIcon } from "lucide-react";
+import { Search, Upload, X, ImageIcon, Pipette } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import SortDecadeBar from "@/components/SortDecadeBar";
 import {
   COLOR_MAP,
   FilterState,
-  buildPhotoSignature,
+  buildPhotoSignatures,
+  nearestColorName,
   collectColors,
   collectCountries,
   collectLeagues,
@@ -30,10 +31,18 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
   const { t } = useTranslation();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [photo, setPhoto] = useState<string | null>(null);
+  const [picked, setPicked] = useState("#1E40AF");
 
   const leagues = collectLeagues(items);
   const countries = collectCountries(items);
   const colors = collectColors(items);
+
+  const toggleColor = (color: string) =>
+    onChange({
+      colors: state.colors.includes(color)
+        ? state.colors.filter((c) => c !== color)
+        : [...state.colors, color],
+    });
 
   const handleUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -43,9 +52,9 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
       const url = ev.target?.result as string;
       setPhoto(url);
       try {
-        onChange({ photoSig: await buildPhotoSignature(url) });
+        onChange({ photoSigs: await buildPhotoSignatures(url) });
       } catch {
-        onChange({ photoSig: null });
+        onChange({ photoSigs: null });
       }
     };
     reader.readAsDataURL(file);
@@ -53,9 +62,10 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
 
   const clearPhoto = () => {
     setPhoto(null);
-    onChange({ photoSig: null });
+    onChange({ photoSigs: null });
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
+
 
   return (
     <div className="mb-8">

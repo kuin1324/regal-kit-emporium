@@ -100,7 +100,7 @@ const ChatWidget = () => {
         whileHover={{ scale: 1.06 }}
         whileTap={{ scale: 0.94 }}
         aria-label={t("chat.open", { defaultValue: "Chat met onze assistent" })}
-        className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-[0_10px_30px_-8px_hsl(var(--primary)/0.6)] transition-shadow hover:shadow-[0_14px_40px_-8px_hsl(var(--primary)/0.75)]"
+        className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[linear-gradient(135deg,#6366F1,#EC4899_45%,#F59E0B)] text-white shadow-[0_10px_30px_-8px_rgba(99,102,241,0.7)] transition-shadow hover:shadow-[0_14px_44px_-8px_rgba(236,72,153,0.75)]"
       >
         <AnimatePresence mode="wait" initial={false}>
           {open ? (
@@ -125,15 +125,16 @@ const ChatWidget = () => {
             style={{ transformOrigin: "bottom left" }}
             className="fixed bottom-24 left-5 z-50 flex h-[26rem] w-[min(22rem,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-2xl border border-border/60 bg-card shadow-2xl"
           >
-            <div className="flex items-center gap-3 border-b border-border/60 bg-gradient-to-r from-primary/10 to-transparent px-4 py-3">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/15 text-primary">
+            <div className="relative flex items-center gap-3 overflow-hidden px-4 py-3 text-white bg-[linear-gradient(120deg,#6366F1,#8B5CF6_35%,#EC4899_70%,#F59E0B)]">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20 backdrop-blur">
                 <Bot className="h-5 w-5" />
               </span>
               <div className="min-w-0">
                 <p className="font-display text-sm font-semibold leading-tight">HOFS Assistent</p>
-                <p className="text-[11px] text-muted-foreground">{t("chat.subtitle", { defaultValue: "Meestal binnen enkele seconden antwoord" })}</p>
+                <p className="text-[11px] text-white/80">{t("chat.subtitle", { defaultValue: "Meestal binnen enkele seconden antwoord" })}</p>
               </div>
             </div>
+
 
             <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto px-4 py-4">
               {messages.map((m, i) => (

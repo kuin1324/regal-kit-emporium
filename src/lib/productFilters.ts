@@ -119,16 +119,13 @@ export const productColors = (p: FilterProduct): Set<string> => {
 };
 
 export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState): T[] => {
-  const q = s.q.trim().toLowerCase();
+  // Zoeken: alle woorden moeten in de naam of het team voorkomen. Kleuren en
+  // competities tellen niet mee, anders komen er totaal andere shirts terug.
+  const tokens = s.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const base = items.filter((p) => {
     const colors = productColors(p);
-    const matchesSearch =
-      !q ||
-      p.name.toLowerCase().includes(q) ||
-      p.team.toLowerCase().includes(q) ||
-      p.leagues.some((l) => l.toLowerCase().includes(q)) ||
-      (getCountry(p) || "").toLowerCase().includes(q) ||
-      Array.from(colors).some((c) => c.includes(q));
+    const haystack = `${p.name} ${p.team}`.toLowerCase().replace(/[-/_]/g, " ");
+    const matchesSearch = tokens.every((tok) => haystack.includes(tok));
     const matchesColor = s.colors.length === 0 || s.colors.some((c) => colors.has(c));
     const matchesLeague = !s.league || p.leagues.includes(s.league);
     const matchesCountry = !s.country || getCountry(p) === s.country;
@@ -137,6 +134,7 @@ export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState
     const matchesDecade = !s.decade || getDecade(extractYear(p.name)) === s.decade;
     return matchesSearch && matchesColor && matchesLeague && matchesCountry && matchesLetter && matchesDecade;
   });
+
 
   if (s.photoSigs && s.photoSigs.length) {
     // Zoeken met een foto: beste score over meerdere uitsnedes, meest gelijkende bovenaan.

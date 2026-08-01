@@ -11,7 +11,7 @@ interface ChatMessage {
 const ENDPOINT = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat`;
 
 const ChatWidget = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
@@ -20,6 +20,7 @@ const ChatWidget = () => {
   ]);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+  const draggedRef = useRef(false);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
@@ -28,6 +29,15 @@ const ChatWidget = () => {
   useEffect(() => {
     if (open) inputRef.current?.focus();
   }, [open, busy]);
+
+  // Welkomstbericht meevertalen zolang er nog niets gevraagd is.
+  useEffect(() => {
+    setMessages((m) =>
+      m.length === 1 && m[0].role === "assistant"
+        ? [{ role: "assistant", content: t("chat.welcome", { defaultValue: "Hoi! 👋 Vraag me alles over onze shirts, maten, verzending of je bestelling." }) }]
+        : m,
+    );
+  }, [i18n.language, t]);
 
   const send = async () => {
     const text = input.trim();
@@ -44,7 +54,10 @@ const ChatWidget = () => {
           "Content-Type": "application/json",
           Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
         },
-        body: JSON.stringify({ messages: next.map(({ role, content }) => ({ role, content })) }),
+        body: JSON.stringify({
+          language: i18n.language,
+          messages: next.map(({ role, content }) => ({ role, content })),
+        }),
       });
 
       if (!res.ok || !res.body) {
@@ -96,11 +109,20 @@ const ChatWidget = () => {
     <>
       <motion.button
         type="button"
-        onClick={() => setOpen((o) => !o)}
+        drag
+        dragMomentum={false}
+        dragElastic={0.08}
+        onDragStart={() => (draggedRef.current = true)}
+        onDragEnd={() => setTimeout(() => (draggedRef.current = false), 0)}
+        onClick={() => {
+          if (draggedRef.current) return;
+          setOpen((o) => !o);
+        }}
         whileHover={{ scale: 1.06 }}
         whileTap={{ scale: 0.94 }}
+        title={t("chat.drag", { defaultValue: "Sleep me naar een andere plek" })}
         aria-label={t("chat.open", { defaultValue: "Chat met onze assistent" })}
-        className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[linear-gradient(135deg,#6366F1,#EC4899_45%,#F59E0B)] text-white shadow-[0_10px_30px_-8px_rgba(99,102,241,0.7)] transition-shadow hover:shadow-[0_14px_44px_-8px_rgba(236,72,153,0.75)]"
+        className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[linear-gradient(135deg,#6366F1,#EC4899_45%,#F59E0B)] cursor-grab active:cursor-grabbing text-white shadow-[0_10px_30px_-8px_rgba(99,102,241,0.7)] transition-shadow hover:shadow-[0_14px_44px_-8px_rgba(236,72,153,0.75)]"
       >
         <AnimatePresence mode="wait" initial={false}>
           {open ? (

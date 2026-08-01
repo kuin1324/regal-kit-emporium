@@ -15,7 +15,6 @@ import OverOns from "./pages/OverOns.tsx";
 import Collectie from "./pages/Collectie.tsx";
 import SpecialEdition from "./pages/SpecialEdition.tsx";
 
-import SpecialEdition from "./pages/SpecialEdition.tsx";
 import Favorieten from "./pages/Favorieten.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Voorraad from "./pages/Voorraad.tsx";

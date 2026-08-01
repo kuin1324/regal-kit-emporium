@@ -17,7 +17,7 @@ const Footer = () => {
             <h4 className="font-display text-xs font-semibold tracking-[0.2em] uppercase text-foreground mb-4">{t("footer.shop")}</h4>
             <ul className="space-y-2">
               <li><Link to="/collectie" className="text-sm text-muted-foreground hover:text-primary transition-colors">{t("nav.collection")}</Link></li>
-              <li><Link to="/retro" className="text-sm text-muted-foreground hover:text-primary transition-colors">{t("nav.retro")}</Link></li>
+              <li><Link to="/voorraad" className="text-sm text-muted-foreground hover:text-primary transition-colors">{t("nav.stock", { defaultValue: "Voorraad" })}</Link></li>
               <li><Link to="/special-edition" className="text-sm text-muted-foreground hover:text-primary transition-colors">{t("nav.specialEdition")}</Link></li>
             </ul>
           </div>

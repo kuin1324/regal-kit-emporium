@@ -37,8 +37,6 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/over-ons" element={<OverOns />} />
             <Route path="/collectie" element={<Collectie />} />
-            <Route path="/retro" element={<Retro />} />
-            <Route path="/long-sleeves" element={<LongSleeves />} />
             <Route path="/special-edition" element={<SpecialEdition />} />
             <Route path="/favorieten" element={<Favorieten />} />
             <Route path="/auth" element={<Auth />} />

@@ -67,70 +67,67 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
   };
 
 
+  const Row = ({ label, children }: { label: string; children: React.ReactNode }) => (
+    <div className="flex flex-col gap-2">
+      <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{label}</span>
+      <div className="flex flex-wrap items-center gap-2">{children}</div>
+    </div>
+  );
+
   return (
-    <div className="mb-8">
-      <div className="relative max-w-md mx-auto mb-4">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+    <div className="mb-8 flex flex-col items-start gap-5 rounded-2xl border border-border/50 bg-card/40 p-5 text-left">
+      <h2 className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-primary">
+        {t("filters.title", { defaultValue: "Filter" })}
+      </h2>
+
+      <div className="relative w-full max-w-md">
+        <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
         <input
           type="text"
           placeholder={t("search.placeholderShort")}
           value={state.q}
           onChange={(e) => onChange({ q: e.target.value })}
-          className="w-full pl-11 pr-4 py-3 rounded border border-border/50 bg-card text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors"
+          className="w-full rounded-xl border border-border/50 bg-card py-3 pl-11 pr-4 text-sm text-foreground transition-colors placeholder:text-muted-foreground focus:border-primary/50 focus:outline-none"
         />
       </div>
 
       <input ref={fileInputRef} type="file" accept="image/*" onChange={handleUpload} className="hidden" />
-      <div className="flex justify-center mb-4">
+      <div>
         {!photo ? (
           <button
             type="button"
             onClick={() => fileInputRef.current?.click()}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-dashed border-border/60 text-sm text-muted-foreground hover:border-primary/40 hover:text-foreground transition-all"
+            className="flex items-center gap-2 rounded-full border border-dashed border-border/60 px-5 py-2.5 text-sm text-muted-foreground transition-all hover:border-primary/40 hover:text-foreground"
           >
             <Upload className="h-4 w-4" />
             {t("collection.photoSearchCta", { defaultValue: "Zoek met een foto" })}
           </button>
         ) : (
-          <div className="flex items-center gap-3 px-4 py-2 rounded-full border border-primary/30 bg-card">
+          <div className="flex items-center gap-3 rounded-full border border-primary/30 bg-card px-4 py-2">
             <img src={photo} alt={t("collection.yourPhoto")} className="h-8 w-8 rounded object-cover" />
             <ImageIcon className="h-4 w-4 text-primary" />
             <span className="text-xs text-muted-foreground">
               {t("collection.photoSearchActive", { defaultValue: "Zoekresultaten op basis van je foto" })}
             </span>
-            <button
-              type="button"
-              onClick={() => fileInputRef.current?.click()}
-              className="text-[11px] font-medium text-primary hover:underline"
-            >
+            <button type="button" onClick={() => fileInputRef.current?.click()} className="text-[11px] font-medium text-primary hover:underline">
               {t("collection.edit")}
             </button>
-            <button
-              type="button"
-              onClick={clearPhoto}
-              className="p-1 rounded-full hover:bg-muted transition-colors"
-              aria-label={t("collection.removePhoto")}
-            >
+            <button type="button" onClick={clearPhoto} className="rounded-full p-1 transition-colors hover:bg-muted" aria-label={t("collection.removePhoto")}>
               <X className="h-3 w-3" />
             </button>
           </div>
         )}
-
       </div>
 
       {colors.length > 0 && (
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-3">
+        <Row label={t("filters.color", { defaultValue: "Kleur" })}>
           <button onClick={() => onChange({ colors: [] })} className={chip(state.colors.length === 0)}>
             {t("collection.allColors")}
           </button>
           {colors.map((color) => (
-            <button
-              key={color}
-              onClick={() => toggleColor(color)}
-              className={`flex items-center gap-1.5 ${chip(state.colors.includes(color))}`}
-            >
+            <button key={color} onClick={() => toggleColor(color)} className={`flex items-center gap-1.5 ${chip(state.colors.includes(color))}`}>
               <span
-                className="w-3 h-3 rounded-full border border-border/50 shrink-0"
+                className="h-3 w-3 shrink-0 rounded-full border border-border/50"
                 style={
                   COLOR_MAP[color].startsWith("linear")
                     ? { backgroundImage: COLOR_MAP[color] }
@@ -154,48 +151,39 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
               className="h-4 w-4 cursor-pointer appearance-none rounded-full border-0 bg-transparent p-0"
             />
           </label>
-        </div>
+        </Row>
       )}
 
-
       {leagues.length > 0 && (
-        <div className="flex flex-wrap justify-center gap-2 mb-3">
+        <Row label={t("filters.league", { defaultValue: "Competitie" })}>
           <button onClick={() => onChange({ league: null })} className={chip(!state.league)}>
             {t("leagues.all")}
           </button>
           {leagues.map((l) => (
-            <button
-              key={l}
-              onClick={() => onChange({ league: state.league === l ? null : l })}
-              className={chip(state.league === l)}
-            >
+            <button key={l} onClick={() => onChange({ league: state.league === l ? null : l })} className={chip(state.league === l)}>
               {l}
             </button>
           ))}
-        </div>
+        </Row>
       )}
 
       {countries.length > 0 && (
-        <div className="flex flex-wrap justify-center gap-2 mb-3">
+        <Row label={t("filters.country", { defaultValue: "Land" })}>
           <button onClick={() => onChange({ country: null })} className={chip(!state.country)}>
             {t("filters.allCountries", { defaultValue: "Alle landen" })}
           </button>
           {countries.map((c) => (
-            <button
-              key={c}
-              onClick={() => onChange({ country: state.country === c ? null : c })}
-              className={chip(state.country === c)}
-            >
+            <button key={c} onClick={() => onChange({ country: state.country === c ? null : c })} className={chip(state.country === c)}>
               {c}
             </button>
           ))}
-        </div>
+        </Row>
       )}
 
-      <div className="flex flex-wrap justify-center gap-1 mb-4">
+      <Row label={t("filters.letter", { defaultValue: "Letter" })}>
         <button
           onClick={() => onChange({ letter: null })}
-          className={`w-7 h-7 rounded text-[10px] font-semibold transition-all ${
+          className={`h-7 w-7 rounded text-[10px] font-semibold transition-all ${
             !state.letter ? "bg-primary text-primary-foreground" : "bg-transparent text-muted-foreground hover:text-foreground"
           }`}
         >
@@ -205,25 +193,26 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
           <button
             key={letter}
             onClick={() => onChange({ letter: state.letter === letter ? null : letter })}
-            className={`w-7 h-7 rounded text-[10px] font-semibold transition-all ${
-              state.letter === letter
-                ? "bg-primary text-primary-foreground"
-                : "bg-transparent text-muted-foreground hover:text-foreground"
+            className={`h-7 w-7 rounded text-[10px] font-semibold transition-all ${
+              state.letter === letter ? "bg-primary text-primary-foreground" : "bg-transparent text-muted-foreground hover:text-foreground"
             }`}
           >
             {letter}
           </button>
         ))}
-      </div>
+      </Row>
 
-      <SortDecadeBar
-        sort={state.sort}
-        onSortChange={(sort) => onChange({ sort })}
-        decade={state.decade}
-        onDecadeChange={(decade) => onChange({ decade })}
-      />
+      <div className="w-full">
+        <SortDecadeBar
+          sort={state.sort}
+          onSortChange={(sort) => onChange({ sort })}
+          decade={state.decade}
+          onDecadeChange={(decade) => onChange({ decade })}
+        />
+      </div>
     </div>
   );
 };
+
 
 export default ProductFilters;

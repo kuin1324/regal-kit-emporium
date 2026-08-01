@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface PaginationProps {
   page: number;
@@ -7,7 +8,10 @@ interface PaginationProps {
 }
 
 const Pagination = ({ page, totalPages, onChange }: PaginationProps) => {
+  const [jump, setJump] = useState(String(page));
+  useEffect(() => setJump(String(page)), [page]);
   if (totalPages <= 1) return null;
+
 
   const pages: (number | "…")[] = [];
   for (let i = 1; i <= totalPages; i++) {
@@ -58,7 +62,32 @@ const Pagination = ({ page, totalPages, onChange }: PaginationProps) => {
       >
         <ChevronRight className="h-4 w-4" />
       </button>
+
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          const n = Number(jump);
+          if (Number.isFinite(n)) go(Math.min(totalPages, Math.max(1, Math.round(n))));
+        }}
+        className="ml-2 flex items-center gap-2"
+      >
+        <span className="text-xs text-muted-foreground">Ga naar</span>
+        <input
+          type="number"
+          min={1}
+          max={totalPages}
+          value={jump}
+          onChange={(e) => setJump(e.target.value)}
+          aria-label="Paginanummer"
+          className="h-9 w-16 rounded border border-border bg-card px-2 text-center text-sm outline-none focus:border-primary/50"
+        />
+        <span className="text-xs text-muted-foreground">/ {totalPages}</span>
+        <button type="submit" className="h-9 rounded border border-border px-3 text-xs font-medium transition hover:border-primary/50">
+          Ga
+        </button>
+      </form>
     </div>
+
   );
 };
 

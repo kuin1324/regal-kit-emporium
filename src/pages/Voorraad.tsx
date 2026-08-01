@@ -4,6 +4,7 @@ import { Heart, Truck, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PhotoNotice from "@/components/PhotoNotice";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 import { useCart } from "@/context/CartContext";
 import { useProductName } from "@/lib/productName";
@@ -84,6 +85,7 @@ const Voorraad = () => {
       <Navbar />
       <section className="pt-24 sm:pt-28 pb-24">
         <div className="container mx-auto px-4 sm:px-6">
+          <PhotoNotice />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

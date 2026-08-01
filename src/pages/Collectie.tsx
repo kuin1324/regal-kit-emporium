@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PhotoNotice from "@/components/PhotoNotice";
 import { motion } from "framer-motion";
 import { useState, useMemo, useEffect } from "react";
 import { Heart } from "lucide-react";
@@ -49,6 +50,7 @@ const Collectie = () => {
       <Navbar />
       <section className="pt-28 pb-24">
         <div className="container mx-auto px-6">
+          <PhotoNotice />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center mb-12">
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-3">{t("collection.eyebrow")}</p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight">{t("collection.title")}</h1>

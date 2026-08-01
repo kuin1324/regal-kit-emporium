@@ -83,6 +83,8 @@ const translateName = (name: string, lang: string): string => {
   const rules = TERMS[base] || [];
   let out = name;
   for (const [re, val] of rules) out = out.replace(re, val);
+  // Verwijder de volgnummers achter dubbele shirtnamen (" 2", " 3", ...)
+  out = out.replace(/\s+[2-9]\s*$/, "");
   return out.replace(/\s+/g, " ").trim();
 };
 

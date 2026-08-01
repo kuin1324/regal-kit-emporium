@@ -56,7 +56,10 @@ Deno.serve(async (req) => {
     const apiKey = Deno.env.get("LOVABLE_API_KEY");
     if (!apiKey) throw new Error("LOVABLE_API_KEY missing");
 
-    const { messages } = (await req.json()) as { messages: { role: string; content: string }[] };
+    const { messages, language } = (await req.json()) as {
+      messages: { role: string; content: string }[];
+      language?: string;
+    };
     const history = (messages ?? []).slice(-20);
 
     const res = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
@@ -65,7 +68,13 @@ Deno.serve(async (req) => {
       body: JSON.stringify({
         model: "google/gemini-3.6-flash",
         stream: true,
-        messages: [{ role: "system", content: SYSTEM_PROMPT }, ...history],
+        messages: [
+          {
+            role: "system",
+            content: `${SYSTEM_PROMPT}\n\nAntwoord ALTIJD in de taal met ISO-code "${(language || "nl").split("-")[0]}", ook als de klant een andere taal gebruikt. Vertaal shirtnamen niet letterlijk als dat onnatuurlijk is.`,
+          },
+          ...history,
+        ],
       }),
     });
 

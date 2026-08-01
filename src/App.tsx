@@ -13,8 +13,8 @@ import Index from "./pages/Index.tsx";
 import Auth from "./pages/Auth.tsx";
 import OverOns from "./pages/OverOns.tsx";
 import Collectie from "./pages/Collectie.tsx";
-import Retro from "./pages/Retro.tsx";
-import LongSleeves from "./pages/LongSleeves.tsx";
+import SpecialEdition from "./pages/SpecialEdition.tsx";
+
 import SpecialEdition from "./pages/SpecialEdition.tsx";
 import Favorieten from "./pages/Favorieten.tsx";
 import NotFound from "./pages/NotFound.tsx";

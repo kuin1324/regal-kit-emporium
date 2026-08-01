@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface PaginationProps {
   page: number;
@@ -7,7 +8,10 @@ interface PaginationProps {
 }
 
 const Pagination = ({ page, totalPages, onChange }: PaginationProps) => {
+  const [jump, setJump] = useState(String(page));
+  useEffect(() => setJump(String(page)), [page]);
   if (totalPages <= 1) return null;
+
 
   const pages: (number | "…")[] = [];
   for (let i = 1; i <= totalPages; i++) {

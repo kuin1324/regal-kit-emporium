@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag, Trash2, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
+import { useCurrency } from "@/context/CurrencyContext";
 import shirt7 from "@/assets/shirt-new-7.png";
 import italySpecialFront from "@/assets/shirt-italy-special-front.jpg";
 import italySpecialBack from "@/assets/shirt-italy-special-back.jpg";
@@ -88,6 +89,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
   const [variants, setVariants] = useState<Variant[]>([newVariant()]);
   const { favorites, toggleFavorite, addItem } = useCart();
   const { t } = useTranslation();
+  const { format } = useCurrency();
 
   const selected = productName ? allProducts.find(p => p.name === productName) : null;
   const displayName = selected ? t(`products.${selected.nameKey}`, { defaultValue: selected.name }) : "";
@@ -202,7 +204,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
             <div className="p-8 md:p-12 flex flex-col justify-center max-w-lg mx-auto w-full">
               <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{selected.team}</p>
               <h2 className="font-display text-3xl md:text-4xl font-bold tracking-wide mb-2">{displayName}</h2>
-              <p className="font-display text-3xl font-bold text-gradient-gold mb-8">€{totalPrice}</p>
+              <p className="font-display text-3xl font-bold text-gradient-gold mb-8">{format(totalPrice)}</p>
 
               <div className="space-y-6 mb-6">
                 {variants.map((v, idx) => (
@@ -237,7 +239,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                       <label className="flex items-center gap-2 cursor-pointer mb-3">
                         <input type="checkbox" checked={v.customize} onChange={(e) => updateVariant(v.id, { customize: e.target.checked })} className="accent-primary h-4 w-4" />
                         <span className="text-sm font-semibold">{t("product.customize")}</span>
-                        <span className="text-xs text-primary ml-auto">+€{CUSTOM_PRICE}</span>
+                        <span className="text-xs text-primary ml-auto">+{format(CUSTOM_PRICE)}</span>
                       </label>
                       {v.customize && (
                         <div className="grid grid-cols-2 gap-2">

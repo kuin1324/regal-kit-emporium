@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Minus, Plus, Trash2, ShoppingBag } from "lucide-react";
+import { useCurrency } from "@/context/CurrencyContext";
 import { useCart } from "@/context/CartContext";
 import { useTranslation } from "react-i18next";
 import ProductDetailModal from "./ProductDetailModal";
@@ -115,7 +116,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                         <div className="flex-1 min-w-0">
                           <h3 className="text-sm font-semibold truncate cursor-pointer hover:text-primary transition-colors" onClick={() => setSelectedProduct(item.name)}>{productName(item.name)}</h3>
                           <p className="text-xs text-muted-foreground">{t("cart.size")}: {item.size}</p>
-                          <p className="text-sm font-bold text-gradient-gold mt-1">€{item.price * item.quantity}</p>
+                          <p className="text-sm font-bold text-gradient-gold mt-1">{format(item.price * item.quantity)}</p>
                           <div className="flex items-center gap-2 mt-2">
                             <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="p-1 hover:bg-muted rounded"><Minus className="h-3 w-3" /></button>
                             <span className="text-xs font-medium w-6 text-center">{item.quantity}</span>
@@ -134,12 +135,12 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                   <div className="space-y-1.5 text-sm">
                     <div className="flex justify-between text-muted-foreground">
                       <span>Subtotaal</span>
-                      <span>€{total}</span>
+                      <span>{format(total)}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Verzending ({count} shirt{count !== 1 ? "s" : ""})</span>
                       <span className={shipping === 0 ? "font-bold text-gradient-gold" : "font-semibold"}>
-                        {shipping === 0 ? "GRATIS" : `€${shipping}`}
+                        {shipping === 0 ? "GRATIS" : format(shipping)}
                       </span>
                     </div>
                     {shirtsToFree > 0 && (
@@ -150,7 +151,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                   </div>
                   <div className="flex justify-between items-center border-t border-border/50 pt-3">
                     <span className="text-sm font-semibold">{t("cart.total")}</span>
-                    <span className="font-display text-xl font-bold text-gradient-gold">€{grandTotal}</span>
+                    <span className="font-display text-xl font-bold text-gradient-gold">{format(grandTotal)}</span>
                   </div>
 
                   <button onClick={handleEmailOrder} className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors">

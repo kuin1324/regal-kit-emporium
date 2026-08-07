@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useCurrency } from "@/context/CurrencyContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PhotoNotice from "@/components/PhotoNotice";
@@ -49,7 +50,7 @@ const Favorieten = () => {
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-5 pt-12">
                         <h3 className="font-display text-base font-semibold">{productName(product.name)}</h3>
                         <p className="text-xs text-muted-foreground mb-2">{product.team}</p>
-                        <p className="font-display text-lg font-bold text-gradient-gold">{product.price}</p>
+                        <p className="font-display text-lg font-bold text-gradient-gold">{formatPrice(product.price)}</p>
                       </div>
                     </div>
                   </div>

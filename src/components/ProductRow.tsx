@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { useCurrency } from "@/context/CurrencyContext";
 import { Plus, ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -87,7 +88,7 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
               <div className="pt-3 px-1">
                 <p className="text-[10px] font-medium tracking-[0.2em] uppercase text-muted-foreground mb-1">{p.team}</p>
                 <h3 className="font-display text-sm font-semibold tracking-wide line-clamp-2">{productName(p.name)}</h3>
-                <p className="font-display text-base font-bold text-gradient-gold mt-1">{p.price}</p>
+                <p className="font-display text-base font-bold text-gradient-gold mt-1">{formatPrice(p.price)}</p>
               </div>
             </div>
           ))}

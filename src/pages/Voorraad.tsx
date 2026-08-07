@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useCurrency } from "@/context/CurrencyContext";
 import { motion } from "framer-motion";
 import { Heart, Truck, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -67,7 +68,7 @@ const Voorraad = () => {
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-4 sm:p-5 pt-10">
               <h3 className="font-display text-sm sm:text-base font-semibold tracking-wide">{productName(product.name)}</h3>
               <p className="text-xs text-muted-foreground mb-2">{product.team}</p>
-              <p className="font-display text-base sm:text-lg font-bold text-gradient-gold">{product.price}</p>
+              <p className="font-display text-base sm:text-lg font-bold text-gradient-gold">{formatPrice(product.price)}</p>
               {isIncoming && (
                 <p className="text-[11px] text-primary mt-1 flex items-center gap-1">
                   <Clock className="h-3 w-3" /> Binnenkort — pre-order mogelijk

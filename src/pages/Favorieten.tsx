@@ -13,6 +13,7 @@ import { useProductName } from "@/lib/productName";
 
 const Favorieten = () => {
   const { favorites, toggleFavorite } = useCart();
+  const { formatPrice } = useCurrency();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const favoriteProducts = allProducts.filter(p => favorites.has(p.name));
   const { t } = useTranslation();

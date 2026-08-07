@@ -11,6 +11,7 @@ const products = allProducts.slice(0, 6);
 const FeaturedCollection = () => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const { favorites, toggleFavorite } = useCart();
+  const { formatPrice } = useCurrency();
 
   return (
     <section id="collectie" className="py-24 bg-background">

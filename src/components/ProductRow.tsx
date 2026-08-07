@@ -23,6 +23,7 @@ interface ProductRowProps {
 const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowProps) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const { addItem } = useCart();
+  const { formatPrice } = useCurrency();
   const [added, setAdded] = useState<string | null>(null);
   const { t } = useTranslation();
   const productName = useProductName();

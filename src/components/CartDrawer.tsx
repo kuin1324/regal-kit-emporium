@@ -18,6 +18,7 @@ interface CartDrawerProps {
 
 const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const { items, removeItem, updateQuantity, total, count, clearCart } = useCart();
+  const { format } = useCurrency();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const { t } = useTranslation();
   const productName = useProductName();

@@ -14,6 +14,7 @@ const SpecialEdition = () => {
   const { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const { favorites, toggleFavorite } = useCart();
+  const { formatPrice } = useCurrency();
   const productName = useProductName();
 
   const specialProducts = allProducts.filter(p => p.leagues.includes("Special"));

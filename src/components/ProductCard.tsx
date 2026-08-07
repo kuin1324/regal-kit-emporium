@@ -1,3 +1,4 @@
+import { useCurrency } from "@/context/CurrencyContext";
 import { motion } from "framer-motion";
 
 interface ProductCardProps {
@@ -10,6 +11,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ image, name, team, year, price, index }: ProductCardProps) => {
+  const { formatPrice } = useCurrency();
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}

@@ -19,6 +19,7 @@ const Voorraad = () => {
   const { t } = useTranslation();
   const [selected, setSelected] = useState<string | null>(null);
   const { favorites, toggleFavorite } = useCart();
+  const { formatPrice } = useCurrency();
   const productName = useProductName();
 
   const [readyFilters, setReadyFilters] = useState<FilterState>(initialFilterState);

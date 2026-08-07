@@ -120,6 +120,9 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
         name: selected.name + suffix,
         image: selected.image,
         size: v.size!,
+        sku: (selected as { sku?: string }).sku,
+        customName: v.customize ? v.customName : undefined,
+        customNumber: v.customize ? v.customNumber : undefined,
         quantity: v.quantity,
         price: basePrice + (v.customize ? CUSTOM_PRICE : 0),
       });

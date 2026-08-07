@@ -5,9 +5,10 @@ interface PaginationProps {
   page: number;
   totalPages: number;
   onChange: (page: number) => void;
+  className?: string;
 }
 
-const Pagination = ({ page, totalPages, onChange }: PaginationProps) => {
+const Pagination = ({ page, totalPages, onChange, className }: PaginationProps) => {
   const [jump, setJump] = useState(String(page));
   useEffect(() => setJump(String(page)), [page]);
   if (totalPages <= 1) return null;

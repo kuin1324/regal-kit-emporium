@@ -35,7 +35,6 @@ import spanjeCreamFront from "@/assets/shirt-spanje-cream-front.jpg";
 import spanjeCreamBack from "@/assets/shirt-spanje-cream-back.jpg";
 import argentinieFront from "@/assets/shirt-argentinie-front.jpg";
 import argentinieBack from "@/assets/shirt-argentinie-back.jpg";
-import { retroShirts } from "@/data/retro_shirts";
 import { collectieShirts } from "@/data/collectie_shirts";
 
 export const allProducts = [
@@ -55,7 +54,6 @@ export const allProducts = [
   { image: spanjeCreamFront, gallery: [spanjeCreamFront, spanjeCreamBack], name: "Spanje Uit Shirt WK", nameKey: "spanjeOriginals", team: "Spanje", leagues: ["Nationaal"], price: "€30", description: "Spanje uit shirt voor het WK met klassieke Adidas details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "goud"] },
   { image: argentinieFront, gallery: [argentinieFront, argentinieBack], name: "Argentinië Uit Shirt WK 2026", nameKey: "argentinieSpecial", team: "Argentinië", leagues: ["Nationaal"], price: "€30", description: "Argentinië uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "blauw"] },
   { image: franceFront, gallery: [franceFront, franceBack], name: "Frankrijk Uit Shirt WK 2026", nameKey: "francePrematch", team: "Frankrijk", leagues: ["Nationaal"], price: "€30", description: "Frankrijk uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
-  ...retroShirts,
   ...collectieShirts,
 ];
 
@@ -72,6 +70,8 @@ interface Variant {
   customName: string;
   customNumber: string;
 }
+
+export const CUSTOM_PRICE = 5;
 
 const newVariant = (): Variant => ({
   id: crypto.randomUUID(),
@@ -105,7 +105,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
   };
 
   const basePrice = selected ? parseInt(selected.price.replace(/[^\d]/g, ""), 10) || 30 : 30;
-  const totalPrice = variants.reduce((sum, v) => sum + (basePrice + (v.customize ? 7 : 0)) * v.quantity, 0);
+  const totalPrice = variants.reduce((sum, v) => sum + (basePrice + (v.customize ? CUSTOM_PRICE : 0)) * v.quantity, 0);
   const allValid = variants.every(v => !!v.size);
 
   const handleAddToCart = () => {
@@ -119,7 +119,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
         image: selected.image,
         size: v.size!,
         quantity: v.quantity,
-        price: basePrice + (v.customize ? 7 : 0),
+        price: basePrice + (v.customize ? CUSTOM_PRICE : 0),
       });
     });
     onClose();
@@ -237,7 +237,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                       <label className="flex items-center gap-2 cursor-pointer mb-3">
                         <input type="checkbox" checked={v.customize} onChange={(e) => updateVariant(v.id, { customize: e.target.checked })} className="accent-primary h-4 w-4" />
                         <span className="text-sm font-semibold">{t("product.customize")}</span>
-                        <span className="text-xs text-primary ml-auto">+€7</span>
+                        <span className="text-xs text-primary ml-auto">+€{CUSTOM_PRICE}</span>
                       </label>
                       {v.customize && (
                         <div className="grid grid-cols-2 gap-2">

@@ -1,16 +1,8 @@
 import { extractYear, getDecade, sortProducts, SortKey } from "@/lib/productMeta";
 import { shirtSignatures } from "@/data/shirtSignatures";
-import {
-  buildPhotoSignature,
-  buildPhotoSignatures,
-  bestSimilarity,
-  derivedColors,
-  nearestColorName,
-} from "@/lib/imageSignature";
+import { derivedColors, nearestColorName } from "@/lib/imageSignature";
 
-export { buildPhotoSignature, buildPhotoSignatures, nearestColorName };
-
-
+export { nearestColorName };
 
 export interface FilterProduct {
   name: string;
@@ -62,10 +54,12 @@ const countBy = <T>(values: T[]): Map<T, number> => {
   return m;
 };
 
+const HIDDEN_LEAGUES = new Set(["Retro", "Long Sleeve", "Lifestyle", "Special", "Collectie"]);
+
 export const collectLeagues = (items: FilterProduct[]): string[] => {
   const counts = countBy(items.flatMap((p) => p.leagues));
   return Array.from(counts.entries())
-    .filter(([l, n]) => n > 1 && l !== "Retro" && l !== "Long Sleeve" && l !== "Special")
+    .filter(([l, n]) => n > 1 && !HIDDEN_LEAGUES.has(l))
     .map(([l]) => l)
     .sort();
 };
@@ -81,8 +75,6 @@ export const collectCountries = (items: FilterProduct[]): string[] => {
 export const collectColors = (items: FilterProduct[]): string[] =>
   FILTER_COLORS.filter((c) => items.filter((p) => productColors(p).has(c)).length > 1);
 
-
-
 export interface FilterState {
   q: string;
   /** Meerdere kleuren tegelijk; een shirt matcht als het één van de kleuren bevat. */
@@ -92,8 +84,6 @@ export interface FilterState {
   letter: string | null;
   decade: string | null;
   sort: SortKey;
-  /** Descriptoren van meerdere uitsnedes van de geüploade foto. */
-  photoSigs: number[][] | null;
 }
 
 export const initialFilterState: FilterState = {
@@ -104,7 +94,6 @@ export const initialFilterState: FilterState = {
   letter: null,
   decade: null,
   sort: "newest",
-  photoSigs: null,
 };
 
 /** Kleuren van een shirt: handmatige labels + kleuren afgeleid uit de foto. */
@@ -119,8 +108,7 @@ export const productColors = (p: FilterProduct): Set<string> => {
 };
 
 export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState): T[] => {
-  // Zoeken: alle woorden moeten in de naam of het team voorkomen. Kleuren en
-  // competities tellen niet mee, anders komen er totaal andere shirts terug.
+  // Zoeken: alle woorden moeten in de naam of het team voorkomen.
   const tokens = s.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const base = items.filter((p) => {
     const colors = productColors(p);
@@ -134,23 +122,6 @@ export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState
     const matchesDecade = !s.decade || getDecade(extractYear(p.name)) === s.decade;
     return matchesSearch && matchesColor && matchesLeague && matchesCountry && matchesLetter && matchesDecade;
   });
-
-
-  if (s.photoSigs && s.photoSigs.length) {
-    // Zoeken met een foto: beste score over meerdere uitsnedes, meest gelijkende bovenaan.
-    const scored = base
-      .map((p) => ({ p, score: bestSimilarity(shirtSignatures[p.nameKey ?? ""], s.photoSigs!) }))
-      .filter((x) => x.score > 0)
-      .sort((a, b) => b.score - a.score);
-    if (!scored.length) return [];
-    const best = scored[0].score;
-    // Relatieve drempel: houdt alleen wat echt in de buurt komt van de beste match.
-    return scored
-      .filter((x) => x.score >= Math.max(0.3, best * 0.8))
-      .slice(0, 24)
-      .map((x) => x.p);
-  }
-
 
   return sortProducts(base, s.sort);
 };

@@ -2,107 +2,27 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PhotoNotice from "@/components/PhotoNotice";
 import { motion } from "framer-motion";
-import { useState, useMemo, useEffect } from "react";
-import { Heart } from "lucide-react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useSearchParams } from "react-router-dom";
-import { useCart } from "@/context/CartContext";
-import { useProductName } from "@/lib/productName";
+import CollectionView from "@/components/CollectionView";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
-import Pagination from "@/components/Pagination";
-import ProductFilters from "@/components/ProductFilters";
-import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
-
-const PAGE_SIZE = 60;
 
 const Collectie = () => {
   const { t } = useTranslation();
-  const [searchParams] = useSearchParams();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
-  const [filters, setFilters] = useState<FilterState>({
-    ...initialFilterState,
-    q: searchParams.get("q") || "",
-    league: searchParams.get("league") || null,
-  });
-
-  useEffect(() => {
-    setFilters((f) => ({
-      ...f,
-      q: searchParams.get("q") || "",
-      league: searchParams.get("league") || null,
-    }));
-  }, [searchParams]);
-
-  const [page, setPage] = useState(1);
-  const { favorites, toggleFavorite } = useCart();
-  const productName = useProductName();
-
-  const filteredProducts = useMemo(() => applyFilters(allProducts, filters), [filters]);
-
-  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PAGE_SIZE));
-  const currentPage = Math.min(page, totalPages);
-  const pageProducts = filteredProducts.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
-
-  useEffect(() => { setPage(1); }, [filters]);
 
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <section className="pt-28 pb-24">
+      <section className="pb-24 pt-28">
         <div className="container mx-auto px-6">
           <PhotoNotice />
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center mb-12">
-            <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-3">{t("collection.eyebrow")}</p>
-            <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight">{t("collection.title")}</h1>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="mb-10 text-center">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">{t("collection.eyebrow")}</p>
+            <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">{t("collection.title")}</h1>
           </motion.div>
 
-          <ProductFilters items={allProducts} state={filters} onChange={(patch) => setFilters((f) => ({ ...f, ...patch }))} />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {pageProducts.map((product, i) => (
-              <motion.div
-                key={product.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: Math.min(i, 8) * 0.03 }}
-                viewport={{ once: true }}
-                className="group cursor-pointer relative"
-              >
-                <button
-                  onClick={(e) => { e.stopPropagation(); toggleFavorite(product.name); }}
-                  className="absolute top-3 right-3 z-10 p-2 rounded-full bg-background/70 backdrop-blur-sm transition-colors hover:bg-background/90"
-                >
-                  <Heart className={`h-4 w-4 transition-colors ${favorites.has(product.name) ? "fill-red-500 text-red-500" : "text-foreground"}`} />
-                </button>
-                <div
-                  onClick={() => setSelectedProduct(product.name)}
-                  className="relative overflow-hidden rounded bg-card border border-border/50 transition-all duration-500 group-hover:border-primary/30 group-hover:shadow-[var(--shadow-gold)]"
-                >
-                  <div className="aspect-[4/5] overflow-hidden">
-                    <img src={product.image} alt={productName(product.name)} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-5 pt-12">
-                    <h3 className="font-display text-base font-semibold tracking-wide">{productName(product.name)}</h3>
-                    <p className="text-xs text-muted-foreground mb-2">{product.team}</p>
-                    <p className="font-display text-lg font-bold text-gradient-gold">{product.price}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          {filteredProducts.length > 0 && (
-            <>
-              <Pagination page={currentPage} totalPages={totalPages} onChange={setPage} />
-              <p className="text-center text-xs text-muted-foreground mt-4">
-                {(currentPage - 1) * PAGE_SIZE + 1}–{Math.min(currentPage * PAGE_SIZE, filteredProducts.length)} / {filteredProducts.length}
-              </p>
-            </>
-          )}
-
-          {filteredProducts.length === 0 && (
-            <p className="text-center text-muted-foreground mt-12">{t("collection.noResults")}</p>
-          )}
+          <CollectionView items={allProducts} onSelect={setSelectedProduct} />
         </div>
       </section>
       <Footer />

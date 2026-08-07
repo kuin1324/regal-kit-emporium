@@ -8,6 +8,7 @@ import { useAuth } from "@/context/AuthContext";
 import CartDrawer from "./CartDrawer";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
+import CurrencySwitcher from "./CurrencySwitcher";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -27,6 +28,8 @@ const Navbar = () => {
 
   const navItems = [
     { label: t("nav.collection"), path: "/collectie" },
+    { label: t("nav.retro", { defaultValue: "Retro" }), path: "/retro" },
+    { label: t("nav.longSleeve", { defaultValue: "Long Sleeve" }), path: "/long-sleeve" },
     { label: t("nav.specialEdition"), path: "/special-edition" },
     { label: t("nav.stock", { defaultValue: "Voorraad" }), path: "/voorraad" },
     { label: t("nav.track", { defaultValue: "Track & Trace" }), path: "/track-trace" },
@@ -36,6 +39,7 @@ const Navbar = () => {
   const IconActions = ({ inMenu = false }: { inMenu?: boolean }) => (
     <div className={inMenu ? "flex flex-wrap items-center gap-4" : "flex items-center gap-4"}>
       <LanguageSwitcher />
+      <CurrencySwitcher />
       <ThemeToggle />
       <Link
         to="/favorieten"

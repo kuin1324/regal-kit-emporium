@@ -9,7 +9,8 @@
     "cart": "Winkelmandje",
     "login": "Inloggen",
     "logout": "Uitloggen",
-    "account": "Account"
+    "account": "Account",
+    "longSleeve": "Long Sleeve"
   },
   "search": {
     "placeholder": "Zoek een shirt, team of league...",
@@ -178,6 +179,13 @@
       "priceAsc": "Prijs ↑",
       "priceDesc": "Prijs ↓"
     },
-    "allCountries": "Alle landen"
+    "allCountries": "Alle landen",
+    "title": "Filters",
+    "color": "Kleur",
+    "colorPicker": "Kleur kiezen",
+    "country": "Land",
+    "decade": "Jaren",
+    "league": "Competitie",
+    "letter": "Letter"
   }
 }

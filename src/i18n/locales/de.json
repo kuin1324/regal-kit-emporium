@@ -8,7 +8,8 @@
     "cart": "Warenkorb",
     "login": "Anmelden",
     "logout": "Abmelden",
-    "account": "Konto"
+    "account": "Konto",
+    "longSleeve": "Langarm"
   },
   "search": {
     "placeholder": "Trikot, Team oder Liga suchen...",
@@ -177,6 +178,13 @@
       "priceAsc": "Preis ↑",
       "priceDesc": "Preis ↓"
     },
-    "allCountries": "Alle Länder"
+    "allCountries": "Alle Länder",
+    "title": "Filter",
+    "color": "Farbe",
+    "colorPicker": "Farbe wählen",
+    "country": "Land",
+    "decade": "Jahrzehnt",
+    "league": "Liga",
+    "letter": "Buchstabe"
   }
 }

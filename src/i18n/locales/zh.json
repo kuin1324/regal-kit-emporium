@@ -8,7 +8,8 @@
     "cart": "购物车",
     "login": "登录",
     "logout": "退出",
-    "account": "账户"
+    "account": "账户",
+    "longSleeve": "长袖"
   },
   "search": {
     "placeholder": "搜索球衣、球队或联赛...",
@@ -177,6 +178,13 @@
       "priceAsc": "价格 ↑",
       "priceDesc": "价格 ↓"
     },
-    "allCountries": "所有国家"
+    "allCountries": "所有国家",
+    "title": "筛选",
+    "color": "颜色",
+    "colorPicker": "选择颜色",
+    "country": "国家",
+    "decade": "年代",
+    "league": "联赛",
+    "letter": "字母"
   }
 }

@@ -8,7 +8,8 @@
     "cart": "Carrinho",
     "login": "Entrar",
     "logout": "Sair",
-    "account": "Conta"
+    "account": "Conta",
+    "longSleeve": "Manga Comprida"
   },
   "search": {
     "placeholder": "Procura uma camisola, equipa ou liga...",
@@ -177,6 +178,13 @@
       "priceAsc": "Preço ↑",
       "priceDesc": "Preço ↓"
     },
-    "allCountries": "Todos os países"
+    "allCountries": "Todos os países",
+    "title": "Filtros",
+    "color": "Cor",
+    "colorPicker": "Escolher cor",
+    "country": "País",
+    "decade": "Década",
+    "league": "Liga",
+    "letter": "Letra"
   }
 }

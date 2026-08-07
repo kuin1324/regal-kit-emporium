@@ -9,7 +9,8 @@
     "cart": "Cart",
     "login": "Sign in",
     "logout": "Sign out",
-    "account": "Account"
+    "account": "Account",
+    "longSleeve": "Long Sleeve"
   },
   "search": {
     "placeholder": "Search a shirt, team or league...",
@@ -178,6 +179,13 @@
       "priceAsc": "Price ↑",
       "priceDesc": "Price ↓"
     },
-    "allCountries": "All countries"
+    "allCountries": "All countries",
+    "title": "Filters",
+    "color": "Colour",
+    "colorPicker": "Pick a colour",
+    "country": "Country",
+    "decade": "Decade",
+    "league": "League",
+    "letter": "Letter"
   }
 }

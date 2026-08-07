@@ -29,7 +29,10 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const shirtsToFree = count > 0 && count < FREE_SHIPPING_FROM ? FREE_SHIPPING_FROM - count : 0;
 
   const buildOrderText = (orderNumber: string, email: string) => {
-    const lines = items.map(i => `🏷️ ${productName(i.name)} (${t("cart.size")}: ${i.size}) x${i.quantity} — €${i.price * i.quantity}`).join("\n");
+    const lines = items.map(i => {
+      const extra = [i.customName, i.customNumber].filter(Boolean).join(" ");
+      return `🏷️ ${productName(i.name)}${i.sku ? ` [${i.sku}]` : ""} (${t("cart.size")}: ${i.size}${extra ? `, ${extra}` : ""}) x${i.quantity} — €${i.price * i.quantity}`;
+    }).join("\n");
     const shippingLine = shipping === 0 ? "🚚 Verzending: GRATIS" : `🚚 Verzending: €${shipping}`;
     return `${t("cart.orderGreeting")}\n\n📦 Bestelnummer: ${orderNumber}\n✉️ E-mail: ${email}\n\n${lines}\n\n${shippingLine}\n💰 ${t("cart.orderTotal")}: €${grandTotal}`;
   };
@@ -47,7 +50,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
         order_number: orderNumber,
         user_id: user?.id ?? null,
         email,
-        items: items.map(i => ({ name: i.name, size: i.size, quantity: i.quantity, price: i.price })),
+        items: items.map(i => ({ name: i.name, sku: i.sku ?? null, size: i.size, customName: i.customName ?? null, customNumber: i.customNumber ?? null, quantity: i.quantity, price: i.price })),
         subtotal: total,
         shipping,
         total: grandTotal,

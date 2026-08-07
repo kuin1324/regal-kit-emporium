@@ -21,6 +21,7 @@ const ChatWidget = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const draggedRef = useRef(false);
+  const [offset, setOffset] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
@@ -113,7 +114,14 @@ const ChatWidget = () => {
         dragMomentum={false}
         dragElastic={0.08}
         onDragStart={() => (draggedRef.current = true)}
-        onDragEnd={() => setTimeout(() => (draggedRef.current = false), 0)}
+        onDragEnd={(_, info) => {
+          // Snap to grid van 20px zodat de knop netjes uitgelijnd blijft.
+          const snap = (v: number) => Math.round(v / 20) * 20;
+          setOffset((o) => ({ x: snap(o.x + info.offset.x), y: snap(o.y + info.offset.y) }));
+          setTimeout(() => (draggedRef.current = false), 0);
+        }}
+        animate={{ x: offset.x, y: offset.y }}
+        transition={{ type: "spring", stiffness: 400, damping: 30 }}
         onClick={() => {
           if (draggedRef.current) return;
           setOpen((o) => !o);

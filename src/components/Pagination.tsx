@@ -5,9 +5,10 @@ interface PaginationProps {
   page: number;
   totalPages: number;
   onChange: (page: number) => void;
+  className?: string;
 }
 
-const Pagination = ({ page, totalPages, onChange }: PaginationProps) => {
+const Pagination = ({ page, totalPages, onChange, className }: PaginationProps) => {
   const [jump, setJump] = useState(String(page));
   useEffect(() => setJump(String(page)), [page]);
   if (totalPages <= 1) return null;
@@ -28,7 +29,7 @@ const Pagination = ({ page, totalPages, onChange }: PaginationProps) => {
   };
 
   return (
-    <div className="flex items-center justify-center gap-2 mt-12 flex-wrap">
+    <div className={`flex items-center justify-center gap-2 mt-12 flex-wrap ${className ?? ""}`}>
       <button
         onClick={() => go(Math.max(1, page - 1))}
         disabled={page === 1}

@@ -8,6 +8,10 @@ export interface CartItem {
   size: string;
   quantity: number;
   price: number;
+  /** Artikelcode zodat identieke namen uit elkaar te houden zijn. */
+  sku?: string;
+  customName?: string;
+  customNumber?: string;
 }
 
 interface CartContextType {

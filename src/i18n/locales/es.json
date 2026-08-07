@@ -8,7 +8,8 @@
     "cart": "Carrito",
     "login": "Iniciar sesión",
     "logout": "Cerrar sesión",
-    "account": "Cuenta"
+    "account": "Cuenta",
+    "longSleeve": "Manga Larga"
   },
   "search": {
     "placeholder": "Busca una camiseta, equipo o liga...",
@@ -177,6 +178,13 @@
       "priceAsc": "Precio ↑",
       "priceDesc": "Precio ↓"
     },
-    "allCountries": "Todos los países"
+    "allCountries": "Todos los países",
+    "title": "Filtros",
+    "color": "Color",
+    "colorPicker": "Elegir color",
+    "country": "País",
+    "decade": "Década",
+    "league": "Liga",
+    "letter": "Letra"
   }
 }

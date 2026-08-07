@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import PhotoNotice from "@/components/PhotoNotice";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useCurrency } from "@/context/CurrencyContext";
 import { Heart } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
@@ -13,6 +14,7 @@ const SpecialEdition = () => {
   const { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const { favorites, toggleFavorite } = useCart();
+  const { formatPrice } = useCurrency();
   const productName = useProductName();
 
   const specialProducts = allProducts.filter(p => p.leagues.includes("Special"));
@@ -55,7 +57,7 @@ const SpecialEdition = () => {
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-5 pt-12">
                     <h3 className="font-display text-base font-semibold tracking-wide">{productName(product.name)}</h3>
                     <p className="text-xs text-muted-foreground mb-2">{product.team}</p>
-                    <p className="font-display text-lg font-bold text-gradient-gold">{product.price}</p>
+                    <p className="font-display text-lg font-bold text-gradient-gold">{formatPrice(product.price)}</p>
                   </div>
                 </div>
               </motion.div>

@@ -8,7 +8,8 @@
     "cart": "Panier",
     "login": "Connexion",
     "logout": "Déconnexion",
-    "account": "Compte"
+    "account": "Compte",
+    "longSleeve": "Manches Longues"
   },
   "search": {
     "placeholder": "Rechercher un maillot, équipe ou ligue...",
@@ -177,6 +178,13 @@
       "priceAsc": "Prix ↑",
       "priceDesc": "Prix ↓"
     },
-    "allCountries": "Tous les pays"
+    "allCountries": "Tous les pays",
+    "title": "Filtres",
+    "color": "Couleur",
+    "colorPicker": "Choisir une couleur",
+    "country": "Pays",
+    "decade": "Décennie",
+    "league": "Championnat",
+    "letter": "Lettre"
   }
 }

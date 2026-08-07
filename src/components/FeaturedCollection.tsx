@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useCurrency } from "@/context/CurrencyContext";
 import { motion } from "framer-motion";
 import { ChevronDown, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -10,6 +11,7 @@ const products = allProducts.slice(0, 6);
 const FeaturedCollection = () => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const { favorites, toggleFavorite } = useCart();
+  const { formatPrice } = useCurrency();
 
   return (
     <section id="collectie" className="py-24 bg-background">
@@ -55,7 +57,7 @@ const FeaturedCollection = () => {
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-5 pt-12">
                   <h3 className="font-display text-base font-semibold tracking-wide">{product.name}</h3>
                   <p className="text-xs text-muted-foreground mb-2">{product.team}</p>
-                  <p className="font-display text-lg font-bold text-gradient-gold">{product.price}</p>
+                  <p className="font-display text-lg font-bold text-gradient-gold">{formatPrice(product.price)}</p>
                 </div>
               </div>
             </motion.div>

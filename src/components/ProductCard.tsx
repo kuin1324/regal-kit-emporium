@@ -1,3 +1,4 @@
+import { useCurrency } from "@/context/CurrencyContext";
 import { motion } from "framer-motion";
 
 interface ProductCardProps {
@@ -10,6 +11,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ image, name, team, year, price, index }: ProductCardProps) => {
+  const { formatPrice } = useCurrency();
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -33,7 +35,7 @@ const ProductCard = ({ image, name, team, year, price, index }: ProductCardProps
           {year && <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{year}</p>}
           <h3 className="font-display text-base font-semibold tracking-wide">{name}</h3>
           <p className="text-xs text-muted-foreground mb-2">{team}</p>
-          <p className="font-display text-lg font-bold text-gradient-gold">{price}</p>
+          <p className="font-display text-lg font-bold text-gradient-gold">{formatPrice(price)}</p>
         </div>
       </div>
     </motion.div>

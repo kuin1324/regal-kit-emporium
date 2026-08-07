@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { CartProvider } from "@/context/CartContext";
+import { CurrencyProvider } from "@/context/CurrencyContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { AuthProvider } from "@/context/AuthContext";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -14,6 +15,8 @@ import Auth from "./pages/Auth.tsx";
 import OverOns from "./pages/OverOns.tsx";
 import Collectie from "./pages/Collectie.tsx";
 import SpecialEdition from "./pages/SpecialEdition.tsx";
+import Retro from "./pages/Retro.tsx";
+import LongSleeves from "./pages/LongSleeves.tsx";
 
 import Favorieten from "./pages/Favorieten.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -27,6 +30,7 @@ const App = () => (
     <ThemeProvider>
     <AuthProvider>
     <TooltipProvider>
+      <CurrencyProvider>
       <CartProvider>
         <Toaster />
         <Sonner />
@@ -37,6 +41,8 @@ const App = () => (
             <Route path="/over-ons" element={<OverOns />} />
             <Route path="/collectie" element={<Collectie />} />
             <Route path="/special-edition" element={<SpecialEdition />} />
+            <Route path="/retro" element={<Retro />} />
+            <Route path="/long-sleeve" element={<LongSleeves />} />
             <Route path="/favorieten" element={<Favorieten />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/voorraad" element={<Voorraad />} />
@@ -48,6 +54,7 @@ const App = () => (
         <ChatWidget />
 
       </CartProvider>
+      </CurrencyProvider>
     </TooltipProvider>
     </AuthProvider>
     </ThemeProvider>

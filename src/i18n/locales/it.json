@@ -8,7 +8,8 @@
     "cart": "Carrello",
     "login": "Accedi",
     "logout": "Esci",
-    "account": "Account"
+    "account": "Account",
+    "longSleeve": "Manica Lunga"
   },
   "search": {
     "placeholder": "Cerca una maglia, squadra o lega...",
@@ -177,6 +178,13 @@
       "priceAsc": "Prezzo ↑",
       "priceDesc": "Prezzo ↓"
     },
-    "allCountries": "Tutti i paesi"
+    "allCountries": "Tutti i paesi",
+    "title": "Filtri",
+    "color": "Colore",
+    "colorPicker": "Scegli colore",
+    "country": "Paese",
+    "decade": "Decennio",
+    "league": "Campionato",
+    "letter": "Lettera"
   }
 }

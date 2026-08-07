@@ -29,7 +29,7 @@ const Pagination = ({ page, totalPages, onChange, className }: PaginationProps) 
   };
 
   return (
-    <div className="flex items-center justify-center gap-2 mt-12 flex-wrap">
+    <div className={`flex items-center justify-center gap-2 mt-12 flex-wrap ${className ?? ""}`}>
       <button
         onClick={() => go(Math.max(1, page - 1))}
         disabled={page === 1}

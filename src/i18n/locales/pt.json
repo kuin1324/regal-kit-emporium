@@ -43,7 +43,17 @@
       "shippingDesc": "Embalado em segurança e segurado"
     },
     "reviewsTitle": "O que os nossos",
-    "reviewsTitleAccent": "clientes dizem"
+    "reviewsTitleAccent": "clientes dizem",
+    "reviews": [
+      "Entrega super rápida e camisa de ótima qualidade!",
+      "Igual à foto, muito satisfeito!",
+      "Bela coleção, vou comprar de novo.",
+      "Camisas únicas que não se encontram noutro lado.",
+      "Bem embalado e respostas rápidas.",
+      "Ótimo serviço e camisa linda, recomendo!",
+      "A qualidade é ótima pelo preço.",
+      "Edições especiais incríveis, muito satisfeito."
+    ]
   },
   "leagues": {
     "all": "Todas",
@@ -212,5 +222,45 @@
   "pagination": {
     "goTo": "Ir para",
     "go": "Ir"
+  },
+  "stock": {
+    "eyebrow": "Stock",
+    "title": "Pronto a enviar e a caminho",
+    "subtitle": "Veja o que é enviado já e quais camisas estão a caminho — pré-encomende a sua favorita.",
+    "ready": "Pronto a enviar",
+    "incoming": "A caminho",
+    "preorder": "Pré-encomenda",
+    "shipping": "Envio grátis a partir de 6 camisas. 1–2 camisas 5 €, 3–5 camisas 3 €. Os preços estão sob cada produto.",
+    "preorderInfo": "Estas camisas estão a caminho. Pré-encomende agora — enviamos assim que chegarem.",
+    "preorderShipping": "Envio grátis a partir de 6 camisas — 1–2: 5 €, 3–5: 3 €."
+  },
+  "track": {
+    "eyebrow": "Rastreio",
+    "title": "Acompanhe a sua encomenda",
+    "subtitle": "Introduza o número da encomenda e o e-mail para ver o estado.",
+    "orderPlaceholder": "Número da encomenda (ex. HOFS-4821)",
+    "emailPlaceholder": "E-mail da encomenda",
+    "search": "Procurar encomenda",
+    "searching": "A procurar…",
+    "errorGeneric": "Algo correu mal. Tente novamente.",
+    "errorNotFound": "Nenhuma encomenda encontrada com esse número e e-mail.",
+    "orderNumber": "Número da encomenda",
+    "eta": "Entrega prevista:",
+    "carrier": "Transportadora",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "follow": "Seguir na transportadora",
+    "total": "Total",
+    "lastUpdate": "Última atualização:",
+    "refresh": "Atualizar",
+    "refreshed": "Atualizado",
+    "steps": {
+      "received": "Encomenda recebida",
+      "processing": "Em processamento",
+      "preorder": "Pré-encomenda",
+      "shipped": "Enviado",
+      "intransit": "Em trânsito",
+      "delivered": "Entregue"
+    }
   }
 }

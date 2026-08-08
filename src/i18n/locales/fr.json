@@ -43,7 +43,17 @@
       "shippingDesc": "Emballé en sécurité et assuré"
     },
     "reviewsTitle": "Ce que nos clients",
-    "reviewsTitleAccent": "disent"
+    "reviewsTitleAccent": "disent",
+    "reviews": [
+      "Livraison ultra rapide et maillot de qualité !",
+      "Exactement comme sur la photo, très content !",
+      "Belle collection, je recommanderai.",
+      "Des maillots uniques introuvables ailleurs.",
+      "Bien emballé et réponses rapides.",
+      "Super service et beau maillot, je recommande !",
+      "Qualité vraiment excellente pour le prix.",
+      "Éditions spéciales géniales, très satisfait."
+    ]
   },
   "leagues": {
     "all": "Tous",
@@ -212,5 +222,45 @@
   "pagination": {
     "goTo": "Aller à",
     "go": "OK"
+  },
+  "stock": {
+    "eyebrow": "Stock",
+    "title": "Prêt à expédier & Arrivages",
+    "subtitle": "Découvrez ce qui est expédié immédiatement et ce qui arrive — précommandez votre favori.",
+    "ready": "Prêt à expédier",
+    "incoming": "Arrivages",
+    "preorder": "Précommande",
+    "shipping": "Livraison gratuite dès 6 maillots. 1–2 maillots 5 €, 3–5 maillots 3 €. Les prix sont indiqués sous chaque produit.",
+    "preorderInfo": "Ces maillots sont en route. Précommandez maintenant — nous expédions dès leur arrivée.",
+    "preorderShipping": "Livraison gratuite dès 6 maillots — 1–2 : 5 €, 3–5 : 3 €."
+  },
+  "track": {
+    "eyebrow": "Suivi de commande",
+    "title": "Suivez votre commande",
+    "subtitle": "Saisissez votre numéro de commande et votre e-mail pour voir le statut.",
+    "orderPlaceholder": "Numéro de commande (ex. HOFS-4821)",
+    "emailPlaceholder": "E-mail de votre commande",
+    "search": "Rechercher",
+    "searching": "Recherche…",
+    "errorGeneric": "Une erreur est survenue. Réessayez.",
+    "errorNotFound": "Aucune commande trouvée avec ce numéro et cet e-mail.",
+    "orderNumber": "Numéro de commande",
+    "eta": "Livraison estimée :",
+    "carrier": "Transporteur",
+    "copy": "Copier",
+    "copied": "Copié",
+    "follow": "Suivre chez le transporteur",
+    "total": "Total",
+    "lastUpdate": "Dernière mise à jour :",
+    "refresh": "Actualiser",
+    "refreshed": "Actualisé",
+    "steps": {
+      "received": "Commande reçue",
+      "processing": "En traitement",
+      "preorder": "Précommande",
+      "shipped": "Expédiée",
+      "intransit": "En transit",
+      "delivered": "Livrée"
+    }
   }
 }

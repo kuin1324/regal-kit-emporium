@@ -187,5 +187,31 @@
     "decade": "Decade",
     "league": "League",
     "letter": "Letter"
+  },
+  "chat": {
+    "title": "HOFS Assistant",
+    "welcome": "Hi! 👋 Ask me anything about our shirts, sizes, shipping or your order.",
+    "subtitle": "Usually replies within seconds",
+    "placeholder": "Ask your question…",
+    "send": "Send",
+    "thinking": "Typing…",
+    "open": "Chat with our assistant",
+    "drag": "Drag me somewhere else",
+    "error": "Something went wrong. Try again or email us.",
+    "rateLimit": "A bit busy — try again shortly.",
+    "noCredits": "The assistant is temporarily unavailable. Feel free to email us!"
+  },
+  "selection": {
+    "count": "{{count}} selected",
+    "favorite": "Favorites",
+    "cart": "Add to cart (M)"
+  },
+  "notice": {
+    "monthly": "New shirts go online on the 1st of every month!",
+    "photos": "Please note: our photos may have small cut-outs or smudges. That's because our AI background remover isn't perfect yet — the shirt itself is in great condition. Feel free to ask for extra photos by email or chat."
+  },
+  "pagination": {
+    "goTo": "Go to",
+    "go": "Go"
   }
 }

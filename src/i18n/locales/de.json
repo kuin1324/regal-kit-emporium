@@ -186,5 +186,31 @@
     "decade": "Jahrzehnt",
     "league": "Liga",
     "letter": "Buchstabe"
+  },
+  "chat": {
+    "title": "HOFS Assistent",
+    "welcome": "Hallo! 👋 Frag mich alles zu Trikots, Größen, Versand oder deiner Bestellung.",
+    "subtitle": "Antwortet meist in Sekunden",
+    "placeholder": "Stelle deine Frage…",
+    "send": "Senden",
+    "thinking": "Schreibt…",
+    "open": "Mit unserem Assistenten chatten",
+    "drag": "Zieh mich woanders hin",
+    "error": "Etwas ist schiefgelaufen. Versuche es erneut oder schreib uns.",
+    "rateLimit": "Gerade viel los — versuche es gleich nochmal.",
+    "noCredits": "Der Assistent ist vorübergehend nicht verfügbar. Schreib uns gerne!"
+  },
+  "selection": {
+    "count": "{{count}} ausgewählt",
+    "favorite": "Favoriten",
+    "cart": "In den Warenkorb (M)"
+  },
+  "notice": {
+    "monthly": "Am 1. jedes Monats kommen neue Trikots online!",
+    "photos": "Hinweis: Unsere Fotos können kleine Ausschnitte oder Flecken haben. Unser KI-Freisteller ist noch nicht perfekt — das Trikot selbst ist einwandfrei. Frag gerne per E-Mail oder Chat nach zusätzlichen Fotos."
+  },
+  "pagination": {
+    "goTo": "Gehe zu",
+    "go": "Los"
   }
 }

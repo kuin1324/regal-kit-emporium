@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -9,6 +10,7 @@ interface PaginationProps {
 }
 
 const Pagination = ({ page, totalPages, onChange, className }: PaginationProps) => {
+  const { t } = useTranslation();
   const [jump, setJump] = useState(String(page));
   useEffect(() => setJump(String(page)), [page]);
   if (totalPages <= 1) return null;
@@ -72,7 +74,7 @@ const Pagination = ({ page, totalPages, onChange, className }: PaginationProps) 
         }}
         className="ml-2 flex items-center gap-2"
       >
-        <span className="text-xs text-muted-foreground">Ga naar</span>
+        <span className="text-xs text-muted-foreground">{t("pagination.goTo", { defaultValue: "Ga naar" })}</span>
         <input
           type="number"
           min={1}

@@ -37,6 +37,8 @@ import spanjeCreamBack from "@/assets/shirt-spanje-cream-back.jpg";
 import argentinieFront from "@/assets/shirt-argentinie-front.jpg";
 import argentinieBack from "@/assets/shirt-argentinie-back.jpg";
 import { collectieShirts } from "@/data/collectie_shirts";
+import { publicCollectieShirts } from "@/data/public_collectie";
+import { useAdminView } from "@/lib/admin";
 
 export const allProducts = [
   { image: italySpecialFront, gallery: [italySpecialFront, italySpecialBack], name: "Italië Special Trainingsshirt", nameKey: "italySpecialTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Italië special trainingsshirt met uniek zwart-wit ornament design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "zwart"], availability: "incoming" as const },
@@ -56,6 +58,7 @@ export const allProducts = [
   { image: argentinieFront, gallery: [argentinieFront, argentinieBack], name: "Argentinië Uit Shirt WK 2026", nameKey: "argentinieSpecial", team: "Argentinië", leagues: ["Nationaal"], price: "€30", description: "Argentinië uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "blauw"] },
   { image: franceFront, gallery: [franceFront, franceBack], name: "Frankrijk Uit Shirt WK 2026", nameKey: "francePrematch", team: "Frankrijk", leagues: ["Nationaal"], price: "€30", description: "Frankrijk uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
   ...collectieShirts,
+  ...publicCollectieShirts,
 ];
 
 interface ProductDetailModalProps {
@@ -90,6 +93,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
   const { favorites, toggleFavorite, addItem } = useCart();
   const { t } = useTranslation();
   const { format } = useCurrency();
+  const isAdmin = useAdminView();
 
   const selected = productName ? allProducts.find(p => p.name === productName) : null;
   const displayName = selected ? t(`products.${selected.nameKey}`, { defaultValue: selected.name }) : "";
@@ -207,6 +211,9 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
             <div className="p-8 md:p-12 flex flex-col justify-center max-w-lg mx-auto w-full">
               <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{selected.team}</p>
               <h2 className="font-display text-3xl md:text-4xl font-bold tracking-wide mb-2">{displayName}</h2>
+              {isAdmin && (selected as { sku?: string }).sku && (
+                <p className="mb-2 font-mono text-xs text-muted-foreground">SKU: {(selected as { sku?: string }).sku}</p>
+              )}
               <p className="font-display text-3xl font-bold text-gradient-gold mb-8">{format(totalPrice)}</p>
 
               <div className="space-y-6 mb-6">

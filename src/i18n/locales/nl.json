@@ -208,5 +208,9 @@
   },
   "notice": {
     "monthly": "Elke 1e van de maand komen er nieuwe shirts online!"
+  },
+  "pagination": {
+    "goTo": "Ga naar",
+    "go": "Ga"
   }
 }

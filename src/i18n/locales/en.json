@@ -207,6 +207,11 @@
     "cart": "Add to cart (M)"
   },
   "notice": {
-    "monthly": "New shirts go online on the 1st of every month!"
+    "monthly": "New shirts go online on the 1st of every month!",
+    "photos": "Please note: our photos may have small cut-outs or smudges. That's because our AI background remover isn't perfect yet — the shirt itself is in great condition. Feel free to ask for extra photos by email or chat."
+  },
+  "pagination": {
+    "goTo": "Go to",
+    "go": "Go"
   }
 }

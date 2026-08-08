@@ -206,6 +206,11 @@
     "cart": "In den Warenkorb (M)"
   },
   "notice": {
-    "monthly": "Am 1. jedes Monats kommen neue Trikots online!"
+    "monthly": "Am 1. jedes Monats kommen neue Trikots online!",
+    "photos": "Hinweis: Unsere Fotos können kleine Ausschnitte oder Flecken haben. Unser KI-Freisteller ist noch nicht perfekt — das Trikot selbst ist einwandfrei. Frag gerne per E-Mail oder Chat nach zusätzlichen Fotos."
+  },
+  "pagination": {
+    "goTo": "Gehe zu",
+    "go": "Los"
   }
 }

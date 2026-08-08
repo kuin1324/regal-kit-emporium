@@ -206,6 +206,11 @@
     "cart": "Añadir al carrito (M)"
   },
   "notice": {
-    "monthly": "¡Cada día 1 del mes llegan camisetas nuevas!"
+    "monthly": "¡Cada día 1 del mes llegan camisetas nuevas!",
+    "photos": "Nota: nuestras fotos pueden tener pequeños recortes o manchas. Nuestro eliminador de fondos con IA aún no es perfecto — la camiseta está en perfecto estado. Pídenos fotos extra por correo o chat."
+  },
+  "pagination": {
+    "goTo": "Ir a",
+    "go": "Ir"
   }
 }

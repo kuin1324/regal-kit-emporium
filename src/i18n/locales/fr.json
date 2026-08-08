@@ -206,6 +206,11 @@
     "cart": "Ajouter au panier (M)"
   },
   "notice": {
-    "monthly": "De nouveaux maillots arrivent le 1er de chaque mois !"
+    "monthly": "De nouveaux maillots arrivent le 1er de chaque mois !",
+    "photos": "Remarque : nos photos peuvent présenter de petites découpes ou traces. Notre outil IA de détourage n'est pas encore parfait — le maillot lui-même est impeccable. Demandez-nous des photos supplémentaires par e-mail ou via le chat."
+  },
+  "pagination": {
+    "goTo": "Aller à",
+    "go": "OK"
   }
 }

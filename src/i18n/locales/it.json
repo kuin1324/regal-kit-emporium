@@ -206,6 +206,11 @@
     "cart": "Aggiungi al carrello (M)"
   },
   "notice": {
-    "monthly": "Ogni 1° del mese arrivano nuove maglie!"
+    "monthly": "Ogni 1° del mese arrivano nuove maglie!",
+    "photos": "Nota: le nostre foto possono avere piccoli ritagli o sbavature. Il nostro strumento AI non è ancora perfetto — la maglia è in ottime condizioni. Chiedi pure altre foto via e-mail o chat."
+  },
+  "pagination": {
+    "goTo": "Vai a",
+    "go": "Vai"
   }
 }

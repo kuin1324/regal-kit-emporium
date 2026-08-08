@@ -1,5 +1,17 @@
 // AUTO-GEGENEREERD uit public/collectie/ - niet handmatig bewerken
-export const publicCollectieShirts = [
+export interface PublicShirt {
+  image: string;
+  gallery: string[];
+  name: string;
+  team: string;
+  leagues: string[];
+  price: string;
+  sku: string;
+  sizes: string[];
+  availability: "ready" | "incoming";
+}
+
+export const publicCollectieShirts: PublicShirt[] = [
 {
 "image": "/collectie/AC Milan Away Shirt 24-25.jpg",
 "gallery": [
@@ -18896,4 +18908,4 @@ export const publicCollectieShirts = [
 ],
 "availability": "ready"
 }
-] as const;
+];

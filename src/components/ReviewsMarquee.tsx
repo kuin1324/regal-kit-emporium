@@ -2,15 +2,15 @@ import { Star } from "lucide-react";
 import { useRef, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 
-const reviews = [
-  { name: "Jayden", text: "Super snelle levering en top kwaliteit shirt!", rating: 5 },
-  { name: "Milan", text: "Precies zoals op de foto, heel blij mee!", rating: 5 },
-  { name: "Noah", text: "Mooie collectie, zeker vaker bestellen.", rating: 5 },
-  { name: "Sem", text: "Unieke shirts die je nergens anders vindt.", rating: 5 },
-  { name: "Daan", text: "Goed ingepakt en snelle reactie op vragen.", rating: 5 },
-  { name: "Lucas", text: "Top service en mooi shirt, aanrader!", rating: 5 },
-  { name: "Levi", text: "Kwaliteit is echt geweldig voor de prijs.", rating: 4 },
-  { name: "Finn", text: "Hele gave special editions, super tevreden.", rating: 5 },
+const REVIEWERS = [
+  { name: "Jayden", rating: 5 },
+  { name: "Milan", rating: 5 },
+  { name: "Noah", rating: 5 },
+  { name: "Sem", rating: 5 },
+  { name: "Daan", rating: 5 },
+  { name: "Lucas", rating: 5 },
+  { name: "Levi", rating: 4 },
+  { name: "Finn", rating: 5 },
 ];
 
 const ReviewCard = ({ name, text, rating }: { name: string; text: string; rating: number }) => (
@@ -29,6 +29,8 @@ const ReviewCard = ({ name, text, rating }: { name: string; text: string; rating
 );
 
 const ReviewsMarquee = () => {
+  const texts = (useTranslation().t("home.reviews", { returnObjects: true }) as string[]) || [];
+  const reviews = REVIEWERS.map((r, i) => ({ ...r, text: texts[i] ?? "" }));
   const scrollRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number>();
   const speedRef = useRef(0.5);

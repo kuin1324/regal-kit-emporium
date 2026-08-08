@@ -3,6 +3,9 @@ export interface PublicShirt {
   image: string;
   gallery: string[];
   name: string;
+  nameKey?: string;
+  description?: string;
+  colors?: string[];
   team: string;
   leagues: string[];
   price: string;

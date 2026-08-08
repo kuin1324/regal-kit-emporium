@@ -10,6 +10,8 @@ export interface RoosterShirt {
   price: string;
   sku: string;
   sizes: string[];
+  description?: string;
+  colors?: string[];
   availability: "ready" | "incoming";
 }
 

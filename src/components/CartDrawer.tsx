@@ -28,66 +28,49 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const grandTotal = total + shipping;
   const shirtsToFree = count > 0 && count < FREE_SHIPPING_FROM ? FREE_SHIPPING_FROM - count : 0;
 
-  const buildOrderText = (orderNumber: string, email: string) => {
-    const lines = items.map(i => {
-      const extra = [i.customName, i.customNumber].filter(Boolean).join(" ");
-      return `🏷️ ${productName(i.name)}${i.sku ? ` [${i.sku}]` : ""} (${t("cart.size")}: ${i.size}${extra ? `, ${extra}` : ""}) x${i.quantity} — €${i.price * i.quantity}`;
-    }).join("\n");
-    const shippingLine = shipping === 0 ? "🚚 Verzending: GRATIS" : `🚚 Verzending: €${shipping}`;
-    return `${t("cart.orderGreeting")}\n\n📦 Bestelnummer: ${orderNumber}\n✉️ E-mail: ${email}\n\n${lines}\n\n${shippingLine}\n💰 ${t("cart.orderTotal")}: €${grandTotal}`;
-  };
-
   const handleEmailOrder = async () => {
     if (items.length === 0) return;
     const email = user?.email || window.prompt("Wat is je e-mailadres? (nodig voor track & trace)")?.trim();
     if (!email) return;
 
-    const orderNumber = `HOFS-${Math.random().toString(36).slice(2, 7).toUpperCase()}`;
     const { supabase } = await import("@/integrations/supabase/client");
 
-    try {
-      await supabase.from("orders").insert({
-        order_number: orderNumber,
-        user_id: user?.id ?? null,
+    // De bestelling wordt server-side aangemaakt: prijzen, verzendkosten en
+    // totalen worden daar opnieuw berekend, niet overgenomen uit de browser.
+    const { data, error } = await supabase.functions.invoke("create-order", {
+      body: {
         email,
-        items: items.map(i => ({ name: i.name, sku: i.sku ?? null, size: i.size, customName: i.customName ?? null, customNumber: i.customNumber ?? null, quantity: i.quantity, price: i.price })),
-        subtotal: total,
-        shipping,
-        total: grandTotal,
-      });
-    } catch {
-      /* bestelling kan alsnog per mail door */
-    }
+        items: items.map(i => ({
+          name: i.name,
+          sku: i.sku ?? null,
+          size: i.size,
+          customName: i.customName ?? null,
+          customNumber: i.customNumber ?? null,
+          quantity: i.quantity,
+        })),
+      },
+    });
 
-    const orderText = buildOrderText(orderNumber, email);
-    const subject = `Nieuwe bestelling ${orderNumber} — €${grandTotal}`;
+    const orderNumber = (data as { orderNumber?: string } | null)?.orderNumber;
+    if (error || !orderNumber) {
+      alert("❌ Bestelling kon niet worden geplaatst. Probeer het opnieuw of mail ons.");
+      return;
+    }
 
     try {
-      const { allProducts } = await import("./ProductDetailModal");
-      const preorders = items
-        .map((i) => {
-          const p = allProducts.find((x) => x.name === i.name) as
-            | { availability?: string; nameKey?: string }
-            | undefined;
-          return p?.availability === "incoming" && p.nameKey
-            ? { key: p.nameKey, quantity: i.quantity }
-            : null;
-
-        })
-        .filter(Boolean);
-      const { error } = await supabase.functions.invoke("send-order-email", {
-        body: { subject, body: orderText, items, total, orderNumber, email, preorders },
+      const { error: mailError } = await supabase.functions.invoke("send-order-email", {
+        body: { orderNumber, email },
       });
-
-      if (error) throw error;
-      alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${orderNumber}\nVolg je bestelling via Track & Trace.`);
-      clearCart();
-      onClose();
-      return;
+      if (mailError) throw mailError;
     } catch {
-      window.location.href = `mailto:the_home_of_football_style@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(orderText)}`;
+      /* Bestelling staat opgeslagen; mail kan later alsnog verstuurd worden. */
     }
+
+    alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${orderNumber}\nVolg je bestelling via Track & Trace.`);
+    clearCart();
+    onClose();
   };
+
 
 
   return (

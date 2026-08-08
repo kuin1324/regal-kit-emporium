@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import CollectionView from "@/components/CollectionView";
-import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
+import ProductDetailModal from "@/components/ProductDetailModal";
+import { roosterShirts } from "@/data/rooster_shirts";
 
 const Collectie = () => {
   const { t } = useTranslation();
@@ -22,7 +23,7 @@ const Collectie = () => {
             <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">{t("collection.title")}</h1>
           </motion.div>
 
-          <CollectionView items={allProducts} onSelect={setSelectedProduct} />
+          <CollectionView items={roosterShirts} onSelect={setSelectedProduct} />
         </div>
       </section>
       <Footer />

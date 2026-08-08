@@ -44,7 +44,17 @@
       "shippingDesc": "Safely packed & insured"
     },
     "reviewsTitle": "What our customers",
-    "reviewsTitleAccent": "say"
+    "reviewsTitleAccent": "say",
+    "reviews": [
+      "Super fast delivery and top quality shirt!",
+      "Exactly like the photo, very happy!",
+      "Great collection, will order again.",
+      "Unique shirts you won't find anywhere else.",
+      "Well packed and quick replies to questions.",
+      "Great service and a beautiful shirt, recommended!",
+      "Quality is really great for the price.",
+      "Really cool special editions, very satisfied."
+    ]
   },
   "leagues": {
     "all": "All",
@@ -213,5 +223,45 @@
   "pagination": {
     "goTo": "Go to",
     "go": "Go"
+  },
+  "stock": {
+    "eyebrow": "Stock",
+    "title": "Ready to Ship & Incoming Stock",
+    "subtitle": "See what ships right away and which shirts are on the way — pre-order your favourite now.",
+    "ready": "Ready to Ship",
+    "incoming": "Incoming Stock",
+    "preorder": "Pre-order",
+    "shipping": "Free shipping from 6 shirts. 1–2 shirts €5, 3–5 shirts €3. Per-shirt prices are shown below each product.",
+    "preorderInfo": "These shirts are still on the way. You can pre-order now — we ship as soon as they arrive.",
+    "preorderShipping": "Free shipping from 6 shirts — 1–2 shirts €5, 3–5 shirts €3."
+  },
+  "track": {
+    "eyebrow": "Track & Trace",
+    "title": "Track your order",
+    "subtitle": "Enter your order number and email to see the status.",
+    "orderPlaceholder": "Order number (e.g. HOFS-4821)",
+    "emailPlaceholder": "Email used for your order",
+    "search": "Find order",
+    "searching": "Searching…",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorNotFound": "No order found with this order number and email.",
+    "orderNumber": "Order number",
+    "eta": "Estimated delivery:",
+    "carrier": "Carrier",
+    "copy": "Copy",
+    "copied": "Copied",
+    "follow": "Track with carrier",
+    "total": "Total",
+    "lastUpdate": "Last update:",
+    "refresh": "Refresh",
+    "refreshed": "Refreshed",
+    "steps": {
+      "received": "Order received",
+      "processing": "Processing",
+      "preorder": "Pre-order",
+      "shipped": "Shipped",
+      "intransit": "In transit",
+      "delivered": "Delivered"
+    }
   }
 }

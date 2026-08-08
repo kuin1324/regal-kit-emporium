@@ -43,7 +43,17 @@
       "shippingDesc": "Imballato in sicurezza e assicurato"
     },
     "reviewsTitle": "Cosa dicono i nostri",
-    "reviewsTitleAccent": "clienti"
+    "reviewsTitleAccent": "clienti",
+    "reviews": [
+      "Consegna velocissima e maglia di ottima qualità!",
+      "Identica alla foto, molto contento!",
+      "Bella collezione, ordinerò ancora.",
+      "Maglie uniche che non trovi altrove.",
+      "Ben imballato e risposte rapide.",
+      "Ottimo servizio e bella maglia, consigliato!",
+      "Qualità davvero ottima per il prezzo.",
+      "Edizioni speciali fantastiche, molto soddisfatto."
+    ]
   },
   "leagues": {
     "all": "Tutte",
@@ -212,5 +222,45 @@
   "pagination": {
     "goTo": "Vai a",
     "go": "Vai"
+  },
+  "stock": {
+    "eyebrow": "Disponibilità",
+    "title": "Pronto per la spedizione e in arrivo",
+    "subtitle": "Scopri cosa è spedibile subito e cosa è in arrivo — preordina la tua preferita.",
+    "ready": "Pronto per la spedizione",
+    "incoming": "In arrivo",
+    "preorder": "Preordine",
+    "shipping": "Spedizione gratuita da 6 maglie. 1–2 maglie 5 €, 3–5 maglie 3 €. I prezzi sono indicati sotto ogni prodotto.",
+    "preorderInfo": "Queste maglie sono in arrivo. Preordina ora — spediamo appena arrivano.",
+    "preorderShipping": "Spedizione gratuita da 6 maglie — 1–2: 5 €, 3–5: 3 €."
+  },
+  "track": {
+    "eyebrow": "Tracciamento",
+    "title": "Segui il tuo ordine",
+    "subtitle": "Inserisci numero d'ordine ed e-mail per vedere lo stato.",
+    "orderPlaceholder": "Numero d'ordine (es. HOFS-4821)",
+    "emailPlaceholder": "E-mail dell'ordine",
+    "search": "Cerca ordine",
+    "searching": "Ricerca…",
+    "errorGeneric": "Qualcosa è andato storto. Riprova.",
+    "errorNotFound": "Nessun ordine trovato con questo numero ed e-mail.",
+    "orderNumber": "Numero d'ordine",
+    "eta": "Consegna stimata:",
+    "carrier": "Corriere",
+    "copy": "Copia",
+    "copied": "Copiato",
+    "follow": "Segui con il corriere",
+    "total": "Totale",
+    "lastUpdate": "Ultimo aggiornamento:",
+    "refresh": "Aggiorna",
+    "refreshed": "Aggiornato",
+    "steps": {
+      "received": "Ordine ricevuto",
+      "processing": "In lavorazione",
+      "preorder": "Preordine",
+      "shipped": "Spedito",
+      "intransit": "In transito",
+      "delivered": "Consegnato"
+    }
   }
 }

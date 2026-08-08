@@ -50,7 +50,7 @@ const Voorraad = () => {
 
           {isIncoming && (
             <span className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-primary/90 text-primary-foreground text-[10px] font-semibold tracking-wider uppercase">
-              Pre-order
+              {t("stock.preorder")}
             </span>
           )}
 
@@ -94,26 +94,26 @@ const Voorraad = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-10"
           >
-            <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-3">Voorraad</p>
-            <h1 className="font-display text-3xl sm:text-5xl font-bold tracking-tight">Ready to Ship & Incoming Stock</h1>
+            <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-3">{t("stock.eyebrow")}</p>
+            <h1 className="font-display text-3xl sm:text-5xl font-bold tracking-tight">{t("stock.title")}</h1>
             <p className="text-muted-foreground mt-4 max-w-lg mx-auto text-sm sm:text-base">
-              Bekijk wat direct verzendklaar is en welke shirts onderweg zijn — pre-order nu jouw favoriet.
+              {t("stock.subtitle")}
             </p>
           </motion.div>
 
           <Tabs defaultValue="ready" className="w-full">
             <TabsList className="mx-auto grid w-full max-w-md grid-cols-2 mb-8">
               <TabsTrigger value="ready" className="flex items-center gap-2">
-                <Truck className="h-4 w-4" /> Ready to Ship
+                <Truck className="h-4 w-4" /> {t("stock.ready")}
               </TabsTrigger>
               <TabsTrigger value="incoming" className="flex items-center gap-2">
-                <Clock className="h-4 w-4" /> Incoming Stock
+                <Clock className="h-4 w-4" /> {t("stock.incoming")}
               </TabsTrigger>
             </TabsList>
 
             <TabsContent value="ready">
               <div className="mb-6 p-4 rounded border border-primary/30 bg-primary/5 text-sm text-foreground/80 max-w-2xl mx-auto text-center">
-                <span className="text-primary font-semibold">Gratis verzending vanaf 6 shirts.</span> 1–2 shirts €5, 3–5 shirts €3. Prijzen per shirt staan hieronder bij elk product.
+                <span className="text-primary font-semibold">{t("stock.shipping")}</span>
               </div>
               <ProductFilters items={readyBase} state={readyFilters} onChange={(patch) => setReadyFilters((f) => ({ ...f, ...patch }))} />
               <Grid items={ready} />
@@ -122,8 +122,8 @@ const Voorraad = () => {
             <TabsContent value="incoming">
               <div className="mb-6 max-w-2xl mx-auto space-y-4">
                 <div className="p-4 rounded-xl border border-primary/25 bg-primary/5 text-sm text-foreground/80 text-center space-y-2">
-                  <p>Deze shirts zijn nog onderweg. Je kunt ze nu al <span className="text-primary font-semibold">pre-orderen</span> — wij sturen ze zodra ze binnenkomen.</p>
-                  <p><span className="text-primary font-semibold">Gratis verzending vanaf 6 shirts</span> — 1–2 shirts €5, 3–5 shirts €3.</p>
+                  <p>{t("stock.preorderInfo")}</p>
+                  <p className="text-primary font-semibold">{t("stock.preorderShipping")}</p>
                 </div>
                 <PreorderProgress />
               </div>

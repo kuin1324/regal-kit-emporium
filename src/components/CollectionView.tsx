@@ -9,6 +9,8 @@ import { useProductName } from "@/lib/productName";
 import Pagination from "@/components/Pagination";
 import ProductFilters from "@/components/ProductFilters";
 import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
+import ShirtImage from "@/components/ShirtImage";
+import { CUSTOM_PRICE } from "@/components/ProductDetailModal";
 
 const PAGE_SIZE = 60;
 
@@ -21,7 +23,10 @@ interface Product {
   leagues: string[];
   colors?: string[];
   sku?: string;
+  fallback?: string | null;
 }
+
+const SIZES = ["S", "M", "L", "XL", "2XL"];
 
 interface Props {
   items: Product[];
@@ -49,6 +54,11 @@ const CollectionView = ({ items, onSelect }: Props) => {
   const { formatPrice } = useCurrency();
   const productName = useProductName();
   const touchX = useRef<number | null>(null);
+  const [bulkOpen, setBulkOpen] = useState(false);
+  const [bulkSize, setBulkSize] = useState("M");
+  const [bulkCustom, setBulkCustom] = useState(false);
+  const [bulkName, setBulkName] = useState("");
+  const [bulkNumber, setBulkNumber] = useState("");
 
   // Meervoudige selectie (ctrl-klik + sleepkader zoals in de verkenner)
   const [selected, setSelected] = useState<Set<string>>(new Set());
@@ -101,16 +111,22 @@ const CollectionView = ({ items, onSelect }: Props) => {
 
   const bulkCart = () => {
     selectedProducts.forEach((p) => {
+      const suffix = bulkCustom && (bulkName || bulkNumber)
+        ? ` [${bulkName || "—"}${bulkNumber ? ` #${bulkNumber}` : ""}]`
+        : "";
       addItem({
-        name: p.name,
+        name: p.name + suffix,
         image: p.image,
-        size: "M",
+        size: bulkSize,
         quantity: 1,
-        price: parseInt(p.price.replace(/[^\d]/g, ""), 10) || 30,
+        price: (parseInt(p.price.replace(/[^\d]/g, ""), 10) || 30) + (bulkCustom ? CUSTOM_PRICE : 0),
         sku: p.sku,
+        customName: bulkCustom ? bulkName : undefined,
+        customNumber: bulkCustom ? bulkNumber : undefined,
       });
     });
     setSelected(new Set());
+    setBulkOpen(false);
   };
 
   // --- Sleepkader ---
@@ -251,10 +267,10 @@ const CollectionView = ({ items, onSelect }: Props) => {
                   }`}
                 >
                   <div className="aspect-[4/5] overflow-hidden">
-                    <img
+                    <ShirtImage
                       src={product.image}
+                      fallback={product.fallback}
                       alt={productName(product.name)}
-                      loading="lazy"
                       draggable={false}
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
@@ -311,14 +327,66 @@ const CollectionView = ({ items, onSelect }: Props) => {
             {t("selection.favorite", { defaultValue: "Favorieten" })}
           </button>
           <button
-            onClick={bulkCart}
+            onClick={() => setBulkOpen((o) => !o)}
             className="flex items-center gap-2 rounded-full bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground transition-opacity hover:opacity-90"
           >
             <ShoppingBag className="h-4 w-4" />
             {t("selection.cart", { defaultValue: "In winkelmandje (M)" })}
           </button>
-          <button onClick={() => setSelected(new Set())} aria-label="clear selection" className="p-1">
+          <button onClick={() => { setSelected(new Set()); setBulkOpen(false); }} aria-label="clear selection" className="p-1">
             <X className="h-4 w-4 text-muted-foreground" />
+          </button>
+        </div>
+      )}
+
+      {selected.size > 0 && bulkOpen && (
+        <div className="fixed bottom-24 left-1/2 z-50 w-[min(92vw,26rem)] -translate-x-1/2 space-y-4 rounded-2xl border border-border bg-card/95 p-5 shadow-lg backdrop-blur">
+          <p className="text-xs font-semibold uppercase tracking-wide text-primary">
+            {t("selection.configure", { defaultValue: "Maat, naam & nummer" })}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {SIZES.map((size) => (
+              <button
+                key={size}
+                onClick={() => setBulkSize(size)}
+                className={`h-10 min-w-[48px] rounded border px-3 text-sm font-medium transition-all ${
+                  bulkSize === size ? "border-primary bg-primary text-primary-foreground" : "border-border hover:border-primary/50"
+                }`}
+              >
+                {size}
+              </button>
+            ))}
+          </div>
+          <label className="flex cursor-pointer items-center gap-2">
+            <input type="checkbox" checked={bulkCustom} onChange={(e) => setBulkCustom(e.target.checked)} className="h-4 w-4 accent-primary" />
+            <span className="text-sm font-semibold">{t("product.customize")}</span>
+            <span className="ml-auto text-xs text-primary">+€{CUSTOM_PRICE}</span>
+          </label>
+          {bulkCustom && (
+            <div className="grid grid-cols-2 gap-2">
+              <input
+                type="text"
+                maxLength={20}
+                value={bulkName}
+                onChange={(e) => setBulkName(e.target.value.toUpperCase())}
+                placeholder={t("product.namePlaceholder")}
+                className="rounded border border-border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none"
+              />
+              <input
+                type="text"
+                maxLength={2}
+                value={bulkNumber}
+                onChange={(e) => setBulkNumber(e.target.value.replace(/\D/g, ""))}
+                placeholder={t("product.numberPlaceholder")}
+                className="rounded border border-border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none"
+              />
+            </div>
+          )}
+          <button
+            onClick={bulkCart}
+            className="w-full rounded-full bg-primary py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            {t("selection.addAll", { count: selected.size, defaultValue: "{{count}} shirts toevoegen" })}
           </button>
         </div>
       )}

@@ -44,7 +44,17 @@
       "shippingDesc": "Veilig verpakt & verzekerd"
     },
     "reviewsTitle": "Wat onze klanten",
-    "reviewsTitleAccent": "zeggen"
+    "reviewsTitleAccent": "zeggen",
+    "reviews": [
+      "Super snelle levering en top kwaliteit shirt!",
+      "Precies zoals op de foto, heel blij mee!",
+      "Mooie collectie, zeker vaker bestellen.",
+      "Unieke shirts die je nergens anders vindt.",
+      "Goed ingepakt en snelle reactie op vragen.",
+      "Top service en mooi shirt, aanrader!",
+      "Kwaliteit is echt geweldig voor de prijs.",
+      "Hele gave special editions, super tevreden."
+    ]
   },
   "leagues": {
     "all": "Alle",
@@ -212,5 +222,45 @@
   "pagination": {
     "goTo": "Ga naar",
     "go": "Ga"
+  },
+  "stock": {
+    "eyebrow": "Voorraad",
+    "title": "Ready to Ship & Incoming Stock",
+    "subtitle": "Bekijk wat direct verzendklaar is en welke shirts onderweg zijn — pre-order nu jouw favoriet.",
+    "ready": "Direct leverbaar",
+    "incoming": "Onderweg",
+    "preorder": "Pre-order",
+    "shipping": "Gratis verzending vanaf 6 shirts. 1–2 shirts €5, 3–5 shirts €3. Prijzen per shirt staan hieronder bij elk product.",
+    "preorderInfo": "Deze shirts zijn nog onderweg. Je kunt ze nu al pre-orderen — wij sturen ze zodra ze binnenkomen.",
+    "preorderShipping": "Gratis verzending vanaf 6 shirts — 1–2 shirts €5, 3–5 shirts €3."
+  },
+  "track": {
+    "eyebrow": "Track & Trace",
+    "title": "Volg je bestelling",
+    "subtitle": "Vul je bestelnummer en e-mailadres in om de status te zien.",
+    "orderPlaceholder": "Bestelnummer (bijv. HOFS-4821)",
+    "emailPlaceholder": "E-mailadres van je bestelling",
+    "search": "Zoek bestelling",
+    "searching": "Zoeken…",
+    "errorGeneric": "Er ging iets mis. Probeer het opnieuw.",
+    "errorNotFound": "Geen bestelling gevonden met dit bestelnummer en e-mailadres.",
+    "orderNumber": "Bestelnummer",
+    "eta": "Verwachte levering:",
+    "carrier": "Vervoerder",
+    "copy": "Kopieer",
+    "copied": "Gekopieerd",
+    "follow": "Volg bij vervoerder",
+    "total": "Totaal",
+    "lastUpdate": "Laatste update:",
+    "refresh": "Ververs",
+    "refreshed": "Ververst",
+    "steps": {
+      "received": "Order ontvangen",
+      "processing": "In behandeling",
+      "preorder": "Pre-order",
+      "shipped": "Verzonden",
+      "intransit": "Onderweg",
+      "delivered": "Afgeleverd"
+    }
   }
 }

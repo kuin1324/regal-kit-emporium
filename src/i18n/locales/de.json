@@ -43,7 +43,17 @@
       "shippingDesc": "Sicher verpackt & versichert"
     },
     "reviewsTitle": "Was unsere Kunden",
-    "reviewsTitleAccent": "sagen"
+    "reviewsTitleAccent": "sagen",
+    "reviews": [
+      "Superschnelle Lieferung und top Trikotqualität!",
+      "Genau wie auf dem Foto, sehr zufrieden!",
+      "Schöne Kollektion, bestelle wieder.",
+      "Einzigartige Trikots, die es sonst nirgends gibt.",
+      "Gut verpackt und schnelle Antworten.",
+      "Toller Service und schönes Trikot, empfehlenswert!",
+      "Qualität ist für den Preis wirklich super.",
+      "Richtig coole Sondereditionen, sehr zufrieden."
+    ]
   },
   "leagues": {
     "all": "Alle",
@@ -212,5 +222,45 @@
   "pagination": {
     "goTo": "Gehe zu",
     "go": "Los"
+  },
+  "stock": {
+    "eyebrow": "Lagerbestand",
+    "title": "Sofort lieferbar & Bald verfügbar",
+    "subtitle": "Sieh, was sofort versandfertig ist und was unterwegs ist — jetzt vorbestellen.",
+    "ready": "Sofort lieferbar",
+    "incoming": "Bald verfügbar",
+    "preorder": "Vorbestellung",
+    "shipping": "Kostenloser Versand ab 6 Trikots. 1–2 Trikots 5 €, 3–5 Trikots 3 €. Preise stehen unter jedem Produkt.",
+    "preorderInfo": "Diese Trikots sind noch unterwegs. Jetzt vorbestellen — wir versenden sofort nach Eingang.",
+    "preorderShipping": "Kostenloser Versand ab 6 Trikots — 1–2: 5 €, 3–5: 3 €."
+  },
+  "track": {
+    "eyebrow": "Sendungsverfolgung",
+    "title": "Verfolge deine Bestellung",
+    "subtitle": "Gib Bestellnummer und E-Mail ein, um den Status zu sehen.",
+    "orderPlaceholder": "Bestellnummer (z. B. HOFS-4821)",
+    "emailPlaceholder": "E-Mail deiner Bestellung",
+    "search": "Bestellung suchen",
+    "searching": "Suche…",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen.",
+    "errorNotFound": "Keine Bestellung mit dieser Nummer und E-Mail gefunden.",
+    "orderNumber": "Bestellnummer",
+    "eta": "Voraussichtliche Lieferung:",
+    "carrier": "Versanddienst",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "follow": "Beim Versanddienst verfolgen",
+    "total": "Gesamt",
+    "lastUpdate": "Letztes Update:",
+    "refresh": "Aktualisieren",
+    "refreshed": "Aktualisiert",
+    "steps": {
+      "received": "Bestellung erhalten",
+      "processing": "In Bearbeitung",
+      "preorder": "Vorbestellung",
+      "shipped": "Versendet",
+      "intransit": "Unterwegs",
+      "delivered": "Zugestellt"
+    }
   }
 }

@@ -38,6 +38,9 @@ import argentinieFront from "@/assets/shirt-argentinie-front.jpg";
 import argentinieBack from "@/assets/shirt-argentinie-back.jpg";
 import { collectieShirts } from "@/data/collectie_shirts";
 import { publicCollectieShirts } from "@/data/public_collectie";
+import { roosterShirts } from "@/data/rooster_shirts";
+import ZoomableImage from "@/components/ZoomableImage";
+import ShirtImage from "@/components/ShirtImage";
 import { useAdminView } from "@/lib/admin";
 
 export const allProducts = [
@@ -57,6 +60,7 @@ export const allProducts = [
   { image: spanjeCreamFront, gallery: [spanjeCreamFront, spanjeCreamBack], name: "Spanje Uit Shirt WK", nameKey: "spanjeOriginals", team: "Spanje", leagues: ["Nationaal"], price: "€30", description: "Spanje uit shirt voor het WK met klassieke Adidas details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "goud"] },
   { image: argentinieFront, gallery: [argentinieFront, argentinieBack], name: "Argentinië Uit Shirt WK 2026", nameKey: "argentinieSpecial", team: "Argentinië", leagues: ["Nationaal"], price: "€30", description: "Argentinië uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "blauw"] },
   { image: franceFront, gallery: [franceFront, franceBack], name: "Frankrijk Uit Shirt WK 2026", nameKey: "francePrematch", team: "Frankrijk", leagues: ["Nationaal"], price: "€30", description: "Frankrijk uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
+  ...roosterShirts,
   ...collectieShirts,
   ...publicCollectieShirts,
 ];
@@ -167,7 +171,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                     }`}
                     aria-label={`view ${idx + 1}`}
                   >
-                    <img src={img} alt={`${displayName} ${idx + 1}`} className="w-full h-full object-cover" loading="lazy" />
+                    <ShirtImage src={img} fallback={(selected as { fallback?: string | null }).fallback} alt={`${displayName} ${idx + 1}`} className="w-full h-full object-cover" />
                   </button>
                 ))}
               </div>
@@ -175,15 +179,11 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
 
               <div className="order-1 md:order-1 flex-1 flex flex-col items-center justify-center min-h-[60vh] md:min-h-0 gap-3">
                 <div className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded select-none">
-                  <motion.img
-                    key={activeImage}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.25 }}
+                  <ZoomableImage
+                    key={gallery[activeImage]}
                     src={gallery[activeImage]}
+                    fallback={(selected as { fallback?: string | null }).fallback}
                     alt={displayName}
-                    draggable={false}
-                    className="w-full h-full object-contain"
                   />
                 </div>
                 {gallery.length > 1 && (

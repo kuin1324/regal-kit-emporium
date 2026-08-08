@@ -186,5 +186,26 @@
     "decade": "Décennie",
     "league": "Championnat",
     "letter": "Lettre"
+  },
+  "chat": {
+    "title": "Assistant HOFS",
+    "welcome": "Salut ! 👋 Posez-moi vos questions sur nos maillots, tailles, livraison ou commande.",
+    "subtitle": "Réponse en quelques secondes",
+    "placeholder": "Posez votre question…",
+    "send": "Envoyer",
+    "thinking": "En train d'écrire…",
+    "open": "Discuter avec notre assistant",
+    "drag": "Déplacez-moi",
+    "error": "Une erreur est survenue. Réessayez ou écrivez-nous.",
+    "rateLimit": "Un peu chargé — réessayez bientôt.",
+    "noCredits": "L'assistant est momentanément indisponible. Écrivez-nous !"
+  },
+  "selection": {
+    "count": "{{count}} sélectionné(s)",
+    "favorite": "Favoris",
+    "cart": "Ajouter au panier (M)"
+  },
+  "notice": {
+    "monthly": "De nouveaux maillots arrivent le 1er de chaque mois !"
   }
 }

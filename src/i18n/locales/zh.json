@@ -186,5 +186,26 @@
     "decade": "年代",
     "league": "联赛",
     "letter": "字母"
+  },
+  "chat": {
+    "title": "HOFS 助手",
+    "welcome": "你好！👋 关于球衣、尺码、运费或订单，尽管问我。",
+    "subtitle": "通常几秒内回复",
+    "placeholder": "输入你的问题…",
+    "send": "发送",
+    "thinking": "正在输入…",
+    "open": "与助手聊天",
+    "drag": "拖动我",
+    "error": "出错了，请重试或给我们发邮件。",
+    "rateLimit": "有点忙，请稍后再试。",
+    "noCredits": "助手暂时不可用，欢迎发邮件给我们！"
+  },
+  "selection": {
+    "count": "已选 {{count}} 件",
+    "favorite": "收藏",
+    "cart": "加入购物车 (M)"
+  },
+  "notice": {
+    "monthly": "每月 1 号上新球衣！"
   }
 }

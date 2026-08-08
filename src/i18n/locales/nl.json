@@ -187,5 +187,26 @@
     "decade": "Jaren",
     "league": "Competitie",
     "letter": "Letter"
+  },
+  "chat": {
+    "title": "HOFS Assistent",
+    "welcome": "Hoi! 👋 Vraag me alles over onze shirts, maten, verzending of je bestelling.",
+    "subtitle": "Meestal binnen enkele seconden antwoord",
+    "placeholder": "Stel je vraag…",
+    "send": "Versturen",
+    "thinking": "Aan het typen…",
+    "open": "Chat met onze assistent",
+    "drag": "Sleep me naar een andere plek",
+    "error": "Er ging iets mis. Probeer het opnieuw of mail ons.",
+    "rateLimit": "Even te druk — probeer het zo nog eens.",
+    "noCredits": "De assistent is tijdelijk niet beschikbaar. Mail ons gerust!"
+  },
+  "selection": {
+    "count": "{{count}} geselecteerd",
+    "favorite": "Favorieten",
+    "cart": "In winkelmandje (M)"
+  },
+  "notice": {
+    "monthly": "Elke 1e van de maand komen er nieuwe shirts online!"
   }
 }

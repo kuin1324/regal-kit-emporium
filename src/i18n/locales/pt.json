@@ -186,5 +186,26 @@
     "decade": "Década",
     "league": "Liga",
     "letter": "Letra"
+  },
+  "chat": {
+    "title": "Assistente HOFS",
+    "welcome": "Olá! 👋 Pergunte-me sobre camisas, tamanhos, envio ou a sua encomenda.",
+    "subtitle": "Costuma responder em segundos",
+    "placeholder": "Escreva a sua pergunta…",
+    "send": "Enviar",
+    "thinking": "A escrever…",
+    "open": "Falar com o assistente",
+    "drag": "Arraste-me para outro sítio",
+    "error": "Algo correu mal. Tente novamente ou envie-nos um e-mail.",
+    "rateLimit": "Muito movimento — tente daqui a pouco.",
+    "noCredits": "O assistente está temporariamente indisponível. Escreva-nos!"
+  },
+  "selection": {
+    "count": "{{count}} selecionados",
+    "favorite": "Favoritos",
+    "cart": "Adicionar ao carrinho (M)"
+  },
+  "notice": {
+    "monthly": "Todo dia 1 do mês chegam camisas novas!"
   }
 }

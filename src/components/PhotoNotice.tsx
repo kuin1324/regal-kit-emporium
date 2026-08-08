@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 const PhotoNotice = () => {
   const { t } = useTranslation();
   return (
+    <>
     <div className="mb-6 flex items-start gap-3 rounded-xl border border-border/60 bg-card/60 px-4 py-3">
       <Info className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
       <p className="text-xs leading-relaxed text-muted-foreground">
@@ -14,6 +15,12 @@ const PhotoNotice = () => {
         })}
       </p>
     </div>
+    <div className="mb-6 rounded-xl border border-primary/40 bg-primary/5 px-4 py-3">
+      <p className="text-xs font-semibold text-primary">
+        {t("notice.monthly", { defaultValue: "Elke 1e van de maand komen er nieuwe shirts online!" })}
+      </p>
+    </div>
+    </>
   );
 };
 

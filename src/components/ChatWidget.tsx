@@ -160,7 +160,7 @@ const ChatWidget = () => {
                 <Bot className="h-5 w-5" />
               </span>
               <div className="min-w-0">
-                <p className="font-display text-sm font-semibold leading-tight">HOFS Assistent</p>
+                <p className="font-display text-sm font-semibold leading-tight">{t("chat.title", { defaultValue: "HOFS Assistent" })}</p>
                 <p className="text-[11px] text-white/80">{t("chat.subtitle", { defaultValue: "Meestal binnen enkele seconden antwoord" })}</p>
               </div>
             </div>

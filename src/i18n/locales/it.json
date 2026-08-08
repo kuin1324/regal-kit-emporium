@@ -186,5 +186,26 @@
     "decade": "Decennio",
     "league": "Campionato",
     "letter": "Lettera"
+  },
+  "chat": {
+    "title": "Assistente HOFS",
+    "welcome": "Ciao! 👋 Chiedimi tutto su maglie, taglie, spedizione o il tuo ordine.",
+    "subtitle": "Di solito risponde in pochi secondi",
+    "placeholder": "Scrivi la tua domanda…",
+    "send": "Invia",
+    "thinking": "Sta scrivendo…",
+    "open": "Chatta con il nostro assistente",
+    "drag": "Trascinami altrove",
+    "error": "Qualcosa è andato storto. Riprova o scrivici.",
+    "rateLimit": "C'è molto traffico — riprova tra poco.",
+    "noCredits": "L'assistente non è disponibile al momento. Scrivici pure!"
+  },
+  "selection": {
+    "count": "{{count}} selezionate",
+    "favorite": "Preferiti",
+    "cart": "Aggiungi al carrello (M)"
+  },
+  "notice": {
+    "monthly": "Ogni 1° del mese arrivano nuove maglie!"
   }
 }

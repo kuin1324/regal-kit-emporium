@@ -1,4 +1,7 @@
-// Sends a new-order email to the shop's Outlook inbox via the Microsoft Outlook connector gateway.
+// Verstuurt een bestelmail naar de Outlook-inbox van de shop.
+// De inhoud komt uit de opgeslagen bestelling (server-side prijzen), niet uit de browser.
+import { createClient } from "npm:@supabase/supabase-js@2";
+
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
@@ -6,11 +9,14 @@ const corsHeaders = {
 
 const GATEWAY_URL = "https://connector-gateway.lovable.dev/microsoft_outlook";
 
-interface OrderItem {
-  name: string;
-  size: string;
-  quantity: number;
-  price: number;
+interface StoredItem {
+  name?: string;
+  sku?: string | null;
+  size?: string;
+  quantity?: number;
+  price?: number;
+  customName?: string | null;
+  customNumber?: string | null;
 }
 
 Deno.serve(async (req) => {
@@ -22,52 +28,50 @@ Deno.serve(async (req) => {
     if (!LOVABLE_API_KEY) throw new Error("LOVABLE_API_KEY missing");
     if (!OUTLOOK_API_KEY) throw new Error("MICROSOFT_OUTLOOK_API_KEY missing");
 
-    const { subject, body, items, total, preorders } = await req.json() as {
-      subject?: string; body?: string; items?: OrderItem[]; total?: number;
-      preorders?: { key: string; quantity: number }[];
-    };
-    if (!subject || !body) {
-      return new Response(JSON.stringify({ error: "subject and body required" }), {
+    const body = await req.json().catch(() => null) as { orderNumber?: unknown; email?: unknown } | null;
+    const orderNumber = typeof body?.orderNumber === "string" ? body.orderNumber.trim().slice(0, 32) : "";
+    const email = typeof body?.email === "string" ? body.email.trim().slice(0, 255).toLowerCase() : "";
+    if (!orderNumber || !email) {
+      return new Response(JSON.stringify({ error: "orderNumber and email required" }), {
         status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
 
-    // Pre-order tellers bijwerken (alleen server-side, met service role).
-    if (preorders?.length) {
-      const url = Deno.env.get("SUPABASE_URL");
-      const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-      if (url && serviceKey) {
-        for (const p of preorders) {
-          if (!p?.key || !p.quantity) continue;
-          try {
-            await fetch(`${url}/rest/v1/rpc/increment_preorder`, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                apikey: serviceKey,
-                Authorization: `Bearer ${serviceKey}`,
-              },
-              body: JSON.stringify({ _product_key: p.key, _qty: p.quantity }),
-            });
-          } catch (err) {
-            console.error("increment_preorder failed", p.key, err);
-          }
-        }
-      }
+    const admin = createClient(
+      Deno.env.get("SUPABASE_URL")!,
+      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
+      { auth: { persistSession: false } },
+    );
+
+    const { data: order, error } = await admin
+      .from("orders")
+      .select("order_number, email, items, subtotal, shipping, total")
+      .eq("order_number", orderNumber)
+      .eq("email", email)
+      .maybeSingle();
+
+    if (error) throw new Error(error.message);
+    if (!order) {
+      return new Response(JSON.stringify({ error: "Bestelling niet gevonden" }), {
+        status: 404, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
     }
 
-
-    // Build a nice HTML body
-    const rows = (items ?? []).map(i =>
-      `<tr><td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(i.name)}</td>
-       <td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(i.size)}</td>
-       <td style="padding:6px 10px;border-bottom:1px solid #eee">${i.quantity}</td>
-       <td style="padding:6px 10px;border-bottom:1px solid #eee">€${i.price * i.quantity}</td></tr>`
-    ).join("");
+    const items = (Array.isArray(order.items) ? order.items : []) as StoredItem[];
+    const rows = items.map((i) => {
+      const extra = [i.customName, i.customNumber ? `#${i.customNumber}` : null].filter(Boolean).join(" ");
+      return `<tr><td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.name ?? ""))}${
+        i.sku ? ` <small style="color:#888">[${escapeHtml(String(i.sku))}]</small>` : ""
+      }${extra ? `<br/><small>${escapeHtml(extra)}</small>` : ""}</td>
+       <td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.size ?? ""))}</td>
+       <td style="padding:6px 10px;border-bottom:1px solid #eee">${Number(i.quantity ?? 0)}</td>
+       <td style="padding:6px 10px;border-bottom:1px solid #eee">€${Number(i.price ?? 0) * Number(i.quantity ?? 0)}</td></tr>`;
+    }).join("");
 
     const html = `
       <div style="font-family:Arial,sans-serif;color:#111">
         <h2 style="color:#D4A017">🛒 Nieuwe bestelling — The Home of Football Style</h2>
+        <p>📦 Bestelnummer: <b>${escapeHtml(order.order_number)}</b><br/>✉️ E-mail: ${escapeHtml(order.email)}</p>
         <table style="border-collapse:collapse;width:100%;max-width:600px;margin-top:12px">
           <thead><tr style="background:#f5f5f5">
             <th style="text-align:left;padding:8px 10px">Shirt</th>
@@ -77,12 +81,10 @@ Deno.serve(async (req) => {
           </tr></thead>
           <tbody>${rows}</tbody>
         </table>
-        <p style="margin-top:16px;font-size:16px"><b>Totaal: €${total ?? 0}</b></p>
-        <hr style="margin:20px 0"/>
-        <pre style="font-family:Arial;white-space:pre-wrap;color:#444">${escapeHtml(body)}</pre>
+        <p style="margin-top:16px">Subtotaal: €${order.subtotal}<br/>Verzending: €${order.shipping}</p>
+        <p style="font-size:16px"><b>Totaal: €${order.total}</b></p>
       </div>`;
 
-    // Always send to the shop's Outlook inbox
     const recipient = "the_home_of_football_style@outlook.com";
 
     const sendRes = await fetch(`${GATEWAY_URL}/me/sendMail`, {
@@ -94,7 +96,7 @@ Deno.serve(async (req) => {
       },
       body: JSON.stringify({
         message: {
-          subject,
+          subject: `Nieuwe bestelling ${order.order_number} — €${order.total}`,
           body: { contentType: "HTML", content: html },
           toRecipients: [{ emailAddress: { address: recipient } }],
         },
@@ -107,13 +109,12 @@ Deno.serve(async (req) => {
       throw new Error(`Outlook send failed [${sendRes.status}]: ${txt}`);
     }
 
-    return new Response(JSON.stringify({ success: true, sentTo: recipient }), {
+    return new Response(JSON.stringify({ success: true }), {
       status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   } catch (e) {
-    const msg = e instanceof Error ? e.message : "Unknown error";
-    console.error("send-order-email error:", msg);
-    return new Response(JSON.stringify({ success: false, error: msg }), {
+    console.error("send-order-email error:", e instanceof Error ? e.message : e);
+    return new Response(JSON.stringify({ success: false, error: "E-mail versturen mislukt" }), {
       status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   }

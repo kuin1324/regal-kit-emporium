@@ -123,7 +123,28 @@ const COUNTRIES: [string, Record<Lang, string>][] = [
   ["China", { nl: "China", en: "China", fr: "Chine", de: "China", es: "China", pt: "China", it: "Cina", zh: "中国" }],
   ["Canada", { nl: "Canada", en: "Canada", fr: "Canada", de: "Kanada", es: "Canadá", pt: "Canadá", it: "Canada", zh: "加拿大" }],
   ["Australia", { nl: "Australië", en: "Australia", fr: "Australie", de: "Australien", es: "Australia", pt: "Austrália", it: "Australia", zh: "澳大利亚" }],
+  ["Ivory Coast", { nl: "Ivoorkust", en: "Ivory Coast", fr: "Côte d'Ivoire", de: "Elfenbeinküste", es: "Costa de Marfil", pt: "Costa do Marfim", it: "Costa d'Avorio", zh: "科特迪瓦" }],
+  ["Cameroon", { nl: "Kameroen", en: "Cameroon", fr: "Cameroun", de: "Kamerun", es: "Camerún", pt: "Camarões", it: "Camerun", zh: "喀麦隆" }],
+  ["Jamaica", { nl: "Jamaica", en: "Jamaica", fr: "Jamaïque", de: "Jamaika", es: "Jamaica", pt: "Jamaica", it: "Giamaica", zh: "牙买加" }],
+  ["Ecuador", { nl: "Ecuador", en: "Ecuador", fr: "Équateur", de: "Ecuador", es: "Ecuador", pt: "Equador", it: "Ecuador", zh: "厄瓜多尔" }],
+  ["Peru", { nl: "Peru", en: "Peru", fr: "Pérou", de: "Peru", es: "Perú", pt: "Peru", it: "Perù", zh: "秘鲁" }],
+  ["Romania", { nl: "Roemenië", en: "Romania", fr: "Roumanie", de: "Rumänien", es: "Rumanía", pt: "Roménia", it: "Romania", zh: "罗马尼亚" }],
+  ["Qatar", { nl: "Qatar", en: "Qatar", fr: "Qatar", de: "Katar", es: "Catar", pt: "Catar", it: "Qatar", zh: "卡塔尔" }],
+  ["Ghana", { nl: "Ghana", en: "Ghana", fr: "Ghana", de: "Ghana", es: "Ghana", pt: "Gana", it: "Ghana", zh: "加纳" }],
+  ["Mali", { nl: "Mali", en: "Mali", fr: "Mali", de: "Mali", es: "Mali", pt: "Mali", it: "Mali", zh: "马里" }],
+  ["Palestine", { nl: "Palestina", en: "Palestine", fr: "Palestine", de: "Palästina", es: "Palestina", pt: "Palestina", it: "Palestina", zh: "巴勒斯坦" }],
+  ["Palestina", { nl: "Palestina", en: "Palestine", fr: "Palestine", de: "Palästina", es: "Palestina", pt: "Palestina", it: "Palestina", zh: "巴勒斯坦" }],
+  ["DR Congo", { nl: "DR Congo", en: "DR Congo", fr: "RD Congo", de: "DR Kongo", es: "RD Congo", pt: "RD Congo", it: "RD Congo", zh: "刚果（金）" }],
+  ["South Africa", { nl: "Zuid-Afrika", en: "South Africa", fr: "Afrique du Sud", de: "Südafrika", es: "Sudáfrica", pt: "África do Sul", it: "Sudafrica", zh: "南非" }],
+  ["Saudi Arabia", { nl: "Saoedi-Arabië", en: "Saudi Arabia", fr: "Arabie Saoudite", de: "Saudi-Arabien", es: "Arabia Saudí", pt: "Arábia Saudita", it: "Arabia Saudita", zh: "沙特阿拉伯" }],
+  ["United Arab Emirates", { nl: "Verenigde Arabische Emiraten", en: "United Arab Emirates", fr: "Émirats Arabes Unis", de: "Vereinigte Arabische Emirate", es: "Emiratos Árabes Unidos", pt: "Emirados Árabes Unidos", it: "Emirati Arabi Uniti", zh: "阿联酋" }],
+  ["Hong Kong", { nl: "Hongkong", en: "Hong Kong", fr: "Hong Kong", de: "Hongkong", es: "Hong Kong", pt: "Hong Kong", it: "Hong Kong", zh: "香港" }],
+  ["Malaysia", { nl: "Maleisië", en: "Malaysia", fr: "Malaisie", de: "Malaysia", es: "Malasia", pt: "Malásia", it: "Malesia", zh: "马来西亚" }],
+  ["Iraq", { nl: "Irak", en: "Iraq", fr: "Irak", de: "Irak", es: "Irak", pt: "Iraque", it: "Iraq", zh: "伊拉克" }],
+  ["Cape Verde", { nl: "Kaapverdië", en: "Cape Verde", fr: "Cap-Vert", de: "Kap Verde", es: "Cabo Verde", pt: "Cabo Verde", it: "Capo Verde", zh: "佛得角" }],
+  ["USA", { nl: "VS", en: "USA", fr: "États-Unis", de: "USA", es: "EE.UU.", pt: "EUA", it: "USA", zh: "美国" }],
 ];
+
 
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 

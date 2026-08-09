@@ -52,7 +52,7 @@ const estimatedDelivery = (r: TrackResult, locale: string): string | null => {
 
 const TrackTrace = () => {
   const { t, i18n } = useTranslation();
-  const locale = i18n.language || "nl";
+  const locale = i18n.language || "en-GB";
   const [orderNumber, setOrderNumber] = useState("");
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);

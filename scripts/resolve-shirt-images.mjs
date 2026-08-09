@@ -78,7 +78,7 @@ function resolve(name) {
 const src = fs.readFileSync(DATA, "utf8");
 const start = src.indexOf("= [");
 const header = src.slice(0, start + 2);
-const end = src.lastIndexOf("]");
+const end = src.lastIndexOf("\n]") + 1;
 const footer = src.slice(end + 1);
 const arr = JSON.parse(src.slice(start + 2, end + 1));
 

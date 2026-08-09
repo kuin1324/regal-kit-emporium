@@ -2,7 +2,7 @@
   "nav": {
     "collection": "Collectie",
     "retro": "Retro",
-    "specialEdition": "Special Edition",
+    "specialEdition": "Speciale Editie",
     "stock": "Voorraad",
     "about": "Over Ons",
     "favorites": "Favorieten",
@@ -238,7 +238,7 @@
   },
   "stock": {
     "eyebrow": "Voorraad",
-    "title": "Ready to Ship & Incoming Stock",
+    "title": "Direct Leverbaar & Binnenkort Binnen",
     "subtitle": "Bekijk wat direct verzendklaar is en welke shirts onderweg zijn — pre-order nu jouw favoriet.",
     "ready": "Direct leverbaar",
     "incoming": "Onderweg",
@@ -249,7 +249,7 @@
     "soon": "Binnenkort — pre-order mogelijk"
   },
   "track": {
-    "eyebrow": "Track & Trace",
+    "eyebrow": "Volgen & Traceren",
     "title": "Volg je bestelling",
     "subtitle": "Vul je bestelnummer en e-mailadres in om de status te zien.",
     "orderPlaceholder": "Bestelnummer (bijv. HOFS-4821)",

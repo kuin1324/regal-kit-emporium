@@ -7,6 +7,12 @@ import { useTranslation } from "react-i18next";
 import CollectionView from "@/components/CollectionView";
 import ProductDetailModal from "@/components/ProductDetailModal";
 import { collectieShirts } from "@/data/collectie_shirts";
+import { publicCollectieShirts } from "@/data/public_collectie";
+
+const allCollectieItems = [
+  ...collectieShirts,
+  ...publicCollectieShirts.filter((p) => !collectieShirts.some((c) => c.name === p.name)),
+];
 
 const Collectie = () => {
   const { t } = useTranslation();
@@ -23,7 +29,7 @@ const Collectie = () => {
             <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">{t("collection.title")}</h1>
           </motion.div>
 
-          <CollectionView items={collectieShirts} onSelect={setSelectedProduct} />
+          <CollectionView items={allCollectieItems} onSelect={setSelectedProduct} />
         </div>
       </section>
       <Footer />

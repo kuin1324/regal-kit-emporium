@@ -126,7 +126,17 @@
     "numberPlaceholder": "号",
     "doubleClickHint": "双击放大",
     "doubleClickZoom": "双击放大",
-    "exitFocus": "双击退出"
+    "exitFocus": "双击退出",
+    "variant": "球衣 {{n}}",
+    "addAnother": "+ 添加另一件球衣",
+    "shippingRates": "运费",
+    "free": "免费",
+    "shirtsLabel": "件球衣",
+    "favorite": "收藏",
+    "close": "关闭",
+    "remove": "移除",
+    "previous": "上一张",
+    "next": "下一张"
   },
   "cart": {
     "title": "购物车",
@@ -208,12 +218,15 @@
     "drag": "拖动我",
     "error": "出错了，请重试或给我们发邮件。",
     "rateLimit": "有点忙，请稍后再试。",
-    "noCredits": "助手暂时不可用，欢迎发邮件给我们！"
+    "noCredits": "助手暂时不可用，欢迎发邮件给我们！",
+    "close": "关闭聊天"
   },
   "selection": {
     "count": "已选 {{count}} 件",
     "favorite": "收藏",
-    "cart": "加入购物车 (M)"
+    "cart": "加入购物车 (M)",
+    "configure": "尺码、姓名和号码",
+    "addAll": "添加 {{count}} 件球衣"
   },
   "notice": {
     "monthly": "每月 1 号上新球衣！",
@@ -232,7 +245,8 @@
     "preorder": "预订",
     "shipping": "满6件免运费。1–2件 €5，3–5件 €3。每件价格见下方产品。",
     "preorderInfo": "这些球衣仍在途中。现在即可预订 — 到货后立即发货。",
-    "preorderShipping": "满6件免运费 — 1–2件 €5，3–5件 €3。"
+    "preorderShipping": "满6件免运费 — 1–2件 €5，3–5件 €3。",
+    "soon": "即将上架 — 可预订"
   },
   "track": {
     "eyebrow": "订单追踪",

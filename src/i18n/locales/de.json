@@ -126,7 +126,17 @@
     "numberPlaceholder": "Nr.",
     "doubleClickHint": "Doppelklick zum Zoomen",
     "doubleClickZoom": "Doppelklick zum Zoomen",
-    "exitFocus": "Doppelklick zum Schließen"
+    "exitFocus": "Doppelklick zum Schließen",
+    "variant": "Trikot {{n}}",
+    "addAnother": "+ Weiteres Trikot hinzufügen",
+    "shippingRates": "Versandkosten",
+    "free": "GRATIS",
+    "shirtsLabel": "Trikots",
+    "favorite": "Favorit",
+    "close": "Schließen",
+    "remove": "Entfernen",
+    "previous": "Zurück",
+    "next": "Weiter"
   },
   "cart": {
     "title": "Warenkorb",
@@ -208,12 +218,15 @@
     "drag": "Zieh mich woanders hin",
     "error": "Etwas ist schiefgelaufen. Versuche es erneut oder schreib uns.",
     "rateLimit": "Gerade viel los — versuche es gleich nochmal.",
-    "noCredits": "Der Assistent ist vorübergehend nicht verfügbar. Schreib uns gerne!"
+    "noCredits": "Der Assistent ist vorübergehend nicht verfügbar. Schreib uns gerne!",
+    "close": "Chat schließen"
   },
   "selection": {
     "count": "{{count}} ausgewählt",
     "favorite": "Favoriten",
-    "cart": "In den Warenkorb (M)"
+    "cart": "In den Warenkorb (M)",
+    "configure": "Größe, Name & Nummer",
+    "addAll": "{{count}} Trikots hinzufügen"
   },
   "notice": {
     "monthly": "Am 1. jedes Monats kommen neue Trikots online!",
@@ -232,7 +245,8 @@
     "preorder": "Vorbestellung",
     "shipping": "Kostenloser Versand ab 6 Trikots. 1–2 Trikots 5 €, 3–5 Trikots 3 €. Preise stehen unter jedem Produkt.",
     "preorderInfo": "Diese Trikots sind noch unterwegs. Jetzt vorbestellen — wir versenden sofort nach Eingang.",
-    "preorderShipping": "Kostenloser Versand ab 6 Trikots — 1–2: 5 €, 3–5: 3 €."
+    "preorderShipping": "Kostenloser Versand ab 6 Trikots — 1–2: 5 €, 3–5: 3 €.",
+    "soon": "Bald verfügbar — Vorbestellung möglich"
   },
   "track": {
     "eyebrow": "Sendungsverfolgung",

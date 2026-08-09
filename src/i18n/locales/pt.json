@@ -126,7 +126,17 @@
     "numberPlaceholder": "Nº",
     "doubleClickHint": "Clique duplo para ampliar",
     "doubleClickZoom": "Clique duplo para ampliar",
-    "exitFocus": "Clique duplo para sair"
+    "exitFocus": "Clique duplo para sair",
+    "variant": "Camisa {{n}}",
+    "addAnother": "+ Adicionar outra camisa",
+    "shippingRates": "Portes de envio",
+    "free": "GRÁTIS",
+    "shirtsLabel": "camisas",
+    "favorite": "Favorito",
+    "close": "Fechar",
+    "remove": "Remover",
+    "previous": "Anterior",
+    "next": "Seguinte"
   },
   "cart": {
     "title": "Carrinho",
@@ -208,12 +218,15 @@
     "drag": "Arraste-me para outro sítio",
     "error": "Algo correu mal. Tente novamente ou envie-nos um e-mail.",
     "rateLimit": "Muito movimento — tente daqui a pouco.",
-    "noCredits": "O assistente está temporariamente indisponível. Escreva-nos!"
+    "noCredits": "O assistente está temporariamente indisponível. Escreva-nos!",
+    "close": "Fechar chat"
   },
   "selection": {
     "count": "{{count}} selecionados",
     "favorite": "Favoritos",
-    "cart": "Adicionar ao carrinho (M)"
+    "cart": "Adicionar ao carrinho (M)",
+    "configure": "Tamanho, nome e número",
+    "addAll": "Adicionar {{count}} camisas"
   },
   "notice": {
     "monthly": "Todo dia 1 do mês chegam camisas novas!",
@@ -232,7 +245,8 @@
     "preorder": "Pré-encomenda",
     "shipping": "Envio grátis a partir de 6 camisas. 1–2 camisas 5 €, 3–5 camisas 3 €. Os preços estão sob cada produto.",
     "preorderInfo": "Estas camisas estão a caminho. Pré-encomende agora — enviamos assim que chegarem.",
-    "preorderShipping": "Envio grátis a partir de 6 camisas — 1–2: 5 €, 3–5: 3 €."
+    "preorderShipping": "Envio grátis a partir de 6 camisas — 1–2: 5 €, 3–5: 3 €.",
+    "soon": "Em breve — pré-encomenda disponível"
   },
   "track": {
     "eyebrow": "Rastreio",

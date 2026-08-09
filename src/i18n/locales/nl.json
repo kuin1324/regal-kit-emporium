@@ -10,7 +10,7 @@
     "login": "Inloggen",
     "logout": "Uitloggen",
     "account": "Account",
-    "longSleeve": "Lange Mouw Shirts"
+    "longSleeve": "Lange Mouwe Shirts"
   },
   "search": {
     "placeholder": "Zoek een shirt, team of league...",
@@ -127,7 +127,17 @@
     "numberPlaceholder": "Nr.",
     "doubleClickHint": "Dubbel-klik om in te zoomen",
     "doubleClickZoom": "Dubbel-klik om te zoomen",
-    "exitFocus": "Dubbel-klik om te sluiten"
+    "exitFocus": "Dubbel-klik om te sluiten",
+    "variant": "Shirt {{n}}",
+    "addAnother": "+ Nog een shirt toevoegen",
+    "shippingRates": "Verzendkosten",
+    "free": "GRATIS",
+    "shirtsLabel": "shirts",
+    "favorite": "Favoriet",
+    "close": "Sluiten",
+    "remove": "Verwijderen",
+    "previous": "Vorige",
+    "next": "Volgende"
   },
   "cart": {
     "title": "Winkelmandje",
@@ -209,12 +219,15 @@
     "drag": "Sleep me naar een andere plek",
     "error": "Er ging iets mis. Probeer het opnieuw of mail ons.",
     "rateLimit": "Even te druk — probeer het zo nog eens.",
-    "noCredits": "De assistent is tijdelijk niet beschikbaar. Mail ons gerust!"
+    "noCredits": "De assistent is tijdelijk niet beschikbaar. Mail ons gerust!",
+    "close": "Chat sluiten"
   },
   "selection": {
     "count": "{{count}} geselecteerd",
     "favorite": "Favorieten",
-    "cart": "In winkelmandje (M)"
+    "cart": "In winkelmandje (M)",
+    "configure": "Maat, naam & nummer",
+    "addAll": "{{count}} shirts toevoegen"
   },
   "notice": {
     "monthly": "Elke 1e van de maand komen er nieuwe shirts online!"
@@ -232,7 +245,8 @@
     "preorder": "Pre-order",
     "shipping": "Gratis verzending vanaf 6 shirts. 1–2 shirts €5, 3–5 shirts €3. Prijzen per shirt staan hieronder bij elk product.",
     "preorderInfo": "Deze shirts zijn nog onderweg. Je kunt ze nu al pre-orderen — wij sturen ze zodra ze binnenkomen.",
-    "preorderShipping": "Gratis verzending vanaf 6 shirts — 1–2 shirts €5, 3–5 shirts €3."
+    "preorderShipping": "Gratis verzending vanaf 6 shirts — 1–2 shirts €5, 3–5 shirts €3.",
+    "soon": "Binnenkort — pre-order mogelijk"
   },
   "track": {
     "eyebrow": "Track & Trace",

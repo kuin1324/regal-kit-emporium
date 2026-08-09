@@ -126,7 +126,17 @@
     "numberPlaceholder": "N°",
     "doubleClickHint": "Double-cliquez pour zoomer",
     "doubleClickZoom": "Double-cliquez pour zoomer",
-    "exitFocus": "Double-cliquez pour quitter"
+    "exitFocus": "Double-cliquez pour quitter",
+    "variant": "Maillot {{n}}",
+    "addAnother": "+ Ajouter un autre maillot",
+    "shippingRates": "Frais de port",
+    "free": "GRATUIT",
+    "shirtsLabel": "maillots",
+    "favorite": "Favori",
+    "close": "Fermer",
+    "remove": "Supprimer",
+    "previous": "Précédent",
+    "next": "Suivant"
   },
   "cart": {
     "title": "Panier",
@@ -208,12 +218,15 @@
     "drag": "Déplacez-moi",
     "error": "Une erreur est survenue. Réessayez ou écrivez-nous.",
     "rateLimit": "Un peu chargé — réessayez bientôt.",
-    "noCredits": "L'assistant est momentanément indisponible. Écrivez-nous !"
+    "noCredits": "L'assistant est momentanément indisponible. Écrivez-nous !",
+    "close": "Fermer le chat"
   },
   "selection": {
     "count": "{{count}} sélectionné(s)",
     "favorite": "Favoris",
-    "cart": "Ajouter au panier (M)"
+    "cart": "Ajouter au panier (M)",
+    "configure": "Taille, nom et numéro",
+    "addAll": "Ajouter {{count}} maillots"
   },
   "notice": {
     "monthly": "De nouveaux maillots arrivent le 1er de chaque mois !",
@@ -232,7 +245,8 @@
     "preorder": "Précommande",
     "shipping": "Livraison gratuite dès 6 maillots. 1–2 maillots 5 €, 3–5 maillots 3 €. Les prix sont indiqués sous chaque produit.",
     "preorderInfo": "Ces maillots sont en route. Précommandez maintenant — nous expédions dès leur arrivée.",
-    "preorderShipping": "Livraison gratuite dès 6 maillots — 1–2 : 5 €, 3–5 : 3 €."
+    "preorderShipping": "Livraison gratuite dès 6 maillots — 1–2 : 5 €, 3–5 : 3 €.",
+    "soon": "Bientôt — précommande possible"
   },
   "track": {
     "eyebrow": "Suivi de commande",

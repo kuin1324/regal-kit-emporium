@@ -22,7 +22,7 @@ const Collectie = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <section className="pb-24 pt-28">
-        <div className="container mx-auto px-6">
+        <div className="w-full px-2 sm:px-3">
           <PhotoNotice />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="mb-10 text-center">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">{t("collection.eyebrow")}</p>

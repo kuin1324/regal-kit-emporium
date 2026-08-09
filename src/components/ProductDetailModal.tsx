@@ -41,6 +41,7 @@ import { publicCollectieShirts } from "@/data/public_collectie";
 import ZoomableImage from "@/components/ZoomableImage";
 import ShirtImage from "@/components/ShirtImage";
 import { useAdminView } from "@/lib/admin";
+import { useProductName } from "@/lib/productName";
 
 export const allProducts = [
   { image: italySpecialFront, gallery: [italySpecialFront, italySpecialBack], name: "Italië Special Trainingsshirt", nameKey: "italySpecialTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Italië special trainingsshirt met uniek zwart-wit ornament design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "zwart"], availability: "incoming" as const },
@@ -96,9 +97,12 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
   const { t } = useTranslation();
   const { format } = useCurrency();
   const isAdmin = useAdminView();
+  const translate = useProductName();
 
   const selected = productName ? allProducts.find(p => p.name === productName) : null;
-  const displayName = selected ? t(`products.${selected.nameKey}`, { defaultValue: selected.name }) : "";
+  const displayName = selected
+    ? t(`products.${selected.nameKey}`, { defaultValue: translate(selected.name) })
+    : "";
 
   useEffect(() => {
     setActiveImage(0);

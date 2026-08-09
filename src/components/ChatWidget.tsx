@@ -163,6 +163,15 @@ const ChatWidget = () => {
                 <p className="font-display text-sm font-semibold leading-tight">{t("chat.title", { defaultValue: "HOFS Assistent" })}</p>
                 <p className="text-[11px] text-white/80">{t("chat.subtitle", { defaultValue: "Meestal binnen enkele seconden antwoord" })}</p>
               </div>
+              <button
+                type="button"
+                onClick={() => setOpen(false)}
+                aria-label={t("chat.close")}
+                title={t("chat.close")}
+                className="ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/35"
+              >
+                <X className="h-4 w-4" />
+              </button>
             </div>
 
 

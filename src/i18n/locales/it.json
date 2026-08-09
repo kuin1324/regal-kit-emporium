@@ -126,7 +126,17 @@
     "numberPlaceholder": "N°",
     "doubleClickHint": "Doppio clic per zoomare",
     "doubleClickZoom": "Doppio clic per zoomare",
-    "exitFocus": "Doppio clic per uscire"
+    "exitFocus": "Doppio clic per uscire",
+    "variant": "Maglia {{n}}",
+    "addAnother": "+ Aggiungi un'altra maglia",
+    "shippingRates": "Spese di spedizione",
+    "free": "GRATIS",
+    "shirtsLabel": "maglie",
+    "favorite": "Preferito",
+    "close": "Chiudi",
+    "remove": "Rimuovi",
+    "previous": "Precedente",
+    "next": "Successivo"
   },
   "cart": {
     "title": "Carrello",
@@ -208,12 +218,15 @@
     "drag": "Trascinami altrove",
     "error": "Qualcosa è andato storto. Riprova o scrivici.",
     "rateLimit": "C'è molto traffico — riprova tra poco.",
-    "noCredits": "L'assistente non è disponibile al momento. Scrivici pure!"
+    "noCredits": "L'assistente non è disponibile al momento. Scrivici pure!",
+    "close": "Chiudi chat"
   },
   "selection": {
     "count": "{{count}} selezionate",
     "favorite": "Preferiti",
-    "cart": "Aggiungi al carrello (M)"
+    "cart": "Aggiungi al carrello (M)",
+    "configure": "Taglia, nome e numero",
+    "addAll": "Aggiungi {{count}} maglie"
   },
   "notice": {
     "monthly": "Ogni 1° del mese arrivano nuove maglie!",
@@ -232,7 +245,8 @@
     "preorder": "Preordine",
     "shipping": "Spedizione gratuita da 6 maglie. 1–2 maglie 5 €, 3–5 maglie 3 €. I prezzi sono indicati sotto ogni prodotto.",
     "preorderInfo": "Queste maglie sono in arrivo. Preordina ora — spediamo appena arrivano.",
-    "preorderShipping": "Spedizione gratuita da 6 maglie — 1–2: 5 €, 3–5: 3 €."
+    "preorderShipping": "Spedizione gratuita da 6 maglie — 1–2: 5 €, 3–5: 3 €.",
+    "soon": "Presto — preordine disponibile"
   },
   "track": {
     "eyebrow": "Tracciamento",

@@ -155,10 +155,10 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
           className="fixed inset-0 z-[60] bg-background overflow-y-auto"
         >
           <div className="absolute top-4 right-4 z-10 flex gap-2">
-            <button onClick={() => toggleFavorite(selected.name)} className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors" aria-label="favorite">
+            <button onClick={() => toggleFavorite(selected.name)} className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors" aria-label={t("product.favorite")}>
               <Heart className={`h-5 w-5 ${favorites.has(selected.name) ? "fill-red-500 text-red-500" : "text-foreground"}`} />
             </button>
-            <button onClick={onClose} className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors" aria-label="close">
+            <button onClick={onClose} className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors" aria-label={t("product.close")}>
               <X className="h-5 w-5" />
             </button>
           </div>
@@ -174,7 +174,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                     className={`shrink-0 w-16 h-16 md:w-20 md:h-20 rounded overflow-hidden border-2 transition-all ${
                       activeImage === idx ? "border-primary shadow-[var(--shadow-gold)]" : "border-border hover:border-primary/50 opacity-70 hover:opacity-100"
                     }`}
-                    aria-label={`view ${idx + 1}`}
+                    aria-label={`${displayName} ${idx + 1}`}
                   >
                     <ShirtImage src={img} fallback={(selected as { fallback?: string | null }).fallback} alt={`${displayName} ${idx + 1}`} className="w-full h-full object-cover" />
                   </button>
@@ -196,7 +196,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                     <button
                       onClick={() => setActiveImage((activeImage - 1 + gallery.length) % gallery.length)}
                       className="p-2 rounded-full bg-card border border-border hover:bg-muted transition-colors"
-                      aria-label="previous"
+                      aria-label={t("product.previous")}
                     >
                       <ChevronLeft className="h-5 w-5" />
                     </button>
@@ -204,7 +204,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                     <button
                       onClick={() => setActiveImage((activeImage + 1) % gallery.length)}
                       className="p-2 rounded-full bg-card border border-border hover:bg-muted transition-colors"
-                      aria-label="next"
+                      aria-label={t("product.next")}
                     >
                       <ChevronRight className="h-5 w-5" />
                     </button>
@@ -225,9 +225,9 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 {variants.map((v, idx) => (
                   <div key={v.id} className="border border-border rounded p-4 space-y-4 relative">
                     <div className="flex items-center justify-between">
-                      <p className="text-xs font-semibold tracking-wide uppercase text-primary">Shirt {idx + 1}</p>
+                      <p className="text-xs font-semibold tracking-wide uppercase text-primary">{t("product.variant", { n: idx + 1 })}</p>
                       {variants.length > 1 && (
-                        <button onClick={() => removeVariant(v.id)} className="p-1 hover:bg-destructive/20 rounded" aria-label="remove">
+                        <button onClick={() => removeVariant(v.id)} className="p-1 hover:bg-destructive/20 rounded" aria-label={t("product.remove")}>
                           <Trash2 className="h-4 w-4 text-destructive" />
                         </button>
                       )}
@@ -294,15 +294,15 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 onClick={() => setVariants(prev => [...prev, newVariant()])}
                 className="w-full py-3 rounded border border-dashed border-primary/50 text-primary font-semibold text-sm tracking-wide uppercase hover:bg-primary/10 transition-colors mb-6"
               >
-                + Nog een shirt toevoegen
+                {t("product.addAnother")}
               </button>
 
               <div className="mb-4 rounded-lg border border-border bg-muted/30 p-4">
-                <p className="text-xs font-semibold tracking-wide uppercase mb-2">{t("product.shippingRates", { defaultValue: "Verzendkosten" })}</p>
+                <p className="text-xs font-semibold tracking-wide uppercase mb-2">{t("product.shippingRates")}</p>
                 <ul className="text-xs space-y-1">
-                  <li className="flex justify-between"><span className="text-muted-foreground">1–2 shirts</span><span className="font-semibold">€5</span></li>
-                  <li className="flex justify-between"><span className="text-muted-foreground">3–5 shirts</span><span className="font-semibold">€3</span></li>
-                  <li className="flex justify-between"><span className="text-muted-foreground">6+ shirts</span><span className="font-semibold text-gradient-gold">GRATIS</span></li>
+                  <li className="flex justify-between"><span className="text-muted-foreground">1–2 {t("product.shirtsLabel")}</span><span className="font-semibold">€5</span></li>
+                  <li className="flex justify-between"><span className="text-muted-foreground">3–5 {t("product.shirtsLabel")}</span><span className="font-semibold">€3</span></li>
+                  <li className="flex justify-between"><span className="text-muted-foreground">6+ {t("product.shirtsLabel")}</span><span className="font-semibold text-gradient-gold">{t("product.free")}</span></li>
                 </ul>
               </div>
 

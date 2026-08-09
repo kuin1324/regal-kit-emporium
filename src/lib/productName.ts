@@ -161,8 +161,8 @@ const rulesFor = (lang: Lang) => {
 };
 
 const translateName = (name: string, langRaw: string): string => {
-  const base = ((langRaw || "nl").split("-")[0] as Lang);
-  const lang: Lang = LANGS.includes(base) ? base : "nl";
+  const base = ((langRaw || "en").split("-")[0] as Lang);
+  const lang: Lang = LANGS.includes(base) ? base : "en";
   let out = name;
   // Ook de tekst tussen haakjes wordt vertaald (zelfde regels).
   for (const [re, val] of rulesFor(lang)) out = out.replace(re, val);

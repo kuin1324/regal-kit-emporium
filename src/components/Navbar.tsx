@@ -7,7 +7,6 @@ import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/context/AuthContext";
 import CartDrawer from "./CartDrawer";
 import ThemeToggle from "./ThemeToggle";
-import LanguageSwitcher from "./LanguageSwitcher";
 import CurrencySwitcher from "./CurrencySwitcher";
 import {
   DropdownMenu,
@@ -38,7 +37,6 @@ const Navbar = () => {
 
   const IconActions = ({ inMenu = false }: { inMenu?: boolean }) => (
     <div className={inMenu ? "flex flex-wrap items-center gap-4" : "flex items-center gap-4"}>
-      <LanguageSwitcher />
       <CurrencySwitcher />
       <ThemeToggle />
       <Link

@@ -97,6 +97,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
   const { t } = useTranslation();
   const { format } = useCurrency();
   const isAdmin = useAdminView();
+  const translate = useProductName();
 
   const selected = productName ? allProducts.find(p => p.name === productName) : null;
   const displayName = selected

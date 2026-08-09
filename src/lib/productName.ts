@@ -19,8 +19,8 @@ const KIT: [string, Record<Lang, string>][] = [
   ["Training", { nl: "Training", en: "Training", fr: "Entraînement", de: "Training", es: "Entrenamiento", pt: "Treino", it: "Allenamento", zh: "训练" }],
   ["Goalkeeper", { nl: "Keeper", en: "Goalkeeper", fr: "Gardien", de: "Torwart", es: "Portero", pt: "Guarda-redes", it: "Portiere", zh: "门将" }],
   ["Keeper", { nl: "Keeper", en: "Goalkeeper", fr: "Gardien", de: "Torwart", es: "Portero", pt: "Guarda-redes", it: "Portiere", zh: "门将" }],
-  ["Long Sleeve", { nl: "Lange Mouw", en: "Long Sleeve", fr: "Manches Longues", de: "Langarm", es: "Manga Larga", pt: "Manga Comprida", it: "Manica Lunga", zh: "长袖" }],
-  ["Longsleeve", { nl: "Lange Mouw", en: "Long Sleeve", fr: "Manches Longues", de: "Langarm", es: "Manga Larga", pt: "Manga Comprida", it: "Manica Lunga", zh: "长袖" }],
+  ["Long Sleeve", { nl: "Lange Mouw Shirt", en: "Long Sleeve Shirt", fr: "Maillot Manches Longues", de: "Langarm Trikot", es: "Camiseta Manga Larga", pt: "Camisa Manga Comprida", it: "Maglia Manica Lunga", zh: "长袖球衣" }],
+  ["Longsleeve", { nl: "Lange Mouw Shirt", en: "Long Sleeve Shirt", fr: "Maillot Manches Longues", de: "Langarm Trikot", es: "Camiseta Manga Larga", pt: "Camisa Manga Comprida", it: "Maglia Manica Lunga", zh: "长袖球衣" }],
   ["Fourth", { nl: "Vierde", en: "Fourth", fr: "Quatrième", de: "Viertes", es: "Cuarta", pt: "Quarta", it: "Quarta", zh: "第四" }],
   ["Third", { nl: "Derde", en: "Third", fr: "Troisième", de: "Drittes", es: "Tercera", pt: "Terceira", it: "Terza", zh: "第三" }],
   ["Derde", { nl: "Derde", en: "Third", fr: "Troisième", de: "Drittes", es: "Tercera", pt: "Terceira", it: "Terza", zh: "第三" }],
@@ -115,6 +115,8 @@ const translateName = (name: string, langRaw: string): string => {
   for (const [re, val] of rulesFor(lang)) out = out.replace(re, val);
   // Verwijder de volgnummers achter dubbele shirtnamen (" 2", " 3", ...)
   out = out.replace(/\s+[2-9]\s*$/, "");
+  // Voorkom dubbele woorden na vertaling (bv. "Shirt Shirt")
+  out = out.replace(/\b(\p{L}+)(\s+\1)+\b/giu, "$1");
   return out.replace(/\s+/g, " ").trim();
 };
 

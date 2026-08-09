@@ -78,7 +78,9 @@ function resolve(name) {
 const src = fs.readFileSync(DATA, "utf8");
 const start = src.indexOf("= [");
 const header = src.slice(0, start + 2);
-const arr = JSON.parse(src.slice(start + 2, src.lastIndexOf("]") + 1));
+const end = src.lastIndexOf("]");
+const footer = src.slice(end + 1);
+const arr = JSON.parse(src.slice(start + 2, end + 1));
 
 const stats = { loose: 0, folder: 0, none: 0 };
 const missing = [];
@@ -94,6 +96,6 @@ for (const s of arr) {
   }
 }
 
-fs.writeFileSync(DATA, header + JSON.stringify(arr, null, 1) + ";\n");
+fs.writeFileSync(DATA, header + JSON.stringify(arr, null, 1) + footer);
 fs.writeFileSync(path.join(ROOT, "scripts/missing-shirt-images.txt"), missing.join("\n") + "\n");
 console.log(`totaal: ${arr.length}, losse bestanden: ${stats.loose}, mappen: ${stats.folder}, zonder foto: ${stats.none}`);

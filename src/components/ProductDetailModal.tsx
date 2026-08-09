@@ -37,8 +37,6 @@ import spanjeCreamBack from "@/assets/shirt-spanje-cream-back.jpg";
 import argentinieFront from "@/assets/shirt-argentinie-front.jpg";
 import argentinieBack from "@/assets/shirt-argentinie-back.jpg";
 import { collectieShirts } from "@/data/collectie_shirts";
-import { publicCollectieShirts } from "@/data/public_collectie";
-import { roosterShirts } from "@/data/rooster_shirts";
 import ZoomableImage from "@/components/ZoomableImage";
 import ShirtImage from "@/components/ShirtImage";
 import { useAdminView } from "@/lib/admin";
@@ -60,9 +58,7 @@ export const allProducts = [
   { image: spanjeCreamFront, gallery: [spanjeCreamFront, spanjeCreamBack], name: "Spanje Uit Shirt WK", nameKey: "spanjeOriginals", team: "Spanje", leagues: ["Nationaal"], price: "€30", description: "Spanje uit shirt voor het WK met klassieke Adidas details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "goud"] },
   { image: argentinieFront, gallery: [argentinieFront, argentinieBack], name: "Argentinië Uit Shirt WK 2026", nameKey: "argentinieSpecial", team: "Argentinië", leagues: ["Nationaal"], price: "€30", description: "Argentinië uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "blauw"] },
   { image: franceFront, gallery: [franceFront, franceBack], name: "Frankrijk Uit Shirt WK 2026", nameKey: "francePrematch", team: "Frankrijk", leagues: ["Nationaal"], price: "€30", description: "Frankrijk uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
-  ...roosterShirts,
   ...collectieShirts,
-  ...publicCollectieShirts,
 ];
 
 interface ProductDetailModalProps {

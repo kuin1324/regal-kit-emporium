@@ -196,7 +196,7 @@ const CollectionView = ({ items, onSelect }: Props) => {
 
       <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
         {showFilters && (
-          <aside className="lg:w-64 lg:shrink-0">
+          <aside className="lg:w-52 lg:shrink-0">
             <ProductFilters
               items={items}
               state={filters}
@@ -218,7 +218,7 @@ const CollectionView = ({ items, onSelect }: Props) => {
               touchX.current = null;
               if (Math.abs(dx) > 70) goPage(currentPage + (dx < 0 ? 1 : -1));
             }}
-            className="grid select-none grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+            className="grid select-none grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
           >
             {pageItems.map((product, i) => (
               <motion.div

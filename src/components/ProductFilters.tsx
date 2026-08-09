@@ -73,7 +73,7 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
     });
 
   return (
-    <div className="rounded-2xl border border-border/50 bg-card/40 p-4 text-left">
+    <div className="rounded-xl border border-border/50 bg-card/40 p-3 text-left">
       <div className="mb-1 flex items-center gap-2">
         <SlidersHorizontal className="h-4 w-4 text-primary" />
         <h2 className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-primary">

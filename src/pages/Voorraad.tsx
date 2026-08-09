@@ -72,7 +72,7 @@ const Voorraad = () => {
               <p className="font-display text-base sm:text-lg font-bold text-gradient-gold">{formatPrice(product.price)}</p>
               {isIncoming && (
                 <p className="text-[11px] text-primary mt-1 flex items-center gap-1">
-                  <Clock className="h-3 w-3" /> Binnenkort — pre-order mogelijk
+                  <Clock className="h-3 w-3" /> {t("stock.soon")}
                 </p>
               )}
             </div>

@@ -115,6 +115,8 @@ const translateName = (name: string, langRaw: string): string => {
   for (const [re, val] of rulesFor(lang)) out = out.replace(re, val);
   // Verwijder de volgnummers achter dubbele shirtnamen (" 2", " 3", ...)
   out = out.replace(/\s+[2-9]\s*$/, "");
+  // Voorkom dubbele woorden na vertaling (bv. "Shirt Shirt")
+  out = out.replace(/\b(\p{L}+)(\s+\1)+\b/giu, "$1");
   return out.replace(/\s+/g, " ").trim();
 };
 

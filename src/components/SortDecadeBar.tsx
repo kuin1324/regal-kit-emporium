@@ -12,9 +12,12 @@ const SORT_OPTIONS: { value: SortKey; key: string }[] = [
   { value: "newest", key: "newest" },
   { value: "oldest", key: "oldest" },
   { value: "az", key: "az" },
+  { value: "za", key: "za" },
+  { value: "photos", key: "photos" },
   { value: "priceAsc", key: "priceAsc" },
   { value: "priceDesc", key: "priceDesc" },
 ];
+
 
 const SortDecadeBar = ({ sort, onSortChange, decade, onDecadeChange }: Props) => {
   const { t } = useTranslation();

@@ -20,23 +20,35 @@ const norm = (s) =>
 
 const url = (...parts) => "/" + parts.map((p) => encodeURIComponent(p)).join("/");
 
+// losse sleutel: negeert generieke kledingwoorden zodat "X Home Longsleeve 25-26"
+// ook aan "X Home Shirt 25-26" gekoppeld kan worden
+const looseKey = (s) => norm(s.replace(/long ?sleeve[s]?/gi, " ").replace(/\b(shirt|jersey|kit|trikot)\b/gi, " "));
+
 // --- losse bestanden ---
 const looseFiles = fs.existsSync(COLLECTIE)
   ? fs.readdirSync(COLLECTIE, { withFileTypes: true }).filter((e) => e.isFile() && IMG_RE.test(e.name)).map((e) => e.name)
   : [];
 const looseMap = new Map(); // normkey -> [filenames]
+const looseAltMap = new Map(); // loosekey -> [filenames]
 for (const f of looseFiles) {
-  const base = f.replace(IMG_RE, "");
-  const key = norm(base.replace(/achterkant/gi, ""));
+  const base = f.replace(IMG_RE, "").replace(/achterkant/gi, "");
+  const key = norm(base);
   if (!looseMap.has(key)) looseMap.set(key, []);
   looseMap.get(key).push(f);
+  const alt = looseKey(base);
+  if (!looseAltMap.has(alt)) looseAltMap.set(alt, []);
+  looseAltMap.get(alt).push(f);
 }
 
 // --- mappen ---
 const folderMap = new Map(); // normkey -> dirname
+const folderAltMap = new Map(); // loosekey -> dirname
 if (fs.existsSync(ROOSTER)) {
   for (const e of fs.readdirSync(ROOSTER, { withFileTypes: true })) {
-    if (e.isDirectory()) folderMap.set(norm(e.name), e.name);
+    if (!e.isDirectory()) continue;
+    folderMap.set(norm(e.name), e.name);
+    const alt = looseKey(e.name);
+    if (!folderAltMap.has(alt)) folderAltMap.set(alt, e.name);
   }
 }
 
@@ -45,8 +57,9 @@ const sortFiles = (files) => [...files].sort((a, b) => a.localeCompare(b, "nl", 
 
 function resolve(name) {
   const key = norm(name);
+  const alt = looseKey(name);
 
-  const loose = looseMap.get(key);
+  const loose = looseMap.get(key) || looseAltMap.get(alt);
   if (loose && loose.length) {
     const files = sortFiles(loose);
     const front = files.find((f) => !isBack(f)) || files[0];
@@ -54,7 +67,8 @@ function resolve(name) {
     return { image: url("collectie", front), gallery: gallery.map((f) => url("collectie", f)), matched: "loose" };
   }
 
-  const dir = folderMap.get(key);
+  const dir = folderMap.get(key) || folderAltMap.get(alt);
+
   if (dir) {
     const files = sortFiles(
       fs.readdirSync(path.join(ROOSTER, dir), { withFileTypes: true })

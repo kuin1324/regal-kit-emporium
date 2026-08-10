@@ -6,14 +6,13 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import CollectionView from "@/components/CollectionView";
 import ProductDetailModal from "@/components/ProductDetailModal";
-import { roosterShirts } from "@/data/rooster_shirts";
 import { collectieShirts } from "@/data/collectie_shirts";
 import { publicCollectieShirts } from "@/data/public_collectie";
 
-const seen = new Set(roosterShirts.map((p) => p.name));
+const seen = new Set(collectieShirts.map((p) => p.name));
 const allCollectieItems = [
-  ...roosterShirts,
-  ...[...collectieShirts, ...publicCollectieShirts].filter((p) => {
+  ...collectieShirts,
+  ...publicCollectieShirts.filter((p) => {
     if (seen.has(p.name)) return false;
     seen.add(p.name);
     return true;

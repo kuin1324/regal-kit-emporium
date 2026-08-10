@@ -2668,7 +2668,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Belgium%20Away%20Shirt%202026%20If%20you%27re%20tracking%20down%20football%20gear.jpg",
 "/collectie/Belgium%20Away%20Shirt%202026%20If%20you%27re%20tracking%20down%20football%20gear%20achterkant.jpg"
 ],
-"name": "Belgium Away Shirt 2026 If you're tracking down football gear",
+"name": "Belgium Away Shirt 2026",
 "team": "Belgium",
 "leagues": [
 "Nationaal"
@@ -4170,7 +4170,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Cameroon%20Away%20Shirt%2025-26%20If%20you%27d%20like.jpg",
 "/collectie/Cameroon%20Away%20Shirt%2025-26%20If%20you%27d%20like%20achterkant.jpg"
 ],
-"name": "Cameroon Away Shirt 25-26 If you'd like",
+"name": "Cameroon Away Shirt 25-26",
 "team": "Cameroon",
 "leagues": [
 "Nationaal"
@@ -4214,7 +4214,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Cameroon%20Home%20Shirt%2025-26%20If%20you%20are%20interested.jpg",
 "/collectie/Cameroon%20Home%20Shirt%2025-26%20If%20you%20are%20interested%20achterkant.jpg"
 ],
-"name": "Cameroon Home Shirt 25-26 If you are interested",
+"name": "Cameroon Home Shirt 25-26",
 "team": "Cameroon",
 "leagues": [
 "Nationaal"
@@ -7466,7 +7466,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Germany%20125th%20Anniversary%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20more%20apparel%20items.jpg",
 "/collectie/Germany%20125th%20Anniversary%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20more%20apparel%20items%20achterkant.jpg"
 ],
-"name": "Germany 125th Anniversary Shirt 24-25 If you want to look at more apparel items",
+"name": "Germany 125th Anniversary Shirt 24-25",
 "team": "Germany 125th",
 "leagues": [
 "Nationaal"
@@ -8111,7 +8111,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20If%20you%20are%20looking%20to%20collect%20or%20browse%20more%20gear.jpg",
 "/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20If%20you%20are%20looking%20to%20collect%20or%20browse%20more%20gear%20achterkant.jpg"
 ],
-"name": "Inter Milan Home Shirt 25-26 If you are looking to collect or browse more gear",
+"name": "Inter Milan Home Shirt 25-26",
 "team": "Inter",
 "leagues": [
 "Serie A"
@@ -8879,7 +8879,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Japan%20Away%20Shirt%202026%20Follow%20up%20If%20you%20wish.jpg",
 "/collectie/Japan%20Away%20Shirt%202026%20Follow%20up%20If%20you%20wish%20achterkant.jpg"
 ],
-"name": "Japan Away Shirt 2026 Follow up If you wish",
+"name": "Japan Away Shirt 2026",
 "team": "Japan",
 "leagues": [
 "Nationaal"
@@ -10185,7 +10185,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Liverpool%20%27Pink%20Cormorant%27%20Concept%20Shirt%2024-25%20Would%20you%20like%20help%20finding%20where%20to%20buy%20this%20concept.jpg",
 "/collectie/Liverpool%20%27Pink%20Cormorant%27%20Concept%20Shirt%2024-25%20Would%20you%20like%20help%20finding%20where%20to%20buy%20this%20concept%20achterkant.jpg"
 ],
-"name": "Liverpool 'Pink Cormorant' Concept Shirt 24-25 Would you like help finding where to buy this concept",
+"name": "Liverpool 'Pink Cormorant' Concept Shirt 24-25",
 "team": "Liverpool",
 "leagues": [
 "Premier League",
@@ -13226,7 +13226,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Palmeiras%20Away%20Shirt%202026%20If%20you%27d%20like.jpg",
 "/collectie/Palmeiras%20Away%20Shirt%202026%20If%20you%27d%20like%20achterkant.jpg"
 ],
-"name": "Palmeiras Away Shirt 2026 If you'd like",
+"name": "Palmeiras Away Shirt 2026",
 "team": "Palmeiras",
 "leagues": [
 "Collectie"
@@ -13292,7 +13292,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Panama%20Away%20Shirt%202026%20If%20you%20wish.jpg",
 "/collectie/Panama%20Away%20Shirt%202026%20If%20you%20wish%20achterkant.jpg"
 ],
-"name": "Panama Away Shirt 2026 If you wish",
+"name": "Panama Away Shirt 2026",
 "team": "Panama",
 "leagues": [
 "Nationaal"
@@ -14551,7 +14551,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Portugal%20Goalkeeper%20Home%20Shirt%202026%20If%20you%27d%20like%20to%20find%20where%20to%20buy%20this%20item%20or%20browse%20alternati.jpg",
 "/collectie/Portugal%20Goalkeeper%20Home%20Shirt%202026%20If%20you%27d%20like%20to%20find%20where%20to%20buy%20this%20item%20or%20browse%20alternati%20achterkant.jpg"
 ],
-"name": "Portugal Goalkeeper Home Shirt 2026 If you'd like to find where to buy this item or browse alternati",
+"name": "Portugal Goalkeeper Home Shirt 2026",
 "team": "Portugal Goalkeeper",
 "leagues": [
 "Nationaal"
@@ -15267,7 +15267,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Real%20Madrid%20Cultural%20Story%20Shirt%2025-26%20Would%20you%20like%20help%20finding%20where%20to%20purchase%20this%20shirt%20onli.jpg",
 "/collectie/Real%20Madrid%20Cultural%20Story%20Shirt%2025-26%20Would%20you%20like%20help%20finding%20where%20to%20purchase%20this%20shirt%20onli%20achterkant.jpg"
 ],
-"name": "Real Madrid Cultural Story Shirt 25-26 Would you like help finding where to purchase this shirt onli",
+"name": "Real Madrid Cultural Story Shirt 25-26",
 "team": "Real Madrid",
 "leagues": [
 "La Liga"
@@ -16974,7 +16974,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/Real%20Madrid%20Special%20Pink%20Edition%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20additional%20gear.jpg",
 "/collectie/Real%20Madrid%20Special%20Pink%20Edition%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20additional%20gear%20achterkant.jpg"
 ],
-"name": "Real Madrid Special Pink Edition Shirt 24-25 If you want to look at additional gear",
+"name": "Real Madrid Special Pink Edition Shirt 24-25",
 "team": "Real Madrid",
 "leagues": [
 "La Liga",
@@ -17571,7 +17571,7 @@ export const publicCollectieShirts: PublicShirt[] = [
 "/collectie/South%20Korea%20Away%20Shirt%202026%20If%20you%20would%20like%20to%20explore%20further.jpg",
 "/collectie/South%20Korea%20Away%20Shirt%202026%20If%20you%20would%20like%20to%20explore%20further%20achterkant.jpg"
 ],
-"name": "South Korea Away Shirt 2026 If you would like to explore further",
+"name": "South Korea Away Shirt 2026",
 "team": "South Korea",
 "leagues": [
 "Collectie"

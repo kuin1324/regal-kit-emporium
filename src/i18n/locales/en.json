@@ -197,7 +197,9 @@
       "oldest": "Oldest first",
       "az": "A–Z",
       "priceAsc": "Price ↑",
-      "priceDesc": "Price ↓"
+      "priceDesc": "Price ↓",
+      "za": "Z–A",
+      "photos": "Most photos"
     },
     "allCountries": "All countries",
     "title": "Filters",

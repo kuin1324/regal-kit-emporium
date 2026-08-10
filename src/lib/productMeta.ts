@@ -36,7 +36,10 @@ export const parsePrice = (p: string): number => {
   return Number.isFinite(n) ? n : 0;
 };
 
-export type SortKey = "newest" | "oldest" | "az" | "priceAsc" | "priceDesc";
+export type SortKey = "newest" | "oldest" | "az" | "za" | "priceAsc" | "priceDesc" | "photos";
+
+const photoCount = (p: { gallery?: unknown[]; image?: unknown }): number =>
+  Array.isArray(p.gallery) && p.gallery.length > 0 ? p.gallery.length : p.image ? 1 : 0;
 
 export const sortProducts = <T extends { name: string; price: string }>(
   items: T[],
@@ -57,6 +60,11 @@ export const sortProducts = <T extends { name: string; price: string }>(
       }
       case "az":
         return a.name.localeCompare(b.name);
+      case "za":
+        return b.name.localeCompare(a.name);
+      case "photos":
+        return photoCount(b as never) - photoCount(a as never) || a.name.localeCompare(b.name);
+
       case "priceAsc":
         return parsePrice(a.price) - parsePrice(b.price);
       case "priceDesc":

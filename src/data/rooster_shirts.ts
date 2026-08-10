@@ -17,11 +17,12 @@ export interface RoosterShirt {
 
 export const roosterShirts: RoosterShirt[] = [
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/AC%20Milan%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/AC%20Milan%20Away%20Shirt%2025-26.jpg",
+   "/collectie/AC%20Milan%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "AC Milan Away Longsleeve 25-26",
   "team": "AC Milan",
   "leagues": [
@@ -130,11 +131,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/AC%20Milan%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/AC%20Milan%20Home%20Shirt%2024-25.jpg",
+   "/collectie/AC%20Milan%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "AC Milan Home Longsleeve 24-25",
   "team": "AC Milan",
   "leagues": [
@@ -174,11 +176,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/AC%20Milan%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/AC%20Milan%20Home%20Shirt%2026-27.jpg",
+   "/collectie/AC%20Milan%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "AC Milan Home Longsleeve 26-27",
   "team": "AC Milan",
   "leagues": [
@@ -511,11 +514,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/AS%20Roma%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/AS%20Roma%20Home%20Shirt%2025-26.png",
+   "/collectie/AS%20Roma%20Home%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "AS Roma Home Longsleeve 25-26",
   "team": "AS Roma",
   "leagues": [
@@ -2726,11 +2730,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Argentina%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Argentina%20Away%20Shirt%202026.jpg",
+   "/collectie/Argentina%20Away%20Shirt%202026%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Argentina Away Longsleeve 2026",
   "team": "Argentina",
   "leagues": [
@@ -3256,11 +3261,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Arsenal%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Arsenal%20Away%20Shirt%2025-26.png",
+   "/collectie/Arsenal%20Away%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Arsenal Away Longsleeve 25-26",
   "team": "Arsenal",
   "leagues": [
@@ -3278,11 +3284,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Arsenal%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Arsenal%20Away%20Shirt%2026-27.jpg",
+   "/collectie/Arsenal%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Arsenal Away Longsleeve 26-27",
   "team": "Arsenal",
   "leagues": [
@@ -3457,11 +3464,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Arsenal%20Home%20Shirt%2024-25.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Arsenal%20Home%20Shirt%2024-25.png",
+   "/collectie/Arsenal%20Home%20Shirt%2024-25%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Arsenal Home Longsleeve 24-25",
   "team": "Arsenal",
   "leagues": [
@@ -3479,11 +3487,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Arsenal%20Home%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Arsenal%20Home%20Shirt%2024-25%202.jpg",
+   "/collectie/Arsenal%20Home%20Shirt%2024-25%202%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Arsenal Home Longsleeve 24-25 2",
   "team": "Arsenal",
   "leagues": [
@@ -3945,11 +3954,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Arsenal%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Arsenal%20Third%20Shirt%2025-26.png",
+   "/collectie/Arsenal%20Third%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Arsenal Third Longsleeve 25-26",
   "team": "Arsenal",
   "leagues": [
@@ -4282,11 +4292,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2025-26.png",
+   "/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Atlético Madrid Away Longsleeve 25-26",
   "team": "Atlético Madrid",
   "leagues": [
@@ -4371,11 +4382,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Atlético Madrid Home Longsleeve 24-25",
   "team": "Atlético Madrid",
   "leagues": [
@@ -5127,11 +5139,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Bayern%20Munich%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Bayern%20Munich%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Bayern%20Munich%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Bayern Munich Away Longsleeve 25-26",
   "team": "Bayern",
   "leagues": [
@@ -5238,11 +5251,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Bayern%20Munich%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Bayern%20Munich%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Bayern%20Munich%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Bayern Munich Home Longsleeve 24-25",
   "team": "Bayern",
   "leagues": [
@@ -5260,11 +5274,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Bayern%20Munich%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Bayern%20Munich%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Bayern%20Munich%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Bayern Munich Home Longsleeve 25-26",
   "team": "Bayern",
   "leagues": [
@@ -6178,11 +6193,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Borussia%20Dortmund%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Borussia%20Dortmund%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Borussia%20Dortmund%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Borussia Dortmund Home Longsleeve 26-27",
   "team": "Borussia Dortmund",
   "leagues": [
@@ -6430,11 +6446,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Brazil%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Brazil%20Away%20Shirt%202026.jpg",
+   "/collectie/Brazil%20Away%20Shirt%202026%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Brazil Away Longsleeve 2026",
   "team": "Brazil",
   "leagues": [
@@ -6452,11 +6469,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Brazil%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Brazil%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Brazil%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Brazil Away Longsleeve 25-26",
   "team": "Brazil",
   "leagues": [
@@ -7737,11 +7755,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Chelsea%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Chelsea%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Chelsea%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Chelsea Away Longsleeve 25-26",
   "team": "Chelsea",
   "leagues": [
@@ -7759,11 +7778,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Chelsea%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Chelsea%20Away%20Shirt%2026-27.jpg",
+   "/collectie/Chelsea%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Chelsea Away Longsleeve 26-27",
   "team": "Chelsea",
   "leagues": [
@@ -8227,11 +8247,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Chelsea%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Chelsea%20Third%20Shirt%2025-26.png",
+   "/collectie/Chelsea%20Third%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Chelsea Third Longsleeve 25-26",
   "team": "Chelsea",
   "leagues": [
@@ -8580,11 +8601,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2025-26.png",
+   "/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Club América Away Longsleeve 25-26",
   "team": "Club América",
   "leagues": [
@@ -8714,11 +8736,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Club América Home Longsleeve 25-26",
   "team": "Club América",
   "leagues": [
@@ -9444,11 +9467,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Corinthians%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Corinthians%20Away%20Shirt%2025-26.png",
+   "/collectie/Corinthians%20Away%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Corinthians Away Longsleeve 25-26",
   "team": "Corinthians",
   "leagues": [
@@ -9599,11 +9623,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Corinthians%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Corinthians%20Home%20Shirt%2025-26.png",
+   "/collectie/Corinthians%20Home%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Corinthians Home Longsleeve 25-26",
   "team": "Corinthians",
   "leagues": [
@@ -10526,11 +10551,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/England%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/England%20Away%20Shirt%202026.jpg",
+   "/collectie/England%20Away%20Shirt%202026%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "England Away Longsleeve 2026",
   "team": "England",
   "leagues": [
@@ -10548,11 +10574,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/England%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/England%20Away%20Shirt%2025-26.jpg",
+   "/collectie/England%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "England Away Longsleeve 25-26",
   "team": "England",
   "leagues": [
@@ -11297,11 +11324,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "FC Barcelona Home Longsleeve 25-26",
   "team": "FC Barcelona",
   "leagues": [
@@ -11320,11 +11348,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2026-27.jpg",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "FC Barcelona Home Longsleeve 26-27",
   "team": "FC Barcelona",
   "leagues": [
@@ -11831,11 +11860,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/FC%20Barcelona%20Third%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/FC%20Barcelona%20Third%20Shirt%2026-27.jpg",
+   "/collectie/FC%20Barcelona%20Third%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "FC Barcelona Third Longsleeve 26-27",
   "team": "FC Barcelona",
   "leagues": [
@@ -12409,11 +12439,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/France%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/France%20Away%20Shirt%2026-27.jpg",
+   "/collectie/France%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "France Away Longsleeve 26-27",
   "team": "France",
   "leagues": [
@@ -13050,11 +13081,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Germany%20Away%20Shirt%202026.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Germany%20Away%20Shirt%202026.png",
+   "/collectie/Germany%20Away%20Shirt%202026%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Germany Away Longsleeve 2026",
   "team": "Germany",
   "leagues": [
@@ -13602,11 +13634,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Inter%20Milan%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Inter%20Milan%20Away%20Shirt%2025-26.png",
+   "/collectie/Inter%20Milan%20Away%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Inter Milan Away Longsleeve 25-26",
   "team": "Inter",
   "leagues": [
@@ -13823,11 +13856,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Inter%20Milan%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Inter%20Milan%20Home%20Shirt%2025-26.png",
+   "/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Inter Milan Home Longsleeve 25-26",
   "team": "Inter",
   "leagues": [
@@ -13845,11 +13879,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Inter%20Milan%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Inter%20Milan%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Inter%20Milan%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Inter Milan Home Longsleeve 26-27",
   "team": "Inter",
   "leagues": [
@@ -14178,11 +14213,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Italy%20Away%20Shirt%202026.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Italy%20Away%20Shirt%202026.png",
+   "/collectie/Italy%20Away%20Shirt%202026%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Italy Away Longsleeve 2026",
   "team": "Italy",
   "leagues": [
@@ -14245,11 +14281,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Italy%20Home%20Shirt%2026-27.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Italy%20Home%20Shirt%2026-27.png",
+   "/collectie/Italy%20Home%20Shirt%2026-27%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Italy Home Longsleeve 26-27",
   "team": "Italy",
   "leagues": [
@@ -14862,11 +14899,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Japan%20Home%20Shirt%2026-27.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Japan%20Home%20Shirt%2026-27.png",
+   "/collectie/Japan%20Home%20Shirt%2026-27%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Japan Home Longsleeve 26-27",
   "team": "Japan",
   "leagues": [
@@ -15459,11 +15497,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Liverpool%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Liverpool%20Away%20Shirt%2025-26.png",
+   "/collectie/Liverpool%20Away%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Liverpool Away Longsleeve 25-26",
   "team": "Liverpool",
   "leagues": [
@@ -15713,11 +15752,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Liverpool%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Liverpool%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Liverpool%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Liverpool Home Longsleeve 24-25",
   "team": "Liverpool",
   "leagues": [
@@ -15736,11 +15776,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Liverpool%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Liverpool%20Home%20Shirt%2025-26.png",
+   "/collectie/Liverpool%20Home%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Liverpool Home Longsleeve 25-26",
   "team": "Liverpool",
   "leagues": [
@@ -15759,11 +15800,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Liverpool%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Liverpool%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Liverpool%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Liverpool Home Longsleeve 26-27",
   "team": "Liverpool",
   "leagues": [
@@ -16084,11 +16126,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Liverpool%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Liverpool%20Third%20Shirt%2025-26.png",
+   "/collectie/Liverpool%20Third%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Liverpool Third Longsleeve 25-26",
   "team": "Liverpool",
   "leagues": [
@@ -16533,11 +16576,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Manchester%20City%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Manchester%20City%20Away%20Shirt%2025-26.png",
+   "/collectie/Manchester%20City%20Away%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Manchester City Away Longsleeve 25-26",
   "team": "Manchester City",
   "leagues": [
@@ -16667,11 +16711,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Manchester%20City%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Manchester%20City%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20City%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Manchester City Home Longsleeve 25-26",
   "team": "Manchester City",
   "leagues": [
@@ -16689,11 +16734,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Manchester%20City%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Manchester%20City%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Manchester%20City%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Manchester City Home Longsleeve 26-27",
   "team": "Manchester City",
   "leagues": [
@@ -16981,11 +17027,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Manchester%20United%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Manchester%20United%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20United%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Manchester United Away Longsleeve 25-26",
   "team": "Manchester United",
   "leagues": [
@@ -17305,11 +17352,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Manchester%20United%20home%20shirt%2024-25.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Manchester%20United%20home%20shirt%2024-25.jpg",
+   "/collectie/Manchester%20United%20home%20shirt%2024-25%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Manchester United Home Longsleeve 24-25",
   "team": "Manchester United",
   "leagues": [
@@ -17328,11 +17376,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Manchester%20United%20Home%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Manchester%20United%20Home%20Shirt%2024-25%202.jpg",
+   "/collectie/Manchester%20United%20Home%20Shirt%2024-25%202%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Manchester United Home Longsleeve 24-25 2",
   "team": "Manchester United",
   "leagues": [
@@ -17862,11 +17911,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Manchester%20United%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Manchester%20United%20Third%20Shirt%2025-26.png",
+   "/collectie/Manchester%20United%20Third%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Manchester United Third Longsleeve 25-26",
   "team": "Manchester United",
   "leagues": [
@@ -18309,11 +18359,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Mexico%20Home%20Shirt%202026.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Mexico%20Home%20Shirt%202026.png",
+   "/collectie/Mexico%20Home%20Shirt%202026%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Mexico Home Longsleeve 2026",
   "team": "Mexico",
   "leagues": [
@@ -18596,11 +18647,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Mexico%20Special%20Edition%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Mexico%20Special%20Edition%20Shirt%2025-26.jpg",
+   "/collectie/Mexico%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Mexico Special Edition Longsleeve 25-26",
   "team": "Mexico",
   "leagues": [
@@ -19706,11 +19758,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Newcastle%20United%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Newcastle%20United%20Third%20Shirt%2025-26.png",
+   "/collectie/Newcastle%20United%20Third%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Newcastle United Third Longsleeve 25-26",
   "team": "Newcastle",
   "leagues": [
@@ -21007,11 +21060,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25.png",
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Paris Saint-Germain Fourth Longsleeve 24-25",
   "team": "Paris Saint-Germain",
   "leagues": [
@@ -21029,11 +21083,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2025-26.png",
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Paris Saint-Germain Fourth Longsleeve 25-26",
   "team": "Paris Saint-Germain",
   "leagues": [
@@ -21119,11 +21174,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Paris Saint-Germain Home Longsleeve 24-25",
   "team": "Paris Saint-Germain",
   "leagues": [
@@ -21543,11 +21599,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26.png",
+   "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Paris Saint-Germain Third Longsleeve 25-26",
   "team": "Paris Saint-Germain",
   "leagues": [
@@ -21655,11 +21712,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Portugal%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Portugal%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Portugal%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Portugal Away Longsleeve 25-26",
   "team": "Portugal",
   "leagues": [
@@ -22454,11 +22512,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Real%20Madrid%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Real%20Madrid%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Real Madrid Away Longsleeve 25-26",
   "team": "Real Madrid",
   "leagues": [
@@ -22709,11 +22768,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Real%20Madrid%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Real%20Madrid%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Real Madrid Home Longsleeve 24-25",
   "team": "Real Madrid",
   "leagues": [
@@ -22732,11 +22792,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Real%20Madrid%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Real%20Madrid%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Real Madrid Home Longsleeve 25-26",
   "team": "Real Madrid",
   "leagues": [
@@ -22755,11 +22816,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Real%20Madrid%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Real%20Madrid%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Real%20Madrid%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Real Madrid Home Longsleeve 26-27",
   "team": "Real Madrid",
   "leagues": [
@@ -23617,11 +23679,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Real%20Madrid%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Real%20Madrid%20Third%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Third%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Real Madrid Third Longsleeve 25-26",
   "team": "Real Madrid",
   "leagues": [
@@ -23916,11 +23979,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/River%20Plate%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/River%20Plate%20Away%20Shirt%2025-26.png",
+   "/collectie/River%20Plate%20Away%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "River Plate Away Longsleeve 25-26",
   "team": "River Plate",
   "leagues": [
@@ -24890,11 +24954,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Spain%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Spain%20Away%20Shirt%202026.jpg",
+   "/collectie/Spain%20Away%20Shirt%202026%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Spain Away Longsleeve 2026",
   "team": "Spain",
   "leagues": [
@@ -25089,11 +25154,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Spain%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Spain%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Spain%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Spain Home Longsleeve 24-25",
   "team": "Spain",
   "leagues": [
@@ -25850,11 +25916,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Tottenham%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Tottenham%20Away%20Shirt%2026-27.jpg",
+   "/collectie/Tottenham%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Tottenham Away Longsleeve 26-27",
   "team": "Tottenham",
   "leagues": [
@@ -25939,11 +26006,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26.png",
+   "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26%20achterkant.png"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "Tottenham Hotspur Home Longsleeve 25-26",
   "team": "Tottenham",
   "leagues": [
@@ -26208,11 +26276,12 @@ export const roosterShirts: RoosterShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/placeholder.svg",
+  "image": "/collectie/USA%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/placeholder.svg"
+   "/collectie/USA%20Home%20Shirt%202026.jpg",
+   "/collectie/USA%20Home%20Shirt%202026%20achterkant.jpg"
   ],
-  "fallback": "/placeholder.svg",
+  "fallback": null,
   "name": "USA Home Longsleeve 2026",
   "team": "USA",
   "leagues": [

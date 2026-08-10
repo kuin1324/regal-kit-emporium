@@ -26,7 +26,7 @@ const chip = (active: boolean) =>
       : "bg-transparent text-muted-foreground border-border/30 hover:border-primary/20"
   }`;
 
-const SORT_OPTIONS: SortKey[] = ["newest", "oldest", "az", "priceAsc", "priceDesc"];
+const SORT_OPTIONS: SortKey[] = ["newest", "oldest", "az", "za", "photos", "priceAsc", "priceDesc"];
 
 /** Uitklapbaar filterblok: klik op de naam om de opties te tonen. */
 const Group = ({

@@ -9,7 +9,6 @@ import { useProductName } from "@/lib/productName";
 import Pagination from "@/components/Pagination";
 import ProductFilters from "@/components/ProductFilters";
 import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
-import ShirtImage from "@/components/ShirtImage";
 import { CUSTOM_PRICE } from "@/components/ProductDetailModal";
 
 const PAGE_SIZE = 60;

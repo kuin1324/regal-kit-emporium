@@ -16,9 +16,9 @@ export interface PublicShirt {
 
 export const publicCollectieShirts: PublicShirt[] = [
  {
-  "image": "/public/collectie/AC%20Milan%20Away%20Longsleeve%2025-26/AC%20Milan%20Away%20Longsleeve%2025-26%20achterkant.jpg",
+  "image": "/collectie/AC%20Milan%20Away%20Longsleeve%2025-26/AC%20Milan%20Away%20Longsleeve%2025-26%20achterkant.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Away%20Longsleeve%2025-26/AC%20Milan%20Away%20Longsleeve%2025-26%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Away%20Longsleeve%2025-26/AC%20Milan%20Away%20Longsleeve%2025-26%20achterkant.jpg"
   ],
   "name": "AC Milan Away Longsleeve 25-26",
   "team": "AC Milan",
@@ -37,10 +37,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/AC%20Milan%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/AC%20Milan%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Away%20Shirt%2024-25.jpg",
+   "/collectie/AC%20Milan%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "AC Milan Away Shirt 24-25",
   "team": "AC Milan",
@@ -59,10 +59,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/AC%20Milan%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/AC%20Milan%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Away%20Shirt%2025-26.jpg",
+   "/collectie/AC%20Milan%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "AC Milan Away Shirt 25-26",
   "team": "AC Milan",
@@ -81,10 +81,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Away%20Shirt%2026-27.jpg",
+  "image": "/collectie/AC%20Milan%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Away%20Shirt%2026-27.jpg",
-   "/public/collectie/AC%20Milan%20Away%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Away%20Shirt%2026-27.jpg",
+   "/collectie/AC%20Milan%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "AC Milan Away Shirt 26-27",
   "team": "AC Milan",
@@ -103,10 +103,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Cathedral%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/AC%20Milan%20Cathedral%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Cathedral%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/AC%20Milan%20Cathedral%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Cathedral%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/AC%20Milan%20Cathedral%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "AC Milan Cathedral Special Edition Shirt 24-25",
   "team": "AC Milan Cathedral",
@@ -125,10 +125,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Fourth%20Shirt%2023-24%20x%20PLEASURES.png",
+  "image": "/collectie/AC%20Milan%20Fourth%20Shirt%2023-24%20x%20PLEASURES.png",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Fourth%20Shirt%2023-24%20x%20PLEASURES.png",
-   "/public/collectie/AC%20Milan%20Fourth%20Shirt%2023-24%20x%20PLEASURES%20achterkant.png"
+   "/collectie/AC%20Milan%20Fourth%20Shirt%2023-24%20x%20PLEASURES.png",
+   "/collectie/AC%20Milan%20Fourth%20Shirt%2023-24%20x%20PLEASURES%20achterkant.png"
   ],
   "name": "AC Milan Fourth Shirt 23-24 x PLEASURES",
   "team": "AC Milan",
@@ -147,10 +147,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Goalkeeper%20Shirt%2025-26.jpg",
+  "image": "/collectie/AC%20Milan%20Goalkeeper%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Goalkeeper%20Shirt%2025-26.jpg",
-   "/public/collectie/AC%20Milan%20Goalkeeper%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Goalkeeper%20Shirt%2025-26.jpg",
+   "/collectie/AC%20Milan%20Goalkeeper%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "AC Milan Goalkeeper Shirt 25-26",
   "team": "AC Milan",
@@ -169,10 +169,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/AC%20Milan%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/AC%20Milan%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Home%20Shirt%2024-25.jpg",
+   "/collectie/AC%20Milan%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "AC Milan Home Shirt 24-25",
   "team": "AC Milan",
@@ -191,10 +191,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Home%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/AC%20Milan%20Home%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Home%20Shirt%2024-25%202.jpg",
-   "/public/collectie/AC%20Milan%20Home%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Home%20Shirt%2024-25%202.jpg",
+   "/collectie/AC%20Milan%20Home%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "AC Milan Home Shirt 24-25 2",
   "team": "AC Milan",
@@ -213,10 +213,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/AC%20Milan%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/AC%20Milan%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Home%20Shirt%2026-27.jpg",
+   "/collectie/AC%20Milan%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "AC Milan Home Shirt 26-27",
   "team": "AC Milan",
@@ -235,10 +235,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/AC%20Milan%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/AC%20Milan%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/AC%20Milan%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "AC Milan Pre-Match Shirt 25-26",
   "team": "AC Milan",
@@ -257,10 +257,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/AC%20Milan%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/AC%20Milan%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Third%20Shirt%2024-25.jpg",
+   "/collectie/AC%20Milan%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "AC Milan Third Shirt 24-25",
   "team": "AC Milan",
@@ -279,10 +279,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Third%20Shirt%2025-26.jpg",
+  "image": "/collectie/AC%20Milan%20Third%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Third%20Shirt%2025-26.jpg",
-   "/public/collectie/AC%20Milan%20Third%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Third%20Shirt%2025-26.jpg",
+   "/collectie/AC%20Milan%20Third%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "AC Milan Third Shirt 25-26",
   "team": "AC Milan",
@@ -301,10 +301,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AC%20Milan%20Third%20Shirt%2026-27.jpg",
+  "image": "/collectie/AC%20Milan%20Third%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/AC%20Milan%20Third%20Shirt%2026-27.jpg",
-   "/public/collectie/AC%20Milan%20Third%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/AC%20Milan%20Third%20Shirt%2026-27.jpg",
+   "/collectie/AC%20Milan%20Third%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "AC Milan Third Shirt 26-27",
   "team": "AC Milan",
@@ -323,10 +323,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/adidas%20Adicolor%20Football%20Shirt%2024-25.jpg",
+  "image": "/collectie/adidas%20Adicolor%20Football%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/adidas%20Adicolor%20Football%20Shirt%2024-25.jpg",
-   "/public/collectie/adidas%20Adicolor%20Football%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/adidas%20Adicolor%20Football%20Shirt%2024-25.jpg",
+   "/collectie/adidas%20Adicolor%20Football%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "adidas Adicolor Football Shirt 24-25",
   "team": "adidas Adicolor Football",
@@ -345,10 +345,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/adidas%20Originals%20Adicolor%20Football%20Shirt.jpg",
+  "image": "/collectie/adidas%20Originals%20Adicolor%20Football%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/adidas%20Originals%20Adicolor%20Football%20Shirt.jpg",
-   "/public/collectie/adidas%20Originals%20Adicolor%20Football%20Shirt%20achterkant.jpg"
+   "/collectie/adidas%20Originals%20Adicolor%20Football%20Shirt.jpg",
+   "/collectie/adidas%20Originals%20Adicolor%20Football%20Shirt%20achterkant.jpg"
   ],
   "name": "adidas Originals Adicolor Football Shirt",
   "team": "adidas Originals Adicolor Football",
@@ -367,10 +367,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Jersey%20Shirt.jpg",
+  "image": "/collectie/adidas%20Originals%20Adicolor%20Poly%20Jersey%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Jersey%20Shirt.jpg",
-   "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Jersey%20Shirt%20achterkant.jpg"
+   "/collectie/adidas%20Originals%20Adicolor%20Poly%20Jersey%20Shirt.jpg",
+   "/collectie/adidas%20Originals%20Adicolor%20Poly%20Jersey%20Shirt%20achterkant.jpg"
   ],
   "name": "adidas Originals Adicolor Poly Jersey Shirt",
   "team": "adidas Originals Adicolor Poly Jersey",
@@ -389,10 +389,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt.jpg",
+  "image": "/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt.jpg",
-   "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%20achterkant.jpg"
+   "/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt.jpg",
+   "/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%20achterkant.jpg"
   ],
   "name": "adidas Originals Adicolor Poly Shirt",
   "team": "adidas Originals Adicolor Poly",
@@ -411,10 +411,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%202.jpg",
+  "image": "/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%202.jpg",
   "gallery": [
-   "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%202.jpg",
-   "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%202%20achterkant.jpg"
+   "/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%202.jpg",
+   "/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%202%20achterkant.jpg"
   ],
   "name": "adidas Originals Adicolor Poly Shirt 2",
   "team": "adidas Originals Adicolor Poly",
@@ -433,10 +433,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%2023-24.jpg",
+  "image": "/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%2023-24.jpg",
-   "/public/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%2023-24.jpg",
+   "/collectie/adidas%20Originals%20Adicolor%20Poly%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "adidas Originals Adicolor Poly Shirt 23-24",
   "team": "adidas Originals Adicolor Poly",
@@ -455,10 +455,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/adidas%20x%20BAPE%20Football%20Collective%20Teamgeist%20Home%20Shirt%202026.png",
+  "image": "/collectie/adidas%20x%20BAPE%20Football%20Collective%20Teamgeist%20Home%20Shirt%202026.png",
   "gallery": [
-   "/public/collectie/adidas%20x%20BAPE%20Football%20Collective%20Teamgeist%20Home%20Shirt%202026.png",
-   "/public/collectie/adidas%20x%20BAPE%20Football%20Collective%20Teamgeist%20Home%20Shirt%202026%20achterkant.png"
+   "/collectie/adidas%20x%20BAPE%20Football%20Collective%20Teamgeist%20Home%20Shirt%202026.png",
+   "/collectie/adidas%20x%20BAPE%20Football%20Collective%20Teamgeist%20Home%20Shirt%202026%20achterkant.png"
   ],
   "name": "adidas x BAPE Football Collective Teamgeist Home Shirt 2026",
   "team": "adidas x BAPE Football Collective Teamgeist",
@@ -477,10 +477,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/adidas%20x%20BAPE%20Football%20Graphic%20Slim%20Jersey%20'Shock%20Blue%20Pink'%20Shirt%2025-26.png",
+  "image": "/collectie/adidas%20x%20BAPE%20Football%20Graphic%20Slim%20Jersey%20'Shock%20Blue%20Pink'%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/adidas%20x%20BAPE%20Football%20Graphic%20Slim%20Jersey%20'Shock%20Blue%20Pink'%20Shirt%2025-26.png",
-   "/public/collectie/adidas%20x%20BAPE%20Football%20Graphic%20Slim%20Jersey%20'Shock%20Blue%20Pink'%20Shirt%2025-26%20achterkant.png"
+   "/collectie/adidas%20x%20BAPE%20Football%20Graphic%20Slim%20Jersey%20'Shock%20Blue%20Pink'%20Shirt%2025-26.png",
+   "/collectie/adidas%20x%20BAPE%20Football%20Graphic%20Slim%20Jersey%20'Shock%20Blue%20Pink'%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "adidas x BAPE Football Graphic Slim Jersey 'Shock Blue Pink' Shirt 25-26",
   "team": "adidas x BAPE Football Graphic Slim Jersey 'Shock Blue Pink'",
@@ -499,10 +499,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/adidas%20x%20Oasis%20Tour%20Jacquard%20Jersey%20Black%20Shirt%2025-26.png",
+  "image": "/collectie/adidas%20x%20Oasis%20Tour%20Jacquard%20Jersey%20Black%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/adidas%20x%20Oasis%20Tour%20Jacquard%20Jersey%20Black%20Shirt%2025-26.png",
-   "/public/collectie/adidas%20x%20Oasis%20Tour%20Jacquard%20Jersey%20Black%20Shirt%2025-26%20achterkant.png"
+   "/collectie/adidas%20x%20Oasis%20Tour%20Jacquard%20Jersey%20Black%20Shirt%2025-26.png",
+   "/collectie/adidas%20x%20Oasis%20Tour%20Jacquard%20Jersey%20Black%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "adidas x Oasis Tour Jacquard Jersey Black Shirt 25-26",
   "team": "adidas x Oasis Tour Jacquard Jersey Black",
@@ -521,10 +521,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AIK%20Special%20Edition%20Smokinglirare%20Shirt%2024-25.jpg",
+  "image": "/collectie/AIK%20Special%20Edition%20Smokinglirare%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/AIK%20Special%20Edition%20Smokinglirare%20Shirt%2024-25.jpg",
-   "/public/collectie/AIK%20Special%20Edition%20Smokinglirare%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/AIK%20Special%20Edition%20Smokinglirare%20Shirt%2024-25.jpg",
+   "/collectie/AIK%20Special%20Edition%20Smokinglirare%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "AIK Special Edition Smokinglirare Shirt 24-25",
   "team": "AIK",
@@ -543,10 +543,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%2025-26%20Terrace%20Icons%20Shirt.png",
+  "image": "/collectie/Ajax%2025-26%20Terrace%20Icons%20Shirt.png",
   "gallery": [
-   "/public/collectie/Ajax%2025-26%20Terrace%20Icons%20Shirt.png",
-   "/public/collectie/Ajax%2025-26%20Terrace%20Icons%20Shirt%20achterkant.png"
+   "/collectie/Ajax%2025-26%20Terrace%20Icons%20Shirt.png",
+   "/collectie/Ajax%2025-26%20Terrace%20Icons%20Shirt%20achterkant.png"
   ],
   "name": "Ajax 25-26 Terrace Icons Shirt",
   "team": "Ajax 25-26 Terrace Icons",
@@ -565,10 +565,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%20Away%20Shirt%2024-25.png",
+  "image": "/collectie/Ajax%20Away%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Ajax%20Away%20Shirt%2024-25.png",
-   "/public/collectie/Ajax%20Away%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Ajax%20Away%20Shirt%2024-25.png",
+   "/collectie/Ajax%20Away%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Ajax Away Shirt 24-25",
   "team": "Ajax",
@@ -587,10 +587,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%20Home%20Shirt%2024-25%20125th%20Anniversary%20Edition.png",
+  "image": "/collectie/Ajax%20Home%20Shirt%2024-25%20125th%20Anniversary%20Edition.png",
   "gallery": [
-   "/public/collectie/Ajax%20Home%20Shirt%2024-25%20125th%20Anniversary%20Edition.png",
-   "/public/collectie/Ajax%20Home%20Shirt%2024-25%20125th%20Anniversary%20Edition%20achterkant.png"
+   "/collectie/Ajax%20Home%20Shirt%2024-25%20125th%20Anniversary%20Edition.png",
+   "/collectie/Ajax%20Home%20Shirt%2024-25%20125th%20Anniversary%20Edition%20achterkant.png"
   ],
   "name": "Ajax Home Shirt 24-25 125th Anniversary Edition",
   "team": "Ajax",
@@ -609,10 +609,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Ajax%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Ajax%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Ajax%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Ajax%20Home%20Shirt%2025-26.png",
+   "/collectie/Ajax%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Ajax Home Shirt 25-26",
   "team": "Ajax",
@@ -631,10 +631,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%20Special%20Edition%20-Bob%20Marley%20-%20One%20Love-%20Shirt%2025-26.png",
+  "image": "/collectie/Ajax%20Special%20Edition%20-Bob%20Marley%20-%20One%20Love-%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Ajax%20Special%20Edition%20-Bob%20Marley%20-%20One%20Love-%20Shirt%2025-26.png",
-   "/public/collectie/Ajax%20Special%20Edition%20-Bob%20Marley%20-%20One%20Love-%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Ajax%20Special%20Edition%20-Bob%20Marley%20-%20One%20Love-%20Shirt%2025-26.png",
+   "/collectie/Ajax%20Special%20Edition%20-Bob%20Marley%20-%20One%20Love-%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Ajax Special Edition -Bob Marley - One Love- Shirt 25-26",
   "team": "Ajax",
@@ -653,10 +653,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%20Special%20Edition%20'Bob%20Marley'%20Shirt.png",
+  "image": "/collectie/Ajax%20Special%20Edition%20'Bob%20Marley'%20Shirt.png",
   "gallery": [
-   "/public/collectie/Ajax%20Special%20Edition%20'Bob%20Marley'%20Shirt.png",
-   "/public/collectie/Ajax%20Special%20Edition%20'Bob%20Marley'%20Shirt%20achterkant.png"
+   "/collectie/Ajax%20Special%20Edition%20'Bob%20Marley'%20Shirt.png",
+   "/collectie/Ajax%20Special%20Edition%20'Bob%20Marley'%20Shirt%20achterkant.png"
   ],
   "name": "Ajax Special Edition 'Bob Marley' Shirt",
   "team": "Ajax",
@@ -675,10 +675,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%20Special%20Edition%20Bob%20Marley%20White%20Shirt.jpg",
+  "image": "/collectie/Ajax%20Special%20Edition%20Bob%20Marley%20White%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Ajax%20Special%20Edition%20Bob%20Marley%20White%20Shirt.jpg",
-   "/public/collectie/Ajax%20Special%20Edition%20Bob%20Marley%20White%20Shirt%20achterkant.jpg"
+   "/collectie/Ajax%20Special%20Edition%20Bob%20Marley%20White%20Shirt.jpg",
+   "/collectie/Ajax%20Special%20Edition%20Bob%20Marley%20White%20Shirt%20achterkant.jpg"
   ],
   "name": "Ajax Special Edition Bob Marley White Shirt",
   "team": "Ajax",
@@ -697,10 +697,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
+  "image": "/collectie/Ajax%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Ajax%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
-   "/public/collectie/Ajax%20Special%20Edition%20Concept%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Ajax%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
+   "/collectie/Ajax%20Special%20Edition%20Concept%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Ajax Special Edition Concept Shirt 25-26",
   "team": "Ajax",
@@ -719,10 +719,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Edition.jpg",
+  "image": "/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Edition.jpg",
   "gallery": [
-   "/public/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Edition.jpg",
-   "/public/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Edition%20achterkant.jpg"
+   "/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Edition.jpg",
+   "/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Edition%20achterkant.jpg"
   ],
   "name": "Ajax Third Shirt 21-22 Bob Marley Edition",
   "team": "Ajax",
@@ -741,10 +741,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Special%20Edition.jpg",
+  "image": "/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Special%20Edition.jpg",
   "gallery": [
-   "/public/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Special%20Edition.jpg",
-   "/public/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Special%20Edition%20achterkant.jpg"
+   "/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Special%20Edition.jpg",
+   "/collectie/Ajax%20Third%20Shirt%2021-22%20Bob%20Marley%20Special%20Edition%20achterkant.jpg"
   ],
   "name": "Ajax Third Shirt 21-22 Bob Marley Special Edition",
   "team": "Ajax",
@@ -763,10 +763,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ajax%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Ajax%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Ajax%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Ajax%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Ajax%20Third%20Shirt%2025-26.png",
+   "/collectie/Ajax%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Ajax Third Shirt 25-26",
   "team": "Ajax",
@@ -785,10 +785,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Al%20Ahly%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Al%20Ahly%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Al%20Ahly%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Al%20Ahly%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Al%20Ahly%20Away%20Shirt%2025-26.png",
+   "/collectie/Al%20Ahly%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Al Ahly Away Shirt 25-26",
   "team": "Al Ahly",
@@ -807,10 +807,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Al%20Ahly%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Al%20Ahly%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Al%20Ahly%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Al%20Ahly%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Al%20Ahly%20Home%20Shirt%2025-26.png",
+   "/collectie/Al%20Ahly%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Al Ahly Home Shirt 25-26",
   "team": "Al Ahly",
@@ -829,10 +829,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Al%20Nassr%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Al%20Nassr%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Al%20Nassr%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Al%20Nassr%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Al%20Nassr%20Away%20Shirt%2025-26.png",
+   "/collectie/Al%20Nassr%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Al Nassr Away Shirt 25-26",
   "team": "Al Nassr",
@@ -851,10 +851,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Al%20Nassr%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Al%20Nassr%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Al%20Nassr%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Al%20Nassr%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Al%20Nassr%20Home%20Shirt%2025-26.png",
+   "/collectie/Al%20Nassr%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Al Nassr Home Shirt 25-26",
   "team": "Al Nassr",
@@ -873,10 +873,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Al%20Nassr%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Al%20Nassr%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Al%20Nassr%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Al%20Nassr%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Al%20Nassr%20Third%20Shirt%2025-26.png",
+   "/collectie/Al%20Nassr%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Al Nassr Third Shirt 25-26",
   "team": "Al Nassr",
@@ -895,10 +895,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Algeria%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Algeria%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Algeria%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Algeria%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Algeria%20Away%20Shirt%202026.jpg",
+   "/collectie/Algeria%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Algeria Away Shirt 2026",
   "team": "Algeria",
@@ -917,10 +917,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Algeria%20Concept%20Shirt%2025-26.png",
+  "image": "/collectie/Algeria%20Concept%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Algeria%20Concept%20Shirt%2025-26.png",
-   "/public/collectie/Algeria%20Concept%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Algeria%20Concept%20Shirt%2025-26.png",
+   "/collectie/Algeria%20Concept%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Algeria Concept Shirt 25-26",
   "team": "Algeria Concept",
@@ -939,10 +939,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Algeria%20Karakou%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Algeria%20Karakou%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Algeria%20Karakou%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Algeria%20Karakou%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Algeria%20Karakou%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Algeria%20Karakou%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Algeria Karakou Special Edition Shirt 24-25",
   "team": "Algeria Karakou",
@@ -961,10 +961,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Algeria%20Special%20Edition%20Karakou%20Shirt%2024-25.jpg",
+  "image": "/collectie/Algeria%20Special%20Edition%20Karakou%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Algeria%20Special%20Edition%20Karakou%20Shirt%2024-25.jpg",
-   "/public/collectie/Algeria%20Special%20Edition%20Karakou%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Algeria%20Special%20Edition%20Karakou%20Shirt%2024-25.jpg",
+   "/collectie/Algeria%20Special%20Edition%20Karakou%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Algeria Special Edition Karakou Shirt 24-25",
   "team": "Algeria",
@@ -983,10 +983,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Argentina%2050th%20Anniversary%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Argentina%2050th%20Anniversary%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Argentina%2050th%20Anniversary%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Argentina%2050th%20Anniversary%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Argentina%2050th%20Anniversary%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Argentina%2050th%20Anniversary%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Argentina 50th Anniversary Special Edition Shirt 24-25",
   "team": "Argentina 50th Anniversary",
@@ -1005,10 +1005,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Argentina%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Argentina%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Argentina%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Argentina%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Argentina%20Away%20Shirt%202026.jpg",
+   "/collectie/Argentina%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Argentina Away Shirt 2026",
   "team": "Argentina",
@@ -1027,10 +1027,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Argentina%20Away%20With%202022%20Badge%20Shirt%202026.jpg",
+  "image": "/collectie/Argentina%20Away%20With%202022%20Badge%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Argentina%20Away%20With%202022%20Badge%20Shirt%202026.jpg",
-   "/public/collectie/Argentina%20Away%20With%202022%20Badge%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Argentina%20Away%20With%202022%20Badge%20Shirt%202026.jpg",
+   "/collectie/Argentina%20Away%20With%202022%20Badge%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Argentina Away With 2022 Badge Shirt 2026",
   "team": "Argentina",
@@ -1049,10 +1049,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Argentina%20Balmain%20Special%20Edition%20Concept%20Shirt%2023-24.jpg",
+  "image": "/collectie/Argentina%20Balmain%20Special%20Edition%20Concept%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Argentina%20Balmain%20Special%20Edition%20Concept%20Shirt%2023-24.jpg",
-   "/public/collectie/Argentina%20Balmain%20Special%20Edition%20Concept%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Argentina%20Balmain%20Special%20Edition%20Concept%20Shirt%2023-24.jpg",
+   "/collectie/Argentina%20Balmain%20Special%20Edition%20Concept%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Argentina Balmain Special Edition Concept Shirt 23-24",
   "team": "Argentina Balmain",
@@ -1071,10 +1071,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Argentina%20Home%20Pre-Match%20Shirt%202026.jpg",
+  "image": "/collectie/Argentina%20Home%20Pre-Match%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Argentina%20Home%20Pre-Match%20Shirt%202026.jpg",
-   "/public/collectie/Argentina%20Home%20Pre-Match%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Argentina%20Home%20Pre-Match%20Shirt%202026.jpg",
+   "/collectie/Argentina%20Home%20Pre-Match%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Argentina Home Pre-Match Shirt 2026",
   "team": "Argentina",
@@ -1093,10 +1093,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2023-24.jpg",
+  "image": "/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2023-24.jpg",
-   "/public/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2023-24.jpg",
+   "/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Argentina Special Edition 'La Pulga' Shirt 23-24",
   "team": "Argentina",
@@ -1115,10 +1115,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2026-27.jpg",
+  "image": "/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2026-27.jpg",
-   "/public/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2026-27.jpg",
+   "/collectie/Argentina%20Special%20Edition%20'La%20Pulga'%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Argentina Special Edition 'La Pulga' Shirt 26-27",
   "team": "Argentina",
@@ -1137,10 +1137,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Argentina%20Special%20Edition%20Pink%20Training%20Shirt%2025-26.png",
+  "image": "/collectie/Argentina%20Special%20Edition%20Pink%20Training%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Argentina%20Special%20Edition%20Pink%20Training%20Shirt%2025-26.png",
-   "/public/collectie/Argentina%20Special%20Edition%20Pink%20Training%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Argentina%20Special%20Edition%20Pink%20Training%20Shirt%2025-26.png",
+   "/collectie/Argentina%20Special%20Edition%20Pink%20Training%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Argentina Special Edition Pink Training Shirt 25-26",
   "team": "Argentina",
@@ -1159,10 +1159,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Armenia%20Home%20Shirt%2022-24.jpg",
+  "image": "/collectie/Armenia%20Home%20Shirt%2022-24.jpg",
   "gallery": [
-   "/public/collectie/Armenia%20Home%20Shirt%2022-24.jpg",
-   "/public/collectie/Armenia%20Home%20Shirt%2022-24%20achterkant.jpg"
+   "/collectie/Armenia%20Home%20Shirt%2022-24.jpg",
+   "/collectie/Armenia%20Home%20Shirt%2022-24%20achterkant.jpg"
   ],
   "name": "Armenia Home Shirt 22-24",
   "team": "Armenia",
@@ -1181,10 +1181,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%2024-25%20Terrace%20Icons%20Shirt.png",
+  "image": "/collectie/Arsenal%2024-25%20Terrace%20Icons%20Shirt.png",
   "gallery": [
-   "/public/collectie/Arsenal%2024-25%20Terrace%20Icons%20Shirt.png",
-   "/public/collectie/Arsenal%2024-25%20Terrace%20Icons%20Shirt%20achterkant.png"
+   "/collectie/Arsenal%2024-25%20Terrace%20Icons%20Shirt.png",
+   "/collectie/Arsenal%2024-25%20Terrace%20Icons%20Shirt%20achterkant.png"
   ],
   "name": "Arsenal 24-25 Terrace Icons Shirt",
   "team": "Arsenal 24-25 Terrace Icons",
@@ -1203,10 +1203,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Away%20Shirt%2023-24%20(Stella%20McCartney%20Edition).jpg",
+  "image": "/collectie/Arsenal%20Away%20Shirt%2023-24%20(Stella%20McCartney%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Away%20Shirt%2023-24%20(Stella%20McCartney%20Edition).jpg",
-   "/public/collectie/Arsenal%20Away%20Shirt%2023-24%20(Stella%20McCartney%20Edition)%20achterkant.jpg"
+   "/collectie/Arsenal%20Away%20Shirt%2023-24%20(Stella%20McCartney%20Edition).jpg",
+   "/collectie/Arsenal%20Away%20Shirt%2023-24%20(Stella%20McCartney%20Edition)%20achterkant.jpg"
   ],
   "name": "Arsenal Away Shirt 23-24 (Stella McCartney Edition)",
   "team": "Arsenal",
@@ -1225,10 +1225,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Arsenal%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Arsenal%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Arsenal%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Arsenal%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Arsenal Away Shirt 24-25",
   "team": "Arsenal",
@@ -1247,10 +1247,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Arsenal%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Arsenal%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Arsenal%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Arsenal%20Away%20Shirt%2025-26.png",
+   "/collectie/Arsenal%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Arsenal Away Shirt 25-26",
   "team": "Arsenal",
@@ -1269,10 +1269,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Away%20Shirt%2026-27.jpg",
+  "image": "/collectie/Arsenal%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Away%20Shirt%2026-27.jpg",
-   "/public/collectie/Arsenal%20Away%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Arsenal%20Away%20Shirt%2026-27.jpg",
+   "/collectie/Arsenal%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Arsenal Away Shirt 26-27",
   "team": "Arsenal",
@@ -1291,10 +1291,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Balmain%20Special%20Edition%20Shirt%2023-24.jpg",
+  "image": "/collectie/Arsenal%20Balmain%20Special%20Edition%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Balmain%20Special%20Edition%20Shirt%2023-24.jpg",
-   "/public/collectie/Arsenal%20Balmain%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Arsenal%20Balmain%20Special%20Edition%20Shirt%2023-24.jpg",
+   "/collectie/Arsenal%20Balmain%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Arsenal Balmain Special Edition Shirt 23-24",
   "team": "Arsenal Balmain",
@@ -1313,10 +1313,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Culturewear%20Adicolor%20Classics%2023-24.jpg",
+  "image": "/collectie/Arsenal%20Culturewear%20Adicolor%20Classics%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Culturewear%20Adicolor%20Classics%2023-24.jpg",
-   "/public/collectie/Arsenal%20Culturewear%20Adicolor%20Classics%2023-24%20achterkant.jpg"
+   "/collectie/Arsenal%20Culturewear%20Adicolor%20Classics%2023-24.jpg",
+   "/collectie/Arsenal%20Culturewear%20Adicolor%20Classics%2023-24%20achterkant.jpg"
   ],
   "name": "Arsenal Culturewear Adicolor Classics 23-24",
   "team": "Arsenal Culturewear Adicolor Classics 23-24",
@@ -1335,10 +1335,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Home%20Shirt%2024-25.png",
+  "image": "/collectie/Arsenal%20Home%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Arsenal%20Home%20Shirt%2024-25.png",
-   "/public/collectie/Arsenal%20Home%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Arsenal%20Home%20Shirt%2024-25.png",
+   "/collectie/Arsenal%20Home%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Arsenal Home Shirt 24-25",
   "team": "Arsenal",
@@ -1357,10 +1357,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Home%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Arsenal%20Home%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Home%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Arsenal%20Home%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Arsenal%20Home%20Shirt%2024-25%202.jpg",
+   "/collectie/Arsenal%20Home%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Arsenal Home Shirt 24-25 2",
   "team": "Arsenal",
@@ -1379,10 +1379,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Arsenal%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Arsenal%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Arsenal%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Arsenal%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Arsenal Home Shirt 26-27",
   "team": "Arsenal",
@@ -1401,10 +1401,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Lifestyler%20Shirt%2025-26.png",
+  "image": "/collectie/Arsenal%20Lifestyler%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Arsenal%20Lifestyler%20Shirt%2025-26.png",
-   "/public/collectie/Arsenal%20Lifestyler%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Arsenal%20Lifestyler%20Shirt%2025-26.png",
+   "/collectie/Arsenal%20Lifestyler%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Arsenal Lifestyler Shirt 25-26",
   "team": "Arsenal Lifestyler",
@@ -1423,10 +1423,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20NTS%20Collection%20Shirt%2025-26.jpg",
+  "image": "/collectie/Arsenal%20NTS%20Collection%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20NTS%20Collection%20Shirt%2025-26.jpg",
-   "/public/collectie/Arsenal%20NTS%20Collection%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Arsenal%20NTS%20Collection%20Shirt%2025-26.jpg",
+   "/collectie/Arsenal%20NTS%20Collection%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Arsenal NTS Collection Shirt 25-26",
   "team": "Arsenal NTS Collection",
@@ -1445,10 +1445,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Pre-Match%20Mashup%20Shirt%2024-25.jpg",
+  "image": "/collectie/Arsenal%20Pre-Match%20Mashup%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Pre-Match%20Mashup%20Shirt%2024-25.jpg",
-   "/public/collectie/Arsenal%20Pre-Match%20Mashup%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Arsenal%20Pre-Match%20Mashup%20Shirt%2024-25.jpg",
+   "/collectie/Arsenal%20Pre-Match%20Mashup%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Arsenal Pre-Match Mashup Shirt 24-25",
   "team": "Arsenal",
@@ -1467,10 +1467,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Pre-Match%20Shirt%2024-25%20Labrum%20London%20Edition.jpg",
+  "image": "/collectie/Arsenal%20Pre-Match%20Shirt%2024-25%20Labrum%20London%20Edition.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Pre-Match%20Shirt%2024-25%20Labrum%20London%20Edition.jpg",
-   "/public/collectie/Arsenal%20Pre-Match%20Shirt%2024-25%20Labrum%20London%20Edition%20achterkant.jpg"
+   "/collectie/Arsenal%20Pre-Match%20Shirt%2024-25%20Labrum%20London%20Edition.jpg",
+   "/collectie/Arsenal%20Pre-Match%20Shirt%2024-25%20Labrum%20London%20Edition%20achterkant.jpg"
   ],
   "name": "Arsenal Pre-Match Shirt 24-25 Labrum London Edition",
   "team": "Arsenal",
@@ -1489,10 +1489,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/Arsenal%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/Arsenal%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Arsenal%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/Arsenal%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Arsenal Pre-Match Shirt 25-26",
   "team": "Arsenal",
@@ -1511,10 +1511,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/Arsenal%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Arsenal%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/Arsenal%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Arsenal%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/Arsenal%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Arsenal Special Edition Shirt 25-26",
   "team": "Arsenal",
@@ -1533,10 +1533,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26.png",
+  "image": "/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26.png",
-   "/public/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26.png",
+   "/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Arsenal Terrace Icons Shirt 25-26",
   "team": "Arsenal Terrace Icons",
@@ -1555,10 +1555,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%202.png",
+  "image": "/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%202.png",
   "gallery": [
-   "/public/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%202.png",
-   "/public/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%202%20achterkant.png"
+   "/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%202.png",
+   "/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%202%20achterkant.png"
   ],
   "name": "Arsenal Terrace Icons Shirt 25-26 2",
   "team": "Arsenal Terrace Icons",
@@ -1577,10 +1577,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%203.png",
+  "image": "/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%203.png",
   "gallery": [
-   "/public/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%203.png",
-   "/public/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%203%20achterkant.png"
+   "/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%203.png",
+   "/collectie/Arsenal%20Terrace%20Icons%20Shirt%2025-26%203%20achterkant.png"
   ],
   "name": "Arsenal Terrace Icons Shirt 25-26 3",
   "team": "Arsenal Terrace Icons",
@@ -1599,10 +1599,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/Arsenal%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/Arsenal%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Arsenal%20Third%20Shirt%2024-25.jpg",
+   "/collectie/Arsenal%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Arsenal Third Shirt 24-25",
   "team": "Arsenal",
@@ -1621,10 +1621,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Arsenal%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Arsenal%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Arsenal%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Arsenal%20Third%20Shirt%2025-26.png",
+   "/collectie/Arsenal%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Arsenal Third Shirt 25-26",
   "team": "Arsenal",
@@ -1643,10 +1643,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Arsenal%20Training%20Shirt%2024-25.jpg",
+  "image": "/collectie/Arsenal%20Training%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Arsenal%20Training%20Shirt%2024-25.jpg",
-   "/public/collectie/Arsenal%20Training%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Arsenal%20Training%20Shirt%2024-25.jpg",
+   "/collectie/Arsenal%20Training%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Arsenal Training Shirt 24-25",
   "team": "Arsenal Training",
@@ -1665,10 +1665,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AS%20Monaco%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/AS%20Monaco%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/AS%20Monaco%20Away%20Shirt%2025-26.png",
-   "/public/collectie/AS%20Monaco%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/AS%20Monaco%20Away%20Shirt%2025-26.png",
+   "/collectie/AS%20Monaco%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "AS Monaco Away Shirt 25-26",
   "team": "AS Monaco",
@@ -1687,10 +1687,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AS%20Monaco%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/AS%20Monaco%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/AS%20Monaco%20Home%20Shirt%2025-26.png",
-   "/public/collectie/AS%20Monaco%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/AS%20Monaco%20Home%20Shirt%2025-26.png",
+   "/collectie/AS%20Monaco%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "AS Monaco Home Shirt 25-26",
   "team": "AS Monaco",
@@ -1709,10 +1709,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AS%20Monaco%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/AS%20Monaco%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/AS%20Monaco%20Third%20Shirt%2025-26.png",
-   "/public/collectie/AS%20Monaco%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/AS%20Monaco%20Third%20Shirt%2025-26.png",
+   "/collectie/AS%20Monaco%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "AS Monaco Third Shirt 25-26",
   "team": "AS Monaco",
@@ -1731,10 +1731,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AS%20Roma%20Away%20Shirt%2023-24.jpg",
+  "image": "/collectie/AS%20Roma%20Away%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/AS%20Roma%20Away%20Shirt%2023-24.jpg",
-   "/public/collectie/AS%20Roma%20Away%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/AS%20Roma%20Away%20Shirt%2023-24.jpg",
+   "/collectie/AS%20Roma%20Away%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "AS Roma Away Shirt 23-24",
   "team": "AS Roma",
@@ -1753,10 +1753,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AS%20Roma%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/AS%20Roma%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/AS%20Roma%20Away%20Shirt%2025-26.png",
-   "/public/collectie/AS%20Roma%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/AS%20Roma%20Away%20Shirt%2025-26.png",
+   "/collectie/AS%20Roma%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "AS Roma Away Shirt 25-26",
   "team": "AS Roma",
@@ -1775,10 +1775,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AS%20Roma%20Home%20Shirt%2023-24.jpg",
+  "image": "/collectie/AS%20Roma%20Home%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/AS%20Roma%20Home%20Shirt%2023-24.jpg",
-   "/public/collectie/AS%20Roma%20Home%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/AS%20Roma%20Home%20Shirt%2023-24.jpg",
+   "/collectie/AS%20Roma%20Home%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "AS Roma Home Shirt 23-24",
   "team": "AS Roma",
@@ -1797,10 +1797,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AS%20Roma%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/AS%20Roma%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/AS%20Roma%20Home%20Shirt%2025-26.png",
-   "/public/collectie/AS%20Roma%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/AS%20Roma%20Home%20Shirt%2025-26.png",
+   "/collectie/AS%20Roma%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "AS Roma Home Shirt 25-26",
   "team": "AS Roma",
@@ -1819,10 +1819,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AS%20Roma%20Originals%20Shirt%2024-25.jpg",
+  "image": "/collectie/AS%20Roma%20Originals%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/AS%20Roma%20Originals%20Shirt%2024-25.jpg",
-   "/public/collectie/AS%20Roma%20Originals%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/AS%20Roma%20Originals%20Shirt%2024-25.jpg",
+   "/collectie/AS%20Roma%20Originals%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "AS Roma Originals Shirt 24-25",
   "team": "AS Roma Originals",
@@ -1841,10 +1841,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AS%20Roma%20Third%20Shirt%2023-24.jpg",
+  "image": "/collectie/AS%20Roma%20Third%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/AS%20Roma%20Third%20Shirt%2023-24.jpg",
-   "/public/collectie/AS%20Roma%20Third%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/AS%20Roma%20Third%20Shirt%2023-24.jpg",
+   "/collectie/AS%20Roma%20Third%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "AS Roma Third Shirt 23-24",
   "team": "AS Roma",
@@ -1863,10 +1863,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/AS%20Roma%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/AS%20Roma%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/AS%20Roma%20Third%20Shirt%2025-26.png",
-   "/public/collectie/AS%20Roma%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/AS%20Roma%20Third%20Shirt%2025-26.png",
+   "/collectie/AS%20Roma%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "AS Roma Third Shirt 25-26",
   "team": "AS Roma",
@@ -1885,10 +1885,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Aston%20Villa%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Aston%20Villa%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Aston%20Villa%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Aston%20Villa%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Aston%20Villa%20Away%20Shirt%2025-26.png",
+   "/collectie/Aston%20Villa%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Aston Villa Away Shirt 25-26",
   "team": "Aston Villa",
@@ -1907,10 +1907,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Aston%20Villa%20Away%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Aston%20Villa%20Away%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Aston%20Villa%20Away%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Aston%20Villa%20Away%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Aston%20Villa%20Away%20Shirt%2025-26%202.jpg",
+   "/collectie/Aston%20Villa%20Away%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Aston Villa Away Shirt 25-26 2",
   "team": "Aston Villa",
@@ -1929,10 +1929,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Aston%20Villa%20Fourth%20Shirt%2024-25%20(150th%20Anniversary%20Edition).jpg",
+  "image": "/collectie/Aston%20Villa%20Fourth%20Shirt%2024-25%20(150th%20Anniversary%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Aston%20Villa%20Fourth%20Shirt%2024-25%20(150th%20Anniversary%20Edition).jpg",
-   "/public/collectie/Aston%20Villa%20Fourth%20Shirt%2024-25%20(150th%20Anniversary%20Edition)%20achterkant.jpg"
+   "/collectie/Aston%20Villa%20Fourth%20Shirt%2024-25%20(150th%20Anniversary%20Edition).jpg",
+   "/collectie/Aston%20Villa%20Fourth%20Shirt%2024-25%20(150th%20Anniversary%20Edition)%20achterkant.jpg"
   ],
   "name": "Aston Villa Fourth Shirt 24-25 (150th Anniversary Edition)",
   "team": "Aston Villa",
@@ -1951,10 +1951,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Aston%20Villa%20Home%20Shirt%2024-25.png",
+  "image": "/collectie/Aston%20Villa%20Home%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Aston%20Villa%20Home%20Shirt%2024-25.png",
-   "/public/collectie/Aston%20Villa%20Home%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Aston%20Villa%20Home%20Shirt%2024-25.png",
+   "/collectie/Aston%20Villa%20Home%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Aston Villa Home Shirt 24-25",
   "team": "Aston Villa",
@@ -1973,10 +1973,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Aston%20Villa%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Aston%20Villa%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Aston%20Villa%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Aston%20Villa%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Aston%20Villa%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Aston%20Villa%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Aston Villa Home Shirt 26-27",
   "team": "Aston Villa",
@@ -1995,10 +1995,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Aston%20Villa%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Aston%20Villa%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Aston%20Villa%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Aston%20Villa%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Aston%20Villa%20Third%20Shirt%2025-26.png",
+   "/collectie/Aston%20Villa%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Aston Villa Third Shirt 25-26",
   "team": "Aston Villa",
@@ -2017,10 +2017,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Atalanta%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Atalanta%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Atalanta%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Atalanta%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Atalanta%20Away%20Shirt%2025-26.png",
+   "/collectie/Atalanta%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Atalanta Away Shirt 25-26",
   "team": "Atalanta",
@@ -2039,10 +2039,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Atalanta%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Atalanta%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Atalanta%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Atalanta%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Atalanta%20Home%20Shirt%2025-26.png",
+   "/collectie/Atalanta%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Atalanta Home Shirt 25-26",
   "team": "Atalanta",
@@ -2061,10 +2061,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Athletic%20Bilbao%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Athletic%20Bilbao%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Athletic%20Bilbao%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Athletic%20Bilbao%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Athletic%20Bilbao%20Away%20Shirt%2025-26.png",
+   "/collectie/Athletic%20Bilbao%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Athletic Bilbao Away Shirt 25-26",
   "team": "Athletic Bilbao",
@@ -2083,10 +2083,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Athletic%20Bilbao%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Athletic%20Bilbao%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Athletic%20Bilbao%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Athletic%20Bilbao%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Athletic%20Bilbao%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Athletic%20Bilbao%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Athletic Bilbao Home Shirt 24-25",
   "team": "Athletic Bilbao",
@@ -2105,10 +2105,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Athletic%20Bilbao%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Athletic%20Bilbao%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Athletic%20Bilbao%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Athletic%20Bilbao%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Athletic%20Bilbao%20Home%20Shirt%2025-26.png",
+   "/collectie/Athletic%20Bilbao%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Athletic Bilbao Home Shirt 25-26",
   "team": "Athletic Bilbao",
@@ -2127,10 +2127,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Atlético Madrid Away Shirt 24-25",
   "team": "Atlético Madrid",
@@ -2149,10 +2149,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2025-26.png",
+   "/collectie/Atl%C3%A9tico%20Madrid%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Atlético Madrid Away Shirt 25-26",
   "team": "Atlético Madrid",
@@ -2171,10 +2171,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Atlético Madrid Home Shirt 24-25",
   "team": "Atlético Madrid",
@@ -2193,10 +2193,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Atl%C3%A9tico%20Madrid%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Atlético Madrid Home Shirt 25-26",
   "team": "Atlético Madrid",
@@ -2215,10 +2215,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Atl%C3%A9tico%20Madrid%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Atl%C3%A9tico%20Madrid%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Atl%C3%A9tico%20Madrid%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Atl%C3%A9tico%20Madrid%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Atlético Madrid Pre-Match Shirt 25-26",
   "team": "Atlético Madrid",
@@ -2237,10 +2237,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Atl%C3%A9tico%20Madrid%20Third%20Shirt%2025-26%20(Total%2090%20Collection).png",
+  "image": "/collectie/Atl%C3%A9tico%20Madrid%20Third%20Shirt%2025-26%20(Total%2090%20Collection).png",
   "gallery": [
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Third%20Shirt%2025-26%20(Total%2090%20Collection).png",
-   "/public/collectie/Atl%C3%A9tico%20Madrid%20Third%20Shirt%2025-26%20(Total%2090%20Collection)%20achterkant.png"
+   "/collectie/Atl%C3%A9tico%20Madrid%20Third%20Shirt%2025-26%20(Total%2090%20Collection).png",
+   "/collectie/Atl%C3%A9tico%20Madrid%20Third%20Shirt%2025-26%20(Total%2090%20Collection)%20achterkant.png"
   ],
   "name": "Atlético Madrid Third Shirt 25-26 (Total 90 Collection)",
   "team": "Atlético Madrid",
@@ -2259,10 +2259,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Atl%C3%A9tico%20Nacional%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Atl%C3%A9tico%20Nacional%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Atl%C3%A9tico%20Nacional%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Atl%C3%A9tico%20Nacional%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Atl%C3%A9tico%20Nacional%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Atl%C3%A9tico%20Nacional%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Atlético Nacional Away Shirt 25-26",
   "team": "Atlético Nacional",
@@ -2281,10 +2281,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Atl%C3%A9tico%20Nacional%20Home%20Shirt%202025.jpg",
+  "image": "/collectie/Atl%C3%A9tico%20Nacional%20Home%20Shirt%202025.jpg",
   "gallery": [
-   "/public/collectie/Atl%C3%A9tico%20Nacional%20Home%20Shirt%202025.jpg",
-   "/public/collectie/Atl%C3%A9tico%20Nacional%20Home%20Shirt%202025%20achterkant.jpg"
+   "/collectie/Atl%C3%A9tico%20Nacional%20Home%20Shirt%202025.jpg",
+   "/collectie/Atl%C3%A9tico%20Nacional%20Home%20Shirt%202025%20achterkant.jpg"
   ],
   "name": "Atlético Nacional Home Shirt 2025",
   "team": "Atlético Nacional",
@@ -2303,10 +2303,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Barcelona%20Away%20(%20Chrome%20logol)%20Shirt%2024-25.jpg",
+  "image": "/collectie/Barcelona%20Away%20(%20Chrome%20logol)%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Barcelona%20Away%20(%20Chrome%20logol)%20Shirt%2024-25.jpg",
-   "/public/collectie/Barcelona%20Away%20(%20Chrome%20logol)%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Barcelona%20Away%20(%20Chrome%20logol)%20Shirt%2024-25.jpg",
+   "/collectie/Barcelona%20Away%20(%20Chrome%20logol)%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Barcelona Away ( Chrome logol) Shirt 24-25",
   "team": "Barcelona",
@@ -2325,10 +2325,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Barcelona%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Barcelona%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Barcelona%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Barcelona%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Barcelona%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Barcelona%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Barcelona Away Shirt 24-25",
   "team": "Barcelona",
@@ -2347,10 +2347,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Barcelona%20SC%20Home%20Shirt%202025%20Centenary%20Edition.jpg",
+  "image": "/collectie/Barcelona%20SC%20Home%20Shirt%202025%20Centenary%20Edition.jpg",
   "gallery": [
-   "/public/collectie/Barcelona%20SC%20Home%20Shirt%202025%20Centenary%20Edition.jpg",
-   "/public/collectie/Barcelona%20SC%20Home%20Shirt%202025%20Centenary%20Edition%20achterkant.jpg"
+   "/collectie/Barcelona%20SC%20Home%20Shirt%202025%20Centenary%20Edition.jpg",
+   "/collectie/Barcelona%20SC%20Home%20Shirt%202025%20Centenary%20Edition%20achterkant.jpg"
   ],
   "name": "Barcelona SC Home Shirt 2025 Centenary Edition",
   "team": "Barcelona SC",
@@ -2369,10 +2369,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Barcelona%20Special%20Edition%20'Hyper%20Eclipse'%20Shirt%2025-26.jpg",
+  "image": "/collectie/Barcelona%20Special%20Edition%20'Hyper%20Eclipse'%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Barcelona%20Special%20Edition%20'Hyper%20Eclipse'%20Shirt%2025-26.jpg",
-   "/public/collectie/Barcelona%20Special%20Edition%20'Hyper%20Eclipse'%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Barcelona%20Special%20Edition%20'Hyper%20Eclipse'%20Shirt%2025-26.jpg",
+   "/collectie/Barcelona%20Special%20Edition%20'Hyper%20Eclipse'%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Barcelona Special Edition 'Hyper Eclipse' Shirt 25-26",
   "team": "Barcelona",
@@ -2391,10 +2391,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26.png",
+  "image": "/collectie/Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26.png",
-   "/public/collectie/Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26.png",
+   "/collectie/Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Barcelona Special Edition 'Pastel Dream' Shirt 25-26",
   "team": "Barcelona",
@@ -2413,10 +2413,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Barcelona%20Special%20Edition%20Shirt%2026-27.jpg",
+  "image": "/collectie/Barcelona%20Special%20Edition%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Barcelona%20Special%20Edition%20Shirt%2026-27.jpg",
-   "/public/collectie/Barcelona%20Special%20Edition%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Barcelona%20Special%20Edition%20Shirt%2026-27.jpg",
+   "/collectie/Barcelona%20Special%20Edition%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Barcelona Special Edition Shirt 26-27",
   "team": "Barcelona",
@@ -2435,10 +2435,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Barcelona%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/Barcelona%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Barcelona%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/Barcelona%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Barcelona%20Third%20Shirt%2024-25.jpg",
+   "/collectie/Barcelona%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Barcelona Third Shirt 24-25",
   "team": "Barcelona",
@@ -2457,10 +2457,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayer%20Leverkusen%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Bayer%20Leverkusen%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Bayer%20Leverkusen%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Bayer%20Leverkusen%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Bayer%20Leverkusen%20Away%20Shirt%2025-26.png",
+   "/collectie/Bayer%20Leverkusen%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Bayer Leverkusen Away Shirt 25-26",
   "team": "Bayer Leverkusen",
@@ -2479,10 +2479,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24.jpg",
+  "image": "/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24.jpg",
-   "/public/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24.jpg",
+   "/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Bayer Leverkusen Home Shirt 23-24",
   "team": "Bayer Leverkusen",
@@ -2501,10 +2501,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24%20'Champions%20Edition'.jpg",
+  "image": "/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24%20'Champions%20Edition'.jpg",
   "gallery": [
-   "/public/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24%20'Champions%20Edition'.jpg",
-   "/public/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24%20'Champions%20Edition'%20achterkant.jpg"
+   "/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24%20'Champions%20Edition'.jpg",
+   "/collectie/Bayer%20Leverkusen%20Home%20Shirt%2023-24%20'Champions%20Edition'%20achterkant.jpg"
   ],
   "name": "Bayer Leverkusen Home Shirt 23-24 'Champions Edition'",
   "team": "Bayer Leverkusen",
@@ -2523,10 +2523,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayer%20Leverkusen%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Bayer%20Leverkusen%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Bayer%20Leverkusen%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Bayer%20Leverkusen%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Bayer%20Leverkusen%20Home%20Shirt%2025-26.png",
+   "/collectie/Bayer%20Leverkusen%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Bayer Leverkusen Home Shirt 25-26",
   "team": "Bayer Leverkusen",
@@ -2545,10 +2545,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%2025-26%20Terrace%20Icons%20Shirt.png",
+  "image": "/collectie/Bayern%20Munich%2025-26%20Terrace%20Icons%20Shirt.png",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%2025-26%20Terrace%20Icons%20Shirt.png",
-   "/public/collectie/Bayern%20Munich%2025-26%20Terrace%20Icons%20Shirt%20achterkant.png"
+   "/collectie/Bayern%20Munich%2025-26%20Terrace%20Icons%20Shirt.png",
+   "/collectie/Bayern%20Munich%2025-26%20Terrace%20Icons%20Shirt%20achterkant.png"
   ],
   "name": "Bayern Munich 25-26 Terrace Icons Shirt",
   "team": "Bayern Munich 25-26 Terrace Icons",
@@ -2567,10 +2567,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20125th%20Anniversary%20Shirt%2024-25.png",
+  "image": "/collectie/Bayern%20Munich%20125th%20Anniversary%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20125th%20Anniversary%20Shirt%2024-25.png",
-   "/public/collectie/Bayern%20Munich%20125th%20Anniversary%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Bayern%20Munich%20125th%20Anniversary%20Shirt%2024-25.png",
+   "/collectie/Bayern%20Munich%20125th%20Anniversary%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Bayern Munich 125th Anniversary Shirt 24-25",
   "team": "Bayern Munich 125th Anniversary",
@@ -2589,10 +2589,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Away%20Shirt%2023-24.jpg",
+  "image": "/collectie/Bayern%20Munich%20Away%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Away%20Shirt%2023-24.jpg",
-   "/public/collectie/Bayern%20Munich%20Away%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Bayern%20Munich%20Away%20Shirt%2023-24.jpg",
+   "/collectie/Bayern%20Munich%20Away%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Bayern Munich Away Shirt 23-24",
   "team": "Bayern Munich",
@@ -2611,10 +2611,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Bayern%20Munich%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Bayern%20Munich%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Bayern%20Munich%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Bayern%20Munich%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Bayern Munich Away Shirt 24-25",
   "team": "Bayern Munich",
@@ -2633,10 +2633,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Bayern%20Munich%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Bayern%20Munich%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Bayern%20Munich%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Bayern%20Munich%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Bayern Munich Away Shirt 25-26",
   "team": "Bayern Munich",
@@ -2655,10 +2655,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Bayern%20Munich%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Bayern%20Munich%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Bayern%20Munich%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Bayern%20Munich%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Bayern Munich Home Shirt 24-25",
   "team": "Bayern Munich",
@@ -2677,10 +2677,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Bayern%20Munich%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Bayern%20Munich%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Bayern%20Munich%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Bayern%20Munich%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Bayern Munich Home Shirt 25-26",
   "team": "Bayern Munich",
@@ -2699,10 +2699,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/Bayern%20Munich%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/Bayern%20Munich%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Bayern%20Munich%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/Bayern%20Munich%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Bayern Munich Pre-Match Shirt 25-26",
   "team": "Bayern Munich",
@@ -2721,10 +2721,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Special%20Edition%20Balmain%20Concept%20Shirt.jpg",
+  "image": "/collectie/Bayern%20Munich%20Special%20Edition%20Balmain%20Concept%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Special%20Edition%20Balmain%20Concept%20Shirt.jpg",
-   "/public/collectie/Bayern%20Munich%20Special%20Edition%20Balmain%20Concept%20Shirt%20achterkant.jpg"
+   "/collectie/Bayern%20Munich%20Special%20Edition%20Balmain%20Concept%20Shirt.jpg",
+   "/collectie/Bayern%20Munich%20Special%20Edition%20Balmain%20Concept%20Shirt%20achterkant.jpg"
   ],
   "name": "Bayern Munich Special Edition Balmain Concept Shirt",
   "team": "Bayern Munich",
@@ -2743,10 +2743,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Special%20Edition%20BSTN%20Shirt%2024-25.jpg",
+  "image": "/collectie/Bayern%20Munich%20Special%20Edition%20BSTN%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Special%20Edition%20BSTN%20Shirt%2024-25.jpg",
-   "/public/collectie/Bayern%20Munich%20Special%20Edition%20BSTN%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Bayern%20Munich%20Special%20Edition%20BSTN%20Shirt%2024-25.jpg",
+   "/collectie/Bayern%20Munich%20Special%20Edition%20BSTN%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Bayern Munich Special Edition BSTN Shirt 24-25",
   "team": "Bayern Munich",
@@ -2765,10 +2765,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Special%20Edition%20US%20Pack%20Baseball%20Shirt%2025-26.png",
+  "image": "/collectie/Bayern%20Munich%20Special%20Edition%20US%20Pack%20Baseball%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Special%20Edition%20US%20Pack%20Baseball%20Shirt%2025-26.png",
-   "/public/collectie/Bayern%20Munich%20Special%20Edition%20US%20Pack%20Baseball%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Bayern%20Munich%20Special%20Edition%20US%20Pack%20Baseball%20Shirt%2025-26.png",
+   "/collectie/Bayern%20Munich%20Special%20Edition%20US%20Pack%20Baseball%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Bayern Munich Special Edition US Pack Baseball Shirt 25-26",
   "team": "Bayern Munich",
@@ -2787,10 +2787,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Terrace%20Icons%20Shirt%2024-25.png",
+  "image": "/collectie/Bayern%20Munich%20Terrace%20Icons%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Terrace%20Icons%20Shirt%2024-25.png",
-   "/public/collectie/Bayern%20Munich%20Terrace%20Icons%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Bayern%20Munich%20Terrace%20Icons%20Shirt%2024-25.png",
+   "/collectie/Bayern%20Munich%20Terrace%20Icons%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Bayern Munich Terrace Icons Shirt 24-25",
   "team": "Bayern Munich Terrace Icons",
@@ -2809,10 +2809,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/Bayern%20Munich%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/Bayern%20Munich%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Bayern%20Munich%20Third%20Shirt%2024-25.jpg",
+   "/collectie/Bayern%20Munich%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Bayern Munich Third Shirt 24-25",
   "team": "Bayern Munich",
@@ -2831,10 +2831,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Bayern%20Munich%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Bayern%20Munich%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Bayern%20Munich%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Bayern%20Munich%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Bayern%20Munich%20Third%20Shirt%2025-26.png",
+   "/collectie/Bayern%20Munich%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Bayern Munich Third Shirt 25-26",
   "team": "Bayern Munich",
@@ -2853,10 +2853,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Belgium%20Away%20Shirt%202026%20If%20you're%20tracking%20down%20football%20gear.jpg",
+  "image": "/collectie/Belgium%20Away%20Shirt%202026%20If%20you're%20tracking%20down%20football%20gear.jpg",
   "gallery": [
-   "/public/collectie/Belgium%20Away%20Shirt%202026%20If%20you're%20tracking%20down%20football%20gear.jpg",
-   "/public/collectie/Belgium%20Away%20Shirt%202026%20If%20you're%20tracking%20down%20football%20gear%20achterkant.jpg"
+   "/collectie/Belgium%20Away%20Shirt%202026%20If%20you're%20tracking%20down%20football%20gear.jpg",
+   "/collectie/Belgium%20Away%20Shirt%202026%20If%20you're%20tracking%20down%20football%20gear%20achterkant.jpg"
   ],
   "name": "Belgium Away Shirt 2026 If you're tracking down football gear",
   "team": "Belgium",
@@ -2875,10 +2875,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Belgium%20Home%20Shirt%202026.png",
+  "image": "/collectie/Belgium%20Home%20Shirt%202026.png",
   "gallery": [
-   "/public/collectie/Belgium%20Home%20Shirt%202026.png",
-   "/public/collectie/Belgium%20Home%20Shirt%202026%20achterkant.png"
+   "/collectie/Belgium%20Home%20Shirt%202026.png",
+   "/collectie/Belgium%20Home%20Shirt%202026%20achterkant.png"
   ],
   "name": "Belgium Home Shirt 2026",
   "team": "Belgium",
@@ -2897,10 +2897,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%2024-25%20Adidas%20Originals%20Terrace%20Icons%20Shirt.png",
+  "image": "/collectie/Benfica%2024-25%20Adidas%20Originals%20Terrace%20Icons%20Shirt.png",
   "gallery": [
-   "/public/collectie/Benfica%2024-25%20Adidas%20Originals%20Terrace%20Icons%20Shirt.png",
-   "/public/collectie/Benfica%2024-25%20Adidas%20Originals%20Terrace%20Icons%20Shirt%20achterkant.png"
+   "/collectie/Benfica%2024-25%20Adidas%20Originals%20Terrace%20Icons%20Shirt.png",
+   "/collectie/Benfica%2024-25%20Adidas%20Originals%20Terrace%20Icons%20Shirt%20achterkant.png"
   ],
   "name": "Benfica 24-25 Adidas Originals Terrace Icons Shirt",
   "team": "Benfica 24-25 Adidas Originals Terrace Icons",
@@ -2919,10 +2919,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Benfica%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Benfica%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Benfica%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Benfica%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Benfica%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Benfica Away Shirt 24-25",
   "team": "Benfica",
@@ -2941,10 +2941,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Benfica%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Benfica%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Benfica%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Benfica%20Away%20Shirt%2025-26.png",
+   "/collectie/Benfica%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Benfica Away Shirt 25-26",
   "team": "Benfica",
@@ -2963,10 +2963,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%20Fourth%20Shirt%2025-26.jpg",
+  "image": "/collectie/Benfica%20Fourth%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Benfica%20Fourth%20Shirt%2025-26.jpg",
-   "/public/collectie/Benfica%20Fourth%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Benfica%20Fourth%20Shirt%2025-26.jpg",
+   "/collectie/Benfica%20Fourth%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Benfica Fourth Shirt 25-26",
   "team": "Benfica",
@@ -2985,10 +2985,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%20Fourth%20Shirt%2025-26%20(Vhils%20Special%20Edition).jpg",
+  "image": "/collectie/Benfica%20Fourth%20Shirt%2025-26%20(Vhils%20Special%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Benfica%20Fourth%20Shirt%2025-26%20(Vhils%20Special%20Edition).jpg",
-   "/public/collectie/Benfica%20Fourth%20Shirt%2025-26%20(Vhils%20Special%20Edition)%20achterkant.jpg"
+   "/collectie/Benfica%20Fourth%20Shirt%2025-26%20(Vhils%20Special%20Edition).jpg",
+   "/collectie/Benfica%20Fourth%20Shirt%2025-26%20(Vhils%20Special%20Edition)%20achterkant.jpg"
   ],
   "name": "Benfica Fourth Shirt 25-26 (Vhils Special Edition)",
   "team": "Benfica",
@@ -3007,10 +3007,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%20Home%20Shirt%2024-25.png",
+  "image": "/collectie/Benfica%20Home%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Benfica%20Home%20Shirt%2024-25.png",
-   "/public/collectie/Benfica%20Home%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Benfica%20Home%20Shirt%2024-25.png",
+   "/collectie/Benfica%20Home%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Benfica Home Shirt 24-25",
   "team": "Benfica",
@@ -3029,10 +3029,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%20Home%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Benfica%20Home%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Benfica%20Home%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Benfica%20Home%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Benfica%20Home%20Shirt%2024-25%202.jpg",
+   "/collectie/Benfica%20Home%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Benfica Home Shirt 24-25 2",
   "team": "Benfica",
@@ -3051,10 +3051,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Benfica%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Benfica%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Benfica%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Benfica%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Benfica%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Benfica Home Shirt 26-27",
   "team": "Benfica",
@@ -3073,10 +3073,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Benfica%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Benfica%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Benfica%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Benfica%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Benfica%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Benfica Pre-Match Shirt 25-26",
   "team": "Benfica",
@@ -3095,10 +3095,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/Benfica%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Benfica%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/Benfica%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Benfica%20Third%20Shirt%2024-25.jpg",
+   "/collectie/Benfica%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Benfica Third Shirt 24-25",
   "team": "Benfica",
@@ -3117,10 +3117,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Benfica%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Benfica%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Benfica%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Benfica%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Benfica%20Third%20Shirt%2025-26.png",
+   "/collectie/Benfica%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Benfica Third Shirt 25-26",
   "team": "Benfica",
@@ -3139,10 +3139,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Birmingham%20City%20Third%20Shirt%2025-26%20'Global'.png",
+  "image": "/collectie/Birmingham%20City%20Third%20Shirt%2025-26%20'Global'.png",
   "gallery": [
-   "/public/collectie/Birmingham%20City%20Third%20Shirt%2025-26%20'Global'.png",
-   "/public/collectie/Birmingham%20City%20Third%20Shirt%2025-26%20'Global'%20achterkant.png"
+   "/collectie/Birmingham%20City%20Third%20Shirt%2025-26%20'Global'.png",
+   "/collectie/Birmingham%20City%20Third%20Shirt%2025-26%20'Global'%20achterkant.png"
   ],
   "name": "Birmingham City Third Shirt 25-26 'Global'",
   "team": "Birmingham City",
@@ -3161,10 +3161,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Boca%20Juniors%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Boca%20Juniors%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Boca%20Juniors%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Boca%20Juniors%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Boca%20Juniors%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Boca%20Juniors%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Boca Juniors Away Shirt 24-25",
   "team": "Boca Juniors",
@@ -3183,10 +3183,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Boca%20Juniors%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Boca%20Juniors%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Boca%20Juniors%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Boca%20Juniors%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Boca%20Juniors%20Away%20Shirt%2025-26.png",
+   "/collectie/Boca%20Juniors%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Boca Juniors Away Shirt 25-26",
   "team": "Boca Juniors",
@@ -3205,10 +3205,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Boca%20Juniors%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Boca%20Juniors%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Boca%20Juniors%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Boca%20Juniors%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Boca%20Juniors%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Boca%20Juniors%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Boca Juniors Home Shirt 24-25",
   "team": "Boca Juniors",
@@ -3227,10 +3227,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Boca%20Juniors%20Home%20Shirt%2025-26%20(120th%20Anniversary%20Edition).png",
+  "image": "/collectie/Boca%20Juniors%20Home%20Shirt%2025-26%20(120th%20Anniversary%20Edition).png",
   "gallery": [
-   "/public/collectie/Boca%20Juniors%20Home%20Shirt%2025-26%20(120th%20Anniversary%20Edition).png",
-   "/public/collectie/Boca%20Juniors%20Home%20Shirt%2025-26%20(120th%20Anniversary%20Edition)%20achterkant.png"
+   "/collectie/Boca%20Juniors%20Home%20Shirt%2025-26%20(120th%20Anniversary%20Edition).png",
+   "/collectie/Boca%20Juniors%20Home%20Shirt%2025-26%20(120th%20Anniversary%20Edition)%20achterkant.png"
   ],
   "name": "Boca Juniors Home Shirt 25-26 (120th Anniversary Edition)",
   "team": "Boca Juniors",
@@ -3249,10 +3249,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Boca%20Juniors%20Terrace%20Icons%20Shirt%2025-26.png",
+  "image": "/collectie/Boca%20Juniors%20Terrace%20Icons%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Boca%20Juniors%20Terrace%20Icons%20Shirt%2025-26.png",
-   "/public/collectie/Boca%20Juniors%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Boca%20Juniors%20Terrace%20Icons%20Shirt%2025-26.png",
+   "/collectie/Boca%20Juniors%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Boca Juniors Terrace Icons Shirt 25-26",
   "team": "Boca Juniors Terrace Icons",
@@ -3271,10 +3271,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Boca%20Juniors%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/Boca%20Juniors%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Boca%20Juniors%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/Boca%20Juniors%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Boca%20Juniors%20Third%20Shirt%2024-25.jpg",
+   "/collectie/Boca%20Juniors%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Boca Juniors Third Shirt 24-25",
   "team": "Boca Juniors",
@@ -3293,10 +3293,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%2025-26%20'Stadion%20Rote%20Erde'%20Special%20Edition%20Shirt.jpg",
+  "image": "/collectie/Borussia%20Dortmund%2025-26%20'Stadion%20Rote%20Erde'%20Special%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%2025-26%20'Stadion%20Rote%20Erde'%20Special%20Edition%20Shirt.jpg",
-   "/public/collectie/Borussia%20Dortmund%2025-26%20'Stadion%20Rote%20Erde'%20Special%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Borussia%20Dortmund%2025-26%20'Stadion%20Rote%20Erde'%20Special%20Edition%20Shirt.jpg",
+   "/collectie/Borussia%20Dortmund%2025-26%20'Stadion%20Rote%20Erde'%20Special%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Borussia Dortmund 25-26 'Stadion Rote Erde' Special Edition Shirt",
   "team": "Borussia Dortmund 25-26 'Stadion Rote Erde'",
@@ -3315,10 +3315,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Borussia%20Dortmund%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Borussia%20Dortmund%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Borussia%20Dortmund%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Borussia%20Dortmund%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Borussia Dortmund Away Shirt 24-25",
   "team": "Borussia Dortmund",
@@ -3337,10 +3337,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Borussia%20Dortmund%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Borussia%20Dortmund%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Borussia%20Dortmund%20Away%20Shirt%2025-26.png",
+   "/collectie/Borussia%20Dortmund%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Borussia Dortmund Away Shirt 25-26",
   "team": "Borussia Dortmund",
@@ -3359,10 +3359,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Borussia%20Dortmund%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Borussia%20Dortmund%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Borussia%20Dortmund%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Borussia Dortmund Home Shirt 24-25",
   "team": "Borussia Dortmund",
@@ -3381,10 +3381,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Borussia Dortmund Home Shirt 25-26",
   "team": "Borussia Dortmund",
@@ -3403,10 +3403,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26%20(Club%20World%20Cup%20-%20KidSuper%20Edition).png",
+  "image": "/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26%20(Club%20World%20Cup%20-%20KidSuper%20Edition).png",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26%20(Club%20World%20Cup%20-%20KidSuper%20Edition).png",
-   "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26%20(Club%20World%20Cup%20-%20KidSuper%20Edition)%20achterkant.png"
+   "/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26%20(Club%20World%20Cup%20-%20KidSuper%20Edition).png",
+   "/collectie/Borussia%20Dortmund%20Home%20Shirt%2025-26%20(Club%20World%20Cup%20-%20KidSuper%20Edition)%20achterkant.png"
   ],
   "name": "Borussia Dortmund Home Shirt 25-26 (Club World Cup - KidSuper Edition)",
   "team": "Borussia Dortmund",
@@ -3425,10 +3425,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Borussia%20Dortmund%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Borussia%20Dortmund%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Borussia%20Dortmund%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Borussia%20Dortmund%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Borussia Dortmund Home Shirt 26-27",
   "team": "Borussia Dortmund",
@@ -3447,10 +3447,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/Borussia%20Dortmund%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/Borussia%20Dortmund%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Borussia%20Dortmund%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/Borussia%20Dortmund%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Borussia Dortmund Pre-Match Shirt 25-26",
   "team": "Borussia Dortmund",
@@ -3469,10 +3469,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Special%20Edition%20'100%20Years%20of%20Rote%20Erde'%20Shirt%2025-26.jpg",
+  "image": "/collectie/Borussia%20Dortmund%20Special%20Edition%20'100%20Years%20of%20Rote%20Erde'%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Special%20Edition%20'100%20Years%20of%20Rote%20Erde'%20Shirt%2025-26.jpg",
-   "/public/collectie/Borussia%20Dortmund%20Special%20Edition%20'100%20Years%20of%20Rote%20Erde'%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Borussia%20Dortmund%20Special%20Edition%20'100%20Years%20of%20Rote%20Erde'%20Shirt%2025-26.jpg",
+   "/collectie/Borussia%20Dortmund%20Special%20Edition%20'100%20Years%20of%20Rote%20Erde'%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Borussia Dortmund Special Edition '100 Years of Rote Erde' Shirt 25-26",
   "team": "Borussia Dortmund",
@@ -3491,10 +3491,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Special%20Edition%20Anniversary%20Shirt%2024-25.jpg",
+  "image": "/collectie/Borussia%20Dortmund%20Special%20Edition%20Anniversary%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Special%20Edition%20Anniversary%20Shirt%2024-25.jpg",
-   "/public/collectie/Borussia%20Dortmund%20Special%20Edition%20Anniversary%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Borussia%20Dortmund%20Special%20Edition%20Anniversary%20Shirt%2024-25.jpg",
+   "/collectie/Borussia%20Dortmund%20Special%20Edition%20Anniversary%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Borussia Dortmund Special Edition Anniversary Shirt 24-25",
   "team": "Borussia Dortmund",
@@ -3513,10 +3513,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Special%20Edition%20Goalkeeper%20Shirt%2024-25.jpg",
+  "image": "/collectie/Borussia%20Dortmund%20Special%20Edition%20Goalkeeper%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Special%20Edition%20Goalkeeper%20Shirt%2024-25.jpg",
-   "/public/collectie/Borussia%20Dortmund%20Special%20Edition%20Goalkeeper%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Borussia%20Dortmund%20Special%20Edition%20Goalkeeper%20Shirt%2024-25.jpg",
+   "/collectie/Borussia%20Dortmund%20Special%20Edition%20Goalkeeper%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Borussia Dortmund Special Edition Goalkeeper Shirt 24-25",
   "team": "Borussia Dortmund",
@@ -3535,10 +3535,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Borussia%20Dortmund%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/Borussia%20Dortmund%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Borussia%20Dortmund%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/Borussia%20Dortmund%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Borussia%20Dortmund%20Third%20Shirt%2024-25.jpg",
+   "/collectie/Borussia%20Dortmund%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Borussia Dortmund Third Shirt 24-25",
   "team": "Borussia Dortmund",
@@ -3557,10 +3557,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20-Canarinho%20Flight-%20Special%20Edition%20Shirt.jpg",
+  "image": "/collectie/Brazil%20-Canarinho%20Flight-%20Special%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20-Canarinho%20Flight-%20Special%20Edition%20Shirt.jpg",
-   "/public/collectie/Brazil%20-Canarinho%20Flight-%20Special%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Brazil%20-Canarinho%20Flight-%20Special%20Edition%20Shirt.jpg",
+   "/collectie/Brazil%20-Canarinho%20Flight-%20Special%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Brazil -Canarinho Flight- Special Edition Shirt",
   "team": "Brazil -Canarinho Flight-",
@@ -3579,10 +3579,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%2024-25%20'Christ%20the%20Redeemer'%20Special%20Edition%20Shirt.jpg",
+  "image": "/collectie/Brazil%2024-25%20'Christ%20the%20Redeemer'%20Special%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Brazil%2024-25%20'Christ%20the%20Redeemer'%20Special%20Edition%20Shirt.jpg",
-   "/public/collectie/Brazil%2024-25%20'Christ%20the%20Redeemer'%20Special%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Brazil%2024-25%20'Christ%20the%20Redeemer'%20Special%20Edition%20Shirt.jpg",
+   "/collectie/Brazil%2024-25%20'Christ%20the%20Redeemer'%20Special%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Brazil 24-25 'Christ the Redeemer' Special Edition Shirt",
   "team": "Brazil 24-25 'Christ the Redeemer'",
@@ -3601,10 +3601,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%2025-26%20Special%20Edition%20Blue%20Macaw%20Shirt.png",
+  "image": "/collectie/Brazil%2025-26%20Special%20Edition%20Blue%20Macaw%20Shirt.png",
   "gallery": [
-   "/public/collectie/Brazil%2025-26%20Special%20Edition%20Blue%20Macaw%20Shirt.png",
-   "/public/collectie/Brazil%2025-26%20Special%20Edition%20Blue%20Macaw%20Shirt%20achterkant.png"
+   "/collectie/Brazil%2025-26%20Special%20Edition%20Blue%20Macaw%20Shirt.png",
+   "/collectie/Brazil%2025-26%20Special%20Edition%20Blue%20Macaw%20Shirt%20achterkant.png"
   ],
   "name": "Brazil 25-26 Special Edition Blue Macaw Shirt",
   "team": "Brazil 25-26",
@@ -3623,10 +3623,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Brazil%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Brazil%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Brazil%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Brazil%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Brazil Away Shirt 24-25",
   "team": "Brazil",
@@ -3645,10 +3645,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Brazil%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Brazil%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Brazil%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Brazil%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Brazil Away Shirt 25-26",
   "team": "Brazil",
@@ -3667,10 +3667,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Brazil%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Brazil%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Brazil%20Away%20Shirt%202026.jpg",
+   "/collectie/Brazil%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Brazil Away Shirt 2026",
   "team": "Brazil",
@@ -3689,10 +3689,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Blackout%20Special%20Edition%20Shirt%2022-23.jpg",
+  "image": "/collectie/Brazil%20Blackout%20Special%20Edition%20Shirt%2022-23.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Blackout%20Special%20Edition%20Shirt%2022-23.jpg",
-   "/public/collectie/Brazil%20Blackout%20Special%20Edition%20Shirt%2022-23%20achterkant.jpg"
+   "/collectie/Brazil%20Blackout%20Special%20Edition%20Shirt%2022-23.jpg",
+   "/collectie/Brazil%20Blackout%20Special%20Edition%20Shirt%2022-23%20achterkant.jpg"
   ],
   "name": "Brazil Blackout Special Edition Shirt 22-23",
   "team": "Brazil Blackout",
@@ -3711,10 +3711,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Concept%20'Christ%20the%20Redeemer'%20Shirt%2024-25.png",
+  "image": "/collectie/Brazil%20Concept%20'Christ%20the%20Redeemer'%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Brazil%20Concept%20'Christ%20the%20Redeemer'%20Shirt%2024-25.png",
-   "/public/collectie/Brazil%20Concept%20'Christ%20the%20Redeemer'%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Brazil%20Concept%20'Christ%20the%20Redeemer'%20Shirt%2024-25.png",
+   "/collectie/Brazil%20Concept%20'Christ%20the%20Redeemer'%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Brazil Concept 'Christ the Redeemer' Shirt 24-25",
   "team": "Brazil Concept 'Christ the Redeemer'",
@@ -3733,10 +3733,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Goalkeeper%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Brazil%20Goalkeeper%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Goalkeeper%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Brazil%20Goalkeeper%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Brazil%20Goalkeeper%20Away%20Shirt%202026.jpg",
+   "/collectie/Brazil%20Goalkeeper%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Brazil Goalkeeper Away Shirt 2026",
   "team": "Brazil",
@@ -3755,10 +3755,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Brazil%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Brazil%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Brazil%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Brazil%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Brazil Home Shirt 24-25",
   "team": "Brazil",
@@ -3777,10 +3777,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Brazil%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Brazil%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Brazil%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Brazil%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Brazil Home Shirt 25-26",
   "team": "Brazil",
@@ -3799,10 +3799,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Lifestyle%20Shirt%202026%20(Jordan%20Brand%20World%20Cup%20Collection).jpg",
+  "image": "/collectie/Brazil%20Lifestyle%20Shirt%202026%20(Jordan%20Brand%20World%20Cup%20Collection).jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Lifestyle%20Shirt%202026%20(Jordan%20Brand%20World%20Cup%20Collection).jpg",
-   "/public/collectie/Brazil%20Lifestyle%20Shirt%202026%20(Jordan%20Brand%20World%20Cup%20Collection)%20achterkant.jpg"
+   "/collectie/Brazil%20Lifestyle%20Shirt%202026%20(Jordan%20Brand%20World%20Cup%20Collection).jpg",
+   "/collectie/Brazil%20Lifestyle%20Shirt%202026%20(Jordan%20Brand%20World%20Cup%20Collection)%20achterkant.jpg"
   ],
   "name": "Brazil Lifestyle Shirt 2026 (Jordan Brand World Cup Collection)",
   "team": "Brazil Lifestyle",
@@ -3821,10 +3821,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20-Blue%20Parrot-%20Concept%20Shirt%2025-26.jpg",
+  "image": "/collectie/Brazil%20Special%20Edition%20-Blue%20Parrot-%20Concept%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20-Blue%20Parrot-%20Concept%20Shirt%2025-26.jpg",
-   "/public/collectie/Brazil%20Special%20Edition%20-Blue%20Parrot-%20Concept%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Brazil%20Special%20Edition%20-Blue%20Parrot-%20Concept%20Shirt%2025-26.jpg",
+   "/collectie/Brazil%20Special%20Edition%20-Blue%20Parrot-%20Concept%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Brazil Special Edition -Blue Parrot- Concept Shirt 25-26",
   "team": "Brazil",
@@ -3843,10 +3843,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20-Bruma%20Folha-%20Shirt%2024-25.jpg",
+  "image": "/collectie/Brazil%20Special%20Edition%20-Bruma%20Folha-%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20-Bruma%20Folha-%20Shirt%2024-25.jpg",
-   "/public/collectie/Brazil%20Special%20Edition%20-Bruma%20Folha-%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Brazil%20Special%20Edition%20-Bruma%20Folha-%20Shirt%2024-25.jpg",
+   "/collectie/Brazil%20Special%20Edition%20-Bruma%20Folha-%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Brazil Special Edition -Bruma Folha- Shirt 24-25",
   "team": "Brazil",
@@ -3865,10 +3865,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20'Arara%20Real'%20Concept%20Shirt%2025-26.png",
+  "image": "/collectie/Brazil%20Special%20Edition%20'Arara%20Real'%20Concept%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20'Arara%20Real'%20Concept%20Shirt%2025-26.png",
-   "/public/collectie/Brazil%20Special%20Edition%20'Arara%20Real'%20Concept%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Brazil%20Special%20Edition%20'Arara%20Real'%20Concept%20Shirt%2025-26.png",
+   "/collectie/Brazil%20Special%20Edition%20'Arara%20Real'%20Concept%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Brazil Special Edition 'Arara Real' Concept Shirt 25-26",
   "team": "Brazil",
@@ -3887,10 +3887,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25.jpg",
+  "image": "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25.jpg",
-   "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25.jpg",
+   "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Brazil Special Edition 'Christ the Redeemer' Concept Shirt 24-25",
   "team": "Brazil",
@@ -3909,10 +3909,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25%202.jpg",
+   "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Brazil Special Edition 'Christ the Redeemer' Concept Shirt 24-25 2",
   "team": "Brazil",
@@ -3931,10 +3931,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2025-26.png",
+  "image": "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2025-26.png",
-   "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2025-26.png",
+   "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Concept%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Brazil Special Edition 'Christ the Redeemer' Concept Shirt 25-26",
   "team": "Brazil",
@@ -3953,10 +3953,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Pink%20Concept%20Shirt%2025-26.png",
+  "image": "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Pink%20Concept%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Pink%20Concept%20Shirt%2025-26.png",
-   "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Pink%20Concept%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Pink%20Concept%20Shirt%2025-26.png",
+   "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Pink%20Concept%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Brazil Special Edition 'Christ the Redeemer' Pink Concept Shirt 25-26",
   "team": "Brazil",
@@ -3975,10 +3975,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Shirt%2025-26.png",
+  "image": "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Shirt%2025-26.png",
-   "/public/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Shirt%2025-26.png",
+   "/collectie/Brazil%20Special%20Edition%20'Christ%20the%20Redeemer'%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Brazil Special Edition 'Christ the Redeemer' Shirt 25-26",
   "team": "Brazil",
@@ -3997,10 +3997,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25.jpg",
+  "image": "/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25.jpg",
-   "/public/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25.jpg",
+   "/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Brazil Special Edition Christ the Redeemer Shirt 24-25",
   "team": "Brazil",
@@ -4019,10 +4019,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25%202.jpg",
+   "/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Brazil Special Edition Christ the Redeemer Shirt 24-25 2",
   "team": "Brazil",
@@ -4041,10 +4041,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2025-26.png",
+  "image": "/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2025-26.png",
-   "/public/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2025-26.png",
+   "/collectie/Brazil%20Special%20Edition%20Christ%20the%20Redeemer%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Brazil Special Edition Christ the Redeemer Shirt 25-26",
   "team": "Brazil",
@@ -4063,10 +4063,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20Concept%20Shirt%2025-26.png",
+  "image": "/collectie/Brazil%20Special%20Edition%20Concept%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20Concept%20Shirt%2025-26.png",
-   "/public/collectie/Brazil%20Special%20Edition%20Concept%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Brazil%20Special%20Edition%20Concept%20Shirt%2025-26.png",
+   "/collectie/Brazil%20Special%20Edition%20Concept%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Brazil Special Edition Concept Shirt 25-26",
   "team": "Brazil",
@@ -4085,10 +4085,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20Parrot%20Shirt%2025-26.png",
+  "image": "/collectie/Brazil%20Special%20Edition%20Parrot%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20Parrot%20Shirt%2025-26.png",
-   "/public/collectie/Brazil%20Special%20Edition%20Parrot%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Brazil%20Special%20Edition%20Parrot%20Shirt%2025-26.png",
+   "/collectie/Brazil%20Special%20Edition%20Parrot%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Brazil Special Edition Parrot Shirt 25-26",
   "team": "Brazil",
@@ -4107,10 +4107,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20Shirt%2022-23.jpg",
+  "image": "/collectie/Brazil%20Special%20Edition%20Shirt%2022-23.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20Shirt%2022-23.jpg",
-   "/public/collectie/Brazil%20Special%20Edition%20Shirt%2022-23%20achterkant.jpg"
+   "/collectie/Brazil%20Special%20Edition%20Shirt%2022-23.jpg",
+   "/collectie/Brazil%20Special%20Edition%20Shirt%2022-23%20achterkant.jpg"
   ],
   "name": "Brazil Special Edition Shirt 22-23",
   "team": "Brazil",
@@ -4129,10 +4129,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20Shirt%2022-23%202.jpg",
+  "image": "/collectie/Brazil%20Special%20Edition%20Shirt%2022-23%202.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20Shirt%2022-23%202.jpg",
-   "/public/collectie/Brazil%20Special%20Edition%20Shirt%2022-23%202%20achterkant.jpg"
+   "/collectie/Brazil%20Special%20Edition%20Shirt%2022-23%202.jpg",
+   "/collectie/Brazil%20Special%20Edition%20Shirt%2022-23%202%20achterkant.jpg"
   ],
   "name": "Brazil Special Edition Shirt 22-23 2",
   "team": "Brazil",
@@ -4151,10 +4151,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Brazil%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Brazil%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Brazil%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Brazil%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Brazil Special Edition Shirt 24-25",
   "team": "Brazil",
@@ -4173,10 +4173,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brazil%20Special%20Edition%20Shirt%2025-26.jpg",
+  "image": "/collectie/Brazil%20Special%20Edition%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Brazil%20Special%20Edition%20Shirt%2025-26.jpg",
-   "/public/collectie/Brazil%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Brazil%20Special%20Edition%20Shirt%2025-26.jpg",
+   "/collectie/Brazil%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Brazil Special Edition Shirt 25-26",
   "team": "Brazil",
@@ -4195,10 +4195,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brighton%20%26%20Hove%20Albion%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Brighton%20%26%20Hove%20Albion%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Brighton%20%26%20Hove%20Albion%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Brighton%20%26%20Hove%20Albion%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Brighton%20%26%20Hove%20Albion%20Home%20Shirt%2025-26.png",
+   "/collectie/Brighton%20%26%20Hove%20Albion%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Brighton & Hove Albion Home Shirt 25-26",
   "team": "Brighton & Hove Albion",
@@ -4217,10 +4217,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Brighton%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Brighton%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Brighton%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Brighton%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Brighton%20Away%20Shirt%2025-26.png",
+   "/collectie/Brighton%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Brighton Away Shirt 25-26",
   "team": "Brighton",
@@ -4239,10 +4239,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Cameroon%20Away%20Shirt%2025-26%20If%20you'd%20like.jpg",
+  "image": "/collectie/Cameroon%20Away%20Shirt%2025-26%20If%20you'd%20like.jpg",
   "gallery": [
-   "/public/collectie/Cameroon%20Away%20Shirt%2025-26%20If%20you'd%20like.jpg",
-   "/public/collectie/Cameroon%20Away%20Shirt%2025-26%20If%20you'd%20like%20achterkant.jpg"
+   "/collectie/Cameroon%20Away%20Shirt%2025-26%20If%20you'd%20like.jpg",
+   "/collectie/Cameroon%20Away%20Shirt%2025-26%20If%20you'd%20like%20achterkant.jpg"
   ],
   "name": "Cameroon Away Shirt 25-26 If you'd like",
   "team": "Cameroon",
@@ -4261,10 +4261,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Cameroon%20Goalkeeper%20Shirt%2025-26.jpg",
+  "image": "/collectie/Cameroon%20Goalkeeper%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Cameroon%20Goalkeeper%20Shirt%2025-26.jpg",
-   "/public/collectie/Cameroon%20Goalkeeper%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Cameroon%20Goalkeeper%20Shirt%2025-26.jpg",
+   "/collectie/Cameroon%20Goalkeeper%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Cameroon Goalkeeper Shirt 25-26",
   "team": "Cameroon",
@@ -4283,10 +4283,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Cameroon%20Home%20Shirt%2025-26%20If%20you%20are%20interested.jpg",
+  "image": "/collectie/Cameroon%20Home%20Shirt%2025-26%20If%20you%20are%20interested.jpg",
   "gallery": [
-   "/public/collectie/Cameroon%20Home%20Shirt%2025-26%20If%20you%20are%20interested.jpg",
-   "/public/collectie/Cameroon%20Home%20Shirt%2025-26%20If%20you%20are%20interested%20achterkant.jpg"
+   "/collectie/Cameroon%20Home%20Shirt%2025-26%20If%20you%20are%20interested.jpg",
+   "/collectie/Cameroon%20Home%20Shirt%2025-26%20If%20you%20are%20interested%20achterkant.jpg"
   ],
   "name": "Cameroon Home Shirt 25-26 If you are interested",
   "team": "Cameroon",
@@ -4305,10 +4305,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Cameroon%20Third%20Shirt%2025-26.jpg",
+  "image": "/collectie/Cameroon%20Third%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Cameroon%20Third%20Shirt%2025-26.jpg",
-   "/public/collectie/Cameroon%20Third%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Cameroon%20Third%20Shirt%2025-26.jpg",
+   "/collectie/Cameroon%20Third%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Cameroon Third Shirt 25-26",
   "team": "Cameroon",
@@ -4327,10 +4327,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Canada%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Canada%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Canada%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Canada%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Canada%20Away%20Shirt%202026.jpg",
+   "/collectie/Canada%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Canada Away Shirt 2026",
   "team": "Canada",
@@ -4349,10 +4349,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Canada%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Canada%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Canada%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Canada%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Canada%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Canada%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Canada Home Shirt 24-25",
   "team": "Canada",
@@ -4371,10 +4371,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Carl%20Zeiss%20Jena%20Pre.jpg",
+  "image": "/collectie/Carl%20Zeiss%20Jena%20Pre.jpg",
   "gallery": [
-   "/public/collectie/Carl%20Zeiss%20Jena%20Pre.jpg",
-   "/public/collectie/Carl%20Zeiss%20Jena%20Pre%20achterkant.jpg"
+   "/collectie/Carl%20Zeiss%20Jena%20Pre.jpg",
+   "/collectie/Carl%20Zeiss%20Jena%20Pre%20achterkant.jpg"
   ],
   "name": "Carl Zeiss Jena Pre",
   "team": "Carl Zeiss Jena Pre",
@@ -4393,10 +4393,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/CD%20Palestino%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/CD%20Palestino%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/CD%20Palestino%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/CD%20Palestino%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/CD%20Palestino%20Away%20Shirt%2024-25.jpg",
+   "/collectie/CD%20Palestino%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "CD Palestino Away Shirt 24-25",
   "team": "CD Palestino",
@@ -4415,10 +4415,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/CD%20Palestino%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/CD%20Palestino%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/CD%20Palestino%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/CD%20Palestino%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/CD%20Palestino%20Home%20Shirt%2024-25.jpg",
+   "/collectie/CD%20Palestino%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "CD Palestino Home Shirt 24-25",
   "team": "CD Palestino",
@@ -4437,10 +4437,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/CD%20Palestino%20Special%20Edition%20Watermelon%20Shirt%2025-26.png",
+  "image": "/collectie/CD%20Palestino%20Special%20Edition%20Watermelon%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/CD%20Palestino%20Special%20Edition%20Watermelon%20Shirt%2025-26.png",
-   "/public/collectie/CD%20Palestino%20Special%20Edition%20Watermelon%20Shirt%2025-26%20achterkant.png"
+   "/collectie/CD%20Palestino%20Special%20Edition%20Watermelon%20Shirt%2025-26.png",
+   "/collectie/CD%20Palestino%20Special%20Edition%20Watermelon%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "CD Palestino Special Edition Watermelon Shirt 25-26",
   "team": "CD Palestino",
@@ -4459,10 +4459,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/CD%20Palestino%20Third%20Shirt%202024%20(Green%20Brigade%20Edition).jpg",
+  "image": "/collectie/CD%20Palestino%20Third%20Shirt%202024%20(Green%20Brigade%20Edition).jpg",
   "gallery": [
-   "/public/collectie/CD%20Palestino%20Third%20Shirt%202024%20(Green%20Brigade%20Edition).jpg",
-   "/public/collectie/CD%20Palestino%20Third%20Shirt%202024%20(Green%20Brigade%20Edition)%20achterkant.jpg"
+   "/collectie/CD%20Palestino%20Third%20Shirt%202024%20(Green%20Brigade%20Edition).jpg",
+   "/collectie/CD%20Palestino%20Third%20Shirt%202024%20(Green%20Brigade%20Edition)%20achterkant.jpg"
   ],
   "name": "CD Palestino Third Shirt 2024 (Green Brigade Edition)",
   "team": "CD Palestino",
@@ -4481,10 +4481,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Celtic%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Celtic%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Celtic%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Celtic%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Celtic%20Away%20Shirt%2025-26.png",
+   "/collectie/Celtic%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Celtic Away Shirt 25-26",
   "team": "Celtic",
@@ -4503,10 +4503,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Celtic%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Celtic%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Celtic%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Celtic%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Celtic%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Celtic%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Celtic Home Shirt 24-25",
   "team": "Celtic",
@@ -4525,10 +4525,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Celtic%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Celtic%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Celtic%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Celtic%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Celtic%20Home%20Shirt%2025-26.png",
+   "/collectie/Celtic%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Celtic Home Shirt 25-26",
   "team": "Celtic",
@@ -4547,10 +4547,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Celtic%20Home%20Shirt%2026-27%20'Lisbon%20Lions%2060th%20Anniversary'.jpg",
+  "image": "/collectie/Celtic%20Home%20Shirt%2026-27%20'Lisbon%20Lions%2060th%20Anniversary'.jpg",
   "gallery": [
-   "/public/collectie/Celtic%20Home%20Shirt%2026-27%20'Lisbon%20Lions%2060th%20Anniversary'.jpg",
-   "/public/collectie/Celtic%20Home%20Shirt%2026-27%20'Lisbon%20Lions%2060th%20Anniversary'%20achterkant.jpg"
+   "/collectie/Celtic%20Home%20Shirt%2026-27%20'Lisbon%20Lions%2060th%20Anniversary'.jpg",
+   "/collectie/Celtic%20Home%20Shirt%2026-27%20'Lisbon%20Lions%2060th%20Anniversary'%20achterkant.jpg"
   ],
   "name": "Celtic Home Shirt 26-27 'Lisbon Lions 60th Anniversary'",
   "team": "Celtic",
@@ -4569,10 +4569,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Celtic%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Celtic%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Celtic%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Celtic%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Celtic%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Celtic%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Celtic Pre-Match Shirt 25-26",
   "team": "Celtic",
@@ -4591,10 +4591,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Chelsea%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Chelsea%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Chelsea%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Chelsea%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Chelsea%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Chelsea Away Shirt 25-26",
   "team": "Chelsea",
@@ -4613,10 +4613,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Away%20Shirt%2026-27.jpg",
+  "image": "/collectie/Chelsea%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Chelsea%20Away%20Shirt%2026-27.jpg",
-   "/public/collectie/Chelsea%20Away%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Chelsea%20Away%20Shirt%2026-27.jpg",
+   "/collectie/Chelsea%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Chelsea Away Shirt 26-27",
   "team": "Chelsea",
@@ -4635,10 +4635,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Balmain%20Special%20Edition%20Shirt%2023-24.jpg",
+  "image": "/collectie/Chelsea%20Balmain%20Special%20Edition%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Chelsea%20Balmain%20Special%20Edition%20Shirt%2023-24.jpg",
-   "/public/collectie/Chelsea%20Balmain%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Chelsea%20Balmain%20Special%20Edition%20Shirt%2023-24.jpg",
+   "/collectie/Chelsea%20Balmain%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Chelsea Balmain Special Edition Shirt 23-24",
   "team": "Chelsea Balmain",
@@ -4657,10 +4657,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Chelsea%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Chelsea%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Chelsea%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Chelsea%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Chelsea%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Chelsea Home Shirt 24-25",
   "team": "Chelsea",
@@ -4679,10 +4679,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Chelsea%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Chelsea%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Chelsea%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Chelsea%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Chelsea%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Chelsea Home Shirt 25-26",
   "team": "Chelsea",
@@ -4701,10 +4701,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition.png",
+  "image": "/collectie/Chelsea%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition.png",
   "gallery": [
-   "/public/collectie/Chelsea%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition.png",
-   "/public/collectie/Chelsea%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition%20achterkant.png"
+   "/collectie/Chelsea%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition.png",
+   "/collectie/Chelsea%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition%20achterkant.png"
   ],
   "name": "Chelsea Home Shirt 25-26 120th Anniversary Edition",
   "team": "Chelsea",
@@ -4723,10 +4723,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Chelsea%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Chelsea%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Chelsea%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Chelsea%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Chelsea%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Chelsea Pre-Match Shirt 25-26",
   "team": "Chelsea",
@@ -4745,10 +4745,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Pre-Match%20Shirt%2025-26%20(Club%20World%20Cup%20Edition).jpg",
+  "image": "/collectie/Chelsea%20Pre-Match%20Shirt%2025-26%20(Club%20World%20Cup%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Chelsea%20Pre-Match%20Shirt%2025-26%20(Club%20World%20Cup%20Edition).jpg",
-   "/public/collectie/Chelsea%20Pre-Match%20Shirt%2025-26%20(Club%20World%20Cup%20Edition)%20achterkant.jpg"
+   "/collectie/Chelsea%20Pre-Match%20Shirt%2025-26%20(Club%20World%20Cup%20Edition).jpg",
+   "/collectie/Chelsea%20Pre-Match%20Shirt%2025-26%20(Club%20World%20Cup%20Edition)%20achterkant.jpg"
   ],
   "name": "Chelsea Pre-Match Shirt 25-26 (Club World Cup Edition)",
   "team": "Chelsea",
@@ -4767,10 +4767,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26.png",
+  "image": "/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26.png",
-   "/public/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26.png",
+   "/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Chelsea Terrace Icons Shirt 25-26",
   "team": "Chelsea Terrace Icons",
@@ -4789,10 +4789,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26%20white.png",
+  "image": "/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26%20white.png",
   "gallery": [
-   "/public/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26%20white.png",
-   "/public/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26%20white%20achterkant.png"
+   "/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26%20white.png",
+   "/collectie/Chelsea%20Terrace%20Icons%20Shirt%2025-26%20white%20achterkant.png"
   ],
   "name": "Chelsea Terrace Icons Shirt 25-26 white",
   "team": "Chelsea Terrace Icons",
@@ -4811,10 +4811,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Third%20Shirt%2024-25%20-Together%20We%20Rise-%20Collection.jpg",
+  "image": "/collectie/Chelsea%20Third%20Shirt%2024-25%20-Together%20We%20Rise-%20Collection.jpg",
   "gallery": [
-   "/public/collectie/Chelsea%20Third%20Shirt%2024-25%20-Together%20We%20Rise-%20Collection.jpg",
-   "/public/collectie/Chelsea%20Third%20Shirt%2024-25%20-Together%20We%20Rise-%20Collection%20achterkant.jpg"
+   "/collectie/Chelsea%20Third%20Shirt%2024-25%20-Together%20We%20Rise-%20Collection.jpg",
+   "/collectie/Chelsea%20Third%20Shirt%2024-25%20-Together%20We%20Rise-%20Collection%20achterkant.jpg"
   ],
   "name": "Chelsea Third Shirt 24-25 -Together We Rise- Collection",
   "team": "Chelsea",
@@ -4833,10 +4833,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chelsea%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Chelsea%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Chelsea%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Chelsea%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Chelsea%20Third%20Shirt%2025-26.png",
+   "/collectie/Chelsea%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Chelsea Third Shirt 25-26",
   "team": "Chelsea",
@@ -4855,10 +4855,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chile%20Home%20Shirt%2026-27.png",
+  "image": "/collectie/Chile%20Home%20Shirt%2026-27.png",
   "gallery": [
-   "/public/collectie/Chile%20Home%20Shirt%2026-27.png",
-   "/public/collectie/Chile%20Home%20Shirt%2026-27%20achterkant.png"
+   "/collectie/Chile%20Home%20Shirt%2026-27.png",
+   "/collectie/Chile%20Home%20Shirt%2026-27%20achterkant.png"
   ],
   "name": "Chile Home Shirt 26-27",
   "team": "Chile",
@@ -4877,10 +4877,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/China%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/China%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/China%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/China%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/China%20Home%20Shirt%2025-26.jpg",
+   "/collectie/China%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "China Home Shirt 25-26",
   "team": "China",
@@ -4899,10 +4899,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Chivas%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Chivas%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Chivas%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Chivas%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Chivas%20Away%20Shirt%2025-26.png",
+   "/collectie/Chivas%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Chivas Away Shirt 25-26",
   "team": "Chivas",
@@ -4921,10 +4921,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Club América Away Shirt 24-25",
   "team": "Club América",
@@ -4943,10 +4943,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2025-26.png",
+   "/collectie/Club%20Am%C3%A9rica%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Club América Away Shirt 25-26",
   "team": "Club América",
@@ -4965,10 +4965,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Club América Home Shirt 24-25",
   "team": "Club América",
@@ -4987,10 +4987,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Club%20Am%C3%A9rica%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Club América Home Shirt 25-26",
   "team": "Club América",
@@ -5009,10 +5009,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Club%20Deportivo%20Palestino%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Club%20Deportivo%20Palestino%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Club%20Deportivo%20Palestino%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Club%20Deportivo%20Palestino%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Club%20Deportivo%20Palestino%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Club%20Deportivo%20Palestino%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Club Deportivo Palestino Away Shirt 24-25",
   "team": "Club Deportivo Palestino",
@@ -5031,10 +5031,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Club%20Deportivo%20Palestino%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Club%20Deportivo%20Palestino%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Club%20Deportivo%20Palestino%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Club%20Deportivo%20Palestino%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Club%20Deportivo%20Palestino%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Club%20Deportivo%20Palestino%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Club Deportivo Palestino Home Shirt 25-26",
   "team": "Club Deportivo Palestino",
@@ -5053,10 +5053,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Colombia%20100%20Year%20Anniversary%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Colombia%20100%20Year%20Anniversary%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Colombia%20100%20Year%20Anniversary%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Colombia%20100%20Year%20Anniversary%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Colombia%20100%20Year%20Anniversary%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Colombia%20100%20Year%20Anniversary%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Colombia 100 Year Anniversary Special Edition Shirt 24-25",
   "team": "Colombia 100 Year Anniversary",
@@ -5075,10 +5075,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Colombia%202024%20Centenary%20Special%20Edition%20Shirt.jpg",
+  "image": "/collectie/Colombia%202024%20Centenary%20Special%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Colombia%202024%20Centenary%20Special%20Edition%20Shirt.jpg",
-   "/public/collectie/Colombia%202024%20Centenary%20Special%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Colombia%202024%20Centenary%20Special%20Edition%20Shirt.jpg",
+   "/collectie/Colombia%202024%20Centenary%20Special%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Colombia 2024 Centenary Special Edition Shirt",
   "team": "Colombia 2024 Centenary",
@@ -5097,10 +5097,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Colombia%20Away%20Shirt%2026-27.jpg",
+  "image": "/collectie/Colombia%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Colombia%20Away%20Shirt%2026-27.jpg",
-   "/public/collectie/Colombia%20Away%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Colombia%20Away%20Shirt%2026-27.jpg",
+   "/collectie/Colombia%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Colombia Away Shirt 26-27",
   "team": "Colombia",
@@ -5119,10 +5119,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Colombia%20Home%20Shirt%202026.png",
+  "image": "/collectie/Colombia%20Home%20Shirt%202026.png",
   "gallery": [
-   "/public/collectie/Colombia%20Home%20Shirt%202026.png",
-   "/public/collectie/Colombia%20Home%20Shirt%202026%20achterkant.png"
+   "/collectie/Colombia%20Home%20Shirt%202026.png",
+   "/collectie/Colombia%20Home%20Shirt%202026%20achterkant.png"
   ],
   "name": "Colombia Home Shirt 2026",
   "team": "Colombia",
@@ -5141,10 +5141,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Comma%20Football%20Barcelona%20-La%20Pulga-%20Special%20Edition%20Shirt.jpg",
+  "image": "/collectie/Comma%20Football%20Barcelona%20-La%20Pulga-%20Special%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Comma%20Football%20Barcelona%20-La%20Pulga-%20Special%20Edition%20Shirt.jpg",
-   "/public/collectie/Comma%20Football%20Barcelona%20-La%20Pulga-%20Special%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Comma%20Football%20Barcelona%20-La%20Pulga-%20Special%20Edition%20Shirt.jpg",
+   "/collectie/Comma%20Football%20Barcelona%20-La%20Pulga-%20Special%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Comma Football Barcelona -La Pulga- Special Edition Shirt",
   "team": "Comma Football Barcelona -La Pulga-",
@@ -5163,10 +5163,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Controleer%20handmatig.jpg",
+  "image": "/collectie/Controleer%20handmatig.jpg",
   "gallery": [
-   "/public/collectie/Controleer%20handmatig.jpg",
-   "/public/collectie/Controleer%20handmatig%20achterkant.jpg"
+   "/collectie/Controleer%20handmatig.jpg",
+   "/collectie/Controleer%20handmatig%20achterkant.jpg"
   ],
   "name": "Controleer handmatig",
   "team": "Controleer handmatig",
@@ -5185,9 +5185,9 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Controleer%20handmatig%20detail%201.jpg",
+  "image": "/collectie/Controleer%20handmatig%20detail%201.jpg",
   "gallery": [
-   "/public/collectie/Controleer%20handmatig%20detail%201.jpg"
+   "/collectie/Controleer%20handmatig%20detail%201.jpg"
   ],
   "name": "Controleer handmatig detail 1",
   "team": "Controleer handmatig detail 1",
@@ -5206,9 +5206,9 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Controleer%20handmatig%20detail%202.jpg",
+  "image": "/collectie/Controleer%20handmatig%20detail%202.jpg",
   "gallery": [
-   "/public/collectie/Controleer%20handmatig%20detail%202.jpg"
+   "/collectie/Controleer%20handmatig%20detail%202.jpg"
   ],
   "name": "Controleer handmatig detail 2",
   "team": "Controleer handmatig detail 2",
@@ -5227,9 +5227,9 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Controleer%20handmatig%20detail%203.jpg",
+  "image": "/collectie/Controleer%20handmatig%20detail%203.jpg",
   "gallery": [
-   "/public/collectie/Controleer%20handmatig%20detail%203.jpg"
+   "/collectie/Controleer%20handmatig%20detail%203.jpg"
   ],
   "name": "Controleer handmatig detail 3",
   "team": "Controleer handmatig detail 3",
@@ -5248,9 +5248,9 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Controleer%20handmatig%20detail%204.jpg",
+  "image": "/collectie/Controleer%20handmatig%20detail%204.jpg",
   "gallery": [
-   "/public/collectie/Controleer%20handmatig%20detail%204.jpg"
+   "/collectie/Controleer%20handmatig%20detail%204.jpg"
   ],
   "name": "Controleer handmatig detail 4",
   "team": "Controleer handmatig detail 4",
@@ -5269,10 +5269,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Corinthians%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Corinthians%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Corinthians%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Corinthians%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Corinthians%20Away%20Shirt%2025-26.png",
+   "/collectie/Corinthians%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Corinthians Away Shirt 25-26",
   "team": "Corinthians",
@@ -5291,10 +5291,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Corinthians%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Corinthians%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Corinthians%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Corinthians%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Corinthians%20Home%20Shirt%2025-26.png",
+   "/collectie/Corinthians%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Corinthians Home Shirt 25-26",
   "team": "Corinthians",
@@ -5313,10 +5313,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Corinthians%20Home%20Shirt%2026-27%20'Invas%C3%A3o'.jpg",
+  "image": "/collectie/Corinthians%20Home%20Shirt%2026-27%20'Invas%C3%A3o'.jpg",
   "gallery": [
-   "/public/collectie/Corinthians%20Home%20Shirt%2026-27%20'Invas%C3%A3o'.jpg",
-   "/public/collectie/Corinthians%20Home%20Shirt%2026-27%20'Invas%C3%A3o'%20achterkant.jpg"
+   "/collectie/Corinthians%20Home%20Shirt%2026-27%20'Invas%C3%A3o'.jpg",
+   "/collectie/Corinthians%20Home%20Shirt%2026-27%20'Invas%C3%A3o'%20achterkant.jpg"
   ],
   "name": "Corinthians Home Shirt 26-27 'Invasão'",
   "team": "Corinthians",
@@ -5335,10 +5335,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Corinthians%20Third%20Shirt%2025-26%20(Nike%20Total%2090%20Collection).png",
+  "image": "/collectie/Corinthians%20Third%20Shirt%2025-26%20(Nike%20Total%2090%20Collection).png",
   "gallery": [
-   "/public/collectie/Corinthians%20Third%20Shirt%2025-26%20(Nike%20Total%2090%20Collection).png",
-   "/public/collectie/Corinthians%20Third%20Shirt%2025-26%20(Nike%20Total%2090%20Collection)%20achterkant.png"
+   "/collectie/Corinthians%20Third%20Shirt%2025-26%20(Nike%20Total%2090%20Collection).png",
+   "/collectie/Corinthians%20Third%20Shirt%2025-26%20(Nike%20Total%2090%20Collection)%20achterkant.png"
   ],
   "name": "Corinthians Third Shirt 25-26 (Nike Total 90 Collection)",
   "team": "Corinthians",
@@ -5357,10 +5357,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Costa%20Rica%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Costa%20Rica%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Costa%20Rica%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Costa%20Rica%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Costa%20Rica%20Away%20Shirt%202026.jpg",
+   "/collectie/Costa%20Rica%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Costa Rica Away Shirt 2026",
   "team": "Costa Rica",
@@ -5379,10 +5379,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Costa%20Rica%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Costa%20Rica%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Costa%20Rica%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Costa%20Rica%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Costa%20Rica%20Home%20Shirt%202026.jpg",
+   "/collectie/Costa%20Rica%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Costa Rica Home Shirt 2026",
   "team": "Costa Rica",
@@ -5401,10 +5401,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Croatia%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Croatia%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Croatia%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Croatia%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Croatia%20Away%20Shirt%202026.jpg",
+   "/collectie/Croatia%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Croatia Away Shirt 2026",
   "team": "Croatia",
@@ -5423,10 +5423,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Croatia%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Croatia%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Croatia%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Croatia%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Croatia%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Croatia%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Croatia Home Shirt 24-25",
   "team": "Croatia",
@@ -5445,10 +5445,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Cruzeiro%20Training%20Shirt%2025-26.png",
+  "image": "/collectie/Cruzeiro%20Training%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Cruzeiro%20Training%20Shirt%2025-26.png",
-   "/public/collectie/Cruzeiro%20Training%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Cruzeiro%20Training%20Shirt%2025-26.png",
+   "/collectie/Cruzeiro%20Training%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Cruzeiro Training Shirt 25-26",
   "team": "Cruzeiro Training",
@@ -5467,10 +5467,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Cruzeiro%20Training%20Shirt%2025-26%202.png",
+  "image": "/collectie/Cruzeiro%20Training%20Shirt%2025-26%202.png",
   "gallery": [
-   "/public/collectie/Cruzeiro%20Training%20Shirt%2025-26%202.png",
-   "/public/collectie/Cruzeiro%20Training%20Shirt%2025-26%202%20achterkant.png"
+   "/collectie/Cruzeiro%20Training%20Shirt%2025-26%202.png",
+   "/collectie/Cruzeiro%20Training%20Shirt%2025-26%202%20achterkant.png"
   ],
   "name": "Cruzeiro Training Shirt 25-26 2",
   "team": "Cruzeiro Training",
@@ -5489,10 +5489,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Duitsland%20Uit%20Shirt%202024.jpg",
+  "image": "/collectie/Duitsland%20Uit%20Shirt%202024.jpg",
   "gallery": [
-   "/public/collectie/Duitsland%20Uit%20Shirt%202024.jpg",
-   "/public/collectie/Duitsland%20Uit%20Shirt%202024%20achterkant.jpg"
+   "/collectie/Duitsland%20Uit%20Shirt%202024.jpg",
+   "/collectie/Duitsland%20Uit%20Shirt%202024%20achterkant.jpg"
   ],
   "name": "Duitsland Uit Shirt 2024",
   "team": "Duitsland Uit",
@@ -5511,10 +5511,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Egypt%202026%20World%20Cup%20Home%20Shirt.jpg",
+  "image": "/collectie/Egypt%202026%20World%20Cup%20Home%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Egypt%202026%20World%20Cup%20Home%20Shirt.jpg",
-   "/public/collectie/Egypt%202026%20World%20Cup%20Home%20Shirt%20achterkant.jpg"
+   "/collectie/Egypt%202026%20World%20Cup%20Home%20Shirt.jpg",
+   "/collectie/Egypt%202026%20World%20Cup%20Home%20Shirt%20achterkant.jpg"
   ],
   "name": "Egypt 2026 World Cup Home Shirt",
   "team": "Egypt 2026 World Cup",
@@ -5533,10 +5533,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Egypt%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Egypt%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Egypt%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Egypt%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Egypt%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Egypt%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Egypt Home Shirt 24-25",
   "team": "Egypt",
@@ -5555,10 +5555,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Eintracht%20Frankfurt%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Eintracht%20Frankfurt%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Eintracht%20Frankfurt%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Eintracht%20Frankfurt%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Eintracht%20Frankfurt%20Away%20Shirt%2025-26.png",
+   "/collectie/Eintracht%20Frankfurt%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Eintracht Frankfurt Away Shirt 25-26",
   "team": "Eintracht Frankfurt",
@@ -5577,10 +5577,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Eintracht%20Frankfurt%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Eintracht%20Frankfurt%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Eintracht%20Frankfurt%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Eintracht%20Frankfurt%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Eintracht%20Frankfurt%20Home%20Shirt%2025-26.png",
+   "/collectie/Eintracht%20Frankfurt%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Eintracht Frankfurt Home Shirt 25-26",
   "team": "Eintracht Frankfurt",
@@ -5599,10 +5599,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Eintracht%20Frankfurt%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Eintracht%20Frankfurt%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Eintracht%20Frankfurt%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Eintracht%20Frankfurt%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Eintracht%20Frankfurt%20Third%20Shirt%2025-26.png",
+   "/collectie/Eintracht%20Frankfurt%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Eintracht Frankfurt Third Shirt 25-26",
   "team": "Eintracht Frankfurt",
@@ -5621,10 +5621,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/El%20Salvador%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/El%20Salvador%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/El%20Salvador%20Away%20Shirt%2025-26.png",
-   "/public/collectie/El%20Salvador%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/El%20Salvador%20Away%20Shirt%2025-26.png",
+   "/collectie/El%20Salvador%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "El Salvador Away Shirt 25-26",
   "team": "El Salvador",
@@ -5643,10 +5643,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/El%20Salvador%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/El%20Salvador%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/El%20Salvador%20Home%20Shirt%2025-26.png",
-   "/public/collectie/El%20Salvador%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/El%20Salvador%20Home%20Shirt%2025-26.png",
+   "/collectie/El%20Salvador%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "El Salvador Home Shirt 25-26",
   "team": "El Salvador",
@@ -5665,10 +5665,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/El%20Salvador%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/El%20Salvador%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/El%20Salvador%20Third%20Shirt%2025-26.png",
-   "/public/collectie/El%20Salvador%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/El%20Salvador%20Third%20Shirt%2025-26.png",
+   "/collectie/El%20Salvador%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "El Salvador Third Shirt 25-26",
   "team": "El Salvador",
@@ -5687,10 +5687,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/England%20'Belligol'%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/England%20'Belligol'%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/England%20'Belligol'%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/England%20'Belligol'%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/England%20'Belligol'%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/England%20'Belligol'%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "England 'Belligol' Special Edition Shirt 24-25",
   "team": "England 'Belligol'",
@@ -5709,10 +5709,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/England%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/England%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/England%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/England%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/England%20Away%20Shirt%2024-25.jpg",
+   "/collectie/England%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "England Away Shirt 24-25",
   "team": "England",
@@ -5731,10 +5731,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/England%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/England%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/England%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/England%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/England%20Away%20Shirt%2025-26.jpg",
+   "/collectie/England%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "England Away Shirt 25-26",
   "team": "England",
@@ -5753,10 +5753,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/England%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/England%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/England%20Away%20Shirt%202026.jpg",
-   "/public/collectie/England%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/England%20Away%20Shirt%202026.jpg",
+   "/collectie/England%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "England Away Shirt 2026",
   "team": "England",
@@ -5775,10 +5775,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/England%20Belligol%20Heritage%20Jersey%2024-25%20Shirt.jpg",
+  "image": "/collectie/England%20Belligol%20Heritage%20Jersey%2024-25%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/England%20Belligol%20Heritage%20Jersey%2024-25%20Shirt.jpg",
-   "/public/collectie/England%20Belligol%20Heritage%20Jersey%2024-25%20Shirt%20achterkant.jpg"
+   "/collectie/England%20Belligol%20Heritage%20Jersey%2024-25%20Shirt.jpg",
+   "/collectie/England%20Belligol%20Heritage%20Jersey%2024-25%20Shirt%20achterkant.jpg"
   ],
   "name": "England Belligol Heritage Jersey 24-25 Shirt",
   "team": "England Belligol Heritage Jersey 24-25",
@@ -5797,10 +5797,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/England%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/England%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/England%20Home%20Shirt%202026.jpg",
-   "/public/collectie/England%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/England%20Home%20Shirt%202026.jpg",
+   "/collectie/England%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "England Home Shirt 2026",
   "team": "England",
@@ -5819,10 +5819,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/England%20Pre-Match%20Shirt%2018-19.png",
+  "image": "/collectie/England%20Pre-Match%20Shirt%2018-19.png",
   "gallery": [
-   "/public/collectie/England%20Pre-Match%20Shirt%2018-19.png",
-   "/public/collectie/England%20Pre-Match%20Shirt%2018-19%20achterkant.png"
+   "/collectie/England%20Pre-Match%20Shirt%2018-19.png",
+   "/collectie/England%20Pre-Match%20Shirt%2018-19%20achterkant.png"
   ],
   "name": "England Pre-Match Shirt 18-19",
   "team": "England",
@@ -5841,10 +5841,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/England%20Pre-Match%20Shirt%202026%20Palace%20Special%20Edition.jpg",
+  "image": "/collectie/England%20Pre-Match%20Shirt%202026%20Palace%20Special%20Edition.jpg",
   "gallery": [
-   "/public/collectie/England%20Pre-Match%20Shirt%202026%20Palace%20Special%20Edition.jpg",
-   "/public/collectie/England%20Pre-Match%20Shirt%202026%20Palace%20Special%20Edition%20achterkant.jpg"
+   "/collectie/England%20Pre-Match%20Shirt%202026%20Palace%20Special%20Edition.jpg",
+   "/collectie/England%20Pre-Match%20Shirt%202026%20Palace%20Special%20Edition%20achterkant.jpg"
   ],
   "name": "England Pre-Match Shirt 2026 Palace Special Edition",
   "team": "England",
@@ -5863,10 +5863,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Everton%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Everton%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Everton%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Everton%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Everton%20Home%20Shirt%2025-26.png",
+   "/collectie/Everton%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Everton Home Shirt 25-26",
   "team": "Everton",
@@ -5885,10 +5885,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20'Pink%20Wings'%202025-26%20Special%20Edition%20Shirt.png",
+  "image": "/collectie/FC%20Barcelona%20'Pink%20Wings'%202025-26%20Special%20Edition%20Shirt.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20'Pink%20Wings'%202025-26%20Special%20Edition%20Shirt.png",
-   "/public/collectie/FC%20Barcelona%20'Pink%20Wings'%202025-26%20Special%20Edition%20Shirt%20achterkant.png"
+   "/collectie/FC%20Barcelona%20'Pink%20Wings'%202025-26%20Special%20Edition%20Shirt.png",
+   "/collectie/FC%20Barcelona%20'Pink%20Wings'%202025-26%20Special%20Edition%20Shirt%20achterkant.png"
   ],
   "name": "FC Barcelona 'Pink Wings' 2025-26 Special Edition Shirt",
   "team": "FC Barcelona 'Pink Wings' 2025-26",
@@ -5907,10 +5907,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%2023-24%20-Black%20Paisley-%20Special%20Edition%20Concept%20Shirt.jpg",
+  "image": "/collectie/FC%20Barcelona%2023-24%20-Black%20Paisley-%20Special%20Edition%20Concept%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%2023-24%20-Black%20Paisley-%20Special%20Edition%20Concept%20Shirt.jpg",
-   "/public/collectie/FC%20Barcelona%2023-24%20-Black%20Paisley-%20Special%20Edition%20Concept%20Shirt%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%2023-24%20-Black%20Paisley-%20Special%20Edition%20Concept%20Shirt.jpg",
+   "/collectie/FC%20Barcelona%2023-24%20-Black%20Paisley-%20Special%20Edition%20Concept%20Shirt%20achterkant.jpg"
   ],
   "name": "FC Barcelona 23-24 -Black Paisley- Special Edition Concept Shirt",
   "team": "FC Barcelona 23-24 -Black Paisley-",
@@ -5929,10 +5929,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%2025-26%20Karol%20G%20Special%20Edition%20Pink%20Shirt.png",
+  "image": "/collectie/FC%20Barcelona%2025-26%20Karol%20G%20Special%20Edition%20Pink%20Shirt.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%2025-26%20Karol%20G%20Special%20Edition%20Pink%20Shirt.png",
-   "/public/collectie/FC%20Barcelona%2025-26%20Karol%20G%20Special%20Edition%20Pink%20Shirt%20achterkant.png"
+   "/collectie/FC%20Barcelona%2025-26%20Karol%20G%20Special%20Edition%20Pink%20Shirt.png",
+   "/collectie/FC%20Barcelona%2025-26%20Karol%20G%20Special%20Edition%20Pink%20Shirt%20achterkant.png"
   ],
   "name": "FC Barcelona 25-26 Karol G Special Edition Pink Shirt",
   "team": "FC Barcelona 25-26 Karol G",
@@ -5951,10 +5951,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20125th%20Anniversary%20Modernist%20Polo%20Shirt%2024-25.jpg",
+  "image": "/collectie/FC%20Barcelona%20125th%20Anniversary%20Modernist%20Polo%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20125th%20Anniversary%20Modernist%20Polo%20Shirt%2024-25.jpg",
-   "/public/collectie/FC%20Barcelona%20125th%20Anniversary%20Modernist%20Polo%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20125th%20Anniversary%20Modernist%20Polo%20Shirt%2024-25.jpg",
+   "/collectie/FC%20Barcelona%20125th%20Anniversary%20Modernist%20Polo%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "FC Barcelona 125th Anniversary Modernist Polo Shirt 24-25",
   "team": "FC Barcelona 125th Anniversary Modernist Polo",
@@ -5973,10 +5973,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Away%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Barcelona%20Away%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Away%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Barcelona%20Away%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Away%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Away%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Barcelona Away Pre-Match Shirt 25-26",
   "team": "FC Barcelona",
@@ -5995,10 +5995,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Away%20Shirt%2024-25%20Cactus%20Jack%20Edition.jpg",
+  "image": "/collectie/FC%20Barcelona%20Away%20Shirt%2024-25%20Cactus%20Jack%20Edition.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Away%20Shirt%2024-25%20Cactus%20Jack%20Edition.jpg",
-   "/public/collectie/FC%20Barcelona%20Away%20Shirt%2024-25%20Cactus%20Jack%20Edition%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Away%20Shirt%2024-25%20Cactus%20Jack%20Edition.jpg",
+   "/collectie/FC%20Barcelona%20Away%20Shirt%2024-25%20Cactus%20Jack%20Edition%20achterkant.jpg"
   ],
   "name": "FC Barcelona Away Shirt 24-25 Cactus Jack Edition",
   "team": "FC Barcelona",
@@ -6017,10 +6017,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20(Mamba%20Collection).jpg",
+  "image": "/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20(Mamba%20Collection).jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20(Mamba%20Collection).jpg",
-   "/public/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20(Mamba%20Collection)%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20(Mamba%20Collection).jpg",
+   "/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20(Mamba%20Collection)%20achterkant.jpg"
   ],
   "name": "FC Barcelona Away Shirt 25-26 (Mamba Collection)",
   "team": "FC Barcelona",
@@ -6039,10 +6039,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20Kobe%20Bryant%20Mamba%20Edition.png",
+  "image": "/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20Kobe%20Bryant%20Mamba%20Edition.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20Kobe%20Bryant%20Mamba%20Edition.png",
-   "/public/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20Kobe%20Bryant%20Mamba%20Edition%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20Kobe%20Bryant%20Mamba%20Edition.png",
+   "/collectie/FC%20Barcelona%20Away%20Shirt%2025-26%20Kobe%20Bryant%20Mamba%20Edition%20achterkant.png"
   ],
   "name": "FC Barcelona Away Shirt 25-26 Kobe Bryant Mamba Edition",
   "team": "FC Barcelona",
@@ -6061,10 +6061,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Concept%20Shirt%2025-26.jpg",
+  "image": "/collectie/FC%20Barcelona%20Concept%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Concept%20Shirt%2025-26.jpg",
-   "/public/collectie/FC%20Barcelona%20Concept%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Concept%20Shirt%2025-26.jpg",
+   "/collectie/FC%20Barcelona%20Concept%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "FC Barcelona Concept Shirt 25-26",
   "team": "FC Barcelona Concept",
@@ -6083,10 +6083,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Concept%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Barcelona%20Concept%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Concept%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Barcelona%20Concept%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Concept%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Concept%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Barcelona Concept Special Edition Shirt 25-26",
   "team": "FC Barcelona Concept",
@@ -6105,10 +6105,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Fourth%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/FC%20Barcelona%20Fourth%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Fourth%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/FC%20Barcelona%20Fourth%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Fourth%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/FC%20Barcelona%20Fourth%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "FC Barcelona Fourth Pre-Match Shirt 25-26",
   "team": "FC Barcelona",
@@ -6127,10 +6127,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Fourth%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Barcelona%20Fourth%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Fourth%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Barcelona%20Fourth%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Fourth%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Fourth%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Barcelona Fourth Shirt 25-26",
   "team": "FC Barcelona",
@@ -6149,10 +6149,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2021-22.png",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2021-22.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2021-22.png",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2021-22%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2021-22.png",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2021-22%20achterkant.png"
   ],
   "name": "FC Barcelona Home Shirt 21-22",
   "team": "FC Barcelona",
@@ -6171,10 +6171,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2023-24.png",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2023-24.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2023-24.png",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2023-24%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2023-24.png",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2023-24%20achterkant.png"
   ],
   "name": "FC Barcelona Home Shirt 23-24",
   "team": "FC Barcelona",
@@ -6193,10 +6193,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2023-24%20Ed%20Sheeran%20Edition.png",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2023-24%20Ed%20Sheeran%20Edition.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2023-24%20Ed%20Sheeran%20Edition.png",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2023-24%20Ed%20Sheeran%20Edition%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2023-24%20Ed%20Sheeran%20Edition.png",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2023-24%20Ed%20Sheeran%20Edition%20achterkant.png"
   ],
   "name": "FC Barcelona Home Shirt 23-24 Ed Sheeran Edition",
   "team": "FC Barcelona",
@@ -6215,10 +6215,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition).jpg",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition).jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition).jpg",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition)%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition).jpg",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition)%20achterkant.jpg"
   ],
   "name": "FC Barcelona Home Shirt 24-25 (125th Anniversary Edition)",
   "team": "FC Barcelona",
@@ -6237,10 +6237,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition)%202.jpg",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition)%202.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition)%202.jpg",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition)%202%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition)%202.jpg",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20(125th%20Anniversary%20Edition)%202%20achterkant.jpg"
   ],
   "name": "FC Barcelona Home Shirt 24-25 (125th Anniversary Edition) 2",
   "team": "FC Barcelona",
@@ -6259,10 +6259,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20Cactus%20Jack%20Edition.jpg",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20Cactus%20Jack%20Edition.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20Cactus%20Jack%20Edition.jpg",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20Cactus%20Jack%20Edition%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20Cactus%20Jack%20Edition.jpg",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2024-25%20Cactus%20Jack%20Edition%20achterkant.jpg"
   ],
   "name": "FC Barcelona Home Shirt 24-25 Cactus Jack Edition",
   "team": "FC Barcelona",
@@ -6281,10 +6281,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Barcelona Home Shirt 25-26",
   "team": "FC Barcelona",
@@ -6303,10 +6303,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%202.jpg",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%202.jpg",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "FC Barcelona Home Shirt 25-26 2",
   "team": "FC Barcelona",
@@ -6325,10 +6325,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%20Ed%20Sheeran%20Edition.png",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%20Ed%20Sheeran%20Edition.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%20Ed%20Sheeran%20Edition.png",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%20Ed%20Sheeran%20Edition%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%20Ed%20Sheeran%20Edition.png",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2025-26%20Ed%20Sheeran%20Edition%20achterkant.png"
   ],
   "name": "FC Barcelona Home Shirt 25-26 Ed Sheeran Edition",
   "team": "FC Barcelona",
@@ -6347,10 +6347,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2026-27.jpg",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "FC Barcelona Home Shirt 26-27",
   "team": "FC Barcelona",
@@ -6369,10 +6369,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Home%20Shirt%2026-27%202.jpg",
+  "image": "/collectie/FC%20Barcelona%20Home%20Shirt%2026-27%202.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2026-27%202.jpg",
-   "/public/collectie/FC%20Barcelona%20Home%20Shirt%2026-27%202%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2026-27%202.jpg",
+   "/collectie/FC%20Barcelona%20Home%20Shirt%2026-27%202%20achterkant.jpg"
   ],
   "name": "FC Barcelona Home Shirt 26-27 2",
   "team": "FC Barcelona",
@@ -6391,10 +6391,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Pink%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/FC%20Barcelona%20Pink%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Pink%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/FC%20Barcelona%20Pink%20Dragon%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Pink%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/FC%20Barcelona%20Pink%20Dragon%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "FC Barcelona Pink Dragon Special Edition Shirt 24-25",
   "team": "FC Barcelona Pink Dragon",
@@ -6413,10 +6413,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20-Pastel%20Dream-%20Total%2090%20Concept%20Shirt%2025-26.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20-Pastel%20Dream-%20Total%2090%20Concept%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20-Pastel%20Dream-%20Total%2090%20Concept%20Shirt%2025-26.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20-Pastel%20Dream-%20Total%2090%20Concept%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20-Pastel%20Dream-%20Total%2090%20Concept%20Shirt%2025-26.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20-Pastel%20Dream-%20Total%2090%20Concept%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition -Pastel Dream- Total 90 Concept Shirt 25-26",
   "team": "FC Barcelona",
@@ -6435,10 +6435,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Lion%20Spirit'%20Concept%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20'Lion%20Spirit'%20Concept%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Lion%20Spirit'%20Concept%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Lion%20Spirit'%20Concept%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20'Lion%20Spirit'%20Concept%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20'Lion%20Spirit'%20Concept%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Barcelona Special Edition 'Lion Spirit' Concept Shirt 25-26",
   "team": "FC Barcelona",
@@ -6457,10 +6457,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Magma%20Blaze'%20Shirt%2024-25.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20'Magma%20Blaze'%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Magma%20Blaze'%20Shirt%2024-25.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Magma%20Blaze'%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20'Magma%20Blaze'%20Shirt%2024-25.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20'Magma%20Blaze'%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition 'Magma Blaze' Shirt 24-25",
   "team": "FC Barcelona",
@@ -6479,10 +6479,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Barcelona Special Edition 'Pastel Dream' Shirt 25-26",
   "team": "FC Barcelona",
@@ -6501,10 +6501,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26%202.png",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26%202.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26%202.png",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26%202%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26%202.png",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20'Pastel%20Dream'%20Shirt%2025-26%202%20achterkant.png"
   ],
   "name": "FC Barcelona Special Edition 'Pastel Dream' Shirt 25-26 2",
   "team": "FC Barcelona",
@@ -6523,10 +6523,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%2025-26%20Shirt.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%2025-26%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%2025-26%20Shirt.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%2025-26%20Shirt%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%2025-26%20Shirt.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%2025-26%20Shirt%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition 25-26 Shirt",
   "team": "FC Barcelona",
@@ -6545,10 +6545,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Balmain%20Concept%20Shirt%2023-24.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Balmain%20Concept%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Balmain%20Concept%20Shirt%2023-24.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Balmain%20Concept%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Balmain%20Concept%20Shirt%2023-24.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Balmain%20Concept%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition Balmain Concept Shirt 23-24",
   "team": "FC Barcelona",
@@ -6567,10 +6567,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Blue%20Dragon%20Shirt%2025-26.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Blue%20Dragon%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Blue%20Dragon%20Shirt%2025-26.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Blue%20Dragon%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Blue%20Dragon%20Shirt%2025-26.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Blue%20Dragon%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition Blue Dragon Shirt 25-26",
   "team": "FC Barcelona",
@@ -6589,10 +6589,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Dark%20X-Ray%20Shirt%2025-26.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Dark%20X-Ray%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Dark%20X-Ray%20Shirt%2025-26.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Dark%20X-Ray%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Dark%20X-Ray%20Shirt%2025-26.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Dark%20X-Ray%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition Dark X-Ray Shirt 25-26",
   "team": "FC Barcelona",
@@ -6611,10 +6611,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Pastel%20Dream%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Pastel%20Dream%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Pastel%20Dream%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Pastel%20Dream%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Pastel%20Dream%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Pastel%20Dream%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Barcelona Special Edition Karol G Pastel Dream Shirt 25-26",
   "team": "FC Barcelona",
@@ -6633,10 +6633,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Red%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Red%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Red%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Red%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Red%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Karol%20G%20Red%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Barcelona Special Edition Karol G Red Shirt 25-26",
   "team": "FC Barcelona",
@@ -6655,10 +6655,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Lamine%20Yamal%20Kopa%20Trophy%20'304'%20Shirt%2024-25.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Lamine%20Yamal%20Kopa%20Trophy%20'304'%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Lamine%20Yamal%20Kopa%20Trophy%20'304'%20Shirt%2024-25.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Lamine%20Yamal%20Kopa%20Trophy%20'304'%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Lamine%20Yamal%20Kopa%20Trophy%20'304'%20Shirt%2024-25.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Lamine%20Yamal%20Kopa%20Trophy%20'304'%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition Lamine Yamal Kopa Trophy '304' Shirt 24-25",
   "team": "FC Barcelona",
@@ -6677,10 +6677,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25.png",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25.png",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25.png",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "FC Barcelona Special Edition Shirt 24-25",
   "team": "FC Barcelona",
@@ -6699,10 +6699,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25%202.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25%202.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition Shirt 24-25 2",
   "team": "FC Barcelona",
@@ -6721,10 +6721,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Barcelona Special Edition Shirt 25-26",
   "team": "FC Barcelona",
@@ -6743,10 +6743,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%202.png",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%202.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%202.png",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%202%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%202.png",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%202%20achterkant.png"
   ],
   "name": "FC Barcelona Special Edition Shirt 25-26 2",
   "team": "FC Barcelona",
@@ -6765,10 +6765,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%203.png",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%203.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%203.png",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%203%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%203.png",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%203%20achterkant.png"
   ],
   "name": "FC Barcelona Special Edition Shirt 25-26 3",
   "team": "FC Barcelona",
@@ -6787,10 +6787,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%204.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%204.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%204.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%204%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%204.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%204%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition Shirt 25-26 4",
   "team": "FC Barcelona",
@@ -6809,10 +6809,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%205.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%205.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%205.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%205%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%205.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%205%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition Shirt 25-26 5",
   "team": "FC Barcelona",
@@ -6831,10 +6831,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%206.jpg",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%206.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%206.jpg",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%206%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%206.jpg",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%2025-26%206%20achterkant.jpg"
   ],
   "name": "FC Barcelona Special Edition Shirt 25-26 6",
   "team": "FC Barcelona",
@@ -6853,10 +6853,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%202025%20(Festival-Summer%20Collection%20Concept).png",
+  "image": "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%202025%20(Festival-Summer%20Collection%20Concept).png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%202025%20(Festival-Summer%20Collection%20Concept).png",
-   "/public/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%202025%20(Festival-Summer%20Collection%20Concept)%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%202025%20(Festival-Summer%20Collection%20Concept).png",
+   "/collectie/FC%20Barcelona%20Special%20Edition%20Shirt%202025%20(Festival-Summer%20Collection%20Concept)%20achterkant.png"
   ],
   "name": "FC Barcelona Special Edition Shirt 2025 (Festival-Summer Collection Concept)",
   "team": "FC Barcelona",
@@ -6875,10 +6875,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Third%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Barcelona%20Third%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Third%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Barcelona%20Third%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Third%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/FC%20Barcelona%20Third%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Barcelona Third Pre-Match Shirt 25-26",
   "team": "FC Barcelona",
@@ -6897,10 +6897,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Third%20Shirt%2025-26%20Total%2090%20Edition.png",
+  "image": "/collectie/FC%20Barcelona%20Third%20Shirt%2025-26%20Total%2090%20Edition.png",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Third%20Shirt%2025-26%20Total%2090%20Edition.png",
-   "/public/collectie/FC%20Barcelona%20Third%20Shirt%2025-26%20Total%2090%20Edition%20achterkant.png"
+   "/collectie/FC%20Barcelona%20Third%20Shirt%2025-26%20Total%2090%20Edition.png",
+   "/collectie/FC%20Barcelona%20Third%20Shirt%2025-26%20Total%2090%20Edition%20achterkant.png"
   ],
   "name": "FC Barcelona Third Shirt 25-26 Total 90 Edition",
   "team": "FC Barcelona",
@@ -6919,10 +6919,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Third%20Shirt%2026-27.jpg",
+  "image": "/collectie/FC%20Barcelona%20Third%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Third%20Shirt%2026-27.jpg",
-   "/public/collectie/FC%20Barcelona%20Third%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Third%20Shirt%2026-27.jpg",
+   "/collectie/FC%20Barcelona%20Third%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "FC Barcelona Third Shirt 26-27",
   "team": "FC Barcelona",
@@ -6941,10 +6941,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Barcelona%20Third%20Training%20Shirt%2025-26.jpg",
+  "image": "/collectie/FC%20Barcelona%20Third%20Training%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/FC%20Barcelona%20Third%20Training%20Shirt%2025-26.jpg",
-   "/public/collectie/FC%20Barcelona%20Third%20Training%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/FC%20Barcelona%20Third%20Training%20Shirt%2025-26.jpg",
+   "/collectie/FC%20Barcelona%20Third%20Training%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "FC Barcelona Third Training Shirt 25-26",
   "team": "FC Barcelona",
@@ -6963,10 +6963,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Bayern%20M%C3%BCnchen%20Oktoberfest%20Shirt%2024-25.jpg",
+  "image": "/collectie/FC%20Bayern%20M%C3%BCnchen%20Oktoberfest%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/FC%20Bayern%20M%C3%BCnchen%20Oktoberfest%20Shirt%2024-25.jpg",
-   "/public/collectie/FC%20Bayern%20M%C3%BCnchen%20Oktoberfest%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/FC%20Bayern%20M%C3%BCnchen%20Oktoberfest%20Shirt%2024-25.jpg",
+   "/collectie/FC%20Bayern%20M%C3%BCnchen%20Oktoberfest%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "FC Bayern München Oktoberfest Shirt 24-25",
   "team": "FC Bayern München Oktoberfest",
@@ -6985,10 +6985,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Bayern%20Munich%2025-26%20Lifestyler%20Shirt.png",
+  "image": "/collectie/FC%20Bayern%20Munich%2025-26%20Lifestyler%20Shirt.png",
   "gallery": [
-   "/public/collectie/FC%20Bayern%20Munich%2025-26%20Lifestyler%20Shirt.png",
-   "/public/collectie/FC%20Bayern%20Munich%2025-26%20Lifestyler%20Shirt%20achterkant.png"
+   "/collectie/FC%20Bayern%20Munich%2025-26%20Lifestyler%20Shirt.png",
+   "/collectie/FC%20Bayern%20Munich%2025-26%20Lifestyler%20Shirt%20achterkant.png"
   ],
   "name": "FC Bayern Munich 25-26 Lifestyler Shirt",
   "team": "FC Bayern Munich 25-26 Lifestyler",
@@ -7007,10 +7007,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Bayern%20Munich%20Wiesn%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Bayern%20Munich%20Wiesn%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Bayern%20Munich%20Wiesn%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Bayern%20Munich%20Wiesn%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Bayern%20Munich%20Wiesn%20Shirt%2025-26.png",
+   "/collectie/FC%20Bayern%20Munich%20Wiesn%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Bayern Munich Wiesn Shirt 25-26",
   "team": "FC Bayern Munich Wiesn",
@@ -7029,10 +7029,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Palestina%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/FC%20Palestina%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/FC%20Palestina%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/FC%20Palestina%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/FC%20Palestina%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/FC%20Palestina%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "FC Palestina Special Edition Shirt 24-25",
   "team": "FC Palestina",
@@ -7051,10 +7051,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Porto%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/FC%20Porto%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/FC%20Porto%20Away%20Shirt%2025-26.png",
-   "/public/collectie/FC%20Porto%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/FC%20Porto%20Away%20Shirt%2025-26.png",
+   "/collectie/FC%20Porto%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "FC Porto Away Shirt 25-26",
   "team": "FC Porto",
@@ -7073,10 +7073,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Porto%20Home%20Shirt%2024-25.png",
+  "image": "/collectie/FC%20Porto%20Home%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/FC%20Porto%20Home%20Shirt%2024-25.png",
-   "/public/collectie/FC%20Porto%20Home%20Shirt%2024-25%20achterkant.png"
+   "/collectie/FC%20Porto%20Home%20Shirt%2024-25.png",
+   "/collectie/FC%20Porto%20Home%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "FC Porto Home Shirt 24-25",
   "team": "FC Porto",
@@ -7095,10 +7095,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Porto%20Special%20Edition%20Dragon%20Shirt%2025-26.jpg",
+  "image": "/collectie/FC%20Porto%20Special%20Edition%20Dragon%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/FC%20Porto%20Special%20Edition%20Dragon%20Shirt%2025-26.jpg",
-   "/public/collectie/FC%20Porto%20Special%20Edition%20Dragon%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/FC%20Porto%20Special%20Edition%20Dragon%20Shirt%2025-26.jpg",
+   "/collectie/FC%20Porto%20Special%20Edition%20Dragon%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "FC Porto Special Edition Dragon Shirt 25-26",
   "team": "FC Porto",
@@ -7117,10 +7117,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20Porto%20Third%20Shirt%2025-26%20(10th%20Anniversary%20Edition).png",
+  "image": "/collectie/FC%20Porto%20Third%20Shirt%2025-26%20(10th%20Anniversary%20Edition).png",
   "gallery": [
-   "/public/collectie/FC%20Porto%20Third%20Shirt%2025-26%20(10th%20Anniversary%20Edition).png",
-   "/public/collectie/FC%20Porto%20Third%20Shirt%2025-26%20(10th%20Anniversary%20Edition)%20achterkant.png"
+   "/collectie/FC%20Porto%20Third%20Shirt%2025-26%20(10th%20Anniversary%20Edition).png",
+   "/collectie/FC%20Porto%20Third%20Shirt%2025-26%20(10th%20Anniversary%20Edition)%20achterkant.png"
   ],
   "name": "FC Porto Third Shirt 25-26 (10th Anniversary Edition)",
   "team": "FC Porto",
@@ -7139,10 +7139,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/FC%20St.%20Pauli%20Home%20Shirt%2024-25.png",
+  "image": "/collectie/FC%20St.%20Pauli%20Home%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/FC%20St.%20Pauli%20Home%20Shirt%2024-25.png",
-   "/public/collectie/FC%20St.%20Pauli%20Home%20Shirt%2024-25%20achterkant.png"
+   "/collectie/FC%20St.%20Pauli%20Home%20Shirt%2024-25.png",
+   "/collectie/FC%20St.%20Pauli%20Home%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "FC St. Pauli Home Shirt 24-25",
   "team": "FC St. Pauli",
@@ -7161,10 +7161,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Fiorentina%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Fiorentina%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Fiorentina%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Fiorentina%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Fiorentina%20Home%20Shirt%2025-26.png",
+   "/collectie/Fiorentina%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Fiorentina Home Shirt 25-26",
   "team": "Fiorentina",
@@ -7183,10 +7183,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Flamengo%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Flamengo%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Flamengo%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Flamengo%20Away%20Shirt%2025-26.png",
+   "/collectie/Flamengo%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Flamengo Away Shirt 25-26",
   "team": "Flamengo",
@@ -7205,10 +7205,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Baseball%20Shirt%2025-26.png",
+  "image": "/collectie/Flamengo%20Baseball%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Flamengo%20Baseball%20Shirt%2025-26.png",
-   "/public/collectie/Flamengo%20Baseball%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Flamengo%20Baseball%20Shirt%2025-26.png",
+   "/collectie/Flamengo%20Baseball%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Flamengo Baseball Shirt 25-26",
   "team": "Flamengo Baseball",
@@ -7227,10 +7227,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Flamengo%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Flamengo%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Flamengo%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Flamengo%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Flamengo%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Flamengo Home Shirt 24-25",
   "team": "Flamengo",
@@ -7249,10 +7249,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Flamengo%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Flamengo%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Flamengo%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Flamengo%20Home%20Shirt%202026.jpg",
+   "/collectie/Flamengo%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Flamengo Home Shirt 2026",
   "team": "Flamengo",
@@ -7271,10 +7271,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/Flamengo%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Flamengo%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/Flamengo%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Flamengo%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/Flamengo%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Flamengo Pre-Match Shirt 25-26",
   "team": "Flamengo",
@@ -7293,10 +7293,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Special%20Edition%20'Identidade'%20Shirt%2024-25.jpg",
+  "image": "/collectie/Flamengo%20Special%20Edition%20'Identidade'%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Flamengo%20Special%20Edition%20'Identidade'%20Shirt%2024-25.jpg",
-   "/public/collectie/Flamengo%20Special%20Edition%20'Identidade'%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Flamengo%20Special%20Edition%20'Identidade'%20Shirt%2024-25.jpg",
+   "/collectie/Flamengo%20Special%20Edition%20'Identidade'%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Flamengo Special Edition 'Identidade' Shirt 24-25",
   "team": "Flamengo",
@@ -7315,10 +7315,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Special%20Edition%20Shirt%2023-24.jpg",
+  "image": "/collectie/Flamengo%20Special%20Edition%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Flamengo%20Special%20Edition%20Shirt%2023-24.jpg",
-   "/public/collectie/Flamengo%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Flamengo%20Special%20Edition%20Shirt%2023-24.jpg",
+   "/collectie/Flamengo%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Flamengo Special Edition Shirt 23-24",
   "team": "Flamengo",
@@ -7337,10 +7337,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Flamengo%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Flamengo%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Flamengo%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Flamengo%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Flamengo%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Flamengo Special Edition Shirt 24-25",
   "team": "Flamengo",
@@ -7359,10 +7359,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Third%20Shirt%2024-25%20(Lifestyler%20Edition).png",
+  "image": "/collectie/Flamengo%20Third%20Shirt%2024-25%20(Lifestyler%20Edition).png",
   "gallery": [
-   "/public/collectie/Flamengo%20Third%20Shirt%2024-25%20(Lifestyler%20Edition).png",
-   "/public/collectie/Flamengo%20Third%20Shirt%2024-25%20(Lifestyler%20Edition)%20achterkant.png"
+   "/collectie/Flamengo%20Third%20Shirt%2024-25%20(Lifestyler%20Edition).png",
+   "/collectie/Flamengo%20Third%20Shirt%2024-25%20(Lifestyler%20Edition)%20achterkant.png"
   ],
   "name": "Flamengo Third Shirt 24-25 (Lifestyler Edition)",
   "team": "Flamengo",
@@ -7381,10 +7381,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Flamengo%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Flamengo%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Flamengo%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Flamengo%20Third%20Shirt%2025-26.png",
+   "/collectie/Flamengo%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Flamengo Third Shirt 25-26",
   "team": "Flamengo",
@@ -7403,10 +7403,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Flamengo%20Third%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Flamengo%20Third%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Flamengo%20Third%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Flamengo%20Third%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Flamengo%20Third%20Shirt%2025-26%202.jpg",
+   "/collectie/Flamengo%20Third%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Flamengo Third Shirt 25-26 2",
   "team": "Flamengo",
@@ -7425,10 +7425,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/France%20Away%20Shirt%2026-27.jpg",
+  "image": "/collectie/France%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/France%20Away%20Shirt%2026-27.jpg",
-   "/public/collectie/France%20Away%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/France%20Away%20Shirt%2026-27.jpg",
+   "/collectie/France%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "France Away Shirt 26-27",
   "team": "France",
@@ -7447,10 +7447,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/France%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/France%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/France%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/France%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/France%20Home%20Shirt%2024-25.jpg",
+   "/collectie/France%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "France Home Shirt 24-25",
   "team": "France",
@@ -7469,10 +7469,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/France%20Women's%20Home%20Shirt%202025.jpg",
+  "image": "/collectie/France%20Women's%20Home%20Shirt%202025.jpg",
   "gallery": [
-   "/public/collectie/France%20Women's%20Home%20Shirt%202025.jpg",
-   "/public/collectie/France%20Women's%20Home%20Shirt%202025%20achterkant.jpg"
+   "/collectie/France%20Women's%20Home%20Shirt%202025.jpg",
+   "/collectie/France%20Women's%20Home%20Shirt%202025%20achterkant.jpg"
   ],
   "name": "France Women's Home Shirt 2025",
   "team": "France Women's",
@@ -7491,10 +7491,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Fulham%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Fulham%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Fulham%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Fulham%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Fulham%20Home%20Shirt%2025-26.png",
+   "/collectie/Fulham%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Fulham Home Shirt 25-26",
   "team": "Fulham",
@@ -7513,10 +7513,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Georgia%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Georgia%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Georgia%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Georgia%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Georgia%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Georgia%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Georgia Away Shirt 24-25",
   "team": "Georgia",
@@ -7535,10 +7535,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Georgia%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Georgia%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Georgia%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Georgia%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Georgia%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Georgia%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Georgia Home Shirt 24-25",
   "team": "Georgia",
@@ -7557,10 +7557,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Georgia%20Third%20Shirt%2023-24.jpg",
+  "image": "/collectie/Georgia%20Third%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Georgia%20Third%20Shirt%2023-24.jpg",
-   "/public/collectie/Georgia%20Third%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Georgia%20Third%20Shirt%2023-24.jpg",
+   "/collectie/Georgia%20Third%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Georgia Third Shirt 23-24",
   "team": "Georgia",
@@ -7579,10 +7579,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Germany%20125th%20Anniversary%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20more%20apparel%20items.jpg",
+  "image": "/collectie/Germany%20125th%20Anniversary%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20more%20apparel%20items.jpg",
   "gallery": [
-   "/public/collectie/Germany%20125th%20Anniversary%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20more%20apparel%20items.jpg",
-   "/public/collectie/Germany%20125th%20Anniversary%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20more%20apparel%20items%20achterkant.jpg"
+   "/collectie/Germany%20125th%20Anniversary%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20more%20apparel%20items.jpg",
+   "/collectie/Germany%20125th%20Anniversary%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20more%20apparel%20items%20achterkant.jpg"
   ],
   "name": "Germany 125th Anniversary Shirt 24-25 If you want to look at more apparel items",
   "team": "Germany 125th Anniversary",
@@ -7601,10 +7601,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Germany%20125th%20Anniversary%20Shirt%2025-26.jpg",
+  "image": "/collectie/Germany%20125th%20Anniversary%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Germany%20125th%20Anniversary%20Shirt%2025-26.jpg",
-   "/public/collectie/Germany%20125th%20Anniversary%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Germany%20125th%20Anniversary%20Shirt%2025-26.jpg",
+   "/collectie/Germany%20125th%20Anniversary%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Germany 125th Anniversary Shirt 25-26",
   "team": "Germany 125th Anniversary",
@@ -7623,10 +7623,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Germany%202025-2026%20125th%20Anniversary%20GK%20Shirt.jpg",
+  "image": "/collectie/Germany%202025-2026%20125th%20Anniversary%20GK%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Germany%202025-2026%20125th%20Anniversary%20GK%20Shirt.jpg",
-   "/public/collectie/Germany%202025-2026%20125th%20Anniversary%20GK%20Shirt%20achterkant.jpg"
+   "/collectie/Germany%202025-2026%20125th%20Anniversary%20GK%20Shirt.jpg",
+   "/collectie/Germany%202025-2026%20125th%20Anniversary%20GK%20Shirt%20achterkant.jpg"
   ],
   "name": "Germany 2025-2026 125th Anniversary GK Shirt",
   "team": "Germany 2025-2026 125th Anniversary GK",
@@ -7645,10 +7645,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Germany%202026%20Home%20Shirt.png",
+  "image": "/collectie/Germany%202026%20Home%20Shirt.png",
   "gallery": [
-   "/public/collectie/Germany%202026%20Home%20Shirt.png",
-   "/public/collectie/Germany%202026%20Home%20Shirt%20achterkant.png"
+   "/collectie/Germany%202026%20Home%20Shirt.png",
+   "/collectie/Germany%202026%20Home%20Shirt%20achterkant.png"
   ],
   "name": "Germany 2026 Home Shirt",
   "team": "Germany 2026",
@@ -7667,10 +7667,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Germany%202026%20World%20Cup%20Special%20Edition%20Third%20Shirt.jpg",
+  "image": "/collectie/Germany%202026%20World%20Cup%20Special%20Edition%20Third%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Germany%202026%20World%20Cup%20Special%20Edition%20Third%20Shirt.jpg",
-   "/public/collectie/Germany%202026%20World%20Cup%20Special%20Edition%20Third%20Shirt%20achterkant.jpg"
+   "/collectie/Germany%202026%20World%20Cup%20Special%20Edition%20Third%20Shirt.jpg",
+   "/collectie/Germany%202026%20World%20Cup%20Special%20Edition%20Third%20Shirt%20achterkant.jpg"
   ],
   "name": "Germany 2026 World Cup Special Edition Third Shirt",
   "team": "Germany 2026 World Cup",
@@ -7689,10 +7689,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Germany%20Away%20Shirt%202025.jpg",
+  "image": "/collectie/Germany%20Away%20Shirt%202025.jpg",
   "gallery": [
-   "/public/collectie/Germany%20Away%20Shirt%202025.jpg",
-   "/public/collectie/Germany%20Away%20Shirt%202025%20achterkant.jpg"
+   "/collectie/Germany%20Away%20Shirt%202025.jpg",
+   "/collectie/Germany%20Away%20Shirt%202025%20achterkant.jpg"
   ],
   "name": "Germany Away Shirt 2025",
   "team": "Germany",
@@ -7711,10 +7711,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Germany%20Away%20Shirt%202026.png",
+  "image": "/collectie/Germany%20Away%20Shirt%202026.png",
   "gallery": [
-   "/public/collectie/Germany%20Away%20Shirt%202026.png",
-   "/public/collectie/Germany%20Away%20Shirt%202026%20achterkant.png"
+   "/collectie/Germany%20Away%20Shirt%202026.png",
+   "/collectie/Germany%20Away%20Shirt%202026%20achterkant.png"
   ],
   "name": "Germany Away Shirt 2026",
   "team": "Germany",
@@ -7733,10 +7733,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Germany%20Home%20Shirt%202024.jpg",
+  "image": "/collectie/Germany%20Home%20Shirt%202024.jpg",
   "gallery": [
-   "/public/collectie/Germany%20Home%20Shirt%202024.jpg",
-   "/public/collectie/Germany%20Home%20Shirt%202024%20achterkant.jpg"
+   "/collectie/Germany%20Home%20Shirt%202024.jpg",
+   "/collectie/Germany%20Home%20Shirt%202024%20achterkant.jpg"
   ],
   "name": "Germany Home Shirt 2024",
   "team": "Germany",
@@ -7755,10 +7755,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Germany%20Pre-Match%20Shirt%2024-25.jpg",
+  "image": "/collectie/Germany%20Pre-Match%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Germany%20Pre-Match%20Shirt%2024-25.jpg",
-   "/public/collectie/Germany%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Germany%20Pre-Match%20Shirt%2024-25.jpg",
+   "/collectie/Germany%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Germany Pre-Match Shirt 24-25",
   "team": "Germany",
@@ -7777,10 +7777,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Germany%20Terrace%20Icons%20Shirt%2026-27.jpg",
+  "image": "/collectie/Germany%20Terrace%20Icons%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Germany%20Terrace%20Icons%20Shirt%2026-27.jpg",
-   "/public/collectie/Germany%20Terrace%20Icons%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Germany%20Terrace%20Icons%20Shirt%2026-27.jpg",
+   "/collectie/Germany%20Terrace%20Icons%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Germany Terrace Icons Shirt 26-27",
   "team": "Germany Terrace Icons",
@@ -7799,10 +7799,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ghana%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Ghana%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Ghana%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Ghana%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Ghana%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Ghana%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Ghana Away Shirt 24-25",
   "team": "Ghana",
@@ -7821,10 +7821,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Greece%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Greece%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Greece%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Greece%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Greece%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Greece%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Greece Home Shirt 26-27",
   "team": "Greece",
@@ -7843,10 +7843,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Guatemala%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Guatemala%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Guatemala%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Guatemala%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Guatemala%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Guatemala%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Guatemala Away Shirt 25-26",
   "team": "Guatemala",
@@ -7865,10 +7865,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Guatemala%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Guatemala%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Guatemala%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Guatemala%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Guatemala%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Guatemala%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Guatemala Home Shirt 25-26",
   "team": "Guatemala",
@@ -7887,10 +7887,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Guatemala%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Guatemala%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Guatemala%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Guatemala%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Guatemala%20Third%20Shirt%2025-26.png",
+   "/collectie/Guatemala%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Guatemala Third Shirt 25-26",
   "team": "Guatemala",
@@ -7909,10 +7909,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Hashtag%20United%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Hashtag%20United%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Hashtag%20United%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Hashtag%20United%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Hashtag%20United%20Third%20Shirt%2025-26.png",
+   "/collectie/Hashtag%20United%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Hashtag United Third Shirt 25-26",
   "team": "Hashtag United",
@@ -7931,10 +7931,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Miami%20Away%20Shirt%2026-27.jpg",
+  "image": "/collectie/Inter%20Miami%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Miami%20Away%20Shirt%2026-27.jpg",
-   "/public/collectie/Inter%20Miami%20Away%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Inter%20Miami%20Away%20Shirt%2026-27.jpg",
+   "/collectie/Inter%20Miami%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Inter Miami Away Shirt 26-27",
   "team": "Inter Miami",
@@ -7953,10 +7953,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Miami%20Black%20Camo%20Special%20Edition%20Shirt%2023-24.jpg",
+  "image": "/collectie/Inter%20Miami%20Black%20Camo%20Special%20Edition%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Miami%20Black%20Camo%20Special%20Edition%20Shirt%2023-24.jpg",
-   "/public/collectie/Inter%20Miami%20Black%20Camo%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Inter%20Miami%20Black%20Camo%20Special%20Edition%20Shirt%2023-24.jpg",
+   "/collectie/Inter%20Miami%20Black%20Camo%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Inter Miami Black Camo Special Edition Shirt 23-24",
   "team": "Inter Miami Black Camo",
@@ -7975,10 +7975,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Miami%20CF%20Retro%20Collection%20Shirt%2025-26.jpg",
+  "image": "/collectie/Inter%20Miami%20CF%20Retro%20Collection%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Miami%20CF%20Retro%20Collection%20Shirt%2025-26.jpg",
-   "/public/collectie/Inter%20Miami%20CF%20Retro%20Collection%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Inter%20Miami%20CF%20Retro%20Collection%20Shirt%2025-26.jpg",
+   "/collectie/Inter%20Miami%20CF%20Retro%20Collection%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Inter Miami CF Retro Collection Shirt 25-26",
   "team": "Inter Miami CF Retro Collection",
@@ -7997,10 +7997,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Miami%20Concept%20Shirt%2024-25.jpg",
+  "image": "/collectie/Inter%20Miami%20Concept%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Miami%20Concept%20Shirt%2024-25.jpg",
-   "/public/collectie/Inter%20Miami%20Concept%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Inter%20Miami%20Concept%20Shirt%2024-25.jpg",
+   "/collectie/Inter%20Miami%20Concept%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Inter Miami Concept Shirt 24-25",
   "team": "Inter Miami Concept",
@@ -8019,10 +8019,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection).jpg",
+  "image": "/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection).jpg",
   "gallery": [
-   "/public/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection).jpg",
-   "/public/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection)%20achterkant.jpg"
+   "/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection).jpg",
+   "/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection)%20achterkant.jpg"
   ],
   "name": "Inter Miami Special Edition Shirt 23-24 (BAPE x Inter Miami CF Collection)",
   "team": "Inter Miami",
@@ -8041,10 +8041,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection)%202.jpg",
+  "image": "/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection)%202.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection)%202.jpg",
-   "/public/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection)%202%20achterkant.jpg"
+   "/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection)%202.jpg",
+   "/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2023-24%20(BAPE%20x%20Inter%20Miami%20CF%20Collection)%202%20achterkant.jpg"
   ],
   "name": "Inter Miami Special Edition Shirt 23-24 (BAPE x Inter Miami CF Collection) 2",
   "team": "Inter Miami",
@@ -8063,10 +8063,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Inter%20Miami%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Inter Miami Special Edition Shirt 24-25",
   "team": "Inter Miami",
@@ -8085,10 +8085,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Miami%20Third%20Shirt%2024-25%20(Archive%20Collection).jpg",
+  "image": "/collectie/Inter%20Miami%20Third%20Shirt%2024-25%20(Archive%20Collection).jpg",
   "gallery": [
-   "/public/collectie/Inter%20Miami%20Third%20Shirt%2024-25%20(Archive%20Collection).jpg",
-   "/public/collectie/Inter%20Miami%20Third%20Shirt%2024-25%20(Archive%20Collection)%20achterkant.jpg"
+   "/collectie/Inter%20Miami%20Third%20Shirt%2024-25%20(Archive%20Collection).jpg",
+   "/collectie/Inter%20Miami%20Third%20Shirt%2024-25%20(Archive%20Collection)%20achterkant.jpg"
   ],
   "name": "Inter Miami Third Shirt 24-25 (Archive Collection)",
   "team": "Inter Miami",
@@ -8107,10 +8107,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Miami%20Third%20Shirt%2025-26%20'Riptide'.jpg",
+  "image": "/collectie/Inter%20Miami%20Third%20Shirt%2025-26%20'Riptide'.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Miami%20Third%20Shirt%2025-26%20'Riptide'.jpg",
-   "/public/collectie/Inter%20Miami%20Third%20Shirt%2025-26%20'Riptide'%20achterkant.jpg"
+   "/collectie/Inter%20Miami%20Third%20Shirt%2025-26%20'Riptide'.jpg",
+   "/collectie/Inter%20Miami%20Third%20Shirt%2025-26%20'Riptide'%20achterkant.jpg"
   ],
   "name": "Inter Miami Third Shirt 25-26 'Riptide'",
   "team": "Inter Miami",
@@ -8129,10 +8129,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Away%20Shirt%2022-23.png",
+  "image": "/collectie/Inter%20Milan%20Away%20Shirt%2022-23.png",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Away%20Shirt%2022-23.png",
-   "/public/collectie/Inter%20Milan%20Away%20Shirt%2022-23%20achterkant.png"
+   "/collectie/Inter%20Milan%20Away%20Shirt%2022-23.png",
+   "/collectie/Inter%20Milan%20Away%20Shirt%2022-23%20achterkant.png"
   ],
   "name": "Inter Milan Away Shirt 22-23",
   "team": "Inter Milan",
@@ -8151,10 +8151,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Away%20Shirt%2024-25%20Rossi%2046%20Edition.jpg",
+  "image": "/collectie/Inter%20Milan%20Away%20Shirt%2024-25%20Rossi%2046%20Edition.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Away%20Shirt%2024-25%20Rossi%2046%20Edition.jpg",
-   "/public/collectie/Inter%20Milan%20Away%20Shirt%2024-25%20Rossi%2046%20Edition%20achterkant.jpg"
+   "/collectie/Inter%20Milan%20Away%20Shirt%2024-25%20Rossi%2046%20Edition.jpg",
+   "/collectie/Inter%20Milan%20Away%20Shirt%2024-25%20Rossi%2046%20Edition%20achterkant.jpg"
   ],
   "name": "Inter Milan Away Shirt 24-25 Rossi 46 Edition",
   "team": "Inter Milan",
@@ -8173,10 +8173,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Inter%20Milan%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Inter%20Milan%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Inter%20Milan%20Away%20Shirt%2025-26.png",
+   "/collectie/Inter%20Milan%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Inter Milan Away Shirt 25-26",
   "team": "Inter Milan",
@@ -8195,10 +8195,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Home%20Shirt%2023-24.png",
+  "image": "/collectie/Inter%20Milan%20Home%20Shirt%2023-24.png",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Home%20Shirt%2023-24.png",
-   "/public/collectie/Inter%20Milan%20Home%20Shirt%2023-24%20achterkant.png"
+   "/collectie/Inter%20Milan%20Home%20Shirt%2023-24.png",
+   "/collectie/Inter%20Milan%20Home%20Shirt%2023-24%20achterkant.png"
   ],
   "name": "Inter Milan Home Shirt 23-24",
   "team": "Inter Milan",
@@ -8217,10 +8217,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Inter%20Milan%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Inter%20Milan%20Home%20Shirt%2025-26.png",
+   "/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Inter Milan Home Shirt 25-26",
   "team": "Inter Milan",
@@ -8239,10 +8239,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20If%20you%20are%20looking%20to%20collect%20or%20browse%20more%20gear.jpg",
+  "image": "/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20If%20you%20are%20looking%20to%20collect%20or%20browse%20more%20gear.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20If%20you%20are%20looking%20to%20collect%20or%20browse%20more%20gear.jpg",
-   "/public/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20If%20you%20are%20looking%20to%20collect%20or%20browse%20more%20gear%20achterkant.jpg"
+   "/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20If%20you%20are%20looking%20to%20collect%20or%20browse%20more%20gear.jpg",
+   "/collectie/Inter%20Milan%20Home%20Shirt%2025-26%20If%20you%20are%20looking%20to%20collect%20or%20browse%20more%20gear%20achterkant.jpg"
   ],
   "name": "Inter Milan Home Shirt 25-26 If you are looking to collect or browse more gear",
   "team": "Inter Milan",
@@ -8261,10 +8261,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Inter%20Milan%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Inter%20Milan%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Inter%20Milan%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Inter%20Milan%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Inter Milan Home Shirt 26-27",
   "team": "Inter Milan",
@@ -8283,10 +8283,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Inter Milan Pre-Match Shirt 25-26",
   "team": "Inter Milan",
@@ -8305,10 +8305,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26%202.jpg",
+   "/collectie/Inter%20Milan%20Pre-Match%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Inter Milan Pre-Match Shirt 25-26 2",
   "team": "Inter Milan",
@@ -8327,10 +8327,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Special%20Edition%20-Snake-%20Shirt%2024-25.jpg",
+  "image": "/collectie/Inter%20Milan%20Special%20Edition%20-Snake-%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Special%20Edition%20-Snake-%20Shirt%2024-25.jpg",
-   "/public/collectie/Inter%20Milan%20Special%20Edition%20-Snake-%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Inter%20Milan%20Special%20Edition%20-Snake-%20Shirt%2024-25.jpg",
+   "/collectie/Inter%20Milan%20Special%20Edition%20-Snake-%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Inter Milan Special Edition -Snake- Shirt 24-25",
   "team": "Inter Milan",
@@ -8349,10 +8349,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Special%20Edition%20'Pink%20Snake'%20Shirt%2024-25.jpg",
+  "image": "/collectie/Inter%20Milan%20Special%20Edition%20'Pink%20Snake'%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Special%20Edition%20'Pink%20Snake'%20Shirt%2024-25.jpg",
-   "/public/collectie/Inter%20Milan%20Special%20Edition%20'Pink%20Snake'%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Inter%20Milan%20Special%20Edition%20'Pink%20Snake'%20Shirt%2024-25.jpg",
+   "/collectie/Inter%20Milan%20Special%20Edition%20'Pink%20Snake'%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Inter Milan Special Edition 'Pink Snake' Shirt 24-25",
   "team": "Inter Milan",
@@ -8371,10 +8371,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Special%20Edition%20Red%20Snake%20Shirt%2024-25.jpg",
+  "image": "/collectie/Inter%20Milan%20Special%20Edition%20Red%20Snake%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Special%20Edition%20Red%20Snake%20Shirt%2024-25.jpg",
-   "/public/collectie/Inter%20Milan%20Special%20Edition%20Red%20Snake%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Inter%20Milan%20Special%20Edition%20Red%20Snake%20Shirt%2024-25.jpg",
+   "/collectie/Inter%20Milan%20Special%20Edition%20Red%20Snake%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Inter Milan Special Edition Red Snake Shirt 24-25",
   "team": "Inter Milan",
@@ -8393,10 +8393,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Inter%20Milan%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Inter%20Milan%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Inter%20Milan%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Inter%20Milan%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Inter Milan Special Edition Shirt 24-25",
   "team": "Inter Milan",
@@ -8415,10 +8415,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Inter%20Milan%20Third%20Shirt%2025-26%20(Total%2090%20Edition).png",
+  "image": "/collectie/Inter%20Milan%20Third%20Shirt%2025-26%20(Total%2090%20Edition).png",
   "gallery": [
-   "/public/collectie/Inter%20Milan%20Third%20Shirt%2025-26%20(Total%2090%20Edition).png",
-   "/public/collectie/Inter%20Milan%20Third%20Shirt%2025-26%20(Total%2090%20Edition)%20achterkant.png"
+   "/collectie/Inter%20Milan%20Third%20Shirt%2025-26%20(Total%2090%20Edition).png",
+   "/collectie/Inter%20Milan%20Third%20Shirt%2025-26%20(Total%2090%20Edition)%20achterkant.png"
   ],
   "name": "Inter Milan Third Shirt 25-26 (Total 90 Edition)",
   "team": "Inter Milan",
@@ -8437,10 +8437,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ireland%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Ireland%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Ireland%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Ireland%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Ireland%20Home%20Shirt%202026.jpg",
+   "/collectie/Ireland%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Ireland Home Shirt 2026",
   "team": "Ireland",
@@ -8459,10 +8459,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20Away%20Shirt%202025.jpg",
+  "image": "/collectie/Italy%20Away%20Shirt%202025.jpg",
   "gallery": [
-   "/public/collectie/Italy%20Away%20Shirt%202025.jpg",
-   "/public/collectie/Italy%20Away%20Shirt%202025%20achterkant.jpg"
+   "/collectie/Italy%20Away%20Shirt%202025.jpg",
+   "/collectie/Italy%20Away%20Shirt%202025%20achterkant.jpg"
   ],
   "name": "Italy Away Shirt 2025",
   "team": "Italy",
@@ -8481,10 +8481,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20Away%20Shirt%202026.png",
+  "image": "/collectie/Italy%20Away%20Shirt%202026.png",
   "gallery": [
-   "/public/collectie/Italy%20Away%20Shirt%202026.png",
-   "/public/collectie/Italy%20Away%20Shirt%202026%20achterkant.png"
+   "/collectie/Italy%20Away%20Shirt%202026.png",
+   "/collectie/Italy%20Away%20Shirt%202026%20achterkant.png"
   ],
   "name": "Italy Away Shirt 2026",
   "team": "Italy",
@@ -8503,10 +8503,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20Home%20Shirt%2026-27.png",
+  "image": "/collectie/Italy%20Home%20Shirt%2026-27.png",
   "gallery": [
-   "/public/collectie/Italy%20Home%20Shirt%2026-27.png",
-   "/public/collectie/Italy%20Home%20Shirt%2026-27%20achterkant.png"
+   "/collectie/Italy%20Home%20Shirt%2026-27.png",
+   "/collectie/Italy%20Home%20Shirt%2026-27%20achterkant.png"
   ],
   "name": "Italy Home Shirt 26-27",
   "team": "Italy",
@@ -8525,10 +8525,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20Pre-Match%20Shirt%2023-24.jpg",
+  "image": "/collectie/Italy%20Pre-Match%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Italy%20Pre-Match%20Shirt%2023-24.jpg",
-   "/public/collectie/Italy%20Pre-Match%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Italy%20Pre-Match%20Shirt%2023-24.jpg",
+   "/collectie/Italy%20Pre-Match%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Italy Pre-Match Shirt 23-24",
   "team": "Italy",
@@ -8547,10 +8547,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20Special%20Edition%20Design%20Shirt%2023-24.png",
+  "image": "/collectie/Italy%20Special%20Edition%20Design%20Shirt%2023-24.png",
   "gallery": [
-   "/public/collectie/Italy%20Special%20Edition%20Design%20Shirt%2023-24.png",
-   "/public/collectie/Italy%20Special%20Edition%20Design%20Shirt%2023-24%20achterkant.png"
+   "/collectie/Italy%20Special%20Edition%20Design%20Shirt%2023-24.png",
+   "/collectie/Italy%20Special%20Edition%20Design%20Shirt%2023-24%20achterkant.png"
   ],
   "name": "Italy Special Edition Design Shirt 23-24",
   "team": "Italy",
@@ -8569,10 +8569,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20Special%20Edition%20Renaissance%20Pink%20Concept%20Shirt%2024-25.png",
+  "image": "/collectie/Italy%20Special%20Edition%20Renaissance%20Pink%20Concept%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Italy%20Special%20Edition%20Renaissance%20Pink%20Concept%20Shirt%2024-25.png",
-   "/public/collectie/Italy%20Special%20Edition%20Renaissance%20Pink%20Concept%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Italy%20Special%20Edition%20Renaissance%20Pink%20Concept%20Shirt%2024-25.png",
+   "/collectie/Italy%20Special%20Edition%20Renaissance%20Pink%20Concept%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Italy Special Edition Renaissance Pink Concept Shirt 24-25",
   "team": "Italy",
@@ -8591,10 +8591,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20Special%20Edition%20Shirt%2023-24.png",
+  "image": "/collectie/Italy%20Special%20Edition%20Shirt%2023-24.png",
   "gallery": [
-   "/public/collectie/Italy%20Special%20Edition%20Shirt%2023-24.png",
-   "/public/collectie/Italy%20Special%20Edition%20Shirt%2023-24%20achterkant.png"
+   "/collectie/Italy%20Special%20Edition%20Shirt%2023-24.png",
+   "/collectie/Italy%20Special%20Edition%20Shirt%2023-24%20achterkant.png"
   ],
   "name": "Italy Special Edition Shirt 23-24",
   "team": "Italy",
@@ -8613,10 +8613,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20Special%20Edition%20White%20Shirt%2023-24.png",
+  "image": "/collectie/Italy%20Special%20Edition%20White%20Shirt%2023-24.png",
   "gallery": [
-   "/public/collectie/Italy%20Special%20Edition%20White%20Shirt%2023-24.png",
-   "/public/collectie/Italy%20Special%20Edition%20White%20Shirt%2023-24%20achterkant.png"
+   "/collectie/Italy%20Special%20Edition%20White%20Shirt%2023-24.png",
+   "/collectie/Italy%20Special%20Edition%20White%20Shirt%2023-24%20achterkant.png"
   ],
   "name": "Italy Special Edition White Shirt 23-24",
   "team": "Italy",
@@ -8635,10 +8635,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20Third%20Concept%20Shirt%2023-24%20'Renaissance%20Edition'.png",
+  "image": "/collectie/Italy%20Third%20Concept%20Shirt%2023-24%20'Renaissance%20Edition'.png",
   "gallery": [
-   "/public/collectie/Italy%20Third%20Concept%20Shirt%2023-24%20'Renaissance%20Edition'.png",
-   "/public/collectie/Italy%20Third%20Concept%20Shirt%2023-24%20'Renaissance%20Edition'%20achterkant.png"
+   "/collectie/Italy%20Third%20Concept%20Shirt%2023-24%20'Renaissance%20Edition'.png",
+   "/collectie/Italy%20Third%20Concept%20Shirt%2023-24%20'Renaissance%20Edition'%20achterkant.png"
   ],
   "name": "Italy Third Concept Shirt 23-24 'Renaissance Edition'",
   "team": "Italy",
@@ -8657,10 +8657,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20x%20Versace%20Concept%20Home%20Shirt%202022.png",
+  "image": "/collectie/Italy%20x%20Versace%20Concept%20Home%20Shirt%202022.png",
   "gallery": [
-   "/public/collectie/Italy%20x%20Versace%20Concept%20Home%20Shirt%202022.png",
-   "/public/collectie/Italy%20x%20Versace%20Concept%20Home%20Shirt%202022%20achterkant.png"
+   "/collectie/Italy%20x%20Versace%20Concept%20Home%20Shirt%202022.png",
+   "/collectie/Italy%20x%20Versace%20Concept%20Home%20Shirt%202022%20achterkant.png"
   ],
   "name": "Italy x Versace Concept Home Shirt 2022",
   "team": "Italy x Versace Concept",
@@ -8679,10 +8679,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20x%20Versace%20Concept%20Shirt%2023-24.png",
+  "image": "/collectie/Italy%20x%20Versace%20Concept%20Shirt%2023-24.png",
   "gallery": [
-   "/public/collectie/Italy%20x%20Versace%20Concept%20Shirt%2023-24.png",
-   "/public/collectie/Italy%20x%20Versace%20Concept%20Shirt%2023-24%20achterkant.png"
+   "/collectie/Italy%20x%20Versace%20Concept%20Shirt%2023-24.png",
+   "/collectie/Italy%20x%20Versace%20Concept%20Shirt%2023-24%20achterkant.png"
   ],
   "name": "Italy x Versace Concept Shirt 23-24",
   "team": "Italy x Versace Concept",
@@ -8701,10 +8701,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Italy%20x%20Versace%20Special%20Edition%20Concept%20Shirt%2023-24.png",
+  "image": "/collectie/Italy%20x%20Versace%20Special%20Edition%20Concept%20Shirt%2023-24.png",
   "gallery": [
-   "/public/collectie/Italy%20x%20Versace%20Special%20Edition%20Concept%20Shirt%2023-24.png",
-   "/public/collectie/Italy%20x%20Versace%20Special%20Edition%20Concept%20Shirt%2023-24%20achterkant.png"
+   "/collectie/Italy%20x%20Versace%20Special%20Edition%20Concept%20Shirt%2023-24.png",
+   "/collectie/Italy%20x%20Versace%20Special%20Edition%20Concept%20Shirt%2023-24%20achterkant.png"
   ],
   "name": "Italy x Versace Special Edition Concept Shirt 23-24",
   "team": "Italy x Versace",
@@ -8723,10 +8723,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Ivory%20Coast%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Ivory%20Coast%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Ivory%20Coast%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Ivory%20Coast%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Ivory%20Coast%20Home%20Shirt%202026.jpg",
+   "/collectie/Ivory%20Coast%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Ivory Coast Home Shirt 2026",
   "team": "Ivory Coast",
@@ -8745,10 +8745,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Jamaica%20Away%20Pre-Match%20Shirt%2026-27.jpg",
+  "image": "/collectie/Jamaica%20Away%20Pre-Match%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Jamaica%20Away%20Pre-Match%20Shirt%2026-27.jpg",
-   "/public/collectie/Jamaica%20Away%20Pre-Match%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Jamaica%20Away%20Pre-Match%20Shirt%2026-27.jpg",
+   "/collectie/Jamaica%20Away%20Pre-Match%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Jamaica Away Pre-Match Shirt 26-27",
   "team": "Jamaica",
@@ -8767,10 +8767,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Jamaica%20Home%20Shirt%202026%20x%20Bob%20Marley%20Collection.jpg",
+  "image": "/collectie/Jamaica%20Home%20Shirt%202026%20x%20Bob%20Marley%20Collection.jpg",
   "gallery": [
-   "/public/collectie/Jamaica%20Home%20Shirt%202026%20x%20Bob%20Marley%20Collection.jpg",
-   "/public/collectie/Jamaica%20Home%20Shirt%202026%20x%20Bob%20Marley%20Collection%20achterkant.jpg"
+   "/collectie/Jamaica%20Home%20Shirt%202026%20x%20Bob%20Marley%20Collection.jpg",
+   "/collectie/Jamaica%20Home%20Shirt%202026%20x%20Bob%20Marley%20Collection%20achterkant.jpg"
   ],
   "name": "Jamaica Home Shirt 2026 x Bob Marley Collection",
   "team": "Jamaica",
@@ -8789,10 +8789,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Jamaica%20Pre-Match%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Jamaica%20Pre-Match%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Jamaica%20Pre-Match%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Jamaica%20Pre-Match%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Jamaica%20Pre-Match%20Home%20Shirt%202026.jpg",
+   "/collectie/Jamaica%20Pre-Match%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Jamaica Pre-Match Home Shirt 2026",
   "team": "Jamaica",
@@ -8811,10 +8811,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20-Black%20Tiger-%20Concept%20Shirt%202024.jpg",
+  "image": "/collectie/Japan%20-Black%20Tiger-%20Concept%20Shirt%202024.jpg",
   "gallery": [
-   "/public/collectie/Japan%20-Black%20Tiger-%20Concept%20Shirt%202024.jpg",
-   "/public/collectie/Japan%20-Black%20Tiger-%20Concept%20Shirt%202024%20achterkant.jpg"
+   "/collectie/Japan%20-Black%20Tiger-%20Concept%20Shirt%202024.jpg",
+   "/collectie/Japan%20-Black%20Tiger-%20Concept%20Shirt%202024%20achterkant.jpg"
   ],
   "name": "Japan -Black Tiger- Concept Shirt 2024",
   "team": "Japan -Black Tiger- Concept",
@@ -8833,10 +8833,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20'Manga%20Anime'%20Concept%20Special%20Edition%20Shirt.jpg",
+  "image": "/collectie/Japan%20'Manga%20Anime'%20Concept%20Special%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Japan%20'Manga%20Anime'%20Concept%20Special%20Edition%20Shirt.jpg",
-   "/public/collectie/Japan%20'Manga%20Anime'%20Concept%20Special%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Japan%20'Manga%20Anime'%20Concept%20Special%20Edition%20Shirt.jpg",
+   "/collectie/Japan%20'Manga%20Anime'%20Concept%20Special%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Japan 'Manga Anime' Concept Special Edition Shirt",
   "team": "Japan 'Manga Anime' Concept",
@@ -8855,10 +8855,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20'Samurai'%20Special%20Edition%20Shirt%2023-24.jpg",
+  "image": "/collectie/Japan%20'Samurai'%20Special%20Edition%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Japan%20'Samurai'%20Special%20Edition%20Shirt%2023-24.jpg",
-   "/public/collectie/Japan%20'Samurai'%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Japan%20'Samurai'%20Special%20Edition%20Shirt%2023-24.jpg",
+   "/collectie/Japan%20'Samurai'%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Japan 'Samurai' Special Edition Shirt 23-24",
   "team": "Japan 'Samurai'",
@@ -8877,10 +8877,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%2024-25%20'Sunset%20Blossom'%20Special%20Edition%20Shirt.jpg",
+  "image": "/collectie/Japan%2024-25%20'Sunset%20Blossom'%20Special%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Japan%2024-25%20'Sunset%20Blossom'%20Special%20Edition%20Shirt.jpg",
-   "/public/collectie/Japan%2024-25%20'Sunset%20Blossom'%20Special%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Japan%2024-25%20'Sunset%20Blossom'%20Special%20Edition%20Shirt.jpg",
+   "/collectie/Japan%2024-25%20'Sunset%20Blossom'%20Special%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Japan 24-25 'Sunset Blossom' Special Edition Shirt",
   "team": "Japan 24-25 'Sunset Blossom'",
@@ -8899,10 +8899,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%2024-25%20Blue%20Dragon%20Special%20Edition%20Shirt.jpg",
+  "image": "/collectie/Japan%2024-25%20Blue%20Dragon%20Special%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Japan%2024-25%20Blue%20Dragon%20Special%20Edition%20Shirt.jpg",
-   "/public/collectie/Japan%2024-25%20Blue%20Dragon%20Special%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Japan%2024-25%20Blue%20Dragon%20Special%20Edition%20Shirt.jpg",
+   "/collectie/Japan%2024-25%20Blue%20Dragon%20Special%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Japan 24-25 Blue Dragon Special Edition Shirt",
   "team": "Japan 24-25 Blue Dragon",
@@ -8921,10 +8921,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%2024-25%20Dragon%20Ball%20'Vegeta'%20Special%20Edition%20Shirt.jpg",
+  "image": "/collectie/Japan%2024-25%20Dragon%20Ball%20'Vegeta'%20Special%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Japan%2024-25%20Dragon%20Ball%20'Vegeta'%20Special%20Edition%20Shirt.jpg",
-   "/public/collectie/Japan%2024-25%20Dragon%20Ball%20'Vegeta'%20Special%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Japan%2024-25%20Dragon%20Ball%20'Vegeta'%20Special%20Edition%20Shirt.jpg",
+   "/collectie/Japan%2024-25%20Dragon%20Ball%20'Vegeta'%20Special%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Japan 24-25 Dragon Ball 'Vegeta' Special Edition Shirt",
   "team": "Japan 24-25 Dragon Ball 'Vegeta'",
@@ -8943,10 +8943,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%2025-26%20Sakura%20Pagoda%20Concept%20Shirt.png",
+  "image": "/collectie/Japan%2025-26%20Sakura%20Pagoda%20Concept%20Shirt.png",
   "gallery": [
-   "/public/collectie/Japan%2025-26%20Sakura%20Pagoda%20Concept%20Shirt.png",
-   "/public/collectie/Japan%2025-26%20Sakura%20Pagoda%20Concept%20Shirt%20achterkant.png"
+   "/collectie/Japan%2025-26%20Sakura%20Pagoda%20Concept%20Shirt.png",
+   "/collectie/Japan%2025-26%20Sakura%20Pagoda%20Concept%20Shirt%20achterkant.png"
   ],
   "name": "Japan 25-26 Sakura Pagoda Concept Shirt",
   "team": "Japan 25-26 Sakura Pagoda Concept",
@@ -8965,10 +8965,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Away%20Shirt%202026%20Follow%20up%20If%20you%20wish.jpg",
+  "image": "/collectie/Japan%20Away%20Shirt%202026%20Follow%20up%20If%20you%20wish.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Away%20Shirt%202026%20Follow%20up%20If%20you%20wish.jpg",
-   "/public/collectie/Japan%20Away%20Shirt%202026%20Follow%20up%20If%20you%20wish%20achterkant.jpg"
+   "/collectie/Japan%20Away%20Shirt%202026%20Follow%20up%20If%20you%20wish.jpg",
+   "/collectie/Japan%20Away%20Shirt%202026%20Follow%20up%20If%20you%20wish%20achterkant.jpg"
   ],
   "name": "Japan Away Shirt 2026 Follow up If you wish",
   "team": "Japan",
@@ -8987,10 +8987,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Home%20Shirt%2026-27.png",
+  "image": "/collectie/Japan%20Home%20Shirt%2026-27.png",
   "gallery": [
-   "/public/collectie/Japan%20Home%20Shirt%2026-27.png",
-   "/public/collectie/Japan%20Home%20Shirt%2026-27%20achterkant.png"
+   "/collectie/Japan%20Home%20Shirt%2026-27.png",
+   "/collectie/Japan%20Home%20Shirt%2026-27%20achterkant.png"
   ],
   "name": "Japan Home Shirt 26-27",
   "team": "Japan",
@@ -9009,10 +9009,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Pink%20Dragon%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/Japan%20Pink%20Dragon%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Japan%20Pink%20Dragon%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/Japan%20Pink%20Dragon%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Japan%20Pink%20Dragon%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/Japan%20Pink%20Dragon%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Japan Pink Dragon Special Edition Shirt 25-26",
   "team": "Japan Pink Dragon",
@@ -9031,10 +9031,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Pre-Match%20Shirt%2024-25%20Y-3%20Special%20Edition.png",
+  "image": "/collectie/Japan%20Pre-Match%20Shirt%2024-25%20Y-3%20Special%20Edition.png",
   "gallery": [
-   "/public/collectie/Japan%20Pre-Match%20Shirt%2024-25%20Y-3%20Special%20Edition.png",
-   "/public/collectie/Japan%20Pre-Match%20Shirt%2024-25%20Y-3%20Special%20Edition%20achterkant.png"
+   "/collectie/Japan%20Pre-Match%20Shirt%2024-25%20Y-3%20Special%20Edition.png",
+   "/collectie/Japan%20Pre-Match%20Shirt%2024-25%20Y-3%20Special%20Edition%20achterkant.png"
   ],
   "name": "Japan Pre-Match Shirt 24-25 Y-3 Special Edition",
   "team": "Japan",
@@ -9053,10 +9053,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Concept%20Naruto%20Itachi%20Edition%20Shirt.jpg",
+  "image": "/collectie/Japan%20Special%20Concept%20Naruto%20Itachi%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Concept%20Naruto%20Itachi%20Edition%20Shirt.jpg",
-   "/public/collectie/Japan%20Special%20Concept%20Naruto%20Itachi%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Concept%20Naruto%20Itachi%20Edition%20Shirt.jpg",
+   "/collectie/Japan%20Special%20Concept%20Naruto%20Itachi%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Japan Special Concept Naruto Itachi Edition Shirt",
   "team": "Japan",
@@ -9075,10 +9075,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20'Blue%20Dragon'%20Concept%20Shirt%2024-25.png",
+  "image": "/collectie/Japan%20Special%20Edition%20'Blue%20Dragon'%20Concept%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20'Blue%20Dragon'%20Concept%20Shirt%2024-25.png",
-   "/public/collectie/Japan%20Special%20Edition%20'Blue%20Dragon'%20Concept%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Japan%20Special%20Edition%20'Blue%20Dragon'%20Concept%20Shirt%2024-25.png",
+   "/collectie/Japan%20Special%20Edition%20'Blue%20Dragon'%20Concept%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Japan Special Edition 'Blue Dragon' Concept Shirt 24-25",
   "team": "Japan",
@@ -9097,10 +9097,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20'Katana'%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20'Katana'%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20'Katana'%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20'Katana'%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20'Katana'%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20'Katana'%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition 'Katana' Shirt 24-25",
   "team": "Japan",
@@ -9119,10 +9119,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition 'Pink Dragon' Shirt 24-25",
   "team": "Japan",
@@ -9141,10 +9141,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20'Sakura%20Horizon'%20Concept%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20'Sakura%20Horizon'%20Concept%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20'Sakura%20Horizon'%20Concept%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20'Sakura%20Horizon'%20Concept%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20'Sakura%20Horizon'%20Concept%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20'Sakura%20Horizon'%20Concept%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition 'Sakura Horizon' Concept Shirt 24-25",
   "team": "Japan",
@@ -9163,10 +9163,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Brook%20One%20Piece%20Concept%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Brook%20One%20Piece%20Concept%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Brook%20One%20Piece%20Concept%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Brook%20One%20Piece%20Concept%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Brook%20One%20Piece%20Concept%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20Brook%20One%20Piece%20Concept%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Brook One Piece Concept Shirt 24-25",
   "team": "Japan",
@@ -9185,10 +9185,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Captain%20Tsubasa%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Captain%20Tsubasa%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Captain%20Tsubasa%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Captain%20Tsubasa%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Captain%20Tsubasa%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20Captain%20Tsubasa%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Captain Tsubasa Shirt 24-25",
   "team": "Japan",
@@ -9207,10 +9207,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Cherry%20Blossom%20Concept%20Shirt.png",
+  "image": "/collectie/Japan%20Special%20Edition%20Cherry%20Blossom%20Concept%20Shirt.png",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Cherry%20Blossom%20Concept%20Shirt.png",
-   "/public/collectie/Japan%20Special%20Edition%20Cherry%20Blossom%20Concept%20Shirt%20achterkant.png"
+   "/collectie/Japan%20Special%20Edition%20Cherry%20Blossom%20Concept%20Shirt.png",
+   "/collectie/Japan%20Special%20Edition%20Cherry%20Blossom%20Concept%20Shirt%20achterkant.png"
   ],
   "name": "Japan Special Edition Cherry Blossom Concept Shirt",
   "team": "Japan",
@@ -9229,10 +9229,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Concept%20Shirt%2024-25%20(Dragon%20Ball%20Edition).jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Concept%20Shirt%2024-25%20(Dragon%20Ball%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Concept%20Shirt%2024-25%20(Dragon%20Ball%20Edition).jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Concept%20Shirt%2024-25%20(Dragon%20Ball%20Edition)%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Concept%20Shirt%2024-25%20(Dragon%20Ball%20Edition).jpg",
+   "/collectie/Japan%20Special%20Edition%20Concept%20Shirt%2024-25%20(Dragon%20Ball%20Edition)%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Concept Shirt 24-25 (Dragon Ball Edition)",
   "team": "Japan",
@@ -9251,10 +9251,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Detective%20Conan%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Detective%20Conan%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Detective%20Conan%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Detective%20Conan%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Detective%20Conan%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20Detective%20Conan%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Detective Conan Shirt 24-25",
   "team": "Japan",
@@ -9273,10 +9273,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20'Goku'%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20'Goku'%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20'Goku'%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20'Goku'%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20'Goku'%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20'Goku'%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Dragon Ball 'Goku' Shirt 24-25",
   "team": "Japan",
@@ -9295,10 +9295,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Goku%20Concept%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Goku%20Concept%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Goku%20Concept%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Goku%20Concept%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Goku%20Concept%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Goku%20Concept%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Dragon Ball Goku Concept Shirt 24-25",
   "team": "Japan",
@@ -9317,10 +9317,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2022-23.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2022-23.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2022-23.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2022-23%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2022-23.jpg",
+   "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2022-23%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Dragon Ball Shirt 22-23",
   "team": "Japan",
@@ -9339,10 +9339,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20Dragon%20Ball%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Dragon Ball Shirt 24-25",
   "team": "Japan",
@@ -9361,10 +9361,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Dragon%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Dragon%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Dragon%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Dragon%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Dragon%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20Dragon%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Dragon Shirt 24-25",
   "team": "Japan",
@@ -9383,10 +9383,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20One%20Piece%20Gear%205%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20One%20Piece%20Gear%205%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20One%20Piece%20Gear%205%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20One%20Piece%20Gear%205%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20One%20Piece%20Gear%205%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20One%20Piece%20Gear%205%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition One Piece Gear 5 Shirt 24-25",
   "team": "Japan",
@@ -9405,10 +9405,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Pink%20Dragon%20Concept%20Shirt%2025-26.png",
+  "image": "/collectie/Japan%20Special%20Edition%20Pink%20Dragon%20Concept%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Pink%20Dragon%20Concept%20Shirt%2025-26.png",
-   "/public/collectie/Japan%20Special%20Edition%20Pink%20Dragon%20Concept%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Japan%20Special%20Edition%20Pink%20Dragon%20Concept%20Shirt%2025-26.png",
+   "/collectie/Japan%20Special%20Edition%20Pink%20Dragon%20Concept%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Japan Special Edition Pink Dragon Concept Shirt 25-26",
   "team": "Japan",
@@ -9427,10 +9427,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Saint%20Seiya%20Shirt%2023-24.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Saint%20Seiya%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Saint%20Seiya%20Shirt%2023-24.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Saint%20Seiya%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Saint%20Seiya%20Shirt%2023-24.jpg",
+   "/collectie/Japan%20Special%20Edition%20Saint%20Seiya%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Saint Seiya Shirt 23-24",
   "team": "Japan",
@@ -9449,10 +9449,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20('Midnight%20Sakura'%20-%20'Osaka%20Dragon'%20Concept%20Edition).jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20('Midnight%20Sakura'%20-%20'Osaka%20Dragon'%20Concept%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20('Midnight%20Sakura'%20-%20'Osaka%20Dragon'%20Concept%20Edition).jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20('Midnight%20Sakura'%20-%20'Osaka%20Dragon'%20Concept%20Edition)%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20('Midnight%20Sakura'%20-%20'Osaka%20Dragon'%20Concept%20Edition).jpg",
+   "/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20('Midnight%20Sakura'%20-%20'Osaka%20Dragon'%20Concept%20Edition)%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Shirt 24-25 ('Midnight Sakura' - 'Osaka Dragon' Concept Edition)",
   "team": "Japan",
@@ -9471,10 +9471,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20(Sumi.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20(Sumi.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20(Sumi.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20(Sumi%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20(Sumi.jpg",
+   "/collectie/Japan%20Special%20Edition%20Shirt%2024-25%20(Sumi%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Shirt 24-25 (Sumi",
   "team": "Japan",
@@ -9493,10 +9493,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Shirt%2025-26%20Dragon%20Ball%20Z%20Goku%20Edition.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Shirt%2025-26%20Dragon%20Ball%20Z%20Goku%20Edition.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Shirt%2025-26%20Dragon%20Ball%20Z%20Goku%20Edition.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Shirt%2025-26%20Dragon%20Ball%20Z%20Goku%20Edition%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Shirt%2025-26%20Dragon%20Ball%20Z%20Goku%20Edition.jpg",
+   "/collectie/Japan%20Special%20Edition%20Shirt%2025-26%20Dragon%20Ball%20Z%20Goku%20Edition%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Shirt 25-26 Dragon Ball Z Goku Edition",
   "team": "Japan",
@@ -9515,10 +9515,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20Tokyo%20Grey%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Edition%20Tokyo%20Grey%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20Tokyo%20Grey%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Edition%20Tokyo%20Grey%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Edition%20Tokyo%20Grey%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Edition%20Tokyo%20Grey%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Edition Tokyo Grey Shirt 24-25",
   "team": "Japan",
@@ -9537,10 +9537,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Edition%20White%20Wolf%20Blossom%20Concept%20Shirt%2025-26.png",
+  "image": "/collectie/Japan%20Special%20Edition%20White%20Wolf%20Blossom%20Concept%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Edition%20White%20Wolf%20Blossom%20Concept%20Shirt%2025-26.png",
-   "/public/collectie/Japan%20Special%20Edition%20White%20Wolf%20Blossom%20Concept%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Japan%20Special%20Edition%20White%20Wolf%20Blossom%20Concept%20Shirt%2025-26.png",
+   "/collectie/Japan%20Special%20Edition%20White%20Wolf%20Blossom%20Concept%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Japan Special Edition White Wolf Blossom Concept Shirt 25-26",
   "team": "Japan",
@@ -9559,10 +9559,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Owl%20Concept%20Shirt%2025-26.jpg",
+  "image": "/collectie/Japan%20Special%20Owl%20Concept%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Owl%20Concept%20Shirt%2025-26.jpg",
-   "/public/collectie/Japan%20Special%20Owl%20Concept%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Owl%20Concept%20Shirt%2025-26.jpg",
+   "/collectie/Japan%20Special%20Owl%20Concept%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Japan Special Owl Concept Shirt 25-26",
   "team": "Japan",
@@ -9581,10 +9581,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Special%20Tokyo%20Pink%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20Special%20Tokyo%20Pink%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Special%20Tokyo%20Pink%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20Special%20Tokyo%20Pink%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20Special%20Tokyo%20Pink%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20Special%20Tokyo%20Pink%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan Special Tokyo Pink Shirt 24-25",
   "team": "Japan",
@@ -9603,10 +9603,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Tokyo%20Special%20Edition%20Shirt%2023-24.jpg",
+  "image": "/collectie/Japan%20Tokyo%20Special%20Edition%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Tokyo%20Special%20Edition%20Shirt%2023-24.jpg",
-   "/public/collectie/Japan%20Tokyo%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Japan%20Tokyo%20Special%20Edition%20Shirt%2023-24.jpg",
+   "/collectie/Japan%20Tokyo%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Japan Tokyo Special Edition Shirt 23-24",
   "team": "Japan Tokyo",
@@ -9625,10 +9625,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20Women%202023%20Away%20Shirt.jpg",
+  "image": "/collectie/Japan%20Women%202023%20Away%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Japan%20Women%202023%20Away%20Shirt.jpg",
-   "/public/collectie/Japan%20Women%202023%20Away%20Shirt%20achterkant.jpg"
+   "/collectie/Japan%20Women%202023%20Away%20Shirt.jpg",
+   "/collectie/Japan%20Women%202023%20Away%20Shirt%20achterkant.jpg"
   ],
   "name": "Japan Women 2023 Away Shirt",
   "team": "Japan Women 2023",
@@ -9647,10 +9647,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Japan%20x%20One%20Piece%20Zoro%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Japan%20x%20One%20Piece%20Zoro%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Japan%20x%20One%20Piece%20Zoro%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Japan%20x%20One%20Piece%20Zoro%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Japan%20x%20One%20Piece%20Zoro%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Japan%20x%20One%20Piece%20Zoro%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Japan x One Piece Zoro Special Edition Shirt 24-25",
   "team": "Japan x One Piece Zoro",
@@ -9669,10 +9669,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Juventus%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Juventus%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Juventus%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Juventus%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Juventus%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Juventus Away Shirt 24-25",
   "team": "Juventus",
@@ -9691,10 +9691,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Juventus%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Juventus%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Juventus%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Juventus%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Juventus%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Juventus Away Shirt 25-26",
   "team": "Juventus",
@@ -9713,10 +9713,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Fourth%20Shirt%2025-26%20(Studio%20Sgura%20Edition).jpg",
+  "image": "/collectie/Juventus%20Fourth%20Shirt%2025-26%20(Studio%20Sgura%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Juventus%20Fourth%20Shirt%2025-26%20(Studio%20Sgura%20Edition).jpg",
-   "/public/collectie/Juventus%20Fourth%20Shirt%2025-26%20(Studio%20Sgura%20Edition)%20achterkant.jpg"
+   "/collectie/Juventus%20Fourth%20Shirt%2025-26%20(Studio%20Sgura%20Edition).jpg",
+   "/collectie/Juventus%20Fourth%20Shirt%2025-26%20(Studio%20Sgura%20Edition)%20achterkant.jpg"
   ],
   "name": "Juventus Fourth Shirt 25-26 (Studio Sgura Edition)",
   "team": "Juventus",
@@ -9735,10 +9735,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Juventus%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Juventus%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Juventus%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Juventus%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Juventus%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Juventus Home Shirt 24-25",
   "team": "Juventus",
@@ -9757,10 +9757,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Juventus%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Juventus%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Juventus%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Juventus%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Juventus%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Juventus Home Shirt 25-26",
   "team": "Juventus",
@@ -9779,10 +9779,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Juventus%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Juventus%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Juventus%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Juventus%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Juventus%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Juventus Home Shirt 26-27",
   "team": "Juventus",
@@ -9801,10 +9801,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Lifestyler%20Shirt%2025-26.png",
+  "image": "/collectie/Juventus%20Lifestyler%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Juventus%20Lifestyler%20Shirt%2025-26.png",
-   "/public/collectie/Juventus%20Lifestyler%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Juventus%20Lifestyler%20Shirt%2025-26.png",
+   "/collectie/Juventus%20Lifestyler%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Juventus Lifestyler Shirt 25-26",
   "team": "Juventus Lifestyler",
@@ -9823,10 +9823,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Juventus%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Juventus%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Juventus%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Juventus%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Juventus%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Juventus Pre-Match Shirt 25-26",
   "team": "Juventus",
@@ -9845,10 +9845,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Pre-Match%20Shirt%2025-26%20(ADP%20Del%20Piero%20Collection).jpg",
+  "image": "/collectie/Juventus%20Pre-Match%20Shirt%2025-26%20(ADP%20Del%20Piero%20Collection).jpg",
   "gallery": [
-   "/public/collectie/Juventus%20Pre-Match%20Shirt%2025-26%20(ADP%20Del%20Piero%20Collection).jpg",
-   "/public/collectie/Juventus%20Pre-Match%20Shirt%2025-26%20(ADP%20Del%20Piero%20Collection)%20achterkant.jpg"
+   "/collectie/Juventus%20Pre-Match%20Shirt%2025-26%20(ADP%20Del%20Piero%20Collection).jpg",
+   "/collectie/Juventus%20Pre-Match%20Shirt%2025-26%20(ADP%20Del%20Piero%20Collection)%20achterkant.jpg"
   ],
   "name": "Juventus Pre-Match Shirt 25-26 (ADP Del Piero Collection)",
   "team": "Juventus",
@@ -9867,10 +9867,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Terrace%20Icons%20Shirt%2024-25.png",
+  "image": "/collectie/Juventus%20Terrace%20Icons%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Juventus%20Terrace%20Icons%20Shirt%2024-25.png",
-   "/public/collectie/Juventus%20Terrace%20Icons%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Juventus%20Terrace%20Icons%20Shirt%2024-25.png",
+   "/collectie/Juventus%20Terrace%20Icons%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Juventus Terrace Icons Shirt 24-25",
   "team": "Juventus Terrace Icons",
@@ -9889,10 +9889,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Terrace%20Icons%20Shirt%2025-26.png",
+  "image": "/collectie/Juventus%20Terrace%20Icons%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Juventus%20Terrace%20Icons%20Shirt%2025-26.png",
-   "/public/collectie/Juventus%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Juventus%20Terrace%20Icons%20Shirt%2025-26.png",
+   "/collectie/Juventus%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Juventus Terrace Icons Shirt 25-26",
   "team": "Juventus Terrace Icons",
@@ -9911,10 +9911,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25.png",
+  "image": "/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25.png",
-   "/public/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25.png",
+   "/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Juventus Third Goalkeeper Shirt 24-25",
   "team": "Juventus",
@@ -9933,10 +9933,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25%202.jpg",
+   "/collectie/Juventus%20Third%20Goalkeeper%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Juventus Third Goalkeeper Shirt 24-25 2",
   "team": "Juventus",
@@ -9955,10 +9955,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/Juventus%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Juventus%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/Juventus%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Juventus%20Third%20Shirt%2024-25.jpg",
+   "/collectie/Juventus%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Juventus Third Shirt 24-25",
   "team": "Juventus",
@@ -9977,10 +9977,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Juventus%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Juventus%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Juventus%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Juventus%20Third%20Shirt%2025-26.png",
+   "/collectie/Juventus%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Juventus Third Shirt 25-26",
   "team": "Juventus",
@@ -9999,10 +9999,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Juventus%20US%20Collection%20Baseball%20Shirt%2025-26.png",
+  "image": "/collectie/Juventus%20US%20Collection%20Baseball%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Juventus%20US%20Collection%20Baseball%20Shirt%2025-26.png",
-   "/public/collectie/Juventus%20US%20Collection%20Baseball%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Juventus%20US%20Collection%20Baseball%20Shirt%2025-26.png",
+   "/collectie/Juventus%20US%20Collection%20Baseball%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Juventus US Collection Baseball Shirt 25-26",
   "team": "Juventus US Collection Baseball",
@@ -10021,10 +10021,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/LAFC%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/LAFC%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/LAFC%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/LAFC%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/LAFC%20Home%20Shirt%2026-27.jpg",
+   "/collectie/LAFC%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "LAFC Home Shirt 26-27",
   "team": "LAFC",
@@ -10043,10 +10043,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Lazio%20125th%20Anniversary%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Lazio%20125th%20Anniversary%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Lazio%20125th%20Anniversary%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Lazio%20125th%20Anniversary%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Lazio%20125th%20Anniversary%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Lazio%20125th%20Anniversary%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Lazio 125th Anniversary Home Shirt 24-25",
   "team": "Lazio 125th Anniversary",
@@ -10065,10 +10065,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Lazio%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Lazio%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Lazio%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Lazio%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Lazio%20Away%20Shirt%2025-26.png",
+   "/collectie/Lazio%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Lazio Away Shirt 25-26",
   "team": "Lazio",
@@ -10087,10 +10087,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Lazio%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Lazio%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Lazio%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Lazio%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Lazio%20Home%20Shirt%2025-26.png",
+   "/collectie/Lazio%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Lazio Home Shirt 25-26",
   "team": "Lazio",
@@ -10109,10 +10109,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Leeds%20United%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Leeds%20United%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Leeds%20United%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Leeds%20United%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Leeds%20United%20Away%20Shirt%2025-26.png",
+   "/collectie/Leeds%20United%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Leeds United Away Shirt 25-26",
   "team": "Leeds United",
@@ -10131,10 +10131,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Leeds%20United%20Home%20Shirt%2024-25.png",
+  "image": "/collectie/Leeds%20United%20Home%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Leeds%20United%20Home%20Shirt%2024-25.png",
-   "/public/collectie/Leeds%20United%20Home%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Leeds%20United%20Home%20Shirt%2024-25.png",
+   "/collectie/Leeds%20United%20Home%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Leeds United Home Shirt 24-25",
   "team": "Leeds United",
@@ -10153,10 +10153,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Leeds%20United%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Leeds%20United%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Leeds%20United%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Leeds%20United%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Leeds%20United%20Third%20Shirt%2025-26.png",
+   "/collectie/Leeds%20United%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Leeds United Third Shirt 25-26",
   "team": "Leeds United",
@@ -10175,10 +10175,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Lille%20Fourth%20Shirt%2025-26.png",
+  "image": "/collectie/Lille%20Fourth%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Lille%20Fourth%20Shirt%2025-26.png",
-   "/public/collectie/Lille%20Fourth%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Lille%20Fourth%20Shirt%2025-26.png",
+   "/collectie/Lille%20Fourth%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Lille Fourth Shirt 25-26",
   "team": "Lille",
@@ -10197,10 +10197,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20'Pink%20Cormorant'%20Concept%20Shirt%2024-25%20Would%20you%20like%20help%20finding%20where%20to%20buy%20this%20concept.jpg",
+  "image": "/collectie/Liverpool%20'Pink%20Cormorant'%20Concept%20Shirt%2024-25%20Would%20you%20like%20help%20finding%20where%20to%20buy%20this%20concept.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20'Pink%20Cormorant'%20Concept%20Shirt%2024-25%20Would%20you%20like%20help%20finding%20where%20to%20buy%20this%20concept.jpg",
-   "/public/collectie/Liverpool%20'Pink%20Cormorant'%20Concept%20Shirt%2024-25%20Would%20you%20like%20help%20finding%20where%20to%20buy%20this%20concept%20achterkant.jpg"
+   "/collectie/Liverpool%20'Pink%20Cormorant'%20Concept%20Shirt%2024-25%20Would%20you%20like%20help%20finding%20where%20to%20buy%20this%20concept.jpg",
+   "/collectie/Liverpool%20'Pink%20Cormorant'%20Concept%20Shirt%2024-25%20Would%20you%20like%20help%20finding%20where%20to%20buy%20this%20concept%20achterkant.jpg"
   ],
   "name": "Liverpool 'Pink Cormorant' Concept Shirt 24-25 Would you like help finding where to buy this concept",
   "team": "Liverpool 'Pink Cormorant' Concept",
@@ -10219,10 +10219,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%2025-26%20LFSTLR%20Shirt.png",
+  "image": "/collectie/Liverpool%2025-26%20LFSTLR%20Shirt.png",
   "gallery": [
-   "/public/collectie/Liverpool%2025-26%20LFSTLR%20Shirt.png",
-   "/public/collectie/Liverpool%2025-26%20LFSTLR%20Shirt%20achterkant.png"
+   "/collectie/Liverpool%2025-26%20LFSTLR%20Shirt.png",
+   "/collectie/Liverpool%2025-26%20LFSTLR%20Shirt%20achterkant.png"
   ],
   "name": "Liverpool 25-26 LFSTLR Shirt",
   "team": "Liverpool 25-26 LFSTLR",
@@ -10241,10 +10241,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%2025-26%20Terrace%20Icons%20Shirt.png",
+  "image": "/collectie/Liverpool%2025-26%20Terrace%20Icons%20Shirt.png",
   "gallery": [
-   "/public/collectie/Liverpool%2025-26%20Terrace%20Icons%20Shirt.png",
-   "/public/collectie/Liverpool%2025-26%20Terrace%20Icons%20Shirt%20achterkant.png"
+   "/collectie/Liverpool%2025-26%20Terrace%20Icons%20Shirt.png",
+   "/collectie/Liverpool%2025-26%20Terrace%20Icons%20Shirt%20achterkant.png"
   ],
   "name": "Liverpool 25-26 Terrace Icons Shirt",
   "team": "Liverpool 25-26 Terrace Icons",
@@ -10263,10 +10263,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%2025-26%20Training%20Shirt.png",
+  "image": "/collectie/Liverpool%2025-26%20Training%20Shirt.png",
   "gallery": [
-   "/public/collectie/Liverpool%2025-26%20Training%20Shirt.png",
-   "/public/collectie/Liverpool%2025-26%20Training%20Shirt%20achterkant.png"
+   "/collectie/Liverpool%2025-26%20Training%20Shirt.png",
+   "/collectie/Liverpool%2025-26%20Training%20Shirt%20achterkant.png"
   ],
   "name": "Liverpool 25-26 Training Shirt",
   "team": "Liverpool 25-26 Training",
@@ -10285,10 +10285,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Away%20Shirt%2023-24.png",
+  "image": "/collectie/Liverpool%20Away%20Shirt%2023-24.png",
   "gallery": [
-   "/public/collectie/Liverpool%20Away%20Shirt%2023-24.png",
-   "/public/collectie/Liverpool%20Away%20Shirt%2023-24%20achterkant.png"
+   "/collectie/Liverpool%20Away%20Shirt%2023-24.png",
+   "/collectie/Liverpool%20Away%20Shirt%2023-24%20achterkant.png"
   ],
   "name": "Liverpool Away Shirt 23-24",
   "team": "Liverpool",
@@ -10307,10 +10307,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Liverpool%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Liverpool%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Liverpool%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Liverpool%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Liverpool Away Shirt 24-25",
   "team": "Liverpool",
@@ -10329,10 +10329,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Liverpool%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Liverpool%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Liverpool%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Liverpool%20Away%20Shirt%2025-26.png",
+   "/collectie/Liverpool%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Liverpool Away Shirt 25-26",
   "team": "Liverpool",
@@ -10351,10 +10351,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Liverpool%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Liverpool%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Liverpool%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Liverpool%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Liverpool Home Shirt 24-25",
   "team": "Liverpool",
@@ -10373,10 +10373,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Liverpool%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Liverpool%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Liverpool%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Liverpool%20Home%20Shirt%2025-26.png",
+   "/collectie/Liverpool%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Liverpool Home Shirt 25-26",
   "team": "Liverpool",
@@ -10395,10 +10395,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Liverpool%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Liverpool%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Liverpool%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Liverpool%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Liverpool Home Shirt 26-27",
   "team": "Liverpool",
@@ -10417,10 +10417,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Mashup%20Shirt%2024-25.jpg",
+  "image": "/collectie/Liverpool%20Mashup%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Mashup%20Shirt%2024-25.jpg",
-   "/public/collectie/Liverpool%20Mashup%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Liverpool%20Mashup%20Shirt%2024-25.jpg",
+   "/collectie/Liverpool%20Mashup%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Liverpool Mashup Shirt 24-25",
   "team": "Liverpool Mashup",
@@ -10439,10 +10439,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Pre-Match%20Shirt%2024-25.jpg",
+  "image": "/collectie/Liverpool%20Pre-Match%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Pre-Match%20Shirt%2024-25.jpg",
-   "/public/collectie/Liverpool%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Liverpool%20Pre-Match%20Shirt%2024-25.jpg",
+   "/collectie/Liverpool%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Liverpool Pre-Match Shirt 24-25",
   "team": "Liverpool",
@@ -10461,10 +10461,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Pre-Match%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Liverpool%20Pre-Match%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Pre-Match%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Liverpool%20Pre-Match%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Liverpool%20Pre-Match%20Shirt%2024-25%202.jpg",
+   "/collectie/Liverpool%20Pre-Match%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Liverpool Pre-Match Shirt 24-25 2",
   "team": "Liverpool",
@@ -10483,10 +10483,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Liverpool%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Liverpool%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Liverpool%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Liverpool%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Liverpool%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Liverpool Pre-Match Shirt 25-26",
   "team": "Liverpool",
@@ -10505,10 +10505,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Pre-Match%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Liverpool%20Pre-Match%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Pre-Match%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Liverpool%20Pre-Match%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Liverpool%20Pre-Match%20Shirt%2025-26%202.jpg",
+   "/collectie/Liverpool%20Pre-Match%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Liverpool Pre-Match Shirt 25-26 2",
   "team": "Liverpool",
@@ -10527,10 +10527,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Special%20Edition%20Concept%20Shirt%2023-24.jpg",
+  "image": "/collectie/Liverpool%20Special%20Edition%20Concept%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Special%20Edition%20Concept%20Shirt%2023-24.jpg",
-   "/public/collectie/Liverpool%20Special%20Edition%20Concept%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Liverpool%20Special%20Edition%20Concept%20Shirt%2023-24.jpg",
+   "/collectie/Liverpool%20Special%20Edition%20Concept%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Liverpool Special Edition Concept Shirt 23-24",
   "team": "Liverpool",
@@ -10549,10 +10549,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Special%20Edition%20Mashup%20Shirt%2023-24.jpg",
+  "image": "/collectie/Liverpool%20Special%20Edition%20Mashup%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Special%20Edition%20Mashup%20Shirt%2023-24.jpg",
-   "/public/collectie/Liverpool%20Special%20Edition%20Mashup%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Liverpool%20Special%20Edition%20Mashup%20Shirt%2023-24.jpg",
+   "/collectie/Liverpool%20Special%20Edition%20Mashup%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Liverpool Special Edition Mashup Shirt 23-24",
   "team": "Liverpool",
@@ -10571,10 +10571,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Third%20Adidas%20Originals%20Terrace%20Icons%20Shirt%2025-26.png",
+  "image": "/collectie/Liverpool%20Third%20Adidas%20Originals%20Terrace%20Icons%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Liverpool%20Third%20Adidas%20Originals%20Terrace%20Icons%20Shirt%2025-26.png",
-   "/public/collectie/Liverpool%20Third%20Adidas%20Originals%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Liverpool%20Third%20Adidas%20Originals%20Terrace%20Icons%20Shirt%2025-26.png",
+   "/collectie/Liverpool%20Third%20Adidas%20Originals%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Liverpool Third Adidas Originals Terrace Icons Shirt 25-26",
   "team": "Liverpool",
@@ -10593,10 +10593,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Third%20Goalkeeper%20Shirt%2025-26.jpg",
+  "image": "/collectie/Liverpool%20Third%20Goalkeeper%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Third%20Goalkeeper%20Shirt%2025-26.jpg",
-   "/public/collectie/Liverpool%20Third%20Goalkeeper%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Liverpool%20Third%20Goalkeeper%20Shirt%2025-26.jpg",
+   "/collectie/Liverpool%20Third%20Goalkeeper%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Liverpool Third Goalkeeper Shirt 25-26",
   "team": "Liverpool",
@@ -10615,10 +10615,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Third%20Shirt%2010-11.png",
+  "image": "/collectie/Liverpool%20Third%20Shirt%2010-11.png",
   "gallery": [
-   "/public/collectie/Liverpool%20Third%20Shirt%2010-11.png",
-   "/public/collectie/Liverpool%20Third%20Shirt%2010-11%20achterkant.png"
+   "/collectie/Liverpool%20Third%20Shirt%2010-11.png",
+   "/collectie/Liverpool%20Third%20Shirt%2010-11%20achterkant.png"
   ],
   "name": "Liverpool Third Shirt 10-11",
   "team": "Liverpool",
@@ -10637,10 +10637,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Third%20Shirt%2023-24.png",
+  "image": "/collectie/Liverpool%20Third%20Shirt%2023-24.png",
   "gallery": [
-   "/public/collectie/Liverpool%20Third%20Shirt%2023-24.png",
-   "/public/collectie/Liverpool%20Third%20Shirt%2023-24%20achterkant.png"
+   "/collectie/Liverpool%20Third%20Shirt%2023-24.png",
+   "/collectie/Liverpool%20Third%20Shirt%2023-24%20achterkant.png"
   ],
   "name": "Liverpool Third Shirt 23-24",
   "team": "Liverpool",
@@ -10659,10 +10659,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/Liverpool%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Liverpool%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/Liverpool%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Liverpool%20Third%20Shirt%2024-25.jpg",
+   "/collectie/Liverpool%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Liverpool Third Shirt 24-25",
   "team": "Liverpool",
@@ -10681,10 +10681,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Liverpool%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Liverpool%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Liverpool%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Liverpool%20Third%20Shirt%2025-26.png",
+   "/collectie/Liverpool%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Liverpool Third Shirt 25-26",
   "team": "Liverpool",
@@ -10703,10 +10703,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Third%20Shirt%2025-26%20Terrace%20Icons%20Collection.png",
+  "image": "/collectie/Liverpool%20Third%20Shirt%2025-26%20Terrace%20Icons%20Collection.png",
   "gallery": [
-   "/public/collectie/Liverpool%20Third%20Shirt%2025-26%20Terrace%20Icons%20Collection.png",
-   "/public/collectie/Liverpool%20Third%20Shirt%2025-26%20Terrace%20Icons%20Collection%20achterkant.png"
+   "/collectie/Liverpool%20Third%20Shirt%2025-26%20Terrace%20Icons%20Collection.png",
+   "/collectie/Liverpool%20Third%20Shirt%2025-26%20Terrace%20Icons%20Collection%20achterkant.png"
   ],
   "name": "Liverpool Third Shirt 25-26 Terrace Icons Collection",
   "team": "Liverpool",
@@ -10725,10 +10725,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Liverpool%20Three-in-One%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/Liverpool%20Three-in-One%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Liverpool%20Three-in-One%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/Liverpool%20Three-in-One%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Liverpool%20Three-in-One%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/Liverpool%20Three-in-One%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Liverpool Three-in-One Special Edition Shirt 25-26",
   "team": "Liverpool Three-in-One",
@@ -10747,10 +10747,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Los%20Angeles%20FC%20Third%20Shirt%2024-25%20'Archive%20Collection'.jpg",
+  "image": "/collectie/Los%20Angeles%20FC%20Third%20Shirt%2024-25%20'Archive%20Collection'.jpg",
   "gallery": [
-   "/public/collectie/Los%20Angeles%20FC%20Third%20Shirt%2024-25%20'Archive%20Collection'.jpg",
-   "/public/collectie/Los%20Angeles%20FC%20Third%20Shirt%2024-25%20'Archive%20Collection'%20achterkant.jpg"
+   "/collectie/Los%20Angeles%20FC%20Third%20Shirt%2024-25%20'Archive%20Collection'.jpg",
+   "/collectie/Los%20Angeles%20FC%20Third%20Shirt%2024-25%20'Archive%20Collection'%20achterkant.jpg"
   ],
   "name": "Los Angeles FC Third Shirt 24-25 'Archive Collection'",
   "team": "Los Angeles FC",
@@ -10769,10 +10769,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/LOSC%20Lille%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/LOSC%20Lille%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/LOSC%20Lille%20Home%20Shirt%2025-26.png",
-   "/public/collectie/LOSC%20Lille%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/LOSC%20Lille%20Home%20Shirt%2025-26.png",
+   "/collectie/LOSC%20Lille%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "LOSC Lille Home Shirt 25-26",
   "team": "LOSC Lille",
@@ -10791,10 +10791,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/LOSC%20Lille%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/LOSC%20Lille%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/LOSC%20Lille%20Third%20Shirt%2025-26.png",
-   "/public/collectie/LOSC%20Lille%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/LOSC%20Lille%20Third%20Shirt%2025-26.png",
+   "/collectie/LOSC%20Lille%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "LOSC Lille Third Shirt 25-26",
   "team": "LOSC Lille",
@@ -10813,10 +10813,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Away%20Shirt%2020-21.jpg",
+  "image": "/collectie/Manchester%20City%20Away%20Shirt%2020-21.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Away%20Shirt%2020-21.jpg",
-   "/public/collectie/Manchester%20City%20Away%20Shirt%2020-21%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Away%20Shirt%2020-21.jpg",
+   "/collectie/Manchester%20City%20Away%20Shirt%2020-21%20achterkant.jpg"
   ],
   "name": "Manchester City Away Shirt 20-21",
   "team": "Manchester City",
@@ -10835,10 +10835,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Away%20Shirt%2023-24.jpg",
+  "image": "/collectie/Manchester%20City%20Away%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Away%20Shirt%2023-24.jpg",
-   "/public/collectie/Manchester%20City%20Away%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Away%20Shirt%2023-24.jpg",
+   "/collectie/Manchester%20City%20Away%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Manchester City Away Shirt 23-24",
   "team": "Manchester City",
@@ -10857,10 +10857,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Manchester%20City%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Manchester%20City%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Manchester%20City%20Away%20Shirt%2025-26.png",
+   "/collectie/Manchester%20City%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Manchester City Away Shirt 25-26",
   "team": "Manchester City",
@@ -10879,10 +10879,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Fourth%20shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20City%20Fourth%20shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Fourth%20shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20City%20Fourth%20shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Fourth%20shirt%2024-25.jpg",
+   "/collectie/Manchester%20City%20Fourth%20shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester City Fourth shirt 24-25",
   "team": "Manchester City",
@@ -10901,10 +10901,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20FtblNrgy%2B%20Retro%20Shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20City%20FtblNrgy%2B%20Retro%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20FtblNrgy%2B%20Retro%20Shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20City%20FtblNrgy%2B%20Retro%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20City%20FtblNrgy%2B%20Retro%20Shirt%2024-25.jpg",
+   "/collectie/Manchester%20City%20FtblNrgy%2B%20Retro%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester City FtblNrgy+ Retro Shirt 24-25",
   "team": "Manchester City FtblNrgy+ Retro",
@@ -10923,10 +10923,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20FtblNRGY%2B%20Retro%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Manchester%20City%20FtblNRGY%2B%20Retro%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20FtblNRGY%2B%20Retro%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Manchester%20City%20FtblNRGY%2B%20Retro%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Manchester%20City%20FtblNRGY%2B%20Retro%20Shirt%2024-25%202.jpg",
+   "/collectie/Manchester%20City%20FtblNRGY%2B%20Retro%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Manchester City FtblNRGY+ Retro Shirt 24-25 2",
   "team": "Manchester City FtblNRGY+ Retro",
@@ -10945,10 +10945,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Home%20Shirt%2023-24.jpg",
+  "image": "/collectie/Manchester%20City%20Home%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Home%20Shirt%2023-24.jpg",
-   "/public/collectie/Manchester%20City%20Home%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Home%20Shirt%2023-24.jpg",
+   "/collectie/Manchester%20City%20Home%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Manchester City Home Shirt 23-24",
   "team": "Manchester City",
@@ -10967,10 +10967,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20City%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20City%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Manchester%20City%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester City Home Shirt 24-25",
   "team": "Manchester City",
@@ -10989,10 +10989,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Manchester%20City%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Manchester%20City%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20City%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Manchester City Home Shirt 25-26",
   "team": "Manchester City",
@@ -11011,10 +11011,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Manchester%20City%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Manchester%20City%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Manchester%20City%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Manchester City Home Shirt 26-27",
   "team": "Manchester City",
@@ -11033,10 +11033,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Pre-Match%20Shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20City%20Pre-Match%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Pre-Match%20Shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20City%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Pre-Match%20Shirt%2024-25.jpg",
+   "/collectie/Manchester%20City%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester City Pre-Match Shirt 24-25",
   "team": "Manchester City",
@@ -11055,10 +11055,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Manchester City Pre-Match Shirt 25-26",
   "team": "Manchester City",
@@ -11077,10 +11077,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26%202.jpg",
+   "/collectie/Manchester%20City%20Pre-Match%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Manchester City Pre-Match Shirt 25-26 2",
   "team": "Manchester City",
@@ -11099,10 +11099,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
+  "image": "/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
-   "/public/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Manchester City Special Edition Concept Shirt 25-26",
   "team": "Manchester City",
@@ -11121,10 +11121,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26%202.jpg",
+   "/collectie/Manchester%20City%20Special%20Edition%20Concept%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Manchester City Special Edition Concept Shirt 25-26 2",
   "team": "Manchester City",
@@ -11143,10 +11143,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Special%20Edition%20KidSuper%20Shirt%2025-26.jpg",
+  "image": "/collectie/Manchester%20City%20Special%20Edition%20KidSuper%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Special%20Edition%20KidSuper%20Shirt%2025-26.jpg",
-   "/public/collectie/Manchester%20City%20Special%20Edition%20KidSuper%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Special%20Edition%20KidSuper%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20City%20Special%20Edition%20KidSuper%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Manchester City Special Edition KidSuper Shirt 25-26",
   "team": "Manchester City",
@@ -11165,10 +11165,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/Manchester%20City%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/Manchester%20City%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Manchester%20City%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/Manchester%20City%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Manchester City Special Edition Shirt 25-26",
   "team": "Manchester City",
@@ -11187,10 +11187,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Third%20Shirt%2023-24.jpg",
+  "image": "/collectie/Manchester%20City%20Third%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Third%20Shirt%2023-24.jpg",
-   "/public/collectie/Manchester%20City%20Third%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Third%20Shirt%2023-24.jpg",
+   "/collectie/Manchester%20City%20Third%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Manchester City Third Shirt 23-24",
   "team": "Manchester City",
@@ -11209,10 +11209,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20City%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20City%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Third%20Shirt%2024-25.jpg",
+   "/collectie/Manchester%20City%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester City Third Shirt 24-25",
   "team": "Manchester City",
@@ -11231,10 +11231,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Manchester%20City%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Manchester%20City%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Manchester%20City%20Third%20Shirt%2025-26.png",
+   "/collectie/Manchester%20City%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Manchester City Third Shirt 25-26",
   "team": "Manchester City",
@@ -11253,10 +11253,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Third%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Manchester%20City%20Third%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Third%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Manchester%20City%20Third%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Manchester%20City%20Third%20Shirt%2025-26%202.jpg",
+   "/collectie/Manchester%20City%20Third%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Manchester City Third Shirt 25-26 2",
   "team": "Manchester City",
@@ -11275,10 +11275,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20City%20Year%20of%20the%20Horse%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/Manchester%20City%20Year%20of%20the%20Horse%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Manchester%20City%20Year%20of%20the%20Horse%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/Manchester%20City%20Year%20of%20the%20Horse%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Manchester%20City%20Year%20of%20the%20Horse%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/Manchester%20City%20Year%20of%20the%20Horse%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Manchester City Year of the Horse Special Edition Shirt 25-26",
   "team": "Manchester City Year of the Horse",
@@ -11297,10 +11297,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20-Flare%20of%20'99-%20Special%20Edition%20Shirt%2025-26.jpg",
+  "image": "/collectie/Manchester%20United%20-Flare%20of%20'99-%20Special%20Edition%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20-Flare%20of%20'99-%20Special%20Edition%20Shirt%2025-26.jpg",
-   "/public/collectie/Manchester%20United%20-Flare%20of%20'99-%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Manchester%20United%20-Flare%20of%20'99-%20Special%20Edition%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20United%20-Flare%20of%20'99-%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Manchester United -Flare of '99- Special Edition Shirt 25-26",
   "team": "Manchester United -Flare of '99-",
@@ -11319,10 +11319,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%202025%20Icon%20Shirt.png",
+  "image": "/collectie/Manchester%20United%202025%20Icon%20Shirt.png",
   "gallery": [
-   "/public/collectie/Manchester%20United%202025%20Icon%20Shirt.png",
-   "/public/collectie/Manchester%20United%202025%20Icon%20Shirt%20achterkant.png"
+   "/collectie/Manchester%20United%202025%20Icon%20Shirt.png",
+   "/collectie/Manchester%20United%202025%20Icon%20Shirt%20achterkant.png"
   ],
   "name": "Manchester United 2025 Icon Shirt",
   "team": "Manchester United 2025 Icon",
@@ -11341,10 +11341,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20United%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20United%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Manchester%20United%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester United Away Shirt 24-25",
   "team": "Manchester United",
@@ -11363,10 +11363,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Manchester%20United%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Manchester%20United%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20United%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Manchester United Away Shirt 25-26",
   "team": "Manchester United",
@@ -11385,10 +11385,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Balmain%20Concept%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20United%20Balmain%20Concept%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Balmain%20Concept%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20United%20Balmain%20Concept%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Balmain%20Concept%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Manchester%20United%20Balmain%20Concept%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester United Balmain Concept Edition Shirt 24-25",
   "team": "Manchester United Balmain Concept Edition",
@@ -11407,10 +11407,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Chinese%20New%20Year%20Shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20United%20Chinese%20New%20Year%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Chinese%20New%20Year%20Shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20United%20Chinese%20New%20Year%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Chinese%20New%20Year%20Shirt%2024-25.jpg",
+   "/collectie/Manchester%20United%20Chinese%20New%20Year%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester United Chinese New Year Shirt 24-25",
   "team": "Manchester United Chinese New Year",
@@ -11429,10 +11429,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Cultural%20Story%20Shirt%2025-26.jpg",
+  "image": "/collectie/Manchester%20United%20Cultural%20Story%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Cultural%20Story%20Shirt%2025-26.jpg",
-   "/public/collectie/Manchester%20United%20Cultural%20Story%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Cultural%20Story%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20United%20Cultural%20Story%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Manchester United Cultural Story Shirt 25-26",
   "team": "Manchester United Cultural Story",
@@ -11451,10 +11451,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Goalkeeper%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Manchester%20United%20Goalkeeper%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Goalkeeper%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Manchester%20United%20Goalkeeper%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Manchester%20United%20Goalkeeper%20Third%20Shirt%2025-26.png",
+   "/collectie/Manchester%20United%20Goalkeeper%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Manchester United Goalkeeper Third Shirt 25-26",
   "team": "Manchester United",
@@ -11473,10 +11473,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Home%20Shirt%2023-24.jpg",
+  "image": "/collectie/Manchester%20United%20Home%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Home%20Shirt%2023-24.jpg",
-   "/public/collectie/Manchester%20United%20Home%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Home%20Shirt%2023-24.jpg",
+   "/collectie/Manchester%20United%20Home%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Manchester United Home Shirt 23-24",
   "team": "Manchester United",
@@ -11495,10 +11495,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20home%20shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20United%20home%20shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20home%20shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20United%20home%20shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20United%20home%20shirt%2024-25.jpg",
+   "/collectie/Manchester%20United%20home%20shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester United home shirt 24-25",
   "team": "Manchester United",
@@ -11517,10 +11517,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Home%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Manchester%20United%20Home%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Home%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Manchester%20United%20Home%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Home%20Shirt%2024-25%202.jpg",
+   "/collectie/Manchester%20United%20Home%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Manchester United Home Shirt 24-25 2",
   "team": "Manchester United",
@@ -11539,10 +11539,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Manchester%20United%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Manchester%20United%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Manchester%20United%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Manchester United Home Shirt 26-27",
   "team": "Manchester United",
@@ -11561,10 +11561,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20LFSTLR%20Shirt%2025-26.png",
+  "image": "/collectie/Manchester%20United%20LFSTLR%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Manchester%20United%20LFSTLR%20Shirt%2025-26.png",
-   "/public/collectie/Manchester%20United%20LFSTLR%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Manchester%20United%20LFSTLR%20Shirt%2025-26.png",
+   "/collectie/Manchester%20United%20LFSTLR%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Manchester United LFSTLR Shirt 25-26",
   "team": "Manchester United LFSTLR",
@@ -11583,10 +11583,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/Manchester%20United%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/Manchester%20United%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20United%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Manchester United Pre-Match Shirt 25-26",
   "team": "Manchester United",
@@ -11605,10 +11605,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Special%20Edition%20Rose%20Shirt%2025-26.jpg",
+  "image": "/collectie/Manchester%20United%20Special%20Edition%20Rose%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Special%20Edition%20Rose%20Shirt%2025-26.jpg",
-   "/public/collectie/Manchester%20United%20Special%20Edition%20Rose%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Special%20Edition%20Rose%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20United%20Special%20Edition%20Rose%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Manchester United Special Edition Rose Shirt 25-26",
   "team": "Manchester United",
@@ -11627,10 +11627,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Special%20Edition%20Stone%20Roses%20Shirt%2025-26.jpg",
+  "image": "/collectie/Manchester%20United%20Special%20Edition%20Stone%20Roses%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Special%20Edition%20Stone%20Roses%20Shirt%2025-26.jpg",
-   "/public/collectie/Manchester%20United%20Special%20Edition%20Stone%20Roses%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Special%20Edition%20Stone%20Roses%20Shirt%2025-26.jpg",
+   "/collectie/Manchester%20United%20Special%20Edition%20Stone%20Roses%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Manchester United Special Edition Stone Roses Shirt 25-26",
   "team": "Manchester United",
@@ -11649,10 +11649,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Special%20Lion%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20United%20Special%20Lion%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Special%20Lion%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20United%20Special%20Lion%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Special%20Lion%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Manchester%20United%20Special%20Lion%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester United Special Lion Edition Shirt 24-25",
   "team": "Manchester United",
@@ -11671,10 +11671,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2024-25.png",
+  "image": "/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2024-25.png",
-   "/public/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2024-25.png",
+   "/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Manchester United Terrace Icons Shirt 24-25",
   "team": "Manchester United Terrace Icons",
@@ -11693,10 +11693,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2025-26.png",
+  "image": "/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2025-26.png",
-   "/public/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2025-26.png",
+   "/collectie/Manchester%20United%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Manchester United Terrace Icons Shirt 25-26",
   "team": "Manchester United Terrace Icons",
@@ -11715,10 +11715,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Third%20Goalkeeper%20Shirt%2025-26.png",
+  "image": "/collectie/Manchester%20United%20Third%20Goalkeeper%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Third%20Goalkeeper%20Shirt%2025-26.png",
-   "/public/collectie/Manchester%20United%20Third%20Goalkeeper%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Manchester%20United%20Third%20Goalkeeper%20Shirt%2025-26.png",
+   "/collectie/Manchester%20United%20Third%20Goalkeeper%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Manchester United Third Goalkeeper Shirt 25-26",
   "team": "Manchester United",
@@ -11737,10 +11737,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Third%20shirt%2024-26.jpg",
+  "image": "/collectie/Manchester%20United%20Third%20shirt%2024-26.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Third%20shirt%2024-26.jpg",
-   "/public/collectie/Manchester%20United%20Third%20shirt%2024-26%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Third%20shirt%2024-26.jpg",
+   "/collectie/Manchester%20United%20Third%20shirt%2024-26%20achterkant.jpg"
   ],
   "name": "Manchester United Third shirt 24-26",
   "team": "Manchester United",
@@ -11759,10 +11759,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Manchester%20United%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Manchester%20United%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Manchester%20United%20Third%20Shirt%2025-26.png",
+   "/collectie/Manchester%20United%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Manchester United Third Shirt 25-26",
   "team": "Manchester United",
@@ -11781,10 +11781,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Third%20Shirt%2025-26%20(Terrace%20Icons%20Edition).png",
+  "image": "/collectie/Manchester%20United%20Third%20Shirt%2025-26%20(Terrace%20Icons%20Edition).png",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Third%20Shirt%2025-26%20(Terrace%20Icons%20Edition).png",
-   "/public/collectie/Manchester%20United%20Third%20Shirt%2025-26%20(Terrace%20Icons%20Edition)%20achterkant.png"
+   "/collectie/Manchester%20United%20Third%20Shirt%2025-26%20(Terrace%20Icons%20Edition).png",
+   "/collectie/Manchester%20United%20Third%20Shirt%2025-26%20(Terrace%20Icons%20Edition)%20achterkant.png"
   ],
   "name": "Manchester United Third Shirt 25-26 (Terrace Icons Edition)",
   "team": "Manchester United",
@@ -11803,10 +11803,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Manchester%20United%20Tiro%2024%20Training%20Shirt%2024-25.jpg",
+  "image": "/collectie/Manchester%20United%20Tiro%2024%20Training%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Manchester%20United%20Tiro%2024%20Training%20Shirt%2024-25.jpg",
-   "/public/collectie/Manchester%20United%20Tiro%2024%20Training%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Manchester%20United%20Tiro%2024%20Training%20Shirt%2024-25.jpg",
+   "/collectie/Manchester%20United%20Tiro%2024%20Training%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Manchester United Tiro 24 Training Shirt 24-25",
   "team": "Manchester United Tiro 24 Training",
@@ -11825,10 +11825,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Marseille%20Fourth%20Shirt%2025-26%20'Marseille%20Monumentale'.png",
+  "image": "/collectie/Marseille%20Fourth%20Shirt%2025-26%20'Marseille%20Monumentale'.png",
   "gallery": [
-   "/public/collectie/Marseille%20Fourth%20Shirt%2025-26%20'Marseille%20Monumentale'.png",
-   "/public/collectie/Marseille%20Fourth%20Shirt%2025-26%20'Marseille%20Monumentale'%20achterkant.png"
+   "/collectie/Marseille%20Fourth%20Shirt%2025-26%20'Marseille%20Monumentale'.png",
+   "/collectie/Marseille%20Fourth%20Shirt%2025-26%20'Marseille%20Monumentale'%20achterkant.png"
   ],
   "name": "Marseille Fourth Shirt 25-26 'Marseille Monumentale'",
   "team": "Marseille",
@@ -11847,10 +11847,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Marseille%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Marseille%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Marseille%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Marseille%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Marseille%20Third%20Shirt%2025-26.png",
+   "/collectie/Marseille%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Marseille Third Shirt 25-26",
   "team": "Marseille",
@@ -11869,10 +11869,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Mexico%202025%20-M%C3%A9xico%20de%20Oro-%20Special%20Edition%20Shirt.jpg",
+  "image": "/collectie/Mexico%202025%20-M%C3%A9xico%20de%20Oro-%20Special%20Edition%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Mexico%202025%20-M%C3%A9xico%20de%20Oro-%20Special%20Edition%20Shirt.jpg",
-   "/public/collectie/Mexico%202025%20-M%C3%A9xico%20de%20Oro-%20Special%20Edition%20Shirt%20achterkant.jpg"
+   "/collectie/Mexico%202025%20-M%C3%A9xico%20de%20Oro-%20Special%20Edition%20Shirt.jpg",
+   "/collectie/Mexico%202025%20-M%C3%A9xico%20de%20Oro-%20Special%20Edition%20Shirt%20achterkant.jpg"
   ],
   "name": "Mexico 2025 -México de Oro- Special Edition Shirt",
   "team": "Mexico 2025 -México de Oro-",
@@ -11891,10 +11891,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Mexico%20Away%20Shirt%2026-27.png",
+  "image": "/collectie/Mexico%20Away%20Shirt%2026-27.png",
   "gallery": [
-   "/public/collectie/Mexico%20Away%20Shirt%2026-27.png",
-   "/public/collectie/Mexico%20Away%20Shirt%2026-27%20achterkant.png"
+   "/collectie/Mexico%20Away%20Shirt%2026-27.png",
+   "/collectie/Mexico%20Away%20Shirt%2026-27%20achterkant.png"
   ],
   "name": "Mexico Away Shirt 26-27",
   "team": "Mexico",
@@ -11913,10 +11913,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Mexico%20Away%20Shirt%202024.jpg",
+  "image": "/collectie/Mexico%20Away%20Shirt%202024.jpg",
   "gallery": [
-   "/public/collectie/Mexico%20Away%20Shirt%202024.jpg",
-   "/public/collectie/Mexico%20Away%20Shirt%202024%20achterkant.jpg"
+   "/collectie/Mexico%20Away%20Shirt%202024.jpg",
+   "/collectie/Mexico%20Away%20Shirt%202024%20achterkant.jpg"
   ],
   "name": "Mexico Away Shirt 2024",
   "team": "Mexico",
@@ -11935,10 +11935,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Mexico%20Home%20Shirt%202026.png",
+  "image": "/collectie/Mexico%20Home%20Shirt%202026.png",
   "gallery": [
-   "/public/collectie/Mexico%20Home%20Shirt%202026.png",
-   "/public/collectie/Mexico%20Home%20Shirt%202026%20achterkant.png"
+   "/collectie/Mexico%20Home%20Shirt%202026.png",
+   "/collectie/Mexico%20Home%20Shirt%202026%20achterkant.png"
   ],
   "name": "Mexico Home Shirt 2026",
   "team": "Mexico",
@@ -11957,10 +11957,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Mexico%20Special%20Edition%20-M%C3%A9xico%20de%20Oro-%20Shirt%202025.jpg",
+  "image": "/collectie/Mexico%20Special%20Edition%20-M%C3%A9xico%20de%20Oro-%20Shirt%202025.jpg",
   "gallery": [
-   "/public/collectie/Mexico%20Special%20Edition%20-M%C3%A9xico%20de%20Oro-%20Shirt%202025.jpg",
-   "/public/collectie/Mexico%20Special%20Edition%20-M%C3%A9xico%20de%20Oro-%20Shirt%202025%20achterkant.jpg"
+   "/collectie/Mexico%20Special%20Edition%20-M%C3%A9xico%20de%20Oro-%20Shirt%202025.jpg",
+   "/collectie/Mexico%20Special%20Edition%20-M%C3%A9xico%20de%20Oro-%20Shirt%202025%20achterkant.jpg"
   ],
   "name": "Mexico Special Edition -México de Oro- Shirt 2025",
   "team": "Mexico",
@@ -11979,10 +11979,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Mexico%20Special%20Edition%20Shirt%2025-26.jpg",
+  "image": "/collectie/Mexico%20Special%20Edition%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Mexico%20Special%20Edition%20Shirt%2025-26.jpg",
-   "/public/collectie/Mexico%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Mexico%20Special%20Edition%20Shirt%2025-26.jpg",
+   "/collectie/Mexico%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Mexico Special Edition Shirt 25-26",
   "team": "Mexico",
@@ -12001,10 +12001,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Morocco%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Morocco%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Morocco%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Morocco%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Morocco%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Morocco%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Morocco Away Shirt 24-25",
   "team": "Morocco",
@@ -12023,10 +12023,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Morocco%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Morocco%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Morocco%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Morocco%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Morocco%20Away%20Shirt%202026.jpg",
+   "/collectie/Morocco%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Morocco Away Shirt 2026",
   "team": "Morocco",
@@ -12045,10 +12045,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Morocco%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Morocco%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Morocco%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Morocco%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Morocco%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Morocco%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Morocco Home Shirt 24-25",
   "team": "Morocco",
@@ -12067,10 +12067,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Morocco%20Home%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Morocco%20Home%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Morocco%20Home%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Morocco%20Home%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Morocco%20Home%20Shirt%2024-25%202.jpg",
+   "/collectie/Morocco%20Home%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Morocco Home Shirt 24-25 2",
   "team": "Morocco",
@@ -12089,10 +12089,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Napoli%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Napoli%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Napoli%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Napoli%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Napoli%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Napoli%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Napoli Away Shirt 24-25",
   "team": "Napoli",
@@ -12111,10 +12111,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Napoli%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Napoli%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Napoli%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Napoli%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Napoli%20Away%20Shirt%2025-26.png",
+   "/collectie/Napoli%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Napoli Away Shirt 25-26",
   "team": "Napoli",
@@ -12133,10 +12133,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Napoli%20Cyborg%20Training%20Shirt%2025-26.png",
+  "image": "/collectie/Napoli%20Cyborg%20Training%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Napoli%20Cyborg%20Training%20Shirt%2025-26.png",
-   "/public/collectie/Napoli%20Cyborg%20Training%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Napoli%20Cyborg%20Training%20Shirt%2025-26.png",
+   "/collectie/Napoli%20Cyborg%20Training%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Napoli Cyborg Training Shirt 25-26",
   "team": "Napoli Cyborg Training",
@@ -12155,10 +12155,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Napoli%20Euro%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Napoli%20Euro%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Napoli%20Euro%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Napoli%20Euro%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Napoli%20Euro%20Third%20Shirt%2025-26.png",
+   "/collectie/Napoli%20Euro%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Napoli Euro Third Shirt 25-26",
   "team": "Napoli Euro",
@@ -12177,10 +12177,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Napoli%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Napoli%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Napoli%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Napoli%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Napoli%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Napoli%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Napoli Home Shirt 24-25",
   "team": "Napoli",
@@ -12199,10 +12199,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Napoli%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Napoli%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Napoli%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Napoli%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Napoli%20Home%20Shirt%2025-26.png",
+   "/collectie/Napoli%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Napoli Home Shirt 25-26",
   "team": "Napoli",
@@ -12221,10 +12221,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Napoli%20Pre-Match%20Shirt%2024-25.jpg",
+  "image": "/collectie/Napoli%20Pre-Match%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Napoli%20Pre-Match%20Shirt%2024-25.jpg",
-   "/public/collectie/Napoli%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Napoli%20Pre-Match%20Shirt%2024-25.jpg",
+   "/collectie/Napoli%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Napoli Pre-Match Shirt 24-25",
   "team": "Napoli",
@@ -12243,10 +12243,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Napoli%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Napoli%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Napoli%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Napoli%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Napoli%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Napoli%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Napoli Pre-Match Shirt 25-26",
   "team": "Napoli",
@@ -12265,10 +12265,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Napoli%20Third%20Shirt%2024-25%20(Japan%20Edition).jpg",
+  "image": "/collectie/Napoli%20Third%20Shirt%2024-25%20(Japan%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Napoli%20Third%20Shirt%2024-25%20(Japan%20Edition).jpg",
-   "/public/collectie/Napoli%20Third%20Shirt%2024-25%20(Japan%20Edition)%20achterkant.jpg"
+   "/collectie/Napoli%20Third%20Shirt%2024-25%20(Japan%20Edition).jpg",
+   "/collectie/Napoli%20Third%20Shirt%2024-25%20(Japan%20Edition)%20achterkant.jpg"
   ],
   "name": "Napoli Third Shirt 24-25 (Japan Edition)",
   "team": "Napoli",
@@ -12287,10 +12287,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Napoli%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Napoli%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Napoli%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Napoli%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Napoli%20Third%20Shirt%2025-26.png",
+   "/collectie/Napoli%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Napoli Third Shirt 25-26",
   "team": "Napoli",
@@ -12309,10 +12309,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Netherlands%2026-27%20Special%20Edition%20Shirt.png",
+  "image": "/collectie/Netherlands%2026-27%20Special%20Edition%20Shirt.png",
   "gallery": [
-   "/public/collectie/Netherlands%2026-27%20Special%20Edition%20Shirt.png",
-   "/public/collectie/Netherlands%2026-27%20Special%20Edition%20Shirt%20achterkant.png"
+   "/collectie/Netherlands%2026-27%20Special%20Edition%20Shirt.png",
+   "/collectie/Netherlands%2026-27%20Special%20Edition%20Shirt%20achterkant.png"
   ],
   "name": "Netherlands 26-27 Special Edition Shirt",
   "team": "Netherlands 26-27",
@@ -12331,10 +12331,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Netherlands%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Netherlands%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Netherlands%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Netherlands%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Netherlands%20Away%20Shirt%202026.jpg",
+   "/collectie/Netherlands%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Netherlands Away Shirt 2026",
   "team": "Netherlands",
@@ -12353,10 +12353,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Netherlands%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Netherlands%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Netherlands%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Netherlands%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Netherlands%20Home%20Shirt%202026.jpg",
+   "/collectie/Netherlands%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Netherlands Home Shirt 2026",
   "team": "Netherlands",
@@ -12375,10 +12375,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/New%20York%20Red%20Bulls%20Away%20Shirt%2025-26%20'Stone%20Kit'.jpg",
+  "image": "/collectie/New%20York%20Red%20Bulls%20Away%20Shirt%2025-26%20'Stone%20Kit'.jpg",
   "gallery": [
-   "/public/collectie/New%20York%20Red%20Bulls%20Away%20Shirt%2025-26%20'Stone%20Kit'.jpg",
-   "/public/collectie/New%20York%20Red%20Bulls%20Away%20Shirt%2025-26%20'Stone%20Kit'%20achterkant.jpg"
+   "/collectie/New%20York%20Red%20Bulls%20Away%20Shirt%2025-26%20'Stone%20Kit'.jpg",
+   "/collectie/New%20York%20Red%20Bulls%20Away%20Shirt%2025-26%20'Stone%20Kit'%20achterkant.jpg"
   ],
   "name": "New York Red Bulls Away Shirt 25-26 'Stone Kit'",
   "team": "New York Red Bulls",
@@ -12397,10 +12397,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Newcastle%20United%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Newcastle%20United%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Newcastle%20United%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Newcastle%20United%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Newcastle%20United%20Away%20Shirt%2025-26.png",
+   "/collectie/Newcastle%20United%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Newcastle United Away Shirt 25-26",
   "team": "Newcastle United",
@@ -12419,10 +12419,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Newcastle%20United%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Newcastle%20United%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Newcastle%20United%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Newcastle%20United%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Newcastle%20United%20Home%20Shirt%2025-26.png",
+   "/collectie/Newcastle%20United%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Newcastle United Home Shirt 25-26",
   "team": "Newcastle United",
@@ -12441,10 +12441,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Newcastle%20United%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Newcastle%20United%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Newcastle%20United%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Newcastle%20United%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Newcastle%20United%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Newcastle%20United%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Newcastle United Pre-Match Shirt 25-26",
   "team": "Newcastle United",
@@ -12463,10 +12463,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Newcastle%20United%20Terrace%20Icons%20Shirt%2025-26.png",
+  "image": "/collectie/Newcastle%20United%20Terrace%20Icons%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Newcastle%20United%20Terrace%20Icons%20Shirt%2025-26.png",
-   "/public/collectie/Newcastle%20United%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Newcastle%20United%20Terrace%20Icons%20Shirt%2025-26.png",
+   "/collectie/Newcastle%20United%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Newcastle United Terrace Icons Shirt 25-26",
   "team": "Newcastle United Terrace Icons",
@@ -12485,10 +12485,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Newcastle%20United%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Newcastle%20United%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Newcastle%20United%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Newcastle%20United%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Newcastle%20United%20Third%20Shirt%2025-26.png",
+   "/collectie/Newcastle%20United%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Newcastle United Third Shirt 25-26",
   "team": "Newcastle United",
@@ -12507,10 +12507,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Nigeria%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Nigeria%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Nigeria%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Nigeria%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Nigeria%20Away%20Shirt%2025-26.png",
+   "/collectie/Nigeria%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Nigeria Away Shirt 25-26",
   "team": "Nigeria",
@@ -12529,10 +12529,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Nigeria%20Home%20Shirt%2024-26.png",
+  "image": "/collectie/Nigeria%20Home%20Shirt%2024-26.png",
   "gallery": [
-   "/public/collectie/Nigeria%20Home%20Shirt%2024-26.png",
-   "/public/collectie/Nigeria%20Home%20Shirt%2024-26%20achterkant.png"
+   "/collectie/Nigeria%20Home%20Shirt%2024-26.png",
+   "/collectie/Nigeria%20Home%20Shirt%2024-26%20achterkant.png"
   ],
   "name": "Nigeria Home Shirt 24-26",
   "team": "Nigeria",
@@ -12551,10 +12551,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Norway%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Norway%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Norway%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Norway%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Norway%20Away%20Shirt%202026.jpg",
+   "/collectie/Norway%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Norway Away Shirt 2026",
   "team": "Norway",
@@ -12573,10 +12573,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Norway%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Norway%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Norway%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Norway%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Norway%20Home%20Shirt%202026.jpg",
+   "/collectie/Norway%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Norway Home Shirt 2026",
   "team": "Norway",
@@ -12595,10 +12595,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Nottingham%20Forest%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Nottingham%20Forest%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Nottingham%20Forest%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Nottingham%20Forest%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Nottingham%20Forest%20Away%20Shirt%2025-26.png",
+   "/collectie/Nottingham%20Forest%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Nottingham Forest Away Shirt 25-26",
   "team": "Nottingham Forest",
@@ -12617,10 +12617,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Nottingham%20Forest%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Nottingham%20Forest%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Nottingham%20Forest%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Nottingham%20Forest%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Nottingham%20Forest%20Home%20Shirt%2025-26.png",
+   "/collectie/Nottingham%20Forest%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Nottingham Forest Home Shirt 25-26",
   "team": "Nottingham Forest",
@@ -12639,10 +12639,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Nottingham%20Forest%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Nottingham%20Forest%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Nottingham%20Forest%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Nottingham%20Forest%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Nottingham%20Forest%20Third%20Shirt%2025-26.png",
+   "/collectie/Nottingham%20Forest%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Nottingham Forest Third Shirt 25-26",
   "team": "Nottingham Forest",
@@ -12661,10 +12661,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Oasis%20Live%20'25%20Tour%20Shirt.png",
+  "image": "/collectie/Oasis%20Live%20'25%20Tour%20Shirt.png",
   "gallery": [
-   "/public/collectie/Oasis%20Live%20'25%20Tour%20Shirt.png",
-   "/public/collectie/Oasis%20Live%20'25%20Tour%20Shirt%20achterkant.png"
+   "/collectie/Oasis%20Live%20'25%20Tour%20Shirt.png",
+   "/collectie/Oasis%20Live%20'25%20Tour%20Shirt%20achterkant.png"
   ],
   "name": "Oasis Live '25 Tour Shirt",
   "team": "Oasis Live '25 Tour",
@@ -12683,10 +12683,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Oasis%20Tour%20Jacquard%20Shirt%2025-26.png",
+  "image": "/collectie/Oasis%20Tour%20Jacquard%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Oasis%20Tour%20Jacquard%20Shirt%2025-26.png",
-   "/public/collectie/Oasis%20Tour%20Jacquard%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Oasis%20Tour%20Jacquard%20Shirt%2025-26.png",
+   "/collectie/Oasis%20Tour%20Jacquard%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Oasis Tour Jacquard Shirt 25-26",
   "team": "Oasis Tour Jacquard",
@@ -12705,10 +12705,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympiacos%20100th%20Anniversary%20Shirt%2024-25.png",
+  "image": "/collectie/Olympiacos%20100th%20Anniversary%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Olympiacos%20100th%20Anniversary%20Shirt%2024-25.png",
-   "/public/collectie/Olympiacos%20100th%20Anniversary%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Olympiacos%20100th%20Anniversary%20Shirt%2024-25.png",
+   "/collectie/Olympiacos%20100th%20Anniversary%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Olympiacos 100th Anniversary Shirt 24-25",
   "team": "Olympiacos 100th Anniversary",
@@ -12727,10 +12727,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympique%20Lyon%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Olympique%20Lyon%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Olympique%20Lyon%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Olympique%20Lyon%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Olympique%20Lyon%20Home%20Shirt%2025-26.png",
+   "/collectie/Olympique%20Lyon%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Olympique Lyon Home Shirt 25-26",
   "team": "Olympique Lyon",
@@ -12749,10 +12749,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympique%20Lyon%20Pre-Match%20Shirt%2024-25.jpg",
+  "image": "/collectie/Olympique%20Lyon%20Pre-Match%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Olympique%20Lyon%20Pre-Match%20Shirt%2024-25.jpg",
-   "/public/collectie/Olympique%20Lyon%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Olympique%20Lyon%20Pre-Match%20Shirt%2024-25.jpg",
+   "/collectie/Olympique%20Lyon%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Olympique Lyon Pre-Match Shirt 24-25",
   "team": "Olympique Lyon",
@@ -12771,10 +12771,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympique%20Lyon%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Olympique%20Lyon%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Olympique%20Lyon%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Olympique%20Lyon%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Olympique%20Lyon%20Third%20Shirt%2025-26.png",
+   "/collectie/Olympique%20Lyon%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Olympique Lyon Third Shirt 25-26",
   "team": "Olympique Lyon",
@@ -12793,10 +12793,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympique%20Lyonnais%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Olympique%20Lyonnais%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Olympique%20Lyonnais%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Olympique%20Lyonnais%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Olympique%20Lyonnais%20Away%20Shirt%2025-26.png",
+   "/collectie/Olympique%20Lyonnais%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Olympique Lyonnais Away Shirt 25-26",
   "team": "Olympique Lyonnais",
@@ -12815,10 +12815,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympique%20Lyonnais%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Olympique%20Lyonnais%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Olympique%20Lyonnais%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Olympique%20Lyonnais%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Olympique%20Lyonnais%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Olympique%20Lyonnais%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Olympique Lyonnais Home Shirt 24-25",
   "team": "Olympique Lyonnais",
@@ -12837,10 +12837,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympique%20Lyonnais%20Third%20Shirt%2024-25%20(Originals%20Retro%20Collection).jpg",
+  "image": "/collectie/Olympique%20Lyonnais%20Third%20Shirt%2024-25%20(Originals%20Retro%20Collection).jpg",
   "gallery": [
-   "/public/collectie/Olympique%20Lyonnais%20Third%20Shirt%2024-25%20(Originals%20Retro%20Collection).jpg",
-   "/public/collectie/Olympique%20Lyonnais%20Third%20Shirt%2024-25%20(Originals%20Retro%20Collection)%20achterkant.jpg"
+   "/collectie/Olympique%20Lyonnais%20Third%20Shirt%2024-25%20(Originals%20Retro%20Collection).jpg",
+   "/collectie/Olympique%20Lyonnais%20Third%20Shirt%2024-25%20(Originals%20Retro%20Collection)%20achterkant.jpg"
   ],
   "name": "Olympique Lyonnais Third Shirt 24-25 (Originals Retro Collection)",
   "team": "Olympique Lyonnais",
@@ -12859,10 +12859,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympique%20Marseille%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Olympique%20Marseille%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Olympique%20Marseille%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Olympique%20Marseille%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Olympique%20Marseille%20Away%20Shirt%2025-26.png",
+   "/collectie/Olympique%20Marseille%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Olympique Marseille Away Shirt 25-26",
   "team": "Olympique Marseille",
@@ -12881,10 +12881,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympique%20Marseille%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Olympique%20Marseille%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Olympique%20Marseille%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Olympique%20Marseille%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Olympique%20Marseille%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Olympique%20Marseille%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Olympique Marseille Home Shirt 24-25",
   "team": "Olympique Marseille",
@@ -12903,10 +12903,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympique%20Marseille%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Olympique%20Marseille%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Olympique%20Marseille%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Olympique%20Marseille%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Olympique%20Marseille%20Home%20Shirt%2025-26.png",
+   "/collectie/Olympique%20Marseille%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Olympique Marseille Home Shirt 25-26",
   "team": "Olympique Marseille",
@@ -12925,10 +12925,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Olympique%20Marseille%20Special%20Edition%20Shirt%2025-26.jpg",
+  "image": "/collectie/Olympique%20Marseille%20Special%20Edition%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Olympique%20Marseille%20Special%20Edition%20Shirt%2025-26.jpg",
-   "/public/collectie/Olympique%20Marseille%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Olympique%20Marseille%20Special%20Edition%20Shirt%2025-26.jpg",
+   "/collectie/Olympique%20Marseille%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Olympique Marseille Special Edition Shirt 25-26",
   "team": "Olympique Marseille",
@@ -12947,10 +12947,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Oxford%20United%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Oxford%20United%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Oxford%20United%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Oxford%20United%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Oxford%20United%20Home%20Shirt%2025-26.png",
+   "/collectie/Oxford%20United%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Oxford United Home Shirt 25-26",
   "team": "Oxford United",
@@ -12969,10 +12969,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Palermo%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Palermo%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Palermo%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Palermo%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Palermo%20Away%20Shirt%2025-26.png",
+   "/collectie/Palermo%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Palermo Away Shirt 25-26",
   "team": "Palermo",
@@ -12991,10 +12991,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Palermo%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Palermo%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Palermo%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Palermo%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Palermo%20Home%20Shirt%2025-26.png",
+   "/collectie/Palermo%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Palermo Home Shirt 25-26",
   "team": "Palermo",
@@ -13013,10 +13013,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Palestina%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Palestina%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Palestina%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Palestina%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Palestina%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Palestina%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Palestina Special Edition Shirt 24-25",
   "team": "Palestina",
@@ -13035,10 +13035,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Palestine%20Home%20Shirt%2023-24.png",
+  "image": "/collectie/Palestine%20Home%20Shirt%2023-24.png",
   "gallery": [
-   "/public/collectie/Palestine%20Home%20Shirt%2023-24.png",
-   "/public/collectie/Palestine%20Home%20Shirt%2023-24%20achterkant.png"
+   "/collectie/Palestine%20Home%20Shirt%2023-24.png",
+   "/collectie/Palestine%20Home%20Shirt%2023-24%20achterkant.png"
   ],
   "name": "Palestine Home Shirt 23-24",
   "team": "Palestine",
@@ -13057,10 +13057,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Palmeiras%20Away%20Shirt%202025.jpg",
+  "image": "/collectie/Palmeiras%20Away%20Shirt%202025.jpg",
   "gallery": [
-   "/public/collectie/Palmeiras%20Away%20Shirt%202025.jpg",
-   "/public/collectie/Palmeiras%20Away%20Shirt%202025%20achterkant.jpg"
+   "/collectie/Palmeiras%20Away%20Shirt%202025.jpg",
+   "/collectie/Palmeiras%20Away%20Shirt%202025%20achterkant.jpg"
   ],
   "name": "Palmeiras Away Shirt 2025",
   "team": "Palmeiras",
@@ -13079,10 +13079,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Palmeiras%20Away%20Shirt%202026%20If%20you'd%20like.jpg",
+  "image": "/collectie/Palmeiras%20Away%20Shirt%202026%20If%20you'd%20like.jpg",
   "gallery": [
-   "/public/collectie/Palmeiras%20Away%20Shirt%202026%20If%20you'd%20like.jpg",
-   "/public/collectie/Palmeiras%20Away%20Shirt%202026%20If%20you'd%20like%20achterkant.jpg"
+   "/collectie/Palmeiras%20Away%20Shirt%202026%20If%20you'd%20like.jpg",
+   "/collectie/Palmeiras%20Away%20Shirt%202026%20If%20you'd%20like%20achterkant.jpg"
   ],
   "name": "Palmeiras Away Shirt 2026 If you'd like",
   "team": "Palmeiras",
@@ -13101,10 +13101,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Palmeiras%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Palmeiras%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Palmeiras%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Palmeiras%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Palmeiras%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Palmeiras%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Palmeiras Home Shirt 25-26",
   "team": "Palmeiras",
@@ -13123,10 +13123,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Palmeiras%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Palmeiras%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Palmeiras%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Palmeiras%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Palmeiras%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Palmeiras%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Palmeiras Home Shirt 26-27",
   "team": "Palmeiras",
@@ -13145,10 +13145,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Panama%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Panama%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Panama%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Panama%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Panama%20Away%20Shirt%2025-26.png",
+   "/collectie/Panama%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Panama Away Shirt 25-26",
   "team": "Panama",
@@ -13167,10 +13167,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Panama%20Away%20Shirt%202026%20If%20you%20wish.jpg",
+  "image": "/collectie/Panama%20Away%20Shirt%202026%20If%20you%20wish.jpg",
   "gallery": [
-   "/public/collectie/Panama%20Away%20Shirt%202026%20If%20you%20wish.jpg",
-   "/public/collectie/Panama%20Away%20Shirt%202026%20If%20you%20wish%20achterkant.jpg"
+   "/collectie/Panama%20Away%20Shirt%202026%20If%20you%20wish.jpg",
+   "/collectie/Panama%20Away%20Shirt%202026%20If%20you%20wish%20achterkant.jpg"
   ],
   "name": "Panama Away Shirt 2026 If you wish",
   "team": "Panama",
@@ -13189,10 +13189,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Panama%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Panama%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Panama%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Panama%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Panama%20Home%20Shirt%2025-26.png",
+   "/collectie/Panama%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Panama Home Shirt 25-26",
   "team": "Panama",
@@ -13211,10 +13211,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Panama%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Panama%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Panama%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Panama%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Panama%20Home%20Shirt%202026.jpg",
+   "/collectie/Panama%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Panama Home Shirt 2026",
   "team": "Panama",
@@ -13233,10 +13233,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Panama%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Panama%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Panama%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Panama%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Panama%20Third%20Shirt%2025-26.png",
+   "/collectie/Panama%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Panama Third Shirt 25-26",
   "team": "Panama",
@@ -13255,10 +13255,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Panama%20Third%20Shirt%202026.jpg",
+  "image": "/collectie/Panama%20Third%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Panama%20Third%20Shirt%202026.jpg",
-   "/public/collectie/Panama%20Third%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Panama%20Third%20Shirt%202026.jpg",
+   "/collectie/Panama%20Third%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Panama Third Shirt 2026",
   "team": "Panama",
@@ -13277,10 +13277,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paraguay%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Paraguay%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Paraguay%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Paraguay%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Paraguay%20Away%20Shirt%202026.jpg",
+   "/collectie/Paraguay%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Paraguay Away Shirt 2026",
   "team": "Paraguay",
@@ -13299,10 +13299,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paraguay%20Away%20Shirt%202026%202.jpg",
+  "image": "/collectie/Paraguay%20Away%20Shirt%202026%202.jpg",
   "gallery": [
-   "/public/collectie/Paraguay%20Away%20Shirt%202026%202.jpg",
-   "/public/collectie/Paraguay%20Away%20Shirt%202026%202%20achterkant.jpg"
+   "/collectie/Paraguay%20Away%20Shirt%202026%202.jpg",
+   "/collectie/Paraguay%20Away%20Shirt%202026%202%20achterkant.jpg"
   ],
   "name": "Paraguay Away Shirt 2026 2",
   "team": "Paraguay",
@@ -13321,10 +13321,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paraguay%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Paraguay%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Paraguay%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Paraguay%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Paraguay%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Paraguay%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Paraguay Home Shirt 24-25",
   "team": "Paraguay",
@@ -13343,10 +13343,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paraguay%20Home%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Paraguay%20Home%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Paraguay%20Home%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Paraguay%20Home%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Paraguay%20Home%20Shirt%2024-25%202.jpg",
+   "/collectie/Paraguay%20Home%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Paraguay Home Shirt 24-25 2",
   "team": "Paraguay",
@@ -13365,10 +13365,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20FC%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Paris%20FC%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Paris%20FC%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Paris%20FC%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Paris%20FC%20Away%20Shirt%2025-26.png",
+   "/collectie/Paris%20FC%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Paris FC Away Shirt 25-26",
   "team": "Paris FC",
@@ -13387,10 +13387,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20FC%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Paris%20FC%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Paris%20FC%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Paris%20FC%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Paris%20FC%20Home%20Shirt%2025-26.png",
+   "/collectie/Paris%20FC%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Paris FC Home Shirt 25-26",
   "team": "Paris FC",
@@ -13409,10 +13409,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20FC%20Third%20Shirt%2025-26%20'Jefe'%20Collection.jpg",
+  "image": "/collectie/Paris%20FC%20Third%20Shirt%2025-26%20'Jefe'%20Collection.jpg",
   "gallery": [
-   "/public/collectie/Paris%20FC%20Third%20Shirt%2025-26%20'Jefe'%20Collection.jpg",
-   "/public/collectie/Paris%20FC%20Third%20Shirt%2025-26%20'Jefe'%20Collection%20achterkant.jpg"
+   "/collectie/Paris%20FC%20Third%20Shirt%2025-26%20'Jefe'%20Collection.jpg",
+   "/collectie/Paris%20FC%20Third%20Shirt%2025-26%20'Jefe'%20Collection%20achterkant.jpg"
   ],
   "name": "Paris FC Third Shirt 25-26 'Jefe' Collection",
   "team": "Paris FC",
@@ -13431,10 +13431,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint.jpg",
+  "image": "/collectie/Paris%20Saint.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint.jpg",
-   "/public/collectie/Paris%20Saint%20achterkant.jpg"
+   "/collectie/Paris%20Saint.jpg",
+   "/collectie/Paris%20Saint%20achterkant.jpg"
   ],
   "name": "Paris Saint",
   "team": "Paris Saint",
@@ -13453,10 +13453,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Away%20Shirt%2024-25.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Away%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Away%20Shirt%2024-25.png",
-   "/public/collectie/Paris%20Saint-Germain%20Away%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Away%20Shirt%2024-25.png",
+   "/collectie/Paris%20Saint-Germain%20Away%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Away Shirt 24-25",
   "team": "Paris Saint-Germain",
@@ -13475,10 +13475,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Away%20Shirt%2026-27.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Away%20Shirt%2026-27.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Away%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Away%20Shirt%2026-27.jpg",
+   "/collectie/Paris%20Saint-Germain%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Away Shirt 26-27",
   "team": "Paris Saint-Germain",
@@ -13497,10 +13497,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Away%20Shirt%202026-27.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Away%20Shirt%202026-27.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Away%20Shirt%202026-27.png",
-   "/public/collectie/Paris%20Saint-Germain%20Away%20Shirt%202026-27%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Away%20Shirt%202026-27.png",
+   "/collectie/Paris%20Saint-Germain%20Away%20Shirt%202026-27%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Away Shirt 2026-27",
   "team": "Paris Saint-Germain",
@@ -13519,10 +13519,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Fifth%20'Night%20Edition'%20Shirt%2025-26.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Fifth%20'Night%20Edition'%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Fifth%20'Night%20Edition'%20Shirt%2025-26.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Fifth%20'Night%20Edition'%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Fifth%20'Night%20Edition'%20Shirt%2025-26.jpg",
+   "/collectie/Paris%20Saint-Germain%20Fifth%20'Night%20Edition'%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Fifth 'Night Edition' Shirt 25-26",
   "team": "Paris Saint-Germain Fifth 'Night Edition'",
@@ -13541,10 +13541,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Fourth%20'Wings'%20Shirt%2024-25.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Fourth%20'Wings'%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20'Wings'%20Shirt%2024-25.png",
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20'Wings'%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Fourth%20'Wings'%20Shirt%2024-25.png",
+   "/collectie/Paris%20Saint-Germain%20Fourth%20'Wings'%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Fourth 'Wings' Shirt 24-25",
   "team": "Paris Saint-Germain",
@@ -13563,10 +13563,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Fourth%20Goalkeeper%20Shirt%2024-25.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Fourth%20Goalkeeper%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Goalkeeper%20Shirt%2024-25.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Goalkeeper%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Goalkeeper%20Shirt%2024-25.jpg",
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Goalkeeper%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Fourth Goalkeeper Shirt 24-25",
   "team": "Paris Saint-Germain",
@@ -13585,10 +13585,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Fourth%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Fourth%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Fourth Pre-Match Shirt 25-26",
   "team": "Paris Saint-Germain",
@@ -13607,10 +13607,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25.png",
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25.png",
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Fourth Shirt 24-25",
   "team": "Paris Saint-Germain",
@@ -13629,10 +13629,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'.jpg",
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Fourth Shirt 24-25 'Wings'",
   "team": "Paris Saint-Germain",
@@ -13651,10 +13651,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'%202.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'%202.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'%202.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'%202%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'%202.jpg",
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20'Wings'%202%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Fourth Shirt 24-25 'Wings' 2",
   "team": "Paris Saint-Germain",
@@ -13673,10 +13673,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20Wings%20Edition.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20Wings%20Edition.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20Wings%20Edition.png",
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20Wings%20Edition%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20Wings%20Edition.png",
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2024-25%20Wings%20Edition%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Fourth Shirt 24-25 Wings Edition",
   "team": "Paris Saint-Germain",
@@ -13695,10 +13695,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2025-26.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2025-26.png",
-   "/public/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2025-26.png",
+   "/collectie/Paris%20Saint-Germain%20Fourth%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Fourth Shirt 25-26",
   "team": "Paris Saint-Germain",
@@ -13717,10 +13717,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Home%20Pre-Match%20Shirt%2024-25.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Home%20Pre-Match%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Home%20Pre-Match%20Shirt%2024-25.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Home%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Home%20Pre-Match%20Shirt%2024-25.jpg",
+   "/collectie/Paris%20Saint-Germain%20Home%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Home Pre-Match Shirt 24-25",
   "team": "Paris Saint-Germain",
@@ -13739,10 +13739,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Home Shirt 24-25",
   "team": "Paris Saint-Germain",
@@ -13761,10 +13761,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26.png",
+   "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Home Shirt 25-26",
   "team": "Paris Saint-Germain",
@@ -13783,10 +13783,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26%202.jpg",
+   "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Home Shirt 25-26 2",
   "team": "Paris Saint-Germain",
@@ -13805,10 +13805,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Paris%20Saint-Germain%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Home Shirt 26-27",
   "team": "Paris Saint-Germain",
@@ -13827,10 +13827,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Pre-Match%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Pre-Match Home Shirt 25-26",
   "team": "Paris Saint-Germain",
@@ -13849,10 +13849,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25.png",
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25.png",
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Pre-Match Shirt 24-25",
   "team": "Paris Saint-Germain",
@@ -13871,10 +13871,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25%202.jpg",
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Pre-Match Shirt 24-25 2",
   "team": "Paris Saint-Germain",
@@ -13893,10 +13893,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Pre-Match Shirt 25-26",
   "team": "Paris Saint-Germain",
@@ -13915,10 +13915,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%20(TEAM%20WANG%20design%20Lunar%20New%20Year%20Edition).jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%20(TEAM%20WANG%20design%20Lunar%20New%20Year%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%20(TEAM%20WANG%20design%20Lunar%20New%20Year%20Edition).jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%20(TEAM%20WANG%20design%20Lunar%20New%20Year%20Edition)%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%20(TEAM%20WANG%20design%20Lunar%20New%20Year%20Edition).jpg",
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%20(TEAM%20WANG%20design%20Lunar%20New%20Year%20Edition)%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Pre-Match Shirt 25-26 (TEAM WANG design Lunar New Year Edition)",
   "team": "Paris Saint-Germain",
@@ -13937,10 +13937,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%202.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%202.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%202.png",
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%202%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%202.png",
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%202%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Pre-Match Shirt 25-26 2",
   "team": "Paris Saint-Germain",
@@ -13959,10 +13959,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%203.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%203.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%203.png",
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%203%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%203.png",
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%203%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Pre-Match Shirt 25-26 3",
   "team": "Paris Saint-Germain",
@@ -13981,10 +13981,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%204.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%204.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%204.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%204%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%204.jpg",
+   "/collectie/Paris%20Saint-Germain%20Pre-Match%20Shirt%2025-26%204%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Pre-Match Shirt 25-26 4",
   "team": "Paris Saint-Germain",
@@ -14003,10 +14003,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Special%20Edition%20Balmain%20Shirt.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Special%20Edition%20Balmain%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Special%20Edition%20Balmain%20Shirt.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Special%20Edition%20Balmain%20Shirt%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Special%20Edition%20Balmain%20Shirt.jpg",
+   "/collectie/Paris%20Saint-Germain%20Special%20Edition%20Balmain%20Shirt%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Special Edition Balmain Shirt",
   "team": "Paris Saint-Germain",
@@ -14025,10 +14025,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Third%20Pre-Match%20Shirt%2024-25.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Third%20Pre-Match%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Third%20Pre-Match%20Shirt%2024-25.png",
-   "/public/collectie/Paris%20Saint-Germain%20Third%20Pre-Match%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Third%20Pre-Match%20Shirt%2024-25.png",
+   "/collectie/Paris%20Saint-Germain%20Third%20Pre-Match%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Third Pre-Match Shirt 24-25",
   "team": "Paris Saint-Germain",
@@ -14047,10 +14047,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26.png",
+   "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Third Shirt 25-26",
   "team": "Paris Saint-Germain",
@@ -14069,10 +14069,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%202.jpg",
+   "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Paris Saint-Germain Third Shirt 25-26 2",
   "team": "Paris Saint-Germain",
@@ -14091,10 +14091,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%203.png",
+  "image": "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%203.png",
   "gallery": [
-   "/public/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%203.png",
-   "/public/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%203%20achterkant.png"
+   "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%203.png",
+   "/collectie/Paris%20Saint-Germain%20Third%20Shirt%2025-26%203%20achterkant.png"
   ],
   "name": "Paris Saint-Germain Third Shirt 25-26 3",
   "team": "Paris Saint-Germain",
@@ -14113,10 +14113,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Parma%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Parma%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Parma%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Parma%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Parma%20Away%20Shirt%2025-26.png",
+   "/collectie/Parma%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Parma Away Shirt 25-26",
   "team": "Parma",
@@ -14135,10 +14135,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Parma%20Home%20Shirt%2024-25.png",
+  "image": "/collectie/Parma%20Home%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Parma%20Home%20Shirt%2024-25.png",
-   "/public/collectie/Parma%20Home%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Parma%20Home%20Shirt%2024-25.png",
+   "/collectie/Parma%20Home%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Parma Home Shirt 24-25",
   "team": "Parma",
@@ -14157,10 +14157,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Parma%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Parma%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Parma%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Parma%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Parma%20Third%20Shirt%2025-26.png",
+   "/collectie/Parma%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Parma Third Shirt 25-26",
   "team": "Parma",
@@ -14179,10 +14179,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Peru%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Peru%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Peru%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Peru%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Peru%20Home%20Shirt%202026.jpg",
+   "/collectie/Peru%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Peru Home Shirt 2026",
   "team": "Peru",
@@ -14201,10 +14201,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Pisa%20SC%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Pisa%20SC%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Pisa%20SC%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Pisa%20SC%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Pisa%20SC%20Home%20Shirt%2025-26.png",
+   "/collectie/Pisa%20SC%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Pisa SC Home Shirt 25-26",
   "team": "Pisa SC",
@@ -14223,10 +14223,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Poland%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Poland%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Poland%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Poland%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Poland%20Away%20Shirt%202026.jpg",
+   "/collectie/Poland%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Poland Away Shirt 2026",
   "team": "Poland",
@@ -14245,10 +14245,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Poland%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Poland%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Poland%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Poland%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Poland%20Home%20Shirt%202026.jpg",
+   "/collectie/Poland%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Poland Home Shirt 2026",
   "team": "Poland",
@@ -14267,10 +14267,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%2025-26%20Special%20Edition%20-Eus%C3%A9bio%20-%20Pantera%20Negra-%20Shirt.png",
+  "image": "/collectie/Portugal%2025-26%20Special%20Edition%20-Eus%C3%A9bio%20-%20Pantera%20Negra-%20Shirt.png",
   "gallery": [
-   "/public/collectie/Portugal%2025-26%20Special%20Edition%20-Eus%C3%A9bio%20-%20Pantera%20Negra-%20Shirt.png",
-   "/public/collectie/Portugal%2025-26%20Special%20Edition%20-Eus%C3%A9bio%20-%20Pantera%20Negra-%20Shirt%20achterkant.png"
+   "/collectie/Portugal%2025-26%20Special%20Edition%20-Eus%C3%A9bio%20-%20Pantera%20Negra-%20Shirt.png",
+   "/collectie/Portugal%2025-26%20Special%20Edition%20-Eus%C3%A9bio%20-%20Pantera%20Negra-%20Shirt%20achterkant.png"
   ],
   "name": "Portugal 25-26 Special Edition -Eusébio - Pantera Negra- Shirt",
   "team": "Portugal 25-26",
@@ -14289,10 +14289,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%202025%20Training%20Shirt.jpg",
+  "image": "/collectie/Portugal%202025%20Training%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Portugal%202025%20Training%20Shirt.jpg",
-   "/public/collectie/Portugal%202025%20Training%20Shirt%20achterkant.jpg"
+   "/collectie/Portugal%202025%20Training%20Shirt.jpg",
+   "/collectie/Portugal%202025%20Training%20Shirt%20achterkant.jpg"
   ],
   "name": "Portugal 2025 Training Shirt",
   "team": "Portugal 2025 Training",
@@ -14311,10 +14311,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%202026%20Goalkeeper%20Home%20Shirt.jpg",
+  "image": "/collectie/Portugal%202026%20Goalkeeper%20Home%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Portugal%202026%20Goalkeeper%20Home%20Shirt.jpg",
-   "/public/collectie/Portugal%202026%20Goalkeeper%20Home%20Shirt%20achterkant.jpg"
+   "/collectie/Portugal%202026%20Goalkeeper%20Home%20Shirt.jpg",
+   "/collectie/Portugal%202026%20Goalkeeper%20Home%20Shirt%20achterkant.jpg"
   ],
   "name": "Portugal 2026 Goalkeeper Home Shirt",
   "team": "Portugal 2026",
@@ -14333,10 +14333,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Portugal%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Portugal%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Portugal%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Portugal%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Portugal Away Shirt 25-26",
   "team": "Portugal",
@@ -14355,10 +14355,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Away%20Shirt%202024.jpg",
+  "image": "/collectie/Portugal%20Away%20Shirt%202024.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Away%20Shirt%202024.jpg",
-   "/public/collectie/Portugal%20Away%20Shirt%202024%20achterkant.jpg"
+   "/collectie/Portugal%20Away%20Shirt%202024.jpg",
+   "/collectie/Portugal%20Away%20Shirt%202024%20achterkant.jpg"
   ],
   "name": "Portugal Away Shirt 2024",
   "team": "Portugal",
@@ -14377,10 +14377,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Esports%20Shirt%2025-26.jpg",
+  "image": "/collectie/Portugal%20Esports%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Esports%20Shirt%2025-26.jpg",
-   "/public/collectie/Portugal%20Esports%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Portugal%20Esports%20Shirt%2025-26.jpg",
+   "/collectie/Portugal%20Esports%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Portugal Esports Shirt 25-26",
   "team": "Portugal Esports",
@@ -14399,10 +14399,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Goalkeeper%20Home%20Shirt%202026%20If%20you'd%20like%20to%20find%20where%20to%20buy%20this%20item%20or%20browse%20alternati.jpg",
+  "image": "/collectie/Portugal%20Goalkeeper%20Home%20Shirt%202026%20If%20you'd%20like%20to%20find%20where%20to%20buy%20this%20item%20or%20browse%20alternati.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Goalkeeper%20Home%20Shirt%202026%20If%20you'd%20like%20to%20find%20where%20to%20buy%20this%20item%20or%20browse%20alternati.jpg",
-   "/public/collectie/Portugal%20Goalkeeper%20Home%20Shirt%202026%20If%20you'd%20like%20to%20find%20where%20to%20buy%20this%20item%20or%20browse%20alternati%20achterkant.jpg"
+   "/collectie/Portugal%20Goalkeeper%20Home%20Shirt%202026%20If%20you'd%20like%20to%20find%20where%20to%20buy%20this%20item%20or%20browse%20alternati.jpg",
+   "/collectie/Portugal%20Goalkeeper%20Home%20Shirt%202026%20If%20you'd%20like%20to%20find%20where%20to%20buy%20this%20item%20or%20browse%20alternati%20achterkant.jpg"
   ],
   "name": "Portugal Goalkeeper Home Shirt 2026 If you'd like to find where to buy this item or browse alternati",
   "team": "Portugal",
@@ -14421,10 +14421,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Goalkeeper%20Shirt%202026.jpg",
+  "image": "/collectie/Portugal%20Goalkeeper%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Goalkeeper%20Shirt%202026.jpg",
-   "/public/collectie/Portugal%20Goalkeeper%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Portugal%20Goalkeeper%20Shirt%202026.jpg",
+   "/collectie/Portugal%20Goalkeeper%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Portugal Goalkeeper Shirt 2026",
   "team": "Portugal",
@@ -14443,10 +14443,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Home%20Shirt%202025.jpg",
+  "image": "/collectie/Portugal%20Home%20Shirt%202025.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Home%20Shirt%202025.jpg",
-   "/public/collectie/Portugal%20Home%20Shirt%202025%20achterkant.jpg"
+   "/collectie/Portugal%20Home%20Shirt%202025.jpg",
+   "/collectie/Portugal%20Home%20Shirt%202025%20achterkant.jpg"
   ],
   "name": "Portugal Home Shirt 2025",
   "team": "Portugal",
@@ -14465,10 +14465,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Pre-Match%20Shirt%2025-26.jpg",
+  "image": "/collectie/Portugal%20Pre-Match%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Pre-Match%20Shirt%2025-26.jpg",
-   "/public/collectie/Portugal%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Portugal%20Pre-Match%20Shirt%2025-26.jpg",
+   "/collectie/Portugal%20Pre-Match%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Portugal Pre-Match Shirt 25-26",
   "team": "Portugal",
@@ -14487,10 +14487,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Pre-Match%20Shirt%202026.jpg",
+  "image": "/collectie/Portugal%20Pre-Match%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Pre-Match%20Shirt%202026.jpg",
-   "/public/collectie/Portugal%20Pre-Match%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Portugal%20Pre-Match%20Shirt%202026.jpg",
+   "/collectie/Portugal%20Pre-Match%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Portugal Pre-Match Shirt 2026",
   "team": "Portugal",
@@ -14509,10 +14509,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Special%20Edition%20Blue%20Azulejo%20Concept%20Shirt.png",
+  "image": "/collectie/Portugal%20Special%20Edition%20Blue%20Azulejo%20Concept%20Shirt.png",
   "gallery": [
-   "/public/collectie/Portugal%20Special%20Edition%20Blue%20Azulejo%20Concept%20Shirt.png",
-   "/public/collectie/Portugal%20Special%20Edition%20Blue%20Azulejo%20Concept%20Shirt%20achterkant.png"
+   "/collectie/Portugal%20Special%20Edition%20Blue%20Azulejo%20Concept%20Shirt.png",
+   "/collectie/Portugal%20Special%20Edition%20Blue%20Azulejo%20Concept%20Shirt%20achterkant.png"
   ],
   "name": "Portugal Special Edition Blue Azulejo Concept Shirt",
   "team": "Portugal",
@@ -14531,10 +14531,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Special%20Edition%20Eus%C3%A9bio%20Shirt%2025-26.png",
+  "image": "/collectie/Portugal%20Special%20Edition%20Eus%C3%A9bio%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Portugal%20Special%20Edition%20Eus%C3%A9bio%20Shirt%2025-26.png",
-   "/public/collectie/Portugal%20Special%20Edition%20Eus%C3%A9bio%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Portugal%20Special%20Edition%20Eus%C3%A9bio%20Shirt%2025-26.png",
+   "/collectie/Portugal%20Special%20Edition%20Eus%C3%A9bio%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Portugal Special Edition Eusébio Shirt 25-26",
   "team": "Portugal",
@@ -14553,10 +14553,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Portugal%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Portugal%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Portugal%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Portugal%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Portugal Special Edition Shirt 24-25",
   "team": "Portugal",
@@ -14575,10 +14575,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Special%20Edition%20Shirt%2025-26.jpg",
+  "image": "/collectie/Portugal%20Special%20Edition%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Special%20Edition%20Shirt%2025-26.jpg",
-   "/public/collectie/Portugal%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Portugal%20Special%20Edition%20Shirt%2025-26.jpg",
+   "/collectie/Portugal%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Portugal Special Edition Shirt 25-26",
   "team": "Portugal",
@@ -14597,10 +14597,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20Training%20Shirt%2025-26.jpg",
+  "image": "/collectie/Portugal%20Training%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20Training%20Shirt%2025-26.jpg",
-   "/public/collectie/Portugal%20Training%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Portugal%20Training%20Shirt%2025-26.jpg",
+   "/collectie/Portugal%20Training%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Portugal Training Shirt 25-26",
   "team": "Portugal Training",
@@ -14619,10 +14619,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Portugal%20x%20Louis%20Vuitton%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Portugal%20x%20Louis%20Vuitton%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Portugal%20x%20Louis%20Vuitton%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Portugal%20x%20Louis%20Vuitton%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Portugal%20x%20Louis%20Vuitton%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Portugal%20x%20Louis%20Vuitton%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Portugal x Louis Vuitton Special Edition Shirt 24-25",
   "team": "Portugal x Louis Vuitton",
@@ -14641,10 +14641,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Premier%20League%20Special%20Edition%20Anti-Racism%20Shirt%2024-25.jpg",
+  "image": "/collectie/Premier%20League%20Special%20Edition%20Anti-Racism%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Premier%20League%20Special%20Edition%20Anti-Racism%20Shirt%2024-25.jpg",
-   "/public/collectie/Premier%20League%20Special%20Edition%20Anti-Racism%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Premier%20League%20Special%20Edition%20Anti-Racism%20Shirt%2024-25.jpg",
+   "/collectie/Premier%20League%20Special%20Edition%20Anti-Racism%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Premier League Special Edition Anti-Racism Shirt 24-25",
   "team": "Premier League",
@@ -14663,10 +14663,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/PSG%20-Paris%20Noir-%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/PSG%20-Paris%20Noir-%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/PSG%20-Paris%20Noir-%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/PSG%20-Paris%20Noir-%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/PSG%20-Paris%20Noir-%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/PSG%20-Paris%20Noir-%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "PSG -Paris Noir- Special Edition Shirt 24-25",
   "team": "PSG -Paris Noir-",
@@ -14685,10 +14685,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/PSG%20-The%20Parisians-%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/PSG%20-The%20Parisians-%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/PSG%20-The%20Parisians-%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/PSG%20-The%20Parisians-%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/PSG%20-The%20Parisians-%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/PSG%20-The%20Parisians-%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "PSG -The Parisians- Special Edition Shirt 25-26",
   "team": "PSG -The Parisians-",
@@ -14707,10 +14707,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/PSG%20Away%20Shirt%2025-26%20Special%20Edition%20(PSG%20x%20XO).png",
+  "image": "/collectie/PSG%20Away%20Shirt%2025-26%20Special%20Edition%20(PSG%20x%20XO).png",
   "gallery": [
-   "/public/collectie/PSG%20Away%20Shirt%2025-26%20Special%20Edition%20(PSG%20x%20XO).png",
-   "/public/collectie/PSG%20Away%20Shirt%2025-26%20Special%20Edition%20(PSG%20x%20XO)%20achterkant.jpg"
+   "/collectie/PSG%20Away%20Shirt%2025-26%20Special%20Edition%20(PSG%20x%20XO).png",
+   "/collectie/PSG%20Away%20Shirt%2025-26%20Special%20Edition%20(PSG%20x%20XO)%20achterkant.jpg"
   ],
   "name": "PSG Away Shirt 25-26 Special Edition (PSG x XO)",
   "team": "PSG",
@@ -14729,10 +14729,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/PSG%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/PSG%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/PSG%20Home%20Shirt%2025-26.png",
-   "/public/collectie/PSG%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/PSG%20Home%20Shirt%2025-26.png",
+   "/collectie/PSG%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "PSG Home Shirt 25-26",
   "team": "PSG",
@@ -14751,10 +14751,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/PSG%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/PSG%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/PSG%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/PSG%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/PSG%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/PSG%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "PSG Special Edition Shirt 25-26",
   "team": "PSG",
@@ -14773,10 +14773,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/PSG%20Third%20Shirt%2025-26.jpg",
+  "image": "/collectie/PSG%20Third%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/PSG%20Third%20Shirt%2025-26.jpg",
-   "/public/collectie/PSG%20Third%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/PSG%20Third%20Shirt%2025-26.jpg",
+   "/collectie/PSG%20Third%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "PSG Third Shirt 25-26",
   "team": "PSG",
@@ -14795,10 +14795,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/PSG%20x%20XO%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/PSG%20x%20XO%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/PSG%20x%20XO%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/PSG%20x%20XO%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/PSG%20x%20XO%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/PSG%20x%20XO%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "PSG x XO Special Edition Shirt 25-26",
   "team": "PSG x XO",
@@ -14817,10 +14817,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/PSV%20Eindhoven%20Home%20Shirt%2024-25.png",
+  "image": "/collectie/PSV%20Eindhoven%20Home%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/PSV%20Eindhoven%20Home%20Shirt%2024-25.png",
-   "/public/collectie/PSV%20Eindhoven%20Home%20Shirt%2024-25%20achterkant.png"
+   "/collectie/PSV%20Eindhoven%20Home%20Shirt%2024-25.png",
+   "/collectie/PSV%20Eindhoven%20Home%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "PSV Eindhoven Home Shirt 24-25",
   "team": "PSV Eindhoven",
@@ -14839,10 +14839,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Rangers%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Rangers%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Rangers%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Rangers%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Rangers%20Away%20Shirt%2025-26.png",
+   "/collectie/Rangers%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Rangers Away Shirt 25-26",
   "team": "Rangers",
@@ -14861,10 +14861,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Rangers%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Rangers%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Rangers%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Rangers%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Rangers%20Home%20Shirt%2025-26.png",
+   "/collectie/Rangers%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Rangers Home Shirt 25-26",
   "team": "Rangers",
@@ -14883,10 +14883,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/RC%20Lens%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/RC%20Lens%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/RC%20Lens%20Away%20Shirt%2025-26.png",
-   "/public/collectie/RC%20Lens%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/RC%20Lens%20Away%20Shirt%2025-26.png",
+   "/collectie/RC%20Lens%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "RC Lens Away Shirt 25-26",
   "team": "RC Lens",
@@ -14905,10 +14905,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/RC%20Lens%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition.png",
+  "image": "/collectie/RC%20Lens%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition.png",
   "gallery": [
-   "/public/collectie/RC%20Lens%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition.png",
-   "/public/collectie/RC%20Lens%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition%20achterkant.png"
+   "/collectie/RC%20Lens%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition.png",
+   "/collectie/RC%20Lens%20Home%20Shirt%2025-26%20120th%20Anniversary%20Edition%20achterkant.png"
   ],
   "name": "RC Lens Home Shirt 25-26 120th Anniversary Edition",
   "team": "RC Lens",
@@ -14927,10 +14927,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/RCD%20Mallorca%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/RCD%20Mallorca%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/RCD%20Mallorca%20Away%20Shirt%2025-26.png",
-   "/public/collectie/RCD%20Mallorca%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/RCD%20Mallorca%20Away%20Shirt%2025-26.png",
+   "/collectie/RCD%20Mallorca%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "RCD Mallorca Away Shirt 25-26",
   "team": "RCD Mallorca",
@@ -14949,10 +14949,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/RCD%20Mallorca%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/RCD%20Mallorca%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/RCD%20Mallorca%20Home%20Shirt%2025-26.png",
-   "/public/collectie/RCD%20Mallorca%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/RCD%20Mallorca%20Home%20Shirt%2025-26.png",
+   "/collectie/RCD%20Mallorca%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "RCD Mallorca Home Shirt 25-26",
   "team": "RCD Mallorca",
@@ -14971,10 +14971,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Betis%20Forever%20Green%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Betis%20Forever%20Green%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Betis%20Forever%20Green%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Betis%20Forever%20Green%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Betis%20Forever%20Green%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Betis%20Forever%20Green%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Betis Forever Green Shirt 24-25",
   "team": "Real Betis Forever Green",
@@ -14993,10 +14993,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Betis%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Betis%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Betis%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Betis%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Betis%20Home%20Shirt%2025-26.png",
+   "/collectie/Real%20Betis%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Betis Home Shirt 25-26",
   "team": "Real Betis",
@@ -15015,10 +15015,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Betis%20Special%20Edition%20Naruto%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Betis%20Special%20Edition%20Naruto%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Betis%20Special%20Edition%20Naruto%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Betis%20Special%20Edition%20Naruto%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Betis%20Special%20Edition%20Naruto%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Betis%20Special%20Edition%20Naruto%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Betis Special Edition Naruto Shirt 24-25",
   "team": "Real Betis",
@@ -15037,10 +15037,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20'Pink%20Serpent'%20Special%20Edition%20Shirt%2025-26.jpg",
+  "image": "/collectie/Real%20Madrid%20'Pink%20Serpent'%20Special%20Edition%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20'Pink%20Serpent'%20Special%20Edition%20Shirt%2025-26.jpg",
-   "/public/collectie/Real%20Madrid%20'Pink%20Serpent'%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20'Pink%20Serpent'%20Special%20Edition%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20'Pink%20Serpent'%20Special%20Edition%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Real Madrid 'Pink Serpent' Special Edition Shirt 25-26",
   "team": "Real Madrid 'Pink Serpent'",
@@ -15059,10 +15059,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%2024-25%20adidas%20Originals%20Shirt.jpg",
+  "image": "/collectie/Real%20Madrid%2024-25%20adidas%20Originals%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%2024-25%20adidas%20Originals%20Shirt.jpg",
-   "/public/collectie/Real%20Madrid%2024-25%20adidas%20Originals%20Shirt%20achterkant.jpg"
+   "/collectie/Real%20Madrid%2024-25%20adidas%20Originals%20Shirt.jpg",
+   "/collectie/Real%20Madrid%2024-25%20adidas%20Originals%20Shirt%20achterkant.jpg"
   ],
   "name": "Real Madrid 24-25 adidas Originals Shirt",
   "team": "Real Madrid 24-25 adidas Originals",
@@ -15081,10 +15081,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%202023-24%20'Dragon'%20Special%20Edition%20Purple%20Shirt.jpg",
+  "image": "/collectie/Real%20Madrid%202023-24%20'Dragon'%20Special%20Edition%20Purple%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%202023-24%20'Dragon'%20Special%20Edition%20Purple%20Shirt.jpg",
-   "/public/collectie/Real%20Madrid%202023-24%20'Dragon'%20Special%20Edition%20Purple%20Shirt%20achterkant.jpg"
+   "/collectie/Real%20Madrid%202023-24%20'Dragon'%20Special%20Edition%20Purple%20Shirt.jpg",
+   "/collectie/Real%20Madrid%202023-24%20'Dragon'%20Special%20Edition%20Purple%20Shirt%20achterkant.jpg"
   ],
   "name": "Real Madrid 2023-24 'Dragon' Special Edition Purple Shirt",
   "team": "Real Madrid 2023-24 'Dragon'",
@@ -15103,10 +15103,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Away%20Shirt%2023-24.jpg",
+  "image": "/collectie/Real%20Madrid%20Away%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Away%20Shirt%2023-24.jpg",
-   "/public/collectie/Real%20Madrid%20Away%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Away%20Shirt%2023-24.jpg",
+   "/collectie/Real%20Madrid%20Away%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Real Madrid Away Shirt 23-24",
   "team": "Real Madrid",
@@ -15125,10 +15125,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Away Shirt 24-25",
   "team": "Real Madrid",
@@ -15147,10 +15147,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Real%20Madrid%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Real%20Madrid%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Real Madrid Away Shirt 25-26",
   "team": "Real Madrid",
@@ -15169,10 +15169,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Concept%20Dragon%20Shirt.jpg",
+  "image": "/collectie/Real%20Madrid%20Concept%20Dragon%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Concept%20Dragon%20Shirt.jpg",
-   "/public/collectie/Real%20Madrid%20Concept%20Dragon%20Shirt%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Concept%20Dragon%20Shirt.jpg",
+   "/collectie/Real%20Madrid%20Concept%20Dragon%20Shirt%20achterkant.jpg"
   ],
   "name": "Real Madrid Concept Dragon Shirt",
   "team": "Real Madrid Concept Dragon",
@@ -15191,10 +15191,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Concept%20Golden%20Lion%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Concept%20Golden%20Lion%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Concept%20Golden%20Lion%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Concept%20Golden%20Lion%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Concept%20Golden%20Lion%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Concept%20Golden%20Lion%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Concept Golden Lion Shirt 24-25",
   "team": "Real Madrid Concept Golden Lion",
@@ -15213,10 +15213,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Concept%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20Concept%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Concept%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20Concept%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20Concept%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Concept%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid Concept Shirt 25-26",
   "team": "Real Madrid Concept",
@@ -15235,10 +15235,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Concept%20Viking%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20Concept%20Viking%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Concept%20Viking%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20Concept%20Viking%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20Concept%20Viking%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Concept%20Viking%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid Concept Viking Special Edition Shirt 25-26",
   "team": "Real Madrid Concept Viking",
@@ -15257,10 +15257,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Consept%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Consept%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Consept%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Consept%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Consept%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Consept%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Consept Shirt 24-25",
   "team": "Real Madrid Consept",
@@ -15279,10 +15279,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Cultural%20Story%20Shirt%2025-26%20Would%20you%20like%20help%20finding%20where%20to%20purchase%20this%20shirt%20onli.jpg",
+  "image": "/collectie/Real%20Madrid%20Cultural%20Story%20Shirt%2025-26%20Would%20you%20like%20help%20finding%20where%20to%20purchase%20this%20shirt%20onli.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Cultural%20Story%20Shirt%2025-26%20Would%20you%20like%20help%20finding%20where%20to%20purchase%20this%20shirt%20onli.jpg",
-   "/public/collectie/Real%20Madrid%20Cultural%20Story%20Shirt%2025-26%20Would%20you%20like%20help%20finding%20where%20to%20purchase%20this%20shirt%20onli%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Cultural%20Story%20Shirt%2025-26%20Would%20you%20like%20help%20finding%20where%20to%20purchase%20this%20shirt%20onli.jpg",
+   "/collectie/Real%20Madrid%20Cultural%20Story%20Shirt%2025-26%20Would%20you%20like%20help%20finding%20where%20to%20purchase%20this%20shirt%20onli%20achterkant.jpg"
   ],
   "name": "Real Madrid Cultural Story Shirt 25-26 Would you like help finding where to purchase this shirt onli",
   "team": "Real Madrid Cultural Story",
@@ -15301,10 +15301,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Culturewear%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Culturewear%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Culturewear%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Culturewear%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Culturewear%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Culturewear%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Culturewear Shirt 24-25",
   "team": "Real Madrid Culturewear",
@@ -15323,10 +15323,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Dragon%20Concept%20Shirt.jpg",
+  "image": "/collectie/Real%20Madrid%20Dragon%20Concept%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Dragon%20Concept%20Shirt.jpg",
-   "/public/collectie/Real%20Madrid%20Dragon%20Concept%20Shirt%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Dragon%20Concept%20Shirt.jpg",
+   "/collectie/Real%20Madrid%20Dragon%20Concept%20Shirt%20achterkant.jpg"
   ],
   "name": "Real Madrid Dragon Concept Shirt",
   "team": "Real Madrid Dragon Concept",
@@ -15345,10 +15345,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Dragon%20Edition%20Concept%20Shirt%2024-25.png",
+  "image": "/collectie/Real%20Madrid%20Dragon%20Edition%20Concept%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Dragon%20Edition%20Concept%20Shirt%2024-25.png",
-   "/public/collectie/Real%20Madrid%20Dragon%20Edition%20Concept%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Real%20Madrid%20Dragon%20Edition%20Concept%20Shirt%2024-25.png",
+   "/collectie/Real%20Madrid%20Dragon%20Edition%20Concept%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Real Madrid Dragon Edition Concept Shirt 24-25",
   "team": "Real Madrid Dragon Edition Concept",
@@ -15367,10 +15367,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Dragon%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Dragon%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Dragon Special Edition Shirt 24-25",
   "team": "Real Madrid Dragon",
@@ -15389,10 +15389,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Fourth%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Fourth%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Fourth%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Fourth%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Fourth%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Fourth%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Fourth Shirt 24-25",
   "team": "Real Madrid",
@@ -15411,10 +15411,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Fourth%20Shirt%2026-27.jpg",
+  "image": "/collectie/Real%20Madrid%20Fourth%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Fourth%20Shirt%2026-27.jpg",
-   "/public/collectie/Real%20Madrid%20Fourth%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Fourth%20Shirt%2026-27.jpg",
+   "/collectie/Real%20Madrid%20Fourth%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Real Madrid Fourth Shirt 26-27",
   "team": "Real Madrid",
@@ -15433,10 +15433,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Home%20Shirt%2022-23.jpg",
+  "image": "/collectie/Real%20Madrid%20Home%20Shirt%2022-23.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2022-23.jpg",
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2022-23%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Home%20Shirt%2022-23.jpg",
+   "/collectie/Real%20Madrid%20Home%20Shirt%2022-23%20achterkant.jpg"
   ],
   "name": "Real Madrid Home Shirt 22-23",
   "team": "Real Madrid",
@@ -15455,10 +15455,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Home%20Shirt%2023-24.jpg",
+  "image": "/collectie/Real%20Madrid%20Home%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2023-24.jpg",
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Home%20Shirt%2023-24.jpg",
+   "/collectie/Real%20Madrid%20Home%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Real Madrid Home Shirt 23-24",
   "team": "Real Madrid",
@@ -15477,10 +15477,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Home Shirt 24-25",
   "team": "Real Madrid",
@@ -15499,10 +15499,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Home%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Real%20Madrid%20Home%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Home%20Shirt%2024-25%202.jpg",
+   "/collectie/Real%20Madrid%20Home%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Real Madrid Home Shirt 24-25 2",
   "team": "Real Madrid",
@@ -15521,10 +15521,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Home%20Shirt%2024-25%203.jpg",
+  "image": "/collectie/Real%20Madrid%20Home%20Shirt%2024-25%203.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2024-25%203.jpg",
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2024-25%203%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Home%20Shirt%2024-25%203.jpg",
+   "/collectie/Real%20Madrid%20Home%20Shirt%2024-25%203%20achterkant.jpg"
   ],
   "name": "Real Madrid Home Shirt 24-25 3",
   "team": "Real Madrid",
@@ -15543,10 +15543,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/Real%20Madrid%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Home%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Real Madrid Home Shirt 25-26",
   "team": "Real Madrid",
@@ -15565,10 +15565,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Real%20Madrid%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Real%20Madrid%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Real%20Madrid%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Real Madrid Home Shirt 26-27",
   "team": "Real Madrid",
@@ -15587,10 +15587,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20LFSTLR%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20LFSTLR%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20LFSTLR%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20LFSTLR%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20LFSTLR%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20LFSTLR%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid LFSTLR Shirt 25-26",
   "team": "Real Madrid LFSTLR",
@@ -15609,10 +15609,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Louis%20Vuitton%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20Louis%20Vuitton%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Louis%20Vuitton%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20Louis%20Vuitton%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20Louis%20Vuitton%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Louis%20Vuitton%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid Louis Vuitton Special Edition Shirt 25-26",
   "team": "Real Madrid Louis Vuitton",
@@ -15631,10 +15631,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Panther%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Panther%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Panther%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Panther%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Panther%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Panther%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Panther Special Edition Shirt 24-25",
   "team": "Real Madrid Panther",
@@ -15653,10 +15653,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2021-22.jpg",
+  "image": "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2021-22.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2021-22.jpg",
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2021-22%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2021-22.jpg",
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2021-22%20achterkant.jpg"
   ],
   "name": "Real Madrid Pre-Match Shirt 21-22",
   "team": "Real Madrid",
@@ -15675,10 +15675,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2023-24%20Y-3%20Collection.jpg",
+  "image": "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2023-24%20Y-3%20Collection.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2023-24%20Y-3%20Collection.jpg",
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2023-24%20Y-3%20Collection%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2023-24%20Y-3%20Collection.jpg",
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2023-24%20Y-3%20Collection%20achterkant.jpg"
   ],
   "name": "Real Madrid Pre-Match Shirt 23-24 Y-3 Collection",
   "team": "Real Madrid",
@@ -15697,10 +15697,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Pre-Match Shirt 24-25",
   "team": "Real Madrid",
@@ -15719,10 +15719,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25%202.jpg",
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Real Madrid Pre-Match Shirt 24-25 2",
   "team": "Real Madrid",
@@ -15741,10 +15741,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid Pre-Match Shirt 25-26",
   "team": "Real Madrid",
@@ -15763,10 +15763,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%20(Marvel%20Avengers%20Edition).png",
+  "image": "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%20(Marvel%20Avengers%20Edition).png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%20(Marvel%20Avengers%20Edition).png",
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%20(Marvel%20Avengers%20Edition)%20achterkant.png"
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%20(Marvel%20Avengers%20Edition).png",
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%20(Marvel%20Avengers%20Edition)%20achterkant.png"
   ],
   "name": "Real Madrid Pre-Match Shirt 25-26 (Marvel Avengers Edition)",
   "team": "Real Madrid",
@@ -15785,10 +15785,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%202.jpg",
+   "/collectie/Real%20Madrid%20Pre-Match%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Real Madrid Pre-Match Shirt 25-26 2",
   "team": "Real Madrid",
@@ -15807,10 +15807,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Purple%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Purple%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Purple%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Purple%20Dragon%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Purple%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Purple%20Dragon%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Purple Dragon Special Edition Shirt 24-25",
   "team": "Real Madrid Purple Dragon",
@@ -15829,10 +15829,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Rainbow%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Rainbow%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Rainbow%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Rainbow%20Dragon%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Rainbow%20Dragon%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Rainbow%20Dragon%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Rainbow Dragon Special Edition Shirt 24-25",
   "team": "Real Madrid Rainbow Dragon",
@@ -15851,10 +15851,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Snake%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
+  "image": "/collectie/Real%20Madrid%20Snake%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Snake%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
-   "/public/collectie/Real%20Madrid%20Snake%20Special%20Edition%20Concept%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Snake%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Snake%20Special%20Edition%20Concept%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Real Madrid Snake Special Edition Concept Shirt 25-26",
   "team": "Real Madrid Snake",
@@ -15873,10 +15873,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt.png",
+  "image": "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt.png",
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt.png",
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt%20achterkant.png"
   ],
   "name": "Real Madrid Special Dragon Edition Concept Shirt",
   "team": "Real Madrid",
@@ -15895,10 +15895,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Concept%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Dragon Edition Concept Shirt 24-25",
   "team": "Real Madrid",
@@ -15917,10 +15917,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2023-24.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2023-24.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2023-24.jpg",
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Dragon Edition Shirt 23-24",
   "team": "Real Madrid",
@@ -15939,10 +15939,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25.png",
+  "image": "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25.png",
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25.png",
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Real Madrid Special Dragon Edition Shirt 24-25",
   "team": "Real Madrid",
@@ -15961,10 +15961,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25%202.jpg",
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Dragon Edition Shirt 24-25 2",
   "team": "Real Madrid",
@@ -15983,10 +15983,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2025-26.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2025-26.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Special%20Dragon%20Edition%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Dragon Edition Shirt 25-26",
   "team": "Real Madrid",
@@ -16005,10 +16005,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20-Cibeles%20Imperial-%20Shirt%2025-26.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20-Cibeles%20Imperial-%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20-Cibeles%20Imperial-%20Shirt%2025-26.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20-Cibeles%20Imperial-%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20-Cibeles%20Imperial-%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20-Cibeles%20Imperial-%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition -Cibeles Imperial- Shirt 25-26",
   "team": "Real Madrid",
@@ -16027,10 +16027,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20-Devil's%20Eye-%20Dragon%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20-Devil's%20Eye-%20Dragon%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20-Devil's%20Eye-%20Dragon%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20-Devil's%20Eye-%20Dragon%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20-Devil's%20Eye-%20Dragon%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20-Devil's%20Eye-%20Dragon%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition -Devil's Eye- Dragon Shirt 24-25",
   "team": "Real Madrid",
@@ -16049,10 +16049,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20-Golden%20Dragon-%20Shirt%2023-24.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20-Golden%20Dragon-%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20-Golden%20Dragon-%20Shirt%2023-24.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20-Golden%20Dragon-%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20-Golden%20Dragon-%20Shirt%2023-24.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20-Golden%20Dragon-%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition -Golden Dragon- Shirt 23-24",
   "team": "Real Madrid",
@@ -16071,10 +16071,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Special%20Edition%20'Pink%20Dragon'%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid Special Edition 'Pink Dragon' Shirt 25-26",
   "team": "Real Madrid",
@@ -16093,10 +16093,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Black%20Panther%20Shirt.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Black%20Panther%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Black%20Panther%20Shirt.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Black%20Panther%20Shirt%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Black%20Panther%20Shirt.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Black%20Panther%20Shirt%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition 24-25 Black Panther Shirt",
   "team": "Real Madrid",
@@ -16115,10 +16115,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Shirt.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Shirt.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Shirt%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Shirt.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%2024-25%20Shirt%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition 24-25 Shirt",
   "team": "Real Madrid",
@@ -16137,10 +16137,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%2025-26%20Louis%20Vuitton%20Shirt.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%2025-26%20Louis%20Vuitton%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%2025-26%20Louis%20Vuitton%20Shirt.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%2025-26%20Louis%20Vuitton%20Shirt%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%2025-26%20Louis%20Vuitton%20Shirt.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%2025-26%20Louis%20Vuitton%20Shirt%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition 25-26 Louis Vuitton Shirt",
   "team": "Real Madrid",
@@ -16159,10 +16159,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Avengers%20Thor%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Avengers%20Thor%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Avengers%20Thor%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Avengers%20Thor%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Avengers%20Thor%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Avengers%20Thor%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid Special Edition Avengers Thor Shirt 25-26",
   "team": "Real Madrid",
@@ -16181,10 +16181,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Black%20Panther%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Black%20Panther%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Black%20Panther%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Black%20Panther%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Black%20Panther%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Black%20Panther%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Black Panther Shirt 24-25",
   "team": "Real Madrid",
@@ -16203,10 +16203,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2020-21.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2020-21.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2020-21.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2020-21%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2020-21.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2020-21%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Concept Shirt 20-21",
   "team": "Real Madrid",
@@ -16225,10 +16225,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Concept Shirt 24-25",
   "team": "Real Madrid",
@@ -16247,10 +16247,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Concept%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Concept Shirt 25-26",
   "team": "Real Madrid",
@@ -16269,10 +16269,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Pink Shirt 25-26",
   "team": "Real Madrid",
@@ -16291,10 +16291,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26%202.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Pink%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Pink Shirt 25-26 2",
   "team": "Real Madrid",
@@ -16313,10 +16313,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt.png",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt.png",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt.png",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%20achterkant.png"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt",
   "team": "Real Madrid",
@@ -16335,10 +16335,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 23-24",
   "team": "Real Madrid",
@@ -16357,10 +16357,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%202.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%202.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%202.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%202%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%202.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%202%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 23-24 2",
   "team": "Real Madrid",
@@ -16379,10 +16379,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%203.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%203.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%203.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%203%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%203.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2023-24%203%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 23-24 3",
   "team": "Real Madrid",
@@ -16401,10 +16401,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25.png",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25.png",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25.png",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 24-25",
   "team": "Real Madrid",
@@ -16423,10 +16423,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%202.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%202.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%202.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%202%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%202.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%202%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 24-25 2",
   "team": "Real Madrid",
@@ -16445,10 +16445,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%203.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%203.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%203.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%203%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%203.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2024-25%203%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 24-25 3",
   "team": "Real Madrid",
@@ -16467,10 +16467,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 25-26",
   "team": "Real Madrid",
@@ -16489,10 +16489,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%202.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 25-26 2",
   "team": "Real Madrid",
@@ -16511,10 +16511,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%203.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%203.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%203.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%203%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%203.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%203%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 25-26 3",
   "team": "Real Madrid",
@@ -16533,10 +16533,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%204.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%204.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%204.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%204%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%204.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%204%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 25-26 4",
   "team": "Real Madrid",
@@ -16555,10 +16555,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%205.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%205.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%205.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%205%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%205.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%205%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 25-26 5",
   "team": "Real Madrid",
@@ -16577,10 +16577,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%206.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%206.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%206.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%206%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%206.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%206%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 25-26 6",
   "team": "Real Madrid",
@@ -16599,10 +16599,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%20Real%20Madrid%20Drag%C3%B3n%20De%20Fuego%20shirt%20xclusivejerseys.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%20Real%20Madrid%20Drag%C3%B3n%20De%20Fuego%20shirt%20xclusivejerseys.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%20Real%20Madrid%20Drag%C3%B3n%20De%20Fuego%20shirt%20xclusivejerseys.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%20Real%20Madrid%20Drag%C3%B3n%20De%20Fuego%20shirt%20xclusivejerseys%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%20Real%20Madrid%20Drag%C3%B3n%20De%20Fuego%20shirt%20xclusivejerseys.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Dragon%20Shirt%2025-26%20Real%20Madrid%20Drag%C3%B3n%20De%20Fuego%20shirt%20xclusivejerseys%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Dragon Shirt 25-26 Real Madrid Dragón De Fuego shirt xclusivejerseys",
   "team": "Real Madrid",
@@ -16621,10 +16621,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Kingsnake%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Kingsnake%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Kingsnake%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Kingsnake%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Kingsnake%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Kingsnake%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Kingsnake Shirt 24-25",
   "team": "Real Madrid",
@@ -16643,10 +16643,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Louis Vuitton Concept Shirt 25-26",
   "team": "Real Madrid",
@@ -16665,10 +16665,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26%20Real%20Madrid%20X%20LV%20Special%20Edition%20Jerse.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26%20Real%20Madrid%20X%20LV%20Special%20Edition%20Jerse.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26%20Real%20Madrid%20X%20LV%20Special%20Edition%20Jerse.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26%20Real%20Madrid%20X%20LV%20Special%20Edition%20Jerse%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26%20Real%20Madrid%20X%20LV%20Special%20Edition%20Jerse.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Concept%20Shirt%2025-26%20Real%20Madrid%20X%20LV%20Special%20Edition%20Jerse%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Louis Vuitton Concept Shirt 25-26 Real Madrid X LV Special Edition Jerse",
   "team": "Real Madrid",
@@ -16687,10 +16687,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid Special Edition Louis Vuitton Shirt 25-26",
   "team": "Real Madrid",
@@ -16709,10 +16709,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26%202.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Louis%20Vuitton%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Louis Vuitton Shirt 25-26 2",
   "team": "Real Madrid",
@@ -16731,10 +16731,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Pink Dragon Shirt 25-26",
   "team": "Real Madrid",
@@ -16753,10 +16753,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%202.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Pink Dragon Shirt 25-26 2",
   "team": "Real Madrid",
@@ -16775,10 +16775,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%203.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%203.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%203.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%203%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%203.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Pink%20Dragon%20Shirt%2025-26%203%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Pink Dragon Shirt 25-26 3",
   "team": "Real Madrid",
@@ -16797,10 +16797,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Rainbow%20Dragon%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Rainbow%20Dragon%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Rainbow%20Dragon%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Rainbow%20Dragon%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Rainbow%20Dragon%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Rainbow%20Dragon%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Rainbow Dragon Shirt 24-25",
   "team": "Real Madrid",
@@ -16819,10 +16819,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2023-24.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2023-24.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2023-24.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Shirt 23-24",
   "team": "Real Madrid",
@@ -16841,10 +16841,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2024-25.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2024-25.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2024-25.jpg",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Edition Shirt 24-25",
   "team": "Real Madrid",
@@ -16863,10 +16863,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid Special Edition Shirt 25-26",
   "team": "Real Madrid",
@@ -16885,10 +16885,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%202017-18%20(adidas%20Originals%20Collection).png",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%202017-18%20(adidas%20Originals%20Collection).png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%202017-18%20(adidas%20Originals%20Collection).png",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Shirt%202017-18%20(adidas%20Originals%20Collection)%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%202017-18%20(adidas%20Originals%20Collection).png",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Shirt%202017-18%20(adidas%20Originals%20Collection)%20achterkant.png"
   ],
   "name": "Real Madrid Special Edition Shirt 2017-18 (adidas Originals Collection)",
   "team": "Real Madrid",
@@ -16907,10 +16907,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Edition%20Viking%20Shirt%2024-25.png",
+  "image": "/collectie/Real%20Madrid%20Special%20Edition%20Viking%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Viking%20Shirt%2024-25.png",
-   "/public/collectie/Real%20Madrid%20Special%20Edition%20Viking%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Real%20Madrid%20Special%20Edition%20Viking%20Shirt%2024-25.png",
+   "/collectie/Real%20Madrid%20Special%20Edition%20Viking%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Real Madrid Special Edition Viking Shirt 24-25",
   "team": "Real Madrid",
@@ -16929,10 +16929,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Special%20Pink%20Edition%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20additional%20gear.jpg",
+  "image": "/collectie/Real%20Madrid%20Special%20Pink%20Edition%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20additional%20gear.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Special%20Pink%20Edition%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20additional%20gear.jpg",
-   "/public/collectie/Real%20Madrid%20Special%20Pink%20Edition%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20additional%20gear%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Special%20Pink%20Edition%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20additional%20gear.jpg",
+   "/collectie/Real%20Madrid%20Special%20Pink%20Edition%20Shirt%2024-25%20If%20you%20want%20to%20look%20at%20additional%20gear%20achterkant.jpg"
   ],
   "name": "Real Madrid Special Pink Edition Shirt 24-25 If you want to look at additional gear",
   "team": "Real Madrid",
@@ -16951,10 +16951,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Terrace%20Icons%20Shirt%2024-25.png",
+  "image": "/collectie/Real%20Madrid%20Terrace%20Icons%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Terrace%20Icons%20Shirt%2024-25.png",
-   "/public/collectie/Real%20Madrid%20Terrace%20Icons%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Real%20Madrid%20Terrace%20Icons%20Shirt%2024-25.png",
+   "/collectie/Real%20Madrid%20Terrace%20Icons%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Real Madrid Terrace Icons Shirt 24-25",
   "team": "Real Madrid Terrace Icons",
@@ -16973,10 +16973,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Third%20Shirt%2023-24.jpg",
+  "image": "/collectie/Real%20Madrid%20Third%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Third%20Shirt%2023-24.jpg",
-   "/public/collectie/Real%20Madrid%20Third%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Third%20Shirt%2023-24.jpg",
+   "/collectie/Real%20Madrid%20Third%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Real Madrid Third Shirt 23-24",
   "team": "Real Madrid",
@@ -16995,10 +16995,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Third%20Shirt%2024-25.png",
+  "image": "/collectie/Real%20Madrid%20Third%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Third%20Shirt%2024-25.png",
-   "/public/collectie/Real%20Madrid%20Third%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Real%20Madrid%20Third%20Shirt%2024-25.png",
+   "/collectie/Real%20Madrid%20Third%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Real Madrid Third Shirt 24-25",
   "team": "Real Madrid",
@@ -17017,10 +17017,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20Third%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid Third Shirt 25-26",
   "team": "Real Madrid",
@@ -17039,10 +17039,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Third%20Shirt%2025-26%20(adidas%20Originals%20Collection).png",
+  "image": "/collectie/Real%20Madrid%20Third%20Shirt%2025-26%20(adidas%20Originals%20Collection).png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Third%20Shirt%2025-26%20(adidas%20Originals%20Collection).png",
-   "/public/collectie/Real%20Madrid%20Third%20Shirt%2025-26%20(adidas%20Originals%20Collection)%20achterkant.png"
+   "/collectie/Real%20Madrid%20Third%20Shirt%2025-26%20(adidas%20Originals%20Collection).png",
+   "/collectie/Real%20Madrid%20Third%20Shirt%2025-26%20(adidas%20Originals%20Collection)%20achterkant.png"
   ],
   "name": "Real Madrid Third Shirt 25-26 (adidas Originals Collection)",
   "team": "Real Madrid",
@@ -17061,10 +17061,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20Third%20Shirt%2026-27.jpg",
+  "image": "/collectie/Real%20Madrid%20Third%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20Third%20Shirt%2026-27.jpg",
-   "/public/collectie/Real%20Madrid%20Third%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20Third%20Shirt%2026-27.jpg",
+   "/collectie/Real%20Madrid%20Third%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Real Madrid Third Shirt 26-27",
   "team": "Real Madrid",
@@ -17083,10 +17083,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20US%20Pack%20Baseball%20Shirt%2025-26.png",
+  "image": "/collectie/Real%20Madrid%20US%20Pack%20Baseball%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20US%20Pack%20Baseball%20Shirt%2025-26.png",
-   "/public/collectie/Real%20Madrid%20US%20Pack%20Baseball%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Real%20Madrid%20US%20Pack%20Baseball%20Shirt%2025-26.png",
+   "/collectie/Real%20Madrid%20US%20Pack%20Baseball%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Real Madrid US Pack Baseball Shirt 25-26",
   "team": "Real Madrid US Pack Baseball",
@@ -17105,10 +17105,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Real%20Madrid%20x%20Balmain%2023-24%20Special%20Concept%20Shirt.jpg",
+  "image": "/collectie/Real%20Madrid%20x%20Balmain%2023-24%20Special%20Concept%20Shirt.jpg",
   "gallery": [
-   "/public/collectie/Real%20Madrid%20x%20Balmain%2023-24%20Special%20Concept%20Shirt.jpg",
-   "/public/collectie/Real%20Madrid%20x%20Balmain%2023-24%20Special%20Concept%20Shirt%20achterkant.jpg"
+   "/collectie/Real%20Madrid%20x%20Balmain%2023-24%20Special%20Concept%20Shirt.jpg",
+   "/collectie/Real%20Madrid%20x%20Balmain%2023-24%20Special%20Concept%20Shirt%20achterkant.jpg"
   ],
   "name": "Real Madrid x Balmain 23-24 Special Concept Shirt",
   "team": "Real Madrid x Balmain 23-24",
@@ -17127,10 +17127,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Red%20Bull%20Bragantino%20Away%20Shirt%202025.jpg",
+  "image": "/collectie/Red%20Bull%20Bragantino%20Away%20Shirt%202025.jpg",
   "gallery": [
-   "/public/collectie/Red%20Bull%20Bragantino%20Away%20Shirt%202025.jpg",
-   "/public/collectie/Red%20Bull%20Bragantino%20Away%20Shirt%202025%20achterkant.jpg"
+   "/collectie/Red%20Bull%20Bragantino%20Away%20Shirt%202025.jpg",
+   "/collectie/Red%20Bull%20Bragantino%20Away%20Shirt%202025%20achterkant.jpg"
   ],
   "name": "Red Bull Bragantino Away Shirt 2025",
   "team": "Red Bull Bragantino",
@@ -17149,10 +17149,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Red%20Bull%20Bragantino%20Home%20Shirt%202025.jpg",
+  "image": "/collectie/Red%20Bull%20Bragantino%20Home%20Shirt%202025.jpg",
   "gallery": [
-   "/public/collectie/Red%20Bull%20Bragantino%20Home%20Shirt%202025.jpg",
-   "/public/collectie/Red%20Bull%20Bragantino%20Home%20Shirt%202025%20achterkant.jpg"
+   "/collectie/Red%20Bull%20Bragantino%20Home%20Shirt%202025.jpg",
+   "/collectie/Red%20Bull%20Bragantino%20Home%20Shirt%202025%20achterkant.jpg"
   ],
   "name": "Red Bull Bragantino Home Shirt 2025",
   "team": "Red Bull Bragantino",
@@ -17171,10 +17171,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Red%20Bull%20Salzburg%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Red%20Bull%20Salzburg%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Red%20Bull%20Salzburg%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Red%20Bull%20Salzburg%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Red%20Bull%20Salzburg%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Red%20Bull%20Salzburg%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Red Bull Salzburg Home Shirt 24-25",
   "team": "Red Bull Salzburg",
@@ -17193,10 +17193,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Republic%20of%20Ireland%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Republic%20of%20Ireland%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Republic%20of%20Ireland%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Republic%20of%20Ireland%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Republic%20of%20Ireland%20Away%20Shirt%202026.jpg",
+   "/collectie/Republic%20of%20Ireland%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Republic of Ireland Away Shirt 2026",
   "team": "Republic of Ireland",
@@ -17215,10 +17215,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/River%20Plate%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/River%20Plate%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/River%20Plate%20Away%20Shirt%2025-26.png",
-   "/public/collectie/River%20Plate%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/River%20Plate%20Away%20Shirt%2025-26.png",
+   "/collectie/River%20Plate%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "River Plate Away Shirt 25-26",
   "team": "River Plate",
@@ -17237,10 +17237,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/River%20Plate%20Terrace%20Icons%20Shirt%2025-26.png",
+  "image": "/collectie/River%20Plate%20Terrace%20Icons%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/River%20Plate%20Terrace%20Icons%20Shirt%2025-26.png",
-   "/public/collectie/River%20Plate%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
+   "/collectie/River%20Plate%20Terrace%20Icons%20Shirt%2025-26.png",
+   "/collectie/River%20Plate%20Terrace%20Icons%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "River Plate Terrace Icons Shirt 25-26",
   "team": "River Plate Terrace Icons",
@@ -17259,10 +17259,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Santos%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Santos%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Santos%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Santos%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Santos%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Santos%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Santos Away Shirt 25-26",
   "team": "Santos",
@@ -17281,10 +17281,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Santos%20Special%20Edition%20Shirt%2025-26.png",
+  "image": "/collectie/Santos%20Special%20Edition%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Santos%20Special%20Edition%20Shirt%2025-26.png",
-   "/public/collectie/Santos%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Santos%20Special%20Edition%20Shirt%2025-26.png",
+   "/collectie/Santos%20Special%20Edition%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Santos Special Edition Shirt 25-26",
   "team": "Santos",
@@ -17303,10 +17303,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/S%C3%A3o%20Paulo%20Home%20Shirt%2025-26.jpg",
+  "image": "/collectie/S%C3%A3o%20Paulo%20Home%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/S%C3%A3o%20Paulo%20Home%20Shirt%2025-26.jpg",
-   "/public/collectie/S%C3%A3o%20Paulo%20Home%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/S%C3%A3o%20Paulo%20Home%20Shirt%2025-26.jpg",
+   "/collectie/S%C3%A3o%20Paulo%20Home%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "São Paulo Home Shirt 25-26",
   "team": "São Paulo",
@@ -17325,10 +17325,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Saudi%20Arabia%20Home%20Shirt%202026.png",
+  "image": "/collectie/Saudi%20Arabia%20Home%20Shirt%202026.png",
   "gallery": [
-   "/public/collectie/Saudi%20Arabia%20Home%20Shirt%202026.png",
-   "/public/collectie/Saudi%20Arabia%20Home%20Shirt%202026%20achterkant.png"
+   "/collectie/Saudi%20Arabia%20Home%20Shirt%202026.png",
+   "/collectie/Saudi%20Arabia%20Home%20Shirt%202026%20achterkant.png"
   ],
   "name": "Saudi Arabia Home Shirt 2026",
   "team": "Saudi Arabia",
@@ -17347,10 +17347,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Scotland%20Away%20Shirt%202026.png",
+  "image": "/collectie/Scotland%20Away%20Shirt%202026.png",
   "gallery": [
-   "/public/collectie/Scotland%20Away%20Shirt%202026.png",
-   "/public/collectie/Scotland%20Away%20Shirt%202026%20achterkant.png"
+   "/collectie/Scotland%20Away%20Shirt%202026.png",
+   "/collectie/Scotland%20Away%20Shirt%202026%20achterkant.png"
   ],
   "name": "Scotland Away Shirt 2026",
   "team": "Scotland",
@@ -17369,10 +17369,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Scotland%20Home%20Shirt%2024-25.png",
+  "image": "/collectie/Scotland%20Home%20Shirt%2024-25.png",
   "gallery": [
-   "/public/collectie/Scotland%20Home%20Shirt%2024-25.png",
-   "/public/collectie/Scotland%20Home%20Shirt%2024-25%20achterkant.png"
+   "/collectie/Scotland%20Home%20Shirt%2024-25.png",
+   "/collectie/Scotland%20Home%20Shirt%2024-25%20achterkant.png"
   ],
   "name": "Scotland Home Shirt 24-25",
   "team": "Scotland",
@@ -17391,10 +17391,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Scotland%20Women%20Away%20Shirt%202025.png",
+  "image": "/collectie/Scotland%20Women%20Away%20Shirt%202025.png",
   "gallery": [
-   "/public/collectie/Scotland%20Women%20Away%20Shirt%202025.png",
-   "/public/collectie/Scotland%20Women%20Away%20Shirt%202025%20achterkant.png"
+   "/collectie/Scotland%20Women%20Away%20Shirt%202025.png",
+   "/collectie/Scotland%20Women%20Away%20Shirt%202025%20achterkant.png"
   ],
   "name": "Scotland Women Away Shirt 2025",
   "team": "Scotland Women",
@@ -17413,10 +17413,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sevilla%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Sevilla%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Sevilla%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Sevilla%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Sevilla%20Away%20Shirt%2025-26.png",
+   "/collectie/Sevilla%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Sevilla Away Shirt 25-26",
   "team": "Sevilla",
@@ -17435,10 +17435,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sevilla%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Sevilla%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Sevilla%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Sevilla%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Sevilla%20Home%20Shirt%2025-26.png",
+   "/collectie/Sevilla%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Sevilla Home Shirt 25-26",
   "team": "Sevilla",
@@ -17457,10 +17457,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sevilla%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Sevilla%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Sevilla%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Sevilla%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Sevilla%20Third%20Shirt%2025-26.png",
+   "/collectie/Sevilla%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Sevilla Third Shirt 25-26",
   "team": "Sevilla",
@@ -17479,10 +17479,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sheffield%20United%20Chinese%20New%20Year%20Pre-Match%20Shirt%2024-25.jpg",
+  "image": "/collectie/Sheffield%20United%20Chinese%20New%20Year%20Pre-Match%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Sheffield%20United%20Chinese%20New%20Year%20Pre-Match%20Shirt%2024-25.jpg",
-   "/public/collectie/Sheffield%20United%20Chinese%20New%20Year%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Sheffield%20United%20Chinese%20New%20Year%20Pre-Match%20Shirt%2024-25.jpg",
+   "/collectie/Sheffield%20United%20Chinese%20New%20Year%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Sheffield United Chinese New Year Pre-Match Shirt 24-25",
   "team": "Sheffield United Chinese New Year",
@@ -17501,10 +17501,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/South%20Korea%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/South%20Korea%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/South%20Korea%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/South%20Korea%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/South%20Korea%20Away%20Shirt%2024-25.jpg",
+   "/collectie/South%20Korea%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "South Korea Away Shirt 24-25",
   "team": "South Korea",
@@ -17523,10 +17523,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/South%20Korea%20Away%20Shirt%202025-2026.png",
+  "image": "/collectie/South%20Korea%20Away%20Shirt%202025-2026.png",
   "gallery": [
-   "/public/collectie/South%20Korea%20Away%20Shirt%202025-2026.png",
-   "/public/collectie/South%20Korea%20Away%20Shirt%202025-2026%20achterkant.png"
+   "/collectie/South%20Korea%20Away%20Shirt%202025-2026.png",
+   "/collectie/South%20Korea%20Away%20Shirt%202025-2026%20achterkant.png"
   ],
   "name": "South Korea Away Shirt 2025-2026",
   "team": "South Korea",
@@ -17545,10 +17545,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/South%20Korea%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/South%20Korea%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/South%20Korea%20Away%20Shirt%202026.jpg",
-   "/public/collectie/South%20Korea%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/South%20Korea%20Away%20Shirt%202026.jpg",
+   "/collectie/South%20Korea%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "South Korea Away Shirt 2026",
   "team": "South Korea",
@@ -17567,10 +17567,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/South%20Korea%20Away%20Shirt%202026%20If%20you%20would%20like%20to%20explore%20further.jpg",
+  "image": "/collectie/South%20Korea%20Away%20Shirt%202026%20If%20you%20would%20like%20to%20explore%20further.jpg",
   "gallery": [
-   "/public/collectie/South%20Korea%20Away%20Shirt%202026%20If%20you%20would%20like%20to%20explore%20further.jpg",
-   "/public/collectie/South%20Korea%20Away%20Shirt%202026%20If%20you%20would%20like%20to%20explore%20further%20achterkant.jpg"
+   "/collectie/South%20Korea%20Away%20Shirt%202026%20If%20you%20would%20like%20to%20explore%20further.jpg",
+   "/collectie/South%20Korea%20Away%20Shirt%202026%20If%20you%20would%20like%20to%20explore%20further%20achterkant.jpg"
   ],
   "name": "South Korea Away Shirt 2026 If you would like to explore further",
   "team": "South Korea",
@@ -17589,10 +17589,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/South%20Korea%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/South%20Korea%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/South%20Korea%20Home%20Shirt%2025-26.png",
-   "/public/collectie/South%20Korea%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/South%20Korea%20Home%20Shirt%2025-26.png",
+   "/collectie/South%20Korea%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "South Korea Home Shirt 25-26",
   "team": "South Korea",
@@ -17611,10 +17611,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/South%20Korea%20Home%20Shirt%202024-25.jpg",
+  "image": "/collectie/South%20Korea%20Home%20Shirt%202024-25.jpg",
   "gallery": [
-   "/public/collectie/South%20Korea%20Home%20Shirt%202024-25.jpg",
-   "/public/collectie/South%20Korea%20Home%20Shirt%202024-25%20achterkant.jpg"
+   "/collectie/South%20Korea%20Home%20Shirt%202024-25.jpg",
+   "/collectie/South%20Korea%20Home%20Shirt%202024-25%20achterkant.jpg"
   ],
   "name": "South Korea Home Shirt 2024-25",
   "team": "South Korea",
@@ -17633,10 +17633,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/South%20Korea%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/South%20Korea%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/South%20Korea%20Home%20Shirt%202026.jpg",
-   "/public/collectie/South%20Korea%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/South%20Korea%20Home%20Shirt%202026.jpg",
+   "/collectie/South%20Korea%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "South Korea Home Shirt 2026",
   "team": "South Korea",
@@ -17655,10 +17655,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Spain%20-Los%20Toros-%20Home%20Shirt%202024%20(Europe's%20Finest%20Collection).jpg",
+  "image": "/collectie/Spain%20-Los%20Toros-%20Home%20Shirt%202024%20(Europe's%20Finest%20Collection).jpg",
   "gallery": [
-   "/public/collectie/Spain%20-Los%20Toros-%20Home%20Shirt%202024%20(Europe's%20Finest%20Collection).jpg",
-   "/public/collectie/Spain%20-Los%20Toros-%20Home%20Shirt%202024%20(Europe's%20Finest%20Collection)%20achterkant.jpg"
+   "/collectie/Spain%20-Los%20Toros-%20Home%20Shirt%202024%20(Europe's%20Finest%20Collection).jpg",
+   "/collectie/Spain%20-Los%20Toros-%20Home%20Shirt%202024%20(Europe's%20Finest%20Collection)%20achterkant.jpg"
   ],
   "name": "Spain -Los Toros- Home Shirt 2024 (Europe's Finest Collection)",
   "team": "Spain -Los Toros-",
@@ -17677,10 +17677,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Spain%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Spain%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Spain%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Spain%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Spain%20Away%20Shirt%202026.jpg",
+   "/collectie/Spain%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Spain Away Shirt 2026",
   "team": "Spain",
@@ -17699,10 +17699,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Spain%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Spain%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Spain%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Spain%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Spain%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Spain%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Spain Home Shirt 24-25",
   "team": "Spain",
@@ -17721,10 +17721,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Spain%20Pre-Match%20Shirt%202026.jpeg",
+  "image": "/collectie/Spain%20Pre-Match%20Shirt%202026.jpeg",
   "gallery": [
-   "/public/collectie/Spain%20Pre-Match%20Shirt%202026.jpeg",
-   "/public/collectie/Spain%20Pre-Match%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Spain%20Pre-Match%20Shirt%202026.jpeg",
+   "/collectie/Spain%20Pre-Match%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Spain Pre-Match Shirt 2026",
   "team": "Spain",
@@ -17743,10 +17743,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Spain%20Women%20Away%20Shirt%202023.png",
+  "image": "/collectie/Spain%20Women%20Away%20Shirt%202023.png",
   "gallery": [
-   "/public/collectie/Spain%20Women%20Away%20Shirt%202023.png",
-   "/public/collectie/Spain%20Women%20Away%20Shirt%202023%20achterkant.png"
+   "/collectie/Spain%20Women%20Away%20Shirt%202023.png",
+   "/collectie/Spain%20Women%20Away%20Shirt%202023%20achterkant.png"
   ],
   "name": "Spain Women Away Shirt 2023",
   "team": "Spain Women",
@@ -17765,10 +17765,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sporting%20CP%20Away%20Shirt%2024-25%20(Cup%20Winners'%20Cup%2060th%20Anniversary%20Edition).jpg",
+  "image": "/collectie/Sporting%20CP%20Away%20Shirt%2024-25%20(Cup%20Winners'%20Cup%2060th%20Anniversary%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Sporting%20CP%20Away%20Shirt%2024-25%20(Cup%20Winners'%20Cup%2060th%20Anniversary%20Edition).jpg",
-   "/public/collectie/Sporting%20CP%20Away%20Shirt%2024-25%20(Cup%20Winners'%20Cup%2060th%20Anniversary%20Edition)%20achterkant.jpg"
+   "/collectie/Sporting%20CP%20Away%20Shirt%2024-25%20(Cup%20Winners'%20Cup%2060th%20Anniversary%20Edition).jpg",
+   "/collectie/Sporting%20CP%20Away%20Shirt%2024-25%20(Cup%20Winners'%20Cup%2060th%20Anniversary%20Edition)%20achterkant.jpg"
   ],
   "name": "Sporting CP Away Shirt 24-25 (Cup Winners' Cup 60th Anniversary Edition)",
   "team": "Sporting CP",
@@ -17787,10 +17787,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sporting%20CP%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Sporting%20CP%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Sporting%20CP%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Sporting%20CP%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Sporting%20CP%20Away%20Shirt%2025-26.png",
+   "/collectie/Sporting%20CP%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Sporting CP Away Shirt 25-26",
   "team": "Sporting CP",
@@ -17809,10 +17809,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sporting%20CP%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Sporting%20CP%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Sporting%20CP%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Sporting%20CP%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Sporting%20CP%20Home%20Shirt%2025-26.png",
+   "/collectie/Sporting%20CP%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Sporting CP Home Shirt 25-26",
   "team": "Sporting CP",
@@ -17831,10 +17831,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sporting%20CP%20Third%20Shirt%2024-25.jpg",
+  "image": "/collectie/Sporting%20CP%20Third%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Sporting%20CP%20Third%20Shirt%2024-25.jpg",
-   "/public/collectie/Sporting%20CP%20Third%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Sporting%20CP%20Third%20Shirt%2024-25.jpg",
+   "/collectie/Sporting%20CP%20Third%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Sporting CP Third Shirt 24-25",
   "team": "Sporting CP",
@@ -17853,10 +17853,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sporting%20CP%20Third%20Shirt%2025-26.png",
+  "image": "/collectie/Sporting%20CP%20Third%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Sporting%20CP%20Third%20Shirt%2025-26.png",
-   "/public/collectie/Sporting%20CP%20Third%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Sporting%20CP%20Third%20Shirt%2025-26.png",
+   "/collectie/Sporting%20CP%20Third%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Sporting CP Third Shirt 25-26",
   "team": "Sporting CP",
@@ -17875,10 +17875,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/SSC%20Napoli%20Training%20Shirt%2025-26%20'Cyborg'%20Edition.png",
+  "image": "/collectie/SSC%20Napoli%20Training%20Shirt%2025-26%20'Cyborg'%20Edition.png",
   "gallery": [
-   "/public/collectie/SSC%20Napoli%20Training%20Shirt%2025-26%20'Cyborg'%20Edition.png",
-   "/public/collectie/SSC%20Napoli%20Training%20Shirt%2025-26%20'Cyborg'%20Edition%20achterkant.png"
+   "/collectie/SSC%20Napoli%20Training%20Shirt%2025-26%20'Cyborg'%20Edition.png",
+   "/collectie/SSC%20Napoli%20Training%20Shirt%2025-26%20'Cyborg'%20Edition%20achterkant.png"
   ],
   "name": "SSC Napoli Training Shirt 25-26 'Cyborg' Edition",
   "team": "SSC Napoli Training",
@@ -17897,10 +17897,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sweden%20Away%20Shirt%2026-27.jpg",
+  "image": "/collectie/Sweden%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Sweden%20Away%20Shirt%2026-27.jpg",
-   "/public/collectie/Sweden%20Away%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Sweden%20Away%20Shirt%2026-27.jpg",
+   "/collectie/Sweden%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Sweden Away Shirt 26-27",
   "team": "Sweden",
@@ -17919,10 +17919,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Sweden%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Sweden%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Sweden%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Sweden%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Sweden%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Sweden%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Sweden Home Shirt 24-25",
   "team": "Sweden",
@@ -17941,10 +17941,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tigres%20UANL%20Away%20Shirt%2025-26.jpg",
+  "image": "/collectie/Tigres%20UANL%20Away%20Shirt%2025-26.jpg",
   "gallery": [
-   "/public/collectie/Tigres%20UANL%20Away%20Shirt%2025-26.jpg",
-   "/public/collectie/Tigres%20UANL%20Away%20Shirt%2025-26%20achterkant.jpg"
+   "/collectie/Tigres%20UANL%20Away%20Shirt%2025-26.jpg",
+   "/collectie/Tigres%20UANL%20Away%20Shirt%2025-26%20achterkant.jpg"
   ],
   "name": "Tigres UANL Away Shirt 25-26",
   "team": "Tigres UANL",
@@ -17963,10 +17963,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tigres%20UANL%20Training%20Shirt%2024-25%20Adidas%20Originals%20Edition.jpg",
+  "image": "/collectie/Tigres%20UANL%20Training%20Shirt%2024-25%20Adidas%20Originals%20Edition.jpg",
   "gallery": [
-   "/public/collectie/Tigres%20UANL%20Training%20Shirt%2024-25%20Adidas%20Originals%20Edition.jpg",
-   "/public/collectie/Tigres%20UANL%20Training%20Shirt%2024-25%20Adidas%20Originals%20Edition%20achterkant.jpg"
+   "/collectie/Tigres%20UANL%20Training%20Shirt%2024-25%20Adidas%20Originals%20Edition.jpg",
+   "/collectie/Tigres%20UANL%20Training%20Shirt%2024-25%20Adidas%20Originals%20Edition%20achterkant.jpg"
   ],
   "name": "Tigres UANL Training Shirt 24-25 Adidas Originals Edition",
   "team": "Tigres UANL Training",
@@ -17985,10 +17985,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tottenham%20Away%20Shirt%2026-27.jpg",
+  "image": "/collectie/Tottenham%20Away%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Tottenham%20Away%20Shirt%2026-27.jpg",
-   "/public/collectie/Tottenham%20Away%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Tottenham%20Away%20Shirt%2026-27.jpg",
+   "/collectie/Tottenham%20Away%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Tottenham Away Shirt 26-27",
   "team": "Tottenham",
@@ -18007,10 +18007,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tottenham%20Home%20Pre-Match%20Shirt%2025-26.png",
+  "image": "/collectie/Tottenham%20Home%20Pre-Match%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Tottenham%20Home%20Pre-Match%20Shirt%2025-26.png",
-   "/public/collectie/Tottenham%20Home%20Pre-Match%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Tottenham%20Home%20Pre-Match%20Shirt%2025-26.png",
+   "/collectie/Tottenham%20Home%20Pre-Match%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Tottenham Home Pre-Match Shirt 25-26",
   "team": "Tottenham",
@@ -18029,10 +18029,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26.png",
-   "/public/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26.png",
+   "/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Tottenham Hotspur Away Shirt 25-26",
   "team": "Tottenham Hotspur",
@@ -18051,10 +18051,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26%20(Stray%20Kids%20Limited%20Edition).png",
+  "image": "/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26%20(Stray%20Kids%20Limited%20Edition).png",
   "gallery": [
-   "/public/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26%20(Stray%20Kids%20Limited%20Edition).png",
-   "/public/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26%20(Stray%20Kids%20Limited%20Edition)%20achterkant.png"
+   "/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26%20(Stray%20Kids%20Limited%20Edition).png",
+   "/collectie/Tottenham%20Hotspur%20Away%20Shirt%2025-26%20(Stray%20Kids%20Limited%20Edition)%20achterkant.png"
   ],
   "name": "Tottenham Hotspur Away Shirt 25-26 (Stray Kids Limited Edition)",
   "team": "Tottenham Hotspur",
@@ -18073,10 +18073,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tottenham%20Hotspur%20Home%20Shirt%2023-24.jpg",
+  "image": "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2023-24.jpg",
   "gallery": [
-   "/public/collectie/Tottenham%20Hotspur%20Home%20Shirt%2023-24.jpg",
-   "/public/collectie/Tottenham%20Hotspur%20Home%20Shirt%2023-24%20achterkant.jpg"
+   "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2023-24.jpg",
+   "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2023-24%20achterkant.jpg"
   ],
   "name": "Tottenham Hotspur Home Shirt 23-24",
   "team": "Tottenham Hotspur",
@@ -18095,10 +18095,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26.png",
+   "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Tottenham Hotspur Home Shirt 25-26",
   "team": "Tottenham Hotspur",
@@ -18117,10 +18117,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26%202.jpg",
+  "image": "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26%202.jpg",
   "gallery": [
-   "/public/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26%202.jpg",
-   "/public/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26%202%20achterkant.jpg"
+   "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26%202.jpg",
+   "/collectie/Tottenham%20Hotspur%20Home%20Shirt%2025-26%202%20achterkant.jpg"
   ],
   "name": "Tottenham Hotspur Home Shirt 25-26 2",
   "team": "Tottenham Hotspur",
@@ -18139,10 +18139,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tottenham%20Hotspur%20Third%20Shirt%2024-25%20('Together%20We%20Rise'%20Edition).jpg",
+  "image": "/collectie/Tottenham%20Hotspur%20Third%20Shirt%2024-25%20('Together%20We%20Rise'%20Edition).jpg",
   "gallery": [
-   "/public/collectie/Tottenham%20Hotspur%20Third%20Shirt%2024-25%20('Together%20We%20Rise'%20Edition).jpg",
-   "/public/collectie/Tottenham%20Hotspur%20Third%20Shirt%2024-25%20('Together%20We%20Rise'%20Edition)%20achterkant.jpg"
+   "/collectie/Tottenham%20Hotspur%20Third%20Shirt%2024-25%20('Together%20We%20Rise'%20Edition).jpg",
+   "/collectie/Tottenham%20Hotspur%20Third%20Shirt%2024-25%20('Together%20We%20Rise'%20Edition)%20achterkant.jpg"
   ],
   "name": "Tottenham Hotspur Third Shirt 24-25 ('Together We Rise' Edition)",
   "team": "Tottenham Hotspur",
@@ -18161,10 +18161,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tottenham%20Hotspur%20Third%20Shirt%2025-26%20Total%2090%20Edition.png",
+  "image": "/collectie/Tottenham%20Hotspur%20Third%20Shirt%2025-26%20Total%2090%20Edition.png",
   "gallery": [
-   "/public/collectie/Tottenham%20Hotspur%20Third%20Shirt%2025-26%20Total%2090%20Edition.png",
-   "/public/collectie/Tottenham%20Hotspur%20Third%20Shirt%2025-26%20Total%2090%20Edition%20achterkant.png"
+   "/collectie/Tottenham%20Hotspur%20Third%20Shirt%2025-26%20Total%2090%20Edition.png",
+   "/collectie/Tottenham%20Hotspur%20Third%20Shirt%2025-26%20Total%2090%20Edition%20achterkant.png"
   ],
   "name": "Tottenham Hotspur Third Shirt 25-26 Total 90 Edition",
   "team": "Tottenham Hotspur",
@@ -18183,10 +18183,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Tottenham%20Lunar%20New%20Year%20Pre-Match%20Shirt%2024-25.jpg",
+  "image": "/collectie/Tottenham%20Lunar%20New%20Year%20Pre-Match%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Tottenham%20Lunar%20New%20Year%20Pre-Match%20Shirt%2024-25.jpg",
-   "/public/collectie/Tottenham%20Lunar%20New%20Year%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Tottenham%20Lunar%20New%20Year%20Pre-Match%20Shirt%2024-25.jpg",
+   "/collectie/Tottenham%20Lunar%20New%20Year%20Pre-Match%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Tottenham Lunar New Year Pre-Match Shirt 24-25",
   "team": "Tottenham Lunar New Year",
@@ -18205,10 +18205,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Turkey%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Turkey%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Turkey%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Turkey%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Turkey%20Away%20Shirt%202026.jpg",
+   "/collectie/Turkey%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Turkey Away Shirt 2026",
   "team": "Turkey",
@@ -18227,10 +18227,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Turkey%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Turkey%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Turkey%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Turkey%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Turkey%20Home%20Shirt%202026.jpg",
+   "/collectie/Turkey%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Turkey Home Shirt 2026",
   "team": "Turkey",
@@ -18249,10 +18249,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/UD%20Las%20Palmas%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/UD%20Las%20Palmas%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/UD%20Las%20Palmas%20Home%20Shirt%2025-26.png",
-   "/public/collectie/UD%20Las%20Palmas%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/UD%20Las%20Palmas%20Home%20Shirt%2025-26.png",
+   "/collectie/UD%20Las%20Palmas%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "UD Las Palmas Home Shirt 25-26",
   "team": "UD Las Palmas",
@@ -18271,10 +18271,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Uruguay%20Away%20Shirt%202026.jpg",
+  "image": "/collectie/Uruguay%20Away%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Uruguay%20Away%20Shirt%202026.jpg",
-   "/public/collectie/Uruguay%20Away%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Uruguay%20Away%20Shirt%202026.jpg",
+   "/collectie/Uruguay%20Away%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Uruguay Away Shirt 2026",
   "team": "Uruguay",
@@ -18293,10 +18293,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Uruguay%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Uruguay%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Uruguay%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Uruguay%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Uruguay%20Home%20Shirt%202026.jpg",
+   "/collectie/Uruguay%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Uruguay Home Shirt 2026",
   "team": "Uruguay",
@@ -18315,10 +18315,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/USA%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/USA%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/USA%20Away%20Shirt%2025-26.png",
-   "/public/collectie/USA%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/USA%20Away%20Shirt%2025-26.png",
+   "/collectie/USA%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "USA Away Shirt 25-26",
   "team": "USA",
@@ -18337,10 +18337,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/USA%20Away%20Shirt%202026-27.jpg",
+  "image": "/collectie/USA%20Away%20Shirt%202026-27.jpg",
   "gallery": [
-   "/public/collectie/USA%20Away%20Shirt%202026-27.jpg",
-   "/public/collectie/USA%20Away%20Shirt%202026-27%20achterkant.jpg"
+   "/collectie/USA%20Away%20Shirt%202026-27.jpg",
+   "/collectie/USA%20Away%20Shirt%202026-27%20achterkant.jpg"
   ],
   "name": "USA Away Shirt 2026-27",
   "team": "USA",
@@ -18359,10 +18359,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/USA%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/USA%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/USA%20Home%20Shirt%2025-26.png",
-   "/public/collectie/USA%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/USA%20Home%20Shirt%2025-26.png",
+   "/collectie/USA%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "USA Home Shirt 25-26",
   "team": "USA",
@@ -18381,10 +18381,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/USA%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/USA%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/USA%20Home%20Shirt%202026.jpg",
-   "/public/collectie/USA%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/USA%20Home%20Shirt%202026.jpg",
+   "/collectie/USA%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "USA Home Shirt 2026",
   "team": "USA",
@@ -18403,10 +18403,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Valencia%20Away%20Shirt%2024-25.jpg",
+  "image": "/collectie/Valencia%20Away%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Valencia%20Away%20Shirt%2024-25.jpg",
-   "/public/collectie/Valencia%20Away%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Valencia%20Away%20Shirt%2024-25.jpg",
+   "/collectie/Valencia%20Away%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Valencia Away Shirt 24-25",
   "team": "Valencia",
@@ -18425,10 +18425,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Valencia%20CF%20Home%20Shirt%2024-25.jpg",
+  "image": "/collectie/Valencia%20CF%20Home%20Shirt%2024-25.jpg",
   "gallery": [
-   "/public/collectie/Valencia%20CF%20Home%20Shirt%2024-25.jpg",
-   "/public/collectie/Valencia%20CF%20Home%20Shirt%2024-25%20achterkant.jpg"
+   "/collectie/Valencia%20CF%20Home%20Shirt%2024-25.jpg",
+   "/collectie/Valencia%20CF%20Home%20Shirt%2024-25%20achterkant.jpg"
   ],
   "name": "Valencia CF Home Shirt 24-25",
   "team": "Valencia CF",
@@ -18447,10 +18447,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Venezia%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Venezia%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Venezia%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Venezia%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Venezia%20Home%20Shirt%2025-26.png",
+   "/collectie/Venezia%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Venezia Home Shirt 25-26",
   "team": "Venezia",
@@ -18469,10 +18469,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Venezuela%20Home%20Shirt%2026-27.jpg",
+  "image": "/collectie/Venezuela%20Home%20Shirt%2026-27.jpg",
   "gallery": [
-   "/public/collectie/Venezuela%20Home%20Shirt%2026-27.jpg",
-   "/public/collectie/Venezuela%20Home%20Shirt%2026-27%20achterkant.jpg"
+   "/collectie/Venezuela%20Home%20Shirt%2026-27.jpg",
+   "/collectie/Venezuela%20Home%20Shirt%2026-27%20achterkant.jpg"
   ],
   "name": "Venezuela Home Shirt 26-27",
   "team": "Venezuela",
@@ -18491,10 +18491,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/VfB%20Stuttgart%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/VfB%20Stuttgart%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/VfB%20Stuttgart%20Away%20Shirt%2025-26.png",
-   "/public/collectie/VfB%20Stuttgart%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/VfB%20Stuttgart%20Away%20Shirt%2025-26.png",
+   "/collectie/VfB%20Stuttgart%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "VfB Stuttgart Away Shirt 25-26",
   "team": "VfB Stuttgart",
@@ -18513,10 +18513,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26.png",
-   "/public/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26.png",
+   "/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "VfB Stuttgart Home Shirt 25-26",
   "team": "VfB Stuttgart",
@@ -18535,10 +18535,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26%202.png",
+  "image": "/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26%202.png",
   "gallery": [
-   "/public/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26%202.png",
-   "/public/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26%202%20achterkant.png"
+   "/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26%202.png",
+   "/collectie/VfB%20Stuttgart%20Home%20Shirt%2025-26%202%20achterkant.png"
   ],
   "name": "VfB Stuttgart Home Shirt 25-26 2",
   "team": "VfB Stuttgart",
@@ -18557,10 +18557,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Wales%20Away%20Shirt%2026-27.png",
+  "image": "/collectie/Wales%20Away%20Shirt%2026-27.png",
   "gallery": [
-   "/public/collectie/Wales%20Away%20Shirt%2026-27.png",
-   "/public/collectie/Wales%20Away%20Shirt%2026-27%20achterkant.png"
+   "/collectie/Wales%20Away%20Shirt%2026-27.png",
+   "/collectie/Wales%20Away%20Shirt%2026-27%20achterkant.png"
   ],
   "name": "Wales Away Shirt 26-27",
   "team": "Wales",
@@ -18579,10 +18579,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Wales%20Home%20Shirt%202026.jpg",
+  "image": "/collectie/Wales%20Home%20Shirt%202026.jpg",
   "gallery": [
-   "/public/collectie/Wales%20Home%20Shirt%202026.jpg",
-   "/public/collectie/Wales%20Home%20Shirt%202026%20achterkant.jpg"
+   "/collectie/Wales%20Home%20Shirt%202026.jpg",
+   "/collectie/Wales%20Home%20Shirt%202026%20achterkant.jpg"
   ],
   "name": "Wales Home Shirt 2026",
   "team": "Wales",
@@ -18601,10 +18601,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/Walsall%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/Walsall%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/Walsall%20Home%20Shirt%2025-26.png",
-   "/public/collectie/Walsall%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/Walsall%20Home%20Shirt%2025-26.png",
+   "/collectie/Walsall%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "Walsall Home Shirt 25-26",
   "team": "Walsall",
@@ -18623,10 +18623,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/West%20Ham%20Home%20Shirt%2025-26.png",
+  "image": "/collectie/West%20Ham%20Home%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/West%20Ham%20Home%20Shirt%2025-26.png",
-   "/public/collectie/West%20Ham%20Home%20Shirt%2025-26%20achterkant.png"
+   "/collectie/West%20Ham%20Home%20Shirt%2025-26.png",
+   "/collectie/West%20Ham%20Home%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "West Ham Home Shirt 25-26",
   "team": "West Ham",
@@ -18645,10 +18645,10 @@ export const publicCollectieShirts: PublicShirt[] = [
   "availability": "ready"
  },
  {
-  "image": "/public/collectie/West%20Ham%20United%20Away%20Shirt%2025-26.png",
+  "image": "/collectie/West%20Ham%20United%20Away%20Shirt%2025-26.png",
   "gallery": [
-   "/public/collectie/West%20Ham%20United%20Away%20Shirt%2025-26.png",
-   "/public/collectie/West%20Ham%20United%20Away%20Shirt%2025-26%20achterkant.png"
+   "/collectie/West%20Ham%20United%20Away%20Shirt%2025-26.png",
+   "/collectie/West%20Ham%20United%20Away%20Shirt%2025-26%20achterkant.png"
   ],
   "name": "West Ham United Away Shirt 25-26",
   "team": "West Ham United",

@@ -13,7 +13,7 @@ try {
   for (const it of JSON.parse(json)) old[it.name] = it;
 } catch {}
 
-const enc = (p) => "/" + p.split("/").map(encodeURIComponent).join("/");
+const enc = (p) => "/" + p.replace(/^public\//, "").split("/").map(encodeURIComponent).join("/");
 const sortImgs = (a, b) => {
   const w = (n) => (/achterkant|back/i.test(n) ? 1 : 0);
   return w(a) - w(b) || a.localeCompare(b, "en", { numeric: true });

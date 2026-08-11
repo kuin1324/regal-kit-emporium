@@ -9,7 +9,6 @@ import { useProductName } from "@/lib/productName";
 import Pagination from "@/components/Pagination";
 import ProductFilters from "@/components/ProductFilters";
 import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
-import ShirtImage from "@/components/ShirtImage";
 import { CUSTOM_PRICE } from "@/components/ProductDetailModal";
 
 const PAGE_SIZE = 60;
@@ -266,16 +265,7 @@ const CollectionView = ({ items, onSelect }: Props) => {
                       : "border-border/50 group-hover:border-primary/30"
                   }`}
                 >
-                  <div className="aspect-[4/5] overflow-hidden">
-                    <ShirtImage
-                      src={product.image}
-                      fallback={product.fallback}
-                      alt={productName(product.name)}
-                      draggable={false}
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-5 pt-12">
+                  <div className="p-5">
                     <h3 className="font-display text-base font-semibold tracking-wide">{productName(product.name)}</h3>
                     <p className="mb-2 text-xs text-muted-foreground">{product.team}</p>
                     <p className="font-display text-lg font-bold text-gradient-gold">{formatPrice(product.price)}</p>

@@ -36,7 +36,6 @@ import spanjeCreamFront from "@/assets/shirt-spanje-cream-front.jpg";
 import spanjeCreamBack from "@/assets/shirt-spanje-cream-back.jpg";
 import argentinieFront from "@/assets/shirt-argentinie-front.jpg";
 import argentinieBack from "@/assets/shirt-argentinie-back.jpg";
-import { collectieShirts } from "@/data/collectie_shirts";
 import { publicCollectieShirts } from "@/data/public_collectie";
 
 import ZoomableImage from "@/components/ZoomableImage";

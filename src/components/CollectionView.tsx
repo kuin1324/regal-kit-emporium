@@ -8,6 +8,7 @@ import { useCurrency } from "@/context/CurrencyContext";
 import { useProductName } from "@/lib/productName";
 import Pagination from "@/components/Pagination";
 import ProductFilters from "@/components/ProductFilters";
+import ShirtImage from "@/components/ShirtImage";
 import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
 import { CUSTOM_PRICE } from "@/components/ProductDetailModal";
 
@@ -265,7 +266,16 @@ const CollectionView = ({ items, onSelect }: Props) => {
                       : "border-border/50 group-hover:border-primary/30"
                   }`}
                 >
+                  <div className="aspect-[4/5] overflow-hidden bg-muted/20">
+                    <ShirtImage
+                      src={product.image}
+                      fallback={product.fallback}
+                      alt={productName(product.name)}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
                   <div className="p-5">
+
                     <h3 className="font-display text-base font-semibold tracking-wide">{productName(product.name)}</h3>
                     <p className="mb-2 text-xs text-muted-foreground">{product.team}</p>
                     <p className="font-display text-lg font-bold text-gradient-gold">{formatPrice(product.price)}</p>

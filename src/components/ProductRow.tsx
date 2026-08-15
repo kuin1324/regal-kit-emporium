@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import type { ReactNode } from "react";
 import { useCurrency } from "@/context/CurrencyContext";
 import { Plus, ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -15,7 +14,7 @@ export interface RowProduct {
 }
 
 interface ProductRowProps {
-  title: ReactNode;
+  title: string;
   products: RowProduct[];
   seeAllHref?: string;
   onProductClick?: (name: string) => void;

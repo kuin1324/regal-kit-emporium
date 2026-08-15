@@ -22,7 +22,7 @@ const Collectie = () => {
           <PhotoNotice />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="mb-10 text-center">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">{t("collection.eyebrow")}</p>
-            <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">{t("collection.title")}</h1>
+            <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl"><span className="text-blue-500">{t("collection.title")}</span></h1>
           </motion.div>
 
           <CollectionView items={allCollectieItems} onSelect={setSelectedProduct} />

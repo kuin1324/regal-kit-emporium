@@ -21,7 +21,8 @@ const PRICE = "€30";
 const teamMap = new Map();
 if (fs.existsSync(OUT)) {
   const raw = fs.readFileSync(OUT, "utf8");
-  const body = raw.slice(raw.indexOf("["), raw.lastIndexOf("]") + 1);
+  const start = raw.indexOf("[", raw.indexOf("publicCollectieShirts"));
+  const body = raw.slice(start, raw.lastIndexOf("]") + 1);
   try {
     for (const item of JSON.parse(body)) {
       if (item.team && !teamMap.has(item.team)) teamMap.set(item.team, item.leagues || []);

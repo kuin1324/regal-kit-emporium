@@ -8,6 +8,13 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    // Project files can be restored into the mounted workspace just after
+    // Vite starts. Polling makes Vite notice those files instead of keeping
+    // an outdated "module not found" result until the next restart.
+    watch: {
+      usePolling: true,
+      interval: 500,
+    },
     hmr: {
       overlay: false,
     },

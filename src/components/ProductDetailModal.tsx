@@ -177,7 +177,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                     }`}
                     aria-label={`${displayName} ${idx + 1}`}
                   >
-                    <ShirtImage src={thumbSrc(img)} fallback={img} alt={`${displayName} ${idx + 1}`} className="w-full h-full object-cover" />
+                    <ShirtImage src={thumbSrc(img)} fallback={img} alt={`${displayName} ${idx + 1}`} loading="lazy" fetchPriority={activeImage === idx ? "high" : "low"} className="w-full h-full object-cover" />
                   </button>
                 ))}
               </div>
@@ -188,6 +188,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                   <ZoomableImage
                     key={gallery[activeImage]}
                     src={gallery[activeImage]}
+                    preview={thumbSrc(gallery[activeImage])}
                     fallback={(selected as { fallback?: string | null }).fallback}
                     alt={displayName}
                   />

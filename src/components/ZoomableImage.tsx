@@ -17,6 +17,7 @@ const ZoomableImage = ({ src, fallback, alt }: Props) => {
   const [zoom, setZoom] = useState(1);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
   const [source, setSource] = useState(src);
+  const [unavailable, setUnavailable] = useState(false);
   const state = useRef({ zoom: 1, offset: { x: 0, y: 0 } });
   const drag = useRef<{ x: number; y: number; ox: number; oy: number } | null>(null);
 
@@ -24,6 +25,7 @@ const ZoomableImage = ({ src, fallback, alt }: Props) => {
 
   useEffect(() => {
     setSource(src);
+    setUnavailable(false);
     setZoom(1);
     setOffset({ x: 0, y: 0 });
   }, [src]);
@@ -95,21 +97,23 @@ const ZoomableImage = ({ src, fallback, alt }: Props) => {
         onPointerUp={() => (drag.current = null)}
         onPointerLeave={() => (drag.current = null)}
       >
-        <img
-          src={source}
-          alt={alt}
-          draggable={false}
-          decoding="async"
-          onError={() => {
-            if (fallback && source !== fallback) setSource(fallback);
-            else if (source !== "/placeholder.svg") setSource("/placeholder.svg");
-          }}
-          style={{
-            transform: `translate(${offset.x}px, ${offset.y}px) scale(${zoom})`,
-            transformOrigin: "0 0",
-          }}
-          className="w-full h-full object-contain will-change-transform"
-        />
+        {!unavailable && (
+          <img
+            src={source}
+            alt={alt}
+            draggable={false}
+            decoding="async"
+            onError={() => {
+              if (fallback && source !== fallback) setSource(fallback);
+              else setUnavailable(true);
+            }}
+            style={{
+              transform: `translate(${offset.x}px, ${offset.y}px) scale(${zoom})`,
+              transformOrigin: "0 0",
+            }}
+            className="w-full h-full object-contain will-change-transform"
+          />
+        )}
       </div>
 
       <div className="absolute bottom-2 right-2 flex gap-1 rounded-full border border-border bg-card/90 p-1 backdrop-blur">

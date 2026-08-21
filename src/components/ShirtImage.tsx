@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
@@ -12,6 +12,15 @@ interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
 const ShirtImage = ({ src, fallback, alt = "", ...rest }: Props) => {
   const [current, setCurrent] = useState(src);
   const [failed, setFailed] = useState(false);
+  const [unavailable, setUnavailable] = useState(false);
+
+  useEffect(() => {
+    setCurrent(src);
+    setFailed(false);
+    setUnavailable(false);
+  }, [src]);
+
+  if (unavailable) return null;
 
   return (
     <img
@@ -25,10 +34,7 @@ const ShirtImage = ({ src, fallback, alt = "", ...rest }: Props) => {
         if (!failed && fallback && current !== fallback) {
           setCurrent(fallback);
           setFailed(true);
-        } else if (current !== "/placeholder.svg") {
-          setCurrent("/placeholder.svg");
-          setFailed(true);
-        }
+        } else setUnavailable(true);
       }}
     />
   );

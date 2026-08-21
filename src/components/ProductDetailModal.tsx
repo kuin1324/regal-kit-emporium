@@ -41,6 +41,7 @@ import { publicCollectieShirts } from "@/data/public_collectie";
 
 import ZoomableImage from "@/components/ZoomableImage";
 import ShirtImage from "@/components/ShirtImage";
+import { thumbSrc } from "@/lib/thumb";
 import { useAdminView } from "@/lib/admin";
 import { useProductName } from "@/lib/productName";
 

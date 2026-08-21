@@ -10,6 +10,7 @@ import Pagination from "@/components/Pagination";
 import ProductFilters from "@/components/ProductFilters";
 import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
 import ShirtImage from "@/components/ShirtImage";
+import { thumbSrc } from "@/lib/thumb";
 import { CUSTOM_PRICE } from "@/components/ProductDetailModal";
 
 const PAGE_SIZE = 60;

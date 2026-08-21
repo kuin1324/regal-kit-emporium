@@ -268,10 +268,12 @@ const CollectionView = ({ items, onSelect }: Props) => {
                 >
                   <div className="aspect-[4/5] overflow-hidden">
                     <ShirtImage
-                      src={product.image}
-                      fallback={product.fallback}
+                      src={thumbSrc(product.image)}
+                      fallback={product.image || product.fallback}
                       alt={productName(product.name)}
                       draggable={false}
+                      width={420}
+                      height={525}
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>

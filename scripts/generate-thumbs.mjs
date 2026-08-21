@@ -15,7 +15,7 @@ for (const f of SRC_FILES) {
   const p = path.join(ROOT, f);
   if (!fs.existsSync(p)) continue;
   const raw = fs.readFileSync(p, "utf8");
-  for (const m of raw.matchAll(/"image"\s*:\s*"(\/collectie\/[^"]+)"/g)) covers.add(m[1]);
+  for (const m of raw.matchAll(/"(\/collectie\/[^"]+)"/g)) covers.add(m[1]);
 }
 
 const jobs = [];

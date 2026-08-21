@@ -41,6 +41,7 @@ import { publicCollectieShirts } from "@/data/public_collectie";
 
 import ZoomableImage from "@/components/ZoomableImage";
 import ShirtImage from "@/components/ShirtImage";
+import { thumbSrc } from "@/lib/thumb";
 import { useAdminView } from "@/lib/admin";
 import { useProductName } from "@/lib/productName";
 
@@ -176,7 +177,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                     }`}
                     aria-label={`${displayName} ${idx + 1}`}
                   >
-                    <ShirtImage src={img} fallback={(selected as { fallback?: string | null }).fallback} alt={`${displayName} ${idx + 1}`} className="w-full h-full object-cover" />
+                    <ShirtImage src={thumbSrc(img)} fallback={img} alt={`${displayName} ${idx + 1}`} className="w-full h-full object-cover" />
                   </button>
                 ))}
               </div>

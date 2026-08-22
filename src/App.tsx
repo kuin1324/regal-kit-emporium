@@ -17,8 +17,6 @@ import Collectie from "./pages/Collectie.tsx";
 import SpecialEdition from "./pages/SpecialEdition.tsx";
 import Retro from "./pages/Retro.tsx";
 import LongSleeves from "./pages/LongSleeves.tsx";
-import Shorts from "./pages/Shorts.tsx";
-import FullKits from "./pages/FullKits.tsx";
 
 import Favorieten from "./pages/Favorieten.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -45,8 +43,6 @@ const App = () => (
             <Route path="/special-edition" element={<SpecialEdition />} />
             <Route path="/retro" element={<Retro />} />
             <Route path="/long-sleeve" element={<LongSleeves />} />
-            <Route path="/shorts" element={<Shorts />} />
-            <Route path="/full-kits" element={<FullKits />} />
             <Route path="/favorieten" element={<Favorieten />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/voorraad" element={<Voorraad />} />

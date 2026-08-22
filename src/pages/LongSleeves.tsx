@@ -4,9 +4,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PhotoNotice from "@/components/PhotoNotice";
 import CollectionView from "@/components/CollectionView";
-import ProductDetailModal from "@/components/ProductDetailModal";
-import { longSleeveItems as items } from "@/lib/collection";
+import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 import { useTranslation } from "react-i18next";
+
+const items = allProducts.filter((p) => p.leagues.includes("Long Sleeve"));
 
 const LongSleeves = () => {
   const { t } = useTranslation();

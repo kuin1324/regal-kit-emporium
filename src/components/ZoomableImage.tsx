@@ -3,8 +3,6 @@ import { ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
 
 interface Props {
   src: string;
-  /** Lichte voorvertoning die direct getoond wordt terwijl de grote foto laadt. */
-  preview?: string;
   fallback?: string | null;
   alt: string;
 }
@@ -14,13 +12,12 @@ const MAX = 5;
 const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
 
 /** Foto met zoom (scrollwiel / pinch / knoppen) en slepen om te pannen. */
-const ZoomableImage = ({ src, preview, fallback, alt }: Props) => {
+const ZoomableImage = ({ src, fallback, alt }: Props) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [zoom, setZoom] = useState(1);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
   const [source, setSource] = useState(src);
   const [unavailable, setUnavailable] = useState(false);
-  const [loaded, setLoaded] = useState(false);
   const state = useRef({ zoom: 1, offset: { x: 0, y: 0 } });
   const drag = useRef<{ x: number; y: number; ox: number; oy: number } | null>(null);
 
@@ -29,7 +26,6 @@ const ZoomableImage = ({ src, preview, fallback, alt }: Props) => {
   useEffect(() => {
     setSource(src);
     setUnavailable(false);
-    setLoaded(false);
     setZoom(1);
     setOffset({ x: 0, y: 0 });
   }, [src]);
@@ -101,25 +97,9 @@ const ZoomableImage = ({ src, preview, fallback, alt }: Props) => {
         onPointerUp={() => (drag.current = null)}
         onPointerLeave={() => (drag.current = null)}
       >
-        {preview && !loaded && !unavailable && (
-          <img
-            src={preview}
-            alt=""
-            aria-hidden
-            draggable={false}
-            decoding="async"
-            style={{
-              transform: `translate(${offset.x}px, ${offset.y}px) scale(${zoom})`,
-              transformOrigin: "0 0",
-            }}
-            className="absolute inset-0 w-full h-full object-contain blur-[1px]"
-          />
-        )}
         {!unavailable && (
           <img
             src={source}
-            onLoad={() => setLoaded(true)}
-            fetchPriority="high"
             alt={alt}
             draggable={false}
             decoding="async"

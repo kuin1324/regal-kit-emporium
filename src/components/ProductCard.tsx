@@ -1,5 +1,3 @@
-import { thumbSrc } from "@/lib/thumb";
-import ShirtImage from "@/components/ShirtImage";
 import { useCurrency } from "@/context/CurrencyContext";
 import { motion } from "framer-motion";
 
@@ -24,12 +22,10 @@ const ProductCard = ({ image, name, team, year, price, index }: ProductCardProps
     >
       <div className="relative overflow-hidden rounded bg-card border border-border/50 transition-all duration-500 group-hover:border-primary/30 group-hover:shadow-[var(--shadow-gold)]">
         <div className="aspect-[4/5] overflow-hidden">
-          <ShirtImage
-            src={thumbSrc(image)}
-            fallback={image}
+          <img
+            src={image}
             alt={name}
-            loading={index < 4 ? "eager" : "lazy"}
-            fetchPriority={index < 4 ? "high" : undefined}
+            loading="lazy"
             width={800}
             height={960}
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"

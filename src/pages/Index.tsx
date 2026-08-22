@@ -5,7 +5,6 @@ import HeroCarousel from "@/components/HeroCarousel";
 import SearchHero from "@/components/SearchHero";
 import ProductRow from "@/components/ProductRow";
 import ShopByLeague from "@/components/ShopByLeague";
-import ShopByTeam from "@/components/ShopByTeam";
 import FeatureBanner from "@/components/FeatureBanner";
 import ReviewsMarquee from "@/components/ReviewsMarquee";
 import Footer from "@/components/Footer";
@@ -25,7 +24,6 @@ const Index = () => {
       <HeroCarousel />
       <SearchHero />
       <FeatureBanner />
-      <ShopByTeam />
       <ProductRow title={t("home.recommended")} products={recommendations} seeAllHref="/collectie" onProductClick={setSelected} />
       <ProductRow title={t("home.specials")} products={specials} seeAllHref="/special-edition" onProductClick={setSelected} />
       <ShopByLeague />

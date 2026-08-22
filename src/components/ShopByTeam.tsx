@@ -2,27 +2,13 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { topTeams } from "@/lib/collection";
 
-/** Vlaggen voor landenteams; clubs krijgen een monogram-badge. */
+/** Landcodes voor vlaggen (flagcdn); clubs krijgen een monogram-badge. */
 const FLAGS: Record<string, string> = {
-  Brazil: "🇧🇷",
-  Brazilië: "🇧🇷",
-  Argentina: "🇦🇷",
-  Japan: "🇯🇵",
-  Mexico: "🇲🇽",
-  Portugal: "🇵🇹",
-  Spain: "🇪🇸",
-  France: "🇫🇷",
-  England: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-  Germany: "🇩🇪",
-  Italy: "🇮🇹",
-  Netherlands: "🇳🇱",
-  Nederland: "🇳🇱",
-  Colombia: "🇨🇴",
-  Belgium: "🇧🇪",
-  Uruguay: "🇺🇾",
-  USA: "🇺🇸",
-  Croatia: "🇭🇷",
-  Morocco: "🇲🇦",
+  Brazil: "br", Argentina: "ar", Japan: "jp", Mexico: "mx", Portugal: "pt",
+  Spain: "es", France: "fr", England: "gb-eng", Germany: "de", Italy: "it",
+  Netherlands: "nl", Nederland: "nl", Colombia: "co", Belgium: "be",
+  Uruguay: "uy", USA: "us", Croatia: "hr", Morocco: "ma", Chile: "cl",
+  Peru: "pe", Ecuador: "ec", Nigeria: "ng", "South Korea": "kr", Turkey: "tr",
 };
 
 const monogram = (team: string) =>
@@ -57,9 +43,18 @@ const ShopByTeam = () => (
                 aria-label={t.team}
               >
                 <div className="flex aspect-square w-full items-center justify-center rounded-full border border-border/60 bg-card transition-all group-hover:border-primary/50 group-hover:shadow-[var(--shadow-gold)]">
-                  <span className="font-display text-2xl sm:text-3xl font-bold text-primary transition-transform duration-300 group-hover:scale-110">
-                    {flag ?? monogram(t.team)}
-                  </span>
+                  {flag ? (
+                    <img
+                      src={`https://flagcdn.com/w80/${flag}.png`}
+                      alt={t.team}
+                      loading="lazy"
+                      className="h-8 w-11 rounded-sm object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                  ) : (
+                    <span className="font-display text-2xl sm:text-3xl font-bold text-primary transition-transform duration-300 group-hover:scale-110">
+                      {monogram(t.team)}
+                    </span>
+                  )}
                 </div>
                 <span className="text-[11px] text-center font-medium tracking-wide text-muted-foreground group-hover:text-primary line-clamp-1">
                   {t.team}

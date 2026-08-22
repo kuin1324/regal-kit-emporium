@@ -1,3 +1,5 @@
+import { thumbSrc } from "@/lib/thumb";
+import ShirtImage from "@/components/ShirtImage";
 import { useMemo, useState } from "react";
 import { useCurrency } from "@/context/CurrencyContext";
 import { motion } from "framer-motion";

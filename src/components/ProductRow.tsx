@@ -1,3 +1,5 @@
+import { thumbSrc } from "@/lib/thumb";
+import ShirtImage from "@/components/ShirtImage";
 import { useRef, useState } from "react";
 import { useCurrency } from "@/context/CurrencyContext";
 import { Plus, ChevronLeft, ChevronRight, Check } from "lucide-react";

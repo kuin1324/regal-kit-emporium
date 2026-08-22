@@ -12,45 +12,50 @@ const FLAGS: Record<string, string> = {
   Peru: "pe", Ecuador: "ec", Nigeria: "ng", "South Korea": "kr", Turkey: "tr",
 };
 
-/** Clubdomeinen voor logo's (Clearbit logo-API). */
-const CLUB_DOMAINS: Record<string, string> = {
-  "Real Madrid": "realmadrid.com",
-  "Manchester United": "manutd.com",
-  "Manchester City": "mancity.com",
-  "FC Barcelona": "fcbarcelona.com",
-  Barcelona: "fcbarcelona.com",
-  Liverpool: "liverpoolfc.com",
-  Arsenal: "arsenal.com",
-  Chelsea: "chelseafc.com",
-  Tottenham: "tottenhamhotspur.com",
-  "Paris Saint-Germain": "psg.fr",
-  PSG: "psg.fr",
-  Inter: "inter.it",
-  "AC Milan": "acmilan.com",
-  Milan: "acmilan.com",
-  Juventus: "juventus.com",
-  Napoli: "sscnapoli.it",
-  Roma: "asroma.com",
-  Bayern: "fcbayern.com",
-  "Bayern Munich": "fcbayern.com",
-  "Borussia Dortmund": "bvb.de",
-  Ajax: "ajax.nl",
-  Feyenoord: "feyenoord.nl",
-  PSV: "psv.nl",
-  Atletico: "atleticodemadrid.com",
-  "Atletico Madrid": "atleticodemadrid.com",
-  Benfica: "slbenfica.pt",
-  Porto: "fcporto.pt",
-  Marseille: "om.fr",
-  Newcastle: "nufc.co.uk",
-  Everton: "evertonfc.com",
-  "Bayer Leverkusen": "bayer04.de",
-  Galatasaray: "galatasaray.org",
-  Celtic: "celticfc.com",
-  Rangers: "rangers.co.uk",
-  "Boca Juniors": "bocajuniors.com.ar",
-  "River Plate": "cariverplate.com.ar",
-  Flamengo: "flamengo.com.br",
+/** Clublogo's, lokaal opgeslagen in public/logos/. */
+const CLUB_LOGOS: Record<string, string> = {
+  "Real Madrid": "real-madrid",
+  "Manchester United": "manchester-united",
+  "Manchester City": "manchester-city",
+  "FC Barcelona": "fc-barcelona",
+  Barcelona: "fc-barcelona",
+  Liverpool: "liverpool",
+  Arsenal: "arsenal",
+  Chelsea: "chelsea",
+  Tottenham: "tottenham",
+  "Tottenham Hotspur": "tottenham",
+  "Paris Saint-Germain": "paris-saint-germain",
+  PSG: "paris-saint-germain",
+  Inter: "inter",
+  "Inter Milan": "inter",
+  "AC Milan": "ac-milan",
+  Milan: "ac-milan",
+  Juventus: "juventus",
+  Napoli: "napoli",
+  "SSC Napoli": "napoli",
+  Roma: "roma",
+  "AS Roma": "roma",
+  Bayern: "bayern",
+  "Bayern Munich": "bayern",
+  "Borussia Dortmund": "borussia-dortmund",
+  Dortmund: "borussia-dortmund",
+  Ajax: "ajax",
+  Feyenoord: "feyenoord",
+  PSV: "psv",
+  Atletico: "atletico-madrid",
+  "Atletico Madrid": "atletico-madrid",
+  "Atlético Madrid": "atletico-madrid",
+  Benfica: "benfica",
+  Porto: "porto",
+  Marseille: "marseille",
+  "Olympique Marseille": "marseille",
+  Newcastle: "newcastle",
+  Everton: "everton",
+  "Bayer Leverkusen": "bayer-leverkusen",
+  Leverkusen: "bayer-leverkusen",
+  Galatasaray: "galatasaray",
+  Celtic: "celtic",
+  Rangers: "rangers",
 };
 
 const monogram = (team: string) =>
@@ -64,9 +69,9 @@ const monogram = (team: string) =>
 
 /** Clublogo met terugval op een monogram wanneer het logo niet bestaat. */
 const ClubLogo = ({ team }: { team: string }) => {
-  const domain = CLUB_DOMAINS[team];
+  const slug = CLUB_LOGOS[team];
   const [broken, setBroken] = useState(false);
-  if (!domain || broken)
+  if (!slug || broken)
     return (
       <span className="font-display text-2xl font-bold text-primary transition-transform duration-300 group-hover:scale-110 sm:text-3xl">
         {monogram(team)}
@@ -74,7 +79,7 @@ const ClubLogo = ({ team }: { team: string }) => {
     );
   return (
     <img
-      src={`https://logo.clearbit.com/${domain}`}
+      src={`/logos/${slug}.png`}
       alt={`${team} logo`}
       loading="lazy"
       onError={() => setBroken(true)}
@@ -82,6 +87,7 @@ const ClubLogo = ({ team }: { team: string }) => {
     />
   );
 };
+
 
 
 const ShopByTeam = () => (

@@ -115,10 +115,9 @@ const ShopByTeam = () => (
                       className="h-8 w-11 rounded-sm object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                   ) : (
-                    <span className="font-display text-2xl sm:text-3xl font-bold text-primary transition-transform duration-300 group-hover:scale-110">
-                      {monogram(t.team)}
-                    </span>
+                    <ClubLogo team={t.team} />
                   )}
+
                 </div>
                 <span className="text-[11px] text-center font-medium tracking-wide text-muted-foreground group-hover:text-primary line-clamp-1">
                   {t.team}

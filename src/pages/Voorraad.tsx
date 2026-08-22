@@ -1,3 +1,5 @@
+import { thumbSrc } from "@/lib/thumb";
+import ShirtImage from "@/components/ShirtImage";
 import { useMemo, useState } from "react";
 import { useCurrency } from "@/context/CurrencyContext";
 import { motion } from "framer-motion";
@@ -59,9 +61,12 @@ const Voorraad = () => {
             className="relative overflow-hidden rounded bg-card border border-border/50 transition-all duration-500 group-hover:border-primary/30 group-hover:shadow-[var(--shadow-gold)]"
           >
             <div className="aspect-[4/5] overflow-hidden">
-              <img
-                src={product.image}
+              <ShirtImage
+                src={thumbSrc(product.image)}
+                fallback={product.image}
                 alt={productName(product.name)}
+                width={420}
+                height={525}
                 loading="lazy"
                 className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 ${isIncoming ? "opacity-90" : ""}`}
               />

@@ -29,6 +29,8 @@ const Navbar = () => {
     { label: t("nav.collection"), path: "/collectie" },
     { label: t("nav.retro", { defaultValue: "Retro" }), path: "/retro" },
     { label: t("nav.longSleeve", { defaultValue: "Long Sleeve" }), path: "/long-sleeve" },
+    { label: "Shorts", path: "/shorts" },
+    { label: "Full Kits", path: "/full-kits" },
     { label: t("nav.specialEdition"), path: "/special-edition" },
     { label: t("nav.stock", { defaultValue: "Voorraad" }), path: "/voorraad" },
     { label: t("nav.track", { defaultValue: "Track & Trace" }), path: "/track-trace" },

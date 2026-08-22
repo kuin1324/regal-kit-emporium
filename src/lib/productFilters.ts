@@ -30,12 +30,47 @@ export const FILTER_COLORS = Object.keys(COLOR_MAP);
 export const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 const LEAGUE_COUNTRY: Record<string, string> = {
-  Eredivisie: "Nederland",
-  "Premier League": "Engeland",
-  "La Liga": "Spanje",
-  "Serie A": "Italië",
-  Bundesliga: "Duitsland",
-  "Ligue 1": "Frankrijk",
+  Eredivisie: "Netherlands",
+  "Premier League": "England",
+  "La Liga": "Spain",
+  "Serie A": "Italy",
+  Bundesliga: "Germany",
+  "Ligue 1": "France",
+};
+
+/** Erkende landen (Engelse schrijfwijze) voor het landfilter. */
+const COUNTRIES = [
+  "Albania","Algeria","Argentina","Australia","Austria","Belgium","Bolivia","Bosnia","Brazil","Bulgaria",
+  "Cameroon","Canada","Chile","China","Colombia","Costa Rica","Croatia","Czech Republic","Denmark","Ecuador",
+  "Egypt","England","Finland","France","Germany","Ghana","Greece","Honduras","Hungary","Iceland","Iran","Iraq",
+  "Ireland","Israel","Italy","Ivory Coast","Jamaica","Japan","Mexico","Morocco","Netherlands","New Zealand",
+  "Nigeria","North Korea","Northern Ireland","Norway","Palestine","Panama","Paraguay","Peru","Poland","Portugal",
+  "Qatar","Romania","Russia","Saudi Arabia","Scotland","Senegal","Serbia","Slovakia","Slovenia","South Africa",
+  "South Korea","Spain","Sweden","Switzerland","Tunisia","Turkey","Ukraine","Uruguay","USA","Venezuela","Wales",
+];
+
+/** Alternatieve schrijfwijzen -> canonieke Engelse landnaam. */
+const COUNTRY_ALIAS: Record<string, string> = {
+  nederland: "Netherlands", holland: "Netherlands", engeland: "England", spanje: "Spain",
+  italie: "Italy", "italië": "Italy", duitsland: "Germany", frankrijk: "France", belgie: "Belgium",
+  "belgië": "Belgium", "united states": "USA", "united states of america": "USA", "usa": "USA",
+  "korea republic": "South Korea", "ivoorkust": "Ivory Coast", "cote d'ivoire": "Ivory Coast",
+};
+
+const norm = (s: string) => s.trim().toLowerCase();
+const COUNTRY_LOOKUP = new Map<string, string>(COUNTRIES.map((c) => [norm(c), c]));
+const COUNTRY_BY_LENGTH = [...COUNTRIES].sort((a, b) => b.length - a.length);
+
+/** Zet een team-/landnaam om naar een echt land, of null. */
+const toCountry = (raw: string): string | null => {
+  const n = norm(raw);
+  const direct = COUNTRY_LOOKUP.get(n) ?? COUNTRY_ALIAS[n];
+  if (direct) return direct;
+  // "Brazil Goalkeeper", "Argentina 50th Anniversary" -> land ervoor
+  const hit = COUNTRY_BY_LENGTH.find((c) => n.startsWith(norm(c) + " "));
+  if (hit) return hit;
+  const alias = Object.keys(COUNTRY_ALIAS).find((a) => n.startsWith(a + " "));
+  return alias ? COUNTRY_ALIAS[alias] : null;
 };
 
 /** Land van een shirt: bij clubs via de competitie, bij landenteams de teamnaam. */
@@ -43,9 +78,9 @@ export const getCountry = (p: FilterProduct): string | null => {
   for (const l of p.leagues) {
     if (LEAGUE_COUNTRY[l]) return LEAGUE_COUNTRY[l];
   }
-  if (p.leagues.includes("Nationaal")) return p.team;
-  return null;
+  return toCountry(p.team);
 };
+
 
 /** Alleen opties tonen waar meer dan één shirt onder valt. */
 const countBy = <T>(values: T[]): Map<T, number> => {

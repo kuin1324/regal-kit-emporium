@@ -36,7 +36,14 @@ const HeroCarousel = () => {
               transition={{ duration: 0.8 }}
               className="absolute inset-0"
             >
-              <img src={slide.image} alt={t(slide.titleKey)} className="absolute inset-0 h-full w-full object-cover opacity-40" />
+              <img
+                src={slide.image}
+                alt={t(slide.titleKey)}
+                loading={idx === 0 ? "eager" : "lazy"}
+                fetchPriority={idx === 0 ? "high" : "low"}
+                decoding="async"
+                className="absolute inset-0 h-full w-full object-cover opacity-40"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
             </motion.div>
           </AnimatePresence>

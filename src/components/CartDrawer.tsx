@@ -99,7 +99,9 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                   <div className="space-y-4">
                     {items.map((item) => (
                       <div key={item.id} className="flex gap-4 border border-border rounded p-3">
-                        <img src={item.image} alt={productName(item.name)} className="w-20 h-24 object-cover rounded cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setSelectedProduct(item.name)} />
+                        <div className="w-20 h-24 shrink-0">
+                          <ShirtImage src={thumbSrc(item.image)} fallback={item.image} alt={productName(item.name)} width={80} height={96} loading="lazy" className="w-full h-full object-cover rounded cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setSelectedProduct(item.name)} />
+                        </div>
                         <div className="flex-1 min-w-0">
                           <h3 className="text-sm font-semibold truncate cursor-pointer hover:text-primary transition-colors" onClick={() => setSelectedProduct(item.name)}>{productName(item.name)}</h3>
                           <p className="text-xs text-muted-foreground">{t("cart.size")}: {item.size}</p>

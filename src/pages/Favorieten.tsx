@@ -46,7 +46,7 @@ const Favorieten = () => {
                   <div onClick={() => setSelectedProduct(product.name)}>
                     <div className="relative overflow-hidden rounded bg-card border border-border/50 transition-all duration-500 group-hover:border-primary/30">
                       <div className="aspect-[4/5] overflow-hidden">
-                        <img src={product.image} alt={productName(product.name)} className="h-full w-full object-cover" />
+                        <ShirtImage src={thumbSrc(product.image)} fallback={product.image} alt={productName(product.name)} width={420} height={525} loading="lazy" className="h-full w-full object-cover" />
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-5 pt-12">
                         <h3 className="font-display text-base font-semibold">{productName(product.name)}</h3>

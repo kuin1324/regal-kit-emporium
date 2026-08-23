@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ImageOff } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -12,19 +12,31 @@ interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
 /**
  * Afbeelding met skeleton tijdens laden, fallback-bron en nette
  * placeholder bij een fout. Laadt lui en decodeert async.
+ * Bij een netwerkfout (bv. te veel gelijktijdige requests) wordt de
+ * foto een paar keer opnieuw geprobeerd voordat de placeholder verschijnt.
  */
+const MAX_RETRIES = 3;
+
 const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className = "", ...rest }: Props) => {
   const [current, setCurrent] = useState(src);
   const [failed, setFailed] = useState(false);
   const [unavailable, setUnavailable] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const [bust, setBust] = useState(0);
+  const retries = useRef(0);
+  const timer = useRef<ReturnType<typeof setTimeout>>();
 
   useEffect(() => {
     setCurrent(src);
     setFailed(false);
     setUnavailable(false);
     setLoaded(false);
+    setBust(0);
+    retries.current = 0;
   }, [src]);
+
+  useEffect(() => () => clearTimeout(timer.current), []);
+
 
   if (unavailable) {
     if (!showPlaceholder) return null;

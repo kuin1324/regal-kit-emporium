@@ -1,3 +1,5 @@
+import { thumbSrc } from "@/lib/thumb";
+import ShirtImage from "@/components/ShirtImage";
 import { useRef, useState } from "react";
 import { useCurrency } from "@/context/CurrencyContext";
 import { Plus, ChevronLeft, ChevronRight, Check } from "lucide-react";
@@ -68,7 +70,7 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
         </div>
 
         <div ref={scrollRef} className="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory -mx-6 px-6 pb-2">
-          {products.map((p) => (
+          {products.slice(0, 16).map((p) => (
             <div
               key={p.name}
               onClick={() => onProductClick?.(p.name)}
@@ -76,7 +78,7 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
             >
               <div className="relative overflow-hidden rounded-lg bg-card border border-border/50 transition-all duration-300 group-hover:border-primary/40">
                 <div className="aspect-[4/5] overflow-hidden">
-                  <img src={p.image} alt={productName(p.name)} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <ShirtImage src={thumbSrc(p.image)} fallback={p.image} alt={productName(p.name)} width={420} height={525} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <button
                   onClick={(e) => handleAdd(e, p)}

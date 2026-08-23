@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "collectie": "node scripts/generate-public-collectie.mjs"
+    "collectie": "node scripts/generate-public-collectie.mjs",
+    "thumbs": "node scripts/generate-thumbs.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

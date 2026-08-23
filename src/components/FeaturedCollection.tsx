@@ -1,3 +1,5 @@
+import { thumbSrc } from "@/lib/thumb";
+import ShirtImage from "@/components/ShirtImage";
 import { useState } from "react";
 import { useCurrency } from "@/context/CurrencyContext";
 import { motion } from "framer-motion";
@@ -52,7 +54,7 @@ const FeaturedCollection = () => {
                 className="relative overflow-hidden rounded bg-card border border-border/50 transition-all duration-500 group-hover:border-primary/30 group-hover:shadow-[var(--shadow-gold)]"
               >
                 <div className="aspect-[4/5] overflow-hidden">
-                  <img src={product.image} alt={product.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <ShirtImage src={thumbSrc(product.image)} fallback={product.image} alt={product.name} width={420} height={525} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-5 pt-12">
                   <h3 className="font-display text-base font-semibold tracking-wide">{product.name}</h3>

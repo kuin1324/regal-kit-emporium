@@ -32,6 +32,10 @@ const Voorraad = () => {
   const ready = useMemo(() => applyFilters(readyBase, readyFilters), [readyBase, readyFilters]);
   const incoming = useMemo(() => applyFilters(incomingBase, incomingFilters), [incomingBase, incomingFilters]);
 
+  const PAGE = 24;
+  const [readyLimit, setReadyLimit] = useState(PAGE);
+  const [incomingLimit, setIncomingLimit] = useState(PAGE);
+
   const Grid = ({ items, incoming: isIncoming }: { items: typeof allProducts; incoming?: boolean }) => (
     <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
       {items.map((product, i) => (
@@ -39,7 +43,7 @@ const Voorraad = () => {
           key={product.name}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: i * 0.05 }}
+          transition={{ duration: 0.4, delay: Math.min(i, 8) * 0.05 }}
           viewport={{ once: true }}
           className="group cursor-pointer relative"
         >
@@ -121,7 +125,17 @@ const Voorraad = () => {
                 <span className="text-primary font-semibold">{t("stock.shipping")}</span>
               </div>
               <ProductFilters items={readyBase} state={readyFilters} onChange={(patch) => setReadyFilters((f) => ({ ...f, ...patch }))} />
-              <Grid items={ready} />
+              <Grid items={ready.slice(0, readyLimit)} />
+              {ready.length > readyLimit && (
+                <div className="mt-8 text-center">
+                  <button
+                    onClick={() => setReadyLimit((l) => l + PAGE)}
+                    className="rounded-full border border-primary/40 px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary transition-colors hover:bg-primary/10"
+                  >
+                    {t("stock.loadMore", { defaultValue: "Load more" })} ({ready.length - readyLimit})
+                  </button>
+                </div>
+              )}
             </TabsContent>
 
             <TabsContent value="incoming">
@@ -134,7 +148,17 @@ const Voorraad = () => {
               </div>
 
               <ProductFilters items={incomingBase} state={incomingFilters} onChange={(patch) => setIncomingFilters((f) => ({ ...f, ...patch }))} />
-              <Grid items={incoming} incoming />
+              <Grid items={incoming.slice(0, incomingLimit)} incoming />
+              {incoming.length > incomingLimit && (
+                <div className="mt-8 text-center">
+                  <button
+                    onClick={() => setIncomingLimit((l) => l + PAGE)}
+                    className="rounded-full border border-primary/40 px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary transition-colors hover:bg-primary/10"
+                  >
+                    {t("stock.loadMore", { defaultValue: "Load more" })} ({incoming.length - incomingLimit})
+                  </button>
+                </div>
+              )}
             </TabsContent>
           </Tabs>
         </div>

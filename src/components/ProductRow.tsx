@@ -70,7 +70,7 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
         </div>
 
         <div ref={scrollRef} className="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory -mx-6 px-6 pb-2">
-          {products.map((p) => (
+          {products.slice(0, 16).map((p) => (
             <div
               key={p.name}
               onClick={() => onProductClick?.(p.name)}

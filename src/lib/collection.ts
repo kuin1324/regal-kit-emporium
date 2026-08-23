@@ -1,13 +1,14 @@
 import { collectieShirts } from "@/data/collectie_shirts";
 import { publicCollectieShirts } from "@/data/public_collectie";
 
-/** Volledige collectie: handmatige items eerst, daarna de gegenereerde public-collectie. */
-const seen = new Set(collectieShirts.map((p) => p.name));
+/** Volledige collectie: handmatige items eerst, daarna de gegenereerde public-collectie.
+ *  Ontdubbelen op foto-URL zodat shirts met dezelfde naam allebei zichtbaar blijven. */
+const seen = new Set(collectieShirts.map((p) => p.image));
 export const allCollectieItems = [
   ...collectieShirts,
   ...publicCollectieShirts.filter((p) => {
-    if (seen.has(p.name)) return false;
-    seen.add(p.name);
+    if (seen.has(p.image)) return false;
+    seen.add(p.image);
     return true;
   }),
 ];

@@ -32,6 +32,10 @@ const Voorraad = () => {
   const ready = useMemo(() => applyFilters(readyBase, readyFilters), [readyBase, readyFilters]);
   const incoming = useMemo(() => applyFilters(incomingBase, incomingFilters), [incomingBase, incomingFilters]);
 
+  const PAGE = 24;
+  const [readyLimit, setReadyLimit] = useState(PAGE);
+  const [incomingLimit, setIncomingLimit] = useState(PAGE);
+
   const Grid = ({ items, incoming: isIncoming }: { items: typeof allProducts; incoming?: boolean }) => (
     <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
       {items.map((product, i) => (

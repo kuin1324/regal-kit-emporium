@@ -20,6 +20,14 @@ const PhotoNotice = () => {
         {t("notice.monthly", { defaultValue: "Elke 1e van de maand komen er nieuwe shirts online!" })}
       </p>
     </div>
+    <div className="mb-6 rounded-xl border border-border/60 bg-card/60 px-4 py-3">
+      <p className="text-xs leading-relaxed text-muted-foreground">
+        {t("notice.duplicates", {
+          defaultValue:
+            "Some shirts may appear twice on the site. We're working hard to clean this up as quickly as possible.",
+        })}
+      </p>
+    </div>
     </>
   );
 };

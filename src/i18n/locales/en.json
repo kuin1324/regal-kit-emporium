@@ -109,7 +109,7 @@
     "title": "The Passion Behind",
     "p1": "We are a team of football lovers passionate about iconic shirts. Every shirt in our collection is carefully selected for quality and style.",
     "p2": "From legendary World Cup shirts to rare club kits — we bring the finest football history to your wardrobe. Our mission is simple: preserve and share football heritage through premium quality shirts.",
-    "p3Before": "Every order is securely packed and shipped worldwide. Shipping to Europe takes around 15 days. Got questions? Reach out via ",
+    "p3Before": "Every order is securely packed and shipped worldwide. Shipping to Europe takes around 15 working days. Got questions? Reach out via ",
     "p3After": " — we're happy to help."
   },
   "product": {
@@ -121,7 +121,7 @@
     "shipping": "Shipping",
     "shippingInfo": "Worldwide shipping. Delivery takes 10 to 20 working days.",
     "returns": "Returns",
-    "returnsInfo": "Not satisfied? You can return the shirt within 14 days in its original condition.",
+    "returnsInfo": "Returns are only possible if the shirt has no name or number printed on it and is returned unworn in its original condition with all tags still attached, within 14 days.",
     "customize": "Add name & number",
     "namePlaceholder": "Name (e.g. MESSI)",
     "numberPlaceholder": "No.",
@@ -149,7 +149,7 @@
     "orderGreeting": "Hello, I would like to order:",
     "orderTotal": "Total",
     "checkoutEmail": "Order by email",
-    "paymentNote": "Payment via PayPal, Tikkie or other payment methods possible."
+    "paymentNote": "Payment via iDEAL, PayPal, Tikkie, bank transfer or other payment methods possible."
   },
   "footer": {
     "tagline": "The ultimate destination for rare and iconic football shirts.",
@@ -233,7 +233,8 @@
   },
   "notice": {
     "monthly": "New shirts go online on the 1st of every month!",
-    "photos": "Please note: our photos may have small cut-outs or smudges. That's because our AI background remover isn't perfect yet — the shirt itself is in great condition. Feel free to ask for extra photos by email or chat."
+    "photos": "Please note: our photos may have small cut-outs or smudges. That's because our AI background remover isn't perfect yet — the shirt itself is in great condition. Feel free to ask for extra photos by email or chat.",
+    "duplicates": "Some shirts may appear twice on the site. We're working hard to clean this up as quickly as possible."
   },
   "pagination": {
     "goTo": "Go to",

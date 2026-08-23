@@ -31,8 +31,6 @@ const Footer = () => {
             <h4 className="font-display text-xs font-semibold tracking-[0.2em] uppercase text-foreground mb-4">{t("footer.follow")}</h4>
             <ul className="space-y-2">
               <li><a href="https://www.tiktok.com/@footballshirts119?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">TikTok</a></li>
-              <li><a href="https://www.snapchat.com/@jamairofaisel?sender_web_id=89b2f39e-7886-409e-ab63-9d8c5bb13eb5&device_type=desktop&is_copy_url=true" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">Snapchat</a></li>
-              <li><a href="https://www.vinted.nl/member/242654802-ebbekreuwel?utm_medium=social&utm_source=heylink.me" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">Vinted</a></li>
             </ul>
           </div>
         </div>

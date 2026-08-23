@@ -6,9 +6,12 @@ import { motion } from "framer-motion";
 import { ChevronDown, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useCart } from "@/context/CartContext";
-import ProductDetailModal, { allProducts } from "./ProductDetailModal";
+import ProductDetailModal from "./ProductDetailModal";
+import { allCollectieItems } from "@/lib/collection";
 
-const products = allProducts.slice(0, 6);
+const products = allCollectieItems
+  .filter((p) => /special|concept/i.test(p.name) || p.leagues?.some((l) => /special/i.test(l)))
+  .slice(0, 6);
 
 const FeaturedCollection = () => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);

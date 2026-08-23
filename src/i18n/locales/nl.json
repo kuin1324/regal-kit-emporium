@@ -109,7 +109,7 @@
     "title": "De Passie Achter",
     "p1": "Wij zijn een team van voetballiefhebbers met een passie voor iconische shirts. Elk shirt in onze collectie is zorgvuldig geselecteerd op kwaliteit en stijl.",
     "p2": "Van legendarische WK-shirts tot zeldzame clubshirts — wij brengen de mooiste voetbalgeschiedenis naar jouw garderobe. Onze missie is simpel: het bewaren en delen van voetbalerfgoed door middel van premium kwaliteit shirts.",
-    "p3Before": "Elke aankoop wordt veilig verpakt en wereldwijd verzonden. Verzending naar Europa duurt ongeveer 15 dagen. Heb je vragen? Neem gerust contact met ons op via ",
+    "p3Before": "Elke aankoop wordt veilig verpakt en wereldwijd verzonden. Verzending naar Europa duurt ongeveer 15 werkdagen. Heb je vragen? Neem gerust contact met ons op via ",
     "p3After": " — wij helpen je graag."
   },
   "product": {
@@ -121,7 +121,7 @@
     "shipping": "Verzending",
     "shippingInfo": "Wereldwijde verzending. Levertijd naar Europa is ongeveer 15 dagen.",
     "returns": "Retourneren",
-    "returnsInfo": "Niet tevreden? Je kunt het shirt binnen 14 dagen retourneren in originele staat.",
+    "returnsInfo": "Returns are only possible if the shirt has no name or number printed on it and is returned unworn in its original condition with all tags still attached, within 14 days.",
     "customize": "Naam & nummer toevoegen",
     "namePlaceholder": "Naam (bv. MESSI)",
     "numberPlaceholder": "Nr.",
@@ -149,7 +149,7 @@
     "clear": "Winkelmandje legen",
     "orderGreeting": "Hallo, ik wil graag bestellen:",
     "orderTotal": "Totaal",
-    "paymentNote": "Betalen via PayPal, Tikkie of andere betaalmethode mogelijk."
+    "paymentNote": "Payment via iDEAL, PayPal, Tikkie, bank transfer or other payment methods possible."
   },
   "footer": {
     "tagline": "De ultieme bestemming voor zeldzame en iconische voetbalshirts.",
@@ -230,7 +230,8 @@
     "addAll": "{{count}} shirts toevoegen"
   },
   "notice": {
-    "monthly": "Elke 1e van de maand komen er nieuwe shirts online!"
+    "monthly": "Elke 1e van de maand komen er nieuwe shirts online!",
+    "duplicates": "Some shirts may appear twice on the site. We're working hard to clean this up as quickly as possible."
   },
   "pagination": {
     "goTo": "Ga naar",

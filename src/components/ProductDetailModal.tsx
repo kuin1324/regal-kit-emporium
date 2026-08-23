@@ -4,38 +4,6 @@ import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag, Trash2, ChevronLeft, C
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import { useCurrency } from "@/context/CurrencyContext";
-import shirt7 from "@/assets/shirt-new-7.png";
-import italySpecialFront from "@/assets/shirt-italy-special-front.jpg";
-import italySpecialBack from "@/assets/shirt-italy-special-back.jpg";
-import marseilleBack from "@/assets/shirt-marseille-back.jpg";
-import portugalEusebioFront from "@/assets/shirt-portugal-eusebio-front.jpg";
-import portugalEusebioBack from "@/assets/shirt-portugal-eusebio-back.jpg";
-import portugalLvFront from "@/assets/shirt-portugal-lv-front.jpg";
-import portugalLvBack from "@/assets/shirt-portugal-lv-back.jpg";
-import barcaBlackGoldFront from "@/assets/shirt-barca-black-gold-front.jpg";
-import barcaBlackGoldBack from "@/assets/shirt-barca-black-gold-back.jpg";
-import shirtGermany from "@/assets/shirt-germany.jpg";
-import barcaGolfFront from "@/assets/shirt-barcelona-golf-front.jpg";
-import barcaGolfBack from "@/assets/shirt-barcelona-golf-back.jpg";
-import italyVersaceFront from "@/assets/shirt-italy-versace-front.jpg";
-import italyVersaceBack from "@/assets/shirt-italy-versace-back.jpg";
-import spainAdidasFront from "@/assets/shirt-spain-adidas-front.jpg";
-import spainAdidasBack from "@/assets/shirt-spain-adidas-back.jpg";
-import napoliFront from "@/assets/shirt-napoli-front.jpg";
-import napoliBack from "@/assets/shirt-napoli-back.jpg";
-import stoneIslandAjaxFront from "@/assets/shirt-stone-island-ajax-front.jpg";
-import stoneIslandAjaxBack from "@/assets/shirt-stone-island-ajax-back.jpg";
-import franceFront from "@/assets/shirt-france-front.jpg";
-import franceBack from "@/assets/shirt-france-back.jpg";
-import mysteryNavy from "@/assets/shirt-mystery-navy.jpg";
-import nederlandFront from "@/assets/shirt-nederland-front.jpg";
-import nederlandBack from "@/assets/shirt-nederland-back.jpg";
-import psgFront from "@/assets/shirt-psg-front.jpg";
-import psgBack from "@/assets/shirt-psg-back.jpg";
-import spanjeCreamFront from "@/assets/shirt-spanje-cream-front.jpg";
-import spanjeCreamBack from "@/assets/shirt-spanje-cream-back.jpg";
-import argentinieFront from "@/assets/shirt-argentinie-front.jpg";
-import argentinieBack from "@/assets/shirt-argentinie-back.jpg";
 import { collectieShirts } from "@/data/collectie_shirts";
 import { publicCollectieShirts } from "@/data/public_collectie";
 
@@ -46,22 +14,6 @@ import { useAdminView } from "@/lib/admin";
 import { useProductName } from "@/lib/productName";
 
 export const allProducts = [
-  { image: italySpecialFront, gallery: [italySpecialFront, italySpecialBack], name: "Italië Special Trainingsshirt", nameKey: "italySpecialTraining", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Italië special trainingsshirt met uniek zwart-wit ornament design.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "zwart"], availability: "incoming" as const },
-  { image: shirt7, gallery: [shirt7, marseilleBack], name: "OM-shirt Special Edition 2025/26", nameKey: "marseilleThird", team: "Olympique Marseille", leagues: ["Ligue 1", "Special"], price: "€30", description: "Het stijlvolle special edition shirt van Olympique Marseille seizoen 2025/26.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"], availability: "ready" as const },
-  { image: portugalEusebioFront, gallery: [portugalEusebioFront, portugalEusebioBack], name: "Portugal 25/26 Special Edition Eusébio", nameKey: "portugalEusebio", team: "Portugal", leagues: ["Nationaal", "Special"], price: "€30", description: "Portugal 25/26 Special Edition ter ere van Eusébio. Volledig zwart met subtiel wapen patroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart"], availability: "incoming" as const },
-  { image: portugalLvFront, gallery: [portugalLvFront, portugalLvBack], name: "Portugal x Louis Vuitton", nameKey: "portugalLV", team: "Portugal", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Portugal x Louis Vuitton editie met iconisch monogram tegelpatroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "blauw"], availability: "incoming" as const },
-  { image: barcaBlackGoldFront, gallery: [barcaBlackGoldFront, barcaBlackGoldBack], name: "FC Barcelona Black and Gold City", nameKey: "barcaBlackGold", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "FC Barcelona Black and Gold City editie met stadsillustratie en gouden details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "goud"], availability: "incoming" as const },
-  { image: shirtGermany, gallery: [shirtGermany, mysteryNavy], name: "Duitsland Uit Shirt WK 26", nameKey: "germanyAdidas", team: "Duitsland", leagues: ["Nationaal", "Special"], price: "€30", description: "Stijlvol Duitsland uit shirt in samenwerking met Adidas Originals. Donkerblauw met mintgroene accenten.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"], availability: "incoming" as const },
-  { image: barcaGolfFront, gallery: [barcaGolfFront, barcaGolfBack], name: "FC Barcelona Golf Special Edition shirt", nameKey: "barcaGolf", team: "FC Barcelona", leagues: ["La Liga", "Special"], price: "€30", description: "Unieke FC Barcelona x Golf le Fleur special edition met bloemen en sterren.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "roze"] },
-  { image: italyVersaceFront, gallery: [italyVersaceFront, italyVersaceBack], name: "Italië Versace Shirt WK 26", nameKey: "italyVersace", team: "Italië", leagues: ["Nationaal", "Special"], price: "€30", description: "Luxe Italië shirt geïnspireerd door Versace barok print.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "goud"], availability: "incoming" as const },
-  { image: spainAdidasFront, gallery: [spainAdidasFront, spainAdidasBack], name: "België WK Uit Shirt", nameKey: "spainAdidas", team: "België", leagues: ["Nationaal", "Special"], price: "€30", description: "België WK uit shirt met pastel roze en blauwe gradient.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["roze", "blauw"] },
-  { image: napoliFront, gallery: [napoliFront, napoliBack], name: "SSC Napoli Halloween Edition 2025/2026", nameKey: "napoliThird", team: "SSC Napoli", leagues: ["Serie A", "Special"], price: "€30", description: "SSC Napoli Halloween Edition shirt seizoen 2025/2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"], availability: "incoming" as const },
-  { image: stoneIslandAjaxFront, gallery: [stoneIslandAjaxFront, stoneIslandAjaxBack], name: "Ajax Special Shirt WK 26", nameKey: "ajaxStoneIsland", team: "Ajax", leagues: ["Eredivisie", "Special"], price: "€30", description: "Exclusieve Ajax x Stone Island samenwerking. Volledig zwart met camo patroon.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart"] },
-  { image: nederlandFront, gallery: [nederlandFront, nederlandBack], name: "Nederland Thuis Shirt WK 26", nameKey: "nederlandRetro", team: "Nederland", leagues: ["Nationaal"], price: "€30", description: "Klassiek oranje Nederland thuis shirt van Nike.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["oranje"] },
-  { image: psgFront, gallery: [psgFront, psgBack], name: "Nike Paris Saint-Germain x Jordan Pre-Match Training Shirt", nameKey: "psgFourth", team: "Paris Saint-Germain", leagues: ["Ligue 1", "Special"], price: "€30", description: "Nike Paris Saint-Germain x Jordan Pre-Match Training Shirt.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["roze"] },
-  { image: spanjeCreamFront, gallery: [spanjeCreamFront, spanjeCreamBack], name: "Spanje Uit Shirt WK", nameKey: "spanjeOriginals", team: "Spanje", leagues: ["Nationaal"], price: "€30", description: "Spanje uit shirt voor het WK met klassieke Adidas details.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["wit", "goud"] },
-  { image: argentinieFront, gallery: [argentinieFront, argentinieBack], name: "Argentinië Uit Shirt WK 2026", nameKey: "argentinieSpecial", team: "Argentinië", leagues: ["Nationaal"], price: "€30", description: "Argentinië uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["zwart", "blauw"] },
-  { image: franceFront, gallery: [franceFront, franceBack], name: "Frankrijk Uit Shirt WK 2026", nameKey: "francePrematch", team: "Frankrijk", leagues: ["Nationaal"], price: "€30", description: "Frankrijk uit shirt voor het WK 2026.", sizes: ["S", "M", "L", "XL", "2XL"], colors: ["blauw"] },
   ...collectieShirts,
   ...publicCollectieShirts.filter(
     (p) => !collectieShirts.some((r) => r.name === p.name)

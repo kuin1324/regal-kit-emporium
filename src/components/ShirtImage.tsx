@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ImageOff } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { acquireImageSlot, releaseImageSlot } from "@/lib/imageQueue";
 
 interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
@@ -10,12 +11,12 @@ interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
 }
 
 /**
- * Afbeelding met skeleton tijdens laden, fallback-bron en nette
- * placeholder bij een fout. Laadt lui en decodeert async.
- * Bij een netwerkfout (bv. te veel gelijktijdige requests) wordt de
- * foto een paar keer opnieuw geprobeerd voordat de placeholder verschijnt.
+ * Afbeelding die pas laadt wanneer ze in beeld komt en die via een globale
+ * wachtrij het aantal gelijktijdige downloads beperkt. Zo krijgt de browser
+ * nooit honderden requests tegelijk (de oorzaak van placeholders).
+ * Mislukte foto's worden een paar keer opnieuw geprobeerd.
  */
-const MAX_RETRIES = 3;
+const MAX_RETRIES = 4;
 
 const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className = "", ...rest }: Props) => {
   const [current, setCurrent] = useState(src);
@@ -23,8 +24,11 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
   const [unavailable, setUnavailable] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [bust, setBust] = useState(0);
+  const [start, setStart] = useState(false);
   const retries = useRef(0);
   const timer = useRef<ReturnType<typeof setTimeout>>();
+  const wrapper = useRef<HTMLDivElement>(null);
+  const holding = useRef(false);
 
   useEffect(() => {
     setCurrent(src);
@@ -35,8 +39,52 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
     retries.current = 0;
   }, [src]);
 
-  useEffect(() => () => clearTimeout(timer.current), []);
+  // Pas laden zodra de foto (bijna) in beeld is.
+  useEffect(() => {
+    const el = wrapper.current;
+    if (!el || start) return;
+    if (typeof IntersectionObserver === "undefined") {
+      setStart(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setStart(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "600px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [start]);
 
+  // Wachtrij: hooguit een handvol foto's tegelijk downloaden.
+  const [go, setGo] = useState(false);
+  useEffect(() => {
+    if (!start || go) return;
+    const cancel = acquireImageSlot(() => {
+      holding.current = true;
+      setGo(true);
+    });
+    return () => {
+      cancel();
+      if (holding.current) {
+        holding.current = false;
+        releaseImageSlot();
+      }
+    };
+  }, [start, go]);
+
+  const done = () => {
+    if (holding.current) {
+      holding.current = false;
+      releaseImageSlot();
+    }
+  };
+
+  useEffect(() => () => clearTimeout(timer.current), []);
 
   if (unavailable) {
     if (!showPlaceholder) return null;
@@ -48,34 +96,38 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
   }
 
   return (
-    <div className="relative h-full w-full">
+    <div ref={wrapper} className="relative h-full w-full">
       {!loaded && <Skeleton className="absolute inset-0 h-full w-full rounded-none" />}
-      <img
-        {...rest}
-        key={src}
-        src={bust ? `${current}${current.includes("?") ? "&" : "?"}r=${bust}` : current}
-        alt={alt}
-        loading={rest.loading ?? "lazy"}
-        decoding="async"
-        onLoad={(e) => {
-          setLoaded(true);
-          rest.onLoad?.(e);
-        }}
-        onError={() => {
-          if (!failed && fallback && current !== fallback) {
-            setCurrent(fallback);
-            setFailed(true);
-            setBust(0);
-            retries.current = 0;
-          } else if (retries.current < MAX_RETRIES) {
-            const n = ++retries.current;
-            clearTimeout(timer.current);
-            timer.current = setTimeout(() => setBust(Date.now()), 400 * n);
-          } else setUnavailable(true);
-        }}
-
-        className={`${className} transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
-      />
+      {go && (
+        <img
+          {...rest}
+          key={src}
+          src={bust ? `${current}${current.includes("?") ? "&" : "?"}r=${bust}` : current}
+          alt={alt}
+          decoding="async"
+          onLoad={(e) => {
+            setLoaded(true);
+            done();
+            rest.onLoad?.(e);
+          }}
+          onError={() => {
+            if (!failed && fallback && current !== fallback) {
+              setCurrent(fallback);
+              setFailed(true);
+              setBust(0);
+              retries.current = 0;
+            } else if (retries.current < MAX_RETRIES) {
+              const n = ++retries.current;
+              clearTimeout(timer.current);
+              timer.current = setTimeout(() => setBust(Date.now()), 500 * n);
+            } else {
+              done();
+              setUnavailable(true);
+            }
+          }}
+          className={`${className} transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
+        />
+      )}
     </div>
   );
 };

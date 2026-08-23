@@ -53,7 +53,7 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
       <img
         {...rest}
         key={src}
-        src={current}
+        src={bust ? `${current}${current.includes("?") ? "&" : "?"}r=${bust}` : current}
         alt={alt}
         loading={rest.loading ?? "lazy"}
         decoding="async"
@@ -65,8 +65,15 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
           if (!failed && fallback && current !== fallback) {
             setCurrent(fallback);
             setFailed(true);
+            setBust(0);
+            retries.current = 0;
+          } else if (retries.current < MAX_RETRIES) {
+            const n = ++retries.current;
+            clearTimeout(timer.current);
+            timer.current = setTimeout(() => setBust(Date.now()), 400 * n);
           } else setUnavailable(true);
         }}
+
         className={`${className} transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
       />
     </div>

@@ -144,7 +144,7 @@ export const productColors = (p: FilterProduct): Set<string> => {
 
 export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState): T[] => {
   // Zoeken: alle woorden moeten in de naam of het team voorkomen.
-  const tokens = s.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const tokens = s.q.trim().toLowerCase().replace(/[-/_]/g, " ").split(/\s+/).filter(Boolean);
   const base = items.filter((p) => {
     const colors = productColors(p);
     const haystack = `${p.name} ${p.team}`.toLowerCase().replace(/[-/_]/g, " ");

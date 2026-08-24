@@ -1,12 +1,9 @@
 import { useState } from "react";
-import { ChevronDown, Pipette, SlidersHorizontal } from "lucide-react";
+import { ChevronDown, SlidersHorizontal } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { DECADES, SortKey } from "@/lib/productMeta";
 import {
-  COLOR_MAP,
   FilterState,
-  nearestColorName,
-  collectColors,
   collectCountries,
   collectLeagues,
   ALPHABET,

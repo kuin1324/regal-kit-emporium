@@ -9,6 +9,7 @@ import { useCurrency } from "@/context/CurrencyContext";
 import { useCart } from "@/context/CartContext";
 import { useTranslation } from "react-i18next";
 import ProductDetailModal from "./ProductDetailModal";
+import CheckoutModal from "./CheckoutModal";
 import { useProductName } from "@/lib/productName";
 import { calculateShipping, FREE_SHIPPING_FROM } from "@/lib/shipping";
 import { useAuth } from "@/context/AuthContext";

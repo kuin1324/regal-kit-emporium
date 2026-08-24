@@ -11,13 +11,25 @@ import ReviewsMarquee from "@/components/ReviewsMarquee";
 import Footer from "@/components/Footer";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 
+/** Door elkaar husselen zodat de homepage niet alfabetisch oogt (stabiel per sessie). */
+const shuffle = <T,>(arr: T[]): T[] => {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
+
+const recommendations = shuffle(allProducts).slice(0, 16);
+const specials = shuffle(allProducts.filter((p) => p.leagues.includes("Special"))).slice(0, 16);
+const national = shuffle(allProducts.filter((p) => p.leagues.includes("Nationaal"))).slice(0, 16);
+
 const Index = () => {
   const [selected, setSelected] = useState<string | null>(null);
   const { t } = useTranslation();
 
-  const recommendations = allProducts.slice(0, 6);
-  const specials = allProducts.filter((p) => p.leagues.includes("Special"));
-  const national = allProducts.filter((p) => p.leagues.includes("Nationaal"));
+
 
   return (
     <div className="min-h-screen bg-background">

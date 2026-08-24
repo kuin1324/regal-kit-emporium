@@ -45,6 +45,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
         items: items.map(i => ({
           name: i.name,
           sku: i.sku ?? null,
+          image: i.image ?? null,
           size: i.size,
           customName: i.customName ?? null,
           customNumber: i.customNumber ?? null,

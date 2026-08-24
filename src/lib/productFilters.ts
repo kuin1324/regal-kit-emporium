@@ -11,6 +11,7 @@ export interface FilterProduct {
   price: string;
   leagues: string[];
   colors?: string[];
+  sku?: string;
 }
 
 export const COLOR_MAP: Record<string, string> = {
@@ -147,7 +148,7 @@ export const applyFilters = <T extends FilterProduct>(items: T[], s: FilterState
   const tokens = s.q.trim().toLowerCase().replace(/[-/_]/g, " ").split(/\s+/).filter(Boolean);
   const base = items.filter((p) => {
     const colors = productColors(p);
-    const haystack = `${p.name} ${p.team}`.toLowerCase().replace(/[-/_]/g, " ");
+    const haystack = `${p.name} ${p.team} ${p.sku ?? ""}`.toLowerCase().replace(/[-/_]/g, " ");
     const matchesSearch = tokens.every((tok) => haystack.includes(tok));
     const matchesColor = s.colors.length === 0 || s.colors.some((c) => colors.has(c));
     const matchesLeague = !s.league || p.leagues.includes(s.league);

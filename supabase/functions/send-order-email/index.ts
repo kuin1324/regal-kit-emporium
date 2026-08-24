@@ -17,7 +17,10 @@ interface StoredItem {
   price?: number;
   customName?: string | null;
   customNumber?: string | null;
+  image?: string | null;
 }
+
+const SITE_URL = "https://the-home-of-football-style.lovable.app";
 
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
@@ -60,9 +63,16 @@ Deno.serve(async (req) => {
     const items = (Array.isArray(order.items) ? order.items : []) as StoredItem[];
     const rows = items.map((i) => {
       const extra = [i.customName, i.customNumber ? `#${i.customNumber}` : null].filter(Boolean).join(" ");
-      return `<tr><td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.name ?? ""))}${
+      const sku = i.sku ? String(i.sku) : "";
+      const link = sku ? `${SITE_URL}/collectie?q=${encodeURIComponent(sku)}` : SITE_URL;
+      const photo = i.image
+        ? `<img src="${escapeHtml(SITE_URL + String(i.image))}" alt="" width="70" style="border-radius:6px;display:block"/>`
+        : "";
+      return `<tr><td style="padding:6px 10px;border-bottom:1px solid #eee">${photo}</td><td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.name ?? ""))}${
         i.sku ? ` <small style="color:#888">[${escapeHtml(String(i.sku))}]</small>` : ""
-      }${extra ? `<br/><small>${escapeHtml(extra)}</small>` : ""}</td>
+      }${extra ? `<br/><small>${escapeHtml(extra)}</small>` : ""}${
+        sku ? `<br/><small>Zoekcode: <b>${escapeHtml(sku)}</b> — <a href="${escapeHtml(link)}">bekijk shirt</a></small>` : ""
+      }</td>
        <td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.size ?? ""))}</td>
        <td style="padding:6px 10px;border-bottom:1px solid #eee">${Number(i.quantity ?? 0)}</td>
        <td style="padding:6px 10px;border-bottom:1px solid #eee">€${Number(i.price ?? 0) * Number(i.quantity ?? 0)}</td></tr>`;
@@ -74,6 +84,7 @@ Deno.serve(async (req) => {
         <p>📦 Bestelnummer: <b>${escapeHtml(order.order_number)}</b><br/>✉️ E-mail: ${escapeHtml(order.email)}</p>
         <table style="border-collapse:collapse;width:100%;max-width:600px;margin-top:12px">
           <thead><tr style="background:#f5f5f5">
+            <th style="text-align:left;padding:8px 10px">Foto</th>
             <th style="text-align:left;padding:8px 10px">Shirt</th>
             <th style="text-align:left;padding:8px 10px">Maat</th>
             <th style="text-align:left;padding:8px 10px">Aantal</th>

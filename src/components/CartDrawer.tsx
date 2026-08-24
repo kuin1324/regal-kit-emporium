@@ -13,6 +13,7 @@ import CheckoutModal from "./CheckoutModal";
 import { useProductName } from "@/lib/productName";
 import { calculateShipping, FREE_SHIPPING_FROM } from "@/lib/shipping";
 import { useAuth } from "@/context/AuthContext";
+import EmailPromptModal from "@/components/EmailPromptModal";
 
 interface CartDrawerProps {
   open: boolean;
@@ -25,6 +26,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const [checkoutOrder, setCheckoutOrder] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [askMode, setAskMode] = useState<"pay" | "email" | null>(null);
   const { t } = useTranslation();
   const productName = useProductName();
   const { user } = useAuth();
@@ -55,24 +57,18 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     return { orderNumber, supabase };
   };
 
-const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-
-  const askEmail = () => {
-    if (user?.email) return user.email;
-    const input = window.prompt("What's your email address? (needed for track & trace)")?.trim() || "";
-    if (!input) return "";
-    if (!EMAIL_RE.test(input)) {
-      alert("Please enter a valid email address, e.g. name@example.com");
-      return "";
+  /** Vraag e-mail via de nette modal (of gebruik het account-adres). */
+  const requestEmail = (mode: "pay" | "email") => {
+    if (items.length === 0 || busy) return;
+    if (user?.email) {
+      void runOrder(mode, user.email);
+      return;
     }
-    return input;
+    setAskMode(mode);
   };
 
-  /** Direct op de site betalen met kaart, iDEAL, Apple Pay etc. */
-  const handlePayNow = async () => {
-    if (items.length === 0 || busy) return;
-    const email = askEmail();
-    if (!email) return;
+  const runOrder = async (mode: "pay" | "email", email: string) => {
+    setAskMode(null);
     setBusy(true);
     const created = await createOrder(email);
     setBusy(false);
@@ -80,18 +76,9 @@ const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
       alert("❌ Bestelling kon niet worden geplaatst. Probeer het opnieuw of mail ons.");
       return;
     }
-    setCheckoutOrder(created.orderNumber);
-  };
 
-  const handleEmailOrder = async () => {
-    if (items.length === 0 || busy) return;
-    const email = askEmail();
-    if (!email) return;
-    setBusy(true);
-    const created = await createOrder(email);
-    setBusy(false);
-    if (!created) {
-      alert("❌ Bestelling kon niet worden geplaatst. Probeer het opnieuw of mail ons.");
+    if (mode === "pay") {
+      setCheckoutOrder(created.orderNumber);
       return;
     }
 
@@ -108,6 +95,7 @@ const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
     clearCart();
     onClose();
   };
+
 
 
 
@@ -183,14 +171,14 @@ const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
                   </div>
 
                   <button
-                    onClick={handlePayNow}
+                    onClick={() => requestEmail("pay")}
                     disabled={busy}
                     className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors disabled:opacity-60"
                   >
                     {busy ? "..." : "Pay now"}
                   </button>
                   <button
-                    onClick={handleEmailOrder}
+                    onClick={() => requestEmail("email")}
                     disabled={busy}
                     className="w-full py-3 rounded border border-border font-semibold text-sm tracking-wide uppercase hover:bg-muted transition-colors disabled:opacity-60"
                   >
@@ -208,6 +196,12 @@ const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
           </>
         )}
       </AnimatePresence>
+      <EmailPromptModal
+        open={askMode !== null}
+        confirmLabel={askMode === "pay" ? "Continue to payment" : "Send order"}
+        onCancel={() => setAskMode(null)}
+        onConfirm={(email) => void runOrder(askMode ?? "email", email)}
+      />
       <ProductDetailModal productName={selectedProduct} onClose={() => setSelectedProduct(null)} />
       {checkoutOrder && (
         <CheckoutModal

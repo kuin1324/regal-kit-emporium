@@ -91,6 +91,10 @@ Deno.serve(async (req) => {
       const customNumber = clean(raw?.customNumber, 3).replace(/\D/g, "");
       const customized = Boolean(customName || customNumber);
 
+      // Alleen een eigen /collectie/-pad toestaan; verder niets uit de browser overnemen.
+      const rawImage = clean(raw?.image, 300);
+      const image = rawImage.startsWith("/collectie/") ? rawImage : null;
+
       const unitPrice = found.entry.price + (customized ? CUSTOM_PRICE : 0);
       subtotal += unitPrice * qty;
       count += qty;
@@ -103,6 +107,7 @@ Deno.serve(async (req) => {
         customNumber: customNumber || null,
         quantity: qty,
         price: unitPrice,
+        image,
       });
 
       if (found.entry.availability === "incoming" && found.entry.nameKey) {

@@ -9,6 +9,7 @@ import { useCurrency } from "@/context/CurrencyContext";
 import { useCart } from "@/context/CartContext";
 import { useTranslation } from "react-i18next";
 import ProductDetailModal from "./ProductDetailModal";
+import CheckoutModal from "./CheckoutModal";
 import { useProductName } from "@/lib/productName";
 import { calculateShipping, FREE_SHIPPING_FROM } from "@/lib/shipping";
 import { useAuth } from "@/context/AuthContext";
@@ -22,6 +23,8 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const { items, removeItem, updateQuantity, total, count, clearCart } = useCart();
   const { format } = useCurrency();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
+  const [checkoutOrder, setCheckoutOrder] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
   const { t } = useTranslation();
   const productName = useProductName();
   const { user } = useAuth();
@@ -30,15 +33,9 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const grandTotal = total + shipping;
   const shirtsToFree = count > 0 && count < FREE_SHIPPING_FROM ? FREE_SHIPPING_FROM - count : 0;
 
-  const handleEmailOrder = async () => {
-    if (items.length === 0) return;
-    const email = user?.email || window.prompt("Wat is je e-mailadres? (nodig voor track & trace)")?.trim();
-    if (!email) return;
-
+  /** Maakt de bestelling server-side aan en geeft het bestelnummer terug. */
+  const createOrder = async (email: string) => {
     const { supabase } = await import("@/integrations/supabase/client");
-
-    // De bestelling wordt server-side aangemaakt: prijzen, verzendkosten en
-    // totalen worden daar opnieuw berekend, niet overgenomen uit de browser.
     const { data, error } = await supabase.functions.invoke("create-order", {
       body: {
         email,
@@ -53,26 +50,55 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
         })),
       },
     });
-
     const orderNumber = (data as { orderNumber?: string } | null)?.orderNumber;
-    if (error || !orderNumber) {
+    if (error || !orderNumber) return null;
+    return { orderNumber, supabase };
+  };
+
+  const askEmail = () =>
+    user?.email || window.prompt("Wat is je e-mailadres? (nodig voor track & trace)")?.trim() || "";
+
+  /** Direct op de site betalen met kaart, iDEAL, Apple Pay etc. */
+  const handlePayNow = async () => {
+    if (items.length === 0 || busy) return;
+    const email = askEmail();
+    if (!email) return;
+    setBusy(true);
+    const created = await createOrder(email);
+    setBusy(false);
+    if (!created) {
+      alert("❌ Bestelling kon niet worden geplaatst. Probeer het opnieuw of mail ons.");
+      return;
+    }
+    setCheckoutOrder(created.orderNumber);
+  };
+
+  const handleEmailOrder = async () => {
+    if (items.length === 0 || busy) return;
+    const email = askEmail();
+    if (!email) return;
+    setBusy(true);
+    const created = await createOrder(email);
+    setBusy(false);
+    if (!created) {
       alert("❌ Bestelling kon niet worden geplaatst. Probeer het opnieuw of mail ons.");
       return;
     }
 
     try {
-      const { error: mailError } = await supabase.functions.invoke("send-order-email", {
-        body: { orderNumber, email },
+      const { error: mailError } = await created.supabase.functions.invoke("send-order-email", {
+        body: { orderNumber: created.orderNumber, email },
       });
       if (mailError) throw mailError;
     } catch {
       /* Bestelling staat opgeslagen; mail kan later alsnog verstuurd worden. */
     }
 
-    alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${orderNumber}\nVolg je bestelling via Track & Trace.`);
+    alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${created.orderNumber}\nVolg je bestelling via Track & Trace.`);
     clearCart();
     onClose();
   };
+
 
 
 
@@ -146,7 +172,18 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                     <span className="font-display text-xl font-bold text-gradient-gold">{format(grandTotal)}</span>
                   </div>
 
-                  <button onClick={handleEmailOrder} className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors">
+                  <button
+                    onClick={handlePayNow}
+                    disabled={busy}
+                    className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors disabled:opacity-60"
+                  >
+                    {busy ? "..." : "Pay now"}
+                  </button>
+                  <button
+                    onClick={handleEmailOrder}
+                    disabled={busy}
+                    className="w-full py-3 rounded border border-border font-semibold text-sm tracking-wide uppercase hover:bg-muted transition-colors disabled:opacity-60"
+                  >
                     {t("cart.checkoutEmail")}
                   </button>
                   <div className="border-t border-border/50 pt-2">
@@ -162,6 +199,16 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
         )}
       </AnimatePresence>
       <ProductDetailModal productName={selectedProduct} onClose={() => setSelectedProduct(null)} />
+      {checkoutOrder && (
+        <CheckoutModal
+          orderNumber={checkoutOrder}
+          onClose={() => {
+            setCheckoutOrder(null);
+            clearCart();
+            onClose();
+          }}
+        />
+      )}
     </>
   );
 };

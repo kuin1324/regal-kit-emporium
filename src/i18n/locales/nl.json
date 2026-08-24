@@ -149,7 +149,7 @@
     "clear": "Winkelmandje legen",
     "orderGreeting": "Hallo, ik wil graag bestellen:",
     "orderTotal": "Totaal",
-    "paymentNote": "Payment via iDEAL, PayPal, Tikkie, bank transfer or other payment methods possible."
+    "paymentNote": "Pay by card (Visa/Mastercard), iDEAL, PayPal, Tikkie, bank transfer or another payment method."
   },
   "footer": {
     "tagline": "De ultieme bestemming voor zeldzame en iconische voetbalshirts.",
@@ -231,7 +231,8 @@
   },
   "notice": {
     "monthly": "Elke 1e van de maand komen er nieuwe shirts online!",
-    "duplicates": "Some shirts may appear twice on the site. We're working hard to clean this up as quickly as possible."
+    "duplicates": "Some shirts may appear twice on the site. We're working hard to clean this up as quickly as possible.",
+    "dismiss": "Dismiss"
   },
   "pagination": {
     "goTo": "Ga naar",

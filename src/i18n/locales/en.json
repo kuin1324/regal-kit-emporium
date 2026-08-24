@@ -149,7 +149,7 @@
     "orderGreeting": "Hello, I would like to order:",
     "orderTotal": "Total",
     "checkoutEmail": "Order by email",
-    "paymentNote": "Payment via iDEAL, PayPal, Tikkie, bank transfer or other payment methods possible."
+    "paymentNote": "Pay by card (Visa/Mastercard), iDEAL, PayPal, Tikkie, bank transfer or another payment method."
   },
   "footer": {
     "tagline": "The ultimate destination for rare and iconic football shirts.",
@@ -234,7 +234,8 @@
   "notice": {
     "monthly": "New shirts go online on the 1st of every month!",
     "photos": "Please note: our photos may have small cut-outs or smudges. That's because our AI background remover isn't perfect yet — the shirt itself is in great condition. Feel free to ask for extra photos by email or chat.",
-    "duplicates": "Some shirts may appear twice on the site. We're working hard to clean this up as quickly as possible."
+    "duplicates": "Some shirts may appear twice on the site. We're working hard to clean this up as quickly as possible.",
+    "dismiss": "Dismiss"
   },
   "pagination": {
     "goTo": "Go to",

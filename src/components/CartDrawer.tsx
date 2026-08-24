@@ -184,22 +184,11 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
       </AnimatePresence>
       <EmailPromptModal
         open={askMode !== null}
-        confirmLabel={askMode === "pay" ? "Continue to payment" : "Send order"}
+        confirmLabel="Send order"
         onCancel={() => setAskMode(null)}
         onConfirm={(email) => void runOrder(askMode ?? "email", email)}
       />
       <ProductDetailModal productName={selectedProduct} onClose={() => setSelectedProduct(null)} />
-      {checkoutOrder && (
-        <CheckoutModal
-          orderNumber={checkoutOrder.orderNumber}
-          email={checkoutOrder.email}
-          onClose={() => {
-            setCheckoutOrder(null);
-            clearCart();
-            onClose();
-          }}
-        />
-      )}
     </>
   );
 };

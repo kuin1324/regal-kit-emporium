@@ -55,24 +55,18 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     return { orderNumber, supabase };
   };
 
-const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-
-  const askEmail = () => {
-    if (user?.email) return user.email;
-    const input = window.prompt("What's your email address? (needed for track & trace)")?.trim() || "";
-    if (!input) return "";
-    if (!EMAIL_RE.test(input)) {
-      alert("Please enter a valid email address, e.g. name@example.com");
-      return "";
+  /** Vraag e-mail via de nette modal (of gebruik het account-adres). */
+  const requestEmail = (mode: "pay" | "email") => {
+    if (items.length === 0 || busy) return;
+    if (user?.email) {
+      void runOrder(mode, user.email);
+      return;
     }
-    return input;
+    setAskMode(mode);
   };
 
-  /** Direct op de site betalen met kaart, iDEAL, Apple Pay etc. */
-  const handlePayNow = async () => {
-    if (items.length === 0 || busy) return;
-    const email = askEmail();
-    if (!email) return;
+  const runOrder = async (mode: "pay" | "email", email: string) => {
+    setAskMode(null);
     setBusy(true);
     const created = await createOrder(email);
     setBusy(false);
@@ -80,18 +74,9 @@ const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
       alert("❌ Bestelling kon niet worden geplaatst. Probeer het opnieuw of mail ons.");
       return;
     }
-    setCheckoutOrder(created.orderNumber);
-  };
 
-  const handleEmailOrder = async () => {
-    if (items.length === 0 || busy) return;
-    const email = askEmail();
-    if (!email) return;
-    setBusy(true);
-    const created = await createOrder(email);
-    setBusy(false);
-    if (!created) {
-      alert("❌ Bestelling kon niet worden geplaatst. Probeer het opnieuw of mail ons.");
+    if (mode === "pay") {
+      setCheckoutOrder(created.orderNumber);
       return;
     }
 
@@ -108,6 +93,7 @@ const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
     clearCart();
     onClose();
   };
+
 
 
 

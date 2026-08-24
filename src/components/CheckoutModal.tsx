@@ -6,14 +6,16 @@ import PaymentTestModeBanner from "@/components/PaymentTestModeBanner";
 
 interface CheckoutModalProps {
   orderNumber: string;
+  email: string;
   onClose: () => void;
 }
 
-const CheckoutModal = ({ orderNumber, onClose }: CheckoutModalProps) => {
+const CheckoutModal = ({ orderNumber, email, onClose }: CheckoutModalProps) => {
   const fetchClientSecret = async (): Promise<string> => {
     const { data, error } = await supabase.functions.invoke("create-checkout", {
       body: {
         orderNumber,
+        email,
         environment: getStripeEnvironment(),
         returnUrl: `${window.location.origin}/checkout/return?order=${orderNumber}&session_id={CHECKOUT_SESSION_ID}`,
       },

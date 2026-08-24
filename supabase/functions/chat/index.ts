@@ -30,18 +30,19 @@ QUALITY
 - Washing: inside out, 30 C, no dryer, do not iron the print.
 
 ORDERING & PAYMENT
-- Order through the cart: "Pay now" for card (Visa/Mastercard), iDEAL and Apple Pay, or "Order by email".
-- Also possible in consultation: PayPal, Tikkie or bank transfer. Shirts ship after payment.
+- Order through the cart with "Order by email": you get an order number and we email the payment instructions.
+- Paying is done afterwards by iDEAL, bank transfer, PayPal or Tikkie — there is no card checkout on the website.
+- Shirts are shipped after the payment is received.
 
 RETURNS
 - 14 days, only for unworn shirts with the tags still attached and without a printed name or number.
 - Personalised shirts cannot be returned, unless we made the mistake. Wrong or damaged item? Ask for a photo and refer to email.
 
 TRACK & TRACE
-- Via /track-trace with order number + email. Statuses: received, processing, pre-order, shipped, in transit, delivered.
+- There is no track & trace page. As soon as the parcel is shipped we email the tracking code and link to the customer.
 
 PHOTOS & CATALOGUE
-- Some shirts appear twice in the catalogue; we are cleaning that up. Photos may have small cut-outs from the AI background remover, and customers can always ask for extra photos.
+- Some shirts appear twice in the catalogue (different photo sets of the same shirt); we are cleaning that up. Photos may have small cut-outs from the AI background remover, and customers can always ask for extra photos.
 
 Never invent delivery times, stock levels or discounts that are not listed here.`;
 

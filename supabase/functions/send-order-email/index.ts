@@ -65,11 +65,13 @@ Deno.serve(async (req) => {
       const extra = [i.customName, i.customNumber ? `#${i.customNumber}` : null].filter(Boolean).join(" ");
       const sku = i.sku ? String(i.sku) : "";
       const itemName = String(i.name ?? "").trim();
-      // Zoek op zoekcode (of naam) én open het shirt meteen in de modal.
+      // Open exact het juiste (dubbele) shirt: match op fotopad, dan naam, dan zoekcode.
       const query = sku || itemName;
-      const link = query
-        ? `${SITE_URL}/collectie?q=${encodeURIComponent(query)}${itemName ? `&open=${encodeURIComponent(itemName)}` : ""}`
-        : SITE_URL;
+      const params = new URLSearchParams();
+      if (i.image) params.set("img", String(i.image));
+      if (itemName) params.set("open", itemName);
+      if (sku) params.set("code", sku);
+      const link = params.toString() ? `${SITE_URL}/collectie?${params.toString()}` : SITE_URL;
       const photo = i.image
         ? `<img src="${escapeHtml(SITE_URL + String(i.image))}" alt="" width="70" style="border-radius:6px;display:block"/>`
         : "";

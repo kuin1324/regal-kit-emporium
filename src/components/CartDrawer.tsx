@@ -9,7 +9,6 @@ import { useCurrency } from "@/context/CurrencyContext";
 import { useCart } from "@/context/CartContext";
 import { useTranslation } from "react-i18next";
 import ProductDetailModal from "./ProductDetailModal";
-import CheckoutModal from "./CheckoutModal";
 import { useProductName } from "@/lib/productName";
 import { calculateShipping, FREE_SHIPPING_FROM } from "@/lib/shipping";
 import { useAuth } from "@/context/AuthContext";
@@ -24,7 +23,6 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const { items, removeItem, updateQuantity, total, count, clearCart } = useCart();
   const { format } = useCurrency();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
-  const [checkoutOrder, setCheckoutOrder] = useState<{ orderNumber: string; email: string } | null>(null);
   const [busy, setBusy] = useState(false);
   const [askMode, setAskMode] = useState<"pay" | "email" | null>(null);
   const { t } = useTranslation();
@@ -77,11 +75,6 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
       return;
     }
 
-    if (mode === "pay") {
-      setCheckoutOrder({ orderNumber: created.orderNumber, email });
-      return;
-    }
-
     try {
       const { error: mailError } = await created.supabase.functions.invoke("send-order-email", {
         body: { orderNumber: created.orderNumber, email },
@@ -91,7 +84,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
       /* Bestelling staat opgeslagen; mail kan later alsnog verstuurd worden. */
     }
 
-    alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${created.orderNumber}\nVolg je bestelling via Track & Trace.`);
+    alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${created.orderNumber}\nWe mailen je de betaalinstructies en later de tracking-informatie.`);
     clearCart();
     onClose();
   };
@@ -171,13 +164,6 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                   </div>
 
                   <button
-                    onClick={() => requestEmail("pay")}
-                    disabled={busy}
-                    className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors disabled:opacity-60"
-                  >
-                    {busy ? "..." : "Pay now"}
-                  </button>
-                  <button
                     onClick={() => requestEmail("email")}
                     disabled={busy}
                     className="w-full py-3 rounded border border-border font-semibold text-sm tracking-wide uppercase hover:bg-muted transition-colors disabled:opacity-60"
@@ -198,22 +184,11 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
       </AnimatePresence>
       <EmailPromptModal
         open={askMode !== null}
-        confirmLabel={askMode === "pay" ? "Continue to payment" : "Send order"}
+        confirmLabel="Send order"
         onCancel={() => setAskMode(null)}
         onConfirm={(email) => void runOrder(askMode ?? "email", email)}
       />
       <ProductDetailModal productName={selectedProduct} onClose={() => setSelectedProduct(null)} />
-      {checkoutOrder && (
-        <CheckoutModal
-          orderNumber={checkoutOrder.orderNumber}
-          email={checkoutOrder.email}
-          onClose={() => {
-            setCheckoutOrder(null);
-            clearCart();
-            onClose();
-          }}
-        />
-      )}
     </>
   );
 };

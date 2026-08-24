@@ -32,7 +32,6 @@ const Navbar = () => {
     { label: "Shorts", path: "/shorts" },
     { label: "Full Kits", path: "/full-kits" },
     { label: t("nav.specialEdition"), path: "/special-edition" },
-    { label: t("nav.track", { defaultValue: "Track & Trace" }), path: "/track-trace" },
     { label: t("nav.about"), path: "/over-ons" },
   ];
 

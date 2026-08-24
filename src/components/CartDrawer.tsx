@@ -22,6 +22,8 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const { items, removeItem, updateQuantity, total, count, clearCart } = useCart();
   const { format } = useCurrency();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
+  const [checkoutOrder, setCheckoutOrder] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
   const { t } = useTranslation();
   const productName = useProductName();
   const { user } = useAuth();
@@ -30,15 +32,9 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const grandTotal = total + shipping;
   const shirtsToFree = count > 0 && count < FREE_SHIPPING_FROM ? FREE_SHIPPING_FROM - count : 0;
 
-  const handleEmailOrder = async () => {
-    if (items.length === 0) return;
-    const email = user?.email || window.prompt("Wat is je e-mailadres? (nodig voor track & trace)")?.trim();
-    if (!email) return;
-
+  /** Maakt de bestelling server-side aan en geeft het bestelnummer terug. */
+  const createOrder = async (email: string) => {
     const { supabase } = await import("@/integrations/supabase/client");
-
-    // De bestelling wordt server-side aangemaakt: prijzen, verzendkosten en
-    // totalen worden daar opnieuw berekend, niet overgenomen uit de browser.
     const { data, error } = await supabase.functions.invoke("create-order", {
       body: {
         email,
@@ -53,26 +49,55 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
         })),
       },
     });
-
     const orderNumber = (data as { orderNumber?: string } | null)?.orderNumber;
-    if (error || !orderNumber) {
+    if (error || !orderNumber) return null;
+    return { orderNumber, supabase };
+  };
+
+  const askEmail = () =>
+    user?.email || window.prompt("Wat is je e-mailadres? (nodig voor track & trace)")?.trim() || "";
+
+  /** Direct op de site betalen met kaart, iDEAL, Apple Pay etc. */
+  const handlePayNow = async () => {
+    if (items.length === 0 || busy) return;
+    const email = askEmail();
+    if (!email) return;
+    setBusy(true);
+    const created = await createOrder(email);
+    setBusy(false);
+    if (!created) {
+      alert("❌ Bestelling kon niet worden geplaatst. Probeer het opnieuw of mail ons.");
+      return;
+    }
+    setCheckoutOrder(created.orderNumber);
+  };
+
+  const handleEmailOrder = async () => {
+    if (items.length === 0 || busy) return;
+    const email = askEmail();
+    if (!email) return;
+    setBusy(true);
+    const created = await createOrder(email);
+    setBusy(false);
+    if (!created) {
       alert("❌ Bestelling kon niet worden geplaatst. Probeer het opnieuw of mail ons.");
       return;
     }
 
     try {
-      const { error: mailError } = await supabase.functions.invoke("send-order-email", {
-        body: { orderNumber, email },
+      const { error: mailError } = await created.supabase.functions.invoke("send-order-email", {
+        body: { orderNumber: created.orderNumber, email },
       });
       if (mailError) throw mailError;
     } catch {
       /* Bestelling staat opgeslagen; mail kan later alsnog verstuurd worden. */
     }
 
-    alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${orderNumber}\nVolg je bestelling via Track & Trace.`);
+    alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${created.orderNumber}\nVolg je bestelling via Track & Trace.`);
     clearCart();
     onClose();
   };
+
 
 
 

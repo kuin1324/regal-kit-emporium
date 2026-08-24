@@ -171,7 +171,18 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                     <span className="font-display text-xl font-bold text-gradient-gold">{format(grandTotal)}</span>
                   </div>
 
-                  <button onClick={handleEmailOrder} className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors">
+                  <button
+                    onClick={handlePayNow}
+                    disabled={busy}
+                    className="w-full py-3 rounded bg-primary text-primary-foreground font-semibold text-sm tracking-wide uppercase hover:bg-primary/90 transition-colors disabled:opacity-60"
+                  >
+                    {busy ? "..." : "Pay now"}
+                  </button>
+                  <button
+                    onClick={handleEmailOrder}
+                    disabled={busy}
+                    className="w-full py-3 rounded border border-border font-semibold text-sm tracking-wide uppercase hover:bg-muted transition-colors disabled:opacity-60"
+                  >
                     {t("cart.checkoutEmail")}
                   </button>
                   <div className="border-t border-border/50 pt-2">

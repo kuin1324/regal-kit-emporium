@@ -33,10 +33,12 @@ Deno.serve(async (req) => {
     const orderNumber = String((body as { orderNumber?: string })?.orderNumber ?? "").trim();
     const environment = (body as { environment?: string })?.environment;
     const returnUrl = String((body as { returnUrl?: string })?.returnUrl ?? "");
+    const email = String((body as { email?: string })?.email ?? "").trim().toLowerCase().slice(0, 255);
 
     if (!/^HOFS-[A-Z0-9]{4,12}$/.test(orderNumber)) return json({ error: "Ongeldig bestelnummer" }, 400);
     if (environment !== "sandbox" && environment !== "live") return json({ error: "Ongeldige omgeving" }, 400);
     if (!/^https?:\/\//.test(returnUrl)) return json({ error: "Ongeldige return url" }, 400);
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json({ error: "Ongeldig e-mailadres" }, 400);
 
     const admin = createClient(
       Deno.env.get("SUPABASE_URL")!,
@@ -44,10 +46,12 @@ Deno.serve(async (req) => {
       { auth: { persistSession: false } },
     );
 
+    // Twee-factor lookup: bestelnummer + e-mail moeten beide kloppen (zoals track_order).
     const { data: order, error } = await admin
       .from("orders")
       .select("order_number, email, items, shipping, total")
       .eq("order_number", orderNumber)
+      .eq("email", email)
       .maybeSingle();
 
     if (error || !order) return json({ error: "Bestelling niet gevonden" }, 404);

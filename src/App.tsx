@@ -22,8 +22,6 @@ import FullKits from "./pages/FullKits.tsx";
 
 import Favorieten from "./pages/Favorieten.tsx";
 import NotFound from "./pages/NotFound.tsx";
-import TrackTrace from "./pages/TrackTrace.tsx";
-import CheckoutReturn from "./pages/CheckoutReturn.tsx";
 
 const queryClient = new QueryClient();
 
@@ -49,8 +47,6 @@ const App = () => (
             <Route path="/full-kits" element={<FullKits />} />
             <Route path="/favorieten" element={<Favorieten />} />
             <Route path="/auth" element={<Auth />} />
-            <Route path="/track-trace" element={<TrackTrace />} />
-            <Route path="/checkout/return" element={<CheckoutReturn />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

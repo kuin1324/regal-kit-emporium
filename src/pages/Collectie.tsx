@@ -32,12 +32,19 @@ const Collectie = () => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const [searchParams, setSearchParams] = useSearchParams();
 
-  // Link uit de bestelmail: ?open=<naam> of ?q=<zoekcode> opent het shirt meteen.
+  // Link uit de bestelmail: ?img=<fotopad> (exact, ook bij dubbele shirts), ?open=<naam> of ?q=/?code=<zoekcode>.
   useEffect(() => {
+    const img = searchParams.get("img");
     const open = searchParams.get("open");
-    const q = searchParams.get("q");
+    const q = searchParams.get("q") ?? searchParams.get("code");
     let match: (typeof allCollectieItems)[number] | undefined;
-    if (open) {
+    if (img) {
+      const dec = decodeURIComponent(img);
+      match =
+        allCollectieItems.find((p) => p.image === img || p.image === dec) ??
+        allCollectieItems.find((p) => (p.gallery ?? []).some((g) => g === img || g === dec));
+    }
+    if (!match && open) {
       const target = norm(open);
       match =
         allCollectieItems.find((p) => norm(p.name) === target) ??
@@ -52,10 +59,12 @@ const Collectie = () => {
     }
     if (match) {
       setSelectedProduct(match.name);
-      // Voorkom "No shirts found" als de zoekcode niet meer bestaat: zoek op naam.
-      if (q && q !== match.name) {
+      // Zorg dat de grid het shirt ook toont: zoek op naam i.p.v. een verouderde code.
+      if (searchParams.get("q") !== match.name) {
         const next = new URLSearchParams(searchParams);
         next.set("q", match.name);
+        next.delete("code");
+        next.delete("img");
         setSearchParams(next, { replace: true });
       }
     }

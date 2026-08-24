@@ -198,6 +198,16 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
         )}
       </AnimatePresence>
       <ProductDetailModal productName={selectedProduct} onClose={() => setSelectedProduct(null)} />
+      {checkoutOrder && (
+        <CheckoutModal
+          orderNumber={checkoutOrder}
+          onClose={() => {
+            setCheckoutOrder(null);
+            clearCart();
+            onClose();
+          }}
+        />
+      )}
     </>
   );
 };

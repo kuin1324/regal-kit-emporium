@@ -2,8 +2,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PhotoNotice from "@/components/PhotoNotice";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSearchParams } from "react-router-dom";
 import CollectionView from "@/components/CollectionView";
 import ProductDetailModal from "@/components/ProductDetailModal";
 import { collectieShirts } from "@/data/collectie_shirts";
@@ -22,6 +23,22 @@ const allCollectieItems = [
 const Collectie = () => {
   const { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
+  const [searchParams] = useSearchParams();
+
+  // Link uit de bestelmail: ?open=<naam> of ?q=<zoekcode> opent het shirt meteen.
+  useEffect(() => {
+    const open = searchParams.get("open");
+    const q = searchParams.get("q");
+    const norm = (v: string) => v.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    let match: (typeof allCollectieItems)[number] | undefined;
+    if (open) match = allCollectieItems.find((p) => norm(p.name) === norm(open));
+    if (!match && q) {
+      const code = q.trim().toUpperCase();
+      match = allCollectieItems.find((p) => (p.sku ?? "").toUpperCase() === code) ??
+        allCollectieItems.find((p) => norm(p.name) === norm(q));
+    }
+    if (match) setSelectedProduct(match.name);
+  }, [searchParams]);
 
   return (
     <div className="min-h-screen bg-background">

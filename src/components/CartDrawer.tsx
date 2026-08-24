@@ -55,8 +55,18 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     return { orderNumber, supabase };
   };
 
-  const askEmail = () =>
-    user?.email || window.prompt("Wat is je e-mailadres? (nodig voor track & trace)")?.trim() || "";
+const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+
+  const askEmail = () => {
+    if (user?.email) return user.email;
+    const input = window.prompt("What's your email address? (needed for track & trace)")?.trim() || "";
+    if (!input) return "";
+    if (!EMAIL_RE.test(input)) {
+      alert("Please enter a valid email address, e.g. name@example.com");
+      return "";
+    }
+    return input;
+  };
 
   /** Direct op de site betalen met kaart, iDEAL, Apple Pay etc. */
   const handlePayNow = async () => {

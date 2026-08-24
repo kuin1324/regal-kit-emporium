@@ -23,6 +23,7 @@ import FullKits from "./pages/FullKits.tsx";
 import Favorieten from "./pages/Favorieten.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import TrackTrace from "./pages/TrackTrace.tsx";
+import CheckoutReturn from "./pages/CheckoutReturn.tsx";
 
 const queryClient = new QueryClient();
 

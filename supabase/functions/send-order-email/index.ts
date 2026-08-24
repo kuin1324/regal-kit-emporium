@@ -64,14 +64,19 @@ Deno.serve(async (req) => {
     const rows = items.map((i) => {
       const extra = [i.customName, i.customNumber ? `#${i.customNumber}` : null].filter(Boolean).join(" ");
       const sku = i.sku ? String(i.sku) : "";
-      const link = sku ? `${SITE_URL}/collectie?q=${encodeURIComponent(sku)}` : SITE_URL;
+      const itemName = String(i.name ?? "").trim();
+      // Zoek op zoekcode (of naam) én open het shirt meteen in de modal.
+      const query = sku || itemName;
+      const link = query
+        ? `${SITE_URL}/collectie?q=${encodeURIComponent(query)}${itemName ? `&open=${encodeURIComponent(itemName)}` : ""}`
+        : SITE_URL;
       const photo = i.image
         ? `<img src="${escapeHtml(SITE_URL + String(i.image))}" alt="" width="70" style="border-radius:6px;display:block"/>`
         : "";
       return `<tr><td style="padding:6px 10px;border-bottom:1px solid #eee">${photo}</td><td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.name ?? ""))}${
         i.sku ? ` <small style="color:#888">[${escapeHtml(String(i.sku))}]</small>` : ""
       }${extra ? `<br/><small>${escapeHtml(extra)}</small>` : ""}${
-        sku ? `<br/><small>Zoekcode: <b>${escapeHtml(sku)}</b> — <a href="${escapeHtml(link)}">bekijk shirt</a></small>` : ""
+        query ? `<br/><small>${sku ? `Zoekcode: <b>${escapeHtml(sku)}</b> — ` : ""}<a href="${escapeHtml(link)}">bekijk shirt</a></small>` : ""
       }</td>
        <td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.size ?? ""))}</td>
        <td style="padding:6px 10px;border-bottom:1px solid #eee">${Number(i.quantity ?? 0)}</td>

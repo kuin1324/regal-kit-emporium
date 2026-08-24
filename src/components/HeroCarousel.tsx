@@ -7,13 +7,19 @@ import { allCollectieItems } from "@/lib/collection";
 const specials = allCollectieItems.filter((p) =>
   /special|concept/i.test(p.name) || p.leagues?.some((l) => /special/i.test(l))
 );
-const heroImages = [specials[0], specials[1], specials[2]].map((p, i) => p?.image ?? allCollectieItems[i]?.image);
+/** Landen-shirt voor de "National Pride"-slide. */
+const nationalShirt = allCollectieItems.find((p) => p.leagues?.includes("Nationaal"));
+/** Retro-shirt voor de "Go Back in Time"-slide. */
+const retroShirt = allCollectieItems.find(
+  (p) => /retro/i.test(p.name) || p.leagues?.some((l) => /retro/i.test(l))
+);
 
 const slidesData = [
-  { titleKey: "home.slides.specialTitle", subtitleKey: "home.slides.specialSubtitle", ctaKey: "home.slides.specialCta", href: "/special-edition", image: heroImages[0] },
-  { titleKey: "home.slides.nationalTitle", subtitleKey: "home.slides.nationalSubtitle", ctaKey: "home.slides.nationalCta", href: "/collectie", image: heroImages[1] },
-  { titleKey: "home.slides.italyTitle", subtitleKey: "home.slides.italySubtitle", ctaKey: "home.slides.italyCta", href: "/collectie", image: heroImages[2] },
+  { titleKey: "home.slides.specialTitle", subtitleKey: "home.slides.specialSubtitle", ctaKey: "home.slides.specialCta", href: "/special-edition", image: specials[0]?.image ?? allCollectieItems[0]?.image },
+  { titleKey: "home.slides.nationalTitle", subtitleKey: "home.slides.nationalSubtitle", ctaKey: "home.slides.nationalCta", href: "/collectie?league=Nationaal", image: nationalShirt?.image ?? allCollectieItems[1]?.image },
+  { titleKey: "home.slides.retroTitle", subtitleKey: "home.slides.retroSubtitle", ctaKey: "home.slides.retroCta", href: "/retro", image: retroShirt?.image ?? allCollectieItems[2]?.image },
 ];
+
 
 const HeroCarousel = () => {
   const [idx, setIdx] = useState(0);

@@ -129,7 +129,7 @@ export const initialFilterState: FilterState = {
   country: null,
   letter: null,
   decade: null,
-  sort: "newest",
+  sort: "az",
 };
 
 /** Kleuren van een shirt: handmatige labels + kleuren afgeleid uit de foto. */

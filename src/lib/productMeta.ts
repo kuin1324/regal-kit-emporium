@@ -2,23 +2,23 @@
 // "1970 Mexico Thuis Shirt", "01-02 Liverpool Uit Shirt", "17-18 Barcelona".
 // Also provides decade bucketing and sort comparators.
 
+const fromTwoDigit = (yy: number) => (yy < 40 ? 2000 + yy : 1900 + yy);
+
+/** Jaartal uit een shirtnaam, waar het ook staat: "1970 Mexico", "Milan 25-26", "Ajax 1995". */
 export const extractYear = (name: string): number | null => {
   const s = name.trim();
-  // 4-digit year at start
-  const m4 = s.match(/^(\d{4})/);
-  if (m4) return parseInt(m4[1], 10);
-  // Two-digit season like "01-02" or "95-96"
-  const m2 = s.match(/^(\d{2})[-–\/](\d{2})/);
-  if (m2) {
-    const yy = parseInt(m2[1], 10);
-    return yy < 40 ? 2000 + yy : 1900 + yy;
-  }
-  // Single two-digit year e.g. "95 Botafogo"
+  // Seizoen met vier cijfers: "1995-96" of "2025/26"
+  const s4 = s.match(/\b(19|20)(\d{2})\s*[-–/]\s*\d{2}\b/);
+  if (s4) return parseInt(s4[1] + s4[2], 10);
+  // Seizoen met twee cijfers: "25-26", "01/02"
+  const s2 = s.match(/\b(\d{2})\s*[-–/]\s*(\d{2})\b/);
+  if (s2) return fromTwoDigit(parseInt(s2[1], 10));
+  // Los jaartal: "1970", "2026"
+  const y4 = s.match(/\b(19|20)\d{2}\b/);
+  if (y4) return parseInt(y4[0], 10);
+  // Los tweecijferig jaartal aan het begin: "95 Botafogo"
   const m1 = s.match(/^(\d{2})\b/);
-  if (m1) {
-    const yy = parseInt(m1[1], 10);
-    return yy < 40 ? 2000 + yy : 1900 + yy;
-  }
+  if (m1) return fromTwoDigit(parseInt(m1[1], 10));
   return null;
 };
 

@@ -1,12 +1,9 @@
 import { useState } from "react";
-import { ChevronDown, Pipette, SlidersHorizontal } from "lucide-react";
+import { ChevronDown, SlidersHorizontal } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { DECADES, SortKey } from "@/lib/productMeta";
 import {
-  COLOR_MAP,
   FilterState,
-  nearestColorName,
-  collectColors,
   collectCountries,
   collectLeagues,
   ALPHABET,
@@ -59,18 +56,9 @@ const Group = ({
 
 const ProductFilters = ({ items, state, onChange }: Props) => {
   const { t } = useTranslation();
-  const [picked, setPicked] = useState("#1E40AF");
 
   const leagues = collectLeagues(items);
   const countries = collectCountries(items);
-  const colors = collectColors(items);
-
-  const toggleColor = (color: string) =>
-    onChange({
-      colors: state.colors.includes(color)
-        ? state.colors.filter((c) => c !== color)
-        : [...state.colors, color],
-    });
 
   return (
     <div className="rounded-xl border border-border/50 bg-card/40 p-3 text-left">
@@ -81,47 +69,6 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
         </h2>
       </div>
 
-      {colors.length > 0 && (
-        <Group
-          label={t("filters.color", { defaultValue: "Kleur" })}
-          value={state.colors.length ? String(state.colors.length) : null}
-        >
-          <button onClick={() => onChange({ colors: [] })} className={chip(state.colors.length === 0)}>
-            {t("collection.allColors")}
-          </button>
-          {colors.map((color) => (
-            <button
-              key={color}
-              onClick={() => toggleColor(color)}
-              className={`flex items-center gap-1.5 ${chip(state.colors.includes(color))}`}
-            >
-              <span
-                className="h-3 w-3 shrink-0 rounded-full border border-border/50"
-                style={
-                  COLOR_MAP[color].startsWith("linear")
-                    ? { backgroundImage: COLOR_MAP[color] }
-                    : { backgroundColor: COLOR_MAP[color] }
-                }
-              />
-              {t(`collection.colors.${color}`, { defaultValue: color })}
-            </button>
-          ))}
-          <label className={`flex cursor-pointer items-center gap-1.5 ${chip(false)}`}>
-            <Pipette className="h-3 w-3" />
-            {t("filters.colorPicker", { defaultValue: "Kleur kiezen" })}
-            <input
-              type="color"
-              value={picked}
-              onChange={(e) => {
-                setPicked(e.target.value);
-                const name = nearestColorName(e.target.value);
-                if (!state.colors.includes(name)) onChange({ colors: [...state.colors, name] });
-              }}
-              className="h-4 w-4 cursor-pointer appearance-none rounded-full border-0 bg-transparent p-0"
-            />
-          </label>
-        </Group>
-      )}
 
       {leagues.length > 0 && (
         <Group label={t("filters.league", { defaultValue: "Competitie" })} value={state.league}>

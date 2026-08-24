@@ -24,7 +24,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const { items, removeItem, updateQuantity, total, count, clearCart } = useCart();
   const { format } = useCurrency();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
-  const [checkoutOrder, setCheckoutOrder] = useState<string | null>(null);
+  const [checkoutOrder, setCheckoutOrder] = useState<{ orderNumber: string; email: string } | null>(null);
   const [busy, setBusy] = useState(false);
   const [askMode, setAskMode] = useState<"pay" | "email" | null>(null);
   const { t } = useTranslation();
@@ -78,7 +78,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     }
 
     if (mode === "pay") {
-      setCheckoutOrder(created.orderNumber);
+      setCheckoutOrder({ orderNumber: created.orderNumber, email });
       return;
     }
 
@@ -205,7 +205,8 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
       <ProductDetailModal productName={selectedProduct} onClose={() => setSelectedProduct(null)} />
       {checkoutOrder && (
         <CheckoutModal
-          orderNumber={checkoutOrder}
+          orderNumber={checkoutOrder.orderNumber}
+          email={checkoutOrder.email}
           onClose={() => {
             setCheckoutOrder(null);
             clearCart();

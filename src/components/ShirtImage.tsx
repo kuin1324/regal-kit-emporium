@@ -16,7 +16,7 @@ interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
  * nooit honderden requests tegelijk (de oorzaak van placeholders).
  * Mislukte foto's worden een paar keer opnieuw geprobeerd.
  */
-const MAX_RETRIES = 4;
+const MAX_RETRIES = 6;
 
 const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className = "", ...rest }: Props) => {
   const [current, setCurrent] = useState(src);
@@ -86,6 +86,22 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
 
   useEffect(() => () => clearTimeout(timer.current), []);
 
+  // Opgegeven foto's nog eens proberen zodra de verbinding of het tabblad terug is.
+  useEffect(() => {
+    if (!unavailable) return;
+    const again = () => {
+      retries.current = 0;
+      setUnavailable(false);
+      setBust(Date.now());
+    };
+    window.addEventListener("online", again);
+    window.addEventListener("focus", again);
+    return () => {
+      window.removeEventListener("online", again);
+      window.removeEventListener("focus", again);
+    };
+  }, [unavailable]);
+
   if (unavailable) {
     if (!showPlaceholder) return null;
     return (
@@ -116,6 +132,11 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
               setFailed(true);
               setBust(0);
               retries.current = 0;
+            } else if (fallback && current === fallback && src !== fallback) {
+              // Terug naar de originele bron als de fallback ook faalt.
+              setCurrent(src);
+              retries.current = 0;
+              setBust(Date.now());
             } else if (retries.current < MAX_RETRIES) {
               const n = ++retries.current;
               clearTimeout(timer.current);

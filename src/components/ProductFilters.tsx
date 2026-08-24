@@ -56,18 +56,9 @@ const Group = ({
 
 const ProductFilters = ({ items, state, onChange }: Props) => {
   const { t } = useTranslation();
-  const [picked, setPicked] = useState("#1E40AF");
 
   const leagues = collectLeagues(items);
   const countries = collectCountries(items);
-  const colors = collectColors(items);
-
-  const toggleColor = (color: string) =>
-    onChange({
-      colors: state.colors.includes(color)
-        ? state.colors.filter((c) => c !== color)
-        : [...state.colors, color],
-    });
 
   return (
     <div className="rounded-xl border border-border/50 bg-card/40 p-3 text-left">

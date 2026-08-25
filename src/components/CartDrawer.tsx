@@ -71,7 +71,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     const created = await createOrder(email);
     setBusy(false);
     if (!created) {
-      alert("❌ Bestelling kon niet worden geplaatst. Probeer het opnieuw of mail ons.");
+      alert("❌ Your order could not be placed. Please try again or email us.");
       return;
     }
 
@@ -84,7 +84,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
       /* Bestelling staat opgeslagen; mail kan later alsnog verstuurd worden. */
     }
 
-    alert(`✅ Bestelling verzonden!\nJe bestelnummer: ${created.orderNumber}\nWe mailen je de betaalinstructies en later de tracking-informatie.`);
+    alert(`✅ Order sent!\nYour order number: ${created.orderNumber}\nWe will email you the payment instructions and the tracking details later.`);
     clearCart();
     onClose();
   };
@@ -143,18 +143,18 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
                 <div className="border-t border-border p-6 space-y-3">
                   <div className="space-y-1.5 text-sm">
                     <div className="flex justify-between text-muted-foreground">
-                      <span>Subtotaal</span>
+                      <span>Subtotal</span>
                       <span>{format(total)}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Verzending ({count} shirt{count !== 1 ? "s" : ""})</span>
+                      <span className="text-muted-foreground">Shipping ({count} shirt{count !== 1 ? "s" : ""})</span>
                       <span className={shipping === 0 ? "font-bold text-gradient-gold" : "font-semibold"}>
-                        {shipping === 0 ? "GRATIS" : format(shipping)}
+                        {shipping === 0 ? "FREE" : format(shipping)}
                       </span>
                     </div>
                     {shirtsToFree > 0 && (
                       <p className="text-[11px] text-primary/80 italic pt-1">
-                        + {shirtsToFree} shirt{shirtsToFree !== 1 ? "s" : ""} voor gratis verzending
+                        + {shirtsToFree} more shirt{shirtsToFree !== 1 ? "s" : ""} for free shipping
                       </p>
                     )}
                   </div>

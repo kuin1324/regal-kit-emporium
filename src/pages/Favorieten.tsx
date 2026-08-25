@@ -12,12 +12,17 @@ import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
 import { useProductName } from "@/lib/productName";
+import { productIdentity } from "@/lib/productIdentity";
 
 const Favorieten = () => {
   const { favorites, toggleFavorite } = useCart();
   const { formatPrice } = useCurrency();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
-  const favoriteProducts = allProducts.filter(p => favorites.has(p.name));
+  // Favorieten worden op unieke id (SKU/foto) bewaard; oude opslag op naam blijft werken.
+  const favoriteProducts = allProducts.filter(
+    (p) => favorites.has(productIdentity(p)) || favorites.has(p.name)
+  );
+
   const { t } = useTranslation();
   const productName = useProductName();
 
@@ -41,11 +46,12 @@ const Favorieten = () => {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {favoriteProducts.map((product, i) => (
-                <motion.div key={product.name} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }} className="group relative cursor-pointer">
-                  <button onClick={(e) => { e.stopPropagation(); toggleFavorite(product.name); }} className="absolute top-3 right-3 z-10 p-2 rounded-full bg-background/70 backdrop-blur-sm">
+                <motion.div key={productIdentity(product)} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }} className="group relative cursor-pointer">
+                  <button onClick={(e) => { e.stopPropagation(); toggleFavorite(favorites.has(product.name) ? product.name : productIdentity(product)); }} className="absolute top-3 right-3 z-10 p-2 rounded-full bg-background/70 backdrop-blur-sm">
                     <Heart className="h-4 w-4 fill-red-500 text-red-500" />
                   </button>
-                  <div onClick={() => setSelectedProduct(product.name)}>
+                  <div onClick={() => setSelectedProduct(productIdentity(product))}>
+
                     <div className="relative overflow-hidden rounded bg-card border border-border/50 transition-all duration-500 group-hover:border-primary/30">
                       <div className="aspect-[4/5] overflow-hidden">
                         <ShirtImage src={thumbSrc(product.image)} fallback={product.image} alt={productName(product.name)} width={420} height={525} loading="lazy" className="h-full w-full object-cover" />

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { topTeams } from "@/lib/collection";
+import { topClubs, topCountries } from "@/lib/collection";
 
 /** Landcodes voor vlaggen (flagcdn); clubs krijgen hun clublogo. */
 const FLAGS: Record<string, string> = {
@@ -10,7 +10,17 @@ const FLAGS: Record<string, string> = {
   Netherlands: "nl", Nederland: "nl", Colombia: "co", Belgium: "be",
   Uruguay: "uy", USA: "us", Croatia: "hr", Morocco: "ma", Chile: "cl",
   Peru: "pe", Ecuador: "ec", Nigeria: "ng", "South Korea": "kr", Turkey: "tr",
+  Ghana: "gh", Egypt: "eg", Cameroon: "cm", Senegal: "sn", Algeria: "dz",
+  "Ivory Coast": "ci", Sweden: "se", Denmark: "dk", Poland: "pl",
+  Switzerland: "ch", Austria: "at", Scotland: "gb-sct", Wales: "gb-wls",
+  Ireland: "ie", Norway: "no", Serbia: "rs", Canada: "ca", Australia: "au",
+  "Saudi Arabia": "sa", Qatar: "qa", Iran: "ir", China: "cn", Paraguay: "py",
+  Venezuela: "ve", Bolivia: "bo", "Costa Rica": "cr", Panama: "pa",
+  Jamaica: "jm", Tunisia: "tn", "South Africa": "za", Greece: "gr",
+  "Czech Republic": "cz", Ukraine: "ua", Hungary: "hu", Finland: "fi",
+  Iceland: "is", Slovakia: "sk", Slovenia: "si",
 };
+
 
 /** Clublogo's, lokaal opgeslagen in public/logos/. */
 const CLUB_LOGOS: Record<string, string> = {
@@ -90,14 +100,17 @@ const ClubLogo = ({ team }: { team: string }) => {
 
 
 
+/** Eerst alle clubs, daarna alle landen; even veel van beide zodat de rij vol eindigt. */
+const items = [...topClubs, ...topCountries];
+
 const ShopByTeam = () => (
   <section className="py-12">
     <div className="container mx-auto px-6">
       <h2 className="font-display text-2xl sm:text-3xl font-bold tracking-tight mb-6">
-        Shop by team & country
+        Shop by team &amp; country
       </h2>
       <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-3 sm:gap-4">
-        {topTeams.map((t, i) => {
+        {items.map((t, i) => {
           const flag = FLAGS[t.team];
           return (
             <motion.div
@@ -136,5 +149,6 @@ const ShopByTeam = () => (
     </div>
   </section>
 );
+
 
 export default ShopByTeam;

@@ -1,50 +1,43 @@
-## Wijzigingen
+# Collectie herstellen, foto's aanpassen en site publiceerbaar maken
 
-### 1. Homepage carrousel (HeroCarousel.tsx)
-De huidige carrousel toont 3 slides met oude shirtfoto's (`shirt-new-2.png`, `shirt-new-6.png`) en de jerseys-clothesline. Deze worden vervangen door de nieuwe shirt-foto's:
+## Wat er nu aan de hand is
 
-- Slide "Special Editions" → foto van **FC Barcelona Black & Gold** (voorkant)
-- Slide "Nationale Trots" → foto van **Portugal x Louis Vuitton** (voorkant)
-- Slide "Italië x Versace" → vervangen door **Italië Special Trainingsshirt** (voorkant), titel/CTA aangepast naar "Italië Special Edition"
+- In `public/collectie/` staan 1215 shirtmappen + 847 losse shirts (samen ~2062 shirts), maar de productlijst bevat er maar 2043 inclusief gesplitste varianten. Er ontbreken dus honderden shirts — dat zijn de pagina's 36 t/m 39.
+- De foto's zijn onbewerkte JPG/PNG's: 3,3 GB voor 6552 bestanden, gemiddeld 459 KB per foto. Dat is de reden dat foto's traag/niet laden én dat publiceren faalt (limiet 3 GB).
 
-De oude imports (`shirt-new-2`, `shirt-new-6`, `jerseys-clothesline`) worden verwijderd uit dit bestand. De vertaalsleutels in `nl.json`/`en.json` voor `home.slides.italyTitle/Subtitle/Cta` worden bijgewerkt.
+## 1. Foto's comprimeren (publiceren + laadsnelheid)
 
-### 2. Verzendinformatie bij elk shirt (ProductDetailModal)
-In het product-modal komt een nieuw blok onder de prijs / boven "In Winkelmandje" met de verzendtarieven:
+- Alle foto's in `public/collectie/` omzetten naar WebP, max ~1400 px lange zijde, kwaliteit ~80. Verwachte omvang: ~300–450 MB in plaats van 3,3 GB — ruim onder de publicatielimiet.
+- Alle paden in de productdata meeschrijven naar `.webp`, en de thumbnails (`public/thumbs/`) opnieuw genereren zodat elk shirt een lichte gridfoto heeft.
+- Resultaat: foto's laden merkbaar sneller en de placeholders verdwijnen.
 
-```
-Verzendkosten
-1–2 shirts: €10
-3–4 shirts: €8
-5–6 shirts: €6
-7–8 shirts: GRATIS
-```
+## 2. Collectie herstellen (pagina 36 t/m 39)
 
-Compacte tabel-achtige weergave, met de gratis-regel in goud-accent.
+- De collectie opnieuw opbouwen uit alle mappen en losse bestanden in `public/collectie/`, zodat elk shirt weer in de lijst staat.
+- Bestaande handmatige aanpassingen (splitsingen, hernoemingen, prijzen, teams/leagues, SKU's) worden op de bestaande shirts behouden; alleen ontbrekende shirts worden toegevoegd.
 
-### 3. Dynamische verzending in winkelmandje (CartDrawer + CartContext)
-Een helperfunctie `calculateShipping(count)` wordt toegevoegd:
+## 3. Naam- en fotobewerkingen
 
-```
-count <= 2 → €10
-count 3-4 → €8
-count 5-6 → €6
-count >= 7 → €0 (gratis)
-```
+- **4a en 4b**: beide shirts krijgen exact dezelfde weergavenaam (uniek gehouden via een onzichtbaar teken, zoals bij de eerdere splitsingen).
+- **PSG Home Shirt 25-26**: foto 1 verwijderen; foto 2 wordt hoofd-/titelfoto.
+- **Ajax Home Shirt 25-26**: laatste foto verwijderen.
+- **Tottenham Hotspur Home Shirt 25-26** en **FC Barcelona Home Shirt 25-26** (uit de originele set van 6):
+  - nieuw apart shirt met foto 1 als titelfoto en foto 6 als tweede foto;
+  - origineel houdt foto 2 t/m 5.
+- **AC Milan Goalkeeper Shirt 25-26**:
+  - de laatste twee foto's worden een apart shirt; daarvan wordt de tweede foto de titelfoto;
+  - het overgebleven shirt met vier foto's: huidige eerste foto naar plek 4, de daaropvolgende foto wordt de nieuwe eerste/titelfoto;
+  - dit shirt met vier foto's krijgt "Longsleeve" in de naam.
 
-In `CartDrawer`:
-- Nieuwe regel "Verzending" boven het totaal met het berekende bedrag (of "GRATIS" in goud).
-- Bij minder dan 7 shirts: een hint "Voeg X shirt(s) toe voor gratis verzending".
-- Het totaalbedrag wordt: `items-totaal + verzending`.
-- De WhatsApp/e-mail-bestelregels krijgen een extra regel "Verzending: €X" (of "GRATIS").
+## 4. Shop by team & country
 
-### 4. Vertalingen
-Nieuwe sleutels in `nl.json` en `en.json`:
-- `product.shippingRates` (titel)
-- `cart.shipping`, `cart.shippingFree`, `cart.shippingHint`
-- Bijgewerkte `home.slides.italyTitle/Subtitle/Cta`
+- Eerst alle clubs, daarna alle landen — met een gelijk aantal van beide (dus meer landen dan nu).
+- Het aantal iconen wordt afgestemd op de kolommen, zodat de rij altijd netjes vol eindigt (geen halve laatste rij).
 
-### Niet aangepast
-- Productlijst blijft volledig intact (geen shirts verwijderd).
-- Bestaande "shipping" tab in product-modal blijft, hier komt enkel het tarievenblok bij.
-- Geen backend-/edge-function-wijzigingen nodig.
+## Technisch
+
+- Compressie via een eenmalig script (Pillow/sharp) over `public/collectie/`, daarna `scripts/generate-thumbs.mjs` opnieuw draaien.
+- Data-herstel via `scripts/generate-public-collectie.mjs`, aangevuld met een merge-stap die bestaande items in `src/data/public_collectie.ts` niet overschrijft.
+- Foto-/naamwijzigingen als eenmalig script op `src/data/public_collectie.ts`, met nieuwe SKU-hashes voor de afgesplitste shirts.
+- `src/lib/collection.ts` (`topTeams`) en `src/components/ShopByTeam.tsx` aanpassen voor de club/land-verdeling en rij-uitlijning.
+- Prijscatalogus voor bestellingen opnieuw genereren zodat nieuwe/gesplitste SKU's bestelbaar blijven.

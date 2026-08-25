@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, RefreshCw } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface PaginationProps {
@@ -36,7 +36,7 @@ const Pagination = ({ page, totalPages, onChange, className }: PaginationProps) 
         onClick={() => go(Math.max(1, page - 1))}
         disabled={page === 1}
         className="p-2 rounded border border-border hover:border-primary/50 disabled:opacity-40 disabled:cursor-not-allowed transition"
-        aria-label="Vorige"
+        aria-label="Previous page"
       >
         <ChevronLeft className="h-4 w-4" />
       </button>
@@ -61,7 +61,7 @@ const Pagination = ({ page, totalPages, onChange, className }: PaginationProps) 
         onClick={() => go(Math.min(totalPages, page + 1))}
         disabled={page === totalPages}
         className="p-2 rounded border border-border hover:border-primary/50 disabled:opacity-40 disabled:cursor-not-allowed transition"
-        aria-label="Volgende"
+        aria-label="Next page"
       >
         <ChevronRight className="h-4 w-4" />
       </button>
@@ -74,19 +74,29 @@ const Pagination = ({ page, totalPages, onChange, className }: PaginationProps) 
         }}
         className="ml-2 flex items-center gap-2"
       >
-        <span className="text-xs text-muted-foreground">{t("pagination.goTo", { defaultValue: "Ga naar" })}</span>
+        <span className="text-xs text-muted-foreground">{t("pagination.goTo", { defaultValue: "Go to" })}</span>
         <input
           type="number"
           min={1}
           max={totalPages}
           value={jump}
           onChange={(e) => setJump(e.target.value)}
-          aria-label="Paginanummer"
+          aria-label="Page number"
           className="h-9 w-16 rounded border border-border bg-card px-2 text-center text-sm outline-none focus:border-primary/50"
         />
         <span className="text-xs text-muted-foreground">/ {totalPages}</span>
         <button type="submit" className="h-9 rounded border border-border px-3 text-xs font-medium transition hover:border-primary/50">
-          Ga
+          Go
+        </button>
+        <button
+          type="button"
+          onClick={() => window.dispatchEvent(new Event("shirts:refresh"))}
+          title="Reload photos"
+          aria-label="Reload photos"
+          className="flex h-9 items-center gap-1.5 rounded border border-border px-3 text-xs font-medium transition hover:border-primary/50"
+        >
+          <RefreshCw className="h-3.5 w-3.5" />
+          Reload photos
         </button>
       </form>
     </div>

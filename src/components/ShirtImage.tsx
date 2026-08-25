@@ -86,6 +86,20 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
 
   useEffect(() => () => clearTimeout(timer.current), []);
 
+  // Handmatige "Reload photos"-knop: altijd opnieuw proberen.
+  useEffect(() => {
+    const reload = () => {
+      retries.current = 0;
+      setUnavailable(false);
+      setFailed(false);
+      setCurrent(src);
+      setStart(true);
+      setBust(Date.now());
+    };
+    window.addEventListener("shirts:refresh", reload);
+    return () => window.removeEventListener("shirts:refresh", reload);
+  }, [src]);
+
   // Opgegeven foto's nog eens proberen zodra de verbinding of het tabblad terug is.
   useEffect(() => {
     if (!unavailable) return;

@@ -7,18 +7,9 @@ import { useTranslation } from "react-i18next";
 import { useSearchParams } from "react-router-dom";
 import CollectionView from "@/components/CollectionView";
 import ProductDetailModal from "@/components/ProductDetailModal";
-import { collectieShirts } from "@/data/collectie_shirts";
-import { publicCollectieShirts } from "@/data/public_collectie";
+import { allCollectieItems } from "@/lib/collection";
+import { productIdentity } from "@/lib/productIdentity";
 
-const seen = new Set(collectieShirts.map((p) => p.name));
-const allCollectieItems = [
-  ...collectieShirts,
-  ...publicCollectieShirts.filter((p) => {
-    if (seen.has(p.name)) return false;
-    seen.add(p.name);
-    return true;
-  }),
-];
 
 const norm = (v: string) =>
   v
@@ -38,11 +29,17 @@ const Collectie = () => {
     const open = searchParams.get("open");
     const q = searchParams.get("q") ?? searchParams.get("code");
     let match: (typeof allCollectieItems)[number] | undefined;
+    // Extensie negeren: oude links wijzen nog naar .jpg/.png, de foto's zijn nu .webp.
+    const stripExt = (v: string) => decodeURIComponent(v).replace(/\.[a-z0-9]+$/i, "").toLowerCase();
     if (img) {
-      const dec = decodeURIComponent(img);
+      const target = stripExt(img);
       match =
-        allCollectieItems.find((p) => p.image === img || p.image === dec) ??
-        allCollectieItems.find((p) => (p.gallery ?? []).some((g) => g === img || g === dec));
+        allCollectieItems.find((p) => stripExt(p.image) === target) ??
+        allCollectieItems.find((p) => (p.gallery ?? []).some((g) => stripExt(g) === target));
+    }
+    if (!match && q) {
+      const code = q.trim().toUpperCase();
+      match = allCollectieItems.find((p) => (p.sku ?? "").toUpperCase() === code);
     }
     if (!match && open) {
       const target = norm(open);
@@ -51,14 +48,11 @@ const Collectie = () => {
         allCollectieItems.find((p) => norm(p.name).startsWith(target) || target.startsWith(norm(p.name)));
     }
     if (!match && q) {
-      const code = q.trim().toUpperCase();
       const target = norm(q);
-      match =
-        allCollectieItems.find((p) => (p.sku ?? "").toUpperCase() === code) ??
-        allCollectieItems.find((p) => norm(p.name) === target);
+      match = allCollectieItems.find((p) => norm(p.name) === target);
     }
     if (match) {
-      setSelectedProduct(match.name);
+      setSelectedProduct(productIdentity(match));
       // Zorg dat de grid het shirt ook toont: zoek op naam i.p.v. een verouderde code.
       if (searchParams.get("q") !== match.name) {
         const next = new URLSearchParams(searchParams);
@@ -68,6 +62,7 @@ const Collectie = () => {
         setSearchParams(next, { replace: true });
       }
     }
+
   }, [searchParams, setSearchParams]);
 
 

@@ -12,13 +12,13 @@ import ShirtImage from "@/components/ShirtImage";
 import { thumbSrc } from "@/lib/thumb";
 import { useAdminView } from "@/lib/admin";
 import { useProductName } from "@/lib/productName";
+import { findProduct, mergeById } from "@/lib/productIdentity";
 
-export const allProducts = [
-  ...collectieShirts,
-  ...publicCollectieShirts.filter(
-    (p) => !collectieShirts.some((r) => r.name === p.name)
-  ),
-];
+type AnyProduct = (typeof collectieShirts)[number] | (typeof publicCollectieShirts)[number];
+
+export const allProducts: AnyProduct[] = mergeById<AnyProduct>(collectieShirts, publicCollectieShirts);
+
+
 
 interface ProductDetailModalProps {
   productName: string | null;
@@ -55,7 +55,9 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
   const isAdmin = useAdminView();
   const translate = useProductName();
 
-  const selected = productName ? allProducts.find(p => p.name === productName) : null;
+  // productName bevat de unieke id (SKU/fotopad); oude links met alleen de naam werken ook.
+  const selected = findProduct(allProducts, productName) ?? null;
+
   const displayName = selected
     ? t(`products.${selected.nameKey}`, { defaultValue: translate(selected.name) })
     : "";

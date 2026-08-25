@@ -11,7 +11,9 @@ import ProductFilters from "@/components/ProductFilters";
 import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
 import ShirtImage from "@/components/ShirtImage";
 import { thumbSrc } from "@/lib/thumb";
+import { productIdentity } from "@/lib/productIdentity";
 import { CUSTOM_PRICE } from "@/components/ProductDetailModal";
+
 
 const PAGE_SIZE = 60;
 
@@ -91,24 +93,27 @@ const CollectionView = ({ items, onSelect }: Props) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const toggleSelect = (name: string) =>
+  const toggleSelect = (id: string) =>
     setSelected((prev) => {
       const next = new Set(prev);
-      next.has(name) ? next.delete(name) : next.add(name);
+      next.has(id) ? next.delete(id) : next.add(id);
       return next;
     });
 
   const selectedProducts = useMemo(
-    () => filtered.filter((p) => selected.has(p.name)),
+    () => filtered.filter((p) => selected.has(productIdentity(p))),
     [filtered, selected]
   );
 
+
   const bulkFavorite = () => {
     selectedProducts.forEach((p) => {
-      if (!favorites.has(p.name)) toggleFavorite(p.name);
+      const id = productIdentity(p);
+      if (!favorites.has(id)) toggleFavorite(id);
     });
     setSelected(new Set());
   };
+
 
   const bulkCart = () => {
     selectedProducts.forEach((p) => {
@@ -221,12 +226,14 @@ const CollectionView = ({ items, onSelect }: Props) => {
             }}
             className="grid select-none grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
           >
-            {pageItems.map((product, i) => (
+            {pageItems.map((product, i) => {
+              const pid = productIdentity(product);
+              return (
               <motion.div
-                key={product.name + i}
+                key={pid}
                 ref={(el) => {
-                  if (el) cardRefs.current.set(product.name, el);
-                  else cardRefs.current.delete(product.name);
+                  if (el) cardRefs.current.set(pid, el);
+                  else cardRefs.current.delete(pid);
                 }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -237,14 +244,14 @@ const CollectionView = ({ items, onSelect }: Props) => {
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                    toggleFavorite(product.name);
+                    toggleFavorite(pid);
                   }}
                   className="absolute right-3 top-3 z-10 rounded-full bg-background/70 p-2 backdrop-blur-sm transition-colors hover:bg-background/90"
                   aria-label="favorite"
                 >
                   <Heart
                     className={`h-4 w-4 transition-colors ${
-                      favorites.has(product.name) ? "fill-red-500 text-red-500" : "text-foreground"
+                      favorites.has(pid) ? "fill-red-500 text-red-500" : "text-foreground"
                     }`}
                   />
                 </button>
@@ -252,21 +259,22 @@ const CollectionView = ({ items, onSelect }: Props) => {
                   onClick={(e) => {
                     if (dragged.current) return;
                     if (e.ctrlKey || e.metaKey || e.shiftKey) {
-                      toggleSelect(product.name);
+                      toggleSelect(pid);
                       return;
                     }
                     if (selected.size > 0) {
-                      toggleSelect(product.name);
+                      toggleSelect(pid);
                       return;
                     }
-                    onSelect(product.name);
+                    onSelect(pid);
                   }}
                   className={`relative overflow-hidden rounded border bg-card transition-all duration-500 group-hover:shadow-[var(--shadow-gold)] ${
-                    selected.has(product.name)
+                    selected.has(pid)
                       ? "border-primary ring-2 ring-primary"
                       : "border-border/50 group-hover:border-primary/30"
                   }`}
                 >
+
                   <div className="aspect-[4/5] overflow-hidden">
                     <ShirtImage
                       src={thumbSrc(product.image)}
@@ -288,7 +296,9 @@ const CollectionView = ({ items, onSelect }: Props) => {
                   </div>
                 </div>
               </motion.div>
-            ))}
+              );
+            })}
+
           </div>
 
           {filtered.length > 0 && (

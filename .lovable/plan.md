@@ -1,43 +1,33 @@
-# Collectie herstellen, foto's aanpassen en site publiceerbaar maken
+# Pagina 36 t/m 39 van de collectie herstellen
 
-## Wat er nu aan de hand is
+## Diagnose
 
-- In `public/collectie/` staan 1215 shirtmappen + 847 losse shirts (samen ~2062 shirts), maar de productlijst bevat er maar 2043 inclusief gesplitste varianten. Er ontbreken dus honderden shirts — dat zijn de pagina's 36 t/m 39.
-- De foto's zijn onbewerkte JPG/PNG's: 3,3 GB voor 6552 bestanden, gemiddeld 459 KB per foto. Dat is de reden dat foto's traag/niet laden én dat publiceren faalt (limiet 3 GB).
+- De betaalwijzigingen in `CheckoutModal.tsx` en `create-checkout` verwijderen geen collectieproducten en zijn niet de oorzaak.
+- De bronnen bevatten momenteel 284 handmatige shirts en 2.043 publieke producten.
+- De collectie voegt producten nu samen op **naam**. Daardoor worden 267 geldige producten met dezelfde zichtbare naam weggefilterd en blijven 2.060 shirts over: 35 pagina's van 60.
+- Samenvoegen op de unieke SKU in plaats van de naam levert 2.327 shirts op: exact 39 pagina's van maximaal 60 shirts.
 
-## 1. Foto's comprimeren (publiceren + laadsnelheid)
+## Uitvoering
 
-- Alle foto's in `public/collectie/` omzetten naar WebP, max ~1400 px lange zijde, kwaliteit ~80. Verwachte omvang: ~300–450 MB in plaats van 3,3 GB — ruim onder de publicatielimiet.
-- Alle paden in de productdata meeschrijven naar `.webp`, en de thumbnails (`public/thumbs/`) opnieuw genereren zodat elk shirt een lichte gridfoto heeft.
-- Resultaat: foto's laden merkbaar sneller en de placeholders verdwijnen.
+1. **Collectie samenvoegen op unieke identiteit**
+   - Vervang naam-deduplicatie door SKU-deduplicatie, met het fotopad als fallback als een SKU ontbreekt.
+   - Houd shirts met dezelfde zichtbare naam als afzonderlijke producten wanneer hun SKU/fotoset verschilt.
+   - Pas dit gedeeld toe zodat Hele Collectie en de categoriepagina's dezelfde complete productbron gebruiken.
 
-## 2. Collectie herstellen (pagina 36 t/m 39)
+2. **Het juiste dubbele shirt openen**
+   - Laat gridkaarten een unieke product-id/SKU doorgeven in plaats van alleen de naam.
+   - Laat de productmodal eerst op SKU zoeken en alleen voor oudere links terugvallen op naam.
+   - Behoud de exacte galerij, hoofdafbeelding en prijs van iedere variant.
 
-- De collectie opnieuw opbouwen uit alle mappen en losse bestanden in `public/collectie/`, zodat elk shirt weer in de lijst staat.
-- Bestaande handmatige aanpassingen (splitsingen, hernoemingen, prijzen, teams/leagues, SKU's) worden op de bestaande shirts behouden; alleen ontbrekende shirts worden toegevoegd.
+3. **Bestaande links en selectie behouden**
+   - Laat links uit bestelmails primair op foto/SKU matchen.
+   - Maak favorieten, bulkselectie en React-keys variantveilig, zodat twee shirts met dezelfde naam elkaar niet overschrijven.
 
-## 3. Naam- en fotobewerkingen
-
-- **4a en 4b**: beide shirts krijgen exact dezelfde weergavenaam (uniek gehouden via een onzichtbaar teken, zoals bij de eerdere splitsingen).
-- **PSG Home Shirt 25-26**: foto 1 verwijderen; foto 2 wordt hoofd-/titelfoto.
-- **Ajax Home Shirt 25-26**: laatste foto verwijderen.
-- **Tottenham Hotspur Home Shirt 25-26** en **FC Barcelona Home Shirt 25-26** (uit de originele set van 6):
-  - nieuw apart shirt met foto 1 als titelfoto en foto 6 als tweede foto;
-  - origineel houdt foto 2 t/m 5.
-- **AC Milan Goalkeeper Shirt 25-26**:
-  - de laatste twee foto's worden een apart shirt; daarvan wordt de tweede foto de titelfoto;
-  - het overgebleven shirt met vier foto's: huidige eerste foto naar plek 4, de daaropvolgende foto wordt de nieuwe eerste/titelfoto;
-  - dit shirt met vier foto's krijgt "Longsleeve" in de naam.
-
-## 4. Shop by team & country
-
-- Eerst alle clubs, daarna alle landen — met een gelijk aantal van beide (dus meer landen dan nu).
-- Het aantal iconen wordt afgestemd op de kolommen, zodat de rij altijd netjes vol eindigt (geen halve laatste rij).
+4. **Controleren**
+   - Verifieer dat de standaard, ongefilterde collectie 2.327 shirts en 39 pagina's toont.
+   - Open meerdere gelijknamige varianten op pagina 36–39 en controleer dat elk de juiste foto's toont.
+   - Controleer zoeken, filters, paginawisseling en mobiel swipen zonder de verwijderde betaalfunctie terug te brengen.
 
 ## Technisch
 
-- Compressie via een eenmalig script (Pillow/sharp) over `public/collectie/`, daarna `scripts/generate-thumbs.mjs` opnieuw draaien.
-- Data-herstel via `scripts/generate-public-collectie.mjs`, aangevuld met een merge-stap die bestaande items in `src/data/public_collectie.ts` niet overschrijft.
-- Foto-/naamwijzigingen als eenmalig script op `src/data/public_collectie.ts`, met nieuwe SKU-hashes voor de afgesplitste shirts.
-- `src/lib/collection.ts` (`topTeams`) en `src/components/ShopByTeam.tsx` aanpassen voor de club/land-verdeling en rij-uitlijning.
-- Prijscatalogus voor bestellingen opnieuw genereren zodat nieuwe/gesplitste SKU's bestelbaar blijven.
+De kern wordt één gedeelde helper, bijvoorbeeld `productIdentity(product) = sku || image`, die wordt gebruikt bij samenvoegen, selectie en detailweergave. Er worden geen checkoutbestanden hersteld en de aangeleverde oude betaalcode wordt niet teruggezet.

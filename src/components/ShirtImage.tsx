@@ -86,6 +86,17 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
 
   useEffect(() => () => clearTimeout(timer.current), []);
 
+  // Vangnet: blijft een foto hangen, geef het slot na 10s vrij en probeer opnieuw.
+  useEffect(() => {
+    if (!go || loaded || unavailable) return;
+    const id = setTimeout(() => {
+      done();
+      setBust(Date.now());
+    }, 10000);
+    return () => clearTimeout(id);
+  }, [go, loaded, unavailable, bust]);
+
+
   // Handmatige "Reload photos"-knop: altijd opnieuw proberen.
   useEffect(() => {
     const reload = () => {

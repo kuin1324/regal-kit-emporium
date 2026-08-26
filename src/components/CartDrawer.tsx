@@ -4,7 +4,7 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Minus, Plus, Trash2, ShoppingBag } from "lucide-react";
+import { X, Minus, Plus, Trash2, ShoppingBag, CheckCircle2, Mail, Truck } from "lucide-react";
 import { useCurrency } from "@/context/CurrencyContext";
 import { useCart } from "@/context/CartContext";
 import { useTranslation } from "react-i18next";

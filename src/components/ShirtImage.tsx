@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ImageOff } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
-import { acquireImageSlot, releaseImageSlot } from "@/lib/imageQueue";
 
 interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
@@ -11,10 +10,10 @@ interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
 }
 
 /**
- * Afbeelding die pas laadt wanneer ze in beeld komt en die via een globale
- * wachtrij het aantal gelijktijdige downloads beperkt. Zo krijgt de browser
- * nooit honderden requests tegelijk (de oorzaak van placeholders).
- * Mislukte foto's worden een paar keer opnieuw geprobeerd.
+ * Afbeelding die pas laadt wanneer ze bijna in beeld komt. Het grid gebruikt
+ * kleine WebP-thumbnails, waardoor de browser downloads betrouwbaarder kan
+ * plannen dan een globale JavaScript-wachtrij. Mislukte requests vallen terug
+ * op het origineel en worden daarna automatisch opnieuw geprobeerd.
  */
 const MAX_RETRIES = 6;
 
@@ -28,7 +27,6 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
   const retries = useRef(0);
   const timer = useRef<ReturnType<typeof setTimeout>>();
   const wrapper = useRef<HTMLDivElement>(null);
-  const holding = useRef(false);
 
   useEffect(() => {
     setCurrent(src);
@@ -60,41 +58,21 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
     return () => io.disconnect();
   }, [start]);
 
-  // Wachtrij: hooguit een handvol foto's tegelijk downloaden.
-  const [go, setGo] = useState(false);
-  useEffect(() => {
-    if (!start || go) return;
-    const cancel = acquireImageSlot(() => {
-      holding.current = true;
-      setGo(true);
-    });
-    return () => {
-      cancel();
-      if (holding.current) {
-        holding.current = false;
-        releaseImageSlot();
-      }
-    };
-  }, [start, go]);
-
-  const done = () => {
-    if (holding.current) {
-      holding.current = false;
-      releaseImageSlot();
-    }
-  };
-
   useEffect(() => () => clearTimeout(timer.current), []);
 
-  // Vangnet: blijft een foto hangen, geef het slot na 10s vrij en probeer opnieuw.
+  // Vangnet voor requests die zonder load/error-event blijven hangen.
   useEffect(() => {
-    if (!go || loaded || unavailable) return;
+    if (!start || loaded || unavailable) return;
     const id = setTimeout(() => {
-      done();
-      setBust(Date.now());
-    }, 10000);
+      if (retries.current < MAX_RETRIES) {
+        retries.current += 1;
+        setBust(Date.now());
+      } else {
+        setUnavailable(true);
+      }
+    }, 12000);
     return () => clearTimeout(id);
-  }, [go, loaded, unavailable, bust]);
+  }, [start, current, loaded, unavailable, bust]);
 
 
   // Handmatige "Reload photos"-knop: altijd opnieuw proberen.
@@ -139,7 +117,7 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
   return (
     <div ref={wrapper} className="relative h-full w-full">
       {!loaded && <Skeleton className="absolute inset-0 h-full w-full rounded-none" />}
-      {go && (
+      {start && (
         <img
           {...rest}
           key={src}
@@ -147,11 +125,12 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
           alt={alt}
           decoding="async"
           onLoad={(e) => {
+            clearTimeout(timer.current);
             setLoaded(true);
-            done();
             rest.onLoad?.(e);
           }}
           onError={() => {
+            clearTimeout(timer.current);
             if (!failed && fallback && current !== fallback) {
               setCurrent(fallback);
               setFailed(true);
@@ -167,7 +146,6 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
               clearTimeout(timer.current);
               timer.current = setTimeout(() => setBust(Date.now()), 500 * n);
             } else {
-              done();
               setUnavailable(true);
             }
           }}

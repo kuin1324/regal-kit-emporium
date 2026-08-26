@@ -32,7 +32,10 @@ export const acquireImageSlot = (start: () => void) => {
   return () => {
     cancelled = true;
     const i = queue.indexOf(task);
-    if (i >= 0) queue.splice(i, 1);
+    if (i >= 0) {
+      queue.splice(i, 1);
+      pump();
+    }
   };
 };
 

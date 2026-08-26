@@ -89,7 +89,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     return () => {
       cancelled = true;
     };
-  }, [userId, items.length]);
+  }, [userId]);
 
   // Opslaan per gebruiker (of als gast) zodat alles behouden blijft.
   useEffect(() => {

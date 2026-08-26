@@ -72,6 +72,13 @@ const Navbar = () => {
           <DropdownMenuContent align="end" className="bg-popover">
             <DropdownMenuItem disabled className="text-xs text-muted-foreground">{user.email}</DropdownMenuItem>
             <DropdownMenuSeparator />
+            {isAdmin && (
+              <DropdownMenuItem onClick={() => { navigate("/admin"); setMobileOpen(false); }}>
+                <ShieldCheck className="h-4 w-4 mr-2" />
+                Bestellingen beheren
+              </DropdownMenuItem>
+            )}
+
             <DropdownMenuItem onClick={() => signOut()}>
               <LogOut className="h-4 w-4 mr-2" />
               {t("nav.logout")}

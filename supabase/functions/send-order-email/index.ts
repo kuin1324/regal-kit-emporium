@@ -164,6 +164,7 @@ Deno.serve(async (req) => {
           subject: `Nieuwe bestelling ${order.order_number} — €${order.total}`,
           body: { contentType: "HTML", content: html },
           toRecipients: [{ emailAddress: { address: recipient } }],
+          ...(attachments.length ? { attachments } : {}),
         },
         saveToSentItems: true,
       }),

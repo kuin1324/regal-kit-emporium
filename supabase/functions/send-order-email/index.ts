@@ -88,7 +88,6 @@ Deno.serve(async (req) => {
         <p>📦 Bestelnummer: <b>${escapeHtml(order.order_number)}</b><br/>✉️ E-mail: ${escapeHtml(order.email)}</p>
         <table style="border-collapse:collapse;width:100%;max-width:600px;margin-top:12px">
           <thead><tr style="background:#f5f5f5">
-            <th style="text-align:left;padding:8px 10px">Foto</th>
             <th style="text-align:left;padding:8px 10px">Shirt</th>
             <th style="text-align:left;padding:8px 10px">Maat</th>
             <th style="text-align:left;padding:8px 10px">Aantal</th>

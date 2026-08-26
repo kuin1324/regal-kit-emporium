@@ -72,7 +72,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     const created = await createOrder(email);
     setBusy(false);
     if (!created) {
-      alert("❌ Your order could not be placed. Please try again or email us.");
+      setOrderResult({ ok: false });
       return;
     }
 
@@ -85,7 +85,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
       /* Bestelling staat opgeslagen; mail kan later alsnog verstuurd worden. */
     }
 
-    alert(`✅ Order sent!\nYour order number: ${created.orderNumber}\nWe will email you the payment instructions and the tracking details later.`);
+    setOrderResult({ ok: true, orderNumber: created.orderNumber });
     clearCart();
     onClose();
   };

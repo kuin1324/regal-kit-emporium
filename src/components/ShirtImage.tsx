@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { ImageOff } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { cdnSrc } from "@/lib/cdn";
+
 
 interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
@@ -17,7 +19,9 @@ interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
  */
 const MAX_RETRIES = 6;
 
-const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className = "", ...rest }: Props) => {
+const ShirtImage = ({ src: rawSrc, fallback: rawFallback, alt = "", showPlaceholder = true, className = "", ...rest }: Props) => {
+  const src = cdnSrc(rawSrc);
+  const fallback = rawFallback ? cdnSrc(rawFallback) : rawFallback;
   const [current, setCurrent] = useState(src);
   const [failed, setFailed] = useState(false);
   const [unavailable, setUnavailable] = useState(false);

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
+import { cdnSrc } from "@/lib/cdn";
 
 interface Props {
   src: string;
@@ -14,7 +15,10 @@ const MAX = 5;
 const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
 
 /** Foto met zoom (scrollwiel / pinch / knoppen) en slepen om te pannen. */
-const ZoomableImage = ({ src, preview, fallback, alt }: Props) => {
+const ZoomableImage = ({ src: rawSrc, preview: rawPreview, fallback: rawFallback, alt }: Props) => {
+  const src = cdnSrc(rawSrc);
+  const preview = rawPreview ? cdnSrc(rawPreview) : rawPreview;
+  const fallback = rawFallback ? cdnSrc(rawFallback) : rawFallback;
   const containerRef = useRef<HTMLDivElement>(null);
   const [zoom, setZoom] = useState(1);
   const [offset, setOffset] = useState({ x: 0, y: 0 });

@@ -62,70 +62,20 @@ Deno.serve(async (req) => {
 
     const items = (Array.isArray(order.items) ? order.items : []) as StoredItem[];
 
-    // Fotopaden -> publieke CDN-URL. Paden kunnen al absolute /__l5e/... URLs zijn,
-    // of lokale /collectie/... paden die naar het gebundelde asset-ID wijzen.
-    const PHOTO_ASSET_ID = "a750d26f-5765-4be1-a189-53d7875775ce";
-    const toCdnUrl = (raw?: string | null) => {
-      if (!raw) return "";
-      const p = String(raw);
-      if (p.startsWith("http")) return p;
-      if (p.startsWith("/__l5e/")) return `${SITE_URL}${p}`;
-      if (p.startsWith("/collectie/") || p.startsWith("/thumbs/")) {
-        return `${SITE_URL}/__l5e/assets-v1/${PHOTO_ASSET_ID}/${p.slice(1).split("/").join("__")}`;
-      }
-      return `${SITE_URL}${p.startsWith("/") ? p : `/${p}`}`;
-    };
-
-    // Foto's als inline bijlage meesturen, zodat ze altijd zichtbaar zijn in Outlook
-    // (remote afbeeldingen worden standaard geblokkeerd).
-    const attachments: Record<string, unknown>[] = [];
-    const cids = new Map<string, string>();
-    const uniqueUrls = [...new Set(items.map((i) => toCdnUrl(i.image)).filter(Boolean))].slice(0, 10);
-    await Promise.all(uniqueUrls.map(async (url, idx) => {
-      try {
-        const res = await fetch(url);
-        if (!res.ok) return;
-        const buf = new Uint8Array(await res.arrayBuffer());
-        if (buf.byteLength > 3_000_000) return;
-        let bin = "";
-        for (let k = 0; k < buf.length; k += 8192) bin += String.fromCharCode(...buf.subarray(k, k + 8192));
-        const type = res.headers.get("content-type") || "image/jpeg";
-        const ext = type.includes("webp") ? "webp" : type.includes("png") ? "png" : "jpg";
-        const cid = `shirt${idx}`;
-        cids.set(url, cid);
-        attachments.push({
-          "@odata.type": "#microsoft.graph.fileAttachment",
-          name: `${cid}.${ext}`,
-          contentType: type,
-          contentBytes: btoa(bin),
-          contentId: cid,
-          isInline: true,
-        });
-      } catch (_e) { /* foto overslaan */ }
-    }));
-
     const rows = items.map((i) => {
       const extra = [i.customName, i.customNumber ? `#${i.customNumber}` : null].filter(Boolean).join(" ");
       const sku = i.sku ? String(i.sku) : "";
       const itemName = String(i.name ?? "").trim();
       // Open exact het juiste (dubbele) shirt: match op fotopad, dan naam, dan zoekcode.
-      const query = sku || itemName;
       const params = new URLSearchParams();
       if (i.image) params.set("img", String(i.image));
       if (itemName) params.set("open", itemName);
       if (sku) params.set("code", sku);
       const link = params.toString() ? `${SITE_URL}/collectie?${params.toString()}` : SITE_URL;
-      const photoUrl = toCdnUrl(i.image);
-      const cid = cids.get(photoUrl);
-      const photo = cid
-        ? `<a href="${escapeHtml(photoUrl)}"><img src="cid:${cid}" alt="${escapeHtml(itemName)}" width="90" style="border-radius:6px;display:block;border:1px solid #eee"/></a>`
-        : photoUrl
-          ? `<a href="${escapeHtml(photoUrl)}">foto bekijken</a>`
-          : "";
-      return `<tr><td style="padding:6px 10px;border-bottom:1px solid #eee">${photo}</td><td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.name ?? ""))}${
+      return `<tr><td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.name ?? ""))}${
         i.sku ? ` <small style="color:#888">[${escapeHtml(String(i.sku))}]</small>` : ""
       }${extra ? `<br/><small>${escapeHtml(extra)}</small>` : ""}${
-        query ? `<br/><small>${sku ? `Zoekcode: <b>${escapeHtml(sku)}</b> — ` : ""}<a href="${escapeHtml(link)}">bekijk shirt</a>${photoUrl ? ` — <a href="${escapeHtml(photoUrl)}">foto</a>` : ""}</small>` : ""
+        itemName ? `<br/><small>${sku ? `Zoekcode: <b>${escapeHtml(sku)}</b> — ` : ""}<a href="${escapeHtml(link)}">bekijk shirt</a></small>` : ""
       }</td>
        <td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.size ?? ""))}</td>
        <td style="padding:6px 10px;border-bottom:1px solid #eee">${Number(i.quantity ?? 0)}</td>

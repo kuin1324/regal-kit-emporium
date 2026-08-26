@@ -25,6 +25,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [askMode, setAskMode] = useState<"pay" | "email" | null>(null);
+  const [orderResult, setOrderResult] = useState<{ ok: boolean; orderNumber?: string } | null>(null);
   const { t } = useTranslation();
   const productName = useProductName();
   const { user } = useAuth();

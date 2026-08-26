@@ -66,6 +66,31 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     setFavorites((prev) => new Set([...prev, ...stored.favorites]));
   }, [userId]);
 
+  // Verwijder favorieten die niet meer bij een bestaand shirt horen (anders toont
+  // de teller een hartje terwijl de favorietenpagina leeg is).
+  useEffect(() => {
+    let cancelled = false;
+    void (async () => {
+      const [{ allProducts }, { productIdentity }] = await Promise.all([
+        import("@/components/ProductDetailModal"),
+        import("@/lib/productIdentity"),
+      ]);
+      if (cancelled) return;
+      const valid = new Set<string>();
+      for (const p of allProducts) {
+        valid.add(productIdentity(p));
+        valid.add(p.name);
+      }
+      setFavorites((prev) => {
+        const next = new Set([...prev].filter((f) => valid.has(f)));
+        return next.size === prev.size ? prev : next;
+      });
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [userId]);
+
   // Opslaan per gebruiker (of als gast) zodat alles behouden blijft.
   useEffect(() => {
     try {

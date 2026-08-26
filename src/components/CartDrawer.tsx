@@ -189,6 +189,65 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
         onCancel={() => setAskMode(null)}
         onConfirm={(email) => void runOrder(askMode ?? "email", email)}
       />
+      <AnimatePresence>
+        {orderResult && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              className="fixed inset-0 z-[60] bg-background/80 backdrop-blur-sm"
+              onClick={() => setOrderResult(null)}
+            />
+            <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 pointer-events-none">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.92, y: 16 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95, y: 8 }}
+                transition={{ type: "spring", damping: 22, stiffness: 260 }}
+                className="pointer-events-auto w-full max-w-sm bg-card border border-border rounded-xl shadow-2xl p-8 text-center"
+              >
+                {orderResult.ok ? (
+                  <>
+                    <motion.div
+                      initial={{ scale: 0 }} animate={{ scale: 1 }}
+                      transition={{ type: "spring", damping: 10, stiffness: 200, delay: 0.1 }}
+                      className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10"
+                    >
+                      <CheckCircle2 className="h-9 w-9 text-primary" />
+                    </motion.div>
+                    <h3 className="font-display text-xl font-bold uppercase tracking-wide">Order sent!</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">Your order number:</p>
+                    <p className="mt-1 font-display text-2xl font-bold text-gradient-gold tracking-wider">{orderResult.orderNumber}</p>
+                    <div className="mt-6 space-y-2 text-left">
+                      <div className="flex items-start gap-3 rounded-lg border border-border/60 bg-muted/40 p-3">
+                        <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <p className="text-xs text-muted-foreground leading-relaxed">We will email you the payment instructions (PayPal, Tikkie, etc.).</p>
+                      </div>
+                      <div className="flex items-start gap-3 rounded-lg border border-border/60 bg-muted/40 p-3">
+                        <Truck className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <p className="text-xs text-muted-foreground leading-relaxed">Tracking details follow once your order ships. You can also check Track &amp; Trace.</p>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-destructive/10">
+                      <X className="h-9 w-9 text-destructive" />
+                    </div>
+                    <h3 className="font-display text-xl font-bold uppercase tracking-wide">Order failed</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">Your order could not be placed. Please try again or email us.</p>
+                  </>
+                )}
+                <button
+                  onClick={() => setOrderResult(null)}
+                  className="mt-6 w-full rounded bg-primary py-3 text-sm font-semibold uppercase tracking-wide text-primary-foreground transition-opacity hover:opacity-90"
+                >
+                  OK
+                </button>
+              </motion.div>
+            </div>
+          </>
+        )}
+      </AnimatePresence>
       <ProductDetailModal productName={selectedProduct} onClose={() => setSelectedProduct(null)} />
     </>
   );

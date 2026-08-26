@@ -77,7 +77,7 @@ const Navbar = () => {
             {isAdmin && (
               <DropdownMenuItem onClick={() => { navigate("/admin"); setMobileOpen(false); }}>
                 <ShieldCheck className="h-4 w-4 mr-2" />
-                Bestellingen beheren
+                Manage orders
               </DropdownMenuItem>
             )}
 

@@ -94,11 +94,11 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
       .maybeSingle();
     setSaving(false);
     if (error || !data) {
-      toast({ title: "Opslaan mislukt", description: error?.message ?? "Probeer het opnieuw", variant: "destructive" });
+      toast({ title: "Could not save", description: error?.message ?? "Please try again", variant: "destructive" });
       return;
     }
     onSaved(data as unknown as Order);
-    toast({ title: "Bestelling bijgewerkt", description: order.order_number });
+    toast({ title: "Order updated", description: order.order_number });
   };
 
   const items = Array.isArray(order.items) ? order.items : [];
@@ -114,7 +114,7 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
           <p className="font-display text-lg font-bold tracking-tight text-primary">{order.order_number}</p>
           <p className="text-sm text-muted-foreground">{order.email}</p>
           <p className="text-xs text-muted-foreground">
-            {new Date(order.created_at).toLocaleString("nl-NL")}
+            {new Date(order.created_at).toLocaleString("en-GB")}
           </p>
         </div>
         <div className="text-right">
@@ -123,7 +123,7 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
           </span>
           <p className="mt-2 font-semibold">{money(order.total)}</p>
           <p className="text-xs text-muted-foreground">
-            {money(order.subtotal)} + {money(order.shipping)} verzending
+            {money(order.subtotal)} + {money(order.shipping)} shipping
           </p>
         </div>
       </div>
@@ -132,13 +132,13 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
         {items.map((item, i) => (
           <li key={i} className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
             <span className="font-medium">
-              {item.quantity ?? 1}× {item.name ?? "Onbekend shirt"}
+              {item.quantity ?? 1}× {item.name ?? "Unknown shirt"}
             </span>
             <span className="text-muted-foreground">
               {[
-                item.size ? `Maat ${item.size}` : null,
-                item.customName ? `Naam: ${item.customName}` : null,
-                item.customNumber ? `Nr: ${item.customNumber}` : null,
+                item.size ? `Size ${item.size}` : null,
+                item.customName ? `Name: ${item.customName}` : null,
+                item.customNumber ? `No: ${item.customNumber}` : null,
                 item.sku ?? null,
               ]
                 .filter(Boolean)
@@ -146,7 +146,7 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
             </span>
           </li>
         ))}
-        {items.length === 0 && <li className="text-sm text-muted-foreground">Geen artikelen</li>}
+        {items.length === 0 && <li className="text-sm text-muted-foreground">No items</li>}
       </ul>
 
       <div className="mt-4 grid gap-3 border-t border-border/60 pt-4 sm:grid-cols-2">
@@ -162,7 +162,7 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
           </Select>
         </div>
         <div className="space-y-1.5">
-          <Label className="text-xs">Vervoerder</Label>
+          <Label className="text-xs">Carrier</Label>
           <Input
             value={draft.carrier}
             placeholder="PostNL, DHL…"
@@ -170,14 +170,14 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
           />
         </div>
         <div className="space-y-1.5">
-          <Label className="text-xs">Trackingcode</Label>
+          <Label className="text-xs">Tracking code</Label>
           <Input
             value={draft.tracking_code}
             onChange={(e) => setDraft((d) => ({ ...d, tracking_code: e.target.value }))}
           />
         </div>
         <div className="space-y-1.5">
-          <Label className="text-xs">Tracking-link</Label>
+          <Label className="text-xs">Tracking link</Label>
           <Input
             value={draft.tracking_url}
             placeholder="https://…"
@@ -189,7 +189,7 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
       <div className="mt-4 flex justify-end">
         <Button onClick={save} disabled={!dirty || saving} size="sm">
           {saving ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Save className="mr-2 h-4 w-4" />}
-          Opslaan
+          Save
         </Button>
       </div>
     </motion.div>
@@ -253,13 +253,13 @@ const Admin = () => {
         <Navbar />
         <div className="container mx-auto flex flex-col items-center px-6 pt-40 pb-24 text-center">
           <ShieldAlert className="mb-4 h-10 w-10 text-primary" />
-          <h1 className="font-display text-3xl font-bold">Geen toegang</h1>
+          <h1 className="font-display text-3xl font-bold">No access</h1>
           <p className="mt-2 max-w-md text-muted-foreground">
-            Deze pagina is alleen voor beheerders. Log in met een beheerdersaccount om bestellingen te bekijken.
+            This page is for administrators only. Sign in with an admin account to view orders.
           </p>
           {!user && (
             <Button asChild className="mt-6">
-              <Link to="/auth">Inloggen</Link>
+              <Link to="/auth">Sign in</Link>
             </Button>
           )}
         </div>
@@ -274,20 +274,20 @@ const Admin = () => {
       <main className="container mx-auto px-6 pt-28 pb-24">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-medium uppercase tracking-[0.3em] text-primary">Beheer</p>
-            <h1 className="font-display text-4xl font-bold tracking-tight">Bestellingen</h1>
+            <p className="text-xs font-medium uppercase tracking-[0.3em] text-primary">Admin</p>
+            <h1 className="font-display text-4xl font-bold tracking-tight">Orders</h1>
           </div>
           <Button variant="outline" size="sm" onClick={load} disabled={loading}>
             <RefreshCw className={`mr-2 h-4 w-4 ${loading ? "animate-spin" : ""}`} />
-            Vernieuwen
+            Refresh
           </Button>
         </div>
 
         <div className="mb-6 grid gap-4 sm:grid-cols-3">
           {[
-            { label: "Bestellingen", value: String(filtered.length) },
-            { label: "Omzet", value: money(revenue) },
-            { label: "Openstaand", value: String(filtered.filter((o) => o.status === "ontvangen").length) },
+            { label: "Orders", value: String(filtered.length) },
+            { label: "Revenue", value: money(revenue) },
+            { label: "Open", value: String(filtered.filter((o) => o.status === "ontvangen").length) },
           ].map((s) => (
             <div key={s.label} className="rounded-xl border border-border bg-card p-4">
               <p className="text-xs uppercase tracking-wider text-muted-foreground">{s.label}</p>
@@ -298,7 +298,7 @@ const Admin = () => {
 
         <div className="mb-6 flex flex-col gap-3 sm:flex-row">
           <Input
-            placeholder="Zoek op bestelnummer, e-mail of shirt…"
+            placeholder="Search by order number, email or shirt…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="sm:max-w-sm"
@@ -306,7 +306,7 @@ const Admin = () => {
           <Select value={statusFilter} onValueChange={setStatusFilter}>
             <SelectTrigger className="sm:w-52"><SelectValue /></SelectTrigger>
             <SelectContent>
-              <SelectItem value="alle">Alle statussen</SelectItem>
+              <SelectItem value="alle">All statuses</SelectItem>
               {STATUSES.map((s) => (
                 <SelectItem key={s} value={s} className="capitalize">{s}</SelectItem>
               ))}
@@ -321,7 +321,7 @@ const Admin = () => {
         ) : filtered.length === 0 ? (
           <div className="flex flex-col items-center py-20 text-center text-muted-foreground">
             <PackageSearch className="mb-3 h-8 w-8" />
-            Geen bestellingen gevonden.
+            No orders found.
           </div>
         ) : (
           <div className="space-y-4">

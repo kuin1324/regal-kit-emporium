@@ -72,8 +72,12 @@ Deno.serve(async (req) => {
       if (itemName) params.set("open", itemName);
       if (sku) params.set("code", sku);
       const link = params.toString() ? `${SITE_URL}/collectie?${params.toString()}` : SITE_URL;
-      const photo = i.image
-        ? `<img src="${escapeHtml(SITE_URL + String(i.image))}" alt="" width="70" style="border-radius:6px;display:block"/>`
+      // Foto's staan op de asset-CDN, niet meer in de deployment-bundle.
+      const photoUrl = i.image
+        ? `${SITE_URL}/__l5e/assets-v1/a750d26f-5765-4be1-a189-53d7875775ce/${String(i.image).slice(1).split("/").join("__")}`
+        : "";
+      const photo = photoUrl
+        ? `<img src="${escapeHtml(photoUrl)}" alt="" width="70" style="border-radius:6px;display:block"/>`
         : "";
       return `<tr><td style="padding:6px 10px;border-bottom:1px solid #eee">${photo}</td><td style="padding:6px 10px;border-bottom:1px solid #eee">${escapeHtml(String(i.name ?? ""))}${
         i.sku ? ` <small style="color:#888">[${escapeHtml(String(i.sku))}]</small>` : ""

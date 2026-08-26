@@ -29,6 +29,7 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
   const timer = useRef<ReturnType<typeof setTimeout>>();
   const wrapper = useRef<HTMLDivElement>(null);
   const holding = useRef(false);
+  const mounted = useRef(true);
 
   useEffect(() => {
     setCurrent(src);
@@ -63,8 +64,9 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
   // Wachtrij: hooguit een handvol foto's tegelijk downloaden.
   const [go, setGo] = useState(false);
   useEffect(() => {
-    if (!start || go) return;
+    if (!start) return;
     const cancel = acquireImageSlot(() => {
+      if (!mounted.current) return;
       holding.current = true;
       setGo(true);
     });
@@ -75,7 +77,7 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
         releaseImageSlot();
       }
     };
-  }, [start, go]);
+  }, [start]);
 
   const done = () => {
     if (holding.current) {
@@ -84,7 +86,10 @@ const ShirtImage = ({ src, fallback, alt = "", showPlaceholder = true, className
     }
   };
 
-  useEffect(() => () => clearTimeout(timer.current), []);
+  useEffect(() => () => {
+    mounted.current = false;
+    clearTimeout(timer.current);
+  }, []);
 
   // Vangnet: blijft een foto hangen, geef het slot na 10s vrij en probeer opnieuw.
   useEffect(() => {

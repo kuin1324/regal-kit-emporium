@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { allCollectieItems } from "@/lib/collection";
+import { cdnSrc } from "@/lib/cdn";
 
 const specials = allCollectieItems.filter((p) =>
   /special|concept/i.test(p.name) || p.leagues?.some((l) => /special/i.test(l))
@@ -46,7 +47,7 @@ const HeroCarousel = () => {
               className="absolute inset-0"
             >
               <img
-                src={slide.image}
+                src={cdnSrc(slide.image)}
                 alt={t(slide.titleKey)}
                 loading={idx === 0 ? "eager" : "lazy"}
                 fetchPriority={idx === 0 ? "high" : "low"}

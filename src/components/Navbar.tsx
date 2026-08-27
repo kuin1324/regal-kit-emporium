@@ -38,8 +38,9 @@ const Navbar = () => {
   ];
 
   const IconActions = ({ inMenu = false }: { inMenu?: boolean }) => (
-    <div className={inMenu ? "flex flex-wrap items-center gap-4" : "flex items-center gap-4"}>
+    <div className={inMenu ? "flex flex-wrap items-center gap-5" : "flex items-center gap-5"}>
       <CurrencySwitcher />
+      <AccentSwitcher />
       <ThemeToggle />
       <Link
         to="/favorieten"

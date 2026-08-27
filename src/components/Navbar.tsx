@@ -111,7 +111,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop nav links (center) */}
-          <div className="hidden md:flex flex-1 min-w-0 items-center justify-center gap-1 overflow-x-auto no-scrollbar">
+          <div className="hidden md:flex flex-1 min-w-0 items-center justify-start xl:justify-center gap-1 overflow-x-auto no-scrollbar">
             {navItems.map((item) => (
               <Link
                 key={item.path}

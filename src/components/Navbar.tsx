@@ -106,12 +106,12 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/85 backdrop-blur-xl">
         <div className="container mx-auto flex h-14 sm:h-[4.5rem] items-center gap-4 px-3 sm:px-6 lg:gap-8">
           <Link to="/" className="shrink-0 font-display text-[11px] sm:text-base lg:text-lg font-bold tracking-wider sm:tracking-[0.18em] uppercase text-gradient-gold whitespace-nowrap">
-            <span className="lg:hidden">HOFS</span>
-            <span className="hidden lg:inline">The Home of Football Style</span>
+            <span className="xl:hidden">HOFS</span>
+            <span className="hidden xl:inline">The Home of Football Style</span>
           </Link>
 
           {/* Desktop nav links (center) */}
-          <div className="hidden md:flex flex-1 min-w-0 items-center justify-start xl:justify-center gap-1 overflow-x-auto no-scrollbar">
+          <div className="hidden md:flex flex-1 min-w-0 items-center justify-start 2xl:justify-center gap-1 overflow-x-auto no-scrollbar">
             {navItems.map((item) => (
               <Link
                 key={item.path}

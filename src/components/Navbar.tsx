@@ -9,6 +9,7 @@ import { useIsAdmin } from "@/hooks/useIsAdmin";
 import CartDrawer from "./CartDrawer";
 import ThemeToggle from "./ThemeToggle";
 import CurrencySwitcher from "./CurrencySwitcher";
+import AccentSwitcher from "./AccentSwitcher";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -38,8 +39,9 @@ const Navbar = () => {
   ];
 
   const IconActions = ({ inMenu = false }: { inMenu?: boolean }) => (
-    <div className={inMenu ? "flex flex-wrap items-center gap-4" : "flex items-center gap-4"}>
+    <div className={inMenu ? "flex flex-wrap items-center gap-5" : "flex items-center gap-5"}>
       <CurrencySwitcher />
+      <AccentSwitcher />
       <ThemeToggle />
       <Link
         to="/favorieten"
@@ -101,21 +103,23 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
-        <div className="container mx-auto flex h-14 sm:h-16 items-center justify-between px-3 sm:px-6 gap-2">
-          <Link to="/" className="font-display text-[11px] sm:text-xl font-bold tracking-wider sm:tracking-widest uppercase text-gradient-gold truncate">
-            <span className="sm:hidden">HOFS</span>
-            <span className="hidden sm:inline">The Home of Football Style</span>
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/85 backdrop-blur-xl">
+        <div className="container mx-auto flex h-14 sm:h-[4.5rem] items-center gap-4 px-3 sm:px-6 lg:gap-8">
+          <Link to="/" className="shrink-0 font-display text-[11px] sm:text-base lg:text-lg font-bold tracking-wider sm:tracking-[0.18em] uppercase text-gradient-gold whitespace-nowrap">
+            <span className="2xl:hidden">HOFS</span>
+            <span className="hidden 2xl:inline">The Home of Football Style</span>
           </Link>
 
           {/* Desktop nav links (center) */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex flex-1 min-w-0 items-center justify-start 2xl:justify-center gap-1 overflow-x-auto no-scrollbar">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium tracking-wide transition-colors duration-300 uppercase ${
-                  location.pathname === item.path ? "text-primary" : "text-muted-foreground hover:text-primary"
+                className={`whitespace-nowrap rounded-full px-3 py-2 text-[11px] lg:text-xs font-medium tracking-[0.12em] uppercase transition-colors duration-300 ${
+                  location.pathname === item.path
+                    ? "bg-primary/10 text-primary"
+                    : "text-muted-foreground hover:bg-muted hover:text-primary"
                 }`}
               >
                 {item.label}
@@ -125,13 +129,13 @@ const Navbar = () => {
 
           {/* Mobile: horizontally scrollable nav links in place of icons */}
           <div className="md:hidden flex-1 min-w-0 overflow-x-auto no-scrollbar">
-            <div className="flex items-center gap-4 px-2">
+            <div className="flex items-center gap-3">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-[11px] font-medium tracking-wide uppercase whitespace-nowrap ${
-                    location.pathname === item.path ? "text-primary" : "text-muted-foreground"
+                  className={`whitespace-nowrap rounded-full px-2.5 py-1.5 text-[11px] font-medium tracking-wide uppercase ${
+                    location.pathname === item.path ? "bg-primary/10 text-primary" : "text-muted-foreground"
                   }`}
                 >
                   {item.label}
@@ -141,9 +145,10 @@ const Navbar = () => {
           </div>
 
           {/* Desktop icon actions on the right */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex shrink-0 items-center gap-5 border-l border-border/60 pl-5">
             <IconActions />
           </div>
+
 
           {/* Mobile hamburger */}
           <button className="md:hidden text-foreground shrink-0" onClick={() => setMobileOpen(!mobileOpen)} aria-label="menu">

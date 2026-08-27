@@ -9,6 +9,7 @@ import { useIsAdmin } from "@/hooks/useIsAdmin";
 import CartDrawer from "./CartDrawer";
 import ThemeToggle from "./ThemeToggle";
 import CurrencySwitcher from "./CurrencySwitcher";
+import AccentSwitcher from "./AccentSwitcher";
 import {
   DropdownMenu,
   DropdownMenuContent,

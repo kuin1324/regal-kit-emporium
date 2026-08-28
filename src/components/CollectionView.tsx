@@ -200,6 +200,14 @@ const CollectionView = ({ items, onSelect }: Props) => {
         </div>
       </div>
 
+      <ColorFilterBar
+        items={items}
+        selected={filters.colors}
+        onChange={(colors) => setFilters((f) => ({ ...f, colors }))}
+      />
+
+
+
       <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
         {showFilters && (
           <aside className="lg:w-52 lg:shrink-0">

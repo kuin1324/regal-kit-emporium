@@ -8,7 +8,7 @@ import { useCurrency } from "@/context/CurrencyContext";
 import { useProductName } from "@/lib/productName";
 import Pagination from "@/components/Pagination";
 import ProductFilters from "@/components/ProductFilters";
-import ColorFilterBar from "@/components/ColorFilterBar";
+
 import { applyFilters, initialFilterState, FilterState } from "@/lib/productFilters";
 import ShirtImage from "@/components/ShirtImage";
 import { thumbSrc } from "@/lib/thumb";
@@ -201,11 +201,6 @@ const CollectionView = ({ items, onSelect }: Props) => {
         </div>
       </div>
 
-      <ColorFilterBar
-        items={items}
-        selected={filters.colors}
-        onChange={(colors) => setFilters((f) => ({ ...f, colors }))}
-      />
 
 
 

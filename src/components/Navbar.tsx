@@ -90,14 +90,7 @@ const Navbar = () => {
           </DropdownMenuContent>
         </DropdownMenu>
       ) : (
-        <button
-          onClick={() => { navigate("/auth"); setMobileOpen(false); }}
-          className="text-foreground hover:text-primary transition-colors"
-          aria-label={t("nav.login")}
-        >
-          <User className="h-5 w-5" />
-        </button>
-      )}
+      ) : null}
     </div>
   );
 

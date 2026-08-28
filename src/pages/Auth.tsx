@@ -15,17 +15,14 @@ import { Label } from "@/components/ui/label";
 const schema = z.object({
   email: z.string().trim().email().max(255),
   password: z.string().min(6).max(100),
-  displayName: z.string().trim().max(80).optional(),
 });
 
 const Auth = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { user } = useAuth();
-  const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [displayName, setDisplayName] = useState("");
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
@@ -34,30 +31,17 @@ const Auth = () => {
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const parsed = schema.safeParse({ email, password, displayName });
+    const parsed = schema.safeParse({ email, password });
     if (!parsed.success) {
       toast.error(parsed.error.issues[0]?.message ?? t("auth.errorTitle"));
       return;
     }
     setBusy(true);
     try {
-      if (mode === "signup") {
-        const { error } = await supabase.auth.signUp({
-          email,
-          password,
-          options: {
-            emailRedirectTo: `${window.location.origin}/`,
-            data: { display_name: displayName || undefined },
-          },
-        });
-        if (error) throw error;
-        toast.success(t("auth.checkEmail"));
-      } else {
-        const { error } = await supabase.auth.signInWithPassword({ email, password });
-        if (error) throw error;
-        toast.success(t("auth.loggedIn"));
-        navigate("/", { replace: true });
-      }
+      const { error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error) throw error;
+      toast.success(t("auth.loggedIn"));
+      navigate("/", { replace: true });
     } catch (err: any) {
       toast.error(err?.message ?? t("auth.errorTitle"));
     } finally {
@@ -78,6 +62,7 @@ const Auth = () => {
     if (result.redirected) return;
     navigate("/", { replace: true });
   };
+
 
   return (
     <div className="min-h-screen bg-background flex flex-col">

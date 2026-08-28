@@ -70,7 +70,7 @@ const Auth = () => {
       <main className="flex-1 flex items-center justify-center pt-24 pb-16 px-6">
         <div className="w-full max-w-md rounded-2xl border border-border bg-card p-8 shadow-lg">
           <h1 className="font-display text-2xl font-bold tracking-tight text-center mb-6">
-            {mode === "signin" ? t("auth.signIn") : t("auth.signUp")}
+            {t("auth.signIn")}
           </h1>
 
           <div className="space-y-2 mb-6">
@@ -106,12 +106,6 @@ const Auth = () => {
           </div>
 
           <form onSubmit={submit} className="space-y-4">
-            {mode === "signup" && (
-              <div className="space-y-1.5">
-                <Label htmlFor="name">{t("auth.displayName")}</Label>
-                <Input id="name" value={displayName} onChange={(e) => setDisplayName(e.target.value)} maxLength={80} />
-              </div>
-            )}
             <div className="space-y-1.5">
               <Label htmlFor="email">{t("auth.email")}</Label>
               <Input id="email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} maxLength={255} />
@@ -121,20 +115,10 @@ const Auth = () => {
               <Input id="password" type="password" required minLength={6} value={password} onChange={(e) => setPassword(e.target.value)} maxLength={100} />
             </div>
             <Button type="submit" className="w-full" disabled={busy}>
-              {mode === "signin" ? t("auth.submitSignIn") : t("auth.submitSignUp")}
+              {t("auth.submitSignIn")}
             </Button>
           </form>
 
-          <p className="mt-6 text-center text-sm text-muted-foreground">
-            {mode === "signin" ? t("auth.noAccount") : t("auth.hasAccount")}{" "}
-            <button
-              type="button"
-              className="text-primary hover:underline font-medium"
-              onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
-            >
-              {mode === "signin" ? t("auth.signUp") : t("auth.signIn")}
-            </button>
-          </p>
         </div>
       </main>
       <Footer />

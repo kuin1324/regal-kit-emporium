@@ -48,7 +48,7 @@ const FeaturedCollection = () => {
               className="group cursor-pointer relative"
             >
               <button
-                onClick={(e) => { e.stopPropagation(); toggleFavorite(product.name); }}
+                onClick={(e) => { e.stopPropagation(); toggleFavorite(favorites.has(product.name) ? product.name : productIdentity(product)); }}
                 className="absolute top-3 right-3 z-10 p-2 rounded-full bg-background/70 backdrop-blur-sm transition-colors hover:bg-background/90"
               >
                 <Heart className={`h-4 w-4 transition-colors ${(favorites.has(product.name) || favorites.has(productIdentity(product))) ? "fill-red-500 text-red-500" : "text-foreground"}`} />

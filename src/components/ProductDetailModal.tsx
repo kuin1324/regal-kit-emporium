@@ -12,7 +12,7 @@ import ShirtImage from "@/components/ShirtImage";
 import { thumbSrc } from "@/lib/thumb";
 import { useAdminView } from "@/lib/admin";
 import { useProductName } from "@/lib/productName";
-import { findProduct, mergeById } from "@/lib/productIdentity";
+import { findProduct, mergeById, productIdentity } from "@/lib/productIdentity";
 
 type AnyProduct = (typeof collectieShirts)[number] | (typeof publicCollectieShirts)[number];
 
@@ -110,8 +110,8 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
           className="fixed inset-0 z-[60] bg-background overflow-y-auto"
         >
           <div className="absolute top-4 right-4 z-10 flex gap-2">
-            <button onClick={() => toggleFavorite(selected.name)} className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors" aria-label={t("product.favorite")}>
-              <Heart className={`h-5 w-5 ${favorites.has(selected.name) ? "fill-red-500 text-red-500" : "text-foreground"}`} />
+            <button onClick={() => toggleFavorite(favorites.has(selected.name) ? selected.name : productIdentity(selected))} className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors" aria-label={t("product.favorite")}>
+              <Heart className={`h-5 w-5 ${(favorites.has(selected.name) || favorites.has(productIdentity(selected))) ? "fill-red-500 text-red-500" : "text-foreground"}`} />
             </button>
             <button onClick={onClose} className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors" aria-label={t("product.close")}>
               <X className="h-5 w-5" />

@@ -5,6 +5,7 @@ import { useCurrency } from "@/context/CurrencyContext";
 import { motion } from "framer-motion";
 import { ChevronDown, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
+import { productIdentity } from "@/lib/productIdentity";
 import { useCart } from "@/context/CartContext";
 import ProductDetailModal from "./ProductDetailModal";
 import { allCollectieItems } from "@/lib/collection";
@@ -50,7 +51,7 @@ const FeaturedCollection = () => {
                 onClick={(e) => { e.stopPropagation(); toggleFavorite(product.name); }}
                 className="absolute top-3 right-3 z-10 p-2 rounded-full bg-background/70 backdrop-blur-sm transition-colors hover:bg-background/90"
               >
-                <Heart className={`h-4 w-4 transition-colors ${favorites.has(product.name) ? "fill-red-500 text-red-500" : "text-foreground"}`} />
+                <Heart className={`h-4 w-4 transition-colors ${(favorites.has(product.name) || favorites.has(productIdentity(product))) ? "fill-red-500 text-red-500" : "text-foreground"}`} />
               </button>
               <div
                 onClick={() => setSelectedProduct(product.name)}

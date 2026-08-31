@@ -9,6 +9,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import { AuthProvider } from "@/context/AuthContext";
 import ScrollToTop from "@/components/ScrollToTop";
 import ChatWidget from "@/components/ChatWidget";
+import AdminUnlock from "@/components/AdminUnlock";
 
 import Index from "./pages/Index.tsx";
 import Auth from "./pages/Auth.tsx";
@@ -37,6 +38,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
+          <AdminUnlock />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/over-ons" element={<OverOns />} />

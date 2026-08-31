@@ -52,6 +52,10 @@ const CollectionView = ({ items, onSelect }: Props) => {
     ...initialFilterState,
     q: searchParams.get("q") || "",
     league: searchParams.get("league") || null,
+    country: searchParams.get("country") || null,
+    letter: searchParams.get("letter") || null,
+    decade: searchParams.get("decade") || null,
+    colors: searchParams.get("colors")?.split(",").filter(Boolean) ?? [],
   });
   const [page, setPage] = useState(1);
   const { favorites, toggleFavorite, addItem } = useCart();

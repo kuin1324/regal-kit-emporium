@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Bot, Send, X } from "lucide-react";
+import { Bot, EyeOff, Send, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useHidden } from "@/lib/hiddenWidgets";
+
 
 interface ChatMessage {
   role: "user" | "assistant";

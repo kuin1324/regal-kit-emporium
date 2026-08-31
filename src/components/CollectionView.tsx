@@ -57,7 +57,7 @@ const CollectionView = ({ items, onSelect }: Props) => {
   const { favorites, toggleFavorite, addItem } = useCart();
   const { formatPrice } = useCurrency();
   const productName = useProductName();
-  const touchX = useRef<number | null>(null);
+  const touchX = useRef<{ x: number; y: number; t: number } | null>(null);
   const [bulkOpen, setBulkOpen] = useState(false);
   const [bulkSize, setBulkSize] = useState("M");
   const [bulkCustom, setBulkCustom] = useState(false);
@@ -221,12 +221,25 @@ const CollectionView = ({ items, onSelect }: Props) => {
           <div
             ref={gridRef}
             onMouseDown={onMouseDown}
-            onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
+            onTouchStart={(e) => {
+              if (e.touches.length !== 1) {
+                touchX.current = null;
+                return;
+              }
+              touchX.current = { x: e.touches[0].clientX, y: e.touches[0].clientY, t: Date.now() };
+            }}
             onTouchEnd={(e) => {
-              if (touchX.current === null) return;
-              const dx = e.changedTouches[0].clientX - touchX.current;
+              const start = touchX.current;
               touchX.current = null;
-              if (Math.abs(dx) > 70) goPage(currentPage + (dx < 0 ? 1 : -1));
+              if (!start) return;
+              const dx = e.changedTouches[0].clientX - start.x;
+              const dy = e.changedTouches[0].clientY - start.y;
+              // Alleen een duidelijke, snelle horizontale veeg telt: verticaal scrollen
+              // mag nooit per ongeluk naar een andere pagina springen.
+              if (Math.abs(dx) < 90) return;
+              if (Math.abs(dx) < Math.abs(dy) * 2.5) return;
+              if (Date.now() - start.t > 600) return;
+              goPage(currentPage + (dx < 0 ? 1 : -1));
             }}
             className="grid select-none grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
           >

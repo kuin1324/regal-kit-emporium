@@ -1,11 +1,10 @@
-import { ShoppingBag, Menu, X, Heart, User, LogOut, ShieldCheck } from "lucide-react";
+import { ShoppingBag, Menu, X, Heart, User, LogOut } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/context/AuthContext";
-import { useIsAdmin } from "@/hooks/useIsAdmin";
 import CartDrawer from "./CartDrawer";
 import ThemeToggle from "./ThemeToggle";
 import CurrencySwitcher from "./CurrencySwitcher";
@@ -22,10 +21,8 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
   const { count, favorites } = useCart();
   const { user, signOut } = useAuth();
-  const { isAdmin } = useIsAdmin();
   const { t } = useTranslation();
 
   const navItems = [
@@ -76,13 +73,6 @@ const Navbar = () => {
           <DropdownMenuContent align="end" className="bg-popover">
             <DropdownMenuItem disabled className="text-xs text-muted-foreground">{user.email}</DropdownMenuItem>
             <DropdownMenuSeparator />
-            {isAdmin && (
-              <DropdownMenuItem onClick={() => { navigate("/admin"); setMobileOpen(false); }}>
-                <ShieldCheck className="h-4 w-4 mr-2" />
-                Manage orders
-              </DropdownMenuItem>
-            )}
-
             <DropdownMenuItem onClick={() => signOut()}>
               <LogOut className="h-4 w-4 mr-2" />
               {t("nav.logout")}

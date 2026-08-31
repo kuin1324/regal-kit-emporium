@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Loader2, PackageSearch, RefreshCw, Save, ShieldAlert } from "lucide-react";
+import { Download, Loader2, PackageSearch, RefreshCw, Save, ShieldAlert, Star, Trash2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -196,6 +196,87 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
   );
 };
 
+type ReviewRow = {
+  id: string;
+  name: string;
+  rating: number;
+  body: string;
+  order_number: string | null;
+  created_at: string;
+};
+
+const ReviewsPanel = () => {
+  const { toast } = useToast();
+  const [rows, setRows] = useState<ReviewRow[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  const load = async () => {
+    setLoading(true);
+    const { data } = await supabase
+      .from("reviews")
+      .select("id, name, rating, body, order_number, created_at")
+      .order("created_at", { ascending: false })
+      .limit(200);
+    setRows((data ?? []) as unknown as ReviewRow[]);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    load();
+  }, []);
+
+  const remove = async (id: string) => {
+    const { error } = await supabase.from("reviews").delete().eq("id", id);
+    if (error) {
+      toast({ title: "Could not delete", description: error.message, variant: "destructive" });
+      return;
+    }
+    setRows((r) => r.filter((x) => x.id !== id));
+    toast({ title: "Review deleted" });
+  };
+
+  if (loading) {
+    return (
+      <div className="flex justify-center py-20">
+        <Loader2 className="h-6 w-6 animate-spin text-primary" />
+      </div>
+    );
+  }
+
+  if (rows.length === 0) {
+    return <p className="py-16 text-center text-sm text-muted-foreground">No reviews yet.</p>;
+  }
+
+  return (
+    <div className="space-y-4">
+      {rows.map((r) => (
+        <div key={r.id} className="rounded-xl border border-border bg-card p-5">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <p className="font-medium">{r.name}</p>
+              <p className="text-xs text-muted-foreground">
+                {new Date(r.created_at).toLocaleString("en-GB")}
+                {r.order_number ? ` · order ${r.order_number}` : ""}
+              </p>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="flex items-center gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className={`h-4 w-4 ${i < r.rating ? "fill-primary text-primary" : "text-muted-foreground"}`} />
+                ))}
+              </span>
+              <Button size="sm" variant="ghost" onClick={() => remove(r.id)}>
+                <Trash2 className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+          <p className="mt-3 text-sm text-muted-foreground">{r.body}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const Admin = () => {
   const { user, loading: authLoading } = useAuth();
   const { isAdmin, loading: roleLoading } = useIsAdmin();
@@ -203,6 +284,7 @@ const Admin = () => {
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("alle");
+  const [tab, setTab] = useState<"orders" | "reviews">("orders");
 
   const load = async () => {
     setLoading(true);
@@ -238,6 +320,38 @@ const Admin = () => {
     () => filtered.filter((o) => o.status !== "geannuleerd").reduce((s, o) => s + Number(o.total || 0), 0),
     [filtered],
   );
+
+  const exportCsv = () => {
+    const header = ["order_number", "email", "status", "subtotal", "shipping", "total", "carrier", "tracking_code", "created_at", "items"];
+    const escape = (v: unknown) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+    const lines = [
+      header.join(","),
+      ...filtered.map((o) =>
+        [
+          o.order_number,
+          o.email,
+          o.status,
+          o.subtotal,
+          o.shipping,
+          o.total,
+          o.carrier,
+          o.tracking_code,
+          o.created_at,
+          (Array.isArray(o.items) ? o.items : [])
+            .map((i) => `${i.quantity ?? 1}x ${i.name ?? ""}${i.size ? ` (${i.size})` : ""}`)
+            .join(" | "),
+        ]
+          .map(escape)
+          .join(","),
+      ),
+    ];
+    const url = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8" }));
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `hofs-orders-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
 
   if (authLoading || roleLoading) {
     return (
@@ -277,11 +391,36 @@ const Admin = () => {
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-primary">Admin</p>
             <h1 className="font-display text-4xl font-bold tracking-tight">Orders</h1>
           </div>
-          <Button variant="outline" size="sm" onClick={load} disabled={loading}>
-            <RefreshCw className={`mr-2 h-4 w-4 ${loading ? "animate-spin" : ""}`} />
-            Refresh
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button variant="outline" size="sm" onClick={exportCsv} disabled={filtered.length === 0}>
+              <Download className="mr-2 h-4 w-4" />
+              Export CSV
+            </Button>
+            <Button variant="outline" size="sm" onClick={load} disabled={loading}>
+              <RefreshCw className={`mr-2 h-4 w-4 ${loading ? "animate-spin" : ""}`} />
+              Refresh
+            </Button>
+          </div>
         </div>
+
+        <div className="mb-6 inline-flex rounded-full border border-border p-1">
+          {(["orders", "reviews"] as const).map((key) => (
+            <button
+              key={key}
+              onClick={() => setTab(key)}
+              className={`rounded-full px-4 py-1.5 text-xs font-medium uppercase tracking-wider transition-colors ${
+                tab === key ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {key}
+            </button>
+          ))}
+        </div>
+
+        {tab === "reviews" ? (
+          <ReviewsPanel />
+        ) : (
+        <>
 
         <div className="mb-6 grid gap-4 sm:grid-cols-3">
           {[
@@ -333,6 +472,8 @@ const Admin = () => {
               />
             ))}
           </div>
+        )}
+        </>
         )}
       </main>
       <Footer />

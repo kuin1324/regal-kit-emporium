@@ -138,7 +138,7 @@ const ChatWidget = () => {
 
   return (
     <>
-      <div className="fixed bottom-5 left-5 z-50" style={{ transform: `translate(${offset.x}px, ${offset.y}px)` }}>
+      <div className="pointer-events-none fixed bottom-5 left-5 z-[51] h-14 w-14" style={{ transform: `translate(${offset.x}px, ${offset.y}px)` }}>
         <button
           type="button"
           onClick={() => {
@@ -147,7 +147,7 @@ const ChatWidget = () => {
           }}
           aria-label={t("chat.hide", { defaultValue: "Hide the assistant" })}
           title={t("chat.hide", { defaultValue: "Hide the assistant" })}
-          className="absolute -right-1 -top-1 z-10 flex h-6 w-6 items-center justify-center rounded-full border border-border bg-card text-muted-foreground shadow transition-colors hover:text-foreground"
+          className="pointer-events-auto absolute -right-1 -top-1 flex h-6 w-6 items-center justify-center rounded-full border border-border bg-card text-muted-foreground shadow transition-colors hover:text-foreground"
         >
           <EyeOff className="h-3 w-3" />
         </button>

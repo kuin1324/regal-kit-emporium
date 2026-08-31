@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { topClubs, topCountries, allClubs, allCountries } from "@/lib/collection";
+import { topCountries, allClubs, allCountries } from "@/lib/collection";
 
 /** Landcodes voor vlaggen (flagcdn); clubs krijgen hun clublogo. */
 const FLAGS: Record<string, string> = {
@@ -69,6 +69,25 @@ const CLUB_LOGOS: Record<string, string> = {
   Rangers: "rangers",
 };
 
+interface TeamItem {
+  team: string;
+  image: string;
+  count: number;
+}
+
+/** Alleen clubs met een echt logo tonen, en dubbele clubs (zelfde logo) samenvoegen. */
+const withLogosOnly = (clubs: TeamItem[]): TeamItem[] => {
+  const bySlug = new Map<string, TeamItem>();
+  for (const c of clubs) {
+    const slug = CLUB_LOGOS[c.team];
+    if (!slug) continue;
+    const hit = bySlug.get(slug);
+    if (hit) hit.count += c.count;
+    else bySlug.set(slug, { ...c });
+  }
+  return Array.from(bySlug.values()).sort((a, b) => b.count - a.count);
+};
+
 const monogram = (team: string) =>
   team
     .replace(/^(FC|AC|SSC|RB)\s+/i, "")
@@ -98,12 +117,6 @@ const ClubLogo = ({ team }: { team: string }) => {
     />
   );
 };
-
-interface TeamItem {
-  team: string;
-  image: string;
-  count: number;
-}
 
 const TeamTile = ({ t, i }: { t: TeamItem; i: number }) => {
   const flag = FLAGS[t.team];
@@ -142,7 +155,9 @@ const TeamTile = ({ t, i }: { t: TeamItem; i: number }) => {
 
 const ShopByTeam = () => {
   const [expanded, setExpanded] = useState(false);
-  const hasMore = allClubs.length > topClubs.length || allCountries.length > topCountries.length;
+  const clubsAll = withLogosOnly(allClubs);
+  const clubsTop = clubsAll.slice(0, 9);
+  const hasMore = clubsAll.length > clubsTop.length || allCountries.length > topCountries.length;
 
   return (
     <section className="py-12">
@@ -170,7 +185,7 @@ const ShopByTeam = () => {
                 Clubs
               </h3>
               <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-3 sm:gap-4">
-                {allClubs.map((t, i) => (
+                {clubsAll.map((t, i) => (
                   <TeamTile key={t.team} t={t} i={i} />
                 ))}
               </div>
@@ -188,7 +203,7 @@ const ShopByTeam = () => {
           </div>
         ) : (
           <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-3 sm:gap-4">
-            {[...topClubs, ...topCountries].map((t, i) => (
+            {[...clubsTop, ...topCountries].map((t, i) => (
               <TeamTile key={t.team} t={t} i={i} />
             ))}
           </div>

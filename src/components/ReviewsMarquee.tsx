@@ -54,17 +54,21 @@ const ReviewsMarquee = () => {
     if (!name.trim() || body.trim().length < 3 || !orderNumber.trim() || !email.trim()) return;
     setStatus("sending");
     setErrorMsg("");
-    const { error } = await supabase.rpc("submit_review", {
-      _order_number: orderNumber.trim(),
-      _email: email.trim(),
-      _name: name.trim().slice(0, 60),
-      _rating: rating,
-      _body: body.trim().slice(0, 600),
+    const { data, error } = await supabase.functions.invoke("submit-review", {
+      body: {
+        orderNumber: orderNumber.trim(),
+        email: email.trim(),
+        name: name.trim().slice(0, 60),
+        rating,
+        body: body.trim().slice(0, 600),
+      },
     });
-    if (error) {
+    const failure = error || (data && (data as { error?: string }).error);
+    if (failure) {
+      const code = typeof failure === "string" ? failure : "";
       setStatus("error");
       setErrorMsg(
-        /already/i.test(error.message)
+        code === "already_reviewed"
           ? "You already left a review for this order."
           : "We could not find that order. Check your order number and email address.",
       );

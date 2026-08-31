@@ -321,6 +321,38 @@ const Admin = () => {
     [filtered],
   );
 
+  const exportCsv = () => {
+    const header = ["order_number", "email", "status", "subtotal", "shipping", "total", "carrier", "tracking_code", "created_at", "items"];
+    const escape = (v: unknown) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+    const lines = [
+      header.join(","),
+      ...filtered.map((o) =>
+        [
+          o.order_number,
+          o.email,
+          o.status,
+          o.subtotal,
+          o.shipping,
+          o.total,
+          o.carrier,
+          o.tracking_code,
+          o.created_at,
+          (Array.isArray(o.items) ? o.items : [])
+            .map((i) => `${i.quantity ?? 1}x ${i.name ?? ""}${i.size ? ` (${i.size})` : ""}`)
+            .join(" | "),
+        ]
+          .map(escape)
+          .join(","),
+      ),
+    ];
+    const url = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8" }));
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `hofs-orders-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   if (authLoading || roleLoading) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-background">
@@ -359,11 +391,36 @@ const Admin = () => {
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-primary">Admin</p>
             <h1 className="font-display text-4xl font-bold tracking-tight">Orders</h1>
           </div>
-          <Button variant="outline" size="sm" onClick={load} disabled={loading}>
-            <RefreshCw className={`mr-2 h-4 w-4 ${loading ? "animate-spin" : ""}`} />
-            Refresh
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button variant="outline" size="sm" onClick={exportCsv} disabled={filtered.length === 0}>
+              <Download className="mr-2 h-4 w-4" />
+              Export CSV
+            </Button>
+            <Button variant="outline" size="sm" onClick={load} disabled={loading}>
+              <RefreshCw className={`mr-2 h-4 w-4 ${loading ? "animate-spin" : ""}`} />
+              Refresh
+            </Button>
+          </div>
         </div>
+
+        <div className="mb-6 inline-flex rounded-full border border-border p-1">
+          {(["orders", "reviews"] as const).map((key) => (
+            <button
+              key={key}
+              onClick={() => setTab(key)}
+              className={`rounded-full px-4 py-1.5 text-xs font-medium uppercase tracking-wider transition-colors ${
+                tab === key ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {key}
+            </button>
+          ))}
+        </div>
+
+        {tab === "reviews" ? (
+          <ReviewsPanel />
+        ) : (
+        <>
 
         <div className="mb-6 grid gap-4 sm:grid-cols-3">
           {[
@@ -415,6 +472,8 @@ const Admin = () => {
               />
             ))}
           </div>
+        )}
+        </>
         )}
       </main>
       <Footer />

@@ -46,7 +46,7 @@ interface Band {
 
 const CollectionView = ({ items, onSelect }: Props) => {
   const { t } = useTranslation();
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [showFilters, setShowFilters] = useState(false);
   const [filters, setFilters] = useState<FilterState>({
     ...initialFilterState,

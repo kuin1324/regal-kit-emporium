@@ -1,7 +1,7 @@
 import { ShoppingBag, Menu, X, Heart, User, LogOut } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/context/AuthContext";
@@ -21,7 +21,6 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
   const { count, favorites } = useCart();
   const { user, signOut } = useAuth();
   const { t } = useTranslation();

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Loader2, PackageSearch, RefreshCw, Save, ShieldAlert } from "lucide-react";
+import { Download, Loader2, PackageSearch, RefreshCw, Save, ShieldAlert, Star, Trash2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -196,6 +196,87 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
   );
 };
 
+type ReviewRow = {
+  id: string;
+  name: string;
+  rating: number;
+  body: string;
+  order_number: string | null;
+  created_at: string;
+};
+
+const ReviewsPanel = () => {
+  const { toast } = useToast();
+  const [rows, setRows] = useState<ReviewRow[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  const load = async () => {
+    setLoading(true);
+    const { data } = await supabase
+      .from("reviews")
+      .select("id, name, rating, body, order_number, created_at")
+      .order("created_at", { ascending: false })
+      .limit(200);
+    setRows((data ?? []) as unknown as ReviewRow[]);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    load();
+  }, []);
+
+  const remove = async (id: string) => {
+    const { error } = await supabase.from("reviews").delete().eq("id", id);
+    if (error) {
+      toast({ title: "Could not delete", description: error.message, variant: "destructive" });
+      return;
+    }
+    setRows((r) => r.filter((x) => x.id !== id));
+    toast({ title: "Review deleted" });
+  };
+
+  if (loading) {
+    return (
+      <div className="flex justify-center py-20">
+        <Loader2 className="h-6 w-6 animate-spin text-primary" />
+      </div>
+    );
+  }
+
+  if (rows.length === 0) {
+    return <p className="py-16 text-center text-sm text-muted-foreground">No reviews yet.</p>;
+  }
+
+  return (
+    <div className="space-y-4">
+      {rows.map((r) => (
+        <div key={r.id} className="rounded-xl border border-border bg-card p-5">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <p className="font-medium">{r.name}</p>
+              <p className="text-xs text-muted-foreground">
+                {new Date(r.created_at).toLocaleString("en-GB")}
+                {r.order_number ? ` · order ${r.order_number}` : ""}
+              </p>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="flex items-center gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className={`h-4 w-4 ${i < r.rating ? "fill-primary text-primary" : "text-muted-foreground"}`} />
+                ))}
+              </span>
+              <Button size="sm" variant="ghost" onClick={() => remove(r.id)}>
+                <Trash2 className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+          <p className="mt-3 text-sm text-muted-foreground">{r.body}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const Admin = () => {
   const { user, loading: authLoading } = useAuth();
   const { isAdmin, loading: roleLoading } = useIsAdmin();
@@ -203,6 +284,7 @@ const Admin = () => {
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("alle");
+  const [tab, setTab] = useState<"orders" | "reviews">("orders");
 
   const load = async () => {
     setLoading(true);

@@ -71,7 +71,7 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
 
 
       {leagues.length > 0 && (
-        <Group label={t("filters.league", { defaultValue: "Competitie" })} value={state.league}>
+        <Group label={t("filters.league", { defaultValue: "League" })} value={state.league}>
           <button onClick={() => onChange({ league: null })} className={chip(!state.league)}>
             {t("leagues.all")}
           </button>
@@ -88,9 +88,9 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
       )}
 
       {countries.length > 0 && (
-        <Group label={t("filters.country", { defaultValue: "Land" })} value={state.country}>
+        <Group label={t("filters.country", { defaultValue: "Country" })} value={state.country}>
           <button onClick={() => onChange({ country: null })} className={chip(!state.country)}>
-            {t("filters.allCountries", { defaultValue: "Alle landen" })}
+            {t("filters.allCountries", { defaultValue: "All countries" })}
           </button>
           {countries.map((c) => (
             <button
@@ -104,7 +104,7 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
         </Group>
       )}
 
-      <Group label={t("filters.letter", { defaultValue: "Letter" })} value={state.letter}>
+      <Group label={t("filters.letter", { defaultValue: "Letter (A–Z)" })} value={state.letter}>
         <button
           onClick={() => onChange({ letter: null })}
           className={`h-7 w-7 rounded text-[10px] font-semibold transition-all ${
@@ -126,9 +126,9 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
         ))}
       </Group>
 
-      <Group label={t("filters.decade", { defaultValue: "Jaren" })} value={state.decade}>
+      <Group label={t("filters.decade", { defaultValue: "Decade" })} value={state.decade}>
         <button onClick={() => onChange({ decade: null })} className={chip(!state.decade)}>
-          {t("filters.allDecades", { defaultValue: "Alle jaren" })}
+          {t("filters.allDecades", { defaultValue: "All years" })}
         </button>
         {DECADES.map((d) => (
           <button
@@ -142,7 +142,7 @@ const ProductFilters = ({ items, state, onChange }: Props) => {
       </Group>
 
       <Group
-        label={t("filters.sortLabel", { defaultValue: "Sorteer" })}
+        label={t("filters.sortLabel", { defaultValue: "Sort" })}
         value={t(`filters.sort.${state.sort}`, { defaultValue: state.sort })}
       >
         {SORT_OPTIONS.map((opt) => (

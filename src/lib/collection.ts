@@ -48,5 +48,9 @@ const PER_GROUP = 9;
 export const topClubs = teamCounts.filter((t) => !COUNTRIES.has(t.team)).slice(0, PER_GROUP);
 export const topCountries = teamCounts.filter((t) => COUNTRIES.has(t.team)).slice(0, PER_GROUP);
 
+/** Volledige lijsten voor de "toon meer"-weergave. */
+export const allClubs = teamCounts.filter((t) => !COUNTRIES.has(t.team));
+export const allCountries = teamCounts.filter((t) => COUNTRIES.has(t.team));
+
 /** Eerst alle clubs, daarna alle landen. */
 export const topTeams = [...topClubs, ...topCountries];

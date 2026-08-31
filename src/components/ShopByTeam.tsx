@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { topClubs, topCountries } from "@/lib/collection";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import { topClubs, topCountries, allClubs, allCountries } from "@/lib/collection";
 
 /** Landcodes voor vlaggen (flagcdn); clubs krijgen hun clublogo. */
 const FLAGS: Record<string, string> = {
@@ -98,57 +99,103 @@ const ClubLogo = ({ team }: { team: string }) => {
   );
 };
 
+interface TeamItem {
+  team: string;
+  image: string;
+  count: number;
+}
 
+const TeamTile = ({ t, i }: { t: TeamItem; i: number }) => {
+  const flag = FLAGS[t.team];
+  return (
+    <motion.div
+      key={t.team}
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.35, delay: Math.min(i, 10) * 0.03 }}
+    >
+      <Link
+        to={`/collectie?q=${encodeURIComponent(t.team)}`}
+        className="group flex flex-col items-center gap-2"
+        aria-label={t.team}
+      >
+        <div className="flex aspect-square w-full items-center justify-center rounded-full border border-border/60 bg-card transition-all group-hover:border-primary/50 group-hover:shadow-[var(--shadow-gold)]">
+          {flag ? (
+            <img
+              src={`https://flagcdn.com/w80/${flag}.png`}
+              alt={t.team}
+              loading="lazy"
+              className="h-8 w-11 rounded-sm object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+          ) : (
+            <ClubLogo team={t.team} />
+          )}
+        </div>
+        <span className="text-[11px] text-center font-medium tracking-wide text-muted-foreground group-hover:text-primary line-clamp-1">
+          {t.team}
+        </span>
+      </Link>
+    </motion.div>
+  );
+};
 
-/** Eerst alle clubs, daarna alle landen; even veel van beide zodat de rij vol eindigt. */
-const items = [...topClubs, ...topCountries];
+const ShopByTeam = () => {
+  const [expanded, setExpanded] = useState(false);
+  const hasMore = allClubs.length > topClubs.length || allCountries.length > topCountries.length;
 
-const ShopByTeam = () => (
-  <section className="py-12">
-    <div className="container mx-auto px-6">
-      <h2 className="font-display text-2xl sm:text-3xl font-bold tracking-tight mb-6">
-        Shop by team &amp; country
-      </h2>
-      <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-3 sm:gap-4">
-        {items.map((t, i) => {
-          const flag = FLAGS[t.team];
-          return (
-            <motion.div
-              key={t.team}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.35, delay: Math.min(i, 10) * 0.03 }}
+  return (
+    <section className="py-12">
+      <div className="container mx-auto px-6">
+        <div className="mb-6 flex items-center justify-between gap-4">
+          <h2 className="font-display text-2xl sm:text-3xl font-bold tracking-tight">
+            Shop by team &amp; country
+          </h2>
+          {hasMore && (
+            <button
+              onClick={() => setExpanded((e) => !e)}
+              className="flex items-center gap-1.5 rounded-full border border-border/60 bg-card px-4 py-2 text-xs font-semibold uppercase tracking-wide transition-colors hover:border-primary/50 hover:text-primary"
+              aria-expanded={expanded}
             >
-              <Link
-                to={`/collectie?q=${encodeURIComponent(t.team)}`}
-                className="group flex flex-col items-center gap-2"
-                aria-label={t.team}
-              >
-                <div className="flex aspect-square w-full items-center justify-center rounded-full border border-border/60 bg-card transition-all group-hover:border-primary/50 group-hover:shadow-[var(--shadow-gold)]">
-                  {flag ? (
-                    <img
-                      src={`https://flagcdn.com/w80/${flag}.png`}
-                      alt={t.team}
-                      loading="lazy"
-                      className="h-8 w-11 rounded-sm object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                  ) : (
-                    <ClubLogo team={t.team} />
-                  )}
+              {expanded ? "Show less" : "More teams"}
+              {expanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+            </button>
+          )}
+        </div>
 
-                </div>
-                <span className="text-[11px] text-center font-medium tracking-wide text-muted-foreground group-hover:text-primary line-clamp-1">
-                  {t.team}
-                </span>
-              </Link>
-            </motion.div>
-          );
-        })}
+        {expanded ? (
+          <div className="space-y-8">
+            <div>
+              <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+                Clubs
+              </h3>
+              <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-3 sm:gap-4">
+                {allClubs.map((t, i) => (
+                  <TeamTile key={t.team} t={t} i={i} />
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+                Countries
+              </h3>
+              <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-3 sm:gap-4">
+                {allCountries.map((t, i) => (
+                  <TeamTile key={t.team} t={t} i={i} />
+                ))}
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-3 sm:gap-4">
+            {[...topClubs, ...topCountries].map((t, i) => (
+              <TeamTile key={t.team} t={t} i={i} />
+            ))}
+          </div>
+        )}
       </div>
-    </div>
-  </section>
-);
-
+    </section>
+  );
+};
 
 export default ShopByTeam;

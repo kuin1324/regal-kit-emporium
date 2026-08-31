@@ -3,25 +3,13 @@ import { useRef, useEffect, useCallback, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { supabase } from "@/integrations/supabase/client";
 
-const REVIEWERS = [
-  { name: "Jayden", rating: 5 },
-  { name: "Milan", rating: 5 },
-  { name: "Noah", rating: 5 },
-  { name: "Sem", rating: 5 },
-  { name: "Daan", rating: 5 },
-  { name: "Lucas", rating: 5 },
-  { name: "Levi", rating: 4 },
-  { name: "Finn", rating: 5 },
-];
-
 interface Review {
   name: string;
   text: string;
   rating: number;
-  sample?: boolean;
 }
 
-const ReviewCard = ({ name, text, rating, sample }: Review) => (
+const ReviewCard = ({ name, text, rating }: Review) => (
   <div className="flex-shrink-0 w-[260px] sm:w-[280px] bg-card border border-border rounded-lg p-5 mx-3 select-none">
     <div className="flex gap-0.5 mb-2">
       {Array.from({ length: 5 }).map((_, i) => (
@@ -32,23 +20,21 @@ const ReviewCard = ({ name, text, rating, sample }: Review) => (
       ))}
     </div>
     <p className="text-sm text-foreground mb-3 leading-relaxed">"{text}"</p>
-    <p className="text-xs font-medium text-muted-foreground">
-      — {name}
-      {sample && <span className="ml-2 rounded bg-muted px-1.5 py-0.5 text-[10px] uppercase tracking-wide">Sample</span>}
-    </p>
+    <p className="text-xs font-medium text-muted-foreground">— {name}</p>
   </div>
 );
 
 const ReviewsMarquee = () => {
   const { t } = useTranslation();
-  const texts = (t("home.reviews", { returnObjects: true }) as string[]) || [];
-  const sampleReviews: Review[] = REVIEWERS.map((r, i) => ({ ...r, text: texts[i] ?? "", sample: true }));
 
-  const [realReviews, setRealReviews] = useState<Review[]>([]);
+  const [reviews, setReviews] = useState<Review[]>([]);
   const [name, setName] = useState("");
   const [body, setBody] = useState("");
+  const [orderNumber, setOrderNumber] = useState("");
+  const [email, setEmail] = useState("");
   const [rating, setRating] = useState(5);
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
   const loadReviews = useCallback(async () => {
     const { data } = await supabase
@@ -56,7 +42,7 @@ const ReviewsMarquee = () => {
       .select("name, body, rating")
       .order("created_at", { ascending: false })
       .limit(30);
-    if (data) setRealReviews(data.map((r) => ({ name: r.name, text: r.body, rating: r.rating })));
+    if (data) setReviews(data.map((r) => ({ name: r.name, text: r.body, rating: r.rating })));
   }, []);
 
   useEffect(() => {
@@ -65,23 +51,33 @@ const ReviewsMarquee = () => {
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name.trim() || body.trim().length < 3) return;
+    if (!name.trim() || body.trim().length < 3 || !orderNumber.trim() || !email.trim()) return;
     setStatus("sending");
-    const { error } = await supabase
-      .from("reviews")
-      .insert({ name: name.trim().slice(0, 60), body: body.trim().slice(0, 600), rating });
+    setErrorMsg("");
+    const { error } = await supabase.rpc("submit_review", {
+      _order_number: orderNumber.trim(),
+      _email: email.trim(),
+      _name: name.trim().slice(0, 60),
+      _rating: rating,
+      _body: body.trim().slice(0, 600),
+    });
     if (error) {
       setStatus("error");
+      setErrorMsg(
+        /already/i.test(error.message)
+          ? "You already left a review for this order."
+          : "We could not find that order. Check your order number and email address.",
+      );
       return;
     }
     setName("");
     setBody("");
+    setOrderNumber("");
+    setEmail("");
     setRating(5);
     setStatus("done");
     loadReviews();
   };
-
-  const reviews = realReviews.length > 0 ? [...realReviews, ...sampleReviews] : sampleReviews;
 
   const scrollRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number>();
@@ -117,6 +113,9 @@ const ReviewsMarquee = () => {
     }, 1500);
   };
 
+  const inputClass =
+    "w-full rounded border border-border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none";
+
   return (
     <section className="py-16 bg-background overflow-hidden">
       <div className="container mx-auto px-6 mb-6">
@@ -124,29 +123,38 @@ const ReviewsMarquee = () => {
           {t("home.reviewsTitle")} <span className="text-gradient-gold">{t("home.reviewsTitleAccent")}</span>
         </h2>
         <p className="mt-3 text-center text-xs text-muted-foreground max-w-xl mx-auto">
-          Heads up: the reviews marked "Sample" are placeholder examples, not real customer feedback. They stay here only
-          until we have collected genuine reviews.
+          Only customers with a real order can leave a review, so everything you read here comes from a verified
+          purchase.
         </p>
       </div>
 
-      <div
-        ref={scrollRef}
-        className="flex overflow-x-auto scrollbar-hide"
-        style={{ touchAction: "pan-x" }}
-        onMouseDown={handleInteractionStart}
-        onMouseUp={handleInteractionEnd}
-        onMouseLeave={handleInteractionEnd}
-        onTouchStart={handleInteractionStart}
-        onTouchEnd={handleInteractionEnd}
-      >
-        {[...reviews, ...reviews].map((review, i) => (
-          <ReviewCard key={i} {...review} />
-        ))}
-      </div>
+      {reviews.length > 0 ? (
+        <div
+          ref={scrollRef}
+          className="flex overflow-x-auto scrollbar-hide"
+          style={{ touchAction: "pan-x" }}
+          onMouseDown={handleInteractionStart}
+          onMouseUp={handleInteractionEnd}
+          onMouseLeave={handleInteractionEnd}
+          onTouchStart={handleInteractionStart}
+          onTouchEnd={handleInteractionEnd}
+        >
+          {[...reviews, ...reviews].map((review, i) => (
+            <ReviewCard key={i} {...review} />
+          ))}
+        </div>
+      ) : (
+        <p className="text-center text-sm text-muted-foreground">
+          No reviews yet — be the first customer to share your experience.
+        </p>
+      )}
 
       <div className="container mx-auto px-6 mt-10">
         <form onSubmit={submit} className="mx-auto max-w-xl rounded-lg border border-border bg-card p-6 space-y-4">
           <h3 className="font-display text-lg font-semibold">Leave your review</h3>
+          <p className="text-xs text-muted-foreground">
+            Enter the order number and email address you used when ordering to verify your purchase.
+          </p>
           <div className="flex gap-1">
             {Array.from({ length: 5 }).map((_, i) => (
               <button key={i} type="button" onClick={() => setRating(i + 1)} aria-label={`${i + 1} stars`}>
@@ -154,13 +162,31 @@ const ReviewsMarquee = () => {
               </button>
             ))}
           </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <input
+              type="text"
+              value={orderNumber}
+              maxLength={40}
+              onChange={(e) => setOrderNumber(e.target.value)}
+              placeholder="Order number"
+              className={inputClass}
+            />
+            <input
+              type="email"
+              value={email}
+              maxLength={255}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email used for the order"
+              className={inputClass}
+            />
+          </div>
           <input
             type="text"
             value={name}
             maxLength={60}
             onChange={(e) => setName(e.target.value)}
             placeholder="Your name"
-            className="w-full rounded border border-border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none"
+            className={inputClass}
           />
           <textarea
             value={body}
@@ -168,7 +194,7 @@ const ReviewsMarquee = () => {
             rows={3}
             onChange={(e) => setBody(e.target.value)}
             placeholder="How was your shirt?"
-            className="w-full rounded border border-border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none"
+            className={inputClass}
           />
           <button
             type="submit"
@@ -178,7 +204,7 @@ const ReviewsMarquee = () => {
             {status === "sending" ? "Sending…" : "Post review"}
           </button>
           {status === "done" && <p className="text-xs text-primary">Thanks for your review!</p>}
-          {status === "error" && <p className="text-xs text-destructive">Something went wrong, please try again.</p>}
+          {status === "error" && <p className="text-xs text-destructive">{errorMsg}</p>}
         </form>
       </div>
     </section>

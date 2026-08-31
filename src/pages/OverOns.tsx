@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation, Trans } from "react-i18next";
 import Navbar from "@/components/Navbar";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
 
 const OverOns = () => {
@@ -12,6 +13,7 @@ const OverOns = () => {
         <div className="container mx-auto px-6 max-w-3xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-3">{t("about.eyebrow")}</p>
+            <Breadcrumbs />
             <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight mb-8">
               {t("about.title")} <span className="text-gradient-gold">The Home of Football Style</span>
             </h1>

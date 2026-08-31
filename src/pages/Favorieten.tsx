@@ -3,6 +3,7 @@ import ShirtImage from "@/components/ShirtImage";
 import { useState } from "react";
 import { useCurrency } from "@/context/CurrencyContext";
 import Navbar from "@/components/Navbar";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
 import PhotoNotice from "@/components/PhotoNotice";
 import { motion } from "framer-motion";
@@ -71,6 +72,7 @@ const Favorieten = () => {
           <PhotoNotice />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-12">
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-3">❤️</p>
+            <Breadcrumbs />
             <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight">{t("favorites.title")}</h1>
           </motion.div>
 

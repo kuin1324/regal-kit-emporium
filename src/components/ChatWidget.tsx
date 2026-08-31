@@ -24,6 +24,20 @@ const ChatWidget = () => {
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const draggedRef = useRef(false);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
+  const { hidden, hide, restore } = useHidden("hofs-chat-hidden");
+
+  // Houd de knop altijd binnen het scherm (ook na het draaien van de telefoon).
+  useEffect(() => {
+    const clamp = () => {
+      setOffset((o) => ({
+        x: Math.min(Math.max(o.x, 0), Math.max(0, window.innerWidth - 76)),
+        y: Math.min(Math.max(o.y, -(window.innerHeight - 96)), 0),
+      }));
+    };
+    clamp();
+    window.addEventListener("resize", clamp);
+    return () => window.removeEventListener("resize", clamp);
+  }, []);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
@@ -108,8 +122,37 @@ const ChatWidget = () => {
     }
   };
 
+  if (hidden) {
+    return (
+      <button
+        type="button"
+        onClick={() => restore()}
+        aria-label={t("chat.restore", { defaultValue: "Show the assistant again" })}
+        title={t("chat.restore", { defaultValue: "Show the assistant again" })}
+        className="fixed bottom-5 left-0 z-50 flex h-10 w-7 items-center justify-center rounded-r-full bg-[linear-gradient(135deg,#6366F1,#EC4899)] text-white shadow-lg opacity-70 transition-opacity hover:opacity-100"
+      >
+        <Bot className="h-4 w-4" />
+      </button>
+    );
+  }
+
   return (
     <>
+      <div className="fixed bottom-5 left-5 z-50" style={{ transform: `translate(${offset.x}px, ${offset.y}px)` }}>
+        <button
+          type="button"
+          onClick={() => {
+            setOpen(false);
+            hide();
+          }}
+          aria-label={t("chat.hide", { defaultValue: "Hide the assistant" })}
+          title={t("chat.hide", { defaultValue: "Hide the assistant" })}
+          className="absolute -right-1 -top-1 z-10 flex h-6 w-6 items-center justify-center rounded-full border border-border bg-card text-muted-foreground shadow transition-colors hover:text-foreground"
+        >
+          <EyeOff className="h-3 w-3" />
+        </button>
+      </div>
+
       <motion.button
         type="button"
         drag

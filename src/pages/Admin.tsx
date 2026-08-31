@@ -486,6 +486,7 @@ const Admin = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="container mx-auto px-6 pt-28 pb-24">
+        <Breadcrumbs />
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-primary">Admin</p>

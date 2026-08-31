@@ -16,10 +16,14 @@ export const useIsAdmin = () => {
     }
     let cancelled = false;
     supabase
-      .rpc("has_role", { _user_id: user.id, _role: "admin" })
+      .from("user_roles")
+      .select("role")
+      .eq("user_id", user.id)
+      .eq("role", "admin")
+      .maybeSingle()
       .then(({ data, error }) => {
         if (cancelled) return;
-        setIsAdmin(!error && data === true);
+        setIsAdmin(!error && !!data);
         setLoading(false);
       });
     return () => {

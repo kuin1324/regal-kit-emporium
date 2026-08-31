@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Download, Loader2, PackageSearch, RefreshCw, Save, ShieldAlert, Star, Trash2 } from "lucide-react";
+import { Download, Loader2, PackageSearch, Pencil, RefreshCw, Save, ShieldAlert, Star, Trash2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import {
   Select,
@@ -235,6 +237,22 @@ const ReviewsPanel = () => {
     toast({ title: "Review deleted" });
   };
 
+  const saveReview = async (row: ReviewRow, patch: { name: string; rating: number; body: string }) => {
+    const { data, error } = await supabase
+      .from("reviews")
+      .update({ name: patch.name.trim(), rating: patch.rating, body: patch.body.trim() })
+      .eq("id", row.id)
+      .select("id, name, rating, body, order_number, created_at")
+      .maybeSingle();
+    if (error || !data) {
+      toast({ title: "Could not save", description: error?.message ?? "Please try again", variant: "destructive" });
+      return false;
+    }
+    setRows((r) => r.map((x) => (x.id === row.id ? (data as unknown as ReviewRow) : x)));
+    toast({ title: "Review updated" });
+    return true;
+  };
+
   if (loading) {
     return (
       <div className="flex justify-center py-20">
@@ -249,30 +267,112 @@ const ReviewsPanel = () => {
 
   return (
     <div className="space-y-4">
+      <div className="flex justify-end">
+        <Button variant="outline" size="sm" onClick={load}>
+          <RefreshCw className="mr-2 h-4 w-4" />
+          Refresh
+        </Button>
+      </div>
       {rows.map((r) => (
-        <div key={r.id} className="rounded-xl border border-border bg-card p-5">
-          <div className="flex flex-wrap items-start justify-between gap-3">
-            <div>
-              <p className="font-medium">{r.name}</p>
-              <p className="text-xs text-muted-foreground">
-                {new Date(r.created_at).toLocaleString("en-GB")}
-                {r.order_number ? ` · order ${r.order_number}` : ""}
-              </p>
+        <ReviewCard key={r.id} review={r} onSave={saveReview} onDelete={remove} />
+      ))}
+    </div>
+  );
+};
+
+const ReviewCard = ({
+  review,
+  onSave,
+  onDelete,
+}: {
+  review: ReviewRow;
+  onSave: (row: ReviewRow, patch: { name: string; rating: number; body: string }) => Promise<boolean>;
+  onDelete: (id: string) => void;
+}) => {
+  const [editing, setEditing] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [draft, setDraft] = useState({ name: review.name, rating: review.rating, body: review.body });
+
+  useEffect(() => {
+    setDraft({ name: review.name, rating: review.rating, body: review.body });
+  }, [review]);
+
+  const submit = async () => {
+    setSaving(true);
+    const ok = await onSave(review, draft);
+    setSaving(false);
+    if (ok) setEditing(false);
+  };
+
+  return (
+    <div className="rounded-xl border border-border bg-card p-5">
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <p className="font-medium">{review.name}</p>
+          <p className="text-xs text-muted-foreground">
+            {new Date(review.created_at).toLocaleString("en-GB")}
+            {review.order_number ? ` · order ${review.order_number}` : ""}
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="flex items-center gap-0.5">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star
+                key={i}
+                className={`h-4 w-4 ${i < review.rating ? "fill-primary text-primary" : "text-muted-foreground"}`}
+              />
+            ))}
+          </span>
+          <Button size="sm" variant="ghost" onClick={() => setEditing((v) => !v)} aria-label="Edit review">
+            <Pencil className="h-4 w-4" />
+          </Button>
+          <Button size="sm" variant="ghost" onClick={() => onDelete(review.id)} aria-label="Delete review">
+            <Trash2 className="h-4 w-4" />
+          </Button>
+        </div>
+      </div>
+
+      {editing ? (
+        <div className="mt-4 space-y-3 border-t border-border/60 pt-4">
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div className="space-y-1.5">
+              <Label className="text-xs">Name</Label>
+              <Input value={draft.name} onChange={(e) => setDraft((d) => ({ ...d, name: e.target.value }))} />
             </div>
-            <div className="flex items-center gap-3">
-              <span className="flex items-center gap-0.5">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className={`h-4 w-4 ${i < r.rating ? "fill-primary text-primary" : "text-muted-foreground"}`} />
-                ))}
-              </span>
-              <Button size="sm" variant="ghost" onClick={() => remove(r.id)}>
-                <Trash2 className="h-4 w-4" />
-              </Button>
+            <div className="space-y-1.5">
+              <Label className="text-xs">Rating</Label>
+              <Select
+                value={String(draft.rating)}
+                onValueChange={(v) => setDraft((d) => ({ ...d, rating: Number(v) }))}
+              >
+                <SelectTrigger><SelectValue /></SelectTrigger>
+                <SelectContent>
+                  {[1, 2, 3, 4, 5].map((n) => (
+                    <SelectItem key={n} value={String(n)}>{n} ★</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
           </div>
-          <p className="mt-3 text-sm text-muted-foreground">{r.body}</p>
+          <div className="space-y-1.5">
+            <Label className="text-xs">Review text</Label>
+            <Textarea
+              rows={4}
+              value={draft.body}
+              onChange={(e) => setDraft((d) => ({ ...d, body: e.target.value }))}
+            />
+          </div>
+          <div className="flex justify-end gap-2">
+            <Button size="sm" variant="ghost" onClick={() => setEditing(false)}>Cancel</Button>
+            <Button size="sm" onClick={submit} disabled={saving || !draft.name.trim() || draft.body.trim().length < 3}>
+              {saving ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Save className="mr-2 h-4 w-4" />}
+              Save
+            </Button>
+          </div>
         </div>
-      ))}
+      ) : (
+        <p className="mt-3 text-sm text-muted-foreground">{review.body}</p>
+      )}
     </div>
   );
 };
@@ -386,6 +486,7 @@ const Admin = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="container mx-auto px-6 pt-28 pb-24">
+        <Breadcrumbs />
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-primary">Admin</p>

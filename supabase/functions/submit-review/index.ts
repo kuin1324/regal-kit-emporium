@@ -43,7 +43,7 @@ Deno.serve(async (req) => {
 
     if (error) {
       const duplicate = /already/i.test(error.message);
-      return json({ error: duplicate ? "already_reviewed" : "order_not_found" }, 400);
+      return json({ error: duplicate ? "already_reviewed" : "order_not_found" }, 200);
     }
 
     return json({ ok: true });

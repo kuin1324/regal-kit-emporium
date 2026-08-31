@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag, Trash2, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";

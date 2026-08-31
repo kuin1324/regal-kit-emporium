@@ -1,4 +1,4 @@
-import { Info, X } from "lucide-react";
+import { Info, RotateCcw, X } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -30,6 +30,19 @@ const PhotoNotice = () => {
     }
     setDismissed((s) => ({ ...s, [id]: true }));
   };
+
+  const restoreAll = () => {
+    for (const id of NOTICES) {
+      try {
+        localStorage.removeItem(storageKey(id));
+      } catch {
+        /* private mode */
+      }
+    }
+    setDismissed({});
+  };
+
+  const anyDismissed = NOTICES.some((id) => dismissed[id]);
 
   const closeButton = (id: NoticeId) => (
     <button
@@ -63,6 +76,15 @@ const PhotoNotice = () => {
           <p className="text-xs leading-relaxed text-muted-foreground">{t("notice.duplicates")}</p>
           {closeButton("duplicates")}
         </div>
+      )}
+      {anyDismissed && (
+        <button
+          onClick={restoreAll}
+          className="mb-6 inline-flex items-center gap-1.5 rounded-full border border-border/60 px-3 py-1 text-[11px] text-muted-foreground transition-colors hover:text-foreground"
+        >
+          <RotateCcw className="h-3 w-3" />
+          {t("notice.restore", { defaultValue: "Show hidden notices" })}
+        </button>
       )}
     </>
   );

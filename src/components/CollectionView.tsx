@@ -46,7 +46,7 @@ interface Band {
 
 const CollectionView = ({ items, onSelect }: Props) => {
   const { t } = useTranslation();
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [showFilters, setShowFilters] = useState(false);
   const [filters, setFilters] = useState<FilterState>({
     ...initialFilterState,
@@ -79,6 +79,19 @@ const CollectionView = ({ items, onSelect }: Props) => {
       league: searchParams.get("league") || null,
     }));
   }, [searchParams]);
+
+  // Houd de zoekterm in de URL zodat het kruimelpad hem toont.
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      const current = searchParams.get("q") || "";
+      if (current === filters.q) return;
+      const next = new URLSearchParams(searchParams);
+      if (filters.q) next.set("q", filters.q);
+      else next.delete("q");
+      setSearchParams(next, { replace: true });
+    }, 300);
+    return () => window.clearTimeout(timer);
+  }, [filters.q, searchParams, setSearchParams]);
 
   const filtered = useMemo(() => applyFilters(items, filters), [items, filters]);
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));

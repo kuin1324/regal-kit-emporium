@@ -52,6 +52,10 @@ const CollectionView = ({ items, onSelect }: Props) => {
     ...initialFilterState,
     q: searchParams.get("q") || "",
     league: searchParams.get("league") || null,
+    country: searchParams.get("country") || null,
+    letter: searchParams.get("letter") || null,
+    decade: searchParams.get("decade") || null,
+    colors: searchParams.get("colors")?.split(",").filter(Boolean) ?? [],
   });
   const [page, setPage] = useState(1);
   const { favorites, toggleFavorite, addItem } = useCart();
@@ -77,21 +81,32 @@ const CollectionView = ({ items, onSelect }: Props) => {
       ...f,
       q: searchParams.get("q") || "",
       league: searchParams.get("league") || null,
+      country: searchParams.get("country") || null,
+      letter: searchParams.get("letter") || null,
+      decade: searchParams.get("decade") || null,
+      colors: searchParams.get("colors")?.split(",").filter(Boolean) ?? [],
     }));
   }, [searchParams]);
 
-  // Houd de zoekterm in de URL zodat het kruimelpad hem toont.
+  // Houd zoekterm + actieve filters in de URL zodat het kruimelpad ze toont.
   useEffect(() => {
     const timer = window.setTimeout(() => {
-      const current = searchParams.get("q") || "";
-      if (current === filters.q) return;
       const next = new URLSearchParams(searchParams);
-      if (filters.q) next.set("q", filters.q);
-      else next.delete("q");
+      const set = (key: string, value: string) => {
+        if (value) next.set(key, value);
+        else next.delete(key);
+      };
+      set("q", filters.q);
+      set("league", filters.league ?? "");
+      set("country", filters.country ?? "");
+      set("letter", filters.letter ?? "");
+      set("decade", filters.decade ?? "");
+      set("colors", filters.colors.join(","));
+      if (next.toString() === searchParams.toString()) return;
       setSearchParams(next, { replace: true });
     }, 300);
     return () => window.clearTimeout(timer);
-  }, [filters.q, searchParams, setSearchParams]);
+  }, [filters, searchParams, setSearchParams]);
 
   const filtered = useMemo(() => applyFilters(items, filters), [items, filters]);
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));

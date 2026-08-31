@@ -23,9 +23,18 @@ interface Props {
 }
 
 /** Automatisch kruimelpad: route + zoekopdracht + eventueel gekozen shirt. */
+const FILTER_LABELS: Record<string, string> = {
+  league: "League",
+  country: "Country",
+  letter: "Letter",
+  decade: "Decade",
+  colors: "Colour",
+};
+
 const Breadcrumbs = ({ current, base }: Props) => {
   const { pathname, search } = useLocation();
-  const query = new URLSearchParams(search).get("q")?.trim();
+  const params = new URLSearchParams(search);
+  const query = params.get("q")?.trim();
   if (pathname === "/" && !current && !base) return null;
 
   const crumbs: { label: string; to?: string }[] = [];
@@ -42,7 +51,23 @@ const Breadcrumbs = ({ current, base }: Props) => {
     });
   }
 
-  if (query) crumbs.push({ label: `Search: “${query}”`, to: `${pathname}?q=${encodeURIComponent(query)}` });
+  // Actieve filters als klikbare kruimels: elke link bevat de filters tot en met die stap.
+  const filterPath = base?.length ? base[base.length - 1].to : pathname;
+  const active = new URLSearchParams();
+  if (query) {
+    active.set("q", query);
+    crumbs.push({ label: `Search: “${query}”`, to: `${filterPath}?${active.toString()}` });
+  }
+  Object.keys(FILTER_LABELS).forEach((key) => {
+    const value = params.get(key)?.trim();
+    if (!value) return;
+    active.set(key, value);
+    crumbs.push({
+      label: `${FILTER_LABELS[key]}: ${value.split(",").join(", ")}`,
+      to: `${filterPath}?${active.toString()}`,
+    });
+  });
+
   if (current) crumbs.push({ label: current });
 
   return (

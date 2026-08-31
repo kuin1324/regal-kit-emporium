@@ -116,6 +116,7 @@ export type Database = {
           created_at: string
           id: string
           name: string
+          order_number: string | null
           rating: number
           updated_at: string
         }
@@ -124,6 +125,7 @@ export type Database = {
           created_at?: string
           id?: string
           name: string
+          order_number?: string | null
           rating?: number
           updated_at?: string
         }
@@ -132,6 +134,7 @@ export type Database = {
           created_at?: string
           id?: string
           name?: string
+          order_number?: string | null
           rating?: number
           updated_at?: string
         }
@@ -181,6 +184,30 @@ export type Database = {
         SetofOptions: {
           from: "*"
           to: "preorder_counts"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      submit_review: {
+        Args: {
+          _body: string
+          _email: string
+          _name: string
+          _order_number: string
+          _rating: number
+        }
+        Returns: {
+          body: string
+          created_at: string
+          id: string
+          name: string
+          order_number: string | null
+          rating: number
+          updated_at: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "reviews"
           isOneToOne: true
           isSetofReturn: false
         }

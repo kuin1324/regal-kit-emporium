@@ -20,6 +20,8 @@ interface Props {
   current?: string;
   /** Render without relying on the route (used inside the product modal). */
   base?: { label: string; to: string }[];
+  /** Close overlays before following a breadcrumb link. */
+  onNavigate?: () => void;
 }
 
 /** Automatisch kruimelpad: route + zoekopdracht + eventueel gekozen shirt. */
@@ -31,7 +33,7 @@ const FILTER_LABELS: Record<string, string> = {
   colors: "Colour",
 };
 
-const Breadcrumbs = ({ current, base }: Props) => {
+const Breadcrumbs = ({ current, base, onNavigate }: Props) => {
   const { pathname, search } = useLocation();
   const params = new URLSearchParams(search);
   const query = params.get("q")?.trim();
@@ -76,6 +78,7 @@ const Breadcrumbs = ({ current, base }: Props) => {
         <li>
           <Link
             to="/"
+            onClick={onNavigate}
             className="flex items-center gap-1 transition-colors hover:text-primary"
           >
             <Home className="h-3.5 w-3.5" />
@@ -94,6 +97,7 @@ const Breadcrumbs = ({ current, base }: Props) => {
               ) : (
                 <Link
                   to={c.to}
+                  onClick={onNavigate}
                   aria-current={last ? "page" : undefined}
                   className={`transition-colors hover:text-primary hover:underline ${
                     last ? "font-medium text-foreground" : ""

@@ -171,7 +171,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
             </div>
 
             <div className="p-8 md:p-12 flex flex-col justify-center max-w-lg mx-auto w-full">
-              <Breadcrumbs current={displayName} />
+              <Breadcrumbs current={displayName} onNavigate={onClose} />
               <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{selected.team}</p>
               <h2 className="font-display text-3xl md:text-4xl font-bold tracking-wide mb-2">{displayName}</h2>
               {isAdmin && (selected as { sku?: string }).sku && (

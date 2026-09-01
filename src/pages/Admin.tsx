@@ -65,7 +65,15 @@ const statusStyle = (status: string) => {
   }
 };
 
-const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => void }) => {
+const OrderCard = ({
+  order,
+  onSaved,
+  onDeleted,
+}: {
+  order: Order;
+  onSaved: (o: Order) => void;
+  onDeleted: (id: string) => void;
+}) => {
   const { toast } = useToast();
   const [draft, setDraft] = useState({
     status: order.status,

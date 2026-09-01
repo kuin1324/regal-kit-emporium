@@ -597,6 +597,7 @@ const Admin = () => {
                 key={o.id}
                 order={o}
                 onSaved={(updated) => setOrders((prev) => prev.map((p) => (p.id === updated.id ? updated : p)))}
+                onDeleted={(id) => setOrders((prev) => prev.filter((p) => p.id !== id))}
               />
             ))}
           </div>

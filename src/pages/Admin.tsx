@@ -111,6 +111,21 @@ const OrderCard = ({
     toast({ title: "Order updated", description: order.order_number });
   };
 
+  const [deleting, setDeleting] = useState(false);
+
+  const remove = async () => {
+    if (!window.confirm(`Delete order ${order.order_number}? This cannot be undone.`)) return;
+    setDeleting(true);
+    const { error } = await supabase.from("orders").delete().eq("id", order.id);
+    setDeleting(false);
+    if (error) {
+      toast({ title: "Could not delete", description: error.message, variant: "destructive" });
+      return;
+    }
+    onDeleted(order.id);
+    toast({ title: "Order deleted", description: order.order_number });
+  };
+
   const items = Array.isArray(order.items) ? order.items : [];
 
   return (

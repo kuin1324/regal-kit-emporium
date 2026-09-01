@@ -65,7 +65,15 @@ const statusStyle = (status: string) => {
   }
 };
 
-const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => void }) => {
+const OrderCard = ({
+  order,
+  onSaved,
+  onDeleted,
+}: {
+  order: Order;
+  onSaved: (o: Order) => void;
+  onDeleted: (id: string) => void;
+}) => {
   const { toast } = useToast();
   const [draft, setDraft] = useState({
     status: order.status,
@@ -101,6 +109,21 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
     }
     onSaved(data as unknown as Order);
     toast({ title: "Order updated", description: order.order_number });
+  };
+
+  const [deleting, setDeleting] = useState(false);
+
+  const remove = async () => {
+    if (!window.confirm(`Delete order ${order.order_number}? This cannot be undone.`)) return;
+    setDeleting(true);
+    const { error } = await supabase.from("orders").delete().eq("id", order.id);
+    setDeleting(false);
+    if (error) {
+      toast({ title: "Could not delete", description: error.message, variant: "destructive" });
+      return;
+    }
+    onDeleted(order.id);
+    toast({ title: "Order deleted", description: order.order_number });
   };
 
   const items = Array.isArray(order.items) ? order.items : [];
@@ -188,7 +211,11 @@ const OrderCard = ({ order, onSaved }: { order: Order; onSaved: (o: Order) => vo
         </div>
       </div>
 
-      <div className="mt-4 flex justify-end">
+      <div className="mt-4 flex justify-end gap-2">
+        <Button onClick={remove} disabled={deleting} size="sm" variant="outline" className="text-destructive">
+          {deleting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Trash2 className="mr-2 h-4 w-4" />}
+          Delete
+        </Button>
         <Button onClick={save} disabled={!dirty || saving} size="sm">
           {saving ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Save className="mr-2 h-4 w-4" />}
           Save
@@ -570,6 +597,7 @@ const Admin = () => {
                 key={o.id}
                 order={o}
                 onSaved={(updated) => setOrders((prev) => prev.map((p) => (p.id === updated.id ? updated : p)))}
+                onDeleted={(id) => setOrders((prev) => prev.filter((p) => p.id !== id))}
               />
             ))}
           </div>

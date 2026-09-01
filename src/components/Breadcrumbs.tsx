@@ -87,12 +87,18 @@ const Breadcrumbs = ({ current, base }: Props) => {
           return (
             <li key={`${c.label}-${i}`} className="flex items-center gap-1.5">
               <ChevronRight className="h-3.5 w-3.5 opacity-50" />
-              {last || !c.to ? (
+              {!c.to ? (
                 <span className="font-medium text-foreground line-clamp-1" aria-current="page">
                   {c.label}
                 </span>
               ) : (
-                <Link to={c.to} className="transition-colors hover:text-primary">
+                <Link
+                  to={c.to}
+                  aria-current={last ? "page" : undefined}
+                  className={`transition-colors hover:text-primary hover:underline ${
+                    last ? "font-medium text-foreground" : ""
+                  }`}
+                >
                   {c.label}
                 </Link>
               )}

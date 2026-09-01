@@ -196,7 +196,11 @@ const OrderCard = ({
         </div>
       </div>
 
-      <div className="mt-4 flex justify-end">
+      <div className="mt-4 flex justify-end gap-2">
+        <Button onClick={remove} disabled={deleting} size="sm" variant="outline" className="text-destructive">
+          {deleting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Trash2 className="mr-2 h-4 w-4" />}
+          Delete
+        </Button>
         <Button onClick={save} disabled={!dirty || saving} size="sm">
           {saving ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Save className="mr-2 h-4 w-4" />}
           Save

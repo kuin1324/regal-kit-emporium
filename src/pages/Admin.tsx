@@ -230,7 +230,7 @@ type ReviewRow = {
   name: string;
   rating: number;
   body: string;
-  order_number: string | null;
+  
   created_at: string;
 };
 
@@ -243,7 +243,7 @@ const ReviewsPanel = () => {
     setLoading(true);
     const { data } = await supabase
       .from("reviews")
-      .select("id, name, rating, body, order_number, created_at")
+      .select("id, name, rating, body, created_at")
       .order("created_at", { ascending: false })
       .limit(200);
     setRows((data ?? []) as unknown as ReviewRow[]);
@@ -269,7 +269,7 @@ const ReviewsPanel = () => {
       .from("reviews")
       .update({ name: patch.name.trim(), rating: patch.rating, body: patch.body.trim() })
       .eq("id", row.id)
-      .select("id, name, rating, body, order_number, created_at")
+      .select("id, name, rating, body, created_at")
       .maybeSingle();
     if (error || !data) {
       toast({ title: "Could not save", description: error?.message ?? "Please try again", variant: "destructive" });
@@ -338,7 +338,6 @@ const ReviewCard = ({
           <p className="font-medium">{review.name}</p>
           <p className="text-xs text-muted-foreground">
             {new Date(review.created_at).toLocaleString("en-GB")}
-            {review.order_number ? ` · order ${review.order_number}` : ""}
           </p>
         </div>
         <div className="flex items-center gap-2">

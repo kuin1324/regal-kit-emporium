@@ -338,7 +338,6 @@ const ReviewCard = ({
           <p className="font-medium">{review.name}</p>
           <p className="text-xs text-muted-foreground">
             {new Date(review.created_at).toLocaleString("en-GB")}
-            {review.order_number ? ` · order ${review.order_number}` : ""}
           </p>
         </div>
         <div className="flex items-center gap-2">

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { X, Search, Heart, ShoppingBag, SlidersHorizontal, MessageCircle, Moon, Truck, Star, Sparkles } from "lucide-react";
+import { X, Search, Heart, ShoppingBag, SlidersHorizontal, MessageCircle, Moon, Truck, Star, Sparkles, MousePointerClick, Navigation } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { allCollectieItems } from "@/lib/collection";
 import { cdnSrc } from "@/lib/cdn";
@@ -10,6 +10,8 @@ const features = [
   { icon: Search, title: "Search the collection", description: "Find shirts by team, country, league or name." },
   { icon: SlidersHorizontal, title: "Filter and sort", description: "Narrow your results by colour, decade and price." },
   { icon: Sparkles, title: "View shirt details", description: "Open a shirt for its photos, name and available options." },
+  { icon: MousePointerClick, title: "Select several shirts", description: "Ctrl-click or drag a box over shirts to pick many at once, then favourite or add them all to your basket." },
+  { icon: Navigation, title: "Clickable breadcrumb trail", description: "Tap any step in the breadcrumb path to jump straight back to that page, search or filter." },
   { icon: Heart, title: "Save favourites", description: "Like shirts and order your favourites whenever you are ready." },
   { icon: ShoppingBag, title: "Build your basket", description: "Choose a size and add a name and number to each shirt." },
   { icon: Truck, title: "Order and track", description: "Complete your order and follow delivery with Track & Trace." },

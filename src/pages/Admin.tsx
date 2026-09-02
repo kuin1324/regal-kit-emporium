@@ -230,7 +230,7 @@ type ReviewRow = {
   name: string;
   rating: number;
   body: string;
-  order_number: string | null;
+  
   created_at: string;
 };
 

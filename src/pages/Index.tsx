@@ -10,6 +10,7 @@ import FeatureBanner from "@/components/FeatureBanner";
 import ReviewsMarquee from "@/components/ReviewsMarquee";
 import Footer from "@/components/Footer";
 import ProductDetailModal, { allProducts } from "@/components/ProductDetailModal";
+import WelcomeGuideModal from "@/components/WelcomeGuideModal";
 
 /** Door elkaar husselen zodat de homepage niet alfabetisch oogt (stabiel per sessie). */
 const shuffle = <T,>(arr: T[]): T[] => {

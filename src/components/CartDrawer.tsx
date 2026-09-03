@@ -1,6 +1,6 @@
 import { thumbSrc } from "@/lib/thumb";
 import ShirtImage from "@/components/ShirtImage";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
@@ -28,6 +28,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const [orderResult, setOrderResult] = useState<{ ok: boolean; orderNumber?: string } | null>(null);
   const { t } = useTranslation();
   const productName = useProductName();
+  const submittingRef = useRef(false);
   const { user } = useAuth();
 
   const shipping = calculateShipping(count);

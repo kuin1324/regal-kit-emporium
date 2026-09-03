@@ -143,7 +143,7 @@ const ReviewsMarquee = () => {
           onTouchStart={handleInteractionStart}
           onTouchEnd={handleInteractionEnd}
         >
-          {[...reviews, ...reviews].map((review, i) => (
+          {(reviews.length >= 4 ? [...reviews, ...reviews] : reviews).map((review, i) => (
             <ReviewCard key={i} {...review} />
           ))}
         </div>

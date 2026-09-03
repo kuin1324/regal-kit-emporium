@@ -92,6 +92,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     setOrderResult({ ok: true, orderNumber: created.orderNumber });
     clearCart();
     onClose();
+    submittingRef.current = false;
   };
 
 

@@ -1,6 +1,6 @@
 import { thumbSrc } from "@/lib/thumb";
 import ShirtImage from "@/components/ShirtImage";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
@@ -28,6 +28,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   const [orderResult, setOrderResult] = useState<{ ok: boolean; orderNumber?: string } | null>(null);
   const { t } = useTranslation();
   const productName = useProductName();
+  const submittingRef = useRef(false);
   const { user } = useAuth();
 
   const shipping = calculateShipping(count);
@@ -67,11 +68,14 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   };
 
   const runOrder = async (mode: "pay" | "email", email: string) => {
+    if (submittingRef.current || items.length === 0) return;
+    submittingRef.current = true;
     setAskMode(null);
     setBusy(true);
     const created = await createOrder(email);
     setBusy(false);
     if (!created) {
+      submittingRef.current = false;
       setOrderResult({ ok: false });
       return;
     }
@@ -88,6 +92,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     setOrderResult({ ok: true, orderNumber: created.orderNumber });
     clearCart();
     onClose();
+    submittingRef.current = false;
   };
 
 

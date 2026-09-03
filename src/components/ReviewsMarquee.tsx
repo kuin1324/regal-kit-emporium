@@ -135,7 +135,7 @@ const ReviewsMarquee = () => {
       {reviews.length > 0 ? (
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto scrollbar-hide"
+          className={`flex overflow-x-auto scrollbar-hide ${reviews.length < 4 ? "justify-center" : ""}`}
           style={{ touchAction: "pan-x" }}
           onMouseDown={handleInteractionStart}
           onMouseUp={handleInteractionEnd}
@@ -143,7 +143,7 @@ const ReviewsMarquee = () => {
           onTouchStart={handleInteractionStart}
           onTouchEnd={handleInteractionEnd}
         >
-          {[...reviews, ...reviews].map((review, i) => (
+          {(reviews.length >= 4 ? [...reviews, ...reviews] : reviews).map((review, i) => (
             <ReviewCard key={i} {...review} />
           ))}
         </div>

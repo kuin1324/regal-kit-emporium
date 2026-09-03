@@ -67,6 +67,8 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
   };
 
   const runOrder = async (mode: "pay" | "email", email: string) => {
+    if (submittingRef.current || items.length === 0) return;
+    submittingRef.current = true;
     setAskMode(null);
     setBusy(true);
     const created = await createOrder(email);

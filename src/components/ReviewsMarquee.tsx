@@ -135,7 +135,7 @@ const ReviewsMarquee = () => {
       {reviews.length > 0 ? (
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto scrollbar-hide"
+          className={`flex overflow-x-auto scrollbar-hide ${reviews.length < 4 ? "justify-center" : ""}`}
           style={{ touchAction: "pan-x" }}
           onMouseDown={handleInteractionStart}
           onMouseUp={handleInteractionEnd}

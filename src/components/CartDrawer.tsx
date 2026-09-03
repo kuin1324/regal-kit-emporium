@@ -75,6 +75,7 @@ const CartDrawer = ({ open, onClose }: CartDrawerProps) => {
     const created = await createOrder(email);
     setBusy(false);
     if (!created) {
+      submittingRef.current = false;
       setOrderResult({ ok: false });
       return;
     }

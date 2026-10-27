@@ -122,3 +122,49 @@
 #lovable-badge {
   display: none !important;
 }
+
+@keyframes fluid-reveal {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fluid-pan {
+  from { transform: scale(1); }
+  to { transform: scale(1.055); }
+}
+
+.fluid-reveal {
+  animation: fluid-reveal 850ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.fluid-hero-image {
+  animation: fluid-pan 6.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.fluid-control {
+  transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1), background-color 250ms, color 250ms, border-color 250ms, box-shadow 400ms;
+}
+
+.fluid-product {
+  transition: transform 650ms cubic-bezier(0.22, 1, 0.36, 1), border-color 400ms, box-shadow 650ms;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .fluid-control:not(:disabled):hover { transform: translateY(-2px); }
+  .fluid-product:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-gold);
+  }
+}
+
+.fluid-control:not(:disabled):active { transform: scale(0.97); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .fluid-control, .fluid-product { transform: none !important; }
+}

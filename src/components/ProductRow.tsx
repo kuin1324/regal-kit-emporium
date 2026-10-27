@@ -76,7 +76,7 @@ const ProductRow = ({ title, products, seeAllHref, onProductClick }: ProductRowP
               onClick={() => onProductClick?.(p.name)}
               className="group relative shrink-0 w-[60%] sm:w-[280px] snap-start cursor-pointer"
             >
-              <div className="relative overflow-hidden rounded-lg bg-card border border-border/50 transition-all duration-300 group-hover:border-primary/40">
+              <div className="fluid-product relative overflow-hidden rounded-lg bg-card border border-border/50 transition-all duration-300 group-hover:border-primary/40">
                 <div className="aspect-[4/5] overflow-hidden">
                   <ShirtImage src={thumbSrc(p.image)} fallback={p.image} alt={productName(p.name)} width={420} height={525} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>

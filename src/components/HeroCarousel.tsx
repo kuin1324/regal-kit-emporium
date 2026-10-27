@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { allCollectieItems } from "@/lib/collection";
@@ -25,11 +25,13 @@ const slidesData = [
 const HeroCarousel = () => {
   const [idx, setIdx] = useState(0);
   const { t } = useTranslation();
+  const reducedMotion = useReducedMotion();
 
   useEffect(() => {
+    if (reducedMotion) return;
     const tm = setInterval(() => setIdx((i) => (i + 1) % slidesData.length), 5000);
     return () => clearInterval(tm);
-  }, []);
+  }, [reducedMotion]);
 
   const slide = slidesData[idx];
 
@@ -40,10 +42,10 @@ const HeroCarousel = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={idx}
-              initial={{ opacity: 0, scale: 1.05 }}
+              initial={{ opacity: reducedMotion ? 1 : 0, scale: reducedMotion ? 1 : 1.05 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: reducedMotion ? 0 : 1.1, ease: [0.22, 1, 0.36, 1] }}
               className="absolute inset-0"
             >
               <img
@@ -52,7 +54,7 @@ const HeroCarousel = () => {
                 loading={idx === 0 ? "eager" : "lazy"}
                 fetchPriority={idx === 0 ? "high" : "low"}
                 decoding="async"
-                className="absolute inset-0 h-full w-full object-cover opacity-40"
+                className="fluid-hero-image absolute inset-0 h-full w-full object-cover opacity-40"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
             </motion.div>
@@ -61,9 +63,9 @@ const HeroCarousel = () => {
           <div className="relative z-10 h-full flex flex-col items-center justify-end pb-12 px-6 text-center">
             <motion.div
               key={`text-${idx}`}
-              initial={{ y: 20, opacity: 0 }}
+              initial={{ y: reducedMotion ? 0 : 20, opacity: reducedMotion ? 1 : 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: reducedMotion ? 0 : 0.8, delay: reducedMotion ? 0 : 0.2, ease: [0.22, 1, 0.36, 1] }}
             >
               <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-3">
                 {t("home.tagline")}
@@ -76,7 +78,7 @@ const HeroCarousel = () => {
               </p>
               <Link
                 to={slide.href}
-                className="inline-block px-6 py-3 rounded-full bg-background/90 backdrop-blur border border-primary/40 text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="fluid-control inline-block px-6 py-3 rounded-full bg-background/90 backdrop-blur border border-primary/40 text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 {t(slide.ctaKey)}
               </Link>

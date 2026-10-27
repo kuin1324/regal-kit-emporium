@@ -1,0 +1,1 @@
+- Public-page section reveals use a shared IntersectionObserver; animate only opacity and transforms and respect reduced-motion preferences to keep navigation and scrolling usable.

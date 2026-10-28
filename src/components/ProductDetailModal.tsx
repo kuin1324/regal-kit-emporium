@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag, Trash2, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -47,6 +47,7 @@ const newVariant = (): Variant => ({
 });
 
 const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) => {
+  const reducedMotion = useReducedMotion();
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const [activeImage, setActiveImage] = useState(0);
   const [variants, setVariants] = useState<Variant[]>([newVariant()]);
@@ -105,9 +106,10 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
     <AnimatePresence>
       {selected && (
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          initial={{ opacity: reducedMotion ? 1 : 0, y: reducedMotion ? 0 : 90, scale: reducedMotion ? 1 : 0.94 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: reducedMotion ? 0 : 50, scale: reducedMotion ? 1 : 0.98 }}
+          transition={reducedMotion ? { duration: 0 } : { duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
           className="fixed inset-0 z-[60] bg-background overflow-y-auto"
         >
           <div className="absolute top-4 right-4 z-10 flex gap-2">
@@ -139,7 +141,13 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
               )}
 
               <div className="order-1 md:order-1 flex-1 flex flex-col items-center justify-center min-h-[60vh] md:min-h-0 gap-3">
-                <div className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded select-none">
+                <motion.div
+                  key={`${productName}-${activeImage}`}
+                  initial={{ opacity: reducedMotion ? 1 : 0, x: reducedMotion ? 0 : -64, scale: reducedMotion ? 1 : 0.94 }}
+                  animate={{ opacity: 1, x: 0, scale: 1 }}
+                  transition={reducedMotion ? { duration: 0 } : { duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+                  className="relative w-full h-full max-h-[85vh] aspect-[4/5] md:aspect-auto overflow-hidden rounded select-none"
+                >
                   <ZoomableImage
                     key={gallery[activeImage]}
                     src={gallery[activeImage]}
@@ -147,7 +155,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                     fallback={(selected as { fallback?: string | null }).fallback}
                     alt={displayName}
                   />
-                </div>
+                </motion.div>
                 {gallery.length > 1 && (
                   <div className="flex items-center gap-4">
                     <button
@@ -170,7 +178,12 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
               </div>
             </div>
 
-            <div className="p-8 md:p-12 flex flex-col justify-center max-w-lg mx-auto w-full">
+            <motion.div
+              initial={{ opacity: reducedMotion ? 1 : 0, y: reducedMotion ? 0 : 70 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={reducedMotion ? { duration: 0 } : { duration: 0.85, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+              className="p-8 md:p-12 flex flex-col justify-center max-w-lg mx-auto w-full"
+            >
               <Breadcrumbs current={displayName} onNavigate={onClose} />
               <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{selected.team}</p>
               <h2 className="font-display text-3xl md:text-4xl font-bold tracking-wide mb-2">{displayName}</h2>
@@ -298,7 +311,7 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       )}

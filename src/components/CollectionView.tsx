@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Heart, Search, ShoppingBag, SlidersHorizontal, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useSearchParams } from "react-router-dom";
@@ -45,6 +45,7 @@ interface Band {
 }
 
 const CollectionView = ({ items, onSelect }: Props) => {
+  const reducedMotion = useReducedMotion();
   const { t } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
   const [showFilters, setShowFilters] = useState(false);
@@ -280,10 +281,10 @@ const CollectionView = ({ items, onSelect }: Props) => {
                   if (el) cardRefs.current.set(pid, el);
                   else cardRefs.current.delete(pid);
                 }}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: Math.min(i, 8) * 0.03 }}
-                viewport={{ once: true }}
+                initial={{ opacity: reducedMotion ? 1 : 0, y: reducedMotion ? 0 : 76, scale: reducedMotion ? 1 : 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={reducedMotion ? { duration: 0 } : { type: "spring", stiffness: 95, damping: 21, mass: 0.8, delay: (i % 5) * 0.085 }}
+                viewport={{ once: true, amount: 0.1 }}
                 className="group relative cursor-pointer"
               >
                 <button
@@ -313,7 +314,7 @@ const CollectionView = ({ items, onSelect }: Props) => {
                     }
                     onSelect(pid);
                   }}
-                  className={`relative overflow-hidden rounded border bg-card transition-all duration-500 group-hover:shadow-[var(--shadow-gold)] ${
+                  className={`fluid-product relative overflow-hidden rounded border bg-card transition-all duration-500 group-hover:shadow-[var(--shadow-gold)] ${
                     selected.has(pid)
                       ? "border-primary ring-2 ring-primary"
                       : "border-border/50 group-hover:border-primary/30"

@@ -1,3 +1,3 @@
-- [ ] Give every shirt a shareable page with existing gallery and ordering choices.
-- [ ] Show brand, season, edition, material and a detailed factual description without guessing missing specifications.
-- [ ] Verify product links, metadata, ordering choices and mobile layout.
+- [x] Give every shirt a shareable page with existing gallery and ordering choices.
+- [x] Show brand, season, edition, material and a detailed factual description without guessing missing specifications.
+- [x] Verify product links, metadata, ordering choices and mobile layout.

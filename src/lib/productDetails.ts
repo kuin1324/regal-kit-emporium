@@ -28,9 +28,10 @@ export function getProductDetails(product: DetailProduct) {
     (/goalkeeper/i.test(product.name) ? "Goalkeeper" : /pre.match|training/i.test(product.name) ? "Training" : /\baway\b/i.test(product.name) ? "Away" : /\bthird\b/i.test(product.name) ? "Third" : /\bfourth\b/i.test(product.name) ? "Fourth" : /\bhome\b/i.test(product.name) ? "Home" : "Not specified");
   const material = product.material || "Not confirmed — ask us for the fabric composition";
   const sleeve = /long\s*sleeve/i.test(product.name) ? "long-sleeve shirt" : /shorts?\b/i.test(product.name) ? "shorts" : "football shirt";
+  const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9]/g, "");
   const paragraphs = [
-    `${product.name.replace(/[\u200B-\u200D\uFEFF]/g, "")} is a ${product.team} ${sleeve}${season !== "Not specified" ? ` listed for ${season}` : ""}${edition !== "Not specified" ? ` in the ${edition} edition` : ""}.`,
-    ...(product.description && !/authentiek|vintage|limited edition/i.test(product.description) ? [product.description] : []),
+    `${product.name.replace(/[\u200B-\u200D\uFEFF]/g, "")} is listed as a ${sleeve} for ${product.team}${season !== "Not specified" ? `, with ${season} identified in the catalogue` : ""}${edition !== "Not specified" ? `. Edition: ${edition}` : ""}.`,
+    ...(product.description && normalise(product.description) !== normalise(product.name) && !/authentiek|vintage|limited edition/i.test(product.description) ? [product.description] : []),
     `This listing includes ${product.gallery?.length || 1} product photo${(product.gallery?.length || 1) === 1 ? "" : "s"}. The gallery shows the supplied shirt images so you can compare its design and details before ordering. Available size options: ${product.sizes.join(", ")}.`,
     `Check the size options before adding this item to your basket. Name and number personalisation can be selected separately for each shirt. ${product.material ? `Listed fabric: ${product.material}.` : "The exact fabric composition has not been confirmed for this item; contact us for label details or additional photos before ordering."}`,
   ];

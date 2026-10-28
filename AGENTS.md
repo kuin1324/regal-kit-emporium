@@ -1,1 +1,4 @@
 - Public-page section reveals use a shared IntersectionObserver; animate only opacity and transforms and respect reduced-motion preferences to keep navigation and scrolling usable.
+- Shirt pages use encoded product identities in URLs and reuse the existing gallery and order controls; source-context query parameters preserve collection breadcrumb filters.
+- Product facts use explicit catalogue attributes or name-derived season/edition only; do not infer manufacturers or fabric composition from teams, and mark missing specifications as unconfirmed.
+- Per-shirt head tags use react-helmet-async with self-referencing canonicals; index.html retains static social fallbacks and no canonical to prevent duplicate canonical links.

@@ -39,12 +39,12 @@ const HeroCarousel = () => {
     <section className="px-4 sm:px-6 pt-24">
       <div className="container mx-auto">
         <div className="relative h-[60vh] min-h-[420px] max-h-[560px] w-full overflow-hidden rounded-2xl border border-border/50 bg-hero-gradient">
-          <AnimatePresence mode="wait">
+          <AnimatePresence>
             <motion.div
               key={idx}
-              initial={{ opacity: reducedMotion ? 1 : 0, scale: reducedMotion ? 1 : 1.05 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
+              initial={{ opacity: reducedMotion ? 1 : 0, x: reducedMotion ? 0 : 100, scale: reducedMotion ? 1 : 1.12 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, x: reducedMotion ? 0 : -70 }}
               transition={{ duration: reducedMotion ? 0 : 1.1, ease: [0.22, 1, 0.36, 1] }}
               className="absolute inset-0"
             >
@@ -63,7 +63,7 @@ const HeroCarousel = () => {
           <div className="relative z-10 h-full flex flex-col items-center justify-end pb-12 px-6 text-center">
             <motion.div
               key={`text-${idx}`}
-              initial={{ y: reducedMotion ? 0 : 20, opacity: reducedMotion ? 1 : 0 }}
+              initial={{ y: reducedMotion ? 0 : 65, opacity: reducedMotion ? 1 : 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: reducedMotion ? 0 : 0.8, delay: reducedMotion ? 0 : 0.2, ease: [0.22, 1, 0.36, 1] }}
             >

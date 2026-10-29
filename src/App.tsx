@@ -11,8 +11,6 @@ import ScrollToTop from "@/components/ScrollToTop";
 import ChatWidget from "@/components/ChatWidget";
 import AdminUnlock from "@/components/AdminUnlock";
 import SiteMotion from "@/components/SiteMotion";
-import { HelmetProvider } from "react-helmet-async";
-import Shirt from "@/pages/Shirt";
 
 import Index from "./pages/Index.tsx";
 import Auth from "./pages/Auth.tsx";
@@ -31,7 +29,7 @@ import NotFound from "./pages/NotFound.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <HelmetProvider><QueryClientProvider client={queryClient}>
+  <QueryClientProvider client={queryClient}>
     <ThemeProvider>
     <AuthProvider>
     <TooltipProvider>
@@ -47,7 +45,6 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/over-ons" element={<OverOns />} />
             <Route path="/collectie" element={<Collectie />} />
-            <Route path="/shirt/:id" element={<Shirt />} />
             <Route path="/special-edition" element={<SpecialEdition />} />
             <Route path="/retro" element={<Retro />} />
             <Route path="/long-sleeve" element={<LongSleeves />} />
@@ -67,7 +64,7 @@ const App = () => (
     </TooltipProvider>
     </AuthProvider>
     </ThemeProvider>
-  </QueryClientProvider></HelmetProvider>
+  </QueryClientProvider>
 );
 
 export default App;

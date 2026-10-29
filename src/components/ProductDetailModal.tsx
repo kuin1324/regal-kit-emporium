@@ -14,9 +14,6 @@ import { thumbSrc } from "@/lib/thumb";
 import { useAdminView } from "@/lib/admin";
 import { useProductName } from "@/lib/productName";
 import { findProduct, mergeById, productIdentity } from "@/lib/productIdentity";
-import { useLocation, useNavigate } from "react-router-dom";
-import { productPagePath } from "@/lib/productDetails";
-import ProductInformation from "@/components/ProductInformation";
 
 type AnyProduct = (typeof collectieShirts)[number] | (typeof publicCollectieShirts)[number];
 
@@ -27,7 +24,6 @@ export const allProducts: AnyProduct[] = mergeById<AnyProduct>(collectieShirts, 
 interface ProductDetailModalProps {
   productName: string | null;
   onClose: () => void;
-  pageMode?: boolean;
 }
 
 interface Variant {
@@ -50,9 +46,7 @@ const newVariant = (): Variant => ({
   customNumber: "",
 });
 
-const ProductDetailModal = ({ productName, onClose, pageMode = false }: ProductDetailModalProps) => {
-  const navigate = useNavigate();
-  const location = useLocation();
+const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) => {
   const reducedMotion = useReducedMotion();
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const [activeImage, setActiveImage] = useState(0);
@@ -65,10 +59,6 @@ const ProductDetailModal = ({ productName, onClose, pageMode = false }: ProductD
 
   // productName bevat de unieke id (SKU/fotopad); oude links met alleen de naam werken ook.
   const selected = findProduct(allProducts, productName) ?? null;
-
-  useEffect(() => {
-    if (selected && !pageMode) navigate(`${productPagePath(selected)}${location.search}`);
-  }, [selected, pageMode, navigate, location.search]);
 
   const displayName = selected
     ? t(`products.${selected.nameKey}`, { defaultValue: translate(selected.name) })
@@ -93,14 +83,13 @@ const ProductDetailModal = ({ productName, onClose, pageMode = false }: ProductD
   const handleAddToCart = () => {
     if (!selected || !allValid) return;
     variants.forEach(v => {
-      if (!v.size) return;
       const suffix = v.customize && (v.customName || v.customNumber)
         ? ` [${v.customName || "—"}${v.customNumber ? ` #${v.customNumber}` : ""}]`
         : "";
       addItem({
         name: selected.name + suffix,
         image: selected.image,
-        size: v.size,
+        size: v.size!,
         sku: (selected as { sku?: string }).sku,
         customName: v.customize ? v.customName : undefined,
         customNumber: v.customize ? v.customNumber : undefined,
@@ -113,8 +102,6 @@ const ProductDetailModal = ({ productName, onClose, pageMode = false }: ProductD
 
   const gallery = selected?.gallery || (selected ? [selected.image] : []);
 
-  if (!pageMode) return null;
-
   return (
     <AnimatePresence>
       {selected && (
@@ -123,7 +110,7 @@ const ProductDetailModal = ({ productName, onClose, pageMode = false }: ProductD
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: reducedMotion ? 0 : 50, scale: reducedMotion ? 1 : 0.98 }}
           transition={reducedMotion ? { duration: 0 } : { duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
-          className="relative bg-background"
+          className="fixed inset-0 z-[60] bg-background overflow-y-auto"
         >
           <div className="absolute top-4 right-4 z-10 flex gap-2">
             <button onClick={() => toggleFavorite(favorites.has(selected.name) ? selected.name : productIdentity(selected))} className="p-3 rounded-full bg-card border border-border hover:bg-muted transition-colors" aria-label={t("product.favorite")}>
@@ -197,14 +184,13 @@ const ProductDetailModal = ({ productName, onClose, pageMode = false }: ProductD
               transition={reducedMotion ? { duration: 0 } : { duration: 0.85, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
               className="p-8 md:p-12 flex flex-col justify-center max-w-lg mx-auto w-full"
             >
-              <Breadcrumbs current={displayName} base={[{ label: "Collection", to: "/collectie" }]} />
+              <Breadcrumbs current={displayName} onNavigate={onClose} />
               <p className="text-[10px] font-medium tracking-[0.25em] uppercase text-primary mb-1">{selected.team}</p>
-              <h1 className="font-display text-3xl md:text-4xl font-bold tracking-wide mb-2">{displayName}</h1>
+              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-wide mb-2">{displayName}</h2>
               {isAdmin && (selected as { sku?: string }).sku && (
                 <p className="mb-2 font-mono text-xs text-muted-foreground">SKU: {(selected as { sku?: string }).sku}</p>
               )}
               <p className="font-display text-3xl font-bold text-gradient-gold mb-8">{format(totalPrice)}</p>
-              <ProductInformation product={selected} />
 
               <div className="space-y-6 mb-6">
                 {variants.map((v, idx) => (

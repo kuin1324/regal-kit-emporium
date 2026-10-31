@@ -1,3 +1,5 @@
+import { verifiedTeamFacts } from "./shirtQuizFacts";
+
 export interface QuizProduct {
   name: string;
   team: string;
@@ -23,7 +25,7 @@ export interface TeamFact {
 }
 
 // Historical questions are added only from checked official sources.
-export const teamFacts: TeamFact[] = [];
+export const teamFacts: TeamFact[] = verifiedTeamFacts;
 
 const hash = (value: string) => Array.from(value).reduce((sum, char) => (sum * 31 + char.charCodeAt(0)) >>> 0, 0);
 

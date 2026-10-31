@@ -1,1 +1,2 @@
 - Public-page section reveals use a shared IntersectionObserver; animate only opacity and transforms and respect reduced-motion preferences to keep navigation and scrolling usable.
+- Shirt quizzes use deterministic catalog-label questions for every product and a curated, source-linked official fact bank for historical questions; never generate historical answers or infer match usage from concept names.

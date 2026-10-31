@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import ShirtQuiz from "@/components/ShirtQuiz";
 import { X, Minus, Plus, ChevronDown, Heart, ShoppingBag, Trash2, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/context/CartContext";
@@ -289,6 +290,8 @@ const ProductDetailModal = ({ productName, onClose }: ProductDetailModalProps) =
                 {allValid ? t("product.addToCart") : t("product.pickSize")}
               </button>
 
+
+              <ShirtQuiz key={productIdentity(selected)} product={selected} />
 
               <div className="border-t border-border">
                 {[

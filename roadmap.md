@@ -1,0 +1,2 @@
+- [ ] Add a quiz to every shirt with factual questions and answer explanations.
+- [ ] Verify quiz coverage, scoring, and the complete customer flow.
